@@ -3,6 +3,8 @@
 [繁體中文](README.zh-TW.md)
 
 > Mirror your Android phone screen to Android Auto display, with support for media button controls.
+>
+> **Free to use. No features require additional payment.**
 
 ## Features
 
