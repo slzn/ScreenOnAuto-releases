@@ -24,7 +24,7 @@
 
 ## Download
 
-Go to the [Releases](../../releases) page and download the latest `ScreenOnAuto-x.x.apk`.
+Go to the [Releases](../../releases) page and download the latest `ScreenOnAuto-V1.0.0.apk`.
 
 ## Installation
 
