@@ -28,10 +28,40 @@ Go to the [Releases](../../releases) page and download the latest `ScreenOnAuto-
 
 ## Installation
 
-1. Download the APK from the Releases page
+> **Why KingInstaller?**  
+> Android Auto requires apps to be installed via Google Play Store.
+> Installing the APK directly sets the installer to your browser or file manager,
+> which Android Auto will reject. KingInstaller installs APKs while reporting
+> Google Play Store as the installer source.
+
+### Step 1 — Install KingInstaller
+
+1. Go to [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases) and download the latest `KingInstaller.apk`
 2. On your phone: **Settings → Security → Enable "Install unknown apps"** for your browser or file manager
-3. Open the APK file and tap **Install**
-4. Launch **ScreenOnAuto** and follow the in-app prompts to grant required permissions
+3. Open `KingInstaller.apk` and tap **Install**
+
+### Step 2 — Install ScreenOnAuto via KingInstaller
+
+1. Download `ScreenOnAuto-V1.0.0.apk` from the [Releases](../../releases) page
+2. Open **KingInstaller**, tap the **folder icon**, and select the downloaded APK
+3. Tap **Install** — KingInstaller will install it as if it came from Google Play Store
+
+### Step 3 — Verify in Android Auto
+
+On your phone, go to **Settings → Connected devices → Android Auto → Customize Launcher**.
+You should see **two** ScreenOnAuto entries:
+
+| Name | Function |
+|---|---|
+| **ScreenOnAuto** | Screen mirroring |
+| **ScreenOnAuto Media Controller** | Media session proxy |
+
+If both entries appear, the installation was successful.
+If either is missing, reinstall using KingInstaller and ensure it reports Google Play Store as the installer source.
+
+### Step 4 — Grant Permissions
+
+Launch **ScreenOnAuto** and follow the in-app prompts to grant required permissions.
 
 ## Permissions
 

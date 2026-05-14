@@ -28,10 +28,40 @@
 
 ## 安裝步驟
 
-1. 從 Releases 頁面下載 APK 檔案
+> **為什麼需要 KingInstaller？**  
+> Android Auto 要求 app 必須透過 Google Play 商店安裝。
+> 直接安裝 APK 會讓系統記錄安裝來源為瀏覽器或檔案管理器，
+> 導致 Android Auto 拒絕使用。KingInstaller 能以 Google Play 商店身份安裝 APK，
+> 解決此限制。
+
+### 第一步 — 安裝 KingInstaller
+
+1. 前往 [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases)，下載最新版 `KingInstaller.apk`
 2. 在手機上開啟：**設定 → 安全性 → 允許安裝未知來源應用程式**
-3. 開啟 APK 檔案並點選**安裝**
-4. 啟動 **ScreenOnAuto**，依照 App 內提示授予所需權限
+3. 開啟 `KingInstaller.apk` 並點選**安裝**
+
+### 第二步 — 透過 KingInstaller 安裝 ScreenOnAuto
+
+1. 從 [Releases](../../releases) 頁面下載 `ScreenOnAuto-V1.0.0.apk`
+2. 開啟 **KingInstaller**，點選**資料夾圖示**，選取已下載的 APK
+3. 點選**安裝** — KingInstaller 會以 Google Play 商店身份完成安裝
+
+### 第三步 — 在 Android Auto 中驗證
+
+在手機上前往 **設定 → 已連結的裝置 → Android Auto → 自訂啟動器**。
+您應可看到 **兩個** ScreenOnAuto 項目：
+
+| 名稱 | 功能 |
+|---|---|
+| **ScreenOnAuto** | 螢幕鏡像 |
+| **ScreenOnAuto Media Controller** | 媒體工作階段代理 |
+
+若兩個項目皆出現，代表安裝成功。
+若其中一個缺失，請重新透過 KingInstaller 安裝，並確認其安裝來源為 Google Play 商店。
+
+### 第四步 — 授予權限
+
+啟動 **ScreenOnAuto**，依照 App 內提示授予所需權限。
 
 ## 權限說明
 
