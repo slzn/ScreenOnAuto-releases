@@ -24,7 +24,7 @@
 
 ## 下載
 
-前往 [Releases](../../releases) 頁面，下載最新版 `ScreenOnAuto-V1.0.0.apk`。
+前往 [Releases](../../releases) 頁面，下載最新版 `ScreenOnAuto-V1.1.0.apk`。
 
 ## 安裝步驟
 
@@ -42,7 +42,7 @@
 
 ### 第二步 — 透過 KingInstaller 安裝 ScreenOnAuto
 
-1. 從 [Releases](../../releases) 頁面下載 `ScreenOnAuto-V1.0.0.apk`
+1. 從 [Releases](../../releases) 頁面下載 `ScreenOnAuto-V1.1.0.apk`
 2. 開啟 **KingInstaller**，點選**資料夾圖示**，選取已下載的 APK
 3. 點選**安裝** — KingInstaller 會以 Google Play 商店身份完成安裝
 
