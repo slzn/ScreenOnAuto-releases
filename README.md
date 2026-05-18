@@ -2,6 +2,9 @@
 
 [繁體中文](README.zh-TW.md)
 
+> [!WARNING]
+> **Android 13 and below only.** This app does not support Android 14 or higher.
+
 > Mirror your Android phone screen to Android Auto display, with support for media button controls.
 >
 > **Free to use. No features require additional payment.**
@@ -24,7 +27,7 @@
 
 ## Download
 
-Go to the [Releases](../../releases) page and download the latest `ScreenOnAuto-V1.1.0.apk`.
+Go to the [Releases](../../releases) page and download the latest `ScreenOnAuto-V1.2.0.apk`.
 
 ## Installation
 
@@ -42,7 +45,7 @@ Go to the [Releases](../../releases) page and download the latest `ScreenOnAuto-
 
 ### Step 2 — Install ScreenOnAuto via KingInstaller
 
-1. Download `ScreenOnAuto-V1.1.0.apk` from the [Releases](../../releases) page
+1. Download `ScreenOnAuto-V1.2.0.apk` from the [Releases](../../releases) page
 2. Open **KingInstaller**, tap the **folder icon**, and select the downloaded APK
 3. Tap **Install** — KingInstaller will install it as if it came from Google Play Store
 
