@@ -76,6 +76,8 @@ Launch **ScreenOnAuto** and follow the in-app prompts to grant required permissi
 | Display Over Other Apps | Detect user interaction to restore brightness after Auto Dim |
 | Accessibility Service | Touch Forwarding *(Experimental)* |
 
+> **Tip:** To avoid the Screen Capture permission dialog on every launch, you can pre-grant it via ADB — see [Grant Mirror Permission via ADB](../../wiki/Grant-Mirror-Permission-via-ADB).
+
 ## Disclaimer
 
 Always keep your eyes on the road — do not operate this app while driving.
