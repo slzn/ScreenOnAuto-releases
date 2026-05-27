@@ -27,7 +27,7 @@
 
 ## 下載
 
-前往 [Releases](../../releases) 頁面，下載最新版 `ScreenOnAuto-V1.3.2.apk`。
+前往 [Releases](https://github.com/slzn/ScreenOnAuto-releases/releases) 頁面，下載最新版 `ScreenOnAuto-V1.3.2.apk`。
 
 ## 安裝步驟
 
@@ -45,7 +45,7 @@
 
 ### 第二步 — 透過 KingInstaller 安裝 ScreenOnAuto
 
-1. 從 [Releases](../../releases) 頁面下載 `ScreenOnAuto-V1.3.2.apk`
+1. 從 [Releases](https://github.com/slzn/ScreenOnAuto-releases/releases) 頁面下載 `ScreenOnAuto-V1.3.2.apk`
 2. 開啟 **KingInstaller**，點選**資料夾圖示**，選取已下載的 APK
 3. 點選**安裝** — KingInstaller 會以 Google Play 商店身份完成安裝
 
@@ -77,7 +77,7 @@
 | 在其他應用程式上層顯示 | 偵測使用者操作，於自動降低亮度後恢復正常亮度 |
 | 無障礙服務 | 觸控轉發 *（實驗性功能）* |
 
-> **小提示：** 若希望每次鏡像時不再顯示螢幕擷取權限對話框，可透過 ADB 預先授予此權限——請參閱[使用 ADB 授予鏡像權限](../../wiki/使用-ADB-授予鏡像權限)。
+> **小提示：** 若希望每次鏡像時不再顯示螢幕擷取權限對話框，可透過 ADB 預先授予此權限——請參閱[使用 ADB 授予鏡像權限](https://github.com/slzn/ScreenOnAuto-releases/wiki/使用-ADB-授予鏡像權限)。
 
 ## 免責聲明
 

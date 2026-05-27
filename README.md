@@ -27,7 +27,7 @@
 
 ## Download
 
-Go to the [Releases](../../releases) page and download the latest `ScreenOnAuto-V1.3.2.apk`.
+Go to the [Releases](https://github.com/slzn/ScreenOnAuto-releases/releases) page and download the latest `ScreenOnAuto-V1.3.2.apk`.
 
 ## Installation
 
@@ -45,7 +45,7 @@ Go to the [Releases](../../releases) page and download the latest `ScreenOnAuto-
 
 ### Step 2 — Install ScreenOnAuto via KingInstaller
 
-1. Download `ScreenOnAuto-V1.3.2.apk` from the [Releases](../../releases) page
+1. Download `ScreenOnAuto-V1.3.2.apk` from the [Releases](https://github.com/slzn/ScreenOnAuto-releases/releases) page
 2. Open **KingInstaller**, tap the **folder icon**, and select the downloaded APK
 3. Tap **Install** — KingInstaller will install it as if it came from Google Play Store
 
@@ -77,7 +77,7 @@ Launch **ScreenOnAuto** and follow the in-app prompts to grant required permissi
 | Display Over Other Apps | Detect user interaction to restore brightness after Auto Dim |
 | Accessibility Service | Touch Forwarding *(Experimental)* |
 
-> **Tip:** To avoid the Screen Capture permission dialog on every launch, you can pre-grant it via ADB — see [Grant Mirror Permission via ADB](../../wiki/Grant-Mirror-Permission-via-ADB).
+> **Tip:** To avoid the Screen Capture permission dialog on every launch, you can pre-grant it via ADB — see [Grant Mirror Permission via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB).
 
 ## Disclaimer
 
