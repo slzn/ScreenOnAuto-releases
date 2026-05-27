@@ -52,14 +52,15 @@
 ### 第三步 — 在 Android Auto 中驗證
 
 在手機上前往 **設定 → 已連結的裝置 → Android Auto → 自訂啟動器**。
-您應可看到 **兩個** ScreenOnAuto 項目：
+您應可看到 **三個** ScreenOnAuto 項目：
 
-| 名稱 | 功能 |
-|---|---|
-| **ScreenOnAuto** | 螢幕鏡像 |
-| **ScreenOnAuto Media Controller** | 媒體工作階段代理 |
+| 圖示 | 名稱 | 功能 |
+|---|---|---|
+| <img src="images/icon_launcher.png" width="48"> | **ScreenOnAuto** | 將手機螢幕鏡像至 Android Auto，取代地圖位置達到全螢幕顯示 |
+| <img src="images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | 使用舊版投影路徑鏡像手機螢幕，可與地圖並列顯示 |
+| <img src="images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | 透過 Android Auto 原生媒體介面控制手機上的播放器 |
 
-若兩個項目皆出現，代表安裝成功。
+若三個項目皆出現，代表安裝成功。
 若其中一個缺失，請重新透過 KingInstaller 安裝，並確認其安裝來源為 Google Play 商店。
 
 ### 第四步 — 授予權限

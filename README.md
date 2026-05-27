@@ -52,15 +52,16 @@ Go to the [Releases](../../releases) page and download the latest `ScreenOnAuto-
 ### Step 3 — Verify in Android Auto
 
 On your phone, go to **Settings → Connected devices → Android Auto → Customize Launcher**.
-You should see **two** ScreenOnAuto entries:
+You should see **three** ScreenOnAuto entries:
 
-| Name | Function |
-|---|---|
-| **ScreenOnAuto** | Screen mirroring |
-| **ScreenOnAuto Media Controller** | Media session proxy |
+| Icon | Name | Function |
+|---|---|---|
+| <img src="images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Mirrors the phone screen full-screen — replaces the map area for a full-screen view |
+| <img src="images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Mirrors the phone screen using the Legacy projection path — can be displayed side-by-side with the map |
+| <img src="images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | Controls any media app on the phone from Android Auto's native media UI |
 
-If both entries appear, the installation was successful.
-If either is missing, reinstall using KingInstaller and ensure it reports Google Play Store as the installer source.
+If all three entries appear, the installation was successful.
+If any is missing, reinstall using KingInstaller and ensure it reports Google Play Store as the installer source.
 
 ### Step 4 — Grant Permissions
 
