@@ -1,4 +1,4 @@
-# ScreenOnAuto
+# <img src="images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
 
 [繁體中文](README.zh-TW.md)
 
@@ -17,6 +17,7 @@
 - **Auto Start** — Begin mirroring automatically when Android Auto connects
 - **Keep Screen On** — Prevent the phone screen from sleeping during mirroring
 - **Stop on Disconnect** — Automatically stop mirroring when Android Auto disconnects
+- **Auto Launch App** — Automatically launch a chosen app on the phone when mirroring starts and Android Auto is connected
 - **Touch Forwarding** *(Experimental)* — Tap/scroll/fling the AA display to control your phone
 
 ## Requirements

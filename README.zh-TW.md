@@ -1,4 +1,4 @@
-# ScreenOnAuto
+# <img src="images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
 
 [English](README.md)
 
@@ -17,6 +17,7 @@
 - **自動啟動** — 連線 Android Auto 後自動開始鏡像
 - **維持螢幕常亮** — 鏡像期間防止手機螢幕進入休眠
 - **斷線自動停止** — Android Auto 斷線後自動停止鏡像
+- **自動開啟應用程式** — 鏡像啟動且 Android Auto 連線後，自動在手機上開啟指定的應用程式
 - **觸控轉發** *（實驗性功能）* — 在車機畫面上點擊/滑動即可操控手機
 
 ## 系統需求
