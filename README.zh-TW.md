@@ -30,6 +30,12 @@
 
 ## 安裝步驟
 
+### Android 14 以上(含)— Play 商店測試版
+
+Android 14+ 不支援 sideload,請改透過 Play 商店內部測試軌道安裝。
+
+報名表單與詳細步驟請見 **[加入 Beta 測試](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)**。安裝完成後,啟動 App 並依相同方式授予 App 內權限。
+
 ### Android 13 以下(含)— 透過 KingInstaller sideload
 
 > **為什麼需要 KingInstaller？**  
@@ -53,12 +59,6 @@
 #### 第三步 — 授予權限
 
 啟動 **ScreenOnAuto**，依照 App 內提示授予所需權限。
-
-### Android 14 以上(含)— Play 商店測試版
-
-Android 14+ 不支援 sideload,請改透過 Play 商店內部測試軌道安裝。
-
-報名表單與詳細步驟請見 **[加入 Beta 測試](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)**。安裝完成後,啟動 App 並依相同方式授予 App 內權限。
 
 ## 在 Android Auto 中驗證
 

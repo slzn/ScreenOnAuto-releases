@@ -30,6 +30,15 @@
 
 ## Installation
 
+### Android 14 and above — Play Store beta
+
+Sideloading is not supported on Android 14+. Install through the Play Store
+internal-testing track instead.
+
+See **[Join the Beta Test](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)**
+for the sign-up form and step-by-step instructions. After installing, launch the app and grant
+the in-app permissions the same way.
+
 ### Android 13 and below — sideload with KingInstaller
 
 > **Why KingInstaller?**  
@@ -53,15 +62,6 @@
 #### Step 3 — Grant Permissions
 
 Launch **ScreenOnAuto** and follow the in-app prompts to grant required permissions.
-
-### Android 14 and above — Play Store beta
-
-Sideloading is not supported on Android 14+. Install through the Play Store
-internal-testing track instead.
-
-See **[Join the Beta Test](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)**
-for the sign-up form and step-by-step instructions. After installing, launch the app and grant
-the in-app permissions the same way.
 
 ## Verify in Android Auto
 
