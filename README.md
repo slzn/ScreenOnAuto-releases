@@ -8,8 +8,8 @@
 
 > [!IMPORTANT]
 > **How you install depends on your Android version:**
-> - **Android 13 and below** — sideload the APK with KingInstaller ([steps below](#installation)), or join the Play beta.
 > - **Android 14 and above** — available through the **Play Store beta only**. [Join the tester list →](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)
+> - **Android 13 and below** — sideload the APK with KingInstaller ([steps below](#installation)), or join the Play beta.
 
 ## Features
 

@@ -8,8 +8,8 @@
 
 > [!IMPORTANT]
 > **安裝方式取決於你的 Android 版本:**
-> - **Android 13 以下(含)** — 用 KingInstaller sideload 安裝 APK([步驟見下方](#安裝步驟)),或改用 Play 測試版。
 > - **Android 14 以上(含)** — **僅限 Play 商店測試版**。[加入測試者名單 →](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)
+> - **Android 13 以下(含)** — 用 KingInstaller sideload 安裝 APK([步驟見下方](#安裝步驟)),或改用 Play 測試版。
 
 ## 功能介紹
 
