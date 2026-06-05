@@ -28,10 +28,6 @@
 - 手機已安裝 Android Auto
 - 支援 Android Auto 的車機
 
-## 下載
-
-前往 [Releases](https://github.com/slzn/ScreenOnAuto-releases/releases) 頁面，下載最新版 `ScreenOnAuto-V1.5.0.apk`。
-
 ## 加入 Play Beta 測試
 
 比起 sideload 更想透過 Google Play 安裝,或你是 **Android 14+**(不支援 sideload)?歡迎加入 Play 商店內部測試軌道。
@@ -54,7 +50,7 @@
 
 ### 第二步 — 透過 KingInstaller 安裝 ScreenOnAuto
 
-1. 從 [Releases](https://github.com/slzn/ScreenOnAuto-releases/releases) 頁面下載 `ScreenOnAuto-V1.5.0.apk`
+1. 從 [最新版本](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) 頁面下載最新的 `ScreenOnAuto-*.apk`
 2. 開啟 **KingInstaller**，點選**資料夾圖示**，選取已下載的 APK
 3. 點選**安裝** — KingInstaller 會以 Google Play 商店身份完成安裝
 

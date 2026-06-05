@@ -28,10 +28,6 @@
 - Android Auto installed on phone
 - A vehicle supporting Android Auto
 
-## Download
-
-Go to the [Releases](https://github.com/slzn/ScreenOnAuto-releases/releases) page and download the latest `ScreenOnAuto-V1.5.0.apk`.
-
 ## Join the Play Beta Test
 
 Prefer installing through Google Play instead of sideloading — or on **Android 14+** (sideload not supported)? Join the closed beta on the Play Store internal-testing track.
@@ -54,7 +50,7 @@ See **[Join the Beta Test](https://github.com/slzn/ScreenOnAuto-releases/wiki/Jo
 
 ### Step 2 — Install ScreenOnAuto via KingInstaller
 
-1. Download `ScreenOnAuto-V1.5.0.apk` from the [Releases](https://github.com/slzn/ScreenOnAuto-releases/releases) page
+1. Download the latest `ScreenOnAuto-*.apk` from the [latest release](https://github.com/slzn/ScreenOnAuto-releases/releases/latest)
 2. Open **KingInstaller**, tap the **folder icon**, and select the downloaded APK
 3. Tap **Install** — KingInstaller will install it as if it came from Google Play Store
 
