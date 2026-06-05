@@ -54,7 +54,13 @@ See **[Join the Beta Test](https://github.com/slzn/ScreenOnAuto-releases/wiki/Jo
 2. Open **KingInstaller**, tap the **folder icon**, and select the downloaded APK
 3. Tap **Install** — KingInstaller will install it as if it came from Google Play Store
 
-### Step 3 — Verify in Android Auto
+### Step 3 — Grant Permissions
+
+Launch **ScreenOnAuto** and follow the in-app prompts to grant required permissions.
+
+## Verify in Android Auto
+
+This works **however you installed** — KingInstaller sideload *or* the Play beta.
 
 On your phone, go to **Settings → Connected devices → Android Auto → Customize Launcher**.
 You should see **three** ScreenOnAuto entries:
@@ -66,11 +72,7 @@ You should see **three** ScreenOnAuto entries:
 | <img src="images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | Controls any media app on the phone from Android Auto's native media UI |
 
 If all three entries appear, the installation was successful.
-If any is missing, reinstall using KingInstaller and ensure it reports Google Play Store as the installer source.
-
-### Step 4 — Grant Permissions
-
-Launch **ScreenOnAuto** and follow the in-app prompts to grant required permissions.
+If any is missing: for a sideload install, reinstall via KingInstaller and ensure it reports Google Play Store as the installer source; for the Play beta, make sure the Play build finished installing, then re-open Android Auto.
 
 ## Permissions
 

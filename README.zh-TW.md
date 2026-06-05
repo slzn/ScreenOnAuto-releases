@@ -54,7 +54,13 @@
 2. 開啟 **KingInstaller**，點選**資料夾圖示**，選取已下載的 APK
 3. 點選**安裝** — KingInstaller 會以 Google Play 商店身份完成安裝
 
-### 第三步 — 在 Android Auto 中驗證
+### 第三步 — 授予權限
+
+啟動 **ScreenOnAuto**，依照 App 內提示授予所需權限。
+
+## 在 Android Auto 中驗證
+
+**無論你用哪種方式安裝**——KingInstaller sideload 或 Play 測試版——都適用此段。
 
 在手機上前往 **設定 → 已連結的裝置 → Android Auto → 自訂啟動器**。
 您應可看到 **三個** ScreenOnAuto 項目：
@@ -66,11 +72,7 @@
 | <img src="images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | 透過 Android Auto 原生媒體介面控制手機上的播放器 |
 
 若三個項目皆出現，代表安裝成功。
-若其中一個缺失，請重新透過 KingInstaller 安裝，並確認其安裝來源為 Google Play 商店。
-
-### 第四步 — 授予權限
-
-啟動 **ScreenOnAuto**，依照 App 內提示授予所需權限。
+若其中一個缺失：sideload 安裝者請重新透過 KingInstaller 安裝並確認安裝來源為 Google Play 商店;Play 測試版者請確認 Play 版已安裝完成,再重新開啟 Android Auto。
 
 ## 權限說明
 
