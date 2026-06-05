@@ -9,7 +9,7 @@
 > [!IMPORTANT]
 > **安裝方式取決於你的 Android 版本:**
 > - **Android 14 以上(含)** — **僅限 Play 商店測試版**。[加入測試者名單 →](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)
-> - **Android 13 以下(含)** — 用 KingInstaller sideload 安裝 APK([步驟見下方](#安裝步驟)),或改用 Play 測試版。
+> - **Android 13 以下(含)** — 用 KingInstaller sideload 安裝 APK([步驟見下方](#安裝步驟))，或改用 Play 測試版。
 
 ## 功能介紹
 
@@ -32,9 +32,9 @@
 
 ### Android 14 以上(含)— Play 商店測試版
 
-Android 14+ 不支援 sideload,請改透過 Play 商店內部測試軌道安裝。
+Android 14+ 不支援 sideload，請改透過 Play 商店內部測試軌道安裝。
 
-報名表單與詳細步驟請見 **[加入 Beta 測試](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)**。安裝完成後,啟動 App 並依相同方式授予 App 內權限。
+報名表單與詳細步驟請見 **[加入 Beta 測試](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)**。安裝完成後，啟動 App 並依相同方式授予 App 內權限。
 
 ### Android 13 以下(含)— 透過 KingInstaller sideload
 
@@ -74,7 +74,7 @@ Android 14+ 不支援 sideload,請改透過 Play 商店內部測試軌道安裝�
 | <img src="images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | 透過 Android Auto 原生媒體介面控制手機上的播放器 |
 
 若三個項目皆出現，代表安裝成功。
-若其中一個缺失：sideload 安裝者請重新透過 KingInstaller 安裝並確認安裝來源為 Google Play 商店;Play 測試版者請確認 Play 版已安裝完成,再重新開啟 Android Auto。
+若其中一個缺失：sideload 安裝者請重新透過 KingInstaller 安裝並確認安裝來源為 Google Play 商店；Play 測試版者請確認 Play 版已安裝完成，再重新開啟 Android Auto。
 
 ## 權限說明
 
