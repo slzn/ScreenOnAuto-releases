@@ -28,13 +28,9 @@
 - 手機已安裝 Android Auto
 - 支援 Android Auto 的車機
 
-## 加入 Play Beta 測試
-
-比起 sideload 更想透過 Google Play 安裝,或你是 **Android 14+**(不支援 sideload)?歡迎加入 Play 商店內部測試軌道。
-
-報名表單與詳細步驟請見 **[加入 Beta 測試](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)**。
-
 ## 安裝步驟
+
+### Android 13 以下(含)— 透過 KingInstaller sideload
 
 > **為什麼需要 KingInstaller？**  
 > Android Auto 要求 app 必須透過 Google Play 商店安裝。
@@ -42,21 +38,27 @@
 > 導致 Android Auto 拒絕使用。KingInstaller 能以 Google Play 商店身份安裝 APK，
 > 解決此限制。
 
-### 第一步 — 安裝 KingInstaller
+#### 第一步 — 安裝 KingInstaller
 
 1. 前往 [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases)，下載最新版 `KingInstaller.apk`
 2. 在手機上開啟：**設定 → 安全性 → 允許安裝未知來源應用程式**
 3. 開啟 `KingInstaller.apk` 並點選**安裝**
 
-### 第二步 — 透過 KingInstaller 安裝 ScreenOnAuto
+#### 第二步 — 透過 KingInstaller 安裝 ScreenOnAuto
 
 1. 從 [最新版本](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) 頁面下載最新的 `ScreenOnAuto-*.apk`
 2. 開啟 **KingInstaller**，點選**資料夾圖示**，選取已下載的 APK
 3. 點選**安裝** — KingInstaller 會以 Google Play 商店身份完成安裝
 
-### 第三步 — 授予權限
+#### 第三步 — 授予權限
 
 啟動 **ScreenOnAuto**，依照 App 內提示授予所需權限。
+
+### Android 14 以上(含)— Play 商店測試版
+
+Android 14+ 不支援 sideload,請改透過 Play 商店內部測試軌道安裝。
+
+報名表單與詳細步驟請見 **[加入 Beta 測試](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)**。安裝完成後,啟動 App 並依相同方式授予 App 內權限。
 
 ## 在 Android Auto 中驗證
 

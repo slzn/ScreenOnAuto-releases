@@ -28,13 +28,9 @@
 - Android Auto installed on phone
 - A vehicle supporting Android Auto
 
-## Join the Play Beta Test
-
-Prefer installing through Google Play instead of sideloading — or on **Android 14+** (sideload not supported)? Join the closed beta on the Play Store internal-testing track.
-
-See **[Join the Beta Test](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)** for the sign-up form and step-by-step instructions.
-
 ## Installation
+
+### Android 13 and below — sideload with KingInstaller
 
 > **Why KingInstaller?**  
 > Android Auto requires apps to be installed via Google Play Store.
@@ -42,21 +38,30 @@ See **[Join the Beta Test](https://github.com/slzn/ScreenOnAuto-releases/wiki/Jo
 > which Android Auto will reject. KingInstaller installs APKs while reporting
 > Google Play Store as the installer source.
 
-### Step 1 — Install KingInstaller
+#### Step 1 — Install KingInstaller
 
 1. Go to [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases) and download the latest `KingInstaller.apk`
 2. On your phone: **Settings → Security → Enable "Install unknown apps"** for your browser or file manager
 3. Open `KingInstaller.apk` and tap **Install**
 
-### Step 2 — Install ScreenOnAuto via KingInstaller
+#### Step 2 — Install ScreenOnAuto via KingInstaller
 
 1. Download the latest `ScreenOnAuto-*.apk` from the [latest release](https://github.com/slzn/ScreenOnAuto-releases/releases/latest)
 2. Open **KingInstaller**, tap the **folder icon**, and select the downloaded APK
 3. Tap **Install** — KingInstaller will install it as if it came from Google Play Store
 
-### Step 3 — Grant Permissions
+#### Step 3 — Grant Permissions
 
 Launch **ScreenOnAuto** and follow the in-app prompts to grant required permissions.
+
+### Android 14 and above — Play Store beta
+
+Sideloading is not supported on Android 14+. Install through the Play Store
+internal-testing track instead.
+
+See **[Join the Beta Test](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)**
+for the sign-up form and step-by-step instructions. After installing, launch the app and grant
+the in-app permissions the same way.
 
 ## Verify in Android Auto
 
