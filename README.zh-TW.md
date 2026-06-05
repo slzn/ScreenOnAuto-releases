@@ -2,12 +2,14 @@
 
 [English](README.md)
 
-> [!WARNING]
-> **僅支援 Android 13 以下版本。** 本應用程式不支援 Android 14 或更新版本。
-
 > 將您的手機螢幕鏡像至 Android Auto 顯示器，並支援透過多媒體按鈕控制手機播放。
 >
 > **完全免費，所有功能無需額外付費。**
+
+> [!IMPORTANT]
+> **安裝方式取決於你的 Android 版本:**
+> - **Android 13 以下(含)** — 用 KingInstaller sideload 安裝 APK([步驟見下方](#安裝步驟)),或改用 Play 測試版。
+> - **Android 14 以上(含)** — **僅限 Play 商店測試版**。[加入測試者名單 →](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)
 
 ## 功能介紹
 
@@ -29,6 +31,12 @@
 ## 下載
 
 前往 [Releases](https://github.com/slzn/ScreenOnAuto-releases/releases) 頁面，下載最新版 `ScreenOnAuto-V1.5.0.apk`。
+
+## 加入 Play Beta 測試
+
+比起 sideload 更想透過 Google Play 安裝,或你是 **Android 14+**(不支援 sideload)?歡迎加入 Play 商店內部測試軌道。
+
+報名表單與詳細步驟請見 **[加入 Beta 測試](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)**。
 
 ## 安裝步驟
 

@@ -2,12 +2,14 @@
 
 [繁體中文](README.zh-TW.md)
 
-> [!WARNING]
-> **Android 13 and below only.** This app does not support Android 14 or higher.
-
 > Mirror your Android phone screen to Android Auto display, with support for media button controls.
 >
 > **Free to use. No features require additional payment.**
+
+> [!IMPORTANT]
+> **How you install depends on your Android version:**
+> - **Android 13 and below** — sideload the APK with KingInstaller ([steps below](#installation)), or join the Play beta.
+> - **Android 14 and above** — available through the **Play Store beta only**. [Join the tester list →](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)
 
 ## Features
 
@@ -29,6 +31,12 @@
 ## Download
 
 Go to the [Releases](https://github.com/slzn/ScreenOnAuto-releases/releases) page and download the latest `ScreenOnAuto-V1.5.0.apk`.
+
+## Join the Play Beta Test
+
+Prefer installing through Google Play instead of sideloading — or on **Android 14+** (sideload not supported)? Join the closed beta on the Play Store internal-testing track.
+
+See **[Join the Beta Test](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)** for the sign-up form and step-by-step instructions.
 
 ## Installation
 
