@@ -17,7 +17,7 @@
 - **Media Session Proxy** — Control any phone media app from Android Auto's native media UI
 - **Auto Dim** — Automatically dim phone screen brightness during idle mirroring (15/30/60/120 s delay)
 - **Auto Start** — Begin mirroring automatically when Android Auto connects
-- **Keep Screen On** — Prevent the phone screen from sleeping during mirroring
+- **Prevent Sleep** — Prevent the phone screen from sleeping during mirroring
 - **Stop on Disconnect** — Automatically stop mirroring when Android Auto disconnects
 - **Auto Launch App** — Automatically launch a chosen app on the phone when mirroring starts and Android Auto is connected
 - **Touch Forwarding** *(Experimental)* — Tap/scroll/fling the AA display to control your phone
@@ -85,8 +85,7 @@ If any is missing: for a sideload install, reinstall via KingInstaller and ensur
 |---|---|
 | Screen Capture (MediaProjection) | Screen Mirroring |
 | Notification Listener | Media Session Proxy |
-| Write Settings | Auto Dim (brightness control) |
-| Display Over Other Apps | Detect user interaction to restore brightness after Auto Dim |
+| Display Over Other Apps | Auto Dim — dims the backlight and detects touch to restore brightness |
 | Accessibility Service | Touch Forwarding *(Experimental)* |
 
 > **Tip:** To avoid the Screen Capture permission dialog on every launch, you can pre-grant it via ADB — see [Grant Mirror Permission via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB).
