@@ -20,7 +20,7 @@
 - **Prevent Sleep** — Prevent the phone screen from sleeping during mirroring
 - **Stop on Disconnect** — Automatically stop mirroring when Android Auto disconnects
 - **Auto Launch App** — Automatically launch a chosen app on the phone when mirroring starts and Android Auto is connected
-- **Force Landscape** — Force the phone into landscape while mirroring so a portrait screen isn't letterboxed on the wide Android Auto display — auto-starts on connect, with an on-screen toggle
+- **Force Landscape** — Force the phone into landscape while mirroring; auto-starts on connect, with an on-screen toggle
 - **Launch Shortcuts** — Add up to 4 app quick-launch buttons to the Android Auto mirror screen
 - **Touch Forwarding** *(Experimental)* — Tap/scroll/fling the AA display to control your phone
 
