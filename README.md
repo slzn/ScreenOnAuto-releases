@@ -22,6 +22,9 @@
 - **Auto Launch App** — Automatically launch a chosen app on the phone when mirroring starts and Android Auto is connected
 - **Force Landscape** — Force the phone into landscape while mirroring; auto-starts on connect, with an on-screen toggle
 - **Launch Shortcuts** — Add up to 4 app quick-launch buttons to the Android Auto mirror screen
+- **On-screen Buttons** — Show or hide the mirror-screen buttons individually in Advanced settings: Force Landscape, Auto Dim, and phone Back / Home / Recent apps (up to 4 at once)
+- **Button Placement** — On the Legacy mirror, left-align the on-screen buttons or automatically avoid the phone's navigation bar
+- **Mirror Adjustment** — Trim the mirror width/height in Advanced settings for head units that crop the edges
 - **Touch Forwarding** *(Experimental)* — Tap/scroll/fling the AA display to control your phone
 
 ## Requirements
@@ -87,8 +90,8 @@ If any is missing: for a sideload install, reinstall via KingInstaller and ensur
 |---|---|
 | Screen Capture (MediaProjection) | Screen Mirroring |
 | Notification Listener | Media Session Proxy |
-| Display Over Other Apps | Auto Dim — dims the backlight and detects touch to restore brightness |
-| Accessibility Service | Touch Forwarding *(Experimental)* |
+| Display Over Other Apps | Auto Dim & Force Landscape |
+| Accessibility Service | Touch Forwarding *(Experimental)* & the Back / Home / Recent apps buttons |
 
 > **Tip:** To avoid the Screen Capture permission dialog on every launch, you can pre-grant it via ADB — see [Grant Mirror Permission via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB).
 
