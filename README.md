@@ -6,6 +6,8 @@
 >
 > **Free to use. No features require additional payment.**
 
+<p align="center"><img src="images/screenshot-legacy-split.png" alt="Phone screen mirrored on the Android Auto display, side-by-side with the map"></p>
+
 > [!IMPORTANT]
 > **How you install depends on your Android version:**
 > - **Android 14 and above** — available through the **Play Store beta only**. [Join the tester list →](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)

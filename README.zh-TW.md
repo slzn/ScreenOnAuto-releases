@@ -6,6 +6,8 @@
 >
 > **完全免費，所有功能無需額外付費。**
 
+<p align="center"><img src="images/screenshot-legacy-split.png" alt="手機畫面鏡像至 Android Auto 顯示器,與地圖並排顯示"></p>
+
 > [!IMPORTANT]
 > **安裝方式取決於你的 Android 版本:**
 > - **Android 14 以上(含)** — **僅限 Play 商店測試版**。[加入測試者名單 →](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)
