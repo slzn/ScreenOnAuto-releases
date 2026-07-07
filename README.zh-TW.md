@@ -81,6 +81,8 @@ Android 14+ 不支援 sideload，請改透過 Play 商店內部測試軌道安�
 若三個項目皆出現，代表安裝成功。
 若其中一個缺失：sideload 安裝者請重新透過 KingInstaller 安裝並確認安裝來源為 Google Play 商店；Play 測試版者請確認 Play 版已安裝完成，再重新開啟 Android Auto。
 
+安裝完成後，請見 **[如何使用](https://github.com/slzn/ScreenOnAuto-releases/wiki/如何使用)** 了解如何在車上啟動鏡像。
+
 ## 權限說明
 
 | 權限 | 用途 |

@@ -84,6 +84,8 @@ You should see **three** ScreenOnAuto entries:
 If all three entries appear, the installation was successful.
 If any is missing: for a sideload install, reinstall via KingInstaller and ensure it reports Google Play Store as the installer source; for the Play beta, make sure the Play build finished installing, then re-open Android Auto.
 
+Ready to go? See **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use)** for starting the mirror in the car.
+
 ## Permissions
 
 | Permission | Required For |
