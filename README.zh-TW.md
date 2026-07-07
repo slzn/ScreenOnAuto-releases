@@ -6,12 +6,12 @@
 >
 > **完全免費，所有功能無需額外付費。**
 
-<p align="center"><img src="images/screenshot-legacy-split.png" alt="手機畫面鏡像至 Android Auto 顯示器,與地圖並排顯示"></p>
+<p align="center"><img src="images/screenshot-legacy-split.png" alt="手機畫面鏡像至 Android Auto 顯示器，與地圖並排顯示"></p>
 
 > [!IMPORTANT]
-> **安裝方式取決於你的 Android 版本:**
-> - **Android 14 以上(含)** — **僅限 Play 商店測試版**。[加入測試者名單 →](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)
-> - **Android 13 以下(含)** — 用 KingInstaller sideload 安裝 APK([步驟見下方](#安裝步驟))，或改用 Play 測試版。
+> **安裝方式取決於你的 Android 版本：**
+> - **Android 14 以上（含）** — **僅限 Play 商店測試版**。[加入測試者名單 →](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)
+> - **Android 13 以下（含）** — 用 KingInstaller sideload 安裝 APK（[步驟見下方](#安裝步驟)），或改用 Play 測試版。
 
 ## 功能介紹
 
@@ -37,13 +37,13 @@
 
 ## 安裝步驟
 
-### Android 14 以上(含)— Play 商店測試版
+### Android 14 以上（含）— Play 商店測試版
 
 Android 14+ 不支援 sideload，請改透過 Play 商店內部測試軌道安裝。
 
 報名表單與詳細步驟請見 **[加入 Beta 測試](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)**。安裝完成後，啟動 App 並依相同方式授予 App 內權限。
 
-### Android 13 以下(含)— 透過 KingInstaller sideload
+### Android 13 以下（含）— 透過 KingInstaller sideload
 
 > **為什麼需要 KingInstaller？**  
 > Android Auto 要求 app 必須透過 Google Play 商店安裝。
@@ -96,9 +96,16 @@ Android 14+ 不支援 sideload，請改透過 Play 商店內部測試軌道安�
 
 > **小提示：** 若希望每次鏡像時不再顯示螢幕擷取權限對話框，可透過 ADB 預先授予此權限——請參閱[使用 ADB 授予鏡像權限](https://github.com/slzn/ScreenOnAuto-releases/wiki/使用-ADB-授予鏡像權限)。
 
+## 已知限制
+
+- **受 DRM 保護的內容無法鏡像** — Netflix、Disney+ 等 app 在鏡像畫面上會顯示黑畫面。這是 Android 平台的限制，app 無法繞過。
+- 車機畫面上的 **Android Auto 導覽列**由 Android Auto 自行繪製，無法隱藏。
+
 ## 免責聲明
 
 開車時請專注路況，切勿操作此應用程式。
+
+本專案與 Google 無任何關聯，亦未獲其認可或贊助。Android Auto 為 Google LLC 之商標。
 
 ## 贊助
 

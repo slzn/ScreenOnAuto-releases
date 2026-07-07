@@ -27,7 +27,7 @@
 - **On-screen Buttons** — Show or hide the mirror-screen buttons individually in Advanced settings: Force Landscape, Auto Dim, and phone Back / Home / Recent apps (up to 4 at once)
 - **Button Placement** — On the Legacy mirror, left-align the on-screen buttons or automatically avoid the phone's navigation bar
 - **Mirror Adjustment** — Trim the mirror width/height in Advanced settings for head units that crop the edges
-- **Touch Forwarding** *(Experimental)* — Tap/scroll/fling the AA display to control your phone
+- **Touch Forwarding** *(Experimental)* — Tap/scroll/fling the Android Auto display to control your phone
 
 ## Requirements
 
@@ -99,9 +99,16 @@ Ready to go? See **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wi
 
 > **Tip:** To avoid the Screen Capture permission dialog on every launch, you can pre-grant it via ADB — see [Grant Mirror Permission via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB).
 
+## Known Limitations
+
+- **DRM-protected content cannot be mirrored** — apps such as Netflix or Disney+ show a black screen on the mirror. This is an Android platform restriction that the app cannot work around.
+- The **Android Auto navigation bar** on the car screen is drawn by Android Auto itself and cannot be hidden.
+
 ## Disclaimer
 
 Always keep your eyes on the road — do not operate this app while driving.
+
+This project is not affiliated with, endorsed by, or sponsored by Google. Android Auto is a trademark of Google LLC.
 
 ## Sponsor
 
