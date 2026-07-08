@@ -10,7 +10,7 @@
 
 > [!IMPORTANT]
 > **How you install depends on your Android version:**
-> - **Android 14 and above** — available through the **Play Store beta only**. [Join the tester list →](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)
+> - **Android 14 and above** — available through the **Play Store beta only** (invite-based — the app is **not searchable** on the Play Store). [Join the tester list →](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)
 > - **Android 13 and below** — sideload the APK with KingInstaller ([steps below](#installation)), or join the Play beta.
 
 ## Features
@@ -40,7 +40,10 @@
 ### Android 14 and above — Play Store beta
 
 Sideloading is not supported on Android 14+. Install through the Play Store
-internal-testing track instead.
+internal-testing track instead. Note the app is **not searchable on the Play Store** —
+installation is invite-based: sign up with the form, receive an invite email
+(from `screenonauto@lzn.idv.tw` — check Spam/Promotions), then install via the
+Play link in that email.
 
 See **[Join the Beta Test](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)**
 for the sign-up form and step-by-step instructions. After installing, launch the app and grant

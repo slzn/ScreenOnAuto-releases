@@ -10,7 +10,7 @@
 
 > [!IMPORTANT]
 > **安裝方式取決於你的 Android 版本：**
-> - **Android 14 以上（含）** — **僅限 Play 商店測試版**。[加入測試者名單 →](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)
+> - **Android 14 以上（含）** — **僅限 Play 商店測試版**（採邀請制，**Play 商店搜尋不到**）。[加入測試者名單 →](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)
 > - **Android 13 以下（含）** — 用 KingInstaller sideload 安裝 APK（[步驟見下方](#安裝步驟)），或改用 Play 測試版。
 
 ## 功能介紹
@@ -39,7 +39,7 @@
 
 ### Android 14 以上（含）— Play 商店測試版
 
-Android 14+ 不支援 sideload，請改透過 Play 商店內部測試軌道安裝。
+Android 14+ 不支援 sideload，請改透過 Play 商店內部測試軌道安裝。注意：**Play 商店裡搜尋不到本 App** —— 採邀請制：先填報名表單，收到邀請信（寄件者 `screenonauto@lzn.idv.tw`，請留意垃圾郵件／促銷內容匣）後，再從信中的 Play 連結安裝。
 
 報名表單與詳細步驟請見 **[加入 Beta 測試](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)**。安裝完成後，啟動 App 並依相同方式授予 App 內權限。
 
