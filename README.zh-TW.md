@@ -10,8 +10,8 @@
 
 > [!IMPORTANT]
 > **安裝方式取決於你的 Android 版本：**
-> - **Android 14 以上（含）** — **僅限 Play 商店測試版**（採邀請制，**Play 商店搜尋不到**）。[加入測試者名單 →](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)
-> - **Android 13 以下（含）** — 用 KingInstaller sideload 安裝 APK（[步驟見下方](#安裝步驟)），或改用 Play 測試版。
+> - **Android 14 以上（含）** — **僅能透過 Play 商店安裝**（採邀請制，**商店搜尋不到**）。[加入測試者名單 →](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)
+> - **Android 13 以下（含）** — 用 KingInstaller sideload 安裝 APK（[步驟見下方](#安裝步驟)），或改用 Play 商店安裝。
 
 ## 功能介紹
 
@@ -37,9 +37,9 @@
 
 ## 安裝步驟
 
-### Android 14 以上（含）— Play 商店測試版
+### Android 14 以上（含）— 透過 Play 商店安裝
 
-Android 14+ 不支援 sideload，請改透過 Play 商店內部測試軌道安裝。注意：**Play 商店裡搜尋不到本 App** —— 採邀請制：先填報名表單，收到邀請信（寄件者 `screenonauto@lzn.idv.tw`，請留意垃圾郵件／促銷內容匣）後，再從信中的 Play 連結安裝。
+Android 14+ 不支援 sideload，請改透過 Play 商店安裝。發佈走 Play 的內部測試軌道，但安裝到的是**完整版 App**，內容與 GitHub 版本相同。注意：**Play 商店裡搜尋不到本 App** —— 採邀請制：先填報名表單，收到邀請信（寄件者 `screenonauto@lzn.idv.tw`，請留意垃圾郵件／促銷內容匣）後，再從信中的 Play 連結安裝。
 
 報名表單與詳細步驟請見 **[加入 Beta 測試](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)**。安裝完成後，啟動 App 並依相同方式授予 App 內權限。
 
@@ -69,7 +69,7 @@ Android 14+ 不支援 sideload，請改透過 Play 商店內部測試軌道安�
 
 ## 在 Android Auto 中驗證
 
-**無論你用哪種方式安裝**——KingInstaller sideload 或 Play 測試版——都適用此段。
+**無論你用哪種方式安裝**——KingInstaller sideload 或 Play 商店——都適用此段。
 
 在手機上前往 **設定 → 已連結的裝置 → Android Auto → 自訂啟動器**。
 您應可看到 **三個** ScreenOnAuto 項目：
@@ -81,7 +81,7 @@ Android 14+ 不支援 sideload，請改透過 Play 商店內部測試軌道安�
 | <img src="images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | 透過 Android Auto 原生媒體介面控制手機上的播放器 |
 
 若三個項目皆出現，代表安裝成功。
-若其中一個缺失：sideload 安裝者請重新透過 KingInstaller 安裝並確認安裝來源為 Google Play 商店；Play 測試版者請確認 Play 版已安裝完成，再重新開啟 Android Auto。
+若其中一個缺失：sideload 安裝者請重新透過 KingInstaller 安裝並確認安裝來源為 Google Play 商店；Play 商店安裝者請確認 Play 版已安裝完成，再重新開啟 Android Auto。
 
 安裝完成後，請見 **[如何使用](https://github.com/slzn/ScreenOnAuto-releases/wiki/如何使用)** 了解如何在車上啟動鏡像。
 

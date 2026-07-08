@@ -10,8 +10,8 @@
 
 > [!IMPORTANT]
 > **How you install depends on your Android version:**
-> - **Android 14 and above** — available through the **Play Store beta only** (invite-based — the app is **not searchable** on the Play Store). [Join the tester list →](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)
-> - **Android 13 and below** — sideload the APK with KingInstaller ([steps below](#installation)), or join the Play beta.
+> - **Android 14 and above** — install via **Google Play only** (invite-based — the app is **not searchable** on the Play Store). [Join the tester list →](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)
+> - **Android 13 and below** — sideload the APK with KingInstaller ([steps below](#installation)), or install via Google Play.
 
 ## Features
 
@@ -37,10 +37,12 @@
 
 ## Installation
 
-### Android 14 and above — Play Store beta
+### Android 14 and above — install via Google Play
 
-Sideloading is not supported on Android 14+. Install through the Play Store
-internal-testing track instead. Note the app is **not searchable on the Play Store** —
+Sideloading is not supported on Android 14+. Install through Google Play instead.
+Distribution uses Play's internal-testing track, but what you install is the
+**full app** — the same release as the GitHub APK. Note the app is **not searchable
+on the Play Store** —
 installation is invite-based: sign up with the form, receive an invite email
 (from `screenonauto@lzn.idv.tw` — check Spam/Promotions), then install via the
 Play link in that email.
@@ -75,7 +77,7 @@ Launch **ScreenOnAuto** and follow the in-app prompts to grant required permissi
 
 ## Verify in Android Auto
 
-This works **however you installed** — KingInstaller sideload *or* the Play beta.
+This works **however you installed** — KingInstaller sideload *or* Google Play.
 
 On your phone, go to **Settings → Connected devices → Android Auto → Customize Launcher**.
 You should see **three** ScreenOnAuto entries:
@@ -87,7 +89,7 @@ You should see **three** ScreenOnAuto entries:
 | <img src="images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | Controls any media app on the phone from Android Auto's native media UI |
 
 If all three entries appear, the installation was successful.
-If any is missing: for a sideload install, reinstall via KingInstaller and ensure it reports Google Play Store as the installer source; for the Play beta, make sure the Play build finished installing, then re-open Android Auto.
+If any is missing: for a sideload install, reinstall via KingInstaller and ensure it reports Google Play Store as the installer source; for a Google Play install, make sure the Play build finished installing, then re-open Android Auto.
 
 Ready to go? See **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use)** for starting the mirror in the car.
 
