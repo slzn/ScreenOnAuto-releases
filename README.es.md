@@ -91,7 +91,7 @@ Deberías ver **tres** entradas de ScreenOnAuto:
 Si aparecen las tres entradas, la instalación fue correcta.
 Si falta alguna: en una instalación por sideload, reinstala con KingInstaller y asegúrate de que registre Google Play Store como origen; en una instalación por Google Play, espera a que termine la instalación y vuelve a abrir Android Auto.
 
-¿Todo listo? Consulta **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use)** (en inglés) para iniciar la duplicación en el coche.
+¿Todo listo? Consulta **[Cómo Usar](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cómo-Usar)** para iniciar la duplicación en el coche.
 
 ## Permisos
 
@@ -102,7 +102,7 @@ Si falta alguna: en una instalación por sideload, reinstala con KingInstaller y
 | Mostrar sobre otras apps | Atenuación automática y Forzar horizontal |
 | Servicio de accesibilidad | Reenvío táctil *(experimental)* y los botones Atrás / Inicio / Apps recientes |
 
-> **Consejo:** para evitar el diálogo de permiso de captura de pantalla en cada inicio, puedes concederlo una sola vez vía ADB — consulta [Grant Mirror Permission via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB) (en inglés).
+> **Consejo:** para evitar el diálogo de permiso de captura de pantalla en cada inicio, puedes concederlo una sola vez vía ADB — consulta [Conceder Permiso de Duplicación por ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permiso-de-Duplicación-por-ADB).
 
 ## Limitaciones conocidas
 

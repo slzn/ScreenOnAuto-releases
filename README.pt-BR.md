@@ -91,7 +91,7 @@ Você deve ver **três** entradas do ScreenOnAuto:
 Se as três entradas aparecerem, a instalação foi bem-sucedida.
 Se alguma estiver faltando: em instalação por sideload, reinstale pelo KingInstaller e confirme que ele registra a Google Play Store como origem; em instalação pelo Google Play, aguarde a instalação do Play concluir e reabra o Android Auto.
 
-Tudo pronto? Veja **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use)** (em inglês) para iniciar o espelhamento no carro.
+Tudo pronto? Veja **[Como Usar](https://github.com/slzn/ScreenOnAuto-releases/wiki/Como-Usar)** para iniciar o espelhamento no carro.
 
 ## Permissões
 
@@ -102,7 +102,7 @@ Tudo pronto? Veja **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/w
 | Sobrepor a outros apps | Escurecimento automático e Forçar paisagem |
 | Serviço de acessibilidade | Encaminhamento de toque *(experimental)* e os botões Voltar / Início / Apps recentes |
 
-> **Dica:** para evitar o diálogo de permissão de captura de tela a cada início, você pode conceder a permissão uma única vez via ADB — veja [Grant Mirror Permission via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB) (em inglês).
+> **Dica:** para evitar o diálogo de permissão de captura de tela a cada início, você pode conceder a permissão uma única vez via ADB — veja [Conceder Permissão de Espelhamento via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permissão-de-Espelhamento-via-ADB).
 
 ## Limitações conhecidas
 

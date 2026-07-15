@@ -91,7 +91,7 @@ Dort sollten **drei** ScreenOnAuto-Einträge erscheinen:
 Wenn alle drei Einträge erscheinen, war die Installation erfolgreich.
 Falls einer fehlt: Bei einer Sideload-Installation über KingInstaller neu installieren und sicherstellen, dass der Google Play Store als Installationsquelle gemeldet wird; bei einer Google-Play-Installation warten, bis die Installation abgeschlossen ist, und Android Auto erneut öffnen.
 
-Startklar? Siehe **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use)** (auf Englisch) zum Starten der Spiegelung im Auto.
+Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wiki/Verwendung)** zum Starten der Spiegelung im Auto.
 
 ## Berechtigungen
 
@@ -102,7 +102,7 @@ Startklar? Siehe **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wi
 | Über anderen Apps einblenden | Automatisches Abdunkeln & Querformat erzwingen |
 | Bedienungshilfen-Dienst | Touch-Weiterleitung *(experimentell)* & die Tasten Zurück / Startbildschirm / Letzte Apps |
 
-> **Tipp:** Um den Berechtigungsdialog für die Bildschirmaufnahme nicht bei jedem Start zu sehen, kannst du die Berechtigung einmalig per ADB erteilen — siehe [Grant Mirror Permission via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB) (auf Englisch).
+> **Tipp:** Um den Berechtigungsdialog für die Bildschirmaufnahme nicht bei jedem Start zu sehen, kannst du die Berechtigung einmalig per ADB erteilen — siehe [Spiegelungsberechtigung per ADB erteilen](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen).
 
 ## Bekannte Einschränkungen
 
