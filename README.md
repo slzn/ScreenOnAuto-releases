@@ -43,9 +43,10 @@ Sideloading is not supported on Android 14+. Install through Google Play instead
 Distribution uses Play's internal-testing track, but what you install is the
 **full app** — the same release as the GitHub APK. Note the app is **not searchable
 on the Play Store** —
-installation is invite-based: sign up with the form, receive an invite email
-(from `screenonauto@lzn.idv.tw` — check Spam/Promotions), then install via the
-Play link in that email.
+installation is invite-based: submit the sign-up form **signed in with the Google
+account your phone's Play Store uses** (the form records that account — nothing to
+type), receive an invite email (from `screenonauto@lzn.idv.tw` — check
+Spam/Promotions), then install via the Play link in that email.
 
 See **[Join the Beta Test](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)**
 for the sign-up form and step-by-step instructions. After installing, launch the app and grant

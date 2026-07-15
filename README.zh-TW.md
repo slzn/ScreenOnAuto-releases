@@ -39,7 +39,7 @@
 
 ### Android 14 以上（含）— 透過 Play 商店安裝
 
-Android 14+ 不支援 sideload，請改透過 Play 商店安裝。發佈走 Play 的內部測試軌道，但安裝到的是**完整版 App**，內容與 GitHub 版本相同。注意：**Play 商店裡搜尋不到本 App** —— 採邀請制：先填報名表單，收到邀請信（寄件者 `screenonauto@lzn.idv.tw`，請留意垃圾郵件／促銷內容匣）後，再從信中的 Play 連結安裝。
+Android 14+ 不支援 sideload，請改透過 Play 商店安裝。發佈走 Play 的內部測試軌道，但安裝到的是**完整版 App**，內容與 GitHub 版本相同。注意：**Play 商店裡搜尋不到本 App** —— 採邀請制：以**手機 Play 商店使用的 Google 帳號**登入報名表單後送出（表單會自動記錄該帳號，不需填寫任何欄位），收到邀請信（寄件者 `screenonauto@lzn.idv.tw`，請留意垃圾郵件／促銷內容匣）後，再從信中的 Play 連結安裝。
 
 報名表單與詳細步驟請見 **[加入 Beta 測試](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)**。安裝完成後，啟動 App 並依相同方式授予 App 內權限。
 
