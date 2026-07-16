@@ -1,0 +1,9 @@
+# Keep GitHub Pages' default theme for the Jekyll-rendered README.*.md pages;
+# docs/ pages use the custom "doc" layout below.
+theme: jekyll-theme-primer
+
+defaults:
+  - scope:
+      path: "docs"
+    values:
+      layout: "doc"

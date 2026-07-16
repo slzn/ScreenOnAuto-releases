@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} — ScreenOnAuto</title>
+<meta name="description" content="{{ page.description }}">
+<link rel="canonical" href="https://lzn.idv.tw/ScreenOnAuto-releases{{ page.url }}">
+<link rel="icon" type="image/png" href="/ScreenOnAuto-releases/images/icon_launcher.png">
+{% assign variants = site.pages | where: "slug", page.slug | where_exp: "p", "p.lang" %}
+{%- for p in variants %}
+<link rel="alternate" hreflang="{{ p.lang }}" href="https://lzn.idv.tw/ScreenOnAuto-releases{{ p.url }}">
+{%- endfor %}
+{%- assign en_variant = variants | where: "lang", "en" | first %}
+<link rel="alternate" hreflang="x-default" href="https://lzn.idv.tw/ScreenOnAuto-releases{{ en_variant.url }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://lzn.idv.tw/ScreenOnAuto-releases{{ page.url }}">
+<meta property="og:title" content="{{ page.title }} — ScreenOnAuto">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:image" content="https://lzn.idv.tw/ScreenOnAuto-releases/images/screenshot-legacy-split.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": {{ page.title | jsonify }},
+  "inLanguage": "{{ page.lang }}",
+  "description": {{ page.description | jsonify }},
+  "url": "https://lzn.idv.tw/ScreenOnAuto-releases{{ page.url }}",
+  "author": { "@type": "Person", "name": "slzn", "url": "https://lzn.idv.tw" },
+  "about": { "@type": "SoftwareApplication", "name": "ScreenOnAuto", "operatingSystem": "Android 7.0 or later" }
+}
+</script>
+<link rel="stylesheet" href="/ScreenOnAuto-releases/styles.css">
+</head>
+<body>
+{%- if page.lang == "en" %}{% assign home = "/ScreenOnAuto-releases/" %}{% else %}{% assign home = "/ScreenOnAuto-releases/" | append: page.lang | append: "/" %}{% endif %}
+<header class="docbar">
+  <div class="wrap">
+    <a class="home" href="{{ home }}"><img src="/ScreenOnAuto-releases/images/icon_launcher.png" alt="">ScreenOnAuto</a>
+    <nav class="langs">
+      {%- for p in variants %}{% unless p.lang == page.lang %}
+      <a href="{{ p.url | prepend: "/ScreenOnAuto-releases" }}">{% case p.lang %}{% when "en" %}English{% when "zh-TW" %}繁體中文{% when "pt-BR" %}Português (Brasil){% when "es" %}Español{% when "de" %}Deutsch{% endcase %}</a>
+      {%- endunless %}{% endfor %}
+    </nav>
+  </div>
+</header>
+
+<main class="wrap doc">
+{{ content }}
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><a href="{{ home }}">ScreenOnAuto</a> · <a href="https://github.com/slzn/ScreenOnAuto-releases">GitHub</a> · <a href="https://github.com/slzn/ScreenOnAuto-releases/releases/latest">Releases</a></p>
+  </div>
+</footer>
+</body>
+</html>
