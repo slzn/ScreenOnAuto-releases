@@ -9,7 +9,7 @@ permalink: /docs/zh-TW/join-the-beta-test/
 # 加入 Beta 測試
 
 
-透過 Google Play 的 beta 測試者名單安裝 ScreenOnAuto。**Android 14 以上(含)必須**用此方式;**Android 13 以下(含)**可改用此方式或 sideload 安裝 APK(見 [安裝說明](/ScreenOnAuto-releases/zh-TW/#install))。
+透過 Google Play 的 beta 測試者名單安裝 ScreenOnAuto。**Android 14 以上(含)必須**用此方式;**Android 13 以下(含)**可改用此方式或 sideload 安裝 APK(見 [安裝說明](/zh-TW/#install))。
 
 > **ℹ️ 說明**
 > 這是安裝**完整的正式版 ScreenOnAuto**。Google 的 beta 測試者名單只是它的
@@ -30,8 +30,8 @@ permalink: /docs/zh-TW/join-the-beta-test/
 
 2. 你會收到一封確認信,內含**加入測試連結(opt-in link)**。點開並按**成為測試者(Become a tester)**。
 3. 從同一封信裡的 Play 商店連結進入,照一般方式安裝 **ScreenOnAuto**。
-4. **安裝完成後**,到手機的 **Android Auto → 自訂啟動器**,確認看得到**三個** ScreenOnAuto 項目(全螢幕、Legacy、媒體控制器)。完整清單與缺項處理請見 [在 Android Auto 中驗證](/ScreenOnAuto-releases/zh-TW/#verify)。
-5. 到這裡就完成了——上車後如何啟動鏡像,請見**[如何使用](/ScreenOnAuto-releases/docs/zh-TW/how-to-use/)**。
+4. **安裝完成後**,到手機的 **Android Auto → 自訂啟動器**,確認看得到**三個** ScreenOnAuto 項目(全螢幕、Legacy、媒體控制器)。完整清單與缺項處理請見 [在 Android Auto 中驗證](/zh-TW/#verify)。
+5. 到這裡就完成了——上車後如何啟動鏡像,請見**[如何使用](/docs/zh-TW/how-to-use/)**。
 
 ## 送出表單之後
 

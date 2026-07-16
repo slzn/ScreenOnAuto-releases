@@ -24,19 +24,19 @@ El lanzador de apps de Android Auto muestra **dos** entradas de duplicación. Am
 duplican la misma pantalla del teléfono — la diferencia es *cómo* se muestra la
 duplicación en la pantalla del coche:
 
-![Lanzador de Android Auto con las entradas de ScreenOnAuto](/ScreenOnAuto-releases/images/how-to-use/aa-launcher.png)
+![Lanzador de Android Auto con las entradas de ScreenOnAuto](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/ScreenOnAuto-releases/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/ScreenOnAuto-releases/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
+|  | <img src="/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
 |---|---|---|
 | Presentación | Pantalla completa — ocupa el área del mapa | En una **pantalla de coche lo bastante grande** puede ir **junto al mapa** en vista dividida; en pantallas pequeñas el mapa pasa al fondo y solo se muestra la duplicación (**no** sustituye al mapa) |
 
 **ScreenOnAuto** — pantalla completa, ocupando el área del mapa:
 
-![Duplicación de ScreenOnAuto a pantalla completa](/ScreenOnAuto-releases/images/how-to-use/nav-fullscreen.png)
+![Duplicación de ScreenOnAuto a pantalla completa](/images/how-to-use/nav-fullscreen.png)
 
 **ScreenOnAuto (Legacy)** — junto al mapa:
 
-![ScreenOnAuto (Legacy) junto al mapa](/ScreenOnAuto-releases/images/how-to-use/legacy-split.png)
+![ScreenOnAuto (Legacy) junto al mapa](/images/how-to-use/legacy-split.png)
 
 Prueba ambas y usa la que mejor funcione en tu unidad. Las dos muestran la misma
 duplicación y puedes cambiar en cualquier momento — con la duplicación en marcha, abrir
@@ -55,17 +55,17 @@ la otra entrada la muestra al instante sin volver a pedir permiso.
 
 1. En la app del teléfono, activa **Inicio automático** (configuración única).
 2. Conecta el teléfono al coche y toca una entrada de ScreenOnAuto
-   (<img src="/ScreenOnAuto-releases/images/icon_launcher.png" width="24" align="center"> o
-   <img src="/ScreenOnAuto-releases/images/icon_legacy.png" width="24" align="center">) en el lanzador de
+   (<img src="/images/icon_launcher.png" width="24" align="center"> o
+   <img src="/images/icon_legacy.png" width="24" align="center">) en el lanzador de
    Android Auto.
 3. El teléfono muestra automáticamente el diálogo de permiso de captura de pantalla —
    coge el teléfono y pulsa **Empezar ahora** (Start now):
 
-   <img src="/ScreenOnAuto-releases/images/how-to-use/capture-dialog.jpg" width="360" alt="Diálogo de permiso de captura de pantalla en el teléfono">
+   <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Diálogo de permiso de captura de pantalla en el teléfono">
 
 4. La pantalla de tu teléfono aparece en la unidad:
 
-   ![Pantalla del teléfono duplicada en la unidad](/ScreenOnAuto-releases/images/how-to-use/mirror-active.png)
+   ![Pantalla del teléfono duplicada en la unidad](/images/how-to-use/mirror-active.png)
 
 > **ℹ️ Nota**
 > El diálogo de permiso es un requisito de Android — aparece una vez cada vez que
@@ -88,7 +88,7 @@ interruptor **Duplicar pantalla** después.)
 ### Omitir el diálogo de permiso
 
 ¿Cansado de que el diálogo aparezca cada vez? Puedes conceder el permiso una sola vez
-vía ADB — consulta [Conceder Permiso de Duplicación por ADB](/ScreenOnAuto-releases/docs/es/grant-mirror-permission-via-adb/).
+vía ADB — consulta [Conceder Permiso de Duplicación por ADB](/docs/es/grant-mirror-permission-via-adb/).
 
 ## Detener la duplicación
 

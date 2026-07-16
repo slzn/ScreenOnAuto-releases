@@ -24,19 +24,19 @@ O launcher de apps do Android Auto mostra **duas** entradas de espelhamento. Amb
 espelham a mesma tela do celular — a diferença é *como* o espelhamento aparece na tela
 do carro:
 
-![Launcher do Android Auto com as entradas do ScreenOnAuto](/ScreenOnAuto-releases/images/how-to-use/aa-launcher.png)
+![Launcher do Android Auto com as entradas do ScreenOnAuto](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/ScreenOnAuto-releases/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/ScreenOnAuto-releases/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
+|  | <img src="/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
 |---|---|---|
 | Exibição | Tela cheia — ocupa a área do mapa | Em uma **tela de carro grande o suficiente** pode ficar **lado a lado com o mapa** em vista dividida; em telas menores o mapa vai para o fundo e só o espelhamento é mostrado (ele **não** substitui o mapa) |
 
 **ScreenOnAuto** — tela cheia, ocupando a área do mapa:
 
-![Espelhamento ScreenOnAuto em tela cheia](/ScreenOnAuto-releases/images/how-to-use/nav-fullscreen.png)
+![Espelhamento ScreenOnAuto em tela cheia](/images/how-to-use/nav-fullscreen.png)
 
 **ScreenOnAuto (Legacy)** — lado a lado com o mapa:
 
-![ScreenOnAuto (Legacy) lado a lado com o mapa](/ScreenOnAuto-releases/images/how-to-use/legacy-split.png)
+![ScreenOnAuto (Legacy) lado a lado com o mapa](/images/how-to-use/legacy-split.png)
 
 Experimente os dois e use o que funcionar melhor na sua central. Ambos mostram o mesmo
 espelhamento e você pode alternar a qualquer momento — com o espelhamento já em
@@ -55,17 +55,17 @@ execução, abrir a outra entrada o exibe na hora, sem pedir permissão de novo.
 
 1. No app do celular, ative **Início automático** (configuração única).
 2. Conecte o celular ao carro e toque em uma entrada do ScreenOnAuto
-   (<img src="/ScreenOnAuto-releases/images/icon_launcher.png" width="24" align="center"> ou
-   <img src="/ScreenOnAuto-releases/images/icon_legacy.png" width="24" align="center">) no launcher do
+   (<img src="/images/icon_launcher.png" width="24" align="center"> ou
+   <img src="/images/icon_legacy.png" width="24" align="center">) no launcher do
    Android Auto.
 3. O celular mostra automaticamente o diálogo de permissão de captura de tela — pegue o
    celular e toque em **Começar agora** (Start now):
 
-   <img src="/ScreenOnAuto-releases/images/how-to-use/capture-dialog.jpg" width="360" alt="Diálogo de permissão de captura de tela no celular">
+   <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Diálogo de permissão de captura de tela no celular">
 
 4. A tela do seu celular aparece na central:
 
-   ![Tela do celular espelhada na central](/ScreenOnAuto-releases/images/how-to-use/mirror-active.png)
+   ![Tela do celular espelhada na central](/images/how-to-use/mirror-active.png)
 
 > **ℹ️ Nota**
 > O diálogo de permissão é uma exigência do Android — aparece uma vez a cada início de
@@ -88,7 +88,7 @@ Se preferir manter o **Início automático** desativado:
 ### Pular o diálogo de permissão
 
 Cansado do diálogo aparecer toda vez? Você pode conceder a permissão uma única vez via
-ADB — veja [Conceder Permissão de Espelhamento via ADB](/ScreenOnAuto-releases/docs/pt-BR/grant-mirror-permission-via-adb/).
+ADB — veja [Conceder Permissão de Espelhamento via ADB](/docs/pt-BR/grant-mirror-permission-via-adb/).
 
 ## Parar o espelhamento
 

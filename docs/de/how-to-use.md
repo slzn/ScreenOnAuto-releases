@@ -24,19 +24,19 @@ Der App-Launcher von Android Auto zeigt **zwei** Spiegelungs-Einträge. Beide sp
 denselben Telefonbildschirm — sie unterscheiden sich darin, *wie* die Spiegelung auf
 dem Fahrzeugbildschirm dargestellt wird:
 
-![Android-Auto-Launcher mit den ScreenOnAuto-Einträgen](/ScreenOnAuto-releases/images/how-to-use/aa-launcher.png)
+![Android-Auto-Launcher mit den ScreenOnAuto-Einträgen](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/ScreenOnAuto-releases/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/ScreenOnAuto-releases/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
+|  | <img src="/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
 |---|---|---|
 | Darstellung | Vollbild — belegt den Kartenbereich | Auf einem **ausreichend großen Fahrzeugbildschirm** kann er in geteilter Ansicht **neben der Karte** stehen; auf kleineren Bildschirmen wandert die Karte in den Hintergrund und nur die Spiegelung wird angezeigt (die Karte wird **nicht** ersetzt) |
 
 **ScreenOnAuto** — Vollbild, belegt den Kartenbereich:
 
-![ScreenOnAuto-Spiegelung im Vollbild](/ScreenOnAuto-releases/images/how-to-use/nav-fullscreen.png)
+![ScreenOnAuto-Spiegelung im Vollbild](/images/how-to-use/nav-fullscreen.png)
 
 **ScreenOnAuto (Legacy)** — neben der Karte:
 
-![ScreenOnAuto (Legacy) neben der Karte](/ScreenOnAuto-releases/images/how-to-use/legacy-split.png)
+![ScreenOnAuto (Legacy) neben der Karte](/images/how-to-use/legacy-split.png)
 
 Probiere beide aus und nutze den, der auf deiner Head-Unit besser funktioniert. Beide
 zeigen dieselbe Spiegelung, und du kannst jederzeit wechseln — läuft die Spiegelung
@@ -57,16 +57,16 @@ fragen.
 1. Aktiviere in der App auf dem Telefon **Automatisch starten** (einmalige Einrichtung).
 2. Verbinde das Telefon mit dem Auto und tippe im Android-Auto-Launcher auf einen
    ScreenOnAuto-Eintrag
-   (<img src="/ScreenOnAuto-releases/images/icon_launcher.png" width="24" align="center"> oder
-   <img src="/ScreenOnAuto-releases/images/icon_legacy.png" width="24" align="center">).
+   (<img src="/images/icon_launcher.png" width="24" align="center"> oder
+   <img src="/images/icon_legacy.png" width="24" align="center">).
 3. Das Telefon zeigt automatisch den Berechtigungsdialog für die Bildschirmaufnahme —
    nimm das Telefon und tippe auf **Jetzt starten** (Start now):
 
-   <img src="/ScreenOnAuto-releases/images/how-to-use/capture-dialog.jpg" width="360" alt="Berechtigungsdialog für die Bildschirmaufnahme auf dem Telefon">
+   <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Berechtigungsdialog für die Bildschirmaufnahme auf dem Telefon">
 
 4. Dein Telefonbildschirm erscheint auf der Head-Unit:
 
-   ![Telefonbildschirm auf der Head-Unit gespiegelt](/ScreenOnAuto-releases/images/how-to-use/mirror-active.png)
+   ![Telefonbildschirm auf der Head-Unit gespiegelt](/images/how-to-use/mirror-active.png)
 
 > **ℹ️ Hinweis**
 > Der Berechtigungsdialog ist eine Android-Vorgabe — er erscheint einmal bei jedem
@@ -89,7 +89,7 @@ Schalter **Bildschirmspiegelung** umlegen.)
 ### Berechtigungsdialog überspringen
 
 Genug vom Dialog bei jedem Start? Du kannst die Berechtigung einmalig per ADB erteilen
-— siehe [Spiegelungsberechtigung per ADB erteilen](/ScreenOnAuto-releases/docs/de/grant-mirror-permission-via-adb/).
+— siehe [Spiegelungsberechtigung per ADB erteilen](/docs/de/grant-mirror-permission-via-adb/).
 
 ## Spiegelung beenden
 

@@ -12,7 +12,7 @@ permalink: /docs/es/join-the-beta-test/
 Instala ScreenOnAuto mediante la lista de probadores beta de Google Play. Es
 **obligatorio en Android 14 o superior**; en **Android 13 o inferior** puedes usar este
 método o instalar el APK por sideload (consulta el
-[guía de instalación](/ScreenOnAuto-releases/es/#install)).
+[guía de instalación](/es/#install)).
 
 > **ℹ️ Nota**
 > Esto instala la **app ScreenOnAuto completa y oficial**. La lista de probadores
@@ -38,8 +38,8 @@ método o instalar el APK por sideload (consulta el
 
 2. Recibirás un correo de confirmación con un **enlace de participación (opt-in)**. Ábrelo y pulsa **Become a tester**.
 3. Abre el enlace de Play Store del mismo correo e instala **ScreenOnAuto** normalmente.
-4. **Tras instalar**, abre **Android Auto → Personalizar menú de aplicaciones** y confirma que aparecen las **tres** entradas de ScreenOnAuto (pantalla completa, Legacy y Media Controller). Consulta [Verificar en Android Auto](/ScreenOnAuto-releases/es/#verify) para la lista completa y qué hacer si falta alguna.
-5. Todo listo — consulta **[Cómo Usar](/ScreenOnAuto-releases/docs/es/how-to-use/)** para iniciar la duplicación en el coche.
+4. **Tras instalar**, abre **Android Auto → Personalizar menú de aplicaciones** y confirma que aparecen las **tres** entradas de ScreenOnAuto (pantalla completa, Legacy y Media Controller). Consulta [Verificar en Android Auto](/es/#verify) para la lista completa y qué hacer si falta alguna.
+5. Todo listo — consulta **[Cómo Usar](/docs/es/how-to-use/)** para iniciar la duplicación en el coche.
 
 ## Después de inscribirte
 

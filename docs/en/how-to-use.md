@@ -22,19 +22,19 @@ two mirror entries and how they differ, and the start-up flow step by step.
 Android Auto's app launcher shows **two** mirror entries. Both mirror the same phone
 screen — they differ in *how* the mirror is shown on the car screen:
 
-![Android Auto launcher showing the ScreenOnAuto entries](/ScreenOnAuto-releases/images/how-to-use/aa-launcher.png)
+![Android Auto launcher showing the ScreenOnAuto entries](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/ScreenOnAuto-releases/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/ScreenOnAuto-releases/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
+|  | <img src="/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
 |---|---|---|
 | Display | Full-screen — takes over the map area | On a **large enough car screen** it can sit **side-by-side with the map** in split view; on a smaller screen the map simply goes to the background and only the mirror is shown (it does **not** replace the map) |
 
 **ScreenOnAuto** — full-screen, taking over the map area:
 
-![ScreenOnAuto full-screen mirror](/ScreenOnAuto-releases/images/how-to-use/nav-fullscreen.png)
+![ScreenOnAuto full-screen mirror](/images/how-to-use/nav-fullscreen.png)
 
 **ScreenOnAuto (Legacy)** — side-by-side with the map:
 
-![ScreenOnAuto (Legacy) side-by-side with the map](/ScreenOnAuto-releases/images/how-to-use/legacy-split.png)
+![ScreenOnAuto (Legacy) side-by-side with the map](/images/how-to-use/legacy-split.png)
 
 Try both and use whichever works better on your head unit. Both show the same mirror,
 and you can switch between them at any time — once mirroring is running, opening the
@@ -52,17 +52,17 @@ other entry shows it right away without asking for permission again.
 
 1. In the app on the phone, turn on **Auto Start Mirror** (one-time setup).
 2. Connect the phone to the car and tap a ScreenOnAuto entry
-   (<img src="/ScreenOnAuto-releases/images/icon_launcher.png" width="24" align="center"> or
-   <img src="/ScreenOnAuto-releases/images/icon_legacy.png" width="24" align="center">) in the Android Auto
+   (<img src="/images/icon_launcher.png" width="24" align="center"> or
+   <img src="/images/icon_legacy.png" width="24" align="center">) in the Android Auto
    launcher.
 3. The phone brings up the screen-capture permission dialog automatically — pick up the
    phone and tap **Start now**:
 
-   <img src="/ScreenOnAuto-releases/images/how-to-use/capture-dialog.jpg" width="360" alt="Screen-capture permission dialog on the phone">
+   <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="Screen-capture permission dialog on the phone">
 
 4. Your phone screen appears on the head unit:
 
-   ![Phone screen mirrored on the head unit](/ScreenOnAuto-releases/images/how-to-use/mirror-active.png)
+   ![Phone screen mirrored on the head unit](/images/how-to-use/mirror-active.png)
 
 > **ℹ️ Note**
 > The permission dialog is an Android requirement — it appears once each time mirroring
@@ -84,7 +84,7 @@ switch after.)
 ### Skipping the permission dialog
 
 Tired of the dialog appearing every time? You can pre-grant the permission once via
-ADB — see [Grant Mirror Permission via ADB](/ScreenOnAuto-releases/docs/en/grant-mirror-permission-via-adb/).
+ADB — see [Grant Mirror Permission via ADB](/docs/en/grant-mirror-permission-via-adb/).
 
 ## Stop mirroring
 

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://screenonauto.lzn.idv.tw/sitemap.xml

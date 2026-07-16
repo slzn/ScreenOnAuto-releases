@@ -22,19 +22,19 @@ permalink: /docs/zh-TW/how-to-use/
 Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都是同一個手機畫面——差別
 在於鏡像**如何顯示**在車機上:
 
-![Android Auto 啟動器中的 ScreenOnAuto 項目](/ScreenOnAuto-releases/images/how-to-use/aa-launcher.png)
+![Android Auto 啟動器中的 ScreenOnAuto 項目](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/ScreenOnAuto-releases/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/ScreenOnAuto-releases/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
+|  | <img src="/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
 |---|---|---|
 | 顯示方式 | 全螢幕——佔用地圖區域 | 車機螢幕**夠大**時,分割檢視可**與地圖並排**;螢幕較小時地圖會退到背景、畫面上只顯示鏡像(並**不會**取代地圖) |
 
 **ScreenOnAuto**——全螢幕,佔用地圖區域:
 
-![ScreenOnAuto 全螢幕鏡像](/ScreenOnAuto-releases/images/how-to-use/nav-fullscreen.png)
+![ScreenOnAuto 全螢幕鏡像](/images/how-to-use/nav-fullscreen.png)
 
 **ScreenOnAuto (Legacy)**——與地圖並排:
 
-![ScreenOnAuto (Legacy) 與地圖並排顯示](/ScreenOnAuto-releases/images/how-to-use/legacy-split.png)
+![ScreenOnAuto (Legacy) 與地圖並排顯示](/images/how-to-use/legacy-split.png)
 
 兩個都試試,哪個在你的車機上表現好就用哪個。兩者顯示的是同一個鏡像,隨時可以切換——
 鏡像啟動後,打開另一個入口會直接顯示,不會再次要求權限。
@@ -50,15 +50,15 @@ Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都�
 
 1. 在手機的 app 中開啟**自動開始鏡像**(只需設定一次)。
 2. 把手機連上車機,在 Android Auto 啟動器點任一個 ScreenOnAuto 入口
-   (<img src="/ScreenOnAuto-releases/images/icon_launcher.png" width="24" align="center"> 或
-   <img src="/ScreenOnAuto-releases/images/icon_legacy.png" width="24" align="center">)。
+   (<img src="/images/icon_launcher.png" width="24" align="center"> 或
+   <img src="/images/icon_legacy.png" width="24" align="center">)。
 3. 手機會自動跳出螢幕擷取權限對話框——拿起手機點**立即開始**(Start now):
 
-   <img src="/ScreenOnAuto-releases/images/how-to-use/capture-dialog.jpg" width="360" alt="手機上的螢幕擷取權限對話框">
+   <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="手機上的螢幕擷取權限對話框">
 
 4. 手機畫面出現在車機上:
 
-   ![手機畫面鏡像到車機](/ScreenOnAuto-releases/images/how-to-use/mirror-active.png)
+   ![手機畫面鏡像到車機](/images/how-to-use/mirror-active.png)
 
 > **ℹ️ 說明**
 > 權限對話框是 Android 的規定——每次開始鏡像時出現一次,不是每次切換畫面都會跳。
@@ -78,7 +78,7 @@ Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都�
 ### 跳過權限對話框
 
 不想每個工作階段都跳對話框?可以用 ADB 預先授權一次——見
-[使用 ADB 授予鏡像權限](/ScreenOnAuto-releases/docs/zh-TW/grant-mirror-permission-via-adb/)。
+[使用 ADB 授予鏡像權限](/docs/zh-TW/grant-mirror-permission-via-adb/)。
 
 ## 停止鏡像
 

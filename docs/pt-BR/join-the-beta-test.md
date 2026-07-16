@@ -11,7 +11,7 @@ permalink: /docs/pt-BR/join-the-beta-test/
 
 Instale o ScreenOnAuto pela lista de testadores beta do Google Play. Isso é **obrigatório
 no Android 14 ou superior**; no **Android 13 ou inferior** você pode usar este método ou
-fazer sideload do APK (veja o [guia de instalação](/ScreenOnAuto-releases/pt-BR/#install)).
+fazer sideload do APK (veja o [guia de instalação](/pt-BR/#install)).
 
 > **ℹ️ Nota**
 > Isso instala o **app ScreenOnAuto completo e oficial**. A lista de testadores beta
@@ -37,8 +37,8 @@ fazer sideload do APK (veja o [guia de instalação](/ScreenOnAuto-releases/pt-B
 
 2. Você receberá um e-mail de confirmação com um **link de participação (opt-in)**. Abra-o e toque em **Become a tester**.
 3. Abra o link da Play Store no mesmo e-mail e instale o **ScreenOnAuto** normalmente.
-4. **Depois de instalar**, abra **Android Auto → Personalizar tela de início** e confirme que as **três** entradas do ScreenOnAuto aparecem (tela cheia, Legacy e Media Controller). Veja [Verificar no Android Auto](/ScreenOnAuto-releases/pt-BR/#verify) para a lista completa e o que fazer se alguma faltar.
-5. Tudo pronto — veja **[Como Usar](/ScreenOnAuto-releases/docs/pt-BR/how-to-use/)** para iniciar o espelhamento no carro.
+4. **Depois de instalar**, abra **Android Auto → Personalizar tela de início** e confirme que as **três** entradas do ScreenOnAuto aparecem (tela cheia, Legacy e Media Controller). Veja [Verificar no Android Auto](/pt-BR/#verify) para a lista completa e o que fazer se alguma faltar.
+5. Tudo pronto — veja **[Como Usar](/docs/pt-BR/how-to-use/)** para iniciar o espelhamento no carro.
 
 ## Depois de se inscrever
 
