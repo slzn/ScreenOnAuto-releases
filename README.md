@@ -1,6 +1,6 @@
 # <img src="images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
 
-[繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md)
+[繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md)
 
 > Mirror your Android phone screen to Android Auto display, with support for media button controls.
 >

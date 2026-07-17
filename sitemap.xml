@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://screenonauto.lzn.idv.tw/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -11,11 +11,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/pt-BR/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/es/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/zh-TW/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -23,11 +25,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/pt-BR/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/es/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/pt-BR/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -35,11 +39,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/pt-BR/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/es/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/es/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -47,11 +53,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/pt-BR/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/es/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/de/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -59,11 +67,41 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/pt-BR/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/es/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/fr/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/it/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/zh-TW/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/pt-BR/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
@@ -71,11 +109,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/join-the-beta-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/join-the-beta-test/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/join-the-beta-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/zh-TW/join-the-beta-test/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
@@ -83,11 +123,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/join-the-beta-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/join-the-beta-test/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/join-the-beta-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/pt-BR/join-the-beta-test/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
@@ -95,11 +137,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/join-the-beta-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/join-the-beta-test/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/join-the-beta-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/es/join-the-beta-test/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
@@ -107,11 +151,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/join-the-beta-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/join-the-beta-test/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/join-the-beta-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/de/join-the-beta-test/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
@@ -119,11 +165,41 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/join-the-beta-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/join-the-beta-test/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/fr/join-the-beta-test/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/it/join-the-beta-test/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/join-the-beta-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/join-the-beta-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/en/how-to-use/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
@@ -131,11 +207,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/how-to-use/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/how-to-use/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/how-to-use/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/zh-TW/how-to-use/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
@@ -143,11 +221,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/how-to-use/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/how-to-use/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/how-to-use/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/pt-BR/how-to-use/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
@@ -155,11 +235,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/how-to-use/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/how-to-use/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/how-to-use/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/es/how-to-use/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
@@ -167,11 +249,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/how-to-use/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/how-to-use/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/how-to-use/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/de/how-to-use/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
@@ -179,11 +263,41 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/how-to-use/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/how-to-use/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/fr/how-to-use/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/it/how-to-use/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/how-to-use/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/how-to-use/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/"/>
@@ -191,11 +305,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/grant-mirror-permission-via-adb/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/grant-mirror-permission-via-adb/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/grant-mirror-permission-via-adb/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/zh-TW/grant-mirror-permission-via-adb/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/"/>
@@ -203,11 +319,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/grant-mirror-permission-via-adb/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/grant-mirror-permission-via-adb/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/grant-mirror-permission-via-adb/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/pt-BR/grant-mirror-permission-via-adb/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/"/>
@@ -215,11 +333,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/grant-mirror-permission-via-adb/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/grant-mirror-permission-via-adb/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/grant-mirror-permission-via-adb/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/es/grant-mirror-permission-via-adb/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/"/>
@@ -227,11 +347,13 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/grant-mirror-permission-via-adb/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/grant-mirror-permission-via-adb/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/grant-mirror-permission-via-adb/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/"/>
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/de/grant-mirror-permission-via-adb/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/"/>
@@ -239,6 +361,36 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/grant-mirror-permission-via-adb/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/grant-mirror-permission-via-adb/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/fr/grant-mirror-permission-via-adb/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/it/grant-mirror-permission-via-adb/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/grant-mirror-permission-via-adb/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/grant-mirror-permission-via-adb/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/"/>
   </url>
 </urlset>
