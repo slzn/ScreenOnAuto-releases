@@ -65,10 +65,27 @@
   </div>
 </header>
 
-<figure class="shot wrap">
-  <img src="images/screenshot-legacy-split.png" alt="Phone screen mirrored on the Android Auto display, side-by-side with the map" width="880">
-  <figcaption>Legacy mirror running side-by-side with the map on the Android Auto head unit.</figcaption>
-</figure>
+<div class="carousel wrap" role="region" aria-label="Screenshots" data-dot-label="Screenshot %d">
+  <div class="carousel-track">
+    <figure class="shot">
+      <img src="images/screenshot-legacy-split.png" alt="Phone screen mirrored on the Android Auto display, side-by-side with the map" width="880">
+      <figcaption>Legacy mirror running side-by-side with the map on the Android Auto head unit.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="images/how-to-use/nav-fullscreen.png" alt="ScreenOnAuto full-screen mirror on the Android Auto display" width="880" loading="lazy">
+      <figcaption>Full-screen mirror — the phone screen fills the entire head-unit display.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="images/how-to-use/aa-launcher.png" alt="Android Auto launcher showing the ScreenOnAuto entries" width="880" loading="lazy">
+      <figcaption>The three ScreenOnAuto entries in Android Auto's launcher.</figcaption>
+    </figure>
+  </div>
+  <div class="carousel-nav">
+    <button class="carousel-btn prev" type="button" aria-label="Previous screenshot">&#8249;</button>
+    <span class="carousel-dots"></span>
+    <button class="carousel-btn next" type="button" aria-label="Next screenshot">&#8250;</button>
+  </div>
+</div>
 
 <div class="wrap">
   <div class="notice">
@@ -166,5 +183,6 @@
   </div>
 </footer>
 
+<script src="carousel.js" defer></script>
 </body>
 </html>

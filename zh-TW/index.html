@@ -66,10 +66,27 @@
   </div>
 </header>
 
-<figure class="shot wrap">
-  <img src="../images/screenshot-legacy-split.png" alt="手機畫面鏡像至 Android Auto 顯示器，與地圖並排顯示" width="880">
-  <figcaption>Legacy 鏡像與地圖在 Android Auto 車機上並排顯示。</figcaption>
-</figure>
+<div class="carousel wrap" role="region" aria-label="畫面截圖" data-dot-label="第 %d 張截圖">
+  <div class="carousel-track">
+    <figure class="shot">
+      <img src="../images/screenshot-legacy-split.png" alt="手機畫面鏡像至 Android Auto 顯示器，與地圖並排顯示" width="880">
+      <figcaption>Legacy 鏡像與地圖在 Android Auto 車機上並排顯示。</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../images/how-to-use/nav-fullscreen.png" alt="ScreenOnAuto 全螢幕鏡像於 Android Auto 顯示器" width="880" loading="lazy">
+      <figcaption>全螢幕鏡像——手機畫面佔滿整個車機螢幕。</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../images/how-to-use/aa-launcher.png" alt="Android Auto 啟動器中的 ScreenOnAuto 項目" width="880" loading="lazy">
+      <figcaption>Android Auto 啟動器中的三個 ScreenOnAuto 項目。</figcaption>
+    </figure>
+  </div>
+  <div class="carousel-nav">
+    <button class="carousel-btn prev" type="button" aria-label="上一張">&#8249;</button>
+    <span class="carousel-dots"></span>
+    <button class="carousel-btn next" type="button" aria-label="下一張">&#8250;</button>
+  </div>
+</div>
 
 <div class="wrap">
   <div class="notice">
@@ -167,5 +184,6 @@
   </div>
 </footer>
 
+<script src="../carousel.js" defer></script>
 </body>
 </html>

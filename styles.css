@@ -38,6 +38,27 @@ section h2 { font-size: 1.55rem; margin: 0 0 18px; letter-spacing: -0.3px; }
 .shot { text-align: center; padding-top: 34px; }
 .shot img { border-radius: 12px; box-shadow: 0 6px 28px rgba(0,0,0,0.18); }
 .shot figcaption { color: var(--muted); font-size: 0.9rem; margin-top: 10px; }
+/* screenshot carousel (.shot slides inside a scroll-snap track; carousel.js adds autoplay/dots) */
+.carousel { padding-top: 10px; }
+.carousel-track {
+  display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+  scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  padding: 24px 0 6px;
+}
+.carousel-track::-webkit-scrollbar { display: none; }
+.carousel .shot {
+  flex: 0 0 100%; min-width: 100%; margin: 0; padding-top: 0;
+  scroll-snap-align: center; scroll-snap-stop: always;
+}
+.carousel-nav { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 6px; }
+.carousel-dots { display: inline-flex; gap: 9px; }
+.carousel-dot { width: 9px; height: 9px; border-radius: 50%; border: none; padding: 0; background: var(--border); cursor: pointer; }
+.carousel-dot.active { background: var(--accent); }
+.carousel-btn {
+  width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--border);
+  background: var(--card); color: var(--muted); font-size: 18px; line-height: 1; cursor: pointer;
+}
+.carousel-btn:hover { color: var(--accent); border-color: var(--accent); }
 .notice {
   background: var(--warn-bg); border: 1px solid var(--warn-border); border-radius: 12px;
   padding: 16px 20px; margin-top: 28px;

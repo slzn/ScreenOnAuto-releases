@@ -66,10 +66,27 @@
   </div>
 </header>
 
-<figure class="shot wrap">
-  <img src="../images/screenshot-legacy-split.png" alt="Pantalla del teléfono duplicada en la pantalla de Android Auto, junto al mapa" width="880">
-  <figcaption>Duplicación Legacy junto al mapa en la unidad principal de Android Auto.</figcaption>
-</figure>
+<div class="carousel wrap" role="region" aria-label="Capturas de pantalla" data-dot-label="Captura %d">
+  <div class="carousel-track">
+    <figure class="shot">
+      <img src="../images/screenshot-legacy-split.png" alt="Pantalla del teléfono duplicada en la pantalla de Android Auto, junto al mapa" width="880">
+      <figcaption>Duplicación Legacy junto al mapa en la unidad principal de Android Auto.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../images/how-to-use/nav-fullscreen.png" alt="Duplicación de ScreenOnAuto a pantalla completa en el display de Android Auto" width="880" loading="lazy">
+      <figcaption>Duplicación a pantalla completa — la pantalla del teléfono ocupa todo el display.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../images/how-to-use/aa-launcher.png" alt="Lanzador de Android Auto con las entradas de ScreenOnAuto" width="880" loading="lazy">
+      <figcaption>Las tres entradas de ScreenOnAuto en el lanzador de Android Auto.</figcaption>
+    </figure>
+  </div>
+  <div class="carousel-nav">
+    <button class="carousel-btn prev" type="button" aria-label="Captura anterior">&#8249;</button>
+    <span class="carousel-dots"></span>
+    <button class="carousel-btn next" type="button" aria-label="Siguiente captura">&#8250;</button>
+  </div>
+</div>
 
 <div class="wrap">
   <div class="notice">
@@ -167,5 +184,6 @@
   </div>
 </footer>
 
+<script src="../carousel.js" defer></script>
 </body>
 </html>

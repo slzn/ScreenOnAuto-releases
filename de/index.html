@@ -66,10 +66,27 @@
   </div>
 </header>
 
-<figure class="shot wrap">
-  <img src="../images/screenshot-legacy-split.png" alt="Telefonbildschirm auf dem Android-Auto-Display gespiegelt, neben der Karte" width="880">
-  <figcaption>Legacy-Spiegelung neben der Karte auf der Android-Auto-Head-Unit.</figcaption>
-</figure>
+<div class="carousel wrap" role="region" aria-label="Screenshots" data-dot-label="Screenshot %d">
+  <div class="carousel-track">
+    <figure class="shot">
+      <img src="../images/screenshot-legacy-split.png" alt="Telefonbildschirm auf dem Android-Auto-Display gespiegelt, neben der Karte" width="880">
+      <figcaption>Legacy-Spiegelung neben der Karte auf der Android-Auto-Head-Unit.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../images/how-to-use/nav-fullscreen.png" alt="ScreenOnAuto-Spiegelung im Vollbild auf dem Android-Auto-Display" width="880" loading="lazy">
+      <figcaption>Vollbild-Spiegelung — der Telefonbildschirm füllt das gesamte Display.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../images/how-to-use/aa-launcher.png" alt="Android-Auto-Launcher mit den ScreenOnAuto-Einträgen" width="880" loading="lazy">
+      <figcaption>Die drei ScreenOnAuto-Einträge im Android-Auto-Launcher.</figcaption>
+    </figure>
+  </div>
+  <div class="carousel-nav">
+    <button class="carousel-btn prev" type="button" aria-label="Vorheriger Screenshot">&#8249;</button>
+    <span class="carousel-dots"></span>
+    <button class="carousel-btn next" type="button" aria-label="Nächster Screenshot">&#8250;</button>
+  </div>
+</div>
 
 <div class="wrap">
   <div class="notice">
@@ -167,5 +184,6 @@
   </div>
 </footer>
 
+<script src="../carousel.js" defer></script>
 </body>
 </html>

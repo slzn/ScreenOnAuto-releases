@@ -66,10 +66,27 @@
   </div>
 </header>
 
-<figure class="shot wrap">
-  <img src="../images/screenshot-legacy-split.png" alt="Tela do celular espelhada na tela do Android Auto, lado a lado com o mapa" width="880">
-  <figcaption>Espelhamento Legacy lado a lado com o mapa na central multimídia do Android Auto.</figcaption>
-</figure>
+<div class="carousel wrap" role="region" aria-label="Capturas de tela" data-dot-label="Captura de tela %d">
+  <div class="carousel-track">
+    <figure class="shot">
+      <img src="../images/screenshot-legacy-split.png" alt="Tela do celular espelhada na tela do Android Auto, lado a lado com o mapa" width="880">
+      <figcaption>Espelhamento Legacy lado a lado com o mapa na central multimídia do Android Auto.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../images/how-to-use/nav-fullscreen.png" alt="Espelhamento ScreenOnAuto em tela cheia no display do Android Auto" width="880" loading="lazy">
+      <figcaption>Espelhamento em tela cheia — a tela do celular ocupa todo o display.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../images/how-to-use/aa-launcher.png" alt="Launcher do Android Auto com as entradas do ScreenOnAuto" width="880" loading="lazy">
+      <figcaption>As três entradas do ScreenOnAuto no launcher do Android Auto.</figcaption>
+    </figure>
+  </div>
+  <div class="carousel-nav">
+    <button class="carousel-btn prev" type="button" aria-label="Captura anterior">&#8249;</button>
+    <span class="carousel-dots"></span>
+    <button class="carousel-btn next" type="button" aria-label="Próxima captura">&#8250;</button>
+  </div>
+</div>
 
 <div class="wrap">
   <div class="notice">
@@ -167,5 +184,6 @@
   </div>
 </footer>
 
+<script src="../carousel.js" defer></script>
 </body>
 </html>
