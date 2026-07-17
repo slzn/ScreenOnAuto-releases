@@ -8,11 +8,7 @@ permalink: /docs/de/join-the-beta-test/
 
 # Beta-Test beitreten
 
-
-Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play. Auf **Android 14
-und höher ist das erforderlich**; auf **Android 13 und niedriger** kannst du diesen Weg
-nutzen oder das APK per Sideload installieren (siehe
-[Installationsanleitung](/de/#install)).
+Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play — auf **Android 14 und höher erforderlich**.
 
 > **ℹ️ Hinweis**
 > Installiert wird die **vollständige, offizielle ScreenOnAuto-App**. Googles
@@ -68,6 +64,7 @@ Um deinen Platz für jemand anderen freizugeben, öffne das **Austrittsformular*
 
 ## Hinweise
 
+- Auf **Android 13 und niedriger** ist der Beta-Beitritt optional — du kannst das APK auch per Sideload installieren (siehe [Installationsanleitung](/de/#install)).
 - Eine über Play installierte Version und ein per Sideload installiertes APK verwenden
   **unterschiedliche Signaturzertifikate** und können sich daher auf demselben Gerät
   nicht gegenseitig aktualisieren. Zum Kanalwechsel zuerst die vorhandene Version

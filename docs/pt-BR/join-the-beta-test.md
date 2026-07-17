@@ -8,10 +8,7 @@ permalink: /docs/pt-BR/join-the-beta-test/
 
 # Participar do Teste Beta
 
-
-Instale o ScreenOnAuto pela lista de testadores beta do Google Play. Isso é **obrigatório
-no Android 14 ou superior**; no **Android 13 ou inferior** você pode usar este método ou
-fazer sideload do APK (veja o [guia de instalação](/pt-BR/#install)).
+Instale o ScreenOnAuto pela lista de testadores beta do Google Play — **obrigatório no Android 14 ou superior**.
 
 > **ℹ️ Nota**
 > Isso instala o **app ScreenOnAuto completo e oficial**. A lista de testadores beta
@@ -67,6 +64,7 @@ conta que deseja remover** e envie:
 
 ## Observações
 
+- No **Android 13 ou inferior**, entrar no beta é opcional — você também pode fazer sideload do APK (veja o [guia de instalação](/pt-BR/#install)).
 - Uma versão instalada pelo Play e um APK em sideload usam **certificados de assinatura
   diferentes**, então uma não atualiza a outra no mesmo aparelho. Para trocar de canal,
   desinstale a existente primeiro.

@@ -8,8 +8,7 @@ permalink: /docs/zh-TW/join-the-beta-test/
 
 # 加入 Beta 測試
 
-
-透過 Google Play 的 beta 測試者名單安裝 ScreenOnAuto。**Android 14 以上(含)必須**用此方式;**Android 13 以下(含)**可改用此方式或 sideload 安裝 APK(見 [安裝說明](/zh-TW/#install))。
+透過 Google Play 的 beta 測試者名單安裝 ScreenOnAuto——**Android 14 以上(含)必須**用此方式。
 
 > **ℹ️ 說明**
 > 這是安裝**完整的正式版 ScreenOnAuto**。Google 的 beta 測試者名單只是它的
@@ -49,4 +48,5 @@ permalink: /docs/zh-TW/join-the-beta-test/
 
 ## 注意事項
 
+- **Android 13 以下(含)**不一定要走 beta 名單,也可以改用 sideload 安裝 APK(見 [安裝說明](/zh-TW/#install))。
 - Play 安裝版與 sideload 的 APK 使用**不同的簽署憑證**,因此無法在同一台裝置上互相更新。要切換管道請先解除安裝現有的那個。

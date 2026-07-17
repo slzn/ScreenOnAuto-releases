@@ -8,11 +8,7 @@ permalink: /docs/es/join-the-beta-test/
 
 # Unirse a la Beta
 
-
-Instala ScreenOnAuto mediante la lista de probadores beta de Google Play. Es
-**obligatorio en Android 14 o superior**; en **Android 13 o inferior** puedes usar este
-método o instalar el APK por sideload (consulta el
-[guía de instalación](/es/#install)).
+Instala ScreenOnAuto mediante la lista de probadores beta de Google Play — **obligatorio en Android 14 o superior**.
 
 > **ℹ️ Nota**
 > Esto instala la **app ScreenOnAuto completa y oficial**. La lista de probadores
@@ -68,6 +64,7 @@ sesión iniciada en la cuenta que quieres eliminar** y envíalo:
 
 ## Notas
 
+- En **Android 13 o inferior**, unirse a la beta es opcional — también puedes instalar el APK por sideload (consulta la [guía de instalación](/es/#install)).
 - Una versión instalada desde Play y un APK por sideload usan **certificados de firma
   distintos**, así que no pueden actualizarse entre sí en el mismo dispositivo. Para
   cambiar de canal, desinstala primero la existente.
