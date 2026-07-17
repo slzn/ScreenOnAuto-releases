@@ -105,6 +105,7 @@ Ready to go? See **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wi
 
 ## Known Limitations
 
+- **The phone screen must stay on while mirroring** — the mirror simply shows what's on the phone screen, so it cannot keep running with the screen off or locked. Use **Prevent Sleep** to keep the screen awake, and **Auto Dim** to darken it and save battery instead of turning it off.
 - **DRM-protected content cannot be mirrored** — apps such as Netflix or Disney+ show a black screen on the mirror. This is an Android platform restriction that the app cannot work around.
 - The **Android Auto navigation bar** on the car screen is drawn by Android Auto itself and cannot be hidden.
 

@@ -106,6 +106,7 @@ Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wi
 
 ## Bekannte Einschränkungen
 
+- **Der Telefonbildschirm muss während der Spiegelung eingeschaltet bleiben** — die Spiegelung zeigt genau das, was auf dem Telefonbildschirm zu sehen ist; mit ausgeschaltetem oder gesperrtem Bildschirm läuft sie nicht weiter. Nutze **Ruhezustand verhindern**, um den Bildschirm wach zu halten, und **Automatisches Abdunkeln**, um ihn abzudunkeln und Akku zu sparen, statt ihn auszuschalten.
 - **DRM-geschützte Inhalte können nicht gespiegelt werden** — Apps wie Netflix oder Disney+ zeigen im Spiegel ein schwarzes Bild. Das ist eine Einschränkung der Android-Plattform, die die App nicht umgehen kann.
 - Die **Android-Auto-Navigationsleiste** auf dem Fahrzeugbildschirm wird von Android Auto selbst gezeichnet und lässt sich nicht ausblenden.
 

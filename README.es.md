@@ -106,6 +106,7 @@ Si falta alguna: en una instalación por sideload, reinstala con KingInstaller y
 
 ## Limitaciones conocidas
 
+- **La pantalla del teléfono debe permanecer encendida durante la duplicación** — la duplicación muestra exactamente lo que hay en la pantalla del teléfono, así que no puede continuar con la pantalla apagada o bloqueada. Usa **Evitar suspensión** para mantener la pantalla activa y **Atenuación automática** para oscurecerla y ahorrar batería en lugar de apagarla.
 - **El contenido protegido por DRM no se puede duplicar** — apps como Netflix o Disney+ muestran una pantalla negra en la duplicación. Es una restricción de la plataforma Android que la app no puede evitar.
 - La **barra de navegación de Android Auto** en la pantalla del coche la dibuja el propio Android Auto y no se puede ocultar.
 
