@@ -1,6 +1,6 @@
 # <img src="images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
 
-[English](README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md)
+[English](README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Türkçe](README.tr.md)
 
 > Esegui il mirroring dello schermo del tuo telefono Android sul display Android Auto, con supporto per i comandi multimediali.
 >

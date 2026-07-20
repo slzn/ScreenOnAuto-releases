@@ -39,7 +39,7 @@
     <a class="home" href="{{ home }}"><img src="/images/icon_launcher.png" alt="">ScreenOnAuto</a>
     <nav class="langs">
       {%- for p in variants %}{% unless p.lang == page.lang %}
-      <a href="{{ p.url }}">{% case p.lang %}{% when "en" %}English{% when "zh-TW" %}繁體中文{% when "pt-BR" %}Português (Brasil){% when "es" %}Español{% when "de" %}Deutsch{% when "fr" %}Français{% when "it" %}Italiano{% endcase %}</a>
+      <a href="{{ p.url }}">{% case p.lang %}{% when "en" %}English{% when "zh-TW" %}繁體中文{% when "pt-BR" %}Português (Brasil){% when "es" %}Español{% when "de" %}Deutsch{% when "fr" %}Français{% when "it" %}Italiano{% when "tr" %}Türkçe{% endcase %}</a>
       {%- endunless %}{% endfor %}
     </nav>
   </div>

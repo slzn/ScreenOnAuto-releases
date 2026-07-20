@@ -1,6 +1,6 @@
 # <img src="images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
 
-[English](README.md) | [繁體中文](README.zh-TW.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md)
+[English](README.md) | [繁體中文](README.zh-TW.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md) | [Türkçe](README.tr.md)
 
 > Espelhe a tela do seu celular Android na tela do Android Auto, com suporte a controles de mídia.
 >

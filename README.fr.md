@@ -1,6 +1,6 @@
 # <img src="images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
 
-[English](README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Italiano](README.it.md)
+[English](README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Italiano](README.it.md) | [Türkçe](README.tr.md)
 
 > Dupliquez l'écran de votre téléphone Android sur l'affichage Android Auto, avec prise en charge des commandes multimédias.
 >
