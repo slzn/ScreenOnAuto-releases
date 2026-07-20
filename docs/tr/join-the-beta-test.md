@@ -31,7 +31,7 @@ ScreenOnAuto'yu Google Play beta test kullanıcısı listesi üzerinden yükleyi
 1. **Katılım** formunu açın, istenirse oturum açın, e-postanızı kaydeden kutucuğu
    işaretleyin ve gönderin:
 
-   🟢 **Teste katıl:** https://docs.google.com/forms/d/1NbWZzm__eYXzPb1aFfa3j6aZTpo4Ke0G2bzd03cFAVE/viewform
+   🟢 **Teste katıl:** <https://docs.google.com/forms/d/1NbWZzm__eYXzPb1aFfa3j6aZTpo4Ke0G2bzd03cFAVE/viewform>
 
 2. **Katılım bağlantısı** içeren bir onay e-postası alacaksınız. Bağlantıyı açın ve **Test kullanıcısı ol**'a dokunun.
 3. Aynı e-postadaki Play Store bağlantısını açın ve **ScreenOnAuto**'yu normal şekilde yükleyin.
@@ -60,7 +60,7 @@ ScreenOnAuto'yu Google Play beta test kullanıcısı listesi üzerinden yükleyi
 Yerinizi bir başkasına bırakmak için **Ayrılma** formunu **kaldırmak istediğiniz
 hesapla oturum açmış olarak** açın ve gönderin:
 
-🔴 **Testten ayrıl:** https://docs.google.com/forms/d/1CaLlyfOFeduNU22GN9rufE4R-NlEEx3KExDPOvjawZ0/viewform
+🔴 **Testten ayrıl:** <https://docs.google.com/forms/d/1CaLlyfOFeduNU22GN9rufE4R-NlEEx3KExDPOvjawZ0/viewform>
 
 ## Notlar
 

@@ -30,7 +30,7 @@ Installa ScreenOnAuto tramite la lista di tester beta di Google Play — **obbli
 1. Apri il modulo di **iscrizione**, accedi se richiesto, spunta la casella che registra
    la tua e-mail e invia:
 
-   🟢 **Partecipa al test:** https://docs.google.com/forms/d/1fsxelIPFUv3nGCJzQvWkkxLcThG8wBpVZUzRpNIdX3I/viewform
+   🟢 **Partecipa al test:** <https://docs.google.com/forms/d/1fsxelIPFUv3nGCJzQvWkkxLcThG8wBpVZUzRpNIdX3I/viewform>
 
 2. Riceverai un'e-mail di conferma con un **link di opt-in**. Aprila e tocca **Diventa un tester**.
 3. Apri il link del Play Store nella stessa e-mail e installa **ScreenOnAuto** normalmente.
@@ -59,7 +59,7 @@ Installa ScreenOnAuto tramite la lista di tester beta di Google Play — **obbli
 Per liberare il tuo posto, apri il modulo di **uscita** **con l'account da rimuovere** e
 invia:
 
-🔴 **Lascia il test:** https://docs.google.com/forms/d/16LVH94NYk9-dhwmUwdddmhO5K4EeXkyhcd7okgu0wX0/viewform
+🔴 **Lascia il test:** <https://docs.google.com/forms/d/16LVH94NYk9-dhwmUwdddmhO5K4EeXkyhcd7okgu0wX0/viewform>
 
 ## Note
 
