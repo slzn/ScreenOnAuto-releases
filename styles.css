@@ -108,3 +108,4 @@ footer p { margin: 8px 0; }
 [dir="rtl"] .steps > li::before { left: auto; right: 0; }
 [dir="rtl"] .doc blockquote { border-left: 0; border-right: 4px solid var(--accent); border-radius: 8px 0 0 8px; }
 [dir="rtl"] .docbar .langs a { margin: 0 12px 0 0; }
+[dir="rtl"] pre { direction: ltr; text-align: left; }
