@@ -30,9 +30,29 @@
   "about": { "@type": "SoftwareApplication", "name": "ScreenOnAuto", "operatingSystem": "Android 7.0 or later" }
 }
 </script>
+<script>
+/* Apply saved theme before first paint; fall back to the system preference. */
+(function () {
+  var saved = localStorage.getItem("theme");
+  var light = matchMedia("(prefers-color-scheme: light)");
+  document.documentElement.dataset.theme =
+    (saved === "light" || saved === "dark") ? saved : (light.matches ? "light" : "dark");
+  light.addEventListener("change", function (e) {
+    if (!localStorage.getItem("theme"))
+      document.documentElement.dataset.theme = e.matches ? "light" : "dark";
+  });
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+<button class="theme-toggle" type="button" aria-label="Toggle light / dark theme">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M19.4 4.6l-1.8 1.8M6.4 17.6l-1.8 1.8"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+</button>
 {%- if page.lang == "en" %}{% assign home = "/" %}{% else %}{% assign home = "/" | append: page.lang | append: "/" %}{% endif %}
 <header class="docbar">
   <div class="wrap">
@@ -54,5 +74,12 @@
     <p><a href="{{ home }}">ScreenOnAuto</a> · <a href="https://github.com/slzn/ScreenOnAuto-releases">GitHub</a> · <a href="https://github.com/slzn/ScreenOnAuto-releases/releases/latest">Releases</a></p>
   </div>
 </footer>
+<script>
+document.querySelector(".theme-toggle").addEventListener("click", function () {
+  var next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+  document.documentElement.dataset.theme = next;
+  localStorage.setItem("theme", next);
+});
+</script>
 </body>
 </html>

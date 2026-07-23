@@ -1,73 +1,175 @@
+/* ============ tokens ============ */
+/* Night-drive palette. light-dark() resolves per color-scheme; the theme toggle
+   pins color-scheme via data-theme, otherwise the system preference applies. */
 :root {
-  --bg: #ffffff; --bg-alt: #f5f7fa; --text: #1c2733; --muted: #5b6b7b;
-  --accent: #2f7d4f; --accent-text: #ffffff; --border: #dde4ec;
-  --card: #ffffff; --warn-bg: #fff7e6; --warn-border: #e8c377;
+  color-scheme: light dark;
+  --bg: light-dark(#f3f5f7, #0f151c);
+  --bg-alt: light-dark(#eaeef2, #151d26);
+  --text: light-dark(#1a242e, #e9eff5);
+  --muted: light-dark(#5a6b7a, #90a2b3);
+  --accent: light-dark(#2f7d4f, #4cb578);
+  --accent-text: light-dark(#ffffff, #081009);
+  --border: light-dark(#dce3ea, #232f3b);
+  --card: light-dark(#ffffff, #151d26);
+  --warn-bg: light-dark(#fff7e6, #2e2717);
+  --warn-border: light-dark(#e8c377, #8a6d2f);
+  --amber: light-dark(#a97a1e, #d9a441);
+  /* "screen" surfaces stay dark in both themes, like the hardware they depict */
+  --panel: #0a0e13; --panel-line: #263340;
+  --panel-text: #8fa1b3; --panel-raise: #131a22;
+  --shadow: 0 22px 56px light-dark(rgba(23, 34, 45, 0.18), rgba(0, 0, 0, 0.45));
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #12181f; --bg-alt: #1a222c; --text: #e5ecf3; --muted: #94a4b4;
-    --accent: #46a06c; --accent-text: #0d1117; --border: #2c3844;
-    --card: #1e2833; --warn-bg: #2e2717; --warn-border: #8a6d2f;
-  }
-}
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
+
 * { box-sizing: border-box; }
 body {
   margin: 0; background: var(--bg); color: var(--text);
   font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 img { max-width: 100%; height: auto; }
 .wrap { max-width: 900px; margin: 0 auto; padding: 0 20px; }
-header.hero { background: var(--bg-alt); border-bottom: 1px solid var(--border); padding: 48px 0 40px; text-align: center; }
-.hero .app-icon { width: 88px; height: 88px; border-radius: 20px; }
-.hero h1 { font-size: 2.3rem; margin: 14px 0 8px; letter-spacing: -0.5px; }
-.hero .tagline { font-size: 1.2rem; color: var(--muted); max-width: 640px; margin: 0 auto 6px; }
-.hero .free { font-weight: 600; margin: 0 0 24px; }
-.cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 18px; }
+.mono { font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+/* ============ theme toggle (shown only once JS has set data-theme) ============ */
+.theme-toggle {
+  position: fixed; top: 18px; right: 18px; z-index: 10;
+  width: 40px; height: 40px; border-radius: 10px; cursor: pointer; padding: 0;
+  border: 1px solid var(--border); background: var(--card); color: var(--muted);
+  display: none; align-items: center; justify-content: center;
+}
+:root[data-theme] .theme-toggle { display: flex; }
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.theme-toggle svg { width: 18px; height: 18px; display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="light"] .theme-toggle .icon-moon { display: block; }
+
+/* ============ hero ============ */
+header.hero { padding: 72px 0 0; position: relative; overflow: hidden; }
+header.hero::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(620px 320px at 22% 30%, rgba(76, 181, 120, 0.07), transparent 70%);
+}
+.hero .wrap { position: relative; }
+.hero .eyebrow {
+  font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.8rem;
+  letter-spacing: 0.14em; color: var(--amber); margin: 0 0 14px;
+}
+.hero h1 {
+  font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 700;
+  font-size: clamp(2.1rem, 6vw, 3rem); letter-spacing: 0.01em; line-height: 1.1;
+  margin: 0 0 14px; display: flex; align-items: center; gap: 16px;
+}
+.hero .app-icon { width: 56px; height: 56px; border-radius: 14px; flex: none; }
+.hero .tagline { font-size: 1.18rem; color: var(--text); max-width: 38em; margin: 0 0 6px; }
+.hero .free { font-weight: 600; color: var(--muted); margin: 0 0 26px; }
+
+/* two install paths — the visitor's first decision, promoted to the primary CTA */
+.paths { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; max-width: 760px; margin: 0 0 20px; }
+.path {
+  display: block; border: 1px solid var(--border); border-radius: 14px;
+  padding: 16px 18px; text-decoration: none; color: var(--text); background: var(--card);
+}
+.path:hover { border-color: var(--accent); }
+.path .k {
+  display: block; font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--amber); margin-bottom: 7px;
+}
+.path b {
+  display: block; font-family: "Chakra Petch", system-ui, sans-serif;
+  font-weight: 600; font-size: 1.06rem; margin-bottom: 4px; color: var(--accent);
+}
+.path .d { display: block; color: var(--muted); font-size: 0.88rem; line-height: 1.5; }
+.path.primary { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--card)); }
+.langs { font-size: 0.85rem; color: var(--muted); font-family: "IBM Plex Mono", ui-monospace, monospace; }
+.langs a { margin-right: 10px; }
+
+/* ============ legacy hero buttons (still used by not-yet-migrated pages) ============ */
+.cta { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
 .btn {
   display: inline-block; padding: 12px 22px; border-radius: 10px; text-decoration: none;
-  font-weight: 600; border: 1px solid var(--accent);
+  font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 600;
+  letter-spacing: 0.02em; border: 1px solid var(--accent);
 }
 .btn.primary { background: var(--accent); color: var(--accent-text); }
 .btn.secondary { color: var(--accent); background: transparent; }
 .btn small { display: block; font-weight: 400; font-size: 0.78rem; opacity: 0.85; }
-.langs { font-size: 0.9rem; color: var(--muted); }
-.langs a { margin: 0 6px; }
-section { padding: 40px 0 8px; }
-section h2 { font-size: 1.55rem; margin: 0 0 18px; letter-spacing: -0.3px; }
+
+/* ============ screenshot carousel, framed as a head unit ============ */
 .shot { text-align: center; padding-top: 34px; }
-.shot img { border-radius: 12px; box-shadow: 0 6px 28px rgba(0,0,0,0.18); }
+.shot img { border-radius: 10px; }
 .shot figcaption { color: var(--muted); font-size: 0.9rem; margin-top: 10px; }
-/* screenshot carousel (.shot slides inside a scroll-snap track; carousel.js adds autoplay/dots) */
-.carousel { padding-top: 10px; }
+.carousel {
+  position: relative; margin-top: 34px;
+  background: var(--panel); border: 1px solid var(--panel-line); border-radius: 18px;
+  padding: 16px 20px 8px; box-shadow: var(--shadow);
+}
+.carousel::after { /* power LED */
+  content: ""; position: absolute; right: 16px; bottom: 16px;
+  width: 5px; height: 5px; border-radius: 50%; background: var(--amber);
+  box-shadow: 0 0 6px var(--amber);
+}
+@media (max-width: 940px) { .carousel { margin-left: 14px; margin-right: 14px; } }
 .carousel-track {
   display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
   scrollbar-width: none; -webkit-overflow-scrolling: touch;
-  padding: 24px 0 6px;
+  padding: 0 0 4px;
 }
 .carousel-track::-webkit-scrollbar { display: none; }
 .carousel .shot {
   flex: 0 0 100%; min-width: 100%; margin: 0; padding-top: 0;
   scroll-snap-align: center; scroll-snap-stop: always;
 }
-.carousel-nav { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 6px; }
-.carousel-dots { display: inline-flex; gap: 9px; }
-.carousel-dot { width: 9px; height: 9px; border-radius: 50%; border: none; padding: 0; background: var(--border); cursor: pointer; }
-.carousel-dot.active { background: var(--accent); }
-.carousel-btn {
-  width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--border);
-  background: var(--card); color: var(--muted); font-size: 18px; line-height: 1; cursor: pointer;
+.carousel .shot img { border-radius: 8px; clip-path: inset(3px 0 0 0 round 8px); /* the source screenshots carry a dashed artifact in their top pixel rows */ }
+.carousel .shot figcaption {
+  font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.78rem;
+  color: var(--panel-text); margin-top: 10px;
 }
-.carousel-btn:hover { color: var(--accent); border-color: var(--accent); }
+.carousel-nav { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 4px 0 8px; }
+.carousel-dots { display: inline-flex; gap: 9px; }
+.carousel-dot { width: 9px; height: 9px; border-radius: 50%; border: none; padding: 0; background: #2a3642; cursor: pointer; }
+.carousel-dot.active { background: #4cb578; }
+.carousel-btn {
+  width: 32px; height: 32px; border-radius: 50%; border: 1px solid #2a3642;
+  background: var(--panel-raise); color: var(--panel-text); font-size: 18px; line-height: 1; cursor: pointer;
+}
+.carousel-btn:hover { color: #4cb578; border-color: #4cb578; }
+
+/* ============ sections ============ */
+section { padding: 44px 0 8px; }
+section h2 {
+  font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 600;
+  font-size: 1.5rem; letter-spacing: 0.01em; margin: 0 0 20px;
+  display: flex; align-items: center; gap: 18px;
+}
+section h2::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+section h3 { font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 600; letter-spacing: 0.01em; }
+
 .notice {
   background: var(--warn-bg); border: 1px solid var(--warn-border); border-radius: 12px;
   padding: 16px 20px; margin-top: 28px;
 }
 .notice p { margin: 6px 0; }
+
+/* features: three core cards, then the compact rest */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
 .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
 .card b { display: block; margin-bottom: 4px; }
 .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+.grid.core { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); margin-bottom: 14px; }
+.grid.core .card { padding: 20px; border-top: 2px solid var(--accent); }
+.grid.core .card b {
+  font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 600;
+  font-size: 1.05rem; margin-bottom: 6px;
+}
+.grid.more { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; }
+.grid.more .card { padding: 12px 14px; }
+.grid.more .card b { font-size: 0.95rem; }
+.grid.more .card p { font-size: 0.88rem; }
+
 .steps { counter-reset: step; padding-left: 0; list-style: none; }
 .steps > li { position: relative; padding-left: 42px; margin: 14px 0; }
 .steps > li::before {
@@ -81,19 +183,25 @@ table { border-collapse: collapse; width: 100%; margin: 10px 0 20px; }
 th, td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: middle; }
 th { background: var(--bg-alt); }
 td img.mini { width: 44px; height: 44px; border-radius: 10px; }
-footer { border-top: 1px solid var(--border); margin-top: 48px; padding: 28px 0 40px; color: var(--muted); font-size: 0.9rem; }
+footer {
+  border-top: 1px solid var(--border); margin-top: 48px; padding: 28px 0 40px;
+  color: var(--muted); font-size: 0.85rem;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+}
 footer p { margin: 8px 0; }
+footer a { color: var(--muted); }
+footer a:hover { color: var(--accent); }
 .muted { color: var(--muted); }
 
-/* doc pages (wiki guides published under /docs/) */
+/* ============ doc pages (wiki guides published under /docs/) ============ */
 .docbar { background: var(--bg-alt); border-bottom: 1px solid var(--border); padding: 12px 0; }
 .docbar .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px; }
-.docbar .home { display: inline-flex; align-items: center; gap: 9px; font-weight: 700; color: var(--text); text-decoration: none; }
+.docbar .home { display: inline-flex; align-items: center; gap: 9px; font-weight: 700; color: var(--text); text-decoration: none; font-family: "Chakra Petch", system-ui, sans-serif; }
 .docbar .home img { width: 28px; height: 28px; border-radius: 7px; }
-.docbar .langs a { margin: 0 0 0 12px; font-size: 0.88rem; }
+.docbar .langs a { margin: 0 0 0 12px; font-size: 0.85rem; }
 .doc { max-width: 780px; padding-top: 10px; padding-bottom: 30px; }
-.doc h1 { font-size: 1.9rem; letter-spacing: -0.5px; margin-bottom: 0.4em; }
-.doc h2 { margin-top: 2em; font-size: 1.4rem; letter-spacing: -0.3px; }
+.doc h1 { font-family: "Chakra Petch", system-ui, sans-serif; font-size: 1.9rem; letter-spacing: 0.01em; margin-bottom: 0.4em; }
+.doc h2 { font-family: "Chakra Petch", system-ui, sans-serif; margin-top: 2em; font-size: 1.4rem; letter-spacing: 0.01em; }
 .doc h3 { margin-top: 1.6em; }
 .doc blockquote { margin: 16px 0; padding: 10px 16px; background: var(--bg-alt); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; }
 .doc blockquote p { margin: 6px 0; }
@@ -102,10 +210,24 @@ footer p { margin: 8px 0; }
 .doc pre code { background: none; padding: 0; }
 .doc img { border-radius: 8px; }
 
-/* RTL (ar) — logical-direction overrides for the physical left/right rules above */
+/* ============ RTL (ar) — logical-direction overrides for the physical rules above ============ */
 [dir="rtl"] th, [dir="rtl"] td { text-align: right; }
 [dir="rtl"] .steps > li { padding-left: 0; padding-right: 42px; }
 [dir="rtl"] .steps > li::before { left: auto; right: 0; }
 [dir="rtl"] .doc blockquote { border-left: 0; border-right: 4px solid var(--accent); border-radius: 8px 0 0 8px; }
 [dir="rtl"] .docbar .langs a { margin: 0 12px 0 0; }
 [dir="rtl"] pre { direction: ltr; text-align: left; }
+[dir="rtl"] .theme-toggle { right: auto; left: 18px; }
+[dir="rtl"] .langs a { margin-right: 0; margin-left: 10px; }
+[dir="rtl"] .carousel::after { right: auto; left: 16px; }
+/* Arabic script must not be letter-spaced — it breaks the letter joins */
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] .btn, [dir="rtl"] .path b,
+[dir="rtl"] .hero .eyebrow, [dir="rtl"] .path .k { letter-spacing: 0; }
+
+@media (max-width: 720px) {
+  header.hero { padding-top: 56px; }
+  .paths { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

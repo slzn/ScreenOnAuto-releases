@@ -46,19 +46,49 @@
 }
 </script>
 
+<script>
+/* Apply saved theme before first paint; fall back to the system preference. */
+(function () {
+  var saved = localStorage.getItem("theme");
+  var light = matchMedia("(prefers-color-scheme: light)");
+  document.documentElement.dataset.theme =
+    (saved === "light" || saved === "dark") ? saved : (light.matches ? "light" : "dark");
+  light.addEventListener("change", function (e) {
+    if (!localStorage.getItem("theme"))
+      document.documentElement.dataset.theme = e.matches ? "light" : "dark";
+  });
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
+<button class="theme-toggle" type="button" aria-label="Cambiar tema claro / oscuro">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M19.4 4.6l-1.8 1.8M6.4 17.6l-1.8 1.8"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+</button>
+
 <header class="hero">
   <div class="wrap">
-    <img class="app-icon" src="../images/icon_launcher.png" alt="Icono de la app ScreenOnAuto">
-    <h1>ScreenOnAuto</h1>
+    <p class="eyebrow">ANDROID · ANDROID AUTO · DUPLICACIÓN DE PANTALLA</p>
+    <h1><img class="app-icon" src="../images/icon_launcher.png" alt="Icono de la app ScreenOnAuto">ScreenOnAuto</h1>
     <p class="tagline">Duplica la pantalla de tu teléfono Android en la pantalla de Android&nbsp;Auto, con soporte para controles de medios.</p>
     <p class="free">Gratuito — ninguna función requiere pago adicional.</p>
-    <div class="cta">
-      <a class="btn primary" href="https://screenonauto.lzn.idv.tw/docs/es/join-the-beta-test/">Unirse a la beta de Google&nbsp;Play<small>Android 14 o superior (por invitación)</small></a>
-      <a class="btn secondary" href="https://github.com/slzn/ScreenOnAuto-releases/releases/latest">Descargar APK<small>Android 13 o inferior (sideload)</small></a>
+    <div class="paths">
+      <a class="path primary" href="https://screenonauto.lzn.idv.tw/docs/es/join-the-beta-test/">
+        <span class="k">Android 14 o superior</span>
+        <b>Unirse a la beta de Google&nbsp;Play</b>
+        <span class="d">Por invitación — la app no aparece en las búsquedas de Play Store.</span>
+      </a>
+      <a class="path" href="https://github.com/slzn/ScreenOnAuto-releases/releases/latest">
+        <span class="k">Android 13 o inferior</span>
+        <b>Descargar APK</b>
+        <span class="d">Sideload con KingInstaller — pasos abajo en esta página.</span>
+      </a>
     </div>
     <p class="langs">
       <a href="../">English</a> ·
@@ -100,20 +130,14 @@
   </div>
 </div>
 
-<div class="wrap">
-  <div class="notice">
-    <p><strong>Cómo instalar depende de tu versión de Android:</strong></p>
-    <p><b>Android 14 o superior</b> — instala <b>solo desde Google Play</b> (por invitación; la app no aparece en las búsquedas de Play Store). <a href="https://screenonauto.lzn.idv.tw/docs/es/join-the-beta-test/">Unirse a la lista de probadores →</a></p>
-    <p><b>Android 13 o inferior</b> — instala el APK con KingInstaller (<a href="#install">pasos abajo</a>) o desde Google Play.</p>
-  </div>
-</div>
-
 <section class="wrap" id="features">
   <h2>Funciones</h2>
-  <div class="grid">
+  <div class="grid core">
     <div class="card"><b>Duplicación de pantalla</b><p>Captura y duplica la pantalla del teléfono en la unidad principal de Android Auto en tiempo real.</p></div>
     <div class="card"><b>Proxy de sesión de medios</b><p>Controla cualquier app de medios del teléfono desde la interfaz de medios nativa de Android Auto.</p></div>
     <div class="card"><b>Reenvío táctil <span class="muted">(experimental)</span></b><p>Toca, desplaza y desliza en la pantalla de Android Auto para controlar el teléfono.</p></div>
+  </div>
+  <div class="grid more">
     <div class="card"><b>Inicio automático</b><p>Comienza a duplicar automáticamente cuando Android Auto se conecta.</p></div>
     <div class="card"><b>Lanzar app automáticamente</b><p>Abre automáticamente una app elegida en el teléfono cuando empieza la duplicación.</p></div>
     <div class="card"><b>Forzar horizontal</b><p>Fuerza el teléfono a modo horizontal durante la duplicación, con botón en pantalla.</p></div>
@@ -198,5 +222,12 @@
 </footer>
 
 <script src="../carousel.js" defer></script>
+<script>
+document.querySelector(".theme-toggle").addEventListener("click", function () {
+  var next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+  document.documentElement.dataset.theme = next;
+  localStorage.setItem("theme", next);
+});
+</script>
 </body>
 </html>

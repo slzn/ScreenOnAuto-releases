@@ -45,19 +45,49 @@
 }
 </script>
 
+<script>
+/* Apply saved theme before first paint; fall back to the system preference. */
+(function () {
+  var saved = localStorage.getItem("theme");
+  var light = matchMedia("(prefers-color-scheme: light)");
+  document.documentElement.dataset.theme =
+    (saved === "light" || saved === "dark") ? saved : (light.matches ? "light" : "dark");
+  light.addEventListener("change", function (e) {
+    if (!localStorage.getItem("theme"))
+      document.documentElement.dataset.theme = e.matches ? "light" : "dark";
+  });
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<button class="theme-toggle" type="button" aria-label="Toggle light / dark theme">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M19.4 4.6l-1.8 1.8M6.4 17.6l-1.8 1.8"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+</button>
+
 <header class="hero">
   <div class="wrap">
-    <img class="app-icon" src="images/icon_launcher.png" alt="ScreenOnAuto app icon">
-    <h1>ScreenOnAuto</h1>
+    <p class="eyebrow">ANDROID · ANDROID AUTO · SCREEN MIRRORING</p>
+    <h1><img class="app-icon" src="images/icon_launcher.png" alt="ScreenOnAuto app icon">ScreenOnAuto</h1>
     <p class="tagline">Mirror your Android phone screen to the Android&nbsp;Auto display, with support for media button controls.</p>
     <p class="free">Free to use — no features require additional payment.</p>
-    <div class="cta">
-      <a class="btn primary" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/">Join the Google&nbsp;Play beta<small>Android 14 and above (invite-based)</small></a>
-      <a class="btn secondary" href="https://github.com/slzn/ScreenOnAuto-releases/releases/latest">Download APK<small>Android 13 and below (sideload)</small></a>
+    <div class="paths">
+      <a class="path primary" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/">
+        <span class="k">Android 14 and above</span>
+        <b>Join the Google&nbsp;Play beta</b>
+        <span class="d">Invite-based — the app is not searchable on the Play Store.</span>
+      </a>
+      <a class="path" href="https://github.com/slzn/ScreenOnAuto-releases/releases/latest">
+        <span class="k">Android 13 and below</span>
+        <b>Download the APK</b>
+        <span class="d">Sideload with KingInstaller — steps below on this page.</span>
+      </a>
     </div>
     <p class="langs">
       <a href="zh-TW/">繁體中文</a> ·
@@ -99,20 +129,14 @@
   </div>
 </div>
 
-<div class="wrap">
-  <div class="notice">
-    <p><strong>How you install depends on your Android version:</strong></p>
-    <p><b>Android 14 and above</b> — install via <b>Google Play only</b> (invite-based; the app is not searchable on the Play Store). <a href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/">Join the tester list →</a></p>
-    <p><b>Android 13 and below</b> — sideload the APK with KingInstaller (<a href="#install">steps below</a>), or install via Google Play.</p>
-  </div>
-</div>
-
 <section class="wrap" id="features">
   <h2>Features</h2>
-  <div class="grid">
+  <div class="grid core">
     <div class="card"><b>Screen Mirroring</b><p>Capture and mirror your phone screen to the Android Auto head unit in real time.</p></div>
     <div class="card"><b>Media Session Proxy</b><p>Control any phone media app from Android Auto's native media UI.</p></div>
     <div class="card"><b>Touch Forwarding <span class="muted">(experimental)</span></b><p>Tap, scroll and fling the Android Auto display to control your phone.</p></div>
+  </div>
+  <div class="grid more">
     <div class="card"><b>Auto Start</b><p>Begin mirroring automatically when Android Auto connects.</p></div>
     <div class="card"><b>Auto Launch App</b><p>Automatically launch a chosen app on the phone when mirroring starts.</p></div>
     <div class="card"><b>Force Landscape</b><p>Force the phone into landscape while mirroring, with an on-screen toggle.</p></div>
@@ -197,5 +221,12 @@
 </footer>
 
 <script src="carousel.js" defer></script>
+<script>
+document.querySelector(".theme-toggle").addEventListener("click", function () {
+  var next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+  document.documentElement.dataset.theme = next;
+  localStorage.setItem("theme", next);
+});
+</script>
 </body>
 </html>

@@ -46,19 +46,49 @@
 }
 </script>
 
+<script>
+/* Apply saved theme before first paint; fall back to the system preference. */
+(function () {
+  var saved = localStorage.getItem("theme");
+  var light = matchMedia("(prefers-color-scheme: light)");
+  document.documentElement.dataset.theme =
+    (saved === "light" || saved === "dark") ? saved : (light.matches ? "light" : "dark");
+  light.addEventListener("change", function (e) {
+    if (!localStorage.getItem("theme"))
+      document.documentElement.dataset.theme = e.matches ? "light" : "dark";
+  });
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
+<button class="theme-toggle" type="button" aria-label="切換深淺色主題">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M19.4 4.6l-1.8 1.8M6.4 17.6l-1.8 1.8"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+</button>
+
 <header class="hero">
   <div class="wrap">
-    <img class="app-icon" src="../images/icon_launcher.png" alt="ScreenOnAuto 應用程式圖示">
-    <h1>ScreenOnAuto</h1>
+    <p class="eyebrow">ANDROID · ANDROID AUTO · 螢幕鏡像</p>
+    <h1><img class="app-icon" src="../images/icon_launcher.png" alt="ScreenOnAuto 應用程式圖示">ScreenOnAuto</h1>
     <p class="tagline">將您的手機螢幕鏡像至 Android&nbsp;Auto 顯示器，並支援透過多媒體按鈕控制手機播放。</p>
     <p class="free">完全免費——所有功能無需額外付費。</p>
-    <div class="cta">
-      <a class="btn primary" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/join-the-beta-test/">加入 Google&nbsp;Play Beta 測試<small>Android 14 以上（含），邀請制</small></a>
-      <a class="btn secondary" href="https://github.com/slzn/ScreenOnAuto-releases/releases/latest">下載 APK<small>Android 13 以下（含），sideload 安裝</small></a>
+    <div class="paths">
+      <a class="path primary" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/join-the-beta-test/">
+        <span class="k">Android 14 以上（含）</span>
+        <b>加入 Google&nbsp;Play Beta 測試</b>
+        <span class="d">採邀請制——Play 商店搜尋不到本 App。</span>
+      </a>
+      <a class="path" href="https://github.com/slzn/ScreenOnAuto-releases/releases/latest">
+        <span class="k">Android 13 以下（含）</span>
+        <b>下載 APK</b>
+        <span class="d">用 KingInstaller sideload 安裝——步驟見本頁下方。</span>
+      </a>
     </div>
     <p class="langs">
       <a href="../">English</a> ·
@@ -100,20 +130,14 @@
   </div>
 </div>
 
-<div class="wrap">
-  <div class="notice">
-    <p><strong>安裝方式取決於你的 Android 版本：</strong></p>
-    <p><b>Android 14 以上（含）</b>——<b>僅能透過 Play 商店安裝</b>（採邀請制，商店搜尋不到）。<a href="https://screenonauto.lzn.idv.tw/docs/zh-TW/join-the-beta-test/">加入測試者名單 →</a></p>
-    <p><b>Android 13 以下（含）</b>——用 KingInstaller sideload 安裝 APK（<a href="#install">步驟見下方</a>），或改用 Play 商店安裝。</p>
-  </div>
-</div>
-
 <section class="wrap" id="features">
   <h2>功能介紹</h2>
-  <div class="grid">
+  <div class="grid core">
     <div class="card"><b>螢幕鏡像</b><p>即時將手機螢幕內容顯示於 Android Auto 車機上。</p></div>
     <div class="card"><b>媒體工作階段代理</b><p>透過 Android Auto 原生媒體介面控制手機上的任意播放器。</p></div>
     <div class="card"><b>觸控轉發 <span class="muted">（實驗性）</span></b><p>在車機畫面上點擊、捲動、滑動即可操控手機。</p></div>
+  </div>
+  <div class="grid more">
     <div class="card"><b>自動啟動</b><p>連線 Android Auto 後自動開始鏡像。</p></div>
     <div class="card"><b>自動開啟應用程式</b><p>鏡像啟動後自動在手機上開啟指定的應用程式。</p></div>
     <div class="card"><b>強制橫向</b><p>鏡像期間將手機強制轉為橫向，並提供畫面開關。</p></div>
@@ -198,5 +222,12 @@
 </footer>
 
 <script src="../carousel.js" defer></script>
+<script>
+document.querySelector(".theme-toggle").addEventListener("click", function () {
+  var next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+  document.documentElement.dataset.theme = next;
+  localStorage.setItem("theme", next);
+});
+</script>
 </body>
 </html>
