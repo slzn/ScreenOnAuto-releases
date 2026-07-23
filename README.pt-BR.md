@@ -2,6 +2,8 @@
 
 [English](README.md) | [繁體中文](README.zh-TW.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md) | [Türkçe](README.tr.md) | [العربية](README.ar.md)
 
+*🌐 [Site oficial](https://screenonauto.lzn.idv.tw/pt-BR/)*
+
 > Espelhe a tela do seu celular Android na tela do Android Auto, com suporte a controles de mídia.
 >
 > **Gratuito. Nenhum recurso exige pagamento adicional.**

@@ -2,6 +2,8 @@
 
 [English](README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md) | [Türkçe](README.tr.md)
 
+*🌐 [الموقع الرسمي](https://screenonauto.lzn.idv.tw/ar/)*
+
 > اعرض شاشة هاتف Android على شاشة Android Auto بالنسخ المطابق، مع دعم أزرار التحكم بالوسائط.
 >
 > **مجاني بالكامل. لا تتطلب أي ميزة دفعًا إضافيًا.**

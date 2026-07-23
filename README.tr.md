@@ -2,6 +2,8 @@
 
 [English](README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md) | [العربية](README.ar.md)
 
+*🌐 [Resmî web sitesi](https://screenonauto.lzn.idv.tw/tr/)*
+
 > Android telefonunuzun ekranını Android Auto ekranına yansıtın; medya düğmesi kontrolleri de desteklenir.
 >
 > **Kullanımı ücretsizdir. Hiçbir özellik ek ödeme gerektirmez.**
