@@ -1,6 +1,6 @@
-# <img src="images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
+# <img src="../images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
 
-[English](README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md) | [العربية](README.ar.md)
+[English](../README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md) | [العربية](README.ar.md)
 
 *🌐 [Resmî web sitesi](https://screenonauto.lzn.idv.tw/tr/)*
 
@@ -8,7 +8,7 @@
 >
 > **Kullanımı ücretsizdir. Hiçbir özellik ek ödeme gerektirmez.**
 
-<p align="center"><img src="images/screenshot-legacy-split.png" alt="Android Auto ekranında haritayla yan yana yansıtılan telefon ekranı"></p>
+<p align="center"><img src="../images/screenshot-legacy-split.png" alt="Android Auto ekranında haritayla yan yana yansıtılan telefon ekranı"></p>
 
 > [!IMPORTANT]
 > **Kurulum yönteminiz Android sürümünüze bağlıdır:**
@@ -86,9 +86,9 @@ Telefonunuzda **Ayarlar → Bağlı cihazlar → Android Auto → Başlatıcıy�
 
 | Simge | Ad | İşlev |
 |---|---|---|
-| <img src="images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Telefon ekranını tam ekran yansıtır — tam ekran görünüm için harita alanının yerini alır |
-| <img src="images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Telefon ekranını Legacy projeksiyon yoluyla yansıtır — haritayla yan yana gösterilebilir |
-| <img src="images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | Telefondaki herhangi bir medya uygulamasını Android Auto'nun yerleşik medya arayüzünden kontrol eder |
+| <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Telefon ekranını tam ekran yansıtır — tam ekran görünüm için harita alanının yerini alır |
+| <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Telefon ekranını Legacy projeksiyon yoluyla yansıtır — haritayla yan yana gösterilebilir |
+| <img src="../images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | Telefondaki herhangi bir medya uygulamasını Android Auto'nun yerleşik medya arayüzünden kontrol eder |
 
 Üç giriş de görünüyorsa kurulum başarılıdır.
 Eksik olan varsa: elle yüklemede KingInstaller ile yeniden kurun ve yükleyici kaynağının Google Play Store olarak bildirildiğinden emin olun; Google Play kurulumunda Play sürümünün kurulumunun bittiğinden emin olun ve Android Auto'yu yeniden açın.

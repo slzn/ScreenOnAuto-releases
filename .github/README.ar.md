@@ -1,6 +1,6 @@
-# <img src="images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
+# <img src="../images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
 
-[English](README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md) | [Türkçe](README.tr.md)
+[English](../README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md) | [Türkçe](README.tr.md)
 
 *🌐 [الموقع الرسمي](https://screenonauto.lzn.idv.tw/ar/)*
 
@@ -8,7 +8,7 @@
 >
 > **مجاني بالكامل. لا تتطلب أي ميزة دفعًا إضافيًا.**
 
-<p align="center"><img src="images/screenshot-legacy-split.png" alt="شاشة الهاتف منسوخة على شاشة Android Auto جنبًا إلى جنب مع الخريطة"></p>
+<p align="center"><img src="../images/screenshot-legacy-split.png" alt="شاشة الهاتف منسوخة على شاشة Android Auto جنبًا إلى جنب مع الخريطة"></p>
 
 > [!IMPORTANT]
 > **تعتمد طريقة التثبيت على إصدار Android لديك:**
@@ -85,9 +85,9 @@
 
 | الأيقونة | الاسم | الوظيفة |
 |---|---|---|
-| <img src="images/icon_launcher.png" width="48"> | **ScreenOnAuto** | ينسخ شاشة الهاتف بملء الشاشة — يحل محل منطقة الخريطة لعرض كامل |
-| <img src="images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | ينسخ شاشة الهاتف عبر مسار العرض Legacy — يمكن عرضه جنبًا إلى جنب مع الخريطة |
-| <img src="images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | يتحكم بأي تطبيق وسائط على الهاتف من واجهة الوسائط المدمجة في Android Auto |
+| <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | ينسخ شاشة الهاتف بملء الشاشة — يحل محل منطقة الخريطة لعرض كامل |
+| <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | ينسخ شاشة الهاتف عبر مسار العرض Legacy — يمكن عرضه جنبًا إلى جنب مع الخريطة |
+| <img src="../images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | يتحكم بأي تطبيق وسائط على الهاتف من واجهة الوسائط المدمجة في Android Auto |
 
 إذا ظهرت الإدخالات الثلاثة فالتثبيت ناجح.
 إن غاب أي منها: في التثبيت اليدوي أعد التثبيت عبر KingInstaller وتأكد من الإعلان عن متجر Google Play كمصدر التثبيت؛ وفي تثبيت Google Play تأكد من اكتمال تثبيت نسخة Play ثم أعد فتح Android Auto.

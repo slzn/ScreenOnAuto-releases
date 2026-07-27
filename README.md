@@ -1,6 +1,6 @@
 # <img src="images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
 
-[繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md) | [Türkçe](README.tr.md) | [العربية](README.ar.md)
+[繁體中文](.github/README.zh-TW.md) | [Português (Brasil)](.github/README.pt-BR.md) | [Español](.github/README.es.md) | [Deutsch](.github/README.de.md) | [Français](.github/README.fr.md) | [Italiano](.github/README.it.md) | [Türkçe](.github/README.tr.md) | [العربية](.github/README.ar.md)
 
 *🌐 [Official website](https://screenonauto.lzn.idv.tw/)*
 

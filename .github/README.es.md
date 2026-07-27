@@ -1,6 +1,6 @@
-# <img src="images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
+# <img src="../images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
 
-[English](README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md) | [Türkçe](README.tr.md) | [العربية](README.ar.md)
+[English](../README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md) | [Türkçe](README.tr.md) | [العربية](README.ar.md)
 
 *🌐 [Sitio web oficial](https://screenonauto.lzn.idv.tw/es/)*
 
@@ -8,7 +8,7 @@
 >
 > **Gratuito. Ninguna función requiere pago adicional.**
 
-<p align="center"><img src="images/screenshot-legacy-split.png" alt="Pantalla del teléfono duplicada en la pantalla de Android Auto, junto al mapa"></p>
+<p align="center"><img src="../images/screenshot-legacy-split.png" alt="Pantalla del teléfono duplicada en la pantalla de Android Auto, junto al mapa"></p>
 
 > [!IMPORTANT]
 > **Cómo instalar depende de tu versión de Android:**
@@ -86,9 +86,9 @@ Deberías ver **tres** entradas de ScreenOnAuto:
 
 | Icono | Nombre | Función |
 |---|---|---|
-| <img src="images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Duplica la pantalla del teléfono a pantalla completa — sustituye el área del mapa |
-| <img src="images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Duplica la pantalla del teléfono por la vía de proyección Legacy — puede mostrarse junto al mapa |
-| <img src="images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | Controla cualquier app de medios del teléfono desde la interfaz de medios nativa de Android Auto |
+| <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Duplica la pantalla del teléfono a pantalla completa — sustituye el área del mapa |
+| <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Duplica la pantalla del teléfono por la vía de proyección Legacy — puede mostrarse junto al mapa |
+| <img src="../images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | Controla cualquier app de medios del teléfono desde la interfaz de medios nativa de Android Auto |
 
 Si aparecen las tres entradas, la instalación fue correcta.
 Si falta alguna: en una instalación por sideload, reinstala con KingInstaller y asegúrate de que registre Google Play Store como origen; en una instalación por Google Play, espera a que termine la instalación y vuelve a abrir Android Auto.

@@ -1,4 +1,5 @@
-# Keep GitHub Pages' default theme for the Jekyll-rendered README.*.md pages;
+# Keep GitHub Pages' default theme for the Jekyll-rendered root README.md page
+# (the translated READMEs live in .github/, which Jekyll excludes);
 # docs/ pages use the custom "doc" layout below.
 theme: jekyll-theme-primer
 

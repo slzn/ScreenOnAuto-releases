@@ -1,6 +1,6 @@
-# <img src="images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
+# <img src="../images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
 
-[English](README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Türkçe](README.tr.md) | [العربية](README.ar.md)
+[English](../README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Türkçe](README.tr.md) | [العربية](README.ar.md)
 
 *🌐 [Sito ufficiale](https://screenonauto.lzn.idv.tw/it/)*
 
@@ -8,7 +8,7 @@
 >
 > **Gratuita. Nessuna funzionalità richiede pagamenti aggiuntivi.**
 
-<p align="center"><img src="images/screenshot-legacy-split.png" alt="Schermo del telefono in mirroring sul display Android Auto, affiancato alla mappa"></p>
+<p align="center"><img src="../images/screenshot-legacy-split.png" alt="Schermo del telefono in mirroring sul display Android Auto, affiancato alla mappa"></p>
 
 > [!IMPORTANT]
 > **Il metodo di installazione dipende dalla versione di Android:**
@@ -86,9 +86,9 @@ Dovresti vedere **tre** voci ScreenOnAuto:
 
 | Icona | Nome | Funzione |
 |---|---|---|
-| <img src="images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Mirroring dello schermo a schermo intero — sostituisce l'area della mappa |
-| <img src="images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Mirroring tramite il percorso di proiezione Legacy — può essere affiancato alla mappa |
-| <img src="images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | Controlla qualsiasi app multimediale del telefono dall'interfaccia multimediale nativa di Android Auto |
+| <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Mirroring dello schermo a schermo intero — sostituisce l'area della mappa |
+| <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Mirroring tramite il percorso di proiezione Legacy — può essere affiancato alla mappa |
+| <img src="../images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | Controlla qualsiasi app multimediale del telefono dall'interfaccia multimediale nativa di Android Auto |
 
 Se compaiono tutte e tre le voci, l'installazione è riuscita.
 Se ne manca qualcuna: per un'installazione KingInstaller, reinstalla verificando che Google Play Store risulti come origine; per un'installazione Google Play, attendi che l'installazione sia completata e riapri Android Auto.
