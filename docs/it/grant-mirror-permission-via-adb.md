@@ -4,6 +4,8 @@ description: "Pre-concedi l'autorizzazione di cattura schermo di ScreenOnAuto vi
 lang: it
 slug: grant-mirror-permission-via-adb
 permalink: /docs/it/grant-mirror-permission-via-adb/
+date: 2026-07-17
+last_modified_at: 2026-07-17
 ---
 
 # Concedere il permesso di mirroring via ADB

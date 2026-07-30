@@ -4,6 +4,8 @@ description: "Concede el permiso de captura de pantalla de ScreenOnAuto por ADB 
 lang: es
 slug: grant-mirror-permission-via-adb
 permalink: /docs/es/grant-mirror-permission-via-adb/
+date: 2026-07-16
+last_modified_at: 2026-07-16
 ---
 
 # Conceder Permiso de Duplicación por ADB

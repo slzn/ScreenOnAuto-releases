@@ -4,6 +4,8 @@ description: "Starting the ScreenOnAuto mirror once the phone is connected: the 
 lang: en
 slug: how-to-use
 permalink: /docs/en/how-to-use/
+date: 2026-07-16
+last_modified_at: 2026-07-16
 ---
 
 # How to Use

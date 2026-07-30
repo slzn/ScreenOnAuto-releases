@@ -4,6 +4,8 @@ description: "透過 Play 商店內部測試軌道安裝 ScreenOnAuto（Android 
 lang: zh-TW
 slug: join-the-beta-test
 permalink: /docs/zh-TW/join-the-beta-test/
+date: 2026-07-16
+last_modified_at: 2026-07-17
 ---
 
 # 加入 Beta 測試

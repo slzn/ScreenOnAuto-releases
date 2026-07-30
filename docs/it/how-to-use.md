@@ -4,6 +4,8 @@ description: "Avviare il mirroring di ScreenOnAuto una volta collegato il telefo
 lang: it
 slug: how-to-use
 permalink: /docs/it/how-to-use/
+date: 2026-07-17
+last_modified_at: 2026-07-17
 ---
 
 # Come si usa

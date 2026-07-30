@@ -26,6 +26,8 @@
   "inLanguage": "{{ page.lang }}",
   "description": {{ page.description | jsonify }},
   "url": "https://screenonauto.lzn.idv.tw{{ page.url }}",
+  "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date: '%Y-%m-%d' }}",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "about": { "@type": "SoftwareApplication", "name": "ScreenOnAuto", "operatingSystem": "Android 7.0 or later" }
 }
@@ -67,6 +69,9 @@
 
 <main class="wrap doc">
 {{ content }}
+
+{%- assign updated = page.last_modified_at | default: page.date %}
+<p class="updated">{% case page.lang %}{% when "en" %}Last updated{% when "zh-TW" %}最後更新{% when "pt-BR" %}Última atualização{% when "es" %}Última actualización{% when "de" %}Zuletzt aktualisiert{% when "fr" %}Dernière mise à jour{% when "it" %}Ultimo aggiornamento{% when "tr" %}Son güncelleme{% when "ar" %}آخر تحديث{% endcase %}: <time datetime="{{ updated | date: '%Y-%m-%d' }}">{{ updated | date: '%Y-%m-%d' }}</time></p>
 </main>
 
 <footer>

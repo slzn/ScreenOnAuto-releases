@@ -4,6 +4,8 @@ description: "Install ScreenOnAuto via the Play Store internal-testing track (re
 lang: en
 slug: join-the-beta-test
 permalink: /docs/en/join-the-beta-test/
+date: 2026-07-16
+last_modified_at: 2026-07-17
 ---
 
 # Join the Beta Test

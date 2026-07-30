@@ -4,6 +4,8 @@ description: "ScreenOnAuto-Spiegelung starten, sobald das Telefon verbunden ist:
 lang: de
 slug: how-to-use
 permalink: /docs/de/how-to-use/
+date: 2026-07-16
+last_modified_at: 2026-07-16
 ---
 
 # Verwendung

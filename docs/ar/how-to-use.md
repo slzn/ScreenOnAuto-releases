@@ -4,6 +4,8 @@ description: "بدء النسخ المطابق بعد اتصال الهاتف ب
 lang: ar
 slug: how-to-use
 permalink: /docs/ar/how-to-use/
+date: 2026-07-20
+last_modified_at: 2026-07-20
 ---
 
 # طريقة الاستخدام

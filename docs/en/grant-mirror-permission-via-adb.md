@@ -4,6 +4,8 @@ description: "Pre-grant ScreenOnAuto's screen-capture permission via ADB so the 
 lang: en
 slug: grant-mirror-permission-via-adb
 permalink: /docs/en/grant-mirror-permission-via-adb/
+date: 2026-07-16
+last_modified_at: 2026-07-16
 ---
 
 # Grant Mirror Permission via ADB

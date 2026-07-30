@@ -4,6 +4,8 @@ description: "Installation via le canal de test interne du Play Store (obligatoi
 lang: fr
 slug: join-the-beta-test
 permalink: /docs/fr/join-the-beta-test/
+date: 2026-07-17
+last_modified_at: 2026-07-20
 ---
 
 # Rejoindre le test bêta

@@ -4,6 +4,8 @@ description: "ثبِّت ScreenOnAuto عبر قناة الاختبار الدا�
 lang: ar
 slug: join-the-beta-test
 permalink: /docs/ar/join-the-beta-test/
+date: 2026-07-20
+last_modified_at: 2026-07-20
 ---
 
 # الانضمام إلى الاختبار التجريبي

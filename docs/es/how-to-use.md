@@ -4,6 +4,8 @@ description: "Cómo iniciar la duplicación de ScreenOnAuto con el teléfono con
 lang: es
 slug: how-to-use
 permalink: /docs/es/how-to-use/
+date: 2026-07-16
+last_modified_at: 2026-07-16
 ---
 
 # Cómo Usar

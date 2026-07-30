@@ -4,6 +4,8 @@ description: "امنح إذن تسجيل الشاشة مسبقًا عبر ADB ف
 lang: ar
 slug: grant-mirror-permission-via-adb
 permalink: /docs/ar/grant-mirror-permission-via-adb/
+date: 2026-07-20
+last_modified_at: 2026-07-20
 ---
 
 # منح إذن النسخ المطابق عبر ADB

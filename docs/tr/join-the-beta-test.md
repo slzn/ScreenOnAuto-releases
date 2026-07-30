@@ -4,6 +4,8 @@ description: "Play Store dahilî test kanalı üzerinden kurulum (Android 14+ i�
 lang: tr
 slug: join-the-beta-test
 permalink: /docs/tr/join-the-beta-test/
+date: 2026-07-20
+last_modified_at: 2026-07-20
 ---
 
 # Beta Testine Katılın

@@ -4,6 +4,8 @@ description: "Ekran kaydı iznini ADB ile önceden verin; yansıtmayı her başl
 lang: tr
 slug: grant-mirror-permission-via-adb
 permalink: /docs/tr/grant-mirror-permission-via-adb/
+date: 2026-07-20
+last_modified_at: 2026-07-20
 ---
 
 # ADB ile Yansıtma İzni Verme
