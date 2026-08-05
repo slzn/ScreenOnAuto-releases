@@ -48,7 +48,8 @@ permalink: /de/
   "screenshot": "https://screenonauto.lzn.idv.tw/images/screenshot-legacy-split.png",
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Screen off while mirroring, Real touch injection, Phone navigation buttons"
 }
 </script>
 
@@ -141,7 +142,7 @@ permalink: /de/
   <div class="grid core">
     <div class="card"><b>Bildschirmspiegelung</b><p>Überträgt den Telefonbildschirm in Echtzeit auf die Android-Auto-Head-Unit.</p></div>
     <div class="card"><b>Mediensitzungs-Proxy</b><p>Steuere jede Medien-App des Telefons über die native Medienoberfläche von Android Auto.</p></div>
-    <div class="card"><b>Touch-Weiterleitung <span class="muted">(experimentell)</span></b><p>Tippe, scrolle und wische auf dem Android-Auto-Display, um das Telefon zu steuern.</p></div>
+    <div class="card"><b>Touch-Weiterleitung <span class="muted">(experimentell)</span></b><p>Tippe, scrolle, wische und zoome mit zwei Fingern auf dem Android-Auto-Display, um das Telefon zu steuern.</p></div>
   </div>
   <div class="grid more">
     <div class="card"><b>Autostart</b><p>Startet die Spiegelung automatisch, sobald Android Auto verbunden ist.</p></div>
@@ -156,12 +157,24 @@ permalink: /de/
   </div>
 </section>
 
+<section class="wrap" id="privileged">
+  <h2>Privilegierte Funktionen</h2>
+  <p class="muted">Optional und vollständig freiwillig: Sie benötigen <a href="https://shizuku.rikka.app/">Shizuku</a> oder Root. Hat dein Telefon weder das eine noch das andere, ändert sich nichts — der Abschnitt bleibt in der App ausgeblendet und alle anderen Funktionen verhalten sich genau wie zuvor.</p>
+  <div class="grid core">
+    <div class="card"><b>Telefonbildschirm ausschalten</b><p>Schaltet das Display des Telefons aus, sobald das Automatische Abdunkeln greift, während das Auto die Spiegelung weiter anzeigt.</p></div>
+    <div class="card"><b>Echte Toucheingabe</b><p>Leitet deine tatsächlichen Fingerbewegungen weiter, sodass langes Drücken, Ziehen und Multitouch auf der Legacy-Spiegelung funktionieren.</p></div>
+    <div class="card"><b>Telefon-Navigationstasten</b><p>Zurück / Startbildschirm / Letzte Apps funktionieren ganz ohne aktivierten Bedienungshilfen-Dienst.</p></div>
+  </div>
+  <p class="muted">Hinweis: Ein per ADB gestarteter Shizuku-Server kann beim Anschließen per USB beendet werden — fallen die privilegierten Funktionen direkt nach dem Anschließen aus, starte Shizuku erneut.</p>
+</section>
+
 <section class="wrap" id="requirements">
   <h2>Voraussetzungen</h2>
   <ul>
     <li>Android 7.0 (API 24) oder höher</li>
     <li>Android Auto auf dem Telefon installiert</li>
     <li>Ein Fahrzeug mit Android-Auto-Unterstützung</li>
+    <li>Optional: <a href="https://shizuku.rikka.app/">Shizuku</a> oder Root — für die privilegierten Funktionen</li>
   </ul>
 </section>
 
@@ -203,7 +216,7 @@ permalink: /de/
       <tr><td>Bildschirmaufnahme (MediaProjection)</td><td>Bildschirmspiegelung</td></tr>
       <tr><td>Benachrichtigungszugriff</td><td>Mediensitzungs-Proxy</td></tr>
       <tr><td>Über anderen Apps einblenden</td><td>Automatisches Abdunkeln &amp; Querformat erzwingen</td></tr>
-      <tr><td>Bedienungshilfen-Dienst</td><td>Touch-Weiterleitung (experimentell) &amp; die Tasten Zurück / Startbildschirm / Letzte Apps</td></tr>
+      <tr><td>Bedienungshilfen-Dienst</td><td>Touch-Weiterleitung (experimentell) &amp; die Tasten Zurück / Startbildschirm / Letzte Apps — die Tasten benötigen ihn nicht, wenn du die privilegierten Funktionen nutzt</td></tr>
     </table>
   </div>
   <p class="muted">Tipp: Um den Berechtigungsdialog für die Bildschirmaufnahme nicht bei jedem Start zu sehen, kannst du die Berechtigung einmalig per ADB erteilen — siehe <a href="https://screenonauto.lzn.idv.tw/docs/de/grant-mirror-permission-via-adb/">Spiegelungsberechtigung per ADB erteilen</a>.</p>
@@ -212,7 +225,7 @@ permalink: /de/
 <section class="wrap" id="limitations">
   <h2>Bekannte Einschränkungen</h2>
   <ul>
-    <li><b>Der Telefonbildschirm muss während der Spiegelung eingeschaltet bleiben</b> — die Spiegelung zeigt genau das, was auf dem Telefonbildschirm zu sehen ist; mit ausgeschaltetem oder gesperrtem Bildschirm läuft sie nicht weiter. Nutze <b>Ruhezustand verhindern</b>, um den Bildschirm wach zu halten, und <b>Automatisches Abdunkeln</b>, um ihn abzudunkeln und Akku zu sparen, statt ihn auszuschalten.</li>
+    <li><b>Der Telefonbildschirm muss während der Spiegelung eingeschaltet bleiben</b> — die Spiegelung zeigt genau das, was auf dem Telefonbildschirm zu sehen ist; mit ausgeschaltetem oder gesperrtem Bildschirm läuft sie nicht weiter. Nutze <b>Ruhezustand verhindern</b>, um den Bildschirm wach zu halten, und <b>Automatisches Abdunkeln</b>, um ihn abzudunkeln und Akku zu sparen, statt ihn auszuschalten. Mit Shizuku oder Root hebt Telefonbildschirm ausschalten dies auf: Das Display wird abgeschaltet, während die Spiegelung weiterläuft.</li>
     <li><b>DRM-geschützte Inhalte können nicht gespiegelt werden</b> — Apps wie Netflix oder Disney+ zeigen im Spiegel ein schwarzes Bild. Das ist eine Einschränkung der Android-Plattform, die die App nicht umgehen kann.</li>
     <li>Die <b>Android-Auto-Navigationsleiste</b> auf dem Fahrzeugbildschirm wird von Android Auto selbst gezeichnet und lässt sich nicht ausblenden.</li>
   </ul>

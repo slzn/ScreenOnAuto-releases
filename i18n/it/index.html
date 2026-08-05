@@ -48,7 +48,7 @@ permalink: /it/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Screen off while mirroring, Real touch injection, Phone navigation buttons"
 }
 </script>
 
@@ -141,7 +141,7 @@ permalink: /it/
   <div class="grid core">
     <div class="card"><b>Mirroring schermo</b><p>Cattura e duplica lo schermo del telefono sull'unità Android Auto in tempo reale.</p></div>
     <div class="card"><b>Proxy sessione multimediale</b><p>Controlla qualsiasi app multimediale del telefono dall'interfaccia multimediale nativa di Android Auto.</p></div>
-    <div class="card"><b>Inoltro tocco <span class="muted">(sperimentale)</span></b><p>Tocca e scorri il display Android Auto per controllare il telefono.</p></div>
+    <div class="card"><b>Inoltro tocco <span class="muted">(sperimentale)</span></b><p>Tocca, scorri, fai swipe e pizzica per lo zoom sul display Android Auto per controllare il telefono.</p></div>
   </div>
   <div class="grid more">
     <div class="card"><b>Avvio automatico</b><p>Avvia il mirroring automaticamente alla connessione di Android Auto.</p></div>
@@ -156,12 +156,24 @@ permalink: /it/
   </div>
 </section>
 
+<section class="wrap" id="privileged">
+  <h2>Funzioni privilegiate</h2>
+  <p class="muted">Opzionali e del tutto facoltative: richiedono <a href="https://shizuku.rikka.app/">Shizuku</a> o root. Se il telefono non ha né l'uno né l'altro, non cambia nulla — la sezione resta nascosta nell'app e tutte le altre funzioni si comportano esattamente come prima.</p>
+  <div class="grid core">
+    <div class="card"><b>Spegni lo schermo del telefono</b><p>Spegne il pannello del telefono quando entra in azione l'Oscuramento automatico, mentre l'auto continua a mostrare il mirroring.</p></div>
+    <div class="card"><b>Iniezione tocco reale</b><p>Inoltra i movimenti reali del dito, quindi pressione prolungata, trascinamento e multi-touch funzionano sul mirroring Legacy.</p></div>
+    <div class="card"><b>Pulsanti di navigazione del telefono</b><p>Indietro / Home / Recenti funzionano senza alcun Servizio di accessibilità attivo.</p></div>
+  </div>
+  <p class="muted">Nota: un server Shizuku avviato via ADB può spegnersi quando colleghi via USB — se le funzioni privilegiate smettono di funzionare subito dopo il collegamento, riavvia Shizuku.</p>
+</section>
+
 <section class="wrap" id="requirements">
   <h2>Requisiti</h2>
   <ul>
     <li>Android 7.0 (API 24) o successivo</li>
     <li>Android Auto installato sul telefono</li>
     <li>Un veicolo (o un'unità principale) compatibile con Android Auto</li>
+    <li>Opzionale: <a href="https://shizuku.rikka.app/">Shizuku</a> o root — per le funzioni privilegiate</li>
   </ul>
 </section>
 
@@ -203,7 +215,7 @@ permalink: /it/
       <tr><td>Cattura schermo (MediaProjection)</td><td>Mirroring schermo</td></tr>
       <tr><td>Accesso alle notifiche</td><td>Proxy sessione multimediale</td></tr>
       <tr><td>Mostra sopra le altre app</td><td>Oscuramento automatico e Forzatura orizzontale</td></tr>
-      <tr><td>Servizio di accessibilità</td><td>Inoltro tocco (sperimentale) e pulsanti Indietro / Home / App recenti</td></tr>
+      <tr><td>Servizio di accessibilità</td><td>Inoltro tocco (sperimentale) e pulsanti Indietro / Home / App recenti — i pulsanti non ne hanno bisogno se usi le funzioni privilegiate</td></tr>
     </table>
   </div>
   <p class="muted">Suggerimento: per saltare la finestra di cattura schermo a ogni avvio, pre-concedi l'autorizzazione via ADB — vedi <a href="https://screenonauto.lzn.idv.tw/docs/it/grant-mirror-permission-via-adb/">Concedere il permesso di mirroring via ADB</a>.</p>
@@ -212,7 +224,7 @@ permalink: /it/
 <section class="wrap" id="limitations">
   <h2>Limitazioni note</h2>
   <ul>
-    <li><b>Lo schermo del telefono deve restare acceso durante il mirroring</b> — il mirroring mostra esattamente ciò che è sullo schermo del telefono, quindi non può continuare a schermo spento o bloccato. Usa <b>Impedisci sospensione</b> per tenere lo schermo attivo e <b>Oscuramento automatico</b> per oscurarlo e risparmiare batteria invece di spegnerlo.</li>
+    <li><b>Lo schermo del telefono deve restare acceso durante il mirroring</b> — il mirroring mostra esattamente ciò che è sullo schermo del telefono, quindi non può continuare a schermo spento o bloccato. Usa <b>Impedisci sospensione</b> per tenere lo schermo attivo e <b>Oscuramento automatico</b> per oscurarlo e risparmiare batteria invece di spegnerlo. Con Shizuku o root, Spegni lo schermo del telefono rimuove questo limite: spegne il pannello mentre il mirroring continua.</li>
     <li><b>I contenuti protetti da DRM non possono essere trasmessi in mirroring</b> — app come Netflix o Disney+ mostrano una schermata nera. È una restrizione della piattaforma Android che l'app non può aggirare.</li>
     <li>La <b>barra di navigazione di Android Auto</b> sullo schermo dell'auto è disegnata da Android Auto stesso e non può essere nascosta.</li>
   </ul>
