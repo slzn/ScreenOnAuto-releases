@@ -29,13 +29,29 @@
 - **Botões na tela** — Mostre ou oculte individualmente os botões da tela de espelhamento nas configurações avançadas: Forçar paisagem, Escurecimento automático e Voltar / Início / Apps recentes do celular (até 4 ao mesmo tempo)
 - **Posição dos botões** — No espelhamento Legacy, alinhe os botões à esquerda ou desvie automaticamente da barra de navegação do celular
 - **Ajuste do espelhamento** — Ajuste a largura/altura do espelhamento nas configurações avançadas para centrais que cortam as bordas
-- **Encaminhamento de toque** *(experimental)* — Toque/role/deslize na tela do Android Auto para controlar o celular
+- **Encaminhamento de toque** *(experimental)* — Toque, role, deslize e use o gesto de pinça para ampliar na tela do Android Auto para controlar o celular
+
+## Recursos privilegiados
+
+Estes desbloqueiam o que as APIs normais do Android não conseguem fazer. Exigem **[Shizuku](https://shizuku.rikka.app/) ou root** e são totalmente opcionais: se o celular não tiver nenhum dos dois, **nada muda** — a seção fica oculta e todos os outros recursos funcionam exatamente como antes.
+
+| Recurso | O que faz |
+|---|---|
+| **Desligar a tela do telefone** | Desliga o painel do celular quando o Escurecimento automático entra em ação, enquanto o carro continua exibindo o espelhamento — economiza bateria e evita que o celular ilumine o interior à noite |
+| **Injeção de toque real** | Encaminha os movimentos reais do seu dedo em vez de gestos sintetizados, então **pressionar e segurar, arrastar e multitoque** funcionam no espelhamento Legacy |
+| **Botões de navegação do celular** | Voltar / Início / Apps recentes funcionam **sem nenhum Serviço de acessibilidade ativado** |
+
+> [!IMPORTANT]
+> **Um servidor Shizuku iniciado via ADB pode ser encerrado ao conectar por USB.** Uma conexão USB com o Android Auto coloca o celular em modo acessório, o que reinicia o ADB e pode derrubar o servidor Shizuku junto. A depuração sem fio não evita isso — ambas passam pelo mesmo ADB. Se os recursos privilegiados pararem de funcionar logo após conectar, inicie o Shizuku novamente; conectar o Android Auto **primeiro** e iniciar o Shizuku **depois** poupa essa ida e volta. Quem usa root não é afetado, assim como as conexões sem fio do Android Auto (nada é conectado, então o ADB não é tocado).
+
+> **Como acordar a tela depois do desligamento:** a tela sensível ao toque desliga junto com o painel, então tocar no celular não faz nada. Use o botão **Escurecimento automático** na tela do carro, pare o espelhamento ou desconecte o Android Auto — ou pressione o botão liga/desliga do celular **duas vezes** (o primeiro toque é o que realmente coloca o aparelho para dormir, já que o Android nunca soube que o painel estava desligado).
 
 ## Requisitos
 
 - Android 7.0 (API 24) ou superior
 - Android Auto instalado no celular
 - Um veículo compatível com Android Auto
+- *(Opcional)* [Shizuku](https://shizuku.rikka.app/) ou root — para os [Recursos privilegiados](#recursos-privilegiados)
 
 ## Instalação
 
@@ -102,13 +118,13 @@ Tudo pronto? Veja **[Como Usar](https://github.com/slzn/ScreenOnAuto-releases/wi
 | Captura de tela (MediaProjection) | Espelhamento de tela |
 | Acesso às notificações | Proxy de sessão de mídia |
 | Sobrepor a outros apps | Escurecimento automático e Forçar paisagem |
-| Serviço de acessibilidade | Encaminhamento de toque *(experimental)* e os botões Voltar / Início / Apps recentes |
+| Serviço de acessibilidade | Encaminhamento de toque *(experimental)* e os botões Voltar / Início / Apps recentes — os botões **não** precisam dele se você usar os [Recursos privilegiados](#recursos-privilegiados) |
 
 > **Dica:** para evitar o diálogo de permissão de captura de tela a cada início, você pode conceder a permissão uma única vez via ADB — veja [Conceder Permissão de Espelhamento via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permissão-de-Espelhamento-via-ADB).
 
 ## Limitações conhecidas
 
-- **A tela do celular precisa ficar ligada durante o espelhamento** — o espelhamento mostra exatamente o que está na tela do celular, então não continua com a tela desligada ou bloqueada. Use **Impedir suspensão** para manter a tela acesa e **Escurecimento automático** para escurecê-la e economizar bateria em vez de desligá-la.
+- **A tela do celular precisa ficar ligada durante o espelhamento** — o espelhamento mostra exatamente o que está na tela do celular, então não continua com a tela desligada ou bloqueada. Use **Impedir suspensão** para manter a tela acesa e **Escurecimento automático** para escurecê-la e economizar bateria em vez de desligá-la. *(Com Shizuku ou root, [Desligar a tela do telefone](#recursos-privilegiados) remove essa limitação: desliga o painel enquanto o espelhamento continua.)*
 - **Conteúdo protegido por DRM não pode ser espelhado** — apps como Netflix ou Disney+ mostram uma tela preta no espelhamento. É uma restrição da plataforma Android que o app não tem como contornar.
 - A **barra de navegação do Android Auto** na tela do carro é desenhada pelo próprio Android Auto e não pode ser ocultada.
 

@@ -29,13 +29,29 @@
 - **Bildschirmtasten** — Blende die Tasten des Spiegelbildschirms in den erweiterten Einstellungen einzeln ein oder aus: Querformat erzwingen, Automatisches Abdunkeln sowie Zurück / Startbildschirm / Letzte Apps (bis zu 4 gleichzeitig)
 - **Tastenposition** — Richte die Bildschirmtasten auf dem Legacy-Spiegel links aus oder weiche der Navigationsleiste des Telefons automatisch aus
 - **Spiegelungsanpassung** — Passe Breite/Höhe der Spiegelung in den erweiterten Einstellungen an, falls die Head-Unit die Ränder abschneidet
-- **Touch-Weiterleitung** *(experimentell)* — Tippe/scrolle/wische auf dem Android-Auto-Display, um das Telefon zu steuern
+- **Touch-Weiterleitung** *(experimentell)* — Tippe, scrolle, wische und zoome mit zwei Fingern auf dem Android-Auto-Display, um das Telefon zu steuern
+
+## Privilegierte Funktionen
+
+Diese schalten frei, was die normalen Android-APIs nicht können. Sie benötigen **[Shizuku](https://shizuku.rikka.app/) oder Root** und sind vollständig optional: Hat dein Telefon weder das eine noch das andere, **ändert sich nichts** — der Abschnitt bleibt ausgeblendet und alle anderen Funktionen verhalten sich genau wie zuvor.
+
+| Funktion | Was sie tut |
+|---|---|
+| **Telefonbildschirm ausschalten** | Schaltet das Display des Telefons aus, sobald das Automatische Abdunkeln greift, während das Auto die Spiegelung weiter anzeigt — spart Akku und verhindert, dass das Telefon nachts den Innenraum erhellt |
+| **Echte Toucheingabe** | Leitet deine tatsächlichen Fingerbewegungen weiter statt synthetisierter Gesten, sodass **langes Drücken, Ziehen und Multitouch** auf der Legacy-Spiegelung funktionieren |
+| **Telefon-Navigationstasten** | Zurück / Startbildschirm / Letzte Apps funktionieren **ganz ohne aktivierten Bedienungshilfen-Dienst** |
+
+> [!IMPORTANT]
+> **Ein per ADB gestarteter Shizuku-Server kann beim Anschließen per USB beendet werden.** Eine USB-Verbindung zu Android Auto versetzt das Telefon in den Zubehörmodus, wodurch ADB neu startet und den Shizuku-Server mitreißen kann. Drahtloses Debugging hilft nicht — beide laufen über dasselbe ADB. Wenn die privilegierten Funktionen direkt nach dem Anschließen ausfallen, starte Shizuku erneut; Android Auto **zuerst** zu verbinden und Shizuku **danach** zu starten erspart dir diesen Umweg. Root-Nutzer sind nicht betroffen, ebenso wenig drahtlose Android-Auto-Verbindungen (es wird nichts angeschlossen, ADB bleibt also unangetastet).
+
+> **Den Bildschirm nach dem Ausschalten wieder aufwecken:** Der Touchscreen wird zusammen mit dem Display abgeschaltet, Tippen auf das Telefon bewirkt also nichts. Nutze die Schaltfläche **Automatisches Abdunkeln** auf dem Autobildschirm, beende die Spiegelung oder trenne Android Auto — oder drücke die Ein-/Aus-Taste des Telefons **zweimal** (der erste Druck versetzt das Gerät erst in den Ruhezustand, da Android nie wusste, dass das Display aus war).
 
 ## Voraussetzungen
 
 - Android 7.0 (API 24) oder höher
 - Android Auto auf dem Telefon installiert
 - Ein Fahrzeug mit Android-Auto-Unterstützung
+- *(Optional)* [Shizuku](https://shizuku.rikka.app/) oder Root — für die [Privilegierten Funktionen](#privilegierte-funktionen)
 
 ## Installation
 
@@ -102,13 +118,13 @@ Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wi
 | Bildschirmaufnahme (MediaProjection) | Bildschirmspiegelung |
 | Benachrichtigungszugriff | Mediensitzungs-Proxy |
 | Über anderen Apps einblenden | Automatisches Abdunkeln & Querformat erzwingen |
-| Bedienungshilfen-Dienst | Touch-Weiterleitung *(experimentell)* & die Tasten Zurück / Startbildschirm / Letzte Apps |
+| Bedienungshilfen-Dienst | Touch-Weiterleitung *(experimentell)* & die Tasten Zurück / Startbildschirm / Letzte Apps — die Tasten benötigen ihn **nicht**, wenn du die [Privilegierten Funktionen](#privilegierte-funktionen) nutzt |
 
 > **Tipp:** Um den Berechtigungsdialog für die Bildschirmaufnahme nicht bei jedem Start zu sehen, kannst du die Berechtigung einmalig per ADB erteilen — siehe [Spiegelungsberechtigung per ADB erteilen](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen).
 
 ## Bekannte Einschränkungen
 
-- **Der Telefonbildschirm muss während der Spiegelung eingeschaltet bleiben** — die Spiegelung zeigt genau das, was auf dem Telefonbildschirm zu sehen ist; mit ausgeschaltetem oder gesperrtem Bildschirm läuft sie nicht weiter. Nutze **Ruhezustand verhindern**, um den Bildschirm wach zu halten, und **Automatisches Abdunkeln**, um ihn abzudunkeln und Akku zu sparen, statt ihn auszuschalten.
+- **Der Telefonbildschirm muss während der Spiegelung eingeschaltet bleiben** — die Spiegelung zeigt genau das, was auf dem Telefonbildschirm zu sehen ist; mit ausgeschaltetem oder gesperrtem Bildschirm läuft sie nicht weiter. Nutze **Ruhezustand verhindern**, um den Bildschirm wach zu halten, und **Automatisches Abdunkeln**, um ihn abzudunkeln und Akku zu sparen, statt ihn auszuschalten. *(Mit Shizuku oder Root hebt [Telefonbildschirm ausschalten](#privilegierte-funktionen) dies auf: Das Display wird abgeschaltet, während die Spiegelung weiterläuft.)*
 - **DRM-geschützte Inhalte können nicht gespiegelt werden** — Apps wie Netflix oder Disney+ zeigen im Spiegel ein schwarzes Bild. Das ist eine Einschränkung der Android-Plattform, die die App nicht umgehen kann.
 - Die **Android-Auto-Navigationsleiste** auf dem Fahrzeugbildschirm wird von Android Auto selbst gezeichnet und lässt sich nicht ausblenden.
 

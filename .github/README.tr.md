@@ -29,13 +29,29 @@
 - **Ekran Düğmeleri** — Yansıtma ekranındaki düğmeleri Gelişmiş ayarlardan tek tek gösterin veya gizleyin: Yatay modu zorla, Otomatik karartma ve telefonun Geri / Ana ekran / Son uygulamalar düğmeleri (aynı anda en fazla 4)
 - **Düğme Konumu** — Legacy yansıtmada düğmeleri sola hizalayın veya telefonun gezinme çubuğundan otomatik olarak kaçının
 - **Yansıtma Ayarı** — Kenarları kesen araç ekranları için Gelişmiş ayarlardan yansıtma genişliğini/yüksekliğini kırpın
-- **Dokunma Aktarımı** *(Deneysel)* — Telefonunuzu kontrol etmek için Android Auto ekranına dokunun/kaydırın/savurun
+- **Dokunma Aktarımı** *(Deneysel)* — Telefonunuzu kontrol etmek için Android Auto ekranına dokunun, kaydırın, savurun ve iki parmakla yakınlaştırın
+
+## Ayrıcalıklı özellikler
+
+Bunlar, normal Android API'lerinin yapamadıklarını açar. **[Shizuku](https://shizuku.rikka.app/) veya root** gerektirir ve tamamen isteğe bağlıdır: telefonunuzda ikisi de yoksa **hiçbir şey değişmez** — bölüm gizli kalır ve diğer tüm özellikler tam olarak eskisi gibi çalışır.
+
+| Özellik | Ne yapar |
+|---|---|
+| **Telefon ekranını kapat** | Otomatik Karartma devreye girdiğinde telefonun panelini kapatır, araç ise yansıtmayı göstermeye devam eder — pil tasarrufu sağlar ve gece telefonun kabini aydınlatmasını önler |
+| **Gerçek dokunma enjeksiyonu** | Sentezlenmiş hareketler yerine gerçek parmak hareketlerinizi aktarır; böylece **uzun basma, sürükleme ve çoklu dokunma** Legacy yansıtmasında çalışır |
+| **Telefon gezinme düğmeleri** | Geri / Ana ekran / Son uygulamalar **hiçbir Erişilebilirlik Hizmeti etkin olmadan** çalışır |
+
+> [!IMPORTANT]
+> **ADB ile başlatılan bir Shizuku sunucusu, USB ile bağlandığınızda kapanabilir.** Android Auto'ya USB bağlantısı telefonu aksesuar moduna alır; bu da ADB'yi yeniden başlatır ve Shizuku sunucusunu da beraberinde götürebilir. Kablosuz hata ayıklama bunu önlemez — ikisi de aynı ADB üzerinden çalışır. Ayrıcalıklı özellikler bağlandıktan hemen sonra çalışmayı bırakırsa Shizuku'yu yeniden başlatın; **önce** Android Auto'yu bağlayıp Shizuku'yu **sonra** başlatmak bu gidiş gelişten kurtarır. Root kullananlar etkilenmez; kablosuz Android Auto bağlantıları da etkilenmez (hiçbir şey takılmadığı için ADB'ye dokunulmaz).
+
+> **Ekran kapandıktan sonra tekrar uyandırma:** dokunmatik ekran panelle birlikte kapandığı için telefona dokunmak işe yaramaz. Araç ekranındaki **Otomatik Karartma** düğmesini kullanın, yansıtmayı durdurun veya Android Auto bağlantısını kesin — ya da telefonun güç düğmesine **iki kez** basın (ilk basış aslında cihazı uyku moduna alan basıştır, çünkü Android panelin kapalı olduğunu hiç bilmedi).
 
 ## Gereksinimler
 
 - Android 7.0 (API 24) veya üzeri
 - Telefonda Android Auto kurulu
 - Android Auto destekleyen bir araç
+- *(İsteğe bağlı)* [Shizuku](https://shizuku.rikka.app/) veya root — [Ayrıcalıklı özellikler](#ayrıcalıklı-özellikler) için
 
 ## Kurulum
 
@@ -102,13 +118,13 @@ Hazır mısınız? Arabada yansıtmayı başlatmak için **[Nasıl Kullanılır]
 | Ekran Kaydı (MediaProjection) | Ekran Yansıtma |
 | Bildirim Dinleyici | Medya Oturumu Aracısı |
 | Diğer uygulamaların üzerinde göster | Otomatik Karartma ve Yatay Modu Zorlama |
-| Erişilebilirlik Hizmeti | Dokunma Aktarımı *(Deneysel)* ve Geri / Ana ekran / Son uygulamalar düğmeleri |
+| Erişilebilirlik Hizmeti | Dokunma Aktarımı *(Deneysel)* ve Geri / Ana ekran / Son uygulamalar düğmeleri — [Ayrıcalıklı özellikler](#ayrıcalıklı-özellikler)'i kullanıyorsanız düğmeler bunu **gerektirmez** |
 
 > **İpucu:** Her başlatmada Ekran Kaydı izin penceresiyle karşılaşmamak için izni ADB ile önceden verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](https://github.com/slzn/ScreenOnAuto-releases/wiki/ADB-ile-Yansıtma-İzni-Verme).
 
 ## Bilinen Sınırlamalar
 
-- **Yansıtma sırasında telefon ekranı açık kalmalıdır** — yansıtma yalnızca telefon ekranında ne varsa onu gösterir; ekran kapalıyken veya kilitliyken çalışmaya devam edemez. Ekranı açık tutmak için **Uykuyu Engelleme**'yi, kapatmak yerine karartıp pil tasarrufu yapmak için **Otomatik Karartma**'yı kullanın.
+- **Yansıtma sırasında telefon ekranı açık kalmalıdır** — yansıtma yalnızca telefon ekranında ne varsa onu gösterir; ekran kapalıyken veya kilitliyken çalışmaya devam edemez. Ekranı açık tutmak için **Uykuyu Engelleme**'yi, kapatmak yerine karartıp pil tasarrufu yapmak için **Otomatik Karartma**'yı kullanın. *(Shizuku veya root ile [Telefon ekranını kapat](#ayrıcalıklı-özellikler) bu sınırlamayı kaldırır: yansıtma çalışmaya devam ederken paneli kapatır.)*
 - **DRM korumalı içerik yansıtılamaz** — Netflix veya Disney+ gibi uygulamalar yansıtmada siyah ekran gösterir. Bu, uygulamanın aşamayacağı bir Android platform kısıtlamasıdır.
 - Araç ekranındaki **Android Auto gezinme çubuğu** Android Auto'nun kendisi tarafından çizilir ve gizlenemez.
 

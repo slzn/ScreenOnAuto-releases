@@ -29,13 +29,29 @@
 - **Boutons à l'écran** — Affichez ou masquez individuellement les boutons de l'écran de duplication dans les réglages avancés : Forcer paysage, Atténuer, et Retour / Accueil / Apps récentes du téléphone (4 au maximum)
 - **Position des boutons** — Sur la duplication Legacy, alignez les boutons à gauche ou évitez automatiquement la barre de navigation du téléphone
 - **Réglage de la duplication** — Rognez la largeur/hauteur de l'image dans les réglages avancés pour les unités qui coupent les bords
-- **Transfert tactile** *(Expérimental)* — Touchez/faites défiler l'affichage Android Auto pour contrôler votre téléphone
+- **Transfert tactile** *(Expérimental)* — Touchez, faites défiler, balayez et pincez pour zoomer sur l'affichage Android Auto afin de contrôler votre téléphone
+
+## Fonctions privilégiées
+
+Elles débloquent ce que les API Android normales ne peuvent pas faire. Elles nécessitent **[Shizuku](https://shizuku.rikka.app/) ou root** et sont entièrement facultatives : si votre téléphone n'a ni l'un ni l'autre, **rien ne change** — la section reste masquée et toutes les autres fonctionnalités se comportent exactement comme avant.
+
+| Fonction | Ce qu'elle fait |
+|---|---|
+| **Éteindre l'écran du téléphone** | Éteint la dalle du téléphone lorsque l'Atténuation automatique se déclenche, pendant que la voiture continue d'afficher la duplication — économise la batterie et évite que le téléphone n'éclaire l'habitacle la nuit |
+| **Injection tactile réelle** | Transmet les mouvements réels de votre doigt au lieu de gestes synthétisés : **appui long, glisser et multi-touch** fonctionnent sur la duplication Legacy |
+| **Boutons de navigation du téléphone** | Retour / Accueil / Apps récentes fonctionnent **sans aucun service d'accessibilité activé** |
+
+> [!IMPORTANT]
+> **Un serveur Shizuku démarré via ADB peut s'arrêter lors d'une connexion USB.** Une connexion USB à Android Auto place le téléphone en mode accessoire, ce qui redémarre ADB et peut emporter le serveur Shizuku avec lui. Le débogage sans fil n'y échappe pas : les deux passent par le même ADB. Si les fonctions privilégiées cessent de fonctionner juste après le branchement, relancez Shizuku ; connecter Android Auto **d'abord** et démarrer Shizuku **ensuite** vous évite cet aller-retour. Les utilisateurs root ne sont pas concernés, ni les connexions Android Auto sans fil (rien n'est branché, ADB n'est donc pas touché).
+
+> **Réveiller l'écran après son extinction :** la dalle tactile s'éteint avec l'écran, toucher le téléphone ne fait donc rien. Utilisez le bouton **Atténuation automatique** sur l'écran de la voiture, arrêtez la duplication ou déconnectez Android Auto — ou appuyez **deux fois** sur le bouton d'alimentation du téléphone (la première pression est celle qui met réellement l'appareil en veille, Android n'ayant jamais su que l'écran était éteint).
 
 ## Prérequis
 
 - Android 7.0 (API 24) ou plus récent
 - Android Auto installé sur le téléphone
 - Un véhicule compatible Android Auto
+- *(Facultatif)* [Shizuku](https://shizuku.rikka.app/) ou root — pour les [Fonctions privilégiées](#fonctions-privilégiées)
 
 ## Installation
 
@@ -102,13 +118,13 @@ Prêt ? Consultez **[Comment utiliser](https://github.com/slzn/ScreenOnAuto-rele
 | Capture d'écran (MediaProjection) | Duplication d'écran |
 | Accès aux notifications | Proxy de session multimédia |
 | Afficher par-dessus les autres apps | Atténuation automatique et Forcer le paysage |
-| Service d'accessibilité | Transfert tactile *(Expérimental)* et boutons Retour / Accueil / Apps récentes |
+| Service d'accessibilité | Transfert tactile *(Expérimental)* et boutons Retour / Accueil / Apps récentes — les boutons n'en ont **pas** besoin si vous utilisez les [Fonctions privilégiées](#fonctions-privilégiées) |
 
 > **Astuce :** pour éviter la boîte de dialogue de capture d'écran à chaque lancement, vous pouvez pré-accorder la permission via ADB — voir [Accorder la permission de duplication via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Accorder-la-permission-de-duplication-via-ADB).
 
 ## Limitations connues
 
-- **L'écran du téléphone doit rester allumé pendant la duplication** — la duplication montre exactement ce qui est affiché sur le téléphone ; elle ne peut pas continuer écran éteint ou verrouillé. Utilisez **Empêcher la mise en veille** pour garder l'écran actif, et **Atténuation automatique** pour l'assombrir et économiser la batterie au lieu de l'éteindre.
+- **L'écran du téléphone doit rester allumé pendant la duplication** — la duplication montre exactement ce qui est affiché sur le téléphone ; elle ne peut pas continuer écran éteint ou verrouillé. Utilisez **Empêcher la mise en veille** pour garder l'écran actif, et **Atténuation automatique** pour l'assombrir et économiser la batterie au lieu de l'éteindre. *(Avec Shizuku ou root, [Éteindre l'écran du téléphone](#fonctions-privilégiées) lève cette limitation : la dalle s'éteint pendant que la duplication continue.)*
 - **Les contenus protégés par DRM ne peuvent pas être dupliqués** — les apps comme Netflix ou Disney+ affichent un écran noir. C'est une restriction de la plateforme Android que l'app ne peut pas contourner.
 - La **barre de navigation Android Auto** sur l'écran de la voiture est dessinée par Android Auto lui-même et ne peut pas être masquée.
 
