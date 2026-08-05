@@ -39,12 +39,12 @@ Sbloccano ciò che le normali API di Android non possono fare. Richiedono **[Shi
 |---|---|
 | **Spegni lo schermo del telefono** | Spegne il pannello del telefono quando entra in azione l'Oscuramento automatico, mentre l'auto continua a mostrare il mirroring — risparmia batteria ed evita che il telefono illumini l'abitacolo di notte |
 | **Iniezione tocco reale** | Inoltra i movimenti reali del dito invece di gesti sintetizzati, quindi **pressione prolungata, trascinamento e multi-touch** funzionano sul mirroring Legacy |
-| **Pulsanti di navigazione del telefono** | Indietro / Home / App recenti funzionano **senza alcun Servizio di accessibilità attivo** |
+| **Pulsanti di navigazione del telefono** | Indietro / Home / App recenti funzionano **senza alcun Servizio di accessibilità attivo**. Attiva i pulsanti in **Avanzate → Pulsanti schermata Android Auto** |
 
 > [!IMPORTANT]
-> **Un server Shizuku avviato via ADB può spegnersi quando colleghi via USB.** Una connessione USB ad Android Auto mette il telefono in modalità accessorio, il che riavvia ADB e può portarsi dietro il server Shizuku. Il debug wireless non lo evita: entrambi passano dallo stesso ADB. Se le funzioni privilegiate smettono di funzionare subito dopo il collegamento, riavvia Shizuku; collegare Android Auto **prima** e avviare Shizuku **dopo** ti risparmia il viaggio di andata e ritorno. Chi usa root non è interessato, così come le connessioni Android Auto wireless (non si collega nulla, quindi ADB resta intatto).
+> **Un server Shizuku avviato via ADB può spegnersi quando colleghi via USB.** Una connessione USB ad Android Auto può mettere il telefono in modalità accessorio, il che riavvia ADB e può portarsi dietro il server Shizuku. Il debug wireless non lo evita: entrambi passano dallo stesso ADB. Se le funzioni privilegiate smettono di funzionare subito dopo il collegamento, riavvia Shizuku; collegare Android Auto **prima** e avviare Shizuku **dopo** ti risparmia il viaggio di andata e ritorno. Chi usa root non è interessato, così come le connessioni Android Auto wireless (non si collega nulla, quindi ADB resta intatto).
 
-> **Come riaccendere lo schermo dopo lo spegnimento:** il touchscreen si spegne insieme al pannello, quindi toccare il telefono non produce alcun effetto. Usa il pulsante **Oscuramento automatico** sullo schermo dell'auto, interrompi il mirroring o scollega Android Auto — oppure premi **due volte** il tasto di accensione del telefono (la prima pressione è quella che lo mette davvero in sospensione, dato che Android non ha mai saputo che il pannello era spento).
+> **Come riaccendere lo schermo dopo lo spegnimento:** il touchscreen si spegne insieme al pannello, quindi toccare il telefono non produce alcun effetto. Interrompi il mirroring o scollega Android Auto, oppure premi **due volte** il tasto di accensione del telefono (la prima pressione è quella che lo mette davvero in sospensione, dato che Android non ha mai saputo che il pannello era spento). Anche il pulsante **Oscuramento automatico** sullo schermo dell'auto va bene, ma solo se lo hai attivato in **Avanzate → Pulsanti schermata Android Auto**: è disattivato per impostazione predefinita.
 
 ## Requisiti
 
@@ -118,13 +118,13 @@ Pronto? Consulta **[Come si usa](https://github.com/slzn/ScreenOnAuto-releases/w
 | Cattura schermo (MediaProjection) | Mirroring schermo |
 | Accesso alle notifiche | Proxy sessione multimediale |
 | Mostra sopra le altre app | Oscuramento automatico e Forzatura orizzontale |
-| Servizio di accessibilità | Inoltro tocco *(Sperimentale)* e pulsanti Indietro / Home / App recenti — i pulsanti **non** ne hanno bisogno se usi le [Funzioni privilegiate](#funzioni-privilegiate) |
+| Servizio di accessibilità | Inoltro tocco *(Sperimentale)* e pulsanti Indietro / Home / App recenti — con le [Funzioni privilegiate](#funzioni-privilegiate) nessuno dei due ne ha bisogno: i pulsanti funzionano appena un backend è connesso, l'inoltro tocco quando **Iniezione tocco reale** è attiva |
 
 > **Suggerimento:** per evitare la finestra di richiesta di cattura schermo a ogni avvio, puoi pre-concedere l'autorizzazione via ADB — vedi [Concedere il permesso di mirroring via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Concedere-il-permesso-di-mirroring-via-ADB).
 
 ## Limitazioni note
 
-- **Lo schermo del telefono deve restare acceso durante il mirroring** — il mirroring mostra esattamente ciò che è sullo schermo del telefono, quindi non può continuare a schermo spento o bloccato. Usa **Impedisci sospensione** per tenere lo schermo attivo e **Oscuramento automatico** per oscurarlo e risparmiare batteria invece di spegnerlo. *(Con Shizuku o root, [Spegni lo schermo del telefono](#funzioni-privilegiate) rimuove questo limite: spegne il pannello mentre il mirroring continua.)*
+- **Lo schermo del telefono deve restare acceso durante il mirroring** — il mirroring mostra esattamente ciò che è sullo schermo del telefono, quindi non può continuare a schermo spento o bloccato. Usa **Impedisci sospensione** per tenere lo schermo attivo e **Oscuramento automatico** per oscurarlo e risparmiare batteria invece di spegnerlo. *(Con Shizuku o root e l'Oscuramento automatico attivo, [Spegni lo schermo del telefono](#funzioni-privilegiate) rimuove questo limite: spegne il pannello mentre il mirroring continua.)*
 - **I contenuti protetti da DRM non possono essere trasmessi in mirroring** — app come Netflix o Disney+ mostrano una schermata nera. È una restrizione della piattaforma Android che l'app non può aggirare.
 - La **barra di navigazione di Android Auto** sullo schermo dell'auto è disegnata da Android Auto stesso e non può essere nascosta.
 

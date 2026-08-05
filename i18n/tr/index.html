@@ -48,7 +48,7 @@ permalink: /tr/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Screen off while mirroring, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
 }
 </script>
 
@@ -162,7 +162,7 @@ permalink: /tr/
   <div class="grid core">
     <div class="card"><b>Telefon ekranını kapat</b><p>Otomatik Karartma devreye girdiğinde telefonun panelini kapatır, araç ise yansıtmayı göstermeye devam eder.</p></div>
     <div class="card"><b>Gerçek dokunma enjeksiyonu</b><p>Gerçek parmak hareketlerinizi aktarır; uzun basma, sürükleme ve çoklu dokunma Legacy yansıtmasında çalışır.</p></div>
-    <div class="card"><b>Telefon gezinme düğmeleri</b><p>Geri / Ana ekran / Son uygulamalar hiçbir Erişilebilirlik Hizmeti etkin olmadan çalışır.</p></div>
+    <div class="card"><b>Telefon gezinme düğmeleri</b><p>Geri / Ana ekran / Son uygulamalar hiçbir Erişilebilirlik Hizmeti etkin olmadan çalışır. Düğmeleri Gelişmiş → Android Auto ekran düğmeleri bölümünden açın.</p></div>
   </div>
   <p class="muted">Not: ADB ile başlatılan bir Shizuku sunucusu USB ile bağlandığınızda kapanabilir — ayrıcalıklı özellikler bağlandıktan hemen sonra çalışmayı bırakırsa Shizuku'yu yeniden başlatın.</p>
 </section>
@@ -215,7 +215,7 @@ permalink: /tr/
       <tr><td>Ekran Kaydı (MediaProjection)</td><td>Ekran yansıtma</td></tr>
       <tr><td>Bildirim erişimi</td><td>Medya oturumu aracısı</td></tr>
       <tr><td>Diğer uygulamaların üzerinde göster</td><td>Otomatik karartma ve Yatay modu zorlama</td></tr>
-      <tr><td>Erişilebilirlik hizmeti</td><td>Dokunma aktarımı (deneysel) ve Geri / Ana ekran / Son uygulamalar düğmeleri — ayrıcalıklı özellikleri kullanıyorsanız düğmeler bunu gerektirmez</td></tr>
+      <tr><td>Erişilebilirlik hizmeti</td><td>Dokunma aktarımı (deneysel) ve Geri / Ana ekran / Son uygulamalar düğmeleri — ayrıcalıklı özellikler ile ikisi de bunu gerektirmez: düğmeler bir arka uç bağlanır bağlanmaz, dokunma aktarımı ise Gerçek dokunma enjeksiyonu açıkken çalışır</td></tr>
     </table>
   </div>
   <p class="muted">İpucu: her başlatmada ekran kaydı izin penceresiyle karşılaşmamak için izni ADB ile önceden verin — bkz. <a href="https://screenonauto.lzn.idv.tw/docs/tr/grant-mirror-permission-via-adb/">ADB ile Yansıtma İzni Verme</a>.</p>
@@ -224,7 +224,7 @@ permalink: /tr/
 <section class="wrap" id="limitations">
   <h2>Bilinen sınırlamalar</h2>
   <ul>
-    <li><b>Yansıtma sırasında telefon ekranı açık kalmalıdır</b> — yansıtma yalnızca telefon ekranında görüneni gösterir; ekran kapalıyken veya kilitliyken çalışmaya devam edemez. Ekranı açık tutmak için <b>Uykuyu engelle</b>'yi, kapatmak yerine karartıp pil tasarrufu yapmak için <b>Otomatik karartma</b>'yı kullanın. Shizuku veya root ile Telefon ekranını kapat bu sınırlamayı kaldırır: yansıtma çalışmaya devam ederken paneli kapatır.</li>
+    <li><b>Yansıtma sırasında telefon ekranı açık kalmalıdır</b> — yansıtma yalnızca telefon ekranında görüneni gösterir; ekran kapalıyken veya kilitliyken çalışmaya devam edemez. Ekranı açık tutmak için <b>Uykuyu engelle</b>'yi, kapatmak yerine karartıp pil tasarrufu yapmak için <b>Otomatik karartma</b>'yı kullanın. Shizuku veya root ile ve Otomatik Karartma açıkken Telefon ekranını kapat bu sınırlamayı kaldırır: yansıtma çalışmaya devam ederken paneli kapatır.</li>
     <li><b>DRM korumalı içerik yansıtılamaz</b> — Netflix veya Disney+ gibi uygulamalar siyah ekran gösterir. Bu, uygulamanın aşamayacağı bir Android platform kısıtlamasıdır.</li>
     <li>Araç ekranındaki <b>Android Auto gezinme çubuğu</b> Android Auto'nun kendisi tarafından çizilir ve gizlenemez.</li>
   </ul>

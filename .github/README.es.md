@@ -39,12 +39,12 @@ Estas desbloquean lo que las API normales de Android no pueden hacer. Requieren 
 |---|---|
 | **Apagar la pantalla del teléfono** | Apaga el panel del teléfono cuando se activa la Atenuación automática, mientras el coche sigue mostrando la duplicación — ahorra batería y evita que el teléfono ilumine el habitáculo de noche |
 | **Inyección táctil real** | Reenvía los movimientos reales de tu dedo en lugar de gestos sintetizados, así que **mantener pulsado, arrastrar y multitáctil** funcionan en la duplicación Legacy |
-| **Botones de navegación del teléfono** | Atrás / Inicio / Apps recientes funcionan **sin ningún Servicio de accesibilidad activado** |
+| **Botones de navegación del teléfono** | Atrás / Inicio / Apps recientes funcionan **sin ningún Servicio de accesibilidad activado**. Activa los botones en **Avanzado → Botones de la pantalla de Android Auto** |
 
 > [!IMPORTANT]
-> **Un servidor Shizuku iniciado por ADB puede apagarse al conectar por USB.** Una conexión USB con Android Auto pone el teléfono en modo accesorio, lo que reinicia ADB y puede llevarse por delante el servidor Shizuku. La depuración inalámbrica no lo evita: ambas pasan por el mismo ADB. Si las funciones con privilegios dejan de funcionar justo después de conectar, vuelve a iniciar Shizuku; conectar Android Auto **primero** e iniciar Shizuku **después** te ahorra ese viaje de ida y vuelta. Quienes usan root no se ven afectados, ni tampoco las conexiones inalámbricas de Android Auto (no se conecta nada, así que ADB queda intacto).
+> **Un servidor Shizuku iniciado por ADB puede apagarse al conectar por USB.** Una conexión USB con Android Auto puede poner el teléfono en modo accesorio, lo que reinicia ADB y puede llevarse por delante el servidor Shizuku. La depuración inalámbrica no lo evita: ambas pasan por el mismo ADB. Si las funciones con privilegios dejan de funcionar justo después de conectar, vuelve a iniciar Shizuku; conectar Android Auto **primero** e iniciar Shizuku **después** te ahorra ese viaje de ida y vuelta. Quienes usan root no se ven afectados, ni tampoco las conexiones inalámbricas de Android Auto (no se conecta nada, así que ADB queda intacto).
 
-> **Cómo volver a encender la pantalla tras apagarla:** la pantalla táctil se apaga junto con el panel, así que tocar el teléfono no hace nada. Usa el botón **Atenuación automática** de la pantalla del coche, detén la duplicación o desconecta Android Auto — o pulsa el botón de encendido del teléfono **dos veces** (la primera pulsación es la que realmente lo duerme, ya que Android nunca supo que el panel estaba apagado).
+> **Cómo volver a encender la pantalla tras apagarla:** la pantalla táctil se apaga junto con el panel, así que tocar el teléfono no hace nada. Detén la duplicación o desconecta Android Auto, o pulsa el botón de encendido del teléfono **dos veces** (la primera pulsación es la que realmente lo duerme, ya que Android nunca supo que el panel estaba apagado). El botón **Atenuación automática** de la pantalla del coche también sirve, pero solo si lo has activado en **Avanzado → Botones de la pantalla de Android Auto**: viene desactivado.
 
 ## Requisitos
 
@@ -118,13 +118,13 @@ Si falta alguna: en una instalación por sideload, reinstala con KingInstaller y
 | Captura de pantalla (MediaProjection) | Duplicación de pantalla |
 | Acceso a notificaciones | Proxy de sesión de medios |
 | Mostrar sobre otras apps | Atenuación automática y Forzar horizontal |
-| Servicio de accesibilidad | Reenvío táctil *(experimental)* y los botones Atrás / Inicio / Apps recientes — los botones **no** lo necesitan si usas las [Funciones con privilegios](#funciones-con-privilegios) |
+| Servicio de accesibilidad | Reenvío táctil *(experimental)* y los botones Atrás / Inicio / Apps recientes — con las [Funciones con privilegios](#funciones-con-privilegios) ninguno lo necesita: los botones funcionan en cuanto hay un backend conectado, y el reenvío táctil cuando **Inyección táctil real** está activada |
 
 > **Consejo:** para evitar el diálogo de permiso de captura de pantalla en cada inicio, puedes concederlo una sola vez vía ADB — consulta [Conceder Permiso de Duplicación por ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permiso-de-Duplicación-por-ADB).
 
 ## Limitaciones conocidas
 
-- **La pantalla del teléfono debe permanecer encendida durante la duplicación** — la duplicación muestra exactamente lo que hay en la pantalla del teléfono, así que no puede continuar con la pantalla apagada o bloqueada. Usa **Evitar suspensión** para mantener la pantalla activa y **Atenuación automática** para oscurecerla y ahorrar batería en lugar de apagarla. *(Con Shizuku o root, [Apagar la pantalla del teléfono](#funciones-con-privilegios) elimina esta limitación: apaga el panel mientras la duplicación sigue funcionando.)*
+- **La pantalla del teléfono debe permanecer encendida durante la duplicación** — la duplicación muestra exactamente lo que hay en la pantalla del teléfono, así que no puede continuar con la pantalla apagada o bloqueada. Usa **Evitar suspensión** para mantener la pantalla activa y **Atenuación automática** para oscurecerla y ahorrar batería en lugar de apagarla. *(Con Shizuku o root y la Atenuación automática activada, [Apagar la pantalla del teléfono](#funciones-con-privilegios) elimina esta limitación: apaga el panel mientras la duplicación sigue funcionando.)*
 - **El contenido protegido por DRM no se puede duplicar** — apps como Netflix o Disney+ muestran una pantalla negra en la duplicación. Es una restricción de la plataforma Android que la app no puede evitar.
 - La **barra de navegación de Android Auto** en la pantalla del coche la dibuja el propio Android Auto y no se puede ocultar.
 

@@ -48,7 +48,7 @@ permalink: /ar/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Screen off while mirroring, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
 }
 </script>
 
@@ -162,7 +162,7 @@ permalink: /ar/
   <div class="grid core">
     <div class="card"><b>إطفاء شاشة الهاتف</b><p>يُطفئ شاشة الهاتف عند تفعّل التعتيم التلقائي، بينما تواصل السيارة عرض النسخ المطابق.</p></div>
     <div class="card"><b>حقن اللمس الحقيقي</b><p>ينقل حركات إصبعك الحقيقية، فيعمل الضغط المطوّل والسحب واللمس المتعدد على النسخ المطابق Legacy.</p></div>
-    <div class="card"><b>أزرار تنقّل الهاتف</b><p>تعمل أزرار رجوع / الشاشة الرئيسية / الأخيرة دون تفعيل أي خدمة إمكانية وصول على الإطلاق.</p></div>
+    <div class="card"><b>أزرار تنقّل الهاتف</b><p>تعمل أزرار رجوع / الشاشة الرئيسية / الأخيرة دون تفعيل أي خدمة إمكانية وصول على الإطلاق. فعِّلها من إعدادات متقدمة ← أزرار شاشة Android Auto.</p></div>
   </div>
   <p class="muted">ملاحظة: قد يتوقف خادم Shizuku المُشغَّل عبر ADB عند التوصيل بمنفذ USB — إذا توقفت الميزات المتميزة عن العمل فور التوصيل، فأعد تشغيل Shizuku.</p>
 </section>
@@ -215,7 +215,7 @@ permalink: /ar/
       <tr><td>تسجيل الشاشة (MediaProjection)</td><td>النسخ المطابق للشاشة</td></tr>
       <tr><td>الوصول إلى الإشعارات</td><td>وسيط جلسة الوسائط</td></tr>
       <tr><td>العرض فوق التطبيقات الأخرى</td><td>التعتيم التلقائي وفرض الوضع الأفقي</td></tr>
-      <tr><td>خدمة إمكانية الوصول</td><td>إعادة توجيه اللمس (تجريبي) وأزرار رجوع / الشاشة الرئيسية / التطبيقات الأخيرة — لا تحتاج الأزرار إليها إذا كنت تستخدم الميزات المتميزة</td></tr>
+      <tr><td>خدمة إمكانية الوصول</td><td>إعادة توجيه اللمس (تجريبي) وأزرار رجوع / الشاشة الرئيسية / التطبيقات الأخيرة — مع الميزات المتميزة لا يحتاج أي منهما إليها: تعمل الأزرار فور اتصال الواجهة الخلفية، ويعمل إعادة توجيه اللمس عند تفعيل حقن اللمس الحقيقي</td></tr>
     </table>
   </div>
   <p class="muted">نصيحة: لتجنّب نافذة إذن تسجيل الشاشة عند كل تشغيل، امنح الإذن مسبقًا عبر ADB — راجع <a href="https://screenonauto.lzn.idv.tw/docs/ar/grant-mirror-permission-via-adb/">منح إذن النسخ المطابق عبر ADB</a>.</p>
@@ -224,7 +224,7 @@ permalink: /ar/
 <section class="wrap" id="limitations">
   <h2>القيود المعروفة</h2>
   <ul>
-    <li><b>يجب أن تبقى شاشة الهاتف مضاءة أثناء النسخ المطابق</b> — لا يعرض النسخ المطابق إلا ما يظهر على شاشة الهاتف؛ فلا يمكنه الاستمرار والشاشة مطفأة أو مقفلة. استخدم <b>منع إطفاء الشاشة</b> لإبقائها مضاءة، و<b>التعتيم التلقائي</b> لخفض سطوعها بدل إطفائها وتوفير البطارية. مع Shizuku أو صلاحيات الجذر، تُلغي ميزة إطفاء شاشة الهاتف هذا القيد: تُطفئ الشاشة بينما يستمر النسخ المطابق.</li>
+    <li><b>يجب أن تبقى شاشة الهاتف مضاءة أثناء النسخ المطابق</b> — لا يعرض النسخ المطابق إلا ما يظهر على شاشة الهاتف؛ فلا يمكنه الاستمرار والشاشة مطفأة أو مقفلة. استخدم <b>منع إطفاء الشاشة</b> لإبقائها مضاءة، و<b>التعتيم التلقائي</b> لخفض سطوعها بدل إطفائها وتوفير البطارية. مع Shizuku أو صلاحيات الجذر ومع تفعيل التعتيم التلقائي، تُلغي ميزة إطفاء شاشة الهاتف هذا القيد: تُطفئ الشاشة بينما يستمر النسخ المطابق.</li>
     <li><b>لا يمكن نسخ المحتوى المحمي بإدارة الحقوق الرقمية (DRM)</b> — تعرض تطبيقات مثل Netflix أو +Disney شاشة سوداء. هذا قيد في منصة Android لا يمكن للتطبيق تجاوزه.</li>
     <li><b>شريط تنقل Android Auto</b> على شاشة السيارة يرسمه Android Auto نفسه ولا يمكن إخفاؤه.</li>
   </ul>

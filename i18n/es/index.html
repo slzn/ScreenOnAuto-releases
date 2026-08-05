@@ -49,7 +49,7 @@ permalink: /es/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Screen off while mirroring, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
 }
 </script>
 
@@ -163,7 +163,7 @@ permalink: /es/
   <div class="grid core">
     <div class="card"><b>Apagar la pantalla del teléfono</b><p>Apaga el panel del teléfono cuando se activa la Atenuación automática, mientras el coche sigue mostrando la duplicación.</p></div>
     <div class="card"><b>Inyección táctil real</b><p>Reenvía los movimientos reales de tu dedo, así que mantener pulsado, arrastrar y multitáctil funcionan en la duplicación Legacy.</p></div>
-    <div class="card"><b>Botones de navegación del teléfono</b><p>Atrás / Inicio / Recientes funcionan sin ningún Servicio de accesibilidad activado.</p></div>
+    <div class="card"><b>Botones de navegación del teléfono</b><p>Atrás / Inicio / Recientes funcionan sin ningún Servicio de accesibilidad activado. Actívalos en Avanzado → Botones de la pantalla de Android Auto.</p></div>
   </div>
   <p class="muted">Nota: un servidor Shizuku iniciado por ADB puede apagarse al conectar por USB — si las funciones con privilegios dejan de funcionar justo después de conectar, vuelve a iniciar Shizuku.</p>
 </section>
@@ -216,7 +216,7 @@ permalink: /es/
       <tr><td>Captura de pantalla (MediaProjection)</td><td>Duplicación de pantalla</td></tr>
       <tr><td>Acceso a notificaciones</td><td>Proxy de sesión de medios</td></tr>
       <tr><td>Mostrar sobre otras apps</td><td>Atenuación automática y Forzar horizontal</td></tr>
-      <tr><td>Servicio de accesibilidad</td><td>Reenvío táctil (experimental) y los botones Atrás / Inicio / Apps recientes — los botones no lo necesitan si usas las funciones con privilegios</td></tr>
+      <tr><td>Servicio de accesibilidad</td><td>Reenvío táctil (experimental) y los botones Atrás / Inicio / Apps recientes — con las funciones con privilegios ninguno lo necesita: los botones funcionan en cuanto hay un backend conectado, y el reenvío táctil cuando Inyección táctil real está activada</td></tr>
     </table>
   </div>
   <p class="muted">Consejo: para evitar el diálogo de permiso de captura de pantalla en cada inicio, concédelo una sola vez vía ADB — consulta <a href="https://screenonauto.lzn.idv.tw/docs/es/grant-mirror-permission-via-adb/">Conceder Permiso de Duplicación por ADB</a>.</p>
@@ -225,7 +225,7 @@ permalink: /es/
 <section class="wrap" id="limitations">
   <h2>Limitaciones conocidas</h2>
   <ul>
-    <li><b>La pantalla del teléfono debe permanecer encendida durante la duplicación</b> — la duplicación muestra exactamente lo que hay en la pantalla del teléfono, así que no puede continuar con la pantalla apagada o bloqueada. Usa <b>Evitar suspensión</b> para mantener la pantalla activa y <b>Atenuación automática</b> para oscurecerla y ahorrar batería en lugar de apagarla. Con Shizuku o root, Apagar la pantalla del teléfono elimina esta limitación: apaga el panel mientras la duplicación sigue funcionando.</li>
+    <li><b>La pantalla del teléfono debe permanecer encendida durante la duplicación</b> — la duplicación muestra exactamente lo que hay en la pantalla del teléfono, así que no puede continuar con la pantalla apagada o bloqueada. Usa <b>Evitar suspensión</b> para mantener la pantalla activa y <b>Atenuación automática</b> para oscurecerla y ahorrar batería en lugar de apagarla. Con Shizuku o root y la Atenuación automática activada, Apagar la pantalla del teléfono elimina esta limitación: apaga el panel mientras la duplicación sigue funcionando.</li>
     <li><b>El contenido protegido por DRM no se puede duplicar</b> — apps como Netflix o Disney+ muestran una pantalla negra. Es una restricción de la plataforma Android que la app no puede evitar.</li>
     <li>La <b>barra de navegación de Android Auto</b> en la pantalla del coche la dibuja el propio Android Auto y no se puede ocultar.</li>
   </ul>

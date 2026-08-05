@@ -48,7 +48,7 @@ permalink: /fr/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Screen off while mirroring, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
 }
 </script>
 
@@ -162,7 +162,7 @@ permalink: /fr/
   <div class="grid core">
     <div class="card"><b>Éteindre l'écran du téléphone</b><p>Éteint la dalle du téléphone lorsque l'Atténuation automatique se déclenche, pendant que la voiture continue d'afficher la duplication.</p></div>
     <div class="card"><b>Injection tactile réelle</b><p>Transmet les mouvements réels de votre doigt : appui long, glisser et multi-touch fonctionnent sur la duplication Legacy.</p></div>
-    <div class="card"><b>Boutons de navigation du téléphone</b><p>Retour / Accueil / Récents fonctionnent sans aucun service d'accessibilité activé.</p></div>
+    <div class="card"><b>Boutons de navigation du téléphone</b><p>Retour / Accueil / Récents fonctionnent sans aucun service d'accessibilité activé. Activez-les dans Avancé → Boutons de l'écran Android Auto.</p></div>
   </div>
   <p class="muted">Remarque : un serveur Shizuku démarré via ADB peut s'arrêter lors d'une connexion USB — si les fonctions privilégiées cessent de fonctionner juste après le branchement, relancez Shizuku.</p>
 </section>
@@ -215,7 +215,7 @@ permalink: /fr/
       <tr><td>Capture d'écran (MediaProjection)</td><td>Duplication d'écran</td></tr>
       <tr><td>Accès aux notifications</td><td>Proxy de session multimédia</td></tr>
       <tr><td>Afficher par-dessus les autres apps</td><td>Atténuation automatique et Forcer le paysage</td></tr>
-      <tr><td>Service d'accessibilité</td><td>Transfert tactile (expérimental) et boutons Retour / Accueil / Apps récentes — les boutons n'en ont pas besoin si vous utilisez les fonctions privilégiées</td></tr>
+      <tr><td>Service d'accessibilité</td><td>Transfert tactile (expérimental) et boutons Retour / Accueil / Apps récentes — avec les fonctions privilégiées, aucun des deux n'en a besoin : les boutons fonctionnent dès qu'un backend est connecté, le transfert tactile dès que Injection tactile réelle est activée</td></tr>
     </table>
   </div>
   <p class="muted">Astuce : pour éviter la boîte de dialogue de capture d'écran à chaque lancement, pré-accordez la permission via ADB — voir <a href="https://screenonauto.lzn.idv.tw/docs/fr/grant-mirror-permission-via-adb/">Accorder la permission de duplication via ADB</a>.</p>
@@ -224,7 +224,7 @@ permalink: /fr/
 <section class="wrap" id="limitations">
   <h2>Limitations connues</h2>
   <ul>
-    <li><b>L'écran du téléphone doit rester allumé pendant la duplication</b> — la duplication montre exactement ce qui est affiché sur le téléphone ; elle ne peut pas continuer écran éteint ou verrouillé. Utilisez <b>Empêcher la mise en veille</b> pour garder l'écran actif, et <b>Atténuation automatique</b> pour l'assombrir et économiser la batterie au lieu de l'éteindre. Avec Shizuku ou root, Éteindre l'écran du téléphone lève cette limitation : la dalle s'éteint pendant que la duplication continue.</li>
+    <li><b>L'écran du téléphone doit rester allumé pendant la duplication</b> — la duplication montre exactement ce qui est affiché sur le téléphone ; elle ne peut pas continuer écran éteint ou verrouillé. Utilisez <b>Empêcher la mise en veille</b> pour garder l'écran actif, et <b>Atténuation automatique</b> pour l'assombrir et économiser la batterie au lieu de l'éteindre. Avec Shizuku ou root et l'Atténuation automatique activée, Éteindre l'écran du téléphone lève cette limitation : la dalle s'éteint pendant que la duplication continue.</li>
     <li><b>Les contenus protégés par DRM ne peuvent pas être dupliqués</b> — les apps comme Netflix ou Disney+ affichent un écran noir. C'est une restriction de la plateforme Android que l'app ne peut pas contourner.</li>
     <li>La <b>barre de navigation Android Auto</b> sur l'écran de la voiture est dessinée par Android Auto lui-même et ne peut pas être masquée.</li>
   </ul>

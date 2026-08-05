@@ -49,7 +49,7 @@ permalink: /de/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Screen off while mirroring, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
 }
 </script>
 
@@ -163,7 +163,7 @@ permalink: /de/
   <div class="grid core">
     <div class="card"><b>Telefonbildschirm ausschalten</b><p>Schaltet das Display des Telefons aus, sobald das Automatische Abdunkeln greift, während das Auto die Spiegelung weiter anzeigt.</p></div>
     <div class="card"><b>Echte Toucheingabe</b><p>Leitet deine tatsächlichen Fingerbewegungen weiter, sodass langes Drücken, Ziehen und Multitouch auf der Legacy-Spiegelung funktionieren.</p></div>
-    <div class="card"><b>Telefon-Navigationstasten</b><p>Zurück / Startbildschirm / Letzte Apps funktionieren ganz ohne aktivierten Bedienungshilfen-Dienst.</p></div>
+    <div class="card"><b>Telefon-Navigationstasten</b><p>Zurück / Startbildschirm / Letzte Apps funktionieren ganz ohne aktivierten Bedienungshilfen-Dienst. Aktiviere sie unter Erweitert → Schaltflächen auf dem Android-Auto-Bildschirm.</p></div>
   </div>
   <p class="muted">Hinweis: Ein per ADB gestarteter Shizuku-Server kann beim Anschließen per USB beendet werden — fallen die privilegierten Funktionen direkt nach dem Anschließen aus, starte Shizuku erneut.</p>
 </section>
@@ -216,7 +216,7 @@ permalink: /de/
       <tr><td>Bildschirmaufnahme (MediaProjection)</td><td>Bildschirmspiegelung</td></tr>
       <tr><td>Benachrichtigungszugriff</td><td>Mediensitzungs-Proxy</td></tr>
       <tr><td>Über anderen Apps einblenden</td><td>Automatisches Abdunkeln &amp; Querformat erzwingen</td></tr>
-      <tr><td>Bedienungshilfen-Dienst</td><td>Touch-Weiterleitung (experimentell) &amp; die Tasten Zurück / Startbildschirm / Letzte Apps — die Tasten benötigen ihn nicht, wenn du die privilegierten Funktionen nutzt</td></tr>
+      <tr><td>Bedienungshilfen-Dienst</td><td>Touch-Weiterleitung (experimentell) &amp; die Tasten Zurück / Startbildschirm / Letzte Apps — mit den privilegierten Funktionen braucht beides ihn nicht: Die Tasten funktionieren, sobald ein Backend verbunden ist, die Touch-Weiterleitung sobald Echte Toucheingabe aktiv ist</td></tr>
     </table>
   </div>
   <p class="muted">Tipp: Um den Berechtigungsdialog für die Bildschirmaufnahme nicht bei jedem Start zu sehen, kannst du die Berechtigung einmalig per ADB erteilen — siehe <a href="https://screenonauto.lzn.idv.tw/docs/de/grant-mirror-permission-via-adb/">Spiegelungsberechtigung per ADB erteilen</a>.</p>
@@ -225,7 +225,7 @@ permalink: /de/
 <section class="wrap" id="limitations">
   <h2>Bekannte Einschränkungen</h2>
   <ul>
-    <li><b>Der Telefonbildschirm muss während der Spiegelung eingeschaltet bleiben</b> — die Spiegelung zeigt genau das, was auf dem Telefonbildschirm zu sehen ist; mit ausgeschaltetem oder gesperrtem Bildschirm läuft sie nicht weiter. Nutze <b>Ruhezustand verhindern</b>, um den Bildschirm wach zu halten, und <b>Automatisches Abdunkeln</b>, um ihn abzudunkeln und Akku zu sparen, statt ihn auszuschalten. Mit Shizuku oder Root hebt Telefonbildschirm ausschalten dies auf: Das Display wird abgeschaltet, während die Spiegelung weiterläuft.</li>
+    <li><b>Der Telefonbildschirm muss während der Spiegelung eingeschaltet bleiben</b> — die Spiegelung zeigt genau das, was auf dem Telefonbildschirm zu sehen ist; mit ausgeschaltetem oder gesperrtem Bildschirm läuft sie nicht weiter. Nutze <b>Ruhezustand verhindern</b>, um den Bildschirm wach zu halten, und <b>Automatisches Abdunkeln</b>, um ihn abzudunkeln und Akku zu sparen, statt ihn auszuschalten. Mit Shizuku oder Root und aktiviertem Automatischen Abdunkeln hebt Telefonbildschirm ausschalten dies auf: Das Display wird abgeschaltet, während die Spiegelung weiterläuft.</li>
     <li><b>DRM-geschützte Inhalte können nicht gespiegelt werden</b> — Apps wie Netflix oder Disney+ zeigen im Spiegel ein schwarzes Bild. Das ist eine Einschränkung der Android-Plattform, die die App nicht umgehen kann.</li>
     <li>Die <b>Android-Auto-Navigationsleiste</b> auf dem Fahrzeugbildschirm wird von Android Auto selbst gezeichnet und lässt sich nicht ausblenden.</li>
   </ul>

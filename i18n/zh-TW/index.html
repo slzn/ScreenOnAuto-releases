@@ -49,7 +49,7 @@ permalink: /zh-TW/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Screen off while mirroring, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
 }
 </script>
 
@@ -163,7 +163,7 @@ permalink: /zh-TW/
   <div class="grid core">
     <div class="card"><b>關閉手機螢幕</b><p>自動調暗啟動時直接切斷手機背光，車機上的鏡像照常顯示。</p></div>
     <div class="card"><b>真實觸控注入</b><p>將車機上的觸控以真實手指動作送到手機，長按、拖曳與多指操作在 Legacy 鏡像上都能運作。</p></div>
-    <div class="card"><b>手機導覽按鈕</b><p>返回／主畫面／最近應用程式按鈕完全不需要啟用無障礙服務。</p></div>
+    <div class="card"><b>手機導覽按鈕</b><p>返回／主畫面／最近應用程式按鈕完全不需要啟用無障礙服務。請在「進階 → Android Auto 畫面按鈕」中開啟這些按鈕。</p></div>
   </div>
   <p class="muted">注意：以 ADB 啟動的 Shizuku 可能在透過 USB 連線時被關閉——若特權功能在插上後隨即失效，重新啟動 Shizuku 即可。</p>
 </section>
@@ -216,7 +216,7 @@ permalink: /zh-TW/
       <tr><td>螢幕擷取（MediaProjection）</td><td>螢幕鏡像</td></tr>
       <tr><td>通知存取服務</td><td>媒體工作階段代理</td></tr>
       <tr><td>在其他應用程式上層顯示</td><td>自動調暗與強制橫向</td></tr>
-      <tr><td>無障礙服務</td><td>觸控轉發（實驗性）與返回/主畫面/最近應用程式按鈕；若使用特權功能，這些按鈕不需要此權限</td></tr>
+      <tr><td>無障礙服務</td><td>觸控轉發（實驗性）與返回/主畫面/最近應用程式按鈕——使用特權功能時兩者都不需要此權限：按鈕在連上後端後立即生效，觸控轉發則需另外開啟「真實觸控注入」</td></tr>
     </table>
   </div>
   <p class="muted">小提示：若希望每次鏡像時不再顯示螢幕擷取權限對話框，可透過 ADB 預先授予——請參閱<a href="https://screenonauto.lzn.idv.tw/docs/zh-TW/grant-mirror-permission-via-adb/">使用 ADB 授予鏡像權限</a>。</p>
@@ -225,7 +225,7 @@ permalink: /zh-TW/
 <section class="wrap" id="limitations">
   <h2>已知限制</h2>
   <ul>
-    <li><b>鏡像期間手機螢幕必須保持開啟</b>——鏡像顯示的就是手機螢幕當下的畫面，螢幕關閉或鎖定後便無法維持鏡像。可用<b>防止進入休眠</b>讓螢幕保持喚醒，並以<b>自動調暗</b>代替關螢幕來省電。 使用 Shizuku 或 root 時，「關閉手機螢幕」可解除此限制：它會關閉面板，但鏡像持續運作。</li>
+    <li><b>鏡像期間手機螢幕必須保持開啟</b>——鏡像顯示的就是手機螢幕當下的畫面，螢幕關閉或鎖定後便無法維持鏡像。可用<b>防止進入休眠</b>讓螢幕保持喚醒，並以<b>自動調暗</b>代替關螢幕來省電。 使用 Shizuku 或 root、且已開啟自動調暗時，「關閉手機螢幕」可解除此限制：它會關閉面板，但鏡像持續運作。</li>
     <li><b>受 DRM 保護的內容無法鏡像</b>——Netflix、Disney+ 等 app 在鏡像畫面上會顯示黑畫面。這是 Android 平台的限制，app 無法繞過。</li>
     <li>車機畫面上的 <b>Android Auto 導覽列</b>由 Android Auto 自行繪製，無法隱藏。</li>
   </ul>
