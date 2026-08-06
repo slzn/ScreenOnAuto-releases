@@ -42,7 +42,7 @@
 | **手機導覽按鈕** | 返回/主畫面/最近應用程式按鈕**完全不需要啟用無障礙服務**。請在**進階 → Android Auto 畫面按鈕**中開啟這些按鈕 |
 
 > [!IMPORTANT]
-> **以 ADB 啟動的 Shizuku 可能在透過 USB 連線時被關閉。** 以 USB 連接 Android Auto 可能讓手機進入配件（accessory）模式，這會重啟 ADB，並可能一併關閉 Shizuku 服務。使用無線偵錯也無法避免——兩者都經由同一個 ADB。若特權功能在插上後隨即失效，重新啟動 Shizuku 即可；**先連 Android Auto、再啟動 Shizuku** 可以省去這趟來回。使用 root 者不受影響，無線 Android Auto 連線同樣不受影響（沒有插上任何東西，ADB 不會被動到）。
+> **以 ADB 啟動的 Shizuku 會在透過 USB 連線時被關閉。** 以 USB 連接 Android Auto 會讓手機進入配件（accessory）模式，這會重啟 ADB，並一併關閉 Shizuku 服務。使用無線偵錯也無法避免——兩者都經由同一個 ADB。若特權功能在插上後隨即失效，重新啟動 Shizuku 即可——ScreenOnAuto 會自行重新連上；**先連 Android Auto、再啟動 Shizuku** 可以省去這趟來回。使用 root 者不受影響，無線 Android Auto 連線同樣不受影響（沒有插上任何東西，ADB 不會被動到）。
 
 > **螢幕關閉後如何再喚醒：** 觸控面板會隨螢幕一同斷電，因此點手機不會有反應。請停止鏡像或中斷 Android Auto，或連按手機電源鍵**兩次**（第一次只是讓裝置真正進入休眠，因為 Android 從未得知面板已關閉）。車機畫面上的**自動調暗**按鈕也可以，但前提是你已在**進階 → Android Auto 畫面按鈕**中開啟它——該按鈕預設為關閉。
 

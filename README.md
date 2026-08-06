@@ -42,13 +42,14 @@ These unlock things the normal Android APIs cannot do. They need **[Shizuku](htt
 | **Phone Navigation Buttons** | Back / Home / Recent apps work with **no Accessibility Service enabled at all**. Turn the buttons on in **Advanced → Android Auto screen buttons** |
 
 > [!IMPORTANT]
-> **A Shizuku server started via ADB can shut down when you connect over USB.** A USB
-> connection to Android Auto can put the phone into accessory mode, which restarts ADB and
-> can take the Shizuku server down with it. Wireless debugging does not avoid this — both
+> **A Shizuku server started via ADB shuts down when you connect over USB.** A USB
+> connection to Android Auto puts the phone into accessory mode, which restarts ADB and
+> takes the Shizuku server down with it. Wireless debugging does not avoid this — both
 > go through the same ADB. If the privileged features stop working right after you plug in,
-> start Shizuku again; connecting Android Auto **first** and starting Shizuku **after** saves
-> you the round trip. Root users are unaffected, as are wireless Android Auto connections
-> (nothing is plugged in, so ADB is left alone).
+> start Shizuku again — ScreenOnAuto reconnects on its own from there. Connecting Android
+> Auto **first** and starting Shizuku **after** saves you the round trip. Root users are
+> unaffected, as are wireless Android Auto connections (nothing is plugged in, so ADB is
+> left alone).
 
 > **Waking the screen again:** the touchscreen powers down with the panel, so tapping the
 > phone does nothing. Stop the mirror or disconnect Android Auto, or press the phone's power
