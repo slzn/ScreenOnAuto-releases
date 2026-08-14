@@ -30,8 +30,7 @@ Google Play 베타 테스터 목록을 통해 ScreenOnAuto를 설치합니다 �
 1. **신청** 양식을 열고, 요청되면 로그인한 뒤, 이메일을 기록하는 체크박스를 선택하고
    제출하세요:
 
-   🟢 **테스트 신청:** <https://docs.google.com/forms/d/1GWqHlSMWLE_WU2UQSBmmZ1VxA0G6DVUaGwwq_Z8j7Bs/viewform>
-
+   <a class="formcta join" href="https://docs.google.com/forms/d/1GWqHlSMWLE_WU2UQSBmmZ1VxA0G6DVUaGwwq_Z8j7Bs/viewform"><span class="lab">테스트 신청</span><span class="host">docs.google.com</span></a>
 2. **참여 링크**가 담긴 확인 메일을 받게 됩니다. 링크를 열고 **테스터 되기**를 누르세요.
 3. 같은 메일에 있는 Play 스토어 링크를 열고 평소처럼 **ScreenOnAuto**를 설치하세요.
 4. **설치한 뒤** **Android Auto → 런처 맞춤설정**을 열어 ScreenOnAuto 항목 **세 개**(전체 화면, Legacy, 미디어 컨트롤러)가 보이는지 확인하세요. 전체 목록과 항목이 보이지 않을 때의 대처는 [Android Auto에서 확인](/#verify)을 참고하세요.
@@ -57,8 +56,7 @@ Google Play 베타 테스터 목록을 통해 ScreenOnAuto를 설치합니다 �
 자리를 다른 사람에게 넘기려면, **삭제할 계정으로 로그인한 상태에서** **탈퇴** 양식을 열고
 제출하세요:
 
-🔴 **테스트 탈퇴:** <https://docs.google.com/forms/d/1-pLXdA4YDparnHh6WBcohaibO3xYcK8PjuWQv6R6_18/viewform>
-
+<a class="formcta" href="https://docs.google.com/forms/d/1-pLXdA4YDparnHh6WBcohaibO3xYcK8PjuWQv6R6_18/viewform"><span class="lab">테스트 탈퇴</span><span class="host">docs.google.com</span></a>
 ## 참고 사항
 
 - **Android 13 이하**에서는 베타 참여가 선택 사항입니다 — 대신 APK를 사이드로드할 수 있습니다([설치 안내](/#install) 참고).

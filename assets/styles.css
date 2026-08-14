@@ -227,6 +227,36 @@ footer .updated { border-top: 0; margin-top: 0; padding-top: 0; }
 }
 .doc p:has(> img:only-child) img { display: block; clip-path: inset(3px 0 0 0 round 8px); }
 
+/* Beta-test form links. The 44-character form id was rendered in full and is pure noise
+   to a reader — but the destination is not: this page asks people to sign in with their
+   Google account, and a link that hides where it goes is the shape of a phishing page.
+   So the button carries the action and the mono line under it carries the host, the one
+   part of the URL that answers "where does this go?". Join is filled and leave is only
+   outlined because de-emphasising the exit is the correct weighting, not merely the
+   quieter one. */
+.formcta {
+  display: inline-flex; flex-direction: column; justify-content: center; gap: 2px;
+  margin: 6px 0; padding: 11px 20px; min-height: 44px;
+  border: 1px solid var(--border); border-radius: 12px;
+  background: var(--card); color: var(--text); text-decoration: none;
+}
+.formcta .lab {
+  font-family: "Chakra Petch", system-ui, sans-serif;
+  font-weight: 600; font-size: 1.02rem; letter-spacing: 0.01em;
+}
+/* isolate: a bare hostname sitting inside an RTL paragraph must keep its own order */
+.formcta .host {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.72rem; letter-spacing: 0.06em; color: var(--muted); unicode-bidi: isolate;
+}
+.formcta:hover { border-color: var(--accent); }
+.formcta:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.formcta.join {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, var(--card));
+}
+.formcta.join .lab { color: var(--accent); }
+
 /* ============ RTL (ar) — logical-direction overrides for the physical rules above ============ */
 [dir="rtl"] th, [dir="rtl"] td { text-align: right; }
 [dir="rtl"] .steps > li, [dir="rtl"] .doc ol > li { padding-left: 0; padding-right: 42px; }
@@ -239,7 +269,8 @@ footer .updated { border-top: 0; margin-top: 0; padding-top: 0; }
 [dir="rtl"] .carousel::after { right: auto; left: 16px; }
 /* Arabic script must not be letter-spaced — it breaks the letter joins */
 [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] .btn, [dir="rtl"] .path b,
-[dir="rtl"] .hero .eyebrow, [dir="rtl"] .path .k { letter-spacing: 0; }
+[dir="rtl"] .hero .eyebrow, [dir="rtl"] .path .k,
+[dir="rtl"] .formcta .lab { letter-spacing: 0; }
 
 @media (max-width: 720px) {
   header.hero { padding-top: 56px; }

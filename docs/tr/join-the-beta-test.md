@@ -5,7 +5,7 @@ lang: tr
 slug: join-the-beta-test
 permalink: /docs/tr/join-the-beta-test/
 date: 2026-07-20
-last_modified_at: 2026-07-20
+last_modified_at: 2026-08-14
 ---
 
 # Beta Testine Katılın
@@ -33,8 +33,7 @@ ScreenOnAuto'yu Google Play beta test kullanıcısı listesi üzerinden yükleyi
 1. **Katılım** formunu açın, istenirse oturum açın, e-postanızı kaydeden kutucuğu
    işaretleyin ve gönderin:
 
-   🟢 **Teste katıl:** <https://docs.google.com/forms/d/1NbWZzm__eYXzPb1aFfa3j6aZTpo4Ke0G2bzd03cFAVE/viewform>
-
+   <a class="formcta join" href="https://docs.google.com/forms/d/1NbWZzm__eYXzPb1aFfa3j6aZTpo4Ke0G2bzd03cFAVE/viewform"><span class="lab">Teste katıl</span><span class="host">docs.google.com</span></a>
 2. **Katılım bağlantısı** içeren bir onay e-postası alacaksınız. Bağlantıyı açın ve **Test kullanıcısı ol**'a dokunun.
 3. Aynı e-postadaki Play Store bağlantısını açın ve **ScreenOnAuto**'yu normal şekilde yükleyin.
 4. **Yükledikten sonra** **Android Auto → Başlatıcıyı özelleştir**'i açın ve **üç** ScreenOnAuto girişini gördüğünüzü doğrulayın (tam ekran, Legacy ve Media Controller). Tam liste ve eksik giriş olursa yapılacaklar için [Android Auto'da doğrulama](/tr/#verify) bölümüne bakın.
@@ -62,8 +61,7 @@ ScreenOnAuto'yu Google Play beta test kullanıcısı listesi üzerinden yükleyi
 Yerinizi bir başkasına bırakmak için **Ayrılma** formunu **kaldırmak istediğiniz
 hesapla oturum açmış olarak** açın ve gönderin:
 
-🔴 **Testten ayrıl:** <https://docs.google.com/forms/d/1CaLlyfOFeduNU22GN9rufE4R-NlEEx3KExDPOvjawZ0/viewform>
-
+<a class="formcta" href="https://docs.google.com/forms/d/1CaLlyfOFeduNU22GN9rufE4R-NlEEx3KExDPOvjawZ0/viewform"><span class="lab">Testten ayrıl</span><span class="host">docs.google.com</span></a>
 ## Notlar
 
 - **Android 13 ve altında** betaya katılmak isteğe bağlıdır — bunun yerine APK'yı elle de yükleyebilirsiniz (bkz. [kurulum kılavuzu](/tr/#install)).

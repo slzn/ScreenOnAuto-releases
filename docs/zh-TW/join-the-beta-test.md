@@ -5,7 +5,7 @@ lang: zh-TW
 slug: join-the-beta-test
 permalink: /docs/zh-TW/join-the-beta-test/
 date: 2026-07-16
-last_modified_at: 2026-07-17
+last_modified_at: 2026-08-14
 ---
 
 # 加入 Beta 測試
@@ -27,8 +27,7 @@ last_modified_at: 2026-07-17
 
 1. 開啟**加入**表單,依提示登入後,勾選「記錄電子郵件地址」核取方塊並送出:
 
-   🟢 **加入測試:** <https://docs.google.com/forms/d/1fBWi5Qv8DocyJ9YhWX8-7mLQ60okDRw4kNrpyycxajE/viewform>
-
+   <a class="formcta join" href="https://docs.google.com/forms/d/1fBWi5Qv8DocyJ9YhWX8-7mLQ60okDRw4kNrpyycxajE/viewform"><span class="lab">加入測試</span><span class="host">docs.google.com</span></a>
 2. 你會收到一封確認信,內含**加入測試連結(opt-in link)**。點開並按**成為測試者(Become a tester)**。
 3. 從同一封信裡的 Play 商店連結進入,照一般方式安裝 **ScreenOnAuto**。
 4. **安裝完成後**,到手機的 **Android Auto → 自訂啟動器**,確認看得到**三個** ScreenOnAuto 項目(全螢幕、Legacy、媒體控制器)。完整清單與缺項處理請見 [在 Android Auto 中驗證](/zh-TW/#verify)。
@@ -46,8 +45,7 @@ last_modified_at: 2026-07-17
 
 若要把名額讓給其他人,請**以要退出的 Google 帳號登入**後開啟**退出**表單並送出:
 
-🔴 **退出測試:** <https://docs.google.com/forms/d/1NmqeCP-HV299BTCBu56rhjHD6zkY5zgd1iiWH0B_JW0/viewform>
-
+<a class="formcta" href="https://docs.google.com/forms/d/1NmqeCP-HV299BTCBu56rhjHD6zkY5zgd1iiWH0B_JW0/viewform"><span class="lab">退出測試</span><span class="host">docs.google.com</span></a>
 ## 注意事項
 
 - **Android 13 以下(含)**不一定要走 beta 名單,也可以改用 sideload 安裝 APK(見 [安裝說明](/zh-TW/#install))。

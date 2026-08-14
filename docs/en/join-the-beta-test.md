@@ -5,7 +5,7 @@ lang: en
 slug: join-the-beta-test
 permalink: /docs/en/join-the-beta-test/
 date: 2026-07-16
-last_modified_at: 2026-07-17
+last_modified_at: 2026-08-14
 ---
 
 # Join the Beta Test
@@ -32,8 +32,7 @@ Install ScreenOnAuto through the Google Play beta-tester list — **required on 
 1. Open the **Join** form, sign in if asked, tick the checkbox that records your email,
    and submit:
 
-   🟢 **Join the test:** <https://docs.google.com/forms/d/1tc18YdGins12x4tgGYuQkr0yXiwLCbbNkhf8swmYlM8/viewform>
-
+   <a class="formcta join" href="https://docs.google.com/forms/d/1tc18YdGins12x4tgGYuQkr0yXiwLCbbNkhf8swmYlM8/viewform"><span class="lab">Join the test</span><span class="host">docs.google.com</span></a>
 2. You'll receive a confirmation email with an **opt-in link**. Open it and tap **Become a tester**.
 3. Open the Play Store link from the same email and install **ScreenOnAuto** as usual.
 4. **After installing**, open **Android Auto → Customize Launcher** and confirm you see the **three** ScreenOnAuto entries (full-screen, Legacy, and Media Controller). See [Verify in Android Auto](/#verify) for the full list and what to do if any is missing.
@@ -59,8 +58,7 @@ Install ScreenOnAuto through the Google Play beta-tester list — **required on 
 To free your slot for someone else, open the **Leave** form **signed in with the account
 you want to remove** and submit:
 
-🔴 **Leave the test:** <https://docs.google.com/forms/d/1GwlycvaZv2AfvPGCz5gVpiv7ZpwJJrrK-5QujHz2ySc/viewform>
-
+<a class="formcta" href="https://docs.google.com/forms/d/1GwlycvaZv2AfvPGCz5gVpiv7ZpwJJrrK-5QujHz2ySc/viewform"><span class="lab">Leave the test</span><span class="host">docs.google.com</span></a>
 ## Notes
 
 - On **Android 13 and below**, joining the beta is optional — you can sideload the APK instead (see the [installation guide](/#install)).

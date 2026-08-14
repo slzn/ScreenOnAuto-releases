@@ -5,7 +5,7 @@ lang: ar
 slug: join-the-beta-test
 permalink: /docs/ar/join-the-beta-test/
 date: 2026-07-20
-last_modified_at: 2026-07-20
+last_modified_at: 2026-08-14
 ---
 
 # الانضمام إلى الاختبار التجريبي
@@ -31,8 +31,7 @@ last_modified_at: 2026-07-20
 1. افتح نموذج **الانضمام**، وسجِّل الدخول إن طُلب منك، وعلِّم مربع الاختيار
    الذي يسجل بريدك، ثم أرسِل:
 
-   🟢 **الانضمام إلى الاختبار:** <https://docs.google.com/forms/d/1FVQbRwQG4rcnM9EXwGclS3lC_CPlF0pTPxrtRilkzB0/viewform>
-
+   <a class="formcta join" href="https://docs.google.com/forms/d/1FVQbRwQG4rcnM9EXwGclS3lC_CPlF0pTPxrtRilkzB0/viewform"><span class="lab">الانضمام إلى الاختبار</span><span class="host">docs.google.com</span></a>
 2. ستصلك رسالة تأكيد تحتوي **رابط الانضمام**. افتحه وانقر **أن تصبح مختبِرًا**.
 3. افتح رابط متجر Play من الرسالة نفسها وثبِّت **ScreenOnAuto** كالمعتاد.
 4. **بعد التثبيت**، افتح **Android Auto ← تخصيص المشغِّل** وتأكد من ظهور
@@ -60,8 +59,7 @@ last_modified_at: 2026-07-20
 لتحرير مقعدك لشخص آخر، افتح نموذج **المغادرة** **مسجلًا الدخول بالحساب المراد
 إزالته** ثم أرسِل:
 
-🔴 **مغادرة الاختبار:** <https://docs.google.com/forms/d/1_bhE4s0G9rrAZDoGhnl3tlNXDiMu07bsNc7E0VkN0p4/viewform>
-
+<a class="formcta" href="https://docs.google.com/forms/d/1_bhE4s0G9rrAZDoGhnl3tlNXDiMu07bsNc7E0VkN0p4/viewform"><span class="lab">مغادرة الاختبار</span><span class="host">docs.google.com</span></a>
 ## ملاحظات
 
 - على **Android 13 وأقدم**، الانضمام إلى الاختبار اختياري — يمكنك تثبيت ملف APK يدويًا بدلًا من ذلك (راجع [دليل التثبيت](/ar/#install)).

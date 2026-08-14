@@ -5,7 +5,7 @@ lang: de
 slug: join-the-beta-test
 permalink: /docs/de/join-the-beta-test/
 date: 2026-07-16
-last_modified_at: 2026-07-17
+last_modified_at: 2026-08-14
 ---
 
 # Beta-Test beitreten
@@ -32,8 +32,7 @@ Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play — auf **A
 1. Öffne das **Anmeldeformular**, melde dich falls nötig an, setze das
    Häkchen zur Erfassung deiner E-Mail-Adresse und sende ab:
 
-   🟢 **Am Test teilnehmen:** <https://docs.google.com/forms/d/1AtU0rkwT8fgaS4aty3nfIk7XLbFeC2umzTRABA2I7nY/viewform>
-
+   <a class="formcta join" href="https://docs.google.com/forms/d/1AtU0rkwT8fgaS4aty3nfIk7XLbFeC2umzTRABA2I7nY/viewform"><span class="lab">Am Test teilnehmen</span><span class="host">docs.google.com</span></a>
 2. Du erhältst eine Bestätigungs-E-Mail mit einem **Teilnahme-Link (Opt-in)**. Öffne ihn und tippe auf **Become a tester**.
 3. Öffne den Play-Store-Link aus derselben E-Mail und installiere **ScreenOnAuto** wie gewohnt.
 4. **Nach der Installation** öffne **Android Auto → Launcher anpassen** und prüfe, ob die **drei** ScreenOnAuto-Einträge erscheinen (Vollbild, Legacy und Media Controller). Siehe [In Android Auto überprüfen](/de/#verify) für die vollständige Liste und was zu tun ist, wenn einer fehlt.
@@ -62,8 +61,7 @@ Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play — auf **A
 Um deinen Platz für jemand anderen freizugeben, öffne das **Austrittsformular**,
 **angemeldet mit dem Konto, das entfernt werden soll**, und sende ab:
 
-🔴 **Test verlassen:** <https://docs.google.com/forms/d/13VQcvnjWEf4bn2xv4aYx5AOLhHJ44Euq2akqy3KiJls/viewform>
-
+<a class="formcta" href="https://docs.google.com/forms/d/13VQcvnjWEf4bn2xv4aYx5AOLhHJ44Euq2akqy3KiJls/viewform"><span class="lab">Test verlassen</span><span class="host">docs.google.com</span></a>
 ## Hinweise
 
 - Auf **Android 13 und niedriger** ist der Beta-Beitritt optional — du kannst das APK auch per Sideload installieren (siehe [Installationsanleitung](/de/#install)).
