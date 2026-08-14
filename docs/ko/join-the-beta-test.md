@@ -30,7 +30,7 @@ Google Play 베타 테스터 목록을 통해 ScreenOnAuto를 설치합니다 �
 1. **신청** 양식을 열고, 요청되면 로그인한 뒤, 이메일을 기록하는 체크박스를 선택하고
    제출하세요:
 
-   🟢 **테스트 신청:** <https://docs.google.com/forms/d/KO_JOIN_FORM_ID/viewform>
+   🟢 **테스트 신청:** <https://docs.google.com/forms/d/1GWqHlSMWLE_WU2UQSBmmZ1VxA0G6DVUaGwwq_Z8j7Bs/viewform>
 
 2. **참여 링크**가 담긴 확인 메일을 받게 됩니다. 링크를 열고 **테스터 되기**를 누르세요.
 3. 같은 메일에 있는 Play 스토어 링크를 열고 평소처럼 **ScreenOnAuto**를 설치하세요.
@@ -57,7 +57,7 @@ Google Play 베타 테스터 목록을 통해 ScreenOnAuto를 설치합니다 �
 자리를 다른 사람에게 넘기려면, **삭제할 계정으로 로그인한 상태에서** **탈퇴** 양식을 열고
 제출하세요:
 
-🔴 **테스트 탈퇴:** <https://docs.google.com/forms/d/KO_REMOVE_FORM_ID/viewform>
+🔴 **테스트 탈퇴:** <https://docs.google.com/forms/d/1-pLXdA4YDparnHh6WBcohaibO3xYcK8PjuWQv6R6_18/viewform>
 
 ## 참고 사항
 
