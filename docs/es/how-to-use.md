@@ -17,7 +17,7 @@ paso a paso.
 
 > **ℹ️ Nota**
 > **Antes de empezar**, asegúrate de que:
-> - ScreenOnAuto está instalado y las tres entradas aparecen en el lanzador de Android Auto.
+> - ScreenOnAuto está instalado y sus entradas aparecen en el lanzador de Android Auto.
 > - Ya abriste la app una vez en el teléfono y concediste los permisos solicitados.
 
 ## Las dos entradas de duplicación

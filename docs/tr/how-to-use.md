@@ -16,7 +16,7 @@ yansıtma girişi ve farkları ile adım adım başlatma akışı.
 
 > **ℹ️ Not**
 > **Başlamadan önce** şunlardan emin olun:
-> - ScreenOnAuto yüklü ve üç giriş Android Auto başlatıcısında görünüyor.
+> - ScreenOnAuto yüklü ve girişleri Android Auto başlatıcısında görünüyor.
 > - Uygulamayı telefonda bir kez açıp istediği izinleri verdiniz.
 
 ## İki yansıtma girişi

@@ -108,16 +108,21 @@ Launch **ScreenOnAuto** and follow the in-app prompts to grant required permissi
 This works **however you installed** — KingInstaller sideload *or* Google Play.
 
 On your phone, go to **Settings → Connected devices → Android Auto → Customize Launcher**.
-You should see **three** ScreenOnAuto entries:
+You should see these **two** ScreenOnAuto entries:
 
 | Icon | Name | Function |
 |---|---|---|
 | <img src="images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Mirrors the phone screen full-screen — replaces the map area for a full-screen view |
 | <img src="images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Mirrors the phone screen using the Legacy projection path — can be displayed side-by-side with the map |
-| <img src="images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | Controls any media app on the phone from Android Auto's native media UI |
 
-If all three entries appear, the installation was successful.
-If any is missing: for a sideload install, reinstall via KingInstaller and ensure it reports Google Play Store as the installer source; for a Google Play install, make sure the Play build finished installing, then re-open Android Auto.
+Depending on your **Android Auto version** you may also see a third entry,
+<img src="images/icon_media.png" width="20"> **ScreenOnAuto Media Controller** — and you may not. **Both are normal:**
+
+- **Older Android Auto** — the entry is listed, with its own icon.
+- **Newer Android Auto** — no entry. The Media Controller has no UI of its own: it drives Android Auto's built-in media panel, and newer Android Auto integrates that panel directly, so no separate icon is needed. **Media control still works.**
+
+If either of the **two** entries above is missing, that *is* a problem: for a sideload install, reinstall via KingInstaller and ensure it reports Google Play Store as the installer source; for a Google Play install, make sure the Play build finished installing, then re-open Android Auto.
+**Don't reinstall just because the Media Controller entry is absent** — that is expected on newer Android Auto.
 
 Ready to go? See **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use)** for starting the mirror in the car.
 

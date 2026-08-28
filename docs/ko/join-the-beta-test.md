@@ -33,7 +33,7 @@ Google Play 베타 테스터 목록을 통해 ScreenOnAuto를 설치합니다 �
    <a class="formcta join" href="https://docs.google.com/forms/d/1GWqHlSMWLE_WU2UQSBmmZ1VxA0G6DVUaGwwq_Z8j7Bs/viewform"><span class="lab">테스트 신청</span><span class="host">docs.google.com</span></a>
 2. **참여 링크**가 담긴 확인 메일을 받게 됩니다. 링크를 열고 **테스터 되기**를 누르세요.
 3. 같은 메일에 있는 Play 스토어 링크를 열고 평소처럼 **ScreenOnAuto**를 설치하세요.
-4. **설치한 뒤** **Android Auto → 런처 맞춤설정**을 열어 ScreenOnAuto 항목 **세 개**(전체 화면, Legacy, 미디어 컨트롤러)가 보이는지 확인하세요. 전체 목록과 항목이 보이지 않을 때의 대처는 [Android Auto에서 확인](/#verify)을 참고하세요.
+4. **설치한 뒤** **Android Auto → 런처 맞춤설정**을 열어 ScreenOnAuto 항목 **두 개**(전체 화면, Legacy)가 보이는지 확인하세요. 세 번째 항목인 **미디어 컨트롤러**는 이전 버전의 Android Auto에서만 표시되며, 최신 버전에서는 표시되지 않는 것이 정상입니다. 전체 목록과 두 항목 중 하나가 보이지 않을 때의 대처는 [Android Auto에서 확인](/#verify)을 참고하세요.
 5. 이제 준비되었습니다 — 차량에서 미러링을 시작하는 방법은 **[사용 방법](/docs/ko/how-to-use/)** 을 참고하세요.
 
 ## 신청한 뒤에는

@@ -35,7 +35,7 @@ Instala ScreenOnAuto mediante la lista de probadores beta de Google Play — **o
    <a class="formcta join" href="https://docs.google.com/forms/d/1moU5KXBuTlm3XHGUDvb4amDSOXspNG38ZmTjwNo8e3s/viewform"><span class="lab">Unirse a la prueba</span><span class="host">docs.google.com</span></a>
 2. Recibirás un correo de confirmación con un **enlace de participación (opt-in)**. Ábrelo y pulsa **Become a tester**.
 3. Abre el enlace de Play Store del mismo correo e instala **ScreenOnAuto** normalmente.
-4. **Tras instalar**, abre **Android Auto → Personalizar menú de aplicaciones** y confirma que aparecen las **tres** entradas de ScreenOnAuto (pantalla completa, Legacy y Media Controller). Consulta [Verificar en Android Auto](/es/#verify) para la lista completa y qué hacer si falta alguna.
+4. **Tras instalar**, abre **Android Auto → Personalizar menú de aplicaciones** y confirma que aparecen las **dos** entradas de ScreenOnAuto (pantalla completa y Legacy). Una tercera entrada, **Media Controller**, solo aparece en versiones antiguas de Android Auto; en las recientes no aparece por diseño, y eso es normal. Consulta [Verificar en Android Auto](/es/#verify) para la lista completa y qué hacer si falta alguna de las dos.
 5. Todo listo — consulta **[Cómo Usar](/docs/es/how-to-use/)** para iniciar la duplicación en el coche.
 
 ## Después de inscribirte

@@ -17,7 +17,7 @@ voiture** — les deux entrées de duplication et leurs différences, puis le d�
 
 > **ℹ️ Remarque**
 > **Avant de commencer**, vérifiez que :
-> - ScreenOnAuto est installé et que les trois entrées apparaissent dans le lanceur d'Android Auto.
+> - ScreenOnAuto est installé et que ses entrées apparaissent dans le lanceur d'Android Auto.
 > - Vous avez ouvert l'app une fois sur le téléphone et accordé les permissions demandées.
 
 ## Les deux entrées de duplication

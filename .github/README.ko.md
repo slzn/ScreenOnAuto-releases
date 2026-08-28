@@ -106,16 +106,21 @@
 **설치 방법과 관계없이** 동일합니다 — KingInstaller 사이드로드든 Google Play든 마찬가지입니다.
 
 휴대전화에서 **설정 → 연결된 기기 → Android Auto → 런처 맞춤설정**으로 이동하세요.
-ScreenOnAuto 항목 **세 개**가 보여야 합니다:
+ScreenOnAuto 항목 **두 개**가 보여야 합니다:
 
 | 아이콘 | 이름 | 기능 |
 |---|---|---|
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | 휴대전화 화면을 전체 화면으로 미러링합니다 — 지도 영역을 대체해 전체 화면으로 표시합니다 |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Legacy 프로젝션 경로로 휴대전화 화면을 미러링합니다 — 지도와 나란히 표시할 수 있습니다 |
-| <img src="../images/icon_media.png" width="48"> | **ScreenOnAuto 미디어 컨트롤러** | Android Auto의 기본 미디어 화면에서 휴대전화의 모든 미디어 앱을 제어합니다 |
 
-세 항목이 모두 보이면 설치가 정상적으로 끝난 것입니다.
-하나라도 보이지 않는다면: 사이드로드로 설치한 경우 KingInstaller로 다시 설치해 설치 출처가 Google Play 스토어로 보고되는지 확인하고, Google Play로 설치한 경우 Play 빌드의 설치가 끝났는지 확인한 뒤 Android Auto를 다시 여세요.
+**Android Auto 버전**에 따라 세 번째 항목인
+<img src="../images/icon_media.png" width="20"> **ScreenOnAuto 미디어 컨트롤러**가 보일 수도, 보이지 않을 수도 있습니다. **둘 다 정상입니다:**
+
+- **이전 버전의 Android Auto** — 항목이 자체 아이콘과 함께 표시됩니다.
+- **최신 버전의 Android Auto** — 항목이 없습니다. 미디어 컨트롤러는 원래 자체 화면이 없습니다. Android Auto에 내장된 미디어 패널을 구동하며, 최신 Android Auto는 이 패널을 직접 통합하므로 별도의 아이콘이 필요하지 않습니다. **미디어 제어는 계속 작동합니다.**
+
+위의 **두** 항목 중 하나라도 보이지 않는다면 그것은 실제 문제입니다: 사이드로드로 설치한 경우 KingInstaller로 다시 설치해 설치 출처가 Google Play 스토어로 보고되는지 확인하고, Google Play로 설치한 경우 Play 빌드의 설치가 끝났는지 확인한 뒤 Android Auto를 다시 여세요.
+**미디어 컨트롤러 항목이 없다는 이유만으로 다시 설치하지 마세요** — 최신 Android Auto에서는 정상입니다.
 
 준비되셨나요? 차량에서 미러링을 시작하는 방법은 **[사용 방법](https://github.com/slzn/ScreenOnAuto-releases/wiki/사용-방법)** 을 참고하세요.
 

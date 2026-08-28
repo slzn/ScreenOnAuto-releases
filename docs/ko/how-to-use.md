@@ -16,7 +16,7 @@ last_modified_at: 2026-08-14
 
 > **ℹ️ 참고**
 > **시작하기 전에** 다음을 확인하세요:
-> - ScreenOnAuto가 설치되어 있고 Android Auto 런처에 세 개의 항목이 보입니다.
+> - ScreenOnAuto가 설치되어 있고 Android Auto 런처에 ScreenOnAuto 항목이 보입니다.
 > - 휴대전화에서 앱을 한 번 열어 요청되는 권한을 부여했습니다.
 
 ## 두 가지 미러링 항목

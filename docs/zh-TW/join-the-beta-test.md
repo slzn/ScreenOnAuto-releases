@@ -30,7 +30,7 @@ last_modified_at: 2026-08-14
    <a class="formcta join" href="https://docs.google.com/forms/d/1fBWi5Qv8DocyJ9YhWX8-7mLQ60okDRw4kNrpyycxajE/viewform"><span class="lab">加入測試</span><span class="host">docs.google.com</span></a>
 2. 你會收到一封確認信,內含**加入測試連結(opt-in link)**。點開並按**成為測試者(Become a tester)**。
 3. 從同一封信裡的 Play 商店連結進入,照一般方式安裝 **ScreenOnAuto**。
-4. **安裝完成後**,到手機的 **Android Auto → 自訂啟動器**,確認看得到**三個** ScreenOnAuto 項目(全螢幕、Legacy、媒體控制器)。完整清單與缺項處理請見 [在 Android Auto 中驗證](/zh-TW/#verify)。
+4. **安裝完成後**,到手機的 **Android Auto → 自訂啟動器**,確認看得到**兩個** ScreenOnAuto 項目(全螢幕、Legacy)。第三個項目「**媒體控制器**」只在較舊的 Android Auto 上出現,新版不會列出,這是正常的。完整清單與缺項處理請見 [在 Android Auto 中驗證](/zh-TW/#verify)。
 5. 到這裡就完成了——上車後如何啟動鏡像,請見**[如何使用](/docs/zh-TW/how-to-use/)**。
 
 ## 送出表單之後

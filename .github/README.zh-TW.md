@@ -95,16 +95,21 @@
 **無論你用哪種方式安裝**——KingInstaller sideload 或 Play 商店——都適用此段。
 
 在手機上前往 **設定 → 已連結的裝置 → Android Auto → 自訂啟動器**。
-您應可看到 **三個** ScreenOnAuto 項目：
+您應可看到這 **兩個** ScreenOnAuto 項目：
 
 | 圖示 | 名稱 | 功能 |
 |---|---|---|
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | 將手機螢幕鏡像至 Android Auto，取代地圖位置達到全螢幕顯示 |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | 使用舊版投影路徑鏡像手機螢幕，可與地圖並列顯示 |
-| <img src="../images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | 透過 Android Auto 原生媒體介面控制手機上的播放器 |
 
-若三個項目皆出現，代表安裝成功。
-若其中一個缺失：sideload 安裝者請重新透過 KingInstaller 安裝並確認安裝來源為 Google Play 商店；Play 商店安裝者請確認 Play 版已安裝完成，再重新開啟 Android Auto。
+依您的 **Android Auto 版本**，可能還會看到第三個項目
+<img src="../images/icon_media.png" width="20"> **ScreenOnAuto Media Controller**，也可能不會。**兩種都正常：**
+
+- **較舊的 Android Auto** — 會列出該項目，並有獨立圖示。
+- **較新的 Android Auto** — 不會列出。媒體控制器本來就沒有自己的介面：它驅動的是 Android Auto 內建的媒體面板，而新版 Android Auto 已將該面板整合，因此不需要獨立圖示。**媒體控制功能仍然正常。**
+
+若上述**兩個**項目有任何一個缺失，那才是真的有問題：sideload 安裝者請重新透過 KingInstaller 安裝並確認安裝來源為 Google Play 商店；Play 商店安裝者請確認 Play 版已安裝完成，再重新開啟 Android Auto。
+**請勿只因為看不到 Media Controller 項目就重新安裝** — 在新版 Android Auto 上這是預期行為。
 
 安裝完成後，請見 **[如何使用](https://github.com/slzn/ScreenOnAuto-releases/wiki/如何使用)** 了解如何在車上啟動鏡像。
 

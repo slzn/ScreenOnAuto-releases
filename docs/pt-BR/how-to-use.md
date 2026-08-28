@@ -17,7 +17,7 @@ a passo.
 
 > **ℹ️ Nota**
 > **Antes de começar**, confirme que:
-> - O ScreenOnAuto está instalado e as três entradas aparecem no launcher do Android Auto.
+> - O ScreenOnAuto está instalado e suas entradas aparecem no launcher do Android Auto.
 > - Você já abriu o app uma vez no celular e concedeu as permissões solicitadas.
 
 ## As duas entradas de espelhamento

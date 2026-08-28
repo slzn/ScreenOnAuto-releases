@@ -98,16 +98,21 @@ Starte **ScreenOnAuto** und folge den Hinweisen in der App, um die erforderliche
 Das gilt **unabhängig von der Installationsart** — KingInstaller-Sideload *oder* Google Play.
 
 Gehe auf dem Telefon zu **Einstellungen → Verbundene Geräte → Android Auto → Launcher anpassen**.
-Dort sollten **drei** ScreenOnAuto-Einträge erscheinen:
+Dort sollten diese **zwei** ScreenOnAuto-Einträge erscheinen:
 
 | Symbol | Name | Funktion |
 |---|---|---|
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Spiegelt den Telefonbildschirm im Vollbild — ersetzt den Kartenbereich |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Spiegelt den Telefonbildschirm über den Legacy-Projektionspfad — kann neben der Karte angezeigt werden |
-| <img src="../images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | Steuert jede Medien-App des Telefons über die native Medienoberfläche von Android Auto |
 
-Wenn alle drei Einträge erscheinen, war die Installation erfolgreich.
-Falls einer fehlt: Bei einer Sideload-Installation über KingInstaller neu installieren und sicherstellen, dass der Google Play Store als Installationsquelle gemeldet wird; bei einer Google-Play-Installation warten, bis die Installation abgeschlossen ist, und Android Auto erneut öffnen.
+Je nach **Android-Auto-Version** siehst du eventuell noch einen dritten Eintrag,
+<img src="../images/icon_media.png" width="20"> **ScreenOnAuto Media Controller** — oder eben nicht. **Beides ist normal:**
+
+- **Ältere Android-Auto-Versionen** — der Eintrag wird mit eigenem Symbol aufgeführt.
+- **Neuere Android-Auto-Versionen** — kein Eintrag. Der Media Controller hatte nie eine eigene Oberfläche: Er steuert die in Android Auto eingebaute Medienoberfläche, und neuere Versionen binden diese direkt ein, sodass kein separates Symbol nötig ist. **Die Mediensteuerung funktioniert weiterhin.**
+
+Falls einer der **beiden** oben genannten Einträge fehlt, liegt tatsächlich ein Problem vor: Bei einer Sideload-Installation über KingInstaller neu installieren und sicherstellen, dass der Google Play Store als Installationsquelle gemeldet wird; bei einer Google-Play-Installation warten, bis die Installation abgeschlossen ist, und Android Auto erneut öffnen.
+**Nicht neu installieren, nur weil der Media-Controller-Eintrag fehlt** — das ist bei neueren Android-Auto-Versionen zu erwarten.
 
 Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wiki/Verwendung)** zum Starten der Spiegelung im Auto.
 

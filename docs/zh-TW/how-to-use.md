@@ -16,7 +16,7 @@ last_modified_at: 2026-07-16
 
 > **ℹ️ 說明**
 > **開始前請先確認:**
-> - 已安裝 ScreenOnAuto,且 Android Auto 啟動器中看得到三個項目。
+> - 已安裝 ScreenOnAuto,且 Android Auto 啟動器中看得到 ScreenOnAuto 的項目。
 > - 已在手機上開啟過 app 並授予所需權限。
 
 ## 兩個鏡像入口

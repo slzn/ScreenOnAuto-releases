@@ -98,16 +98,21 @@ Lancez **ScreenOnAuto** et suivez les invites de l'app pour accorder les permiss
 Cela fonctionne **quelle que soit la méthode d'installation** — KingInstaller *ou* Google Play.
 
 Sur votre téléphone, allez dans **Paramètres → Appareils connectés → Android Auto → Personnaliser le lanceur**.
-Vous devriez voir **trois** entrées ScreenOnAuto :
+Vous devriez voir ces **deux** entrées ScreenOnAuto :
 
 | Icône | Nom | Fonction |
 |---|---|---|
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Duplique l'écran du téléphone en plein écran — remplace la zone de carte |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Duplique l'écran via le chemin de projection Legacy — peut s'afficher côte à côte avec la carte |
-| <img src="../images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | Contrôle n'importe quelle app multimédia du téléphone depuis l'interface multimédia native d'Android Auto |
 
-Si les trois entrées apparaissent, l'installation a réussi.
-S'il en manque une : pour une installation KingInstaller, réinstallez en vérifiant que Google Play Store est déclaré comme source ; pour une installation Google Play, attendez la fin de l'installation puis rouvrez Android Auto.
+Selon votre **version d'Android Auto**, vous verrez peut-être aussi une troisième entrée,
+<img src="../images/icon_media.png" width="20"> **ScreenOnAuto Media Controller** — ou peut-être pas. **Les deux cas sont normaux :**
+
+- **Ancienne version d'Android Auto** — l'entrée est listée, avec sa propre icône.
+- **Version récente d'Android Auto** — aucune entrée. Le Media Controller n'a jamais eu d'interface propre : il pilote le panneau multimédia intégré d'Android Auto, et les versions récentes l'intègrent directement, donc aucune icône distincte n'est nécessaire. **Le contrôle multimédia fonctionne toujours.**
+
+S'il manque l'une des **deux** entrées ci-dessus, il y a bien un problème : pour une installation KingInstaller, réinstallez en vérifiant que Google Play Store est déclaré comme source ; pour une installation Google Play, attendez la fin de l'installation puis rouvrez Android Auto.
+**Ne réinstallez pas simplement parce que l'entrée Media Controller est absente** — c'est normal sur les versions récentes d'Android Auto.
 
 Prêt ? Consultez **[Comment utiliser](https://github.com/slzn/ScreenOnAuto-releases/wiki/Comment-utiliser)** pour démarrer la duplication dans la voiture.
 

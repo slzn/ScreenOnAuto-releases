@@ -17,7 +17,7 @@ Startablauf Schritt für Schritt.
 
 > **ℹ️ Hinweis**
 > **Bevor du beginnst**, stelle sicher:
-> - ScreenOnAuto ist installiert und die drei Einträge erscheinen im Android-Auto-Launcher.
+> - ScreenOnAuto ist installiert und seine Einträge erscheinen im Android-Auto-Launcher.
 > - Du hast die App einmal auf dem Telefon geöffnet und die angeforderten Berechtigungen erteilt.
 
 ## Die beiden Spiegelungs-Einträge

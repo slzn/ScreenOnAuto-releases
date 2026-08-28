@@ -35,7 +35,7 @@ Installa ScreenOnAuto tramite la lista di tester beta di Google Play — **obbli
    <a class="formcta join" href="https://docs.google.com/forms/d/1fsxelIPFUv3nGCJzQvWkkxLcThG8wBpVZUzRpNIdX3I/viewform"><span class="lab">Partecipa al test</span><span class="host">docs.google.com</span></a>
 2. Riceverai un'e-mail di conferma con un **link di opt-in**. Aprila e tocca **Diventa un tester**.
 3. Apri il link del Play Store nella stessa e-mail e installa **ScreenOnAuto** normalmente.
-4. **Dopo l'installazione**, apri **Android Auto → Personalizza avvio applicazioni** e verifica che compaiano le **tre** voci ScreenOnAuto (schermo intero, Legacy e Media Controller). Vedi [Verifica in Android Auto](/it/#verify) per l'elenco completo e cosa fare se ne manca qualcuna.
+4. **Dopo l'installazione**, apri **Android Auto → Personalizza avvio applicazioni** e verifica che compaiano le **due** voci ScreenOnAuto (schermo intero e Legacy). Una terza voce, **Media Controller**, compare solo sulle versioni meno recenti di Android Auto — su quelle più recenti non compare per scelta, ed è normale. Vedi [Verifica in Android Auto](/it/#verify) per l'elenco completo e cosa fare se manca una delle due.
 5. Tutto pronto — consulta **[Come si usa](/docs/it/how-to-use/)** per avviare il mirroring in auto.
 
 ## Dopo l'iscrizione

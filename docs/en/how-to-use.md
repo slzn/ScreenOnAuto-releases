@@ -16,7 +16,7 @@ two mirror entries and how they differ, and the start-up flow step by step.
 
 > **ℹ️ Note**
 > **Before you start**, make sure:
-> - ScreenOnAuto is installed and the three entries appear in Android Auto's launcher.
+> - ScreenOnAuto is installed and its entries appear in Android Auto's launcher.
 > - You've opened the app once on the phone and granted the permissions it asks for.
 
 ## The two mirror entries

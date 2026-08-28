@@ -98,16 +98,21 @@ sayfasına bakın. Kurulumdan sonra uygulamayı açın ve uygulama içi izinleri
 Bu adım **kurulum yönteminizden bağımsız** çalışır — KingInstaller ile elle yükleme *veya* Google Play.
 
 Telefonunuzda **Ayarlar → Bağlı cihazlar → Android Auto → Başlatıcıyı özelleştir** yolunu izleyin.
-**Üç** ScreenOnAuto girişi görmelisiniz:
+Şu **iki** ScreenOnAuto girişini görmelisiniz:
 
 | Simge | Ad | İşlev |
 |---|---|---|
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Telefon ekranını tam ekran yansıtır — tam ekran görünüm için harita alanının yerini alır |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Telefon ekranını Legacy projeksiyon yoluyla yansıtır — haritayla yan yana gösterilebilir |
-| <img src="../images/icon_media.png" width="48"> | **ScreenOnAuto Media Controller** | Telefondaki herhangi bir medya uygulamasını Android Auto'nun yerleşik medya arayüzünden kontrol eder |
 
-Üç giriş de görünüyorsa kurulum başarılıdır.
-Eksik olan varsa: elle yüklemede KingInstaller ile yeniden kurun ve yükleyici kaynağının Google Play Store olarak bildirildiğinden emin olun; Google Play kurulumunda Play sürümünün kurulumunun bittiğinden emin olun ve Android Auto'yu yeniden açın.
+**Android Auto sürümünüze** bağlı olarak üçüncü bir giriş de görebilirsiniz:
+<img src="../images/icon_media.png" width="20"> **ScreenOnAuto Media Controller** — ya da göremeyebilirsiniz. **İkisi de normaldir:**
+
+- **Eski Android Auto** — giriş kendi simgesiyle listelenir.
+- **Yeni Android Auto** — giriş yok. Media Controller'ın kendine ait bir arayüzü hiç olmadı: Android Auto'nun yerleşik medya panelini sürer; yeni sürümler bu paneli doğrudan bütünleştirdiği için ayrı bir simgeye gerek kalmaz. **Medya kontrolü çalışmaya devam eder.**
+
+Yukarıdaki **iki** girişten biri eksikse, o gerçekten bir sorundur: elle yüklemede KingInstaller ile yeniden kurun ve yükleyici kaynağının Google Play Store olarak bildirildiğinden emin olun; Google Play kurulumunda Play sürümünün kurulumunun bittiğinden emin olun ve Android Auto'yu yeniden açın.
+**Yalnızca Media Controller girişi görünmüyor diye yeniden kurmayın** — yeni Android Auto sürümlerinde bu beklenen durumdur.
 
 Hazır mısınız? Arabada yansıtmayı başlatmak için **[Nasıl Kullanılır](https://github.com/slzn/ScreenOnAuto-releases/wiki/Nasıl-Kullanılır)** kılavuzuna bakın.
 

@@ -35,7 +35,7 @@ Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play — auf **A
    <a class="formcta join" href="https://docs.google.com/forms/d/1AtU0rkwT8fgaS4aty3nfIk7XLbFeC2umzTRABA2I7nY/viewform"><span class="lab">Am Test teilnehmen</span><span class="host">docs.google.com</span></a>
 2. Du erhältst eine Bestätigungs-E-Mail mit einem **Teilnahme-Link (Opt-in)**. Öffne ihn und tippe auf **Become a tester**.
 3. Öffne den Play-Store-Link aus derselben E-Mail und installiere **ScreenOnAuto** wie gewohnt.
-4. **Nach der Installation** öffne **Android Auto → Launcher anpassen** und prüfe, ob die **drei** ScreenOnAuto-Einträge erscheinen (Vollbild, Legacy und Media Controller). Siehe [In Android Auto überprüfen](/de/#verify) für die vollständige Liste und was zu tun ist, wenn einer fehlt.
+4. **Nach der Installation** öffne **Android Auto → Launcher anpassen** und prüfe, ob die **zwei** ScreenOnAuto-Einträge erscheinen (Vollbild und Legacy). Ein dritter Eintrag, **Media Controller**, erscheint nur bei älteren Android-Auto-Versionen — bei neueren fehlt er absichtlich, und das ist in Ordnung. Siehe [In Android Auto überprüfen](/de/#verify) für die vollständige Liste und was zu tun ist, wenn einer der beiden fehlt.
 5. Fertig — siehe **[Verwendung](/docs/de/how-to-use/)** zum Starten der Spiegelung im Auto.
 
 ## Nach der Anmeldung

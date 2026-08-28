@@ -17,7 +17,7 @@ passo passo.
 
 > **ℹ️ Nota**
 > **Prima di iniziare**, assicurati che:
-> - ScreenOnAuto sia installato e le tre voci compaiano nel launcher di Android Auto.
+> - ScreenOnAuto sia installato e le sue voci compaiano nel launcher di Android Auto.
 > - Tu abbia aperto l'app una volta sul telefono e concesso le autorizzazioni richieste.
 
 ## Le due voci di mirroring

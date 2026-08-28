@@ -35,7 +35,7 @@ Instale o ScreenOnAuto pela lista de testadores beta do Google Play — **obriga
    <a class="formcta join" href="https://docs.google.com/forms/d/13J4nqagD6GxuA-8JMby5v306j9KSR_GxVOGb0S1D3P0/viewform"><span class="lab">Entrar no teste</span><span class="host">docs.google.com</span></a>
 2. Você receberá um e-mail de confirmação com um **link de participação (opt-in)**. Abra-o e toque em **Become a tester**.
 3. Abra o link da Play Store no mesmo e-mail e instale o **ScreenOnAuto** normalmente.
-4. **Depois de instalar**, abra **Android Auto → Personalizar tela de início** e confirme que as **três** entradas do ScreenOnAuto aparecem (tela cheia, Legacy e Media Controller). Veja [Verificar no Android Auto](/pt-BR/#verify) para a lista completa e o que fazer se alguma faltar.
+4. **Depois de instalar**, abra **Android Auto → Personalizar tela de início** e confirme que as **duas** entradas do ScreenOnAuto aparecem (tela cheia e Legacy). Uma terceira entrada, **Media Controller**, só aparece em versões antigas do Android Auto — nas mais recentes ela não aparece por design, e isso é normal. Veja [Verificar no Android Auto](/pt-BR/#verify) para a lista completa e o que fazer se faltar alguma das duas.
 5. Tudo pronto — veja **[Como Usar](/docs/pt-BR/how-to-use/)** para iniciar o espelhamento no carro.
 
 ## Depois de se inscrever
