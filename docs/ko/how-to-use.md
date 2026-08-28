@@ -5,7 +5,7 @@ lang: ko
 slug: how-to-use
 permalink: /docs/ko/how-to-use/
 date: 2026-08-14
-last_modified_at: 2026-08-14
+last_modified_at: 2026-08-28
 ---
 
 # 사용 방법

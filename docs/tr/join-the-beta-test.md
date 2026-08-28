@@ -5,7 +5,7 @@ lang: tr
 slug: join-the-beta-test
 permalink: /docs/tr/join-the-beta-test/
 date: 2026-07-20
-last_modified_at: 2026-08-14
+last_modified_at: 2026-08-28
 ---
 
 # Beta Testine Katılın

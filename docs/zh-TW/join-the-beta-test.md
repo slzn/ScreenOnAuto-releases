@@ -5,7 +5,7 @@ lang: zh-TW
 slug: join-the-beta-test
 permalink: /docs/zh-TW/join-the-beta-test/
 date: 2026-07-16
-last_modified_at: 2026-08-14
+last_modified_at: 2026-08-28
 ---
 
 # 加入 Beta 測試
