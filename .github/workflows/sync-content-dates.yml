@@ -1,0 +1,58 @@
+# Keep every page's "last modified" date honest without anyone remembering to.
+#
+# The dates live in three hand-maintained places (front matter, JSON-LD + the
+# visible <time>, and sitemap.xml), so a content edit that updates only some of
+# them leaves the page claiming it is older than it is — which is exactly what
+# happened on 2026-08-28, twice in a row, and on 2026-07-30 before that.
+#
+# tools/sync-content-dates.py derives each date from the last commit that
+# changed the file's *content*, so this workflow's own commits (date stamps
+# only) are ignored and it settles after one pass.
+name: Sync content dates
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'i18n/**/index.html'
+      - 'docs/**/*.md'
+      - 'sitemap.xml'
+      - 'tools/sync-content-dates.py'
+  workflow_dispatch:
+
+# A push by GITHUB_TOKEN does not start another workflow run, so this cannot
+# loop; the actor guard is belt-and-braces for a future token change.
+concurrency:
+  group: sync-content-dates
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history: the script reads each file's commit log to find the
+          # last real content change. A shallow clone would misdate everything.
+          fetch-depth: 0
+
+      - name: Sync dates
+        run: python3 tools/sync-content-dates.py
+
+      - name: Commit if anything changed
+        run: |
+          if git diff --quiet; then
+            echo "nothing to do"
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Sync page dates with git' \
+                     -m 'Automated by .github/workflows/sync-content-dates.yml.'
+          git push
