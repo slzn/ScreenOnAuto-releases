@@ -5,7 +5,7 @@ lang: de
 slug: how-to-use
 permalink: /docs/de/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-08-28
+last_modified_at: 2026-09-02
 ---
 
 # Verwendung
@@ -28,7 +28,7 @@ dem Fahrzeugbildschirm dargestellt wird:
 
 ![Android-Auto-Launcher mit den ScreenOnAuto-Einträgen](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
+|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
 |---|---|---|
 | Darstellung | Vollbild — belegt den Kartenbereich | Auf einem **ausreichend großen Fahrzeugbildschirm** kann er in geteilter Ansicht **neben der Karte** stehen; auf kleineren Bildschirmen wandert die Karte in den Hintergrund und nur die Spiegelung wird angezeigt (die Karte wird **nicht** ersetzt) |
 
@@ -59,8 +59,8 @@ fragen.
 1. Aktiviere in der App auf dem Telefon **Automatisch starten** (einmalige Einrichtung).
 2. Verbinde das Telefon mit dem Auto und tippe im Android-Auto-Launcher auf einen
    ScreenOnAuto-Eintrag
-   (<img src="/images/icon_launcher.png" width="24" align="center"> oder
-   <img src="/images/icon_legacy.png" width="24" align="center">).
+   (<img src="/images/icon_launcher.png" width="24" align="center" alt="ScreenOnAuto-Symbol"> oder
+   <img src="/images/icon_legacy.png" width="24" align="center" alt="ScreenOnAuto-(Legacy)-Symbol">).
 3. Das Telefon zeigt automatisch den Berechtigungsdialog für die Bildschirmaufnahme —
    nimm das Telefon und tippe auf **Jetzt starten** (Start now):
 

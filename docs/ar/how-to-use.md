@@ -5,7 +5,7 @@ lang: ar
 slug: how-to-use
 permalink: /docs/ar/how-to-use/
 date: 2026-07-20
-last_modified_at: 2026-08-28
+last_modified_at: 2026-09-02
 ---
 
 # طريقة الاستخدام
@@ -26,7 +26,7 @@ last_modified_at: 2026-08-28
 
 ![مشغِّل Android Auto ويظهر فيه إدخالات ScreenOnAuto](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
+|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
 |---|---|---|
 | العرض | ملء الشاشة — يحل محل منطقة الخريطة | على **شاشة سيارة كبيرة بما يكفي** يمكن أن يظهر **جنبًا إلى جنب مع الخريطة** في العرض المقسّم؛ وعلى شاشة أصغر تنتقل الخريطة إلى الخلفية ويُعرض النسخ المطابق وحده (وهو **لا** يحل محل الخريطة) |
 
@@ -55,8 +55,8 @@ last_modified_at: 2026-08-28
 
 1. في التطبيق على الهاتف، فعِّل **بدء النسخ المطابق تلقائيًا** (إعداد لمرة واحدة).
 2. صِل الهاتف بالسيارة وانقر أحد إدخالَي ScreenOnAuto
-   (<img src="/images/icon_launcher.png" width="24"> أو
-   <img src="/images/icon_legacy.png" width="24">) في مشغِّل Android Auto.
+   (<img src="/images/icon_launcher.png" width="24" alt="أيقونة ScreenOnAuto"> أو
+   <img src="/images/icon_legacy.png" width="24" alt="أيقونة ScreenOnAuto (Legacy)">) في مشغِّل Android Auto.
 3. يعرض الهاتف نافذة إذن تسجيل الشاشة تلقائيًا — التقط الهاتف وانقر
    **البدء الآن**:
 

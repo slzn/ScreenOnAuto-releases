@@ -5,7 +5,7 @@ lang: it
 slug: how-to-use
 permalink: /docs/it/how-to-use/
 date: 2026-07-17
-last_modified_at: 2026-08-28
+last_modified_at: 2026-09-02
 ---
 
 # Come si usa
@@ -28,7 +28,7 @@ mostrato sullo schermo dell'auto:
 
 ![Launcher di Android Auto con le voci ScreenOnAuto](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
+|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
 |---|---|---|
 | Visualizzazione | Schermo intero — occupa l'area della mappa | Su uno **schermo dell'auto abbastanza grande** può stare **affiancato alla mappa** in vista divisa; su uno schermo più piccolo la mappa passa semplicemente in secondo piano e viene mostrato solo il mirroring (non **sostituisce** la mappa) |
 
@@ -57,8 +57,8 @@ attivo, aprire l'altra voce lo mostra subito senza richiedere di nuovo l'autoriz
 
 1. Nell'app sul telefono, attiva l'**Avvio automatico** (impostazione una tantum).
 2. Collega il telefono all'auto e tocca una voce ScreenOnAuto
-   (<img src="/images/icon_launcher.png" width="24" align="center"> oppure
-   <img src="/images/icon_legacy.png" width="24" align="center">) nel launcher di
+   (<img src="/images/icon_launcher.png" width="24" align="center" alt="Icona ScreenOnAuto"> oppure
+   <img src="/images/icon_legacy.png" width="24" align="center" alt="Icona ScreenOnAuto (Legacy)">) nel launcher di
    Android Auto.
 3. Il telefono mostra automaticamente la finestra di autorizzazione alla cattura dello
    schermo — prendi il telefono e tocca **Avvia adesso**:

@@ -5,7 +5,7 @@ lang: ko
 slug: how-to-use
 permalink: /docs/ko/how-to-use/
 date: 2026-08-14
-last_modified_at: 2026-08-28
+last_modified_at: 2026-09-02
 ---
 
 # 사용 방법
@@ -26,7 +26,7 @@ Android Auto의 앱 런처에는 미러링 항목이 **두 개** 표시됩니다
 
 ![ScreenOnAuto 항목이 표시된 Android Auto 런처](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
+|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
 |---|---|---|
 | 표시 방식 | 전체 화면 — 지도 영역을 대체합니다 | **화면이 충분히 큰 차량**에서는 분할 화면으로 **지도와 나란히** 표시될 수 있습니다. 화면이 작으면 지도가 그냥 뒤로 물러나고 미러링만 표시됩니다(지도를 **대체하지는** 않습니다) |
 
@@ -54,8 +54,8 @@ Android Auto의 앱 런처에는 미러링 항목이 **두 개** 표시됩니다
 
 1. 휴대전화의 앱에서 **자동 미러링 시작**을 켭니다(최초 1회 설정).
 2. 휴대전화를 차량에 연결하고 Android Auto 런처에서 ScreenOnAuto 항목
-   (<img src="/images/icon_launcher.png" width="24" align="center"> 또는
-   <img src="/images/icon_legacy.png" width="24" align="center">)을 누릅니다.
+   (<img src="/images/icon_launcher.png" width="24" align="center" alt="ScreenOnAuto 아이콘"> 또는
+   <img src="/images/icon_legacy.png" width="24" align="center" alt="ScreenOnAuto (Legacy) 아이콘">)을 누릅니다.
 3. 휴대전화에 화면 캡처 권한 대화상자가 자동으로 표시됩니다 — 휴대전화를 들고 **지금
    시작**을 누르세요:
 

@@ -5,7 +5,7 @@ lang: en
 slug: how-to-use
 permalink: /docs/en/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-08-28
+last_modified_at: 2026-09-02
 ---
 
 # How to Use
@@ -26,7 +26,7 @@ screen — they differ in *how* the mirror is shown on the car screen:
 
 ![Android Auto launcher showing the ScreenOnAuto entries](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
+|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
 |---|---|---|
 | Display | Full-screen — takes over the map area | On a **large enough car screen** it can sit **side-by-side with the map** in split view; on a smaller screen the map simply goes to the background and only the mirror is shown (it does **not** replace the map) |
 
@@ -54,8 +54,8 @@ other entry shows it right away without asking for permission again.
 
 1. In the app on the phone, turn on **Auto Start Mirror** (one-time setup).
 2. Connect the phone to the car and tap a ScreenOnAuto entry
-   (<img src="/images/icon_launcher.png" width="24" align="center"> or
-   <img src="/images/icon_legacy.png" width="24" align="center">) in the Android Auto
+   (<img src="/images/icon_launcher.png" width="24" align="center" alt="ScreenOnAuto icon"> or
+   <img src="/images/icon_legacy.png" width="24" align="center" alt="ScreenOnAuto (Legacy) icon">) in the Android Auto
    launcher.
 3. The phone brings up the screen-capture permission dialog automatically — pick up the
    phone and tap **Start now**:

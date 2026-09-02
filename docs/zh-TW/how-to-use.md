@@ -5,7 +5,7 @@ lang: zh-TW
 slug: how-to-use
 permalink: /docs/zh-TW/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-08-28
+last_modified_at: 2026-09-02
 ---
 
 # 如何使用
@@ -26,7 +26,7 @@ Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都�
 
 ![Android Auto 啟動器中的 ScreenOnAuto 項目](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
+|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
 |---|---|---|
 | 顯示方式 | 全螢幕——佔用地圖區域 | 車機螢幕**夠大**時,分割檢視可**與地圖並排**;螢幕較小時地圖會退到背景、畫面上只顯示鏡像(並**不會**取代地圖) |
 
@@ -52,8 +52,8 @@ Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都�
 
 1. 在手機的 app 中開啟**自動開始鏡像**(只需設定一次)。
 2. 把手機連上車機,在 Android Auto 啟動器點任一個 ScreenOnAuto 入口
-   (<img src="/images/icon_launcher.png" width="24" align="center"> 或
-   <img src="/images/icon_legacy.png" width="24" align="center">)。
+   (<img src="/images/icon_launcher.png" width="24" align="center" alt="ScreenOnAuto 圖示"> 或
+   <img src="/images/icon_legacy.png" width="24" align="center" alt="ScreenOnAuto (Legacy) 圖示">)。
 3. 手機會自動跳出螢幕擷取權限對話框——拿起手機點**立即開始**(Start now):
 
    <img src="/images/how-to-use/capture-dialog.jpg" width="360" alt="手機上的螢幕擷取權限對話框">

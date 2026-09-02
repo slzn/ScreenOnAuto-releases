@@ -5,7 +5,7 @@ lang: es
 slug: how-to-use
 permalink: /docs/es/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-08-28
+last_modified_at: 2026-09-02
 ---
 
 # Cómo Usar
@@ -28,7 +28,7 @@ duplicación en la pantalla del coche:
 
 ![Lanzador de Android Auto con las entradas de ScreenOnAuto](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
+|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
 |---|---|---|
 | Presentación | Pantalla completa — ocupa el área del mapa | En una **pantalla de coche lo bastante grande** puede ir **junto al mapa** en vista dividida; en pantallas pequeñas el mapa pasa al fondo y solo se muestra la duplicación (**no** sustituye al mapa) |
 
@@ -57,8 +57,8 @@ la otra entrada la muestra al instante sin volver a pedir permiso.
 
 1. En la app del teléfono, activa **Inicio automático** (configuración única).
 2. Conecta el teléfono al coche y toca una entrada de ScreenOnAuto
-   (<img src="/images/icon_launcher.png" width="24" align="center"> o
-   <img src="/images/icon_legacy.png" width="24" align="center">) en el lanzador de
+   (<img src="/images/icon_launcher.png" width="24" align="center" alt="Icono de ScreenOnAuto"> o
+   <img src="/images/icon_legacy.png" width="24" align="center" alt="Icono de ScreenOnAuto (Legacy)">) en el lanzador de
    Android Auto.
 3. El teléfono muestra automáticamente el diálogo de permiso de captura de pantalla —
    coge el teléfono y pulsa **Empezar ahora** (Start now):

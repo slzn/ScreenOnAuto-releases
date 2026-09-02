@@ -5,7 +5,7 @@ lang: tr
 slug: how-to-use
 permalink: /docs/tr/how-to-use/
 date: 2026-07-20
-last_modified_at: 2026-08-28
+last_modified_at: 2026-09-02
 ---
 
 # Nasıl Kullanılır
@@ -27,7 +27,7 @@ gösterildiğidir:
 
 ![ScreenOnAuto girişlerini gösteren Android Auto başlatıcısı](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
+|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
 |---|---|---|
 | Görünüm | Tam ekran — harita alanının yerini alır | **Yeterince büyük bir araç ekranında** bölünmüş görünümde **haritayla yan yana** durabilir; daha küçük ekranlarda harita arka plana geçer ve yalnızca yansıtma gösterilir (haritanın yerini **almaz**) |
 
@@ -57,8 +57,8 @@ gösterir.
 
 1. Telefondaki uygulamada **Yansıtmayı otomatik başlat**'ı açın (tek seferlik ayar).
 2. Telefonu arabaya bağlayın ve Android Auto başlatıcısında bir ScreenOnAuto
-   girişine (<img src="/images/icon_launcher.png" width="24" align="center"> veya
-   <img src="/images/icon_legacy.png" width="24" align="center">) dokunun.
+   girişine (<img src="/images/icon_launcher.png" width="24" align="center" alt="ScreenOnAuto simgesi"> veya
+   <img src="/images/icon_legacy.png" width="24" align="center" alt="ScreenOnAuto (Legacy) simgesi">) dokunun.
 3. Telefon, ekran kaydı izin penceresini otomatik olarak açar — telefonu elinize
    alın ve **Şimdi başlat**'a dokunun:
 

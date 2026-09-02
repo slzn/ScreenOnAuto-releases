@@ -5,7 +5,7 @@ lang: fr
 slug: how-to-use
 permalink: /docs/fr/how-to-use/
 date: 2026-07-17
-last_modified_at: 2026-08-28
+last_modified_at: 2026-09-02
 ---
 
 # Comment utiliser
@@ -28,7 +28,7 @@ duplication s'affiche sur l'écran de la voiture :
 
 ![Lanceur Android Auto affichant les entrées ScreenOnAuto](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
+|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
 |---|---|---|
 | Affichage | Plein écran — occupe la zone de carte | Sur un **écran de voiture assez grand**, peut s'afficher **côte à côte avec la carte** en vue partagée ; sur un écran plus petit, la carte passe simplement à l'arrière-plan et seule la duplication est affichée (elle ne **remplace pas** la carte) |
 
@@ -58,8 +58,8 @@ redemander de permission.
 
 1. Dans l'app sur le téléphone, activez **Démarrage automatique** (réglage à faire une fois).
 2. Connectez le téléphone à la voiture et touchez une entrée ScreenOnAuto
-   (<img src="/images/icon_launcher.png" width="24" align="center"> ou
-   <img src="/images/icon_legacy.png" width="24" align="center">) dans le lanceur
+   (<img src="/images/icon_launcher.png" width="24" align="center" alt="Icône ScreenOnAuto"> ou
+   <img src="/images/icon_legacy.png" width="24" align="center" alt="Icône ScreenOnAuto (Legacy)">) dans le lanceur
    Android Auto.
 3. Le téléphone affiche automatiquement la boîte de dialogue de capture d'écran —
    prenez le téléphone et touchez **Commencer** :

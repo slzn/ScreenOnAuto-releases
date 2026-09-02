@@ -5,7 +5,7 @@ lang: pt-BR
 slug: how-to-use
 permalink: /docs/pt-BR/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-08-28
+last_modified_at: 2026-09-02
 ---
 
 # Como Usar
@@ -28,7 +28,7 @@ do carro:
 
 ![Launcher do Android Auto com as entradas do ScreenOnAuto](/images/how-to-use/aa-launcher.png)
 
-|  | <img src="/images/icon_launcher.png" width="48"><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48"><br>**ScreenOnAuto (Legacy)** |
+|  | <img src="/images/icon_launcher.png" width="48" alt=""><br>**ScreenOnAuto** | <img src="/images/icon_legacy.png" width="48" alt=""><br>**ScreenOnAuto (Legacy)** |
 |---|---|---|
 | Exibição | Tela cheia — ocupa a área do mapa | Em uma **tela de carro grande o suficiente** pode ficar **lado a lado com o mapa** em vista dividida; em telas menores o mapa vai para o fundo e só o espelhamento é mostrado (ele **não** substitui o mapa) |
 
@@ -57,8 +57,8 @@ execução, abrir a outra entrada o exibe na hora, sem pedir permissão de novo.
 
 1. No app do celular, ative **Início automático** (configuração única).
 2. Conecte o celular ao carro e toque em uma entrada do ScreenOnAuto
-   (<img src="/images/icon_launcher.png" width="24" align="center"> ou
-   <img src="/images/icon_legacy.png" width="24" align="center">) no launcher do
+   (<img src="/images/icon_launcher.png" width="24" align="center" alt="Ícone do ScreenOnAuto"> ou
+   <img src="/images/icon_legacy.png" width="24" align="center" alt="Ícone do ScreenOnAuto (Legacy)">) no launcher do
    Android Auto.
 3. O celular mostra automaticamente o diálogo de permissão de captura de tela — pegue o
    celular e toque em **Começar agora** (Start now):
