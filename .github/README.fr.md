@@ -24,6 +24,7 @@
 - **Empêcher la mise en veille** — Empêche l'écran du téléphone de se mettre en veille pendant la duplication
 - **Arrêter à la déconnexion** — Arrête automatiquement la duplication à la déconnexion d'Android Auto
 - **Lancer une app automatiquement** — Ouvre automatiquement une app choisie sur le téléphone quand la duplication démarre et qu'Android Auto est connecté
+- **Dupliquer seulement cette application** *(Android 15+)* — Envoie à la voiture uniquement l'application lancée automatiquement au lieu de tout l'écran, le reste du téléphone reste privé. Nécessite la permission de capture d'écran [accordée au préalable via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Accorder-la-permission-de-duplication-via-ADB) ; l'écran de la voiture reste vide tant que vous quittez cette application
 - **Forcer le paysage** — Force le téléphone en mode paysage pendant la duplication ; s'active à la connexion, avec un bouton à l'écran
 - **Raccourcis de lancement** — Ajoutez jusqu'à 4 boutons de lancement rapide d'apps sur l'écran de duplication Android Auto
 - **Boutons à l'écran** — Affichez ou masquez individuellement les boutons de l'écran de duplication dans les réglages avancés : Forcer paysage, Atténuer, et Retour / Accueil / Apps récentes du téléphone (4 au maximum)
@@ -40,6 +41,7 @@ Elles débloquent ce que les API Android normales ne peuvent pas faire. Elles n�
 | **Éteindre l'écran du téléphone** | Éteint la dalle du téléphone lorsque l'Atténuation automatique se déclenche, pendant que la voiture continue d'afficher la duplication — économise la batterie et évite que le téléphone n'éclaire l'habitacle la nuit |
 | **Injection tactile réelle** | Transmet les mouvements réels de votre doigt au lieu de gestes synthétisés : **appui long, glisser et multi-touch** fonctionnent sur la duplication Legacy |
 | **Boutons de navigation du téléphone** | Retour / Accueil / Apps récentes fonctionnent **sans aucun service d'accessibilité activé**. Activez les boutons dans **Avancé → Boutons de l'écran Android Auto** |
+| **Adapter l'écran du téléphone à celui de la voiture** | Redimensionne l'écran du téléphone au format de l'écran de la voiture pendant la duplication, supprimant à la source les bandes noires et la déformation en écran partagé — l'écran de la voiture est mesuré automatiquement |
 
 > [!IMPORTANT]
 > **Un serveur Shizuku démarré via ADB s'arrête lors d'une connexion USB.** Une connexion USB à Android Auto place le téléphone en mode accessoire, ce qui redémarre ADB et emporte le serveur Shizuku avec lui. Le débogage sans fil n'y échappe pas : les deux passent par le même ADB. Si les fonctions privilégiées cessent de fonctionner juste après le branchement, relancez Shizuku — ScreenOnAuto se reconnecte ensuite tout seul. Connecter Android Auto **d'abord** et démarrer Shizuku **ensuite** vous évite cet aller-retour. Les utilisateurs root ne sont pas concernés, ni les connexions Android Auto sans fil (rien n'est branché, ADB n'est donc pas touché).
@@ -125,7 +127,7 @@ Prêt ? Consultez **[Comment utiliser](https://github.com/slzn/ScreenOnAuto-rele
 | Afficher par-dessus les autres apps | Atténuation automatique et Forcer le paysage |
 | Service d'accessibilité | Transfert tactile *(Expérimental)* et boutons Retour / Accueil / Apps récentes — avec les [Fonctions privilégiées](#fonctions-privilégiées), aucun des deux n'en a besoin : les boutons fonctionnent dès qu'un backend est connecté, le transfert tactile dès que **Injection tactile réelle** est activée |
 
-> **Astuce :** pour éviter la boîte de dialogue de capture d'écran à chaque lancement, vous pouvez pré-accorder la permission via ADB — voir [Accorder la permission de duplication via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Accorder-la-permission-de-duplication-via-ADB).
+> **Astuce :** pour éviter la boîte de dialogue de capture d'écran à chaque lancement, vous pouvez pré-accorder la permission via ADB — voir [Accorder la permission de duplication via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Accorder-la-permission-de-duplication-via-ADB). C'est aussi ce qui débloque **Dupliquer seulement cette application**.
 
 ## Limitations connues
 

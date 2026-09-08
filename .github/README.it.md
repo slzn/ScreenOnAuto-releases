@@ -24,6 +24,7 @@
 - **Impedisci sospensione** — Impedisce allo schermo del telefono di sospendersi durante il mirroring
 - **Interrompi alla disconnessione** — Interrompe automaticamente il mirroring alla disconnessione di Android Auto
 - **Avvia app automaticamente** — Apre automaticamente un'app scelta sul telefono quando il mirroring parte e Android Auto è connesso
+- **Esegui il mirroring solo di questa app** *(Android 15+)* — Invia all'auto solo l'app ad avvio automatico invece dell'intero schermo, lasciando privato il resto del telefono. Richiede l'autorizzazione di Cattura schermo [concessa in anticipo via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Concedere-il-permesso-di-mirroring-via-ADB); lo schermo dell'auto resta vuoto mentre sei fuori da quell'app
 - **Forzatura orizzontale** — Forza il telefono in orizzontale durante il mirroring; si attiva alla connessione, con un pulsante sullo schermo
 - **Scorciatoie di avvio** — Aggiungi fino a 4 pulsanti di avvio rapido delle app sulla schermata di mirroring di Android Auto
 - **Pulsanti sullo schermo** — Mostra o nascondi singolarmente i pulsanti della schermata di mirroring nelle impostazioni avanzate: Forza orizzontale, Oscura, e Indietro / Home / App recenti del telefono (massimo 4 alla volta)
@@ -40,6 +41,7 @@ Sbloccano ciò che le normali API di Android non possono fare. Richiedono **[Shi
 | **Spegni lo schermo del telefono** | Spegne il pannello del telefono quando entra in azione l'Oscuramento automatico, mentre l'auto continua a mostrare il mirroring — risparmia batteria ed evita che il telefono illumini l'abitacolo di notte |
 | **Iniezione tocco reale** | Inoltra i movimenti reali del dito invece di gesti sintetizzati, quindi **pressione prolungata, trascinamento e multi-touch** funzionano sul mirroring Legacy |
 | **Pulsanti di navigazione del telefono** | Indietro / Home / App recenti funzionano **senza alcun Servizio di accessibilità attivo**. Attiva i pulsanti in **Avanzate → Pulsanti schermata Android Auto** |
+| **Adattare lo schermo del telefono a quello dell'auto** | Rimodella lo schermo del telefono sulle proporzioni dell'unità dell'auto durante il mirroring, eliminando all'origine le bande nere e la distorsione a schermo diviso — lo schermo dell'auto viene misurato automaticamente |
 
 > [!IMPORTANT]
 > **Un server Shizuku avviato via ADB si spegne quando colleghi via USB.** Una connessione USB ad Android Auto mette il telefono in modalità accessorio, il che riavvia ADB e si porta dietro il server Shizuku. Il debug wireless non lo evita: entrambi passano dallo stesso ADB. Se le funzioni privilegiate smettono di funzionare subito dopo il collegamento, riavvia Shizuku — da lì ScreenOnAuto si riconnette da solo. Collegare Android Auto **prima** e avviare Shizuku **dopo** ti risparmia il viaggio di andata e ritorno. Chi usa root non è interessato, così come le connessioni Android Auto wireless (non si collega nulla, quindi ADB resta intatto).
@@ -125,7 +127,7 @@ Pronto? Consulta **[Come si usa](https://github.com/slzn/ScreenOnAuto-releases/w
 | Mostra sopra le altre app | Oscuramento automatico e Forzatura orizzontale |
 | Servizio di accessibilità | Inoltro tocco *(Sperimentale)* e pulsanti Indietro / Home / App recenti — con le [Funzioni privilegiate](#funzioni-privilegiate) nessuno dei due ne ha bisogno: i pulsanti funzionano appena un backend è connesso, l'inoltro tocco quando **Iniezione tocco reale** è attiva |
 
-> **Suggerimento:** per evitare la finestra di richiesta di cattura schermo a ogni avvio, puoi pre-concedere l'autorizzazione via ADB — vedi [Concedere il permesso di mirroring via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Concedere-il-permesso-di-mirroring-via-ADB).
+> **Suggerimento:** per evitare la finestra di richiesta di cattura schermo a ogni avvio, puoi pre-concedere l'autorizzazione via ADB — vedi [Concedere il permesso di mirroring via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Concedere-il-permesso-di-mirroring-via-ADB). È anche ciò che sblocca **Esegui il mirroring solo di questa app**.
 
 ## Limitazioni note
 

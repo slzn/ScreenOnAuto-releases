@@ -24,6 +24,7 @@
 - **Impedir suspensão** — Impede que a tela do celular apague durante o espelhamento
 - **Parar ao desconectar** — Para o espelhamento automaticamente quando o Android Auto desconecta
 - **Lançar app automaticamente** — Abre automaticamente um app escolhido no celular quando o espelhamento inicia com o Android Auto conectado
+- **Espelhar apenas este app** *(Android 15+)* — Envia ao carro somente o app de abertura automática, em vez da tela inteira, mantendo o resto do celular privado. Requer a permissão de Captura de tela [concedida previamente via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permissão-de-Espelhamento-via-ADB); a tela do carro fica em branco enquanto você está fora desse app
 - **Forçar paisagem** — Força o celular para o modo paisagem durante o espelhamento; ativa automaticamente ao conectar, com botão de alternância na tela
 - **Atalhos de apps** — Adicione até 4 botões de acesso rápido a apps na tela de espelhamento do Android Auto
 - **Botões na tela** — Mostre ou oculte individualmente os botões da tela de espelhamento nas configurações avançadas: Forçar paisagem, Escurecimento automático e Voltar / Início / Apps recentes do celular (até 4 ao mesmo tempo)
@@ -40,6 +41,7 @@ Estes desbloqueiam o que as APIs normais do Android não conseguem fazer. Exigem
 | **Desligar a tela do telefone** | Desliga o painel do celular quando o Escurecimento automático entra em ação, enquanto o carro continua exibindo o espelhamento — economiza bateria e evita que o celular ilumine o interior à noite |
 | **Injeção de toque real** | Encaminha os movimentos reais do seu dedo em vez de gestos sintetizados, então **pressionar e segurar, arrastar e multitoque** funcionam no espelhamento Legacy |
 | **Botões de navegação do celular** | Voltar / Início / Apps recentes funcionam **sem nenhum Serviço de acessibilidade ativado**. Ative os botões em **Avançado → Botões da tela do Android Auto** |
+| **Ajustar a tela do telefone à do carro** | Remodela a tela do celular para a proporção da unidade do carro durante o espelhamento, eliminando na origem as barras pretas e a distorção na tela dividida — a tela do carro é medida automaticamente |
 
 > [!IMPORTANT]
 > **Um servidor Shizuku iniciado via ADB é encerrado ao conectar por USB.** Uma conexão USB com o Android Auto coloca o celular em modo acessório, o que reinicia o ADB e derruba o servidor Shizuku junto. A depuração sem fio não evita isso — ambas passam pelo mesmo ADB. Se os recursos privilegiados pararem de funcionar logo após conectar, inicie o Shizuku novamente — o ScreenOnAuto se reconecta sozinho a partir daí. Conectar o Android Auto **primeiro** e iniciar o Shizuku **depois** poupa essa ida e volta. Quem usa root não é afetado, assim como as conexões sem fio do Android Auto (nada é conectado, então o ADB não é tocado).
@@ -125,7 +127,7 @@ Tudo pronto? Veja **[Como Usar](https://github.com/slzn/ScreenOnAuto-releases/wi
 | Sobrepor a outros apps | Escurecimento automático e Forçar paisagem |
 | Serviço de acessibilidade | Encaminhamento de toque *(experimental)* e os botões Voltar / Início / Apps recentes — com os [Recursos privilegiados](#recursos-privilegiados) nenhum dos dois precisa dele: os botões funcionam assim que um backend é conectado, e o encaminhamento de toque quando **Injeção de toque real** está ativado |
 
-> **Dica:** para evitar o diálogo de permissão de captura de tela a cada início, você pode conceder a permissão uma única vez via ADB — veja [Conceder Permissão de Espelhamento via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permissão-de-Espelhamento-via-ADB).
+> **Dica:** para evitar o diálogo de permissão de captura de tela a cada início, você pode conceder a permissão uma única vez via ADB — veja [Conceder Permissão de Espelhamento via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permissão-de-Espelhamento-via-ADB). Isso também é o que libera **Espelhar apenas este app**.
 
 ## Limitações conhecidas
 

@@ -24,6 +24,7 @@
 - **Prevent Sleep** — Prevent the phone screen from sleeping during mirroring
 - **Stop on Disconnect** — Automatically stop mirroring when Android Auto disconnects
 - **Auto Launch App** — Automatically launch a chosen app on the phone when mirroring starts and Android Auto is connected
+- **Mirror Only This App** *(Android 15+)* — Send just the auto-launch app to the car instead of the whole screen, leaving the rest of the phone private. Needs the Screen Capture permission [pre-granted via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB); the car screen blanks while you are away from that app
 - **Force Landscape** — Force the phone into landscape while mirroring; auto-starts on connect, with an on-screen toggle
 - **Launch Shortcuts** — Add up to 4 app quick-launch buttons to the Android Auto mirror screen
 - **On-screen Buttons** — Show or hide the mirror-screen buttons individually in Advanced settings: Force Landscape, Auto Dim, and phone Back / Home / Recent apps (up to 4 at once)
@@ -40,6 +41,7 @@ These unlock things the normal Android APIs cannot do. They need **[Shizuku](htt
 | **Turn the Phone Screen Off** | Switches the phone's panel off when Auto Dim kicks in, while the car keeps showing the mirror — saves battery and stops the phone lighting up the cabin at night |
 | **Real Touch Injection** | Forwards your actual finger movements instead of synthesised gestures, so **long-press, drag and multi-finger** work on the Legacy mirror |
 | **Phone Navigation Buttons** | Back / Home / Recent apps work with **no Accessibility Service enabled at all**. Turn the buttons on in **Advanced → Android Auto screen buttons** |
+| **Match the Phone Screen to the Car** | Reshapes the phone's display to the head unit's aspect ratio while mirroring, so the black bars and the split-view distortion are gone at the source — the car screen is measured automatically |
 
 > [!IMPORTANT]
 > **A Shizuku server started via ADB shuts down when you connect over USB.** A USB
@@ -135,7 +137,7 @@ Ready to go? See **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wi
 | Display Over Other Apps | Auto Dim & Force Landscape |
 | Accessibility Service | Touch Forwarding *(Experimental)* & the Back / Home / Recent apps buttons — with the [Privileged Features](#privileged-features) neither needs it: the buttons work as soon as a backend is connected, Touch Forwarding once **Real touch injection** is on |
 
-> **Tip:** To avoid the Screen Capture permission dialog on every launch, you can pre-grant it via ADB — see [Grant Mirror Permission via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB).
+> **Tip:** To avoid the Screen Capture permission dialog on every launch, you can pre-grant it via ADB — see [Grant Mirror Permission via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB). This is also what unlocks **Mirror only this app**.
 
 ## Known Limitations
 

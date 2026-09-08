@@ -24,6 +24,7 @@
 - **Uykuyu Engelleme** — Yansıtma sırasında telefon ekranının uykuya geçmesini engelleyin
 - **Bağlantı Kesilince Durdurma** — Android Auto bağlantısı kesildiğinde yansıtmayı otomatik olarak durdurun
 - **Uygulamayı Otomatik Başlatma** — Yansıtma başladığında ve Android Auto bağlıyken seçtiğiniz bir uygulamayı telefonda otomatik olarak açın
+- **Yalnızca bu uygulamayı yansıt** *(Android 15+)* — Tüm ekran yerine yalnızca otomatik başlatılan uygulamayı arabaya gönderir, telefonun geri kalanı gizli kalır. Ekran Kaydı izninin [ADB ile önceden verilmiş olmasını](https://github.com/slzn/ScreenOnAuto-releases/wiki/ADB-ile-Yansıtma-İzni-Verme) gerektirir; o uygulamadan ayrıldığınızda araba ekranı boş kalır
 - **Yatay Modu Zorlama** — Yansıtma sırasında telefonu yatay moda zorlayın; bağlantıda otomatik başlar, ekranda aç/kapat düğmesi vardır
 - **Başlatma Kısayolları** — Android Auto yansıtma ekranına en fazla 4 hızlı uygulama başlatma düğmesi ekleyin
 - **Ekran Düğmeleri** — Yansıtma ekranındaki düğmeleri Gelişmiş ayarlardan tek tek gösterin veya gizleyin: Yatay modu zorla, Otomatik karartma ve telefonun Geri / Ana ekran / Son uygulamalar düğmeleri (aynı anda en fazla 4)
@@ -40,6 +41,7 @@ Bunlar, normal Android API'lerinin yapamadıklarını açar. **[Shizuku](https:/
 | **Telefon ekranını kapat** | Otomatik Karartma devreye girdiğinde telefonun panelini kapatır, araç ise yansıtmayı göstermeye devam eder — pil tasarrufu sağlar ve gece telefonun kabini aydınlatmasını önler |
 | **Gerçek dokunma enjeksiyonu** | Sentezlenmiş hareketler yerine gerçek parmak hareketlerinizi aktarır; böylece **uzun basma, sürükleme ve çoklu dokunma** Legacy yansıtmasında çalışır |
 | **Telefon gezinme düğmeleri** | Geri / Ana ekran / Son uygulamalar **hiçbir Erişilebilirlik Hizmeti etkin olmadan** çalışır. Düğmeleri **Gelişmiş → Android Auto ekran düğmeleri** bölümünden açın |
+| **Telefon ekranını arabaya uydur** | Yansıtma sırasında telefon ekranını araba ünitesinin en boy oranına dönüştürür, böylece siyah kenarlıklar ve bölünmüş ekrandaki bozulma kaynağında ortadan kalkar — araba ekranı otomatik olarak ölçülür |
 
 > [!IMPORTANT]
 > **ADB ile başlatılan bir Shizuku sunucusu, USB ile bağlandığınızda kapanır.** Android Auto'ya USB bağlantısı telefonu aksesuar moduna alır; bu da ADB'yi yeniden başlatır ve Shizuku sunucusunu da beraberinde götürür. Kablosuz hata ayıklama bunu önlemez — ikisi de aynı ADB üzerinden çalışır. Ayrıcalıklı özellikler bağlandıktan hemen sonra çalışmayı bırakırsa Shizuku'yu yeniden başlatın — ScreenOnAuto oradan sonra kendiliğinden yeniden bağlanır. **Önce** Android Auto'yu bağlayıp Shizuku'yu **sonra** başlatmak bu gidiş gelişten kurtarır. Root kullananlar etkilenmez; kablosuz Android Auto bağlantıları da etkilenmez (hiçbir şey takılmadığı için ADB'ye dokunulmaz).
@@ -125,7 +127,7 @@ Hazır mısınız? Arabada yansıtmayı başlatmak için **[Nasıl Kullanılır]
 | Diğer uygulamaların üzerinde göster | Otomatik Karartma ve Yatay Modu Zorlama |
 | Erişilebilirlik Hizmeti | Dokunma Aktarımı *(Deneysel)* ve Geri / Ana ekran / Son uygulamalar düğmeleri — [Ayrıcalıklı özellikler](#ayrıcalıklı-özellikler) ile ikisi de bunu gerektirmez: düğmeler bir arka uç bağlanır bağlanmaz, dokunma aktarımı ise **Gerçek dokunma enjeksiyonu** açıkken çalışır |
 
-> **İpucu:** Her başlatmada Ekran Kaydı izin penceresiyle karşılaşmamak için izni ADB ile önceden verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](https://github.com/slzn/ScreenOnAuto-releases/wiki/ADB-ile-Yansıtma-İzni-Verme).
+> **İpucu:** Her başlatmada Ekran Kaydı izin penceresiyle karşılaşmamak için izni ADB ile önceden verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](https://github.com/slzn/ScreenOnAuto-releases/wiki/ADB-ile-Yansıtma-İzni-Verme). Bu aynı zamanda **Yalnızca bu uygulamayı yansıt** özelliğini de açar.
 
 ## Bilinen Sınırlamalar
 

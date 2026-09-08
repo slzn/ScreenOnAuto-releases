@@ -24,6 +24,7 @@
 - **Evitar suspensión** — Evita que la pantalla del teléfono se apague durante la duplicación
 - **Detener al desconectar** — Detiene la duplicación automáticamente cuando Android Auto se desconecta
 - **Lanzar app automáticamente** — Abre automáticamente una app elegida en el teléfono cuando empieza la duplicación con Android Auto conectado
+- **Duplicar solo esta app** *(Android 15+)* — Envía al coche solo la app de inicio automático en lugar de toda la pantalla, manteniendo privado el resto del teléfono. Necesita el permiso de Captura de pantalla [concedido previamente por ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permiso-de-Duplicación-por-ADB); la pantalla del coche queda en blanco mientras estás fuera de esa app
 - **Forzar horizontal** — Fuerza el teléfono a modo horizontal durante la duplicación; se activa al conectar, con botón en pantalla
 - **Atajos de apps** — Añade hasta 4 botones de acceso rápido a apps en la pantalla de duplicación de Android Auto
 - **Botones en pantalla** — Muestra u oculta individualmente los botones de la pantalla de duplicación en los ajustes avanzados: Forzar horizontal, Atenuación automática y Atrás / Inicio / Apps recientes del teléfono (hasta 4 a la vez)
@@ -40,6 +41,7 @@ Estas desbloquean lo que las API normales de Android no pueden hacer. Requieren 
 | **Apagar la pantalla del teléfono** | Apaga el panel del teléfono cuando se activa la Atenuación automática, mientras el coche sigue mostrando la duplicación — ahorra batería y evita que el teléfono ilumine el habitáculo de noche |
 | **Inyección táctil real** | Reenvía los movimientos reales de tu dedo en lugar de gestos sintetizados, así que **mantener pulsado, arrastrar y multitáctil** funcionan en la duplicación Legacy |
 | **Botones de navegación del teléfono** | Atrás / Inicio / Apps recientes funcionan **sin ningún Servicio de accesibilidad activado**. Activa los botones en **Avanzado → Botones de la pantalla de Android Auto** |
+| **Ajustar la pantalla del teléfono a la del coche** | Remodela la pantalla del teléfono a la relación de aspecto de la unidad del coche durante la duplicación, eliminando de raíz las barras negras y la distorsión en pantalla dividida — la pantalla del coche se mide automáticamente |
 
 > [!IMPORTANT]
 > **Un servidor Shizuku iniciado por ADB se apaga al conectar por USB.** Una conexión USB con Android Auto pone el teléfono en modo accesorio, lo que reinicia ADB y se lleva por delante el servidor Shizuku. La depuración inalámbrica no lo evita: ambas pasan por el mismo ADB. Si las funciones con privilegios dejan de funcionar justo después de conectar, vuelve a iniciar Shizuku: ScreenOnAuto se reconecta solo a partir de ahí. Conectar Android Auto **primero** e iniciar Shizuku **después** te ahorra ese viaje de ida y vuelta. Quienes usan root no se ven afectados, ni tampoco las conexiones inalámbricas de Android Auto (no se conecta nada, así que ADB queda intacto).
@@ -125,7 +127,7 @@ Si falta alguna de las **dos** entradas anteriores, eso sí es un problema: en u
 | Mostrar sobre otras apps | Atenuación automática y Forzar horizontal |
 | Servicio de accesibilidad | Reenvío táctil *(experimental)* y los botones Atrás / Inicio / Apps recientes — con las [Funciones con privilegios](#funciones-con-privilegios) ninguno lo necesita: los botones funcionan en cuanto hay un backend conectado, y el reenvío táctil cuando **Inyección táctil real** está activada |
 
-> **Consejo:** para evitar el diálogo de permiso de captura de pantalla en cada inicio, puedes concederlo una sola vez vía ADB — consulta [Conceder Permiso de Duplicación por ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permiso-de-Duplicación-por-ADB).
+> **Consejo:** para evitar el diálogo de permiso de captura de pantalla en cada inicio, puedes concederlo una sola vez vía ADB — consulta [Conceder Permiso de Duplicación por ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permiso-de-Duplicación-por-ADB). Esto es también lo que habilita **Duplicar solo esta app**.
 
 ## Limitaciones conocidas
 

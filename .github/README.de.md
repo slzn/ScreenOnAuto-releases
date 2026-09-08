@@ -24,6 +24,7 @@
 - **Ruhezustand verhindern** — Verhindert, dass sich der Telefonbildschirm während der Spiegelung abschaltet
 - **Stopp bei Trennung** — Beendet die Spiegelung automatisch, wenn Android Auto getrennt wird
 - **App automatisch starten** — Öffnet beim Start der Spiegelung automatisch eine gewählte App auf dem Telefon, wenn Android Auto verbunden ist
+- **Nur diese App spiegeln** *(Android 15+)* — Sendet nur die automatisch gestartete App ans Auto statt des ganzen Bildschirms, der Rest des Telefons bleibt privat. Erfordert die Bildschirmaufnahme-Berechtigung, [vorab per ADB erteilt](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen); der Autobildschirm bleibt leer, solange du diese App verlässt
 - **Querformat erzwingen** — Erzwingt während der Spiegelung das Querformat; startet automatisch beim Verbinden, mit Umschalter auf dem Bildschirm
 - **App-Verknüpfungen** — Füge dem Android-Auto-Spiegelbildschirm bis zu 4 Schnellstart-Tasten hinzu
 - **Bildschirmtasten** — Blende die Tasten des Spiegelbildschirms in den erweiterten Einstellungen einzeln ein oder aus: Querformat erzwingen, Automatisches Abdunkeln sowie Zurück / Startbildschirm / Letzte Apps (bis zu 4 gleichzeitig)
@@ -40,6 +41,7 @@ Diese schalten frei, was die normalen Android-APIs nicht können. Sie benötigen
 | **Telefonbildschirm ausschalten** | Schaltet das Display des Telefons aus, sobald das Automatische Abdunkeln greift, während das Auto die Spiegelung weiter anzeigt — spart Akku und verhindert, dass das Telefon nachts den Innenraum erhellt |
 | **Echte Toucheingabe** | Leitet deine tatsächlichen Fingerbewegungen weiter statt synthetisierter Gesten, sodass **langes Drücken, Ziehen und Multitouch** auf der Legacy-Spiegelung funktionieren |
 | **Telefon-Navigationstasten** | Zurück / Startbildschirm / Letzte Apps funktionieren **ganz ohne aktivierten Bedienungshilfen-Dienst**. Aktiviere die Tasten unter **Erweitert → Schaltflächen auf dem Android-Auto-Bildschirm** |
+| **Telefonbildschirm an das Auto anpassen** | Passt den Telefonbildschirm während der Spiegelung an das Seitenverhältnis des Autodisplays an, sodass schwarze Balken und die Verzerrung im geteilten Bildschirm an der Quelle verschwinden — der Autobildschirm wird automatisch vermessen |
 
 > [!IMPORTANT]
 > **Ein per ADB gestarteter Shizuku-Server wird beim Anschließen per USB beendet.** Eine USB-Verbindung zu Android Auto versetzt das Telefon in den Zubehörmodus, wodurch ADB neu startet und den Shizuku-Server mitreißt. Drahtloses Debugging hilft nicht — beide laufen über dasselbe ADB. Wenn die privilegierten Funktionen direkt nach dem Anschließen ausfallen, starte Shizuku erneut — ScreenOnAuto verbindet sich von selbst wieder. Android Auto **zuerst** zu verbinden und Shizuku **danach** zu starten erspart dir diesen Umweg. Root-Nutzer sind nicht betroffen, ebenso wenig drahtlose Android-Auto-Verbindungen (es wird nichts angeschlossen, ADB bleibt also unangetastet).
@@ -125,7 +127,7 @@ Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wi
 | Über anderen Apps einblenden | Automatisches Abdunkeln & Querformat erzwingen |
 | Bedienungshilfen-Dienst | Touch-Weiterleitung *(experimentell)* & die Tasten Zurück / Startbildschirm / Letzte Apps — mit den [Privilegierten Funktionen](#privilegierte-funktionen) braucht beides ihn nicht: Die Tasten funktionieren, sobald ein Backend verbunden ist, die Touch-Weiterleitung sobald **Echte Toucheingabe** aktiv ist |
 
-> **Tipp:** Um den Berechtigungsdialog für die Bildschirmaufnahme nicht bei jedem Start zu sehen, kannst du die Berechtigung einmalig per ADB erteilen — siehe [Spiegelungsberechtigung per ADB erteilen](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen).
+> **Tipp:** Um den Berechtigungsdialog für die Bildschirmaufnahme nicht bei jedem Start zu sehen, kannst du die Berechtigung einmalig per ADB erteilen — siehe [Spiegelungsberechtigung per ADB erteilen](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen). Damit wird auch **Nur diese App spiegeln** freigeschaltet.
 
 ## Bekannte Einschränkungen
 
