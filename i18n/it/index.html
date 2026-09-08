@@ -148,6 +148,10 @@ permalink: /it/
   <div class="grid more">
     <div class="card"><b>Avvio automatico</b><p>Avvia il mirroring automaticamente alla connessione di Android Auto.</p></div>
     <div class="card"><b>Avvia app automaticamente</b><p>Apre automaticamente un'app scelta sul telefono all'avvio del mirroring.</p></div>
+    <!-- Held back until another feature can land beside it: alone it spills this 9-card grid
+         onto a fourth row. Documented in the README and the v1.8.0 release notes meanwhile.
+    <div class="card"><b>Esegui il mirroring solo di questa app <span class="muted">(Android 15+)</span></b><p>Invia all'auto solo l'app ad avvio automatico invece dell'intero schermo. Richiede l'autorizzazione di cattura concessa in anticipo via ADB.</p></div>
+    -->
     <div class="card"><b>Forzatura orizzontale</b><p>Forza il telefono in orizzontale durante il mirroring, con un pulsante sullo schermo.</p></div>
     <div class="card"><b>Oscuramento automatico</b><p>Riduce automaticamente la luminosità del telefono durante il mirroring inattivo (ritardo di 15–120 s).</p></div>
     <div class="card"><b>Impedisci sospensione</b><p>Tiene attivo lo schermo del telefono durante il mirroring; interruzione automatica alla disconnessione.</p></div>
@@ -165,6 +169,7 @@ permalink: /it/
     <div class="card"><b>Spegni lo schermo del telefono</b><p>Spegne il pannello del telefono quando entra in azione l'Oscuramento automatico, mentre l'auto continua a mostrare il mirroring.</p></div>
     <div class="card"><b>Iniezione tocco reale</b><p>Inoltra i movimenti reali del dito, quindi pressione prolungata, trascinamento e multi-touch funzionano sul mirroring Legacy.</p></div>
     <div class="card"><b>Pulsanti di navigazione del telefono</b><p>Indietro / Home / Recenti funzionano senza alcun Servizio di accessibilità attivo. Attivali in Avanzate → Pulsanti schermata Android Auto.</p></div>
+    <div class="card"><b>Adattare lo schermo del telefono a quello dell'auto</b><p>Rimodella lo schermo del telefono sulle proporzioni dell'unità dell'auto durante il mirroring, eliminando all'origine le bande nere e la distorsione a schermo diviso.</p></div>
   </div>
   <p class="muted">Nota: un server Shizuku avviato via ADB può spegnersi quando colleghi via USB — se le funzioni privilegiate smettono di funzionare subito dopo il collegamento, riavvia Shizuku.</p>
 </section>

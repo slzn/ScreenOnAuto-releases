@@ -148,6 +148,10 @@ permalink: /ko/
   <div class="grid more">
     <div class="card"><b>자동 미러링 시작</b><p>Android Auto가 연결되면 자동으로 미러링을 시작합니다.</p></div>
     <div class="card"><b>앱 자동 실행</b><p>미러링이 시작되면 지정한 앱을 휴대전화에서 자동으로 실행합니다.</p></div>
+    <!-- Held back until another feature can land beside it: alone it spills this 9-card grid
+         onto a fourth row. Documented in the README and the v1.8.0 release notes meanwhile.
+    <div class="card"><b>이 앱만 미러링 <span class="muted">(Android 15+)</span></b><p>전체 화면 대신 자동 실행 앱만 차량으로 보냅니다. 화면 캡처 권한을 ADB로 미리 부여해야 합니다.</p></div>
+    -->
     <div class="card"><b>가로 모드 강제</b><p>미러링 중 휴대전화를 가로 모드로 고정하며, 화면 버튼으로 언제든 전환할 수 있습니다.</p></div>
     <div class="card"><b>자동 화면 어둡게</b><p>미러링 중 조작이 없으면 휴대전화 밝기를 자동으로 낮춥니다 (15~120초 지연).</p></div>
     <div class="card"><b>절전 방지</b><p>미러링 중 휴대전화 화면이 꺼지지 않도록 하고, 연결이 끊기면 자동으로 중지합니다.</p></div>
@@ -165,6 +169,7 @@ permalink: /ko/
     <div class="card"><b>휴대전화 화면 끄기</b><p>자동 화면 어둡게가 작동할 때 휴대전화 패널을 완전히 끄고, 차량 화면에는 미러링이 계속 표시됩니다.</p></div>
     <div class="card"><b>실제 터치 입력 주입</b><p>실제 손가락 움직임을 그대로 전달하므로 Legacy 미러링에서 길게 누르기, 드래그, 멀티터치가 동작합니다.</p></div>
     <div class="card"><b>휴대전화 내비게이션 버튼</b><p>접근성 서비스를 전혀 켜지 않아도 뒤로 / 홈 / 최근 앱이 동작합니다. 고급 → Android Auto 화면 버튼에서 켜세요.</p></div>
+    <div class="card"><b>휴대전화 화면을 차량 화면 비율에 맞추기</b><p>미러링 중 휴대전화 화면을 차량 디스플레이의 화면 비율로 바꿔 검은 여백과 분할 화면의 왜곡을 원인 단계에서 없앱니다.</p></div>
   </div>
   <p class="muted">참고: ADB로 시작한 Shizuku 서버는 USB로 연결할 때 종료될 수 있습니다 — 연결한 직후 특권 기능이 멈춘다면 Shizuku를 다시 시작하세요.</p>
 </section>

@@ -148,6 +148,10 @@ permalink: /fr/
   <div class="grid more">
     <div class="card"><b>Démarrage automatique</b><p>Démarre la duplication automatiquement à la connexion d'Android Auto.</p></div>
     <div class="card"><b>Lancer une app automatiquement</b><p>Ouvre automatiquement une app choisie sur le téléphone au démarrage de la duplication.</p></div>
+    <!-- Held back until another feature can land beside it: alone it spills this 9-card grid
+         onto a fourth row. Documented in the README and the v1.8.0 release notes meanwhile.
+    <div class="card"><b>Dupliquer seulement cette application <span class="muted">(Android 15+)</span></b><p>Envoie à la voiture uniquement l'application lancée automatiquement au lieu de tout l'écran. Nécessite la permission de capture accordée au préalable via ADB.</p></div>
+    -->
     <div class="card"><b>Forcer le paysage</b><p>Force le téléphone en mode paysage pendant la duplication, avec un bouton à l'écran.</p></div>
     <div class="card"><b>Atténuation automatique</b><p>Réduit automatiquement la luminosité du téléphone pendant la duplication inactive (délai de 15 à 120 s).</p></div>
     <div class="card"><b>Empêcher la mise en veille</b><p>Garde l'écran du téléphone actif pendant la duplication ; arrêt automatique à la déconnexion.</p></div>
@@ -165,6 +169,7 @@ permalink: /fr/
     <div class="card"><b>Éteindre l'écran du téléphone</b><p>Éteint la dalle du téléphone lorsque l'Atténuation automatique se déclenche, pendant que la voiture continue d'afficher la duplication.</p></div>
     <div class="card"><b>Injection tactile réelle</b><p>Transmet les mouvements réels de votre doigt : appui long, glisser et multi-touch fonctionnent sur la duplication Legacy.</p></div>
     <div class="card"><b>Boutons de navigation du téléphone</b><p>Retour / Accueil / Récents fonctionnent sans aucun service d'accessibilité activé. Activez-les dans Avancé → Boutons de l'écran Android Auto.</p></div>
+    <div class="card"><b>Adapter l'écran du téléphone à celui de la voiture</b><p>Redimensionne l'écran du téléphone au format de l'écran de la voiture pendant la duplication, supprimant à la source les bandes noires et la déformation en écran partagé.</p></div>
   </div>
   <p class="muted">Remarque : un serveur Shizuku démarré via ADB peut s'arrêter lors d'une connexion USB — si les fonctions privilégiées cessent de fonctionner juste après le branchement, relancez Shizuku.</p>
 </section>

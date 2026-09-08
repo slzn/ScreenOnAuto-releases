@@ -144,6 +144,10 @@
   <div class="grid more">
     <div class="card"><b>Auto Start</b><p>Begin mirroring automatically when Android Auto connects.</p></div>
     <div class="card"><b>Auto Launch App</b><p>Automatically launch a chosen app on the phone when mirroring starts.</p></div>
+    <!-- Held back until another feature can land beside it: alone it spills this 9-card grid
+         onto a fourth row. Documented in the README and the v1.8.0 release notes meanwhile.
+    <div class="card"><b>Mirror Only This App <span class="muted">(Android 15+)</span></b><p>Send just the auto-launch app to the car instead of the whole screen. Needs the capture permission pre-granted via ADB.</p></div>
+    -->
     <div class="card"><b>Force Landscape</b><p>Force the phone into landscape while mirroring, with an on-screen toggle.</p></div>
     <div class="card"><b>Auto Dim</b><p>Automatically dim phone screen brightness during idle mirroring (15–120 s delay).</p></div>
     <div class="card"><b>Prevent Sleep</b><p>Keep the phone screen awake during mirroring; stop automatically on disconnect.</p></div>
@@ -161,6 +165,7 @@
     <div class="card"><b>Turn the Phone Screen Off</b><p>Switch the phone's panel off when Auto Dim kicks in, while the car keeps showing the mirror.</p></div>
     <div class="card"><b>Real Touch Injection</b><p>Forward your actual finger movements, so long-press, drag and multi-finger work on the Legacy mirror.</p></div>
     <div class="card"><b>Phone Navigation Buttons</b><p>Back / Home / Recents work with no Accessibility Service enabled at all. Turn them on in Advanced → Android Auto screen buttons.</p></div>
+    <div class="card"><b>Match the Phone Screen to the Car</b><p>Reshape the phone's display to the head unit's aspect ratio while mirroring, so the black bars and split-view distortion are gone at the source.</p></div>
   </div>
   <p class="muted">Note: a Shizuku server started via ADB can shut down when you connect over USB — if the privileged features stop working right after you plug in, start Shizuku again.</p>
 </section>

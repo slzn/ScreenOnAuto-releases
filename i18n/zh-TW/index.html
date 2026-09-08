@@ -149,6 +149,10 @@ permalink: /zh-TW/
   <div class="grid more">
     <div class="card"><b>自動啟動</b><p>連線 Android Auto 後自動開始鏡像。</p></div>
     <div class="card"><b>自動開啟應用程式</b><p>鏡像啟動後自動在手機上開啟指定的應用程式。</p></div>
+    <!-- Held back until another feature can land beside it: alone it spills this 9-card grid
+         onto a fourth row. Documented in the README and the v1.8.0 release notes meanwhile.
+    <div class="card"><b>只鏡像這個應用程式 <span class="muted">(Android 15+)</span></b><p>只將自動開啟的應用程式送到車機，而非整個畫面。需要先透過 ADB 授予螢幕擷取權限。</p></div>
+    -->
     <div class="card"><b>強制橫向</b><p>鏡像期間將手機強制轉為橫向，並提供畫面開關。</p></div>
     <div class="card"><b>自動調暗</b><p>閒置鏡像時自動調暗手機螢幕亮度（15–120 秒延遲）。</p></div>
     <div class="card"><b>防止進入休眠</b><p>鏡像期間保持手機螢幕喚醒；斷線後自動停止鏡像。</p></div>
@@ -166,6 +170,7 @@ permalink: /zh-TW/
     <div class="card"><b>關閉手機螢幕</b><p>自動調暗啟動時直接切斷手機背光，車機上的鏡像照常顯示。</p></div>
     <div class="card"><b>真實觸控注入</b><p>將車機上的觸控以真實手指動作送到手機，長按、拖曳與多指操作在 Legacy 鏡像上都能運作。</p></div>
     <div class="card"><b>手機導覽按鈕</b><p>返回／主畫面／最近應用程式按鈕完全不需要啟用無障礙服務。請在「進階 → Android Auto 畫面按鈕」中開啟這些按鈕。</p></div>
+    <div class="card"><b>讓手機畫面比例對齊車機</b><p>鏡像期間將手機畫面調整為車機的長寬比，從源頭消除黑邊與分割畫面的變形。</p></div>
   </div>
   <p class="muted">注意：以 ADB 啟動的 Shizuku 可能在透過 USB 連線時被關閉——若特權功能在插上後隨即失效，重新啟動 Shizuku 即可。</p>
 </section>
