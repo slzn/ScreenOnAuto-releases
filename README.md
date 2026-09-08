@@ -44,14 +44,12 @@ These unlock things the normal Android APIs cannot do. They need **[Shizuku](htt
 | **Match the Phone Screen to the Car** | Reshapes the phone's display to the head unit's aspect ratio while mirroring, so the black bars and the split-view distortion are gone at the source — the car screen is measured automatically |
 
 > [!IMPORTANT]
-> **A Shizuku server started via ADB shuts down when you connect over USB.** A USB
-> connection to Android Auto puts the phone into accessory mode, which restarts ADB and
-> takes the Shizuku server down with it. Wireless debugging does not avoid this — both
-> go through the same ADB. If the privileged features stop working right after you plug in,
-> start Shizuku again — ScreenOnAuto reconnects on its own from there. Connecting Android
-> Auto **first** and starting Shizuku **after** saves you the round trip. Root users are
-> unaffected, as are wireless Android Auto connections (nothing is plugged in, so ADB is
-> left alone).
+> **A Shizuku server started via ADB shuts down when you plug into the car.** The USB
+> connection puts the phone into accessory mode, which restarts ADB and takes Shizuku with
+> it — wireless debugging goes through the same ADB, so it does not help. Start Shizuku
+> again and ScreenOnAuto reconnects on its own; better still, use the
+> [thedjchi fork](https://github.com/thedjchi/Shizuku), whose watchdog service restarts it
+> for you. Root users and wireless Android Auto connections are unaffected.
 
 > **Waking the screen again:** the touchscreen powers down with the panel, so tapping the
 > phone does nothing. Stop the mirror or disconnect Android Auto, or press the phone's power
