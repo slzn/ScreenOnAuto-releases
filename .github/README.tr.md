@@ -30,7 +30,7 @@
 - **Ekran Düğmeleri** — Yansıtma ekranındaki düğmeleri Ekran düğmeleri sayfasından tek tek gösterin veya gizleyin: Yatay modu zorla, Otomatik karartma ve telefonun Geri / Ana ekran / Son uygulamalar düğmeleri (aynı anda en fazla 4)
 - **Düğme Konumu** — Legacy yansıtmada düğmeleri sola hizalayın veya telefonun gezinme çubuğundan otomatik olarak kaçının
 - **Yansıtma Ayarı** — Kenarları kesen araç ekranları için Gelişmiş ayarlardan yansıtma genişliğini/yüksekliğini kırpın
-- **Dokunma Aktarımı** *(Deneysel)* — Telefonunuzu kontrol etmek için Android Auto ekranına dokunun, kaydırın, savurun ve iki parmakla yakınlaştırın
+- **Dokunma Aktarımı** *(deneysel)* — Telefonunuzu kontrol etmek için Android Auto ekranına dokunun, kaydırın, savurun ve iki parmakla yakınlaştırın
 
 ## Ayrıcalıklı özellikler
 
@@ -125,7 +125,7 @@ Hazır mısınız? Arabada yansıtmayı başlatmak için **[Nasıl Kullanılır]
 | Ekran Kaydı (MediaProjection) | Ekran Yansıtma |
 | Bildirim Dinleyici | Medya Oturumu Aracısı |
 | Diğer uygulamaların üzerinde göster | Otomatik Karartma ve Yatay Modu Zorlama |
-| Erişilebilirlik Hizmeti | Dokunma Aktarımı *(Deneysel)* ve Geri / Ana ekran / Son uygulamalar düğmeleri — [Ayrıcalıklı özellikler](#ayrıcalıklı-özellikler) ile ikisi de bunu gerektirmez: düğmeler bir arka uç bağlanır bağlanmaz, dokunma aktarımı ise **Gerçek dokunma enjeksiyonu** açıkken çalışır |
+| Erişilebilirlik Hizmeti | Dokunma Aktarımı *(deneysel)* ve Geri / Ana ekran / Son uygulamalar düğmeleri — [Ayrıcalıklı özellikler](#ayrıcalıklı-özellikler) ile ikisi de bunu gerektirmez: düğmeler bir arka uç bağlanır bağlanmaz, dokunma aktarımı ise **Gerçek dokunma enjeksiyonu** açıkken çalışır |
 
 > **İpucu:** Her başlatmada Ekran Kaydı izin penceresiyle karşılaşmamak için izni ADB ile önceden verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](https://github.com/slzn/ScreenOnAuto-releases/wiki/ADB-ile-Yansıtma-İzni-Verme). Bu aynı zamanda **Yalnızca bu uygulamayı yansıt** özelliğini de açar.
 

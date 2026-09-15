@@ -106,7 +106,7 @@ verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](/docs/tr/grant-mirror-pe
   penceresini kontrol edin veya **Ekran yansıtma** anahtarıyla başlatın.
 - **Görüntünün etrafında siyah bantlar var** — telefon ve araç ekranlarının en-boy
   oranları farklıdır; yansıtma ekranındaki **Yatay modu zorla** düğmesi (veya
-  uygulama ayarlarındaki **Yatay modu otomatik zorla**) genellikle ekranı çok daha
+  uygulama ayarlarındaki **Yatay modu otomatik olarak zorla**) genellikle ekranı çok daha
   iyi doldurur. İnce boşluklar veya kesilen kenarlar kalırsa **Ayarlar → Gelişmiş →
   Yansıtma genişliğini ayarla / Yansıtma yüksekliğini ayarla** ile ince ayar yapın
   (pozitif pikseller kesilen kenarı içeri çeker, negatif pikseller siyah bandı
