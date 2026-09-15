@@ -27,7 +27,7 @@
 - **Dupliquer seulement cette application** *(Android 15+)* — Envoie à la voiture uniquement l'application lancée automatiquement au lieu de tout l'écran, le reste du téléphone reste privé. Nécessite la permission de capture d'écran [accordée au préalable via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Accorder-la-permission-de-duplication-via-ADB) ; l'écran de la voiture reste vide tant que vous quittez cette application
 - **Forcer le paysage** — Force le téléphone en mode paysage pendant la duplication ; s'active à la connexion, avec un bouton à l'écran
 - **Raccourcis de lancement** — Ajoutez jusqu'à 4 boutons de lancement rapide d'apps sur l'écran de duplication Android Auto
-- **Boutons à l'écran** — Affichez ou masquez individuellement les boutons de l'écran de duplication dans les réglages avancés : Forcer paysage, Atténuer, et Retour / Accueil / Apps récentes du téléphone (4 au maximum)
+- **Boutons à l'écran** — Affichez ou masquez individuellement les boutons de l'écran de duplication sur la page Boutons à l'écran : Forcer paysage, Atténuer, et Retour / Accueil / Apps récentes du téléphone (4 au maximum)
 - **Position des boutons** — Sur la duplication Legacy, alignez les boutons à gauche ou évitez automatiquement la barre de navigation du téléphone
 - **Réglage de la duplication** — Rognez la largeur/hauteur de l'image dans les réglages avancés pour les unités qui coupent les bords
 - **Transfert tactile** *(Expérimental)* — Touchez, faites défiler, balayez et pincez pour zoomer sur l'affichage Android Auto afin de contrôler votre téléphone
@@ -40,13 +40,13 @@ Elles débloquent ce que les API Android normales ne peuvent pas faire. Elles n�
 |---|---|
 | **Éteindre l'écran du téléphone** | Éteint la dalle du téléphone lorsque l'Atténuation automatique se déclenche, pendant que la voiture continue d'afficher la duplication — économise la batterie et évite que le téléphone n'éclaire l'habitacle la nuit |
 | **Injection tactile réelle** | Transmet les mouvements réels de votre doigt au lieu de gestes synthétisés : **appui long, glisser et multi-touch** fonctionnent sur la duplication Legacy |
-| **Boutons de navigation du téléphone** | Retour / Accueil / Apps récentes fonctionnent **sans aucun service d'accessibilité activé**. Activez les boutons dans **Avancé → Boutons de l'écran Android Auto** |
+| **Boutons de navigation du téléphone** | Retour / Accueil / Apps récentes fonctionnent **sans aucun service d'accessibilité activé**. Activez les boutons dans **Boutons à l'écran → Boutons de fonction** |
 | **Adapter l'écran du téléphone à celui de la voiture** | Redimensionne l'écran du téléphone au format de l'écran de la voiture pendant la duplication, supprimant à la source les bandes noires et la déformation en écran partagé — l'écran de la voiture est mesuré automatiquement |
 
 > [!IMPORTANT]
 > **Un serveur Shizuku démarré via ADB s'arrête lorsque vous branchez le téléphone à la voiture.** La connexion USB fait passer le téléphone en mode accessoire, ce qui redémarre ADB et emporte Shizuku avec lui — le débogage sans fil passe par le même ADB et n'y change rien. Relancez Shizuku et ScreenOnAuto se reconnecte tout seul ; mieux encore, utilisez le [fork de thedjchi](https://github.com/thedjchi/Shizuku), dont le service watchdog le relance pour vous. Les utilisateurs root et les connexions Android Auto sans fil ne sont pas concernés.
 
-> **Réveiller l'écran après son extinction :** la dalle tactile s'éteint avec l'écran, toucher le téléphone ne fait donc rien. Arrêtez la duplication ou déconnectez Android Auto, ou appuyez **deux fois** sur le bouton d'alimentation du téléphone (la première pression est celle qui met réellement l'appareil en veille, Android n'ayant jamais su que l'écran était éteint). Le bouton **Atténuation automatique** sur l'écran de la voiture fonctionne aussi, mais seulement si vous l'avez activé dans **Avancé → Boutons de l'écran Android Auto** : il est désactivé par défaut.
+> **Réveiller l'écran après son extinction :** la dalle tactile s'éteint avec l'écran, toucher le téléphone ne fait donc rien. Arrêtez la duplication ou déconnectez Android Auto, ou appuyez **deux fois** sur le bouton d'alimentation du téléphone (la première pression est celle qui met réellement l'appareil en veille, Android n'ayant jamais su que l'écran était éteint). Le bouton **Atténuation automatique** sur l'écran de la voiture fonctionne aussi, mais seulement si vous l'avez activé dans **Boutons à l'écran → Boutons de fonction** : il est désactivé par défaut.
 
 ## Prérequis
 

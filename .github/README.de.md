@@ -27,7 +27,7 @@
 - **Nur diese App spiegeln** *(Android 15+)* — Sendet nur die automatisch gestartete App ans Auto statt des ganzen Bildschirms, der Rest des Telefons bleibt privat. Erfordert die Bildschirmaufnahme-Berechtigung, [vorab per ADB erteilt](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen); der Autobildschirm bleibt leer, solange du diese App verlässt
 - **Querformat erzwingen** — Erzwingt während der Spiegelung das Querformat; startet automatisch beim Verbinden, mit Umschalter auf dem Bildschirm
 - **App-Verknüpfungen** — Füge dem Android-Auto-Spiegelbildschirm bis zu 4 Schnellstart-Tasten hinzu
-- **Bildschirmtasten** — Blende die Tasten des Spiegelbildschirms in den erweiterten Einstellungen einzeln ein oder aus: Querformat erzwingen, Automatisches Abdunkeln sowie Zurück / Startbildschirm / Letzte Apps (bis zu 4 gleichzeitig)
+- **Bildschirmtasten** — Blende die Tasten des Spiegelbildschirms auf der Seite Bildschirm-Schaltflächen einzeln ein oder aus: Querformat erzwingen, Automatisches Abdunkeln sowie Zurück / Startbildschirm / Letzte Apps (bis zu 4 gleichzeitig)
 - **Tastenposition** — Richte die Bildschirmtasten auf dem Legacy-Spiegel links aus oder weiche der Navigationsleiste des Telefons automatisch aus
 - **Spiegelungsanpassung** — Passe Breite/Höhe der Spiegelung in den erweiterten Einstellungen an, falls die Head-Unit die Ränder abschneidet
 - **Touch-Weiterleitung** *(experimentell)* — Tippe, scrolle, wische und zoome mit zwei Fingern auf dem Android-Auto-Display, um das Telefon zu steuern
@@ -40,13 +40,13 @@ Diese schalten frei, was die normalen Android-APIs nicht können. Sie benötigen
 |---|---|
 | **Telefonbildschirm ausschalten** | Schaltet das Display des Telefons aus, sobald das Automatische Abdunkeln greift, während das Auto die Spiegelung weiter anzeigt — spart Akku und verhindert, dass das Telefon nachts den Innenraum erhellt |
 | **Echte Toucheingabe** | Leitet deine tatsächlichen Fingerbewegungen weiter statt synthetisierter Gesten, sodass **langes Drücken, Ziehen und Multitouch** auf der Legacy-Spiegelung funktionieren |
-| **Telefon-Navigationstasten** | Zurück / Startbildschirm / Letzte Apps funktionieren **ganz ohne aktivierten Bedienungshilfen-Dienst**. Aktiviere die Tasten unter **Erweitert → Schaltflächen auf dem Android-Auto-Bildschirm** |
+| **Telefon-Navigationstasten** | Zurück / Startbildschirm / Letzte Apps funktionieren **ganz ohne aktivierten Bedienungshilfen-Dienst**. Aktiviere die Tasten unter **Bildschirm-Schaltflächen → Funktionsschaltflächen** |
 | **Telefonbildschirm an das Auto anpassen** | Passt den Telefonbildschirm während der Spiegelung an das Seitenverhältnis des Autodisplays an, sodass schwarze Balken und die Verzerrung im geteilten Bildschirm an der Quelle verschwinden — der Autobildschirm wird automatisch vermessen |
 
 > [!IMPORTANT]
 > **Ein per ADB gestarteter Shizuku-Server wird beendet, sobald du das Telefon ans Auto anschließt.** Die USB-Verbindung versetzt das Telefon in den Zubehörmodus, wodurch ADB neu startet und Shizuku mitnimmt — Wireless Debugging läuft über dasselbe ADB und hilft daher nicht. Starte Shizuku einfach neu, ScreenOnAuto verbindet sich von selbst wieder; besser noch: Verwende den [thedjchi-Fork](https://github.com/thedjchi/Shizuku), dessen Watchdog-Dienst ihn für dich neu startet. Root-Nutzer und drahtlose Android-Auto-Verbindungen sind nicht betroffen.
 
-> **Den Bildschirm nach dem Ausschalten wieder aufwecken:** Der Touchscreen wird zusammen mit dem Display abgeschaltet, Tippen auf das Telefon bewirkt also nichts. Beende die Spiegelung oder trenne Android Auto, oder drücke die Ein-/Aus-Taste des Telefons **zweimal** (der erste Druck versetzt das Gerät erst in den Ruhezustand, da Android nie wusste, dass das Display aus war). Die Schaltfläche **Automatisches Abdunkeln** auf dem Autobildschirm geht auch, aber nur wenn du sie unter **Erweitert → Schaltflächen auf dem Android-Auto-Bildschirm** aktiviert hast — sie ist standardmäßig aus.
+> **Den Bildschirm nach dem Ausschalten wieder aufwecken:** Der Touchscreen wird zusammen mit dem Display abgeschaltet, Tippen auf das Telefon bewirkt also nichts. Beende die Spiegelung oder trenne Android Auto, oder drücke die Ein-/Aus-Taste des Telefons **zweimal** (der erste Druck versetzt das Gerät erst in den Ruhezustand, da Android nie wusste, dass das Display aus war). Die Schaltfläche **Automatisches Abdunkeln** auf dem Autobildschirm geht auch, aber nur wenn du sie unter **Bildschirm-Schaltflächen → Funktionsschaltflächen** aktiviert hast — sie ist standardmäßig aus.
 
 ## Voraussetzungen
 

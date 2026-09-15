@@ -27,7 +27,7 @@
 - **Mirror Only This App** *(Android 15+)* — Send just the auto-launch app to the car instead of the whole screen, leaving the rest of the phone private. Needs the Screen Capture permission [pre-granted via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB); the car screen blanks while you are away from that app
 - **Force Landscape** — Force the phone into landscape while mirroring; auto-starts on connect, with an on-screen toggle
 - **Launch Shortcuts** — Add up to 4 app quick-launch buttons to the Android Auto mirror screen
-- **On-screen Buttons** — Show or hide the mirror-screen buttons individually in Advanced settings: Force Landscape, Auto Dim, and phone Back / Home / Recent apps (up to 4 at once)
+- **On-screen Buttons** — Show or hide the mirror-screen buttons individually on the On-screen buttons page: Force Landscape, Auto Dim, and phone Back / Home / Recent apps (up to 4 at once)
 - **Button Placement** — On the Legacy mirror, left-align the on-screen buttons or automatically avoid the phone's navigation bar
 - **Mirror Adjustment** — Trim the mirror width/height in Advanced settings for head units that crop the edges
 - **Touch Forwarding** *(Experimental)* — Tap, scroll, fling and pinch-to-zoom on the Android Auto display to control your phone
@@ -40,7 +40,7 @@ These unlock things the normal Android APIs cannot do. They need **[Shizuku](htt
 |---|---|
 | **Turn the Phone Screen Off** | Switches the phone's panel off when Auto Dim kicks in, while the car keeps showing the mirror — saves battery and stops the phone lighting up the cabin at night |
 | **Real Touch Injection** | Forwards your actual finger movements instead of synthesised gestures, so **long-press, drag and multi-finger** work on the Legacy mirror |
-| **Phone Navigation Buttons** | Back / Home / Recent apps work with **no Accessibility Service enabled at all**. Turn the buttons on in **Advanced → Android Auto screen buttons** |
+| **Phone Navigation Buttons** | Back / Home / Recent apps work with **no Accessibility Service enabled at all**. Turn the buttons on in **On-screen buttons → Control buttons** |
 | **Match the Phone Screen to the Car** | Reshapes the phone's display to the head unit's aspect ratio while mirroring, so the black bars and the split-view distortion are gone at the source — the car screen is measured automatically |
 
 > [!IMPORTANT]
@@ -55,7 +55,7 @@ These unlock things the normal Android APIs cannot do. They need **[Shizuku](htt
 > phone does nothing. Stop the mirror or disconnect Android Auto, or press the phone's power
 > button **twice** (the first press is what actually puts the device to sleep, since Android
 > never knew the panel was off). The **Auto Dim** button on the car screen works too, but only
-> if you turned it on in **Advanced → Android Auto screen buttons** — it is off by default.
+> if you turned it on in **On-screen buttons → Control buttons** — it is off by default.
 
 ## Requirements
 

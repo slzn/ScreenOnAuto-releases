@@ -27,7 +27,7 @@
 - **Esegui il mirroring solo di questa app** *(Android 15+)* — Invia all'auto solo l'app ad avvio automatico invece dell'intero schermo, lasciando privato il resto del telefono. Richiede l'autorizzazione di Cattura schermo [concessa in anticipo via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Concedere-il-permesso-di-mirroring-via-ADB); lo schermo dell'auto resta vuoto mentre sei fuori da quell'app
 - **Forzatura orizzontale** — Forza il telefono in orizzontale durante il mirroring; si attiva alla connessione, con un pulsante sullo schermo
 - **Scorciatoie di avvio** — Aggiungi fino a 4 pulsanti di avvio rapido delle app sulla schermata di mirroring di Android Auto
-- **Pulsanti sullo schermo** — Mostra o nascondi singolarmente i pulsanti della schermata di mirroring nelle impostazioni avanzate: Forza orizzontale, Oscura, e Indietro / Home / App recenti del telefono (massimo 4 alla volta)
+- **Pulsanti sullo schermo** — Mostra o nascondi singolarmente i pulsanti della schermata di mirroring nella pagina Pulsanti sullo schermo: Forza orizzontale, Oscura, e Indietro / Home / App recenti del telefono (massimo 4 alla volta)
 - **Posizione dei pulsanti** — Nel mirroring Legacy, allinea i pulsanti a sinistra o evita automaticamente la barra di navigazione del telefono
 - **Regolazione del mirroring** — Ritaglia larghezza/altezza dell'immagine nelle impostazioni avanzate per le unità che tagliano i bordi
 - **Inoltro tocco** *(Sperimentale)* — Tocca, scorri, fai swipe e pizzica per lo zoom sul display Android Auto per controllare il telefono
@@ -40,13 +40,13 @@ Sbloccano ciò che le normali API di Android non possono fare. Richiedono **[Shi
 |---|---|
 | **Spegni lo schermo del telefono** | Spegne il pannello del telefono quando entra in azione l'Oscuramento automatico, mentre l'auto continua a mostrare il mirroring — risparmia batteria ed evita che il telefono illumini l'abitacolo di notte |
 | **Iniezione tocco reale** | Inoltra i movimenti reali del dito invece di gesti sintetizzati, quindi **pressione prolungata, trascinamento e multi-touch** funzionano sul mirroring Legacy |
-| **Pulsanti di navigazione del telefono** | Indietro / Home / App recenti funzionano **senza alcun Servizio di accessibilità attivo**. Attiva i pulsanti in **Avanzate → Pulsanti schermata Android Auto** |
+| **Pulsanti di navigazione del telefono** | Indietro / Home / App recenti funzionano **senza alcun Servizio di accessibilità attivo**. Attiva i pulsanti in **Pulsanti sullo schermo → Pulsanti funzione** |
 | **Adattare lo schermo del telefono a quello dell'auto** | Rimodella lo schermo del telefono sulle proporzioni dell'unità dell'auto durante il mirroring, eliminando all'origine le bande nere e la distorsione a schermo diviso — lo schermo dell'auto viene misurato automaticamente |
 
 > [!IMPORTANT]
 > **Un server Shizuku avviato via ADB si spegne quando colleghi il telefono all'auto.** La connessione USB mette il telefono in modalità accessorio, il che riavvia ADB e si porta via Shizuku — il debug wireless passa dallo stesso ADB, quindi non aiuta. Riavvia Shizuku e ScreenOnAuto si riconnette da solo; meglio ancora, usa il [fork di thedjchi](https://github.com/thedjchi/Shizuku), il cui servizio watchdog lo riavvia al posto tuo. Gli utenti root e le connessioni Android Auto wireless non sono interessati.
 
-> **Come riaccendere lo schermo dopo lo spegnimento:** il touchscreen si spegne insieme al pannello, quindi toccare il telefono non produce alcun effetto. Interrompi il mirroring o scollega Android Auto, oppure premi **due volte** il tasto di accensione del telefono (la prima pressione è quella che lo mette davvero in sospensione, dato che Android non ha mai saputo che il pannello era spento). Anche il pulsante **Oscuramento automatico** sullo schermo dell'auto va bene, ma solo se lo hai attivato in **Avanzate → Pulsanti schermata Android Auto**: è disattivato per impostazione predefinita.
+> **Come riaccendere lo schermo dopo lo spegnimento:** il touchscreen si spegne insieme al pannello, quindi toccare il telefono non produce alcun effetto. Interrompi il mirroring o scollega Android Auto, oppure premi **due volte** il tasto di accensione del telefono (la prima pressione è quella che lo mette davvero in sospensione, dato che Android non ha mai saputo che il pannello era spento). Anche il pulsante **Oscuramento automatico** sullo schermo dell'auto va bene, ma solo se lo hai attivato in **Pulsanti sullo schermo → Pulsanti funzione**: è disattivato per impostazione predefinita.
 
 ## Requisiti
 

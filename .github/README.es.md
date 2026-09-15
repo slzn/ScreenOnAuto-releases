@@ -27,7 +27,7 @@
 - **Duplicar solo esta app** *(Android 15+)* — Envía al coche solo la app de inicio automático en lugar de toda la pantalla, manteniendo privado el resto del teléfono. Necesita el permiso de Captura de pantalla [concedido previamente por ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permiso-de-Duplicación-por-ADB); la pantalla del coche queda en blanco mientras estás fuera de esa app
 - **Forzar horizontal** — Fuerza el teléfono a modo horizontal durante la duplicación; se activa al conectar, con botón en pantalla
 - **Atajos de apps** — Añade hasta 4 botones de acceso rápido a apps en la pantalla de duplicación de Android Auto
-- **Botones en pantalla** — Muestra u oculta individualmente los botones de la pantalla de duplicación en los ajustes avanzados: Forzar horizontal, Atenuación automática y Atrás / Inicio / Apps recientes del teléfono (hasta 4 a la vez)
+- **Botones en pantalla** — Muestra u oculta individualmente los botones de la pantalla de duplicación en la página Botones en pantalla: Forzar horizontal, Atenuación automática y Atrás / Inicio / Apps recientes del teléfono (hasta 4 a la vez)
 - **Posición de los botones** — En la duplicación Legacy, alinea los botones a la izquierda o esquiva automáticamente la barra de navegación del teléfono
 - **Ajuste de la duplicación** — Recorta el ancho/alto de la duplicación en los ajustes avanzados para unidades que cortan los bordes
 - **Reenvío táctil** *(experimental)* — Toca, desplaza, desliza y pellizca para hacer zoom en la pantalla de Android Auto para controlar el teléfono
@@ -40,13 +40,13 @@ Estas desbloquean lo que las API normales de Android no pueden hacer. Requieren 
 |---|---|
 | **Apagar la pantalla del teléfono** | Apaga el panel del teléfono cuando se activa la Atenuación automática, mientras el coche sigue mostrando la duplicación — ahorra batería y evita que el teléfono ilumine el habitáculo de noche |
 | **Inyección táctil real** | Reenvía los movimientos reales de tu dedo en lugar de gestos sintetizados, así que **mantener pulsado, arrastrar y multitáctil** funcionan en la duplicación Legacy |
-| **Botones de navegación del teléfono** | Atrás / Inicio / Apps recientes funcionan **sin ningún Servicio de accesibilidad activado**. Activa los botones en **Avanzado → Botones de la pantalla de Android Auto** |
+| **Botones de navegación del teléfono** | Atrás / Inicio / Apps recientes funcionan **sin ningún Servicio de accesibilidad activado**. Activa los botones en **Botones en pantalla → Botones de función** |
 | **Ajustar la pantalla del teléfono a la del coche** | Remodela la pantalla del teléfono a la relación de aspecto de la unidad del coche durante la duplicación, eliminando de raíz las barras negras y la distorsión en pantalla dividida — la pantalla del coche se mide automáticamente |
 
 > [!IMPORTANT]
 > **Un servidor Shizuku iniciado por ADB se apaga al conectar al coche.** La conexión USB pone el teléfono en modo accesorio, lo que reinicia ADB y se lleva a Shizuku por delante — la depuración inalámbrica usa el mismo ADB, así que no ayuda. Inicia Shizuku otra vez y ScreenOnAuto se reconecta solo; mejor aún, usa el [fork de thedjchi](https://github.com/thedjchi/Shizuku), cuyo servicio watchdog lo reinicia por ti. Los usuarios con root y las conexiones inalámbricas de Android Auto no se ven afectados.
 
-> **Cómo volver a encender la pantalla tras apagarla:** la pantalla táctil se apaga junto con el panel, así que tocar el teléfono no hace nada. Detén la duplicación o desconecta Android Auto, o pulsa el botón de encendido del teléfono **dos veces** (la primera pulsación es la que realmente lo duerme, ya que Android nunca supo que el panel estaba apagado). El botón **Atenuación automática** de la pantalla del coche también sirve, pero solo si lo has activado en **Avanzado → Botones de la pantalla de Android Auto**: viene desactivado.
+> **Cómo volver a encender la pantalla tras apagarla:** la pantalla táctil se apaga junto con el panel, así que tocar el teléfono no hace nada. Detén la duplicación o desconecta Android Auto, o pulsa el botón de encendido del teléfono **dos veces** (la primera pulsación es la que realmente lo duerme, ya que Android nunca supo que el panel estaba apagado). El botón **Atenuación automática** de la pantalla del coche también sirve, pero solo si lo has activado en **Botones en pantalla → Botones de función**: viene desactivado.
 
 ## Requisitos
 

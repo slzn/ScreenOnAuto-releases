@@ -27,7 +27,7 @@
 - **Espelhar apenas este app** *(Android 15+)* — Envia ao carro somente o app de abertura automática, em vez da tela inteira, mantendo o resto do celular privado. Requer a permissão de Captura de tela [concedida previamente via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permissão-de-Espelhamento-via-ADB); a tela do carro fica em branco enquanto você está fora desse app
 - **Forçar paisagem** — Força o celular para o modo paisagem durante o espelhamento; ativa automaticamente ao conectar, com botão de alternância na tela
 - **Atalhos de apps** — Adicione até 4 botões de acesso rápido a apps na tela de espelhamento do Android Auto
-- **Botões na tela** — Mostre ou oculte individualmente os botões da tela de espelhamento nas configurações avançadas: Forçar paisagem, Escurecimento automático e Voltar / Início / Apps recentes do celular (até 4 ao mesmo tempo)
+- **Botões na tela** — Mostre ou oculte individualmente os botões da tela de espelhamento na página Botões na tela: Forçar paisagem, Escurecimento automático e Voltar / Início / Apps recentes do celular (até 4 ao mesmo tempo)
 - **Posição dos botões** — No espelhamento Legacy, alinhe os botões à esquerda ou desvie automaticamente da barra de navegação do celular
 - **Ajuste do espelhamento** — Ajuste a largura/altura do espelhamento nas configurações avançadas para centrais que cortam as bordas
 - **Encaminhamento de toque** *(experimental)* — Toque, role, deslize e use o gesto de pinça para ampliar na tela do Android Auto para controlar o celular
@@ -40,13 +40,13 @@ Estes desbloqueiam o que as APIs normais do Android não conseguem fazer. Exigem
 |---|---|
 | **Desligar a tela do telefone** | Desliga o painel do celular quando o Escurecimento automático entra em ação, enquanto o carro continua exibindo o espelhamento — economiza bateria e evita que o celular ilumine o interior à noite |
 | **Injeção de toque real** | Encaminha os movimentos reais do seu dedo em vez de gestos sintetizados, então **pressionar e segurar, arrastar e multitoque** funcionam no espelhamento Legacy |
-| **Botões de navegação do celular** | Voltar / Início / Apps recentes funcionam **sem nenhum Serviço de acessibilidade ativado**. Ative os botões em **Avançado → Botões da tela do Android Auto** |
+| **Botões de navegação do celular** | Voltar / Início / Apps recentes funcionam **sem nenhum Serviço de acessibilidade ativado**. Ative os botões em **Botões na tela → Botões de função** |
 | **Ajustar a tela do telefone à do carro** | Remodela a tela do celular para a proporção da unidade do carro durante o espelhamento, eliminando na origem as barras pretas e a distorção na tela dividida — a tela do carro é medida automaticamente |
 
 > [!IMPORTANT]
 > **Um servidor Shizuku iniciado via ADB é encerrado quando você conecta ao carro.** A conexão USB coloca o celular em modo acessório, o que reinicia o ADB e derruba o Shizuku junto — a depuração sem fio passa pelo mesmo ADB, então não ajuda. Basta iniciar o Shizuku de novo e o ScreenOnAuto reconecta sozinho; melhor ainda, use o [fork do thedjchi](https://github.com/thedjchi/Shizuku), cujo serviço de watchdog o reinicia para você. Usuários com root e conexões sem fio do Android Auto não são afetados.
 
-> **Como acordar a tela depois do desligamento:** a tela sensível ao toque desliga junto com o painel, então tocar no celular não faz nada. Pare o espelhamento ou desconecte o Android Auto, ou pressione o botão liga/desliga do celular **duas vezes** (o primeiro toque é o que realmente coloca o aparelho para dormir, já que o Android nunca soube que o painel estava desligado). O botão **Escurecimento automático** na tela do carro também funciona, mas só se você o tiver ativado em **Avançado → Botões da tela do Android Auto** — ele vem desligado.
+> **Como acordar a tela depois do desligamento:** a tela sensível ao toque desliga junto com o painel, então tocar no celular não faz nada. Pare o espelhamento ou desconecte o Android Auto, ou pressione o botão liga/desliga do celular **duas vezes** (o primeiro toque é o que realmente coloca o aparelho para dormir, já que o Android nunca soube que o painel estava desligado). O botão **Escurecimento automático** na tela do carro também funciona, mas só se você o tiver ativado em **Botões na tela → Botões de função** — ele vem desligado.
 
 ## Requisitos
 
