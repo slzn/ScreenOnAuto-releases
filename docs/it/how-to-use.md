@@ -107,7 +107,7 @@ Uno qualsiasi di questi metodi:
   **mirroring**.
 - **Bande nere attorno all'immagine** — telefono e schermo dell'auto hanno proporzioni
   diverse; il pulsante **Forza orizzontale** sulla schermata di mirroring (o la
-  **Forzatura orizzontale automatica** nelle impostazioni dell'app) di solito riempie
+  **Forza automaticamente la modalità orizzontale** nelle impostazioni dell'app) di solito riempie
   molto meglio lo schermo. Se restano sottili spazi o bordi tagliati, rifinisci con
   **Impostazioni → Avanzate → Regola larghezza / altezza del mirroring** (pixel positivi
   per recuperare un bordo tagliato, negativi per riempire una banda nera).
