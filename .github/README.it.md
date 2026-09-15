@@ -25,7 +25,7 @@
 - **Interrompi alla disconnessione** — Interrompe automaticamente il mirroring alla disconnessione di Android Auto
 - **Avvia app automaticamente** — Apre automaticamente un'app scelta sul telefono quando il mirroring parte e Android Auto è connesso
 - **Esegui il mirroring solo di questa app** *(Android 15+)* — Invia all'auto solo l'app ad avvio automatico invece dell'intero schermo, lasciando privato il resto del telefono. Richiede l'autorizzazione di Cattura schermo [concessa in anticipo via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Concedere-il-permesso-di-mirroring-via-ADB); lo schermo dell'auto resta vuoto mentre sei fuori da quell'app
-- **Forzatura orizzontale** — Forza il telefono in orizzontale durante il mirroring; si attiva alla connessione, con un pulsante sullo schermo
+- **Forza orizzontale** — Forza il telefono in orizzontale durante il mirroring; si attiva alla connessione, con un pulsante sullo schermo
 - **Scorciatoie di avvio** — Aggiungi fino a 4 pulsanti di avvio rapido delle app sulla schermata di mirroring di Android Auto
 - **Pulsanti sullo schermo** — Mostra o nascondi singolarmente i pulsanti della schermata di mirroring nella pagina Pulsanti sullo schermo: Forza orizzontale, Oscura, e Indietro / Home / App recenti del telefono (massimo 4 alla volta)
 - **Posizione dei pulsanti** — Nel mirroring Legacy, allinea i pulsanti a sinistra o evita automaticamente la barra di navigazione del telefono
@@ -124,7 +124,7 @@ Pronto? Consulta **[Come si usa](https://github.com/slzn/ScreenOnAuto-releases/w
 |---|---|
 | Cattura schermo (MediaProjection) | Mirroring schermo |
 | Accesso alle notifiche | Proxy sessione multimediale |
-| Mostra sopra le altre app | Oscuramento automatico e Forzatura orizzontale |
+| Mostra sopra le altre app | Oscuramento automatico e Forza orizzontale |
 | Servizio di accessibilità | Inoltro tocco *(sperimentale)* e pulsanti Indietro / Home / App recenti — con le [Funzioni privilegiate](#funzioni-privilegiate) nessuno dei due ne ha bisogno: i pulsanti funzionano appena un backend è connesso, l'inoltro tocco quando **Iniezione tocco reale** è attiva |
 
 > **Suggerimento:** per evitare la finestra di richiesta di cattura schermo a ogni avvio, puoi pre-concedere l'autorizzazione via ADB — vedi [Concedere il permesso di mirroring via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Concedere-il-permesso-di-mirroring-via-ADB). È anche ciò che sblocca **Esegui il mirroring solo di questa app**.
