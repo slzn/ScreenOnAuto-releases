@@ -5,7 +5,7 @@ lang: de
 slug: grant-mirror-permission-via-adb
 permalink: /docs/de/grant-mirror-permission-via-adb/
 date: 2026-07-16
-last_modified_at: 2026-07-16
+last_modified_at: 2026-09-15
 ---
 
 # Spiegelungsberechtigung per ADB erteilen
