@@ -12,66 +12,66 @@
 
 > [!IMPORTANT]
 > **Die Installation hängt von deiner Android-Version ab:**
-> - **Android 14 und höher** — Installation **nur über Google Play** (auf Einladung — die App ist im Play Store **nicht über die Suche zu finden**). [Der Tester-Liste beitreten →](https://github.com/slzn/ScreenOnAuto-releases/wiki/Beta-Test-beitreten)
-> - **Android 13 und niedriger** — APK per Sideload mit KingInstaller installieren ([Schritte unten](#installation)) oder über Google Play.
+> - **Android 14 und höher** – Installation **nur über Google Play** (auf Einladung – die App ist im Play Store **nicht über die Suche zu finden**). [Der Tester-Liste beitreten →](https://github.com/slzn/ScreenOnAuto-releases/wiki/Beta-Test-beitreten)
+> - **Android 13 und niedriger** – APK per Sideload mit KingInstaller installieren ([Schritte unten](#installation)) oder über Google Play.
 
 ## Funktionen
 
-- **Bildschirmspiegelung** — Überträgt den Telefonbildschirm in Echtzeit auf die Android-Auto-Head-Unit
-- **Mediensitzungs-Proxy** — Steuere jede Medien-App des Telefons über die native Medienoberfläche von Android Auto
-- **Automatisches Abdunkeln** — Dunkelt den Telefonbildschirm bei inaktiver Spiegelung automatisch ab (Verzögerung 15/30/60/120 s)
-- **Autostart** — Startet die Spiegelung automatisch, sobald Android Auto verbunden ist
-- **Ruhezustand verhindern** — Verhindert, dass sich der Telefonbildschirm während der Spiegelung abschaltet
-- **Stopp bei Trennung** — Beendet die Spiegelung automatisch, wenn Android Auto getrennt wird
-- **App automatisch starten** — Öffnet beim Start der Spiegelung automatisch eine gewählte App auf dem Telefon, wenn Android Auto verbunden ist
-- **Nur diese App spiegeln** *(Android 15+)* — Sendet nur die automatisch gestartete App ans Auto statt des ganzen Bildschirms, der Rest des Telefons bleibt privat. Erfordert die Bildschirmaufnahme-Berechtigung, [vorab per ADB erteilt](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen); der Autobildschirm bleibt leer, solange du diese App verlässt
-- **Querformat erzwingen** — Erzwingt während der Spiegelung das Querformat; startet automatisch beim Verbinden, mit Umschalter auf dem Bildschirm
-- **App-Verknüpfungen** — Füge dem Android-Auto-Spiegelbildschirm bis zu 4 Schnellstart-Tasten hinzu
-- **Bildschirmtasten** — Blende die Tasten des Spiegelbildschirms auf der Seite Bildschirm-Schaltflächen einzeln ein oder aus: Querformat erzwingen, Automatisches Abdunkeln sowie Zurück / Startbildschirm / Letzte Apps (bis zu 4 gleichzeitig)
-- **Tastenposition** — Richte die Bildschirmtasten auf dem Legacy-Spiegel links aus oder weiche der Navigationsleiste des Telefons automatisch aus
-- **Spiegelungsanpassung** — Passe Breite/Höhe der Spiegelung in den erweiterten Einstellungen an, falls die Head-Unit die Ränder abschneidet
-- **Touch-Weiterleitung** *(experimentell)* — Tippe, scrolle, wische und zoome mit zwei Fingern auf dem Android-Auto-Display, um das Telefon zu steuern
+- **Bildschirmspiegelung** – Überträgt den Telefonbildschirm in Echtzeit auf die Android-Auto-Head-Unit
+- **Mediensitzungs-Proxy** – Steuere jede Medien-App des Telefons über die native Medienoberfläche von Android Auto
+- **Automatisches Abdunkeln** – Dunkelt den Telefonbildschirm bei inaktiver Spiegelung automatisch ab (Verzögerung 15/30/60/120 s)
+- **Autostart** – Startet die Spiegelung automatisch, sobald Android Auto verbunden ist
+- **Ruhezustand verhindern** – Verhindert, dass sich der Telefonbildschirm während der Spiegelung abschaltet
+- **Stopp bei Trennung** – Beendet die Spiegelung automatisch, wenn Android Auto getrennt wird
+- **App automatisch starten** – Öffnet beim Start der Spiegelung automatisch eine gewählte App auf dem Telefon, wenn Android Auto verbunden ist
+- **Nur diese App spiegeln** *(Android 15+)* – Sendet nur die automatisch gestartete App ans Auto statt des ganzen Bildschirms, der Rest des Telefons bleibt privat. Erfordert die Bildschirmaufnahme-Berechtigung, [vorab per ADB erteilt](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen); der Autobildschirm bleibt leer, solange du diese App verlässt
+- **Querformat erzwingen** – Erzwingt während der Spiegelung das Querformat; startet automatisch beim Verbinden, mit Umschalter auf dem Bildschirm
+- **App-Verknüpfungen** – Füge dem Android-Auto-Spiegelbildschirm bis zu 4 Schnellstart-Tasten hinzu
+- **Bildschirmtasten** – Blende die Tasten des Spiegelbildschirms auf der Seite Bildschirm-Schaltflächen einzeln ein oder aus: Querformat erzwingen, Automatisches Abdunkeln sowie Zurück / Startbildschirm / Letzte Apps (bis zu 4 gleichzeitig)
+- **Tastenposition** – Richte die Bildschirmtasten auf dem Legacy-Spiegel links aus oder weiche der Navigationsleiste des Telefons automatisch aus
+- **Spiegelungsanpassung** – Passe Breite/Höhe der Spiegelung in den erweiterten Einstellungen an, falls die Head-Unit die Ränder abschneidet
+- **Touch-Weiterleitung** *(experimentell)* – Tippe, scrolle, wische und zoome mit zwei Fingern auf dem Android-Auto-Display, um das Telefon zu steuern
 
 ## Privilegierte Funktionen
 
-Diese schalten frei, was die normalen Android-APIs nicht können. Sie benötigen **[Shizuku](https://shizuku.rikka.app/) oder Root** und sind vollständig optional: Hat dein Telefon weder das eine noch das andere, **ändert sich nichts** — der Abschnitt bleibt ausgeblendet und alle anderen Funktionen verhalten sich genau wie zuvor.
+Diese schalten frei, was die normalen Android-APIs nicht können. Sie benötigen **[Shizuku](https://shizuku.rikka.app/) oder Root** und sind vollständig optional: Hat dein Telefon weder das eine noch das andere, **ändert sich nichts** – der Abschnitt bleibt ausgeblendet und alle anderen Funktionen verhalten sich genau wie zuvor.
 
 | Funktion | Was sie tut |
 |---|---|
-| **Telefonbildschirm ausschalten** | Schaltet das Display des Telefons aus, sobald das Automatische Abdunkeln greift, während das Auto die Spiegelung weiter anzeigt — spart Akku und verhindert, dass das Telefon nachts den Innenraum erhellt |
+| **Telefonbildschirm ausschalten** | Schaltet das Display des Telefons aus, sobald das Automatische Abdunkeln greift, während das Auto die Spiegelung weiter anzeigt – spart Akku und verhindert, dass das Telefon nachts den Innenraum erhellt |
 | **Echte Toucheingabe** | Leitet deine tatsächlichen Fingerbewegungen weiter statt synthetisierter Gesten, sodass **langes Drücken, Ziehen und Multitouch** auf der Legacy-Spiegelung funktionieren |
 | **Telefon-Navigationstasten** | Zurück / Startbildschirm / Letzte Apps funktionieren **ganz ohne aktivierten Bedienungshilfen-Dienst**. Aktiviere die Tasten unter **Bildschirm-Schaltflächen → Funktionsschaltflächen** |
-| **Telefonbildschirm an das Auto anpassen** | Passt den Telefonbildschirm während der Spiegelung an das Seitenverhältnis des Autodisplays an, sodass schwarze Balken und die Verzerrung im geteilten Bildschirm an der Quelle verschwinden — der Autobildschirm wird automatisch vermessen |
+| **Telefonbildschirm an das Auto anpassen** | Passt den Telefonbildschirm während der Spiegelung an das Seitenverhältnis des Autodisplays an, sodass schwarze Balken und die Verzerrung im geteilten Bildschirm an der Quelle verschwinden – der Autobildschirm wird automatisch vermessen |
 
 > [!IMPORTANT]
-> **Ein per ADB gestarteter Shizuku-Server wird beendet, sobald du das Telefon ans Auto anschließt.** Die USB-Verbindung versetzt das Telefon in den Zubehörmodus, wodurch ADB neu startet und Shizuku mitnimmt — Wireless Debugging läuft über dasselbe ADB und hilft daher nicht. Starte Shizuku einfach neu, ScreenOnAuto verbindet sich von selbst wieder; besser noch: Verwende den [thedjchi-Fork](https://github.com/thedjchi/Shizuku), dessen Watchdog-Dienst ihn für dich neu startet. Root-Nutzer und drahtlose Android-Auto-Verbindungen sind nicht betroffen.
+> **Ein per ADB gestarteter Shizuku-Server wird beendet, sobald du das Telefon ans Auto anschließt.** Die USB-Verbindung versetzt das Telefon in den Zubehörmodus, wodurch ADB neu startet und Shizuku mitnimmt – Wireless Debugging läuft über dasselbe ADB und hilft daher nicht. Starte Shizuku einfach neu, ScreenOnAuto verbindet sich von selbst wieder; besser noch: Verwende den [thedjchi-Fork](https://github.com/thedjchi/Shizuku), dessen Watchdog-Dienst ihn für dich neu startet. Root-Nutzer und drahtlose Android-Auto-Verbindungen sind nicht betroffen.
 
-> **Den Bildschirm nach dem Ausschalten wieder aufwecken:** Der Touchscreen wird zusammen mit dem Display abgeschaltet, Tippen auf das Telefon bewirkt also nichts. Beende die Spiegelung oder trenne Android Auto, oder drücke die Ein-/Aus-Taste des Telefons **zweimal** (der erste Druck versetzt das Gerät erst in den Ruhezustand, da Android nie wusste, dass das Display aus war). Die Schaltfläche **Automatisches Abdunkeln** auf dem Autobildschirm geht auch, aber nur wenn du sie unter **Bildschirm-Schaltflächen → Funktionsschaltflächen** aktiviert hast — sie ist standardmäßig aus.
+> **Den Bildschirm nach dem Ausschalten wieder aufwecken:** Der Touchscreen wird zusammen mit dem Display abgeschaltet, Tippen auf das Telefon bewirkt also nichts. Beende die Spiegelung oder trenne Android Auto, oder drücke die Ein-/Aus-Taste des Telefons **zweimal** (der erste Druck versetzt das Gerät erst in den Ruhezustand, da Android nie wusste, dass das Display aus war). Die Schaltfläche **Automatisches Abdunkeln** auf dem Autobildschirm geht auch, aber nur wenn du sie unter **Bildschirm-Schaltflächen → Funktionsschaltflächen** aktiviert hast – sie ist standardmäßig aus.
 
 ## Voraussetzungen
 
 - Android 7.0 (API 24) oder höher
 - Android Auto auf dem Telefon installiert
 - Ein Fahrzeug mit Android-Auto-Unterstützung
-- *(Optional)* [Shizuku](https://shizuku.rikka.app/) oder Root — für die [Privilegierten Funktionen](#privilegierte-funktionen)
+- *(Optional)* [Shizuku](https://shizuku.rikka.app/) oder Root – für die [Privilegierten Funktionen](#privilegierte-funktionen)
 
 ## Installation
 
-### Android 14 und höher — Installation über Google Play
+### Android 14 und höher – Installation über Google Play
 
 > **Warum Google Play?**  
 > Android Auto führt nur Apps aus, die über den Play Store installiert wurden, und
-> Android 14+ blockiert den unten beschriebenen KingInstaller-Workaround — Play ist
+> Android 14+ blockiert den unten beschriebenen KingInstaller-Workaround – Play ist
 > daher der einzige Weg zu einer Version, die Android Auto akzeptiert. Installiert
-> wird trotzdem die **vollständige App** — dieselbe Version wie das GitHub-APK, nur
+> wird trotzdem die **vollständige App** – dieselbe Version wie das GitHub-APK, nur
 > über den internen Test-Track von Play verteilt.
 
-Die App ist im Play Store **nicht über die Suche zu finden** — die Installation erfolgt **auf Einladung**.
+Die App ist im Play Store **nicht über die Suche zu finden** – die Installation erfolgt **auf Einladung**.
 Siehe **[Beta-Test beitreten](https://github.com/slzn/ScreenOnAuto-releases/wiki/Beta-Test-beitreten)**
 für das Anmeldeformular und die Schritt-für-Schritt-Anleitung. Nach der Installation die App
 öffnen und die angeforderten Berechtigungen wie üblich erteilen.
 
-### Android 13 und niedriger — Sideload mit KingInstaller
+### Android 13 und niedriger – Sideload mit KingInstaller
 
 > **Warum KingInstaller?**  
 > Android Auto verlangt, dass Apps über den Google Play Store installiert werden.
@@ -79,42 +79,42 @@ für das Anmeldeformular und die Schritt-für-Schritt-Anleitung. Nach der Instal
 > Installationsquelle registriert, was Android Auto ablehnt. KingInstaller
 > installiert APKs und meldet dabei den Google Play Store als Installationsquelle.
 
-#### Schritt 1 — KingInstaller installieren
+#### Schritt 1 – KingInstaller installieren
 
 1. Gehe zu [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases) und lade die neueste `KingInstaller.apk` herunter
 2. Auf dem Telefon: **Einstellungen → Sicherheit → "Unbekannte Apps installieren"** für deinen Browser oder Dateimanager aktivieren
 3. `KingInstaller.apk` öffnen und auf **Installieren** tippen
 
-#### Schritt 2 — ScreenOnAuto über KingInstaller installieren
+#### Schritt 2 – ScreenOnAuto über KingInstaller installieren
 
 1. Lade die neueste `ScreenOnAuto-*.apk` von der [aktuellen Version](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) herunter
 2. Öffne **KingInstaller**, tippe auf das **Ordner-Symbol** und wähle die heruntergeladene APK
-3. Tippe auf **Installieren** — KingInstaller installiert sie, als käme sie aus dem Google Play Store
+3. Tippe auf **Installieren** – KingInstaller installiert sie, als käme sie aus dem Google Play Store
 
-#### Schritt 3 — Berechtigungen erteilen
+#### Schritt 3 – Berechtigungen erteilen
 
 Starte **ScreenOnAuto** und folge den Hinweisen in der App, um die erforderlichen Berechtigungen zu erteilen.
 
 ## In Android Auto überprüfen
 
-Das gilt **unabhängig von der Installationsart** — KingInstaller-Sideload *oder* Google Play.
+Das gilt **unabhängig von der Installationsart** – KingInstaller-Sideload *oder* Google Play.
 
 Gehe auf dem Telefon zu **Einstellungen → Verbundene Geräte → Android Auto → Launcher anpassen**.
 Dort sollten diese **zwei** ScreenOnAuto-Einträge erscheinen:
 
 | Symbol | Name | Funktion |
 |---|---|---|
-| <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Spiegelt den Telefonbildschirm im Vollbild — ersetzt den Kartenbereich |
-| <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Spiegelt den Telefonbildschirm über den Legacy-Projektionspfad — kann neben der Karte angezeigt werden |
+| <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Spiegelt den Telefonbildschirm im Vollbild – ersetzt den Kartenbereich |
+| <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Spiegelt den Telefonbildschirm über den Legacy-Projektionspfad – kann neben der Karte angezeigt werden |
 
 Je nach **Android-Auto-Version** siehst du eventuell noch einen dritten Eintrag,
-<img src="../images/icon_media.png" width="20"> **ScreenOnAuto Media Controller** — oder eben nicht. **Beides ist normal:**
+<img src="../images/icon_media.png" width="20"> **ScreenOnAuto Media Controller** – oder eben nicht. **Beides ist normal:**
 
-- **Ältere Android-Auto-Versionen** — der Eintrag wird mit eigenem Symbol aufgeführt.
-- **Neuere Android-Auto-Versionen** — kein Eintrag. Der Media Controller hatte nie eine eigene Oberfläche: Er steuert die in Android Auto eingebaute Medienoberfläche, und neuere Versionen binden diese direkt ein, sodass kein separates Symbol nötig ist. **Die Mediensteuerung funktioniert weiterhin.**
+- **Ältere Android-Auto-Versionen** – der Eintrag wird mit eigenem Symbol aufgeführt.
+- **Neuere Android-Auto-Versionen** – kein Eintrag. Der Media Controller hatte nie eine eigene Oberfläche: Er steuert die in Android Auto eingebaute Medienoberfläche, und neuere Versionen binden diese direkt ein, sodass kein separates Symbol nötig ist. **Die Mediensteuerung funktioniert weiterhin.**
 
 Falls einer der **beiden** oben genannten Einträge fehlt, liegt tatsächlich ein Problem vor: Bei einer Sideload-Installation über KingInstaller neu installieren und sicherstellen, dass der Google Play Store als Installationsquelle gemeldet wird; bei einer Google-Play-Installation warten, bis die Installation abgeschlossen ist, und Android Auto erneut öffnen.
-**Nicht neu installieren, nur weil der Media-Controller-Eintrag fehlt** — das ist bei neueren Android-Auto-Versionen zu erwarten.
+**Nicht neu installieren, nur weil der Media-Controller-Eintrag fehlt** – das ist bei neueren Android-Auto-Versionen zu erwarten.
 
 Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wiki/Verwendung)** zum Starten der Spiegelung im Auto.
 
@@ -125,19 +125,19 @@ Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wi
 | Bildschirmaufnahme (MediaProjection) | Bildschirmspiegelung |
 | Benachrichtigungszugriff | Mediensitzungs-Proxy |
 | Über anderen Apps einblenden | Automatisches Abdunkeln & Querformat erzwingen |
-| Bedienungshilfen-Dienst | Touch-Weiterleitung *(experimentell)* & die Tasten Zurück / Startbildschirm / Letzte Apps — mit den [Privilegierten Funktionen](#privilegierte-funktionen) braucht beides ihn nicht: Die Tasten funktionieren, sobald ein Backend verbunden ist, die Touch-Weiterleitung sobald **Echte Toucheingabe** aktiv ist |
+| Bedienungshilfen-Dienst | Touch-Weiterleitung *(experimentell)* & die Tasten Zurück / Startbildschirm / Letzte Apps – mit den [Privilegierten Funktionen](#privilegierte-funktionen) braucht beides ihn nicht: Die Tasten funktionieren, sobald ein Backend verbunden ist, die Touch-Weiterleitung sobald **Echte Toucheingabe** aktiv ist |
 
-> **Tipp:** Um den Berechtigungsdialog für die Bildschirmaufnahme nicht bei jedem Start zu sehen, kannst du die Berechtigung einmalig per ADB erteilen — siehe [Spiegelungsberechtigung per ADB erteilen](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen). Damit wird auch **Nur diese App spiegeln** freigeschaltet.
+> **Tipp:** Um den Berechtigungsdialog für die Bildschirmaufnahme nicht bei jedem Start zu sehen, kannst du die Berechtigung einmalig per ADB erteilen – siehe [Spiegelungsberechtigung per ADB erteilen](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen). Damit wird auch **Nur diese App spiegeln** freigeschaltet.
 
 ## Bekannte Einschränkungen
 
-- **Der Telefonbildschirm muss während der Spiegelung eingeschaltet bleiben** — die Spiegelung zeigt genau das, was auf dem Telefonbildschirm zu sehen ist; mit ausgeschaltetem oder gesperrtem Bildschirm läuft sie nicht weiter. Nutze **Ruhezustand verhindern**, um den Bildschirm wach zu halten, und **Automatisches Abdunkeln**, um ihn abzudunkeln und Akku zu sparen, statt ihn auszuschalten. *(Mit Shizuku oder Root und aktiviertem Automatischen Abdunkeln hebt [Telefonbildschirm ausschalten](#privilegierte-funktionen) dies auf: Das Display wird abgeschaltet, während die Spiegelung weiterläuft.)*
-- **DRM-geschützte Inhalte können nicht gespiegelt werden** — Apps wie Netflix oder Disney+ zeigen im Spiegel ein schwarzes Bild. Das ist eine Einschränkung der Android-Plattform, die die App nicht umgehen kann.
+- **Der Telefonbildschirm muss während der Spiegelung eingeschaltet bleiben** – die Spiegelung zeigt genau das, was auf dem Telefonbildschirm zu sehen ist; mit ausgeschaltetem oder gesperrtem Bildschirm läuft sie nicht weiter. Nutze **Ruhezustand verhindern**, um den Bildschirm wach zu halten, und **Automatisches Abdunkeln**, um ihn abzudunkeln und Akku zu sparen, statt ihn auszuschalten. *(Mit Shizuku oder Root und aktiviertem Automatischen Abdunkeln hebt [Telefonbildschirm ausschalten](#privilegierte-funktionen) dies auf: Das Display wird abgeschaltet, während die Spiegelung weiterläuft.)*
+- **DRM-geschützte Inhalte können nicht gespiegelt werden** – Apps wie Netflix oder Disney+ zeigen im Spiegel ein schwarzes Bild. Das ist eine Einschränkung der Android-Plattform, die die App nicht umgehen kann.
 - Die **Android-Auto-Navigationsleiste** auf dem Fahrzeugbildschirm wird von Android Auto selbst gezeichnet und lässt sich nicht ausblenden.
 
 ## Haftungsausschluss
 
-Behalte die Straße immer im Blick — bediene diese App nicht während der Fahrt.
+Behalte die Straße immer im Blick – bediene diese App nicht während der Fahrt.
 
 Dieses Projekt ist nicht mit Google verbunden und wird von Google weder unterstützt noch gesponsert. Android Auto ist eine Marke von Google LLC.
 

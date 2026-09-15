@@ -39,7 +39,7 @@ einen Berechtigungsdialog. Du kannst die Berechtigung **Bildschirmaufnahme
    adb shell appops set idv.lzn.screenonauto android:project_media allow
    ```
 
-4. Starte ScreenOnAuto und beginne die Spiegelung — der Berechtigungsdialog sollte nicht mehr erscheinen.
+4. Starte ScreenOnAuto und beginne die Spiegelung – der Berechtigungsdialog sollte nicht mehr erscheinen.
 
 ## Berechtigung widerrufen
 
@@ -51,7 +51,7 @@ adb shell appops set idv.lzn.screenonauto android:project_media default
 
 ## Fehlerbehebung
 
-- **`error: device unauthorized`** — Suche auf dem Telefon den Dialog „USB-Debugging zulassen?" und tippe auf **Zulassen**.
-- **Der Dialog erscheint weiterhin** — Beende ScreenOnAuto zwangsweise und starte es neu. Hilft das nicht, widerrufe die Berechtigung und erteile sie mit den obigen Befehlen erneut.
-- **App neu installiert (oder zwischen Play- und Sideload-Kanal gewechselt)** — Deinstallieren löscht die erteilte Berechtigung; führe den Befehl nach der Neuinstallation erneut aus.
-- **Berechtigung nach Neustart weg** — Auf manchen ROMs (z. B. MIUI/HyperOS) überleben `appops`-Erteilungen keinen Neustart. Führe den Befehl nach jedem Neustart erneut aus oder nutze ADB über WLAN.
+- **`error: device unauthorized`** – Suche auf dem Telefon den Dialog „USB-Debugging zulassen?" und tippe auf **Zulassen**.
+- **Der Dialog erscheint weiterhin** – Beende ScreenOnAuto zwangsweise und starte es neu. Hilft das nicht, widerrufe die Berechtigung und erteile sie mit den obigen Befehlen erneut.
+- **App neu installiert (oder zwischen Play- und Sideload-Kanal gewechselt)** – Deinstallieren löscht die erteilte Berechtigung; führe den Befehl nach der Neuinstallation erneut aus.
+- **Berechtigung nach Neustart weg** – Auf manchen ROMs (z. B. MIUI/HyperOS) überleben `appops`-Erteilungen keinen Neustart. Führe den Befehl nach jedem Neustart erneut aus oder nutze ADB über WLAN.

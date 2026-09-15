@@ -1,6 +1,6 @@
 ---
 title: "Beta-Test beitreten"
-description: "ScreenOnAuto über den internen Test-Track des Play Store installieren (erforderlich ab Android 14) — Anmeldeformular und Schritt-für-Schritt-Anleitung."
+description: "ScreenOnAuto über den internen Test-Track des Play Store installieren (erforderlich ab Android 14) – Anmeldeformular und Schritt-für-Schritt-Anleitung."
 lang: de
 slug: join-the-beta-test
 permalink: /docs/de/join-the-beta-test/
@@ -10,18 +10,18 @@ last_modified_at: 2026-08-28
 
 # Beta-Test beitreten
 
-Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play — auf **Android 14 und höher erforderlich**.
+Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play – auf **Android 14 und höher erforderlich**.
 
 > **ℹ️ Hinweis**
 > Installiert wird die **vollständige, offizielle ScreenOnAuto-App**. Googles
 > Beta-Tester-Liste ist lediglich der Verteilungsweg für die Installation (und das,
-> was die App korrekt mit Android Auto funktionieren lässt) — es ist **keine**
+> was die App korrekt mit Android Auto funktionieren lässt) – es ist **keine**
 > separate Test- oder unfertige Version.
 
 ## Bevor du beginnst
 
 - Das Formular fordert dich auf, dich **bei Google anzumelden**, und erfasst dein
-  angemeldetes Konto automatisch — es gibt nichts einzutippen. Melde dich daher mit
+  angemeldetes Konto automatisch – es gibt nichts einzutippen. Melde dich daher mit
   **demselben Google-Konto** an, das im Play Store deines Telefons angemeldet ist;
   für andere Konten ist die App nicht sichtbar.
 - Füge **screenonauto@lzn.idv.tw** **vor** der Anmeldung deinen Kontakten hinzu,
@@ -35,21 +35,21 @@ Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play — auf **A
    <a class="formcta join" href="https://docs.google.com/forms/d/1AtU0rkwT8fgaS4aty3nfIk7XLbFeC2umzTRABA2I7nY/viewform"><span class="lab">Am Test teilnehmen</span><span class="host">docs.google.com</span></a>
 2. Du erhältst eine Bestätigungs-E-Mail mit einem **Teilnahme-Link (Opt-in)**. Öffne ihn und tippe auf **Become a tester**.
 3. Öffne den Play-Store-Link aus derselben E-Mail und installiere **ScreenOnAuto** wie gewohnt.
-4. **Nach der Installation** öffne **Android Auto → Launcher anpassen** und prüfe, ob die **zwei** ScreenOnAuto-Einträge erscheinen (Vollbild und Legacy). Ein dritter Eintrag, **Media Controller**, erscheint nur bei älteren Android-Auto-Versionen — bei neueren fehlt er absichtlich, und das ist in Ordnung. Siehe [In Android Auto überprüfen](/de/#verify) für die vollständige Liste und was zu tun ist, wenn einer der beiden fehlt.
-5. Fertig — siehe **[Verwendung](/docs/de/how-to-use/)** zum Starten der Spiegelung im Auto.
+4. **Nach der Installation** öffne **Android Auto → Launcher anpassen** und prüfe, ob die **zwei** ScreenOnAuto-Einträge erscheinen (Vollbild und Legacy). Ein dritter Eintrag, **Media Controller**, erscheint nur bei älteren Android-Auto-Versionen – bei neueren fehlt er absichtlich, und das ist in Ordnung. Siehe [In Android Auto überprüfen](/de/#verify) für die vollständige Liste und was zu tun ist, wenn einer der beiden fehlt.
+5. Fertig – siehe **[Verwendung](/docs/de/how-to-use/)** zum Starten der Spiegelung im Auto.
 
 ## Nach der Anmeldung
 
 > **❗ Wichtig**
 > - **Wenn ein Platz frei ist:** Die Tester-Liste wird **stündlich zur vollen Stunde**
 >   automatisch mit Google Play synchronisiert, und die Bestätigungs-E-Mail mit deinem
->   **Teilnahme-Link** (von **screenonauto@lzn.idv.tw**) geht direkt danach raus — sie
+>   **Teilnahme-Link** (von **screenonauto@lzn.idv.tw**) geht direkt danach raus – sie
 >   kommt normalerweise **innerhalb einer Stunde** an.
 > - **Wenn die Liste voll ist:** Du bekommst **sofort eine Warteliste-E-Mail**; sobald
 >   ein Platz frei wird, wirst du automatisch hinzugefügt und die Bestätigungs-E-Mail
 >   folgt.
 > - **Plätze sind begrenzt und rotieren:** Wenn andere warten, gehen die am längsten
->   gehaltenen Plätze (mehr als etwa ein Tag — gezählt ab Platzvergabe, unabhängig von
+>   gehaltenen Plätze (mehr als etwa ein Tag – gezählt ab Platzvergabe, unabhängig von
 >   der Installation) an die Nächsten in der Reihe. **Installiere also bald**, nachdem
 >   du hinzugefügt wurdest.
 > - **Keine E-Mail?** Prüfe **Spam** und **Werbung** und markiere sie als **"Kein
@@ -64,7 +64,7 @@ Um deinen Platz für jemand anderen freizugeben, öffne das **Austrittsformular*
 <a class="formcta" href="https://docs.google.com/forms/d/13VQcvnjWEf4bn2xv4aYx5AOLhHJ44Euq2akqy3KiJls/viewform"><span class="lab">Test verlassen</span><span class="host">docs.google.com</span></a>
 ## Hinweise
 
-- Auf **Android 13 und niedriger** ist der Beta-Beitritt optional — du kannst das APK auch per Sideload installieren (siehe [Installationsanleitung](/de/#install)).
+- Auf **Android 13 und niedriger** ist der Beta-Beitritt optional – du kannst das APK auch per Sideload installieren (siehe [Installationsanleitung](/de/#install)).
 - Eine über Play installierte Version und ein per Sideload installiertes APK verwenden
   **unterschiedliche Signaturzertifikate** und können sich daher auf demselben Gerät
   nicht gegenseitig aktualisieren. Zum Kanalwechsel zuerst die vorhandene Version
