@@ -35,7 +35,7 @@
 
 ## Funciones con privilegios
 
-Estas desbloquean lo que las API normales de Android no pueden hacer. Requieren **[Shizuku](https://shizuku.rikka.app/) o root** y son totalmente opcionales: si tu teléfono no tiene ninguno de los dos, **nada cambia** — la sección permanece oculta y el resto de funciones se comporta exactamente igual que antes.
+Estas desbloquean lo que las API normales de Android no pueden hacer. Requieren **[Shizuku](https://shizuku.rikka.app/) o root** y son totalmente opcionales: si tu teléfono no tiene ninguno de los dos, **nada cambia** — la sección sigue apareciendo en los ajustes, pero todo lo que contiene queda atenuado, y el resto de funciones se comporta exactamente igual que antes.
 
 | Función | Qué hace |
 |---|---|

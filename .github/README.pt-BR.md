@@ -35,7 +35,7 @@
 
 ## Recursos privilegiados
 
-Estes desbloqueiam o que as APIs normais do Android não conseguem fazer. Exigem **[Shizuku](https://shizuku.rikka.app/) ou root** e são totalmente opcionais: se o celular não tiver nenhum dos dois, **nada muda** — a seção fica oculta e todos os outros recursos funcionam exatamente como antes.
+Estes desbloqueiam o que as APIs normais do Android não conseguem fazer. Exigem **[Shizuku](https://shizuku.rikka.app/) ou root** e são totalmente opcionais: se o celular não tiver nenhum dos dois, **nada muda** — a seção continua listada nas configurações, mas tudo nela fica esmaecido, e todos os outros recursos funcionam exatamente como antes.
 
 | Recurso | O que faz |
 |---|---|

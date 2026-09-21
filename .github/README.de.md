@@ -35,7 +35,7 @@
 
 ## Privilegierte Funktionen
 
-Diese schalten frei, was die normalen Android-APIs nicht können. Sie benötigen **[Shizuku](https://shizuku.rikka.app/) oder Root** und sind vollständig optional: Hat dein Telefon weder das eine noch das andere, **ändert sich nichts** – der Abschnitt bleibt ausgeblendet und alle anderen Funktionen verhalten sich genau wie zuvor.
+Diese schalten frei, was die normalen Android-APIs nicht können. Sie benötigen **[Shizuku](https://shizuku.rikka.app/) oder Root** und sind vollständig optional: Hat dein Telefon weder das eine noch das andere, **ändert sich nichts** – der Abschnitt wird weiterhin in den Einstellungen angezeigt, alles darin bleibt jedoch ausgegraut, und alle anderen Funktionen verhalten sich genau wie zuvor.
 
 | Funktion | Was sie tut |
 |---|---|

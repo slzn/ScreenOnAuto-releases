@@ -35,7 +35,7 @@
 
 ## Privileged Features
 
-These unlock things the normal Android APIs cannot do. They need **[Shizuku](https://shizuku.rikka.app/) or root**, and they are entirely opt-in: if your phone has neither, **nothing changes** — the section stays hidden and every other feature works exactly as before.
+These unlock things the normal Android APIs cannot do. They need **[Shizuku](https://shizuku.rikka.app/) or root**, and they are entirely opt-in: if your phone has neither, **nothing changes** — the section is still listed in Settings, but everything on it stays greyed out, and every other feature works exactly as before.
 
 | Feature | What it does |
 |---|---|

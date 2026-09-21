@@ -35,7 +35,7 @@
 
 ## Ayrıcalıklı özellikler
 
-Bunlar, normal Android API'lerinin yapamadıklarını açar. **[Shizuku](https://shizuku.rikka.app/) veya root** gerektirir ve tamamen isteğe bağlıdır: telefonunuzda ikisi de yoksa **hiçbir şey değişmez** — bölüm gizli kalır ve diğer tüm özellikler tam olarak eskisi gibi çalışır.
+Bunlar, normal Android API'lerinin yapamadıklarını açar. **[Shizuku](https://shizuku.rikka.app/) veya root** gerektirir ve tamamen isteğe bağlıdır: telefonunuzda ikisi de yoksa **hiçbir şey değişmez** — bölüm ayarlarda görünmeye devam eder, ancak içindeki her şey soluk ve devre dışı kalır ve diğer tüm özellikler tam olarak eskisi gibi çalışır.
 
 | Özellik | Ne yapar |
 |---|---|

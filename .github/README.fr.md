@@ -35,7 +35,7 @@
 
 ## Fonctions privilégiées
 
-Elles débloquent ce que les API Android normales ne peuvent pas faire. Elles nécessitent **[Shizuku](https://shizuku.rikka.app/) ou root** et sont entièrement facultatives : si votre téléphone n'a ni l'un ni l'autre, **rien ne change** — la section reste masquée et toutes les autres fonctionnalités se comportent exactement comme avant.
+Elles débloquent ce que les API Android normales ne peuvent pas faire. Elles nécessitent **[Shizuku](https://shizuku.rikka.app/) ou root** et sont entièrement facultatives : si votre téléphone n'a ni l'un ni l'autre, **rien ne change** — la section reste affichée dans les paramètres, mais tout ce qu'elle contient est grisé, et toutes les autres fonctionnalités se comportent exactement comme avant.
 
 | Fonction | Ce qu'elle fait |
 |---|---|
