@@ -234,7 +234,33 @@ docs blocks alone):
 ```bash
 cd ~/data/workspace/ScreenOnAuto-releases
 sed -i 's/"softwareVersion": "{prev}"/"softwareVersion": "{versionName}"/' index.html i18n/*/index.html
-# then fix the 10 landing <lastmod> entries in sitemap.xml and validate the XML
+```
+
+**Do not `sed` the date across `sitemap.xml`.** More URL blocks carry the previous
+release's date than the ten landing pages do — `sync-content-dates.yml` stamps that same
+date onto every doc it touched in the interval, so a blanket replace silently back-dates
+them all. (Concretely, at v1.8.4 fourteen blocks held `2026-09-15`: the ten landing pages
+and four German/Italian docs.) Select on `<loc>` instead, which cannot pick up a doc no
+matter how the dates line up:
+
+```bash
+python3 - <<'EOF'
+import re
+LANGS = {'', 'zh-TW/', 'pt-BR/', 'es/', 'de/', 'fr/', 'it/', 'tr/', 'ar/', 'ko/'}
+BASE, NEW = 'https://screenonauto.lzn.idv.tw/', '{new-date}'
+s = open('sitemap.xml').read()
+def fix(m):
+    b = m.group(0)
+    loc = re.search(r'<loc>(.*?)</loc>', b).group(1)
+    if not loc.startswith(BASE) or loc[len(BASE):] not in LANGS:
+        return b                                   # docs/ and anything else: untouched
+    return re.sub(r'<lastmod>.*?</lastmod>', f'<lastmod>{NEW}</lastmod>', b)
+open('sitemap.xml', 'w').write(re.sub(r'<url>.*?</url>', fix, s, flags=re.S))
+EOF
+
+# Must print 10, and the XML must still parse
+grep -c '<lastmod>{new-date}</lastmod>' sitemap.xml
+python3 -c "import xml.dom.minidom; xml.dom.minidom.parse('sitemap.xml'); print('valid')"
 ```
 
 **Also bump the three date signals in the same 10 files** (added 2026-07-30 so Google can
