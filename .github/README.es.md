@@ -21,6 +21,7 @@
 - **Proxy de sesión de medios** — Controla cualquier app de medios del teléfono desde la interfaz de medios nativa de Android Auto
 - **Atenuación automática** — Atenúa automáticamente el brillo del teléfono durante la duplicación inactiva (retardo de 15/30/60/120 s)
 - **Inicio automático** — Comienza a duplicar automáticamente cuando Android Auto se conecta
+- **Control Externo** — Inicia, detén o alterna la duplicación con un intent, desde una app de automatización, un acceso directo o ADB — [Controlar la Duplicación desde Otra App](https://github.com/slzn/ScreenOnAuto-releases/wiki/Controlar-la-Duplicación-desde-Otra-App)
 - **Evitar suspensión** — Evita que la pantalla del teléfono se apague durante la duplicación
 - **Detener al desconectar** — Detiene la duplicación automáticamente cuando Android Auto se desconecta
 - **Lanzar app automáticamente** — Abre automáticamente una app elegida en el teléfono cuando empieza la duplicación con Android Auto conectado

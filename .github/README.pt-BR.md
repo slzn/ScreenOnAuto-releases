@@ -21,6 +21,7 @@
 - **Proxy de sessão de mídia** — Controle qualquer app de mídia do celular pela interface de mídia nativa do Android Auto
 - **Escurecimento automático** — Reduz automaticamente o brilho da tela do celular durante o espelhamento ocioso (atraso de 15/30/60/120 s)
 - **Início automático** — Começa a espelhar automaticamente quando o Android Auto conecta
+- **Controle Externo** — Inicie, pare ou alterne o espelhamento com um intent, de um app de automação, um atalho ou ADB — [Controlar o Espelhamento a partir de Outro App](https://github.com/slzn/ScreenOnAuto-releases/wiki/Controlar-o-Espelhamento-a-partir-de-Outro-App)
 - **Impedir suspensão** — Impede que a tela do celular apague durante o espelhamento
 - **Parar ao desconectar** — Para o espelhamento automaticamente quando o Android Auto desconecta
 - **Lançar app automaticamente** — Abre automaticamente um app escolhido no celular quando o espelhamento inicia com o Android Auto conectado

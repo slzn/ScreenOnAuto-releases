@@ -21,6 +21,7 @@
 - **Mediensitzungs-Proxy** – Steuere jede Medien-App des Telefons über die native Medienoberfläche von Android Auto
 - **Automatisches Abdunkeln** – Dunkelt den Telefonbildschirm bei inaktiver Spiegelung automatisch ab (Verzögerung 15/30/60/120 s)
 - **Autostart** – Startet die Spiegelung automatisch, sobald Android Auto verbunden ist
+- **Externe Steuerung** – Spiegelung per Intent starten, stoppen oder umschalten, aus einer Automatisierungs-App, einer Verknüpfung oder per ADB – [Spiegelung aus einer anderen App steuern](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelung-aus-einer-anderen-App-steuern)
 - **Ruhezustand verhindern** – Verhindert, dass sich der Telefonbildschirm während der Spiegelung abschaltet
 - **Stopp bei Trennung** – Beendet die Spiegelung automatisch, wenn Android Auto getrennt wird
 - **App automatisch starten** – Öffnet beim Start der Spiegelung automatisch eine gewählte App auf dem Telefon, wenn Android Auto verbunden ist

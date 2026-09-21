@@ -21,6 +21,7 @@
 - **Media Session Proxy** — Control any phone media app from Android Auto's native media UI
 - **Auto Dim** — Automatically dim phone screen brightness during idle mirroring (15/30/60/120 s delay)
 - **Auto Start** — Begin mirroring automatically when Android Auto connects
+- **External Control** — Start, stop or toggle mirroring with an intent, from an automation app, a home-screen shortcut or ADB — see [Control Mirroring from Another App](https://github.com/slzn/ScreenOnAuto-releases/wiki/Control-Mirroring-from-Another-App)
 - **Prevent Sleep** — Prevent the phone screen from sleeping during mirroring
 - **Stop on Disconnect** — Automatically stop mirroring when Android Auto disconnects
 - **Auto Launch App** — Automatically launch a chosen app on the phone when mirroring starts and Android Auto is connected
