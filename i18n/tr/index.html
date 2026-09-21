@@ -49,7 +49,7 @@ permalink: /tr/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
 }
 </script>
 
@@ -148,10 +148,8 @@ permalink: /tr/
   <div class="grid more">
     <div class="card"><b>Otomatik başlatma</b><p>Android Auto bağlandığında yansıtmayı otomatik olarak başlatır.</p></div>
     <div class="card"><b>Uygulamayı otomatik başlat</b><p>Yansıtma başladığında telefonda seçtiğiniz bir uygulamayı otomatik olarak açar.</p></div>
-    <!-- Held back until another feature can land beside it: alone it spills this 9-card grid
-         onto a fourth row. Documented in the README and the v1.8.0 release notes meanwhile.
     <div class="card"><b>Yalnızca bu uygulamayı yansıt <span class="muted">(Android 15+)</span></b><p>Tüm ekran yerine yalnızca otomatik başlatılan uygulamayı arabaya gönderir. Ekran kaydı izninin ADB ile önceden verilmiş olmasını gerektirir.</p></div>
-    -->
+    <div class="card"><b>Harici Kontrol</b><p>Yansıtmayı bir intent ile başlatın, durdurun veya değiştirin; otomasyon uygulamasından, kısayoldan veya ADB'den.</p></div>
     <div class="card"><b>Yatay modu zorla</b><p>Yansıtma sırasında telefonu yatay moda zorlar; ekranda düğmesi vardır.</p></div>
     <div class="card"><b>Otomatik karartma</b><p>Yansıtma boştayken telefonun parlaklığını otomatik olarak düşürür (15–120 sn gecikme).</p></div>
     <div class="card"><b>Uykuyu engelle</b><p>Yansıtma sırasında telefon ekranını açık tutar; bağlantı kesilince otomatik durur.</p></div>

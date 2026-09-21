@@ -45,7 +45,7 @@
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
 }
 </script>
 
@@ -144,10 +144,8 @@
   <div class="grid more">
     <div class="card"><b>Auto Start</b><p>Begin mirroring automatically when Android Auto connects.</p></div>
     <div class="card"><b>Auto Launch App</b><p>Automatically launch a chosen app on the phone when mirroring starts.</p></div>
-    <!-- Held back until another feature can land beside it: alone it spills this 9-card grid
-         onto a fourth row. Documented in the README and the v1.8.0 release notes meanwhile.
     <div class="card"><b>Mirror Only This App <span class="muted">(Android 15+)</span></b><p>Send just the auto-launch app to the car instead of the whole screen. Needs the capture permission pre-granted via ADB.</p></div>
-    -->
+    <div class="card"><b>External Control</b><p>Start, stop or toggle mirroring with an intent, from an automation app, a shortcut or ADB.</p></div>
     <div class="card"><b>Force Landscape</b><p>Force the phone into landscape while mirroring, with an on-screen toggle.</p></div>
     <div class="card"><b>Auto Dim</b><p>Automatically dim phone screen brightness during idle mirroring (15–120 s delay).</p></div>
     <div class="card"><b>Prevent Sleep</b><p>Keep the phone screen awake during mirroring; stop automatically on disconnect.</p></div>

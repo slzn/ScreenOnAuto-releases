@@ -50,7 +50,7 @@ permalink: /es/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
 }
 </script>
 
@@ -149,10 +149,8 @@ permalink: /es/
   <div class="grid more">
     <div class="card"><b>Inicio automático</b><p>Comienza a duplicar automáticamente cuando Android Auto se conecta.</p></div>
     <div class="card"><b>Lanzar app automáticamente</b><p>Abre automáticamente una app elegida en el teléfono cuando empieza la duplicación.</p></div>
-    <!-- Held back until another feature can land beside it: alone it spills this 9-card grid
-         onto a fourth row. Documented in the README and the v1.8.0 release notes meanwhile.
     <div class="card"><b>Duplicar solo esta app <span class="muted">(Android 15+)</span></b><p>Envía al coche solo la app de inicio automático en lugar de toda la pantalla. Necesita el permiso de captura concedido previamente por ADB.</p></div>
-    -->
+    <div class="card"><b>Control Externo</b><p>Inicia, detén o alterna la duplicación con un intent, desde una app de automatización, un acceso directo o ADB.</p></div>
     <div class="card"><b>Forzar horizontal</b><p>Fuerza el teléfono a modo horizontal durante la duplicación, con botón en pantalla.</p></div>
     <div class="card"><b>Atenuación automática</b><p>Atenúa automáticamente el brillo del teléfono durante la duplicación inactiva (retardo de 15–120 s).</p></div>
     <div class="card"><b>Evitar suspensión</b><p>Evita que la pantalla del teléfono se apague durante la duplicación; se detiene al desconectar.</p></div>

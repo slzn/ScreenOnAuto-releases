@@ -50,7 +50,7 @@ permalink: /de/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
 }
 </script>
 
@@ -149,10 +149,8 @@ permalink: /de/
   <div class="grid more">
     <div class="card"><b>Autostart</b><p>Startet die Spiegelung automatisch, sobald Android Auto verbunden ist.</p></div>
     <div class="card"><b>App automatisch starten</b><p>Öffnet beim Start der Spiegelung automatisch eine gewählte App auf dem Telefon.</p></div>
-    <!-- Held back until another feature can land beside it: alone it spills this 9-card grid
-         onto a fourth row. Documented in the README and the v1.8.0 release notes meanwhile.
     <div class="card"><b>Nur diese App spiegeln <span class="muted">(Android 15+)</span></b><p>Sendet nur die automatisch gestartete App ans Auto statt des ganzen Bildschirms. Erfordert die vorab per ADB erteilte Aufnahmeberechtigung.</p></div>
-    -->
+    <div class="card"><b>Externe Steuerung</b><p>Spiegelung per Intent starten, stoppen oder umschalten – aus einer Automatisierungs-App, einer Verknüpfung oder per ADB.</p></div>
     <div class="card"><b>Querformat erzwingen</b><p>Erzwingt während der Spiegelung das Querformat, mit Umschalter auf dem Bildschirm.</p></div>
     <div class="card"><b>Automatisches Abdunkeln</b><p>Dunkelt den Telefonbildschirm bei inaktiver Spiegelung automatisch ab (Verzögerung 15–120 s).</p></div>
     <div class="card"><b>Ruhezustand verhindern</b><p>Hält den Telefonbildschirm während der Spiegelung wach; stoppt automatisch bei Trennung.</p></div>

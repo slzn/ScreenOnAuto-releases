@@ -49,7 +49,7 @@ permalink: /ko/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
 }
 </script>
 
@@ -148,10 +148,8 @@ permalink: /ko/
   <div class="grid more">
     <div class="card"><b>자동 미러링 시작</b><p>Android Auto가 연결되면 자동으로 미러링을 시작합니다.</p></div>
     <div class="card"><b>앱 자동 실행</b><p>미러링이 시작되면 지정한 앱을 휴대전화에서 자동으로 실행합니다.</p></div>
-    <!-- Held back until another feature can land beside it: alone it spills this 9-card grid
-         onto a fourth row. Documented in the README and the v1.8.0 release notes meanwhile.
     <div class="card"><b>이 앱만 미러링 <span class="muted">(Android 15+)</span></b><p>전체 화면 대신 자동 실행 앱만 차량으로 보냅니다. 화면 캡처 권한을 ADB로 미리 부여해야 합니다.</p></div>
-    -->
+    <div class="card"><b>외부 제어</b><p>자동화 앱, 바로가기 또는 ADB에서 인텐트로 미러링을 시작·중지·전환합니다.</p></div>
     <div class="card"><b>가로 모드 강제</b><p>미러링 중 휴대전화를 가로 모드로 고정하며, 화면 버튼으로 언제든 전환할 수 있습니다.</p></div>
     <div class="card"><b>자동 화면 어둡게</b><p>미러링 중 조작이 없으면 휴대전화 밝기를 자동으로 낮춥니다 (15~120초 지연).</p></div>
     <div class="card"><b>절전 방지</b><p>미러링 중 휴대전화 화면이 꺼지지 않도록 하고, 연결이 끊기면 자동으로 중지합니다.</p></div>
