@@ -57,12 +57,15 @@ permalink: /es/
 <script>
 /* Apply saved theme before first paint; fall back to the system preference. */
 (function () {
-  var saved = localStorage.getItem("theme");
+  var saved = null;
+  try { saved = localStorage.getItem("theme"); } catch (err) {}  /* storage may be blocked */
   var light = matchMedia("(prefers-color-scheme: light)");
   document.documentElement.dataset.theme =
     (saved === "light" || saved === "dark") ? saved : (light.matches ? "light" : "dark");
   light.addEventListener("change", function (e) {
-    if (!localStorage.getItem("theme"))
+    var s = null;
+    try { s = localStorage.getItem("theme"); } catch (err) {}
+    if (!s)
       document.documentElement.dataset.theme = e.matches ? "light" : "dark";
   });
 })();
@@ -252,7 +255,7 @@ permalink: /es/
 document.querySelector(".theme-toggle").addEventListener("click", function () {
   var next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
   document.documentElement.dataset.theme = next;
-  localStorage.setItem("theme", next);
+  try { localStorage.setItem("theme", next); } catch (err) {}
 });
 </script>
 </body>
