@@ -170,7 +170,8 @@ permalink: /zh-TW/
     <div class="card"><b>手機導覽按鈕</b><p>返回／主畫面／最近應用程式按鈕完全不需要啟用無障礙服務。請在「畫面按鈕 → 功能按鈕」中開啟這些按鈕。</p></div>
     <div class="card"><b>讓手機畫面比例對齊車機</b><p>鏡像期間將手機畫面調整為車機的長寬比，從源頭消除黑邊與分割畫面的變形。</p></div>
   </div>
-  <p class="muted">注意：以 ADB 啟動的 Shizuku 可能在透過 USB 連線時被關閉——若特權功能在插上後隨即失效，重新啟動 Shizuku 即可。</p>
+  <p class="muted"><b>以 ADB 啟動的 Shizuku 會在插上車機時被關閉。</b>USB 連線會讓手機進入配件模式，這會重啟 ADB 並一併帶走 Shizuku——無線偵錯走的是同一個 ADB，所以一樣沒用。重新啟動 Shizuku 即可，ScreenOnAuto 會自行重新連線；更省事的做法是改用 <a href="https://github.com/thedjchi/Shizuku">thedjchi 分支版</a>，它的 watchdog 服務會自動幫你重啟。root 使用者與無線 Android Auto 連線不受影響。</p>
+  <p class="muted"><b>螢幕關閉後如何再喚醒：</b>觸控面板會隨螢幕一同斷電，因此點手機不會有反應。點車機畫面上的<b>自動調暗</b>按鈕即可——切換自動調暗會喚醒螢幕（前提是已在<b>畫面按鈕 → 功能按鈕</b>中開啟它，該按鈕預設為關閉）；或連按手機電源鍵<b>兩次</b>，因為第一下是讓系統進入休眠。停止鏡像或中斷 Android Auto 也會讓螢幕恢復。</p>
 </section>
 
 <section class="wrap" id="requirements">

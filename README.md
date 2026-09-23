@@ -53,10 +53,11 @@ These unlock things the normal Android APIs cannot do. They need **[Shizuku](htt
 > for you. Root users and wireless Android Auto connections are unaffected.
 
 > **Waking the screen again:** the touchscreen powers down with the panel, so tapping the
-> phone does nothing. Stop the mirror or disconnect Android Auto, or press the phone's power
-> button **twice** (the first press is what actually puts the device to sleep, since Android
-> never knew the panel was off). The **Auto Dim** button on the car screen works too, but only
-> if you turned it on in **On-screen buttons → Control buttons** — it is off by default.
+> phone does nothing. Tap the **Auto Dim** button on the car screen — toggling Auto Dim
+> wakes the screen (turn the button on first in **On-screen buttons → Control buttons**; it
+> is off by default). Or press the phone's power button **twice**, since the first press is
+> what puts the system to sleep. Stopping the mirror or disconnecting Android Auto also
+> brings the screen back.
 
 ## Requirements
 

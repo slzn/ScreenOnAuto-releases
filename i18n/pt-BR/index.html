@@ -170,7 +170,8 @@ permalink: /pt-BR/
     <div class="card"><b>Botões de navegação do celular</b><p>Voltar / Início / Recentes funcionam sem nenhum Serviço de acessibilidade ativado. Ative-os em Botões na tela → Botões de função.</p></div>
     <div class="card"><b>Ajustar a tela do telefone à do carro</b><p>Remodela a tela do celular para a proporção da unidade do carro durante o espelhamento, eliminando na origem as barras pretas e a distorção na tela dividida.</p></div>
   </div>
-  <p class="muted">Atenção: um servidor Shizuku iniciado via ADB pode ser encerrado ao conectar por USB — se os recursos privilegiados pararem de funcionar logo após conectar, inicie o Shizuku novamente.</p>
+  <p class="muted"><b>Um servidor Shizuku iniciado via ADB é encerrado quando você conecta ao carro.</b> A conexão USB coloca o celular em modo acessório, o que reinicia o ADB e derruba o Shizuku junto — a depuração sem fio passa pelo mesmo ADB, então não ajuda. Basta iniciar o Shizuku de novo e o ScreenOnAuto reconecta sozinho; melhor ainda, use o <a href="https://github.com/thedjchi/Shizuku">fork do thedjchi</a>, cujo serviço de watchdog o reinicia para você. Usuários com root e conexões sem fio do Android Auto não são afetados.</p>
+  <p class="muted"><b>Como acordar a tela depois do desligamento:</b> a tela sensível ao toque desliga junto com o painel, então tocar no celular não faz nada. Toque no botão <b>Escurecimento automático</b> na tela do carro — alternar o escurecimento automático acorda a tela (ative o botão antes em <b>Botões na tela → Botões de função</b>; ele vem desligado). Ou pressione o botão liga/desliga do celular <b>duas vezes</b>, já que o primeiro toque é o que coloca o sistema para dormir. Parar o espelhamento ou desconectar o Android Auto também traz a tela de volta.</p>
 </section>
 
 <section class="wrap" id="requirements">

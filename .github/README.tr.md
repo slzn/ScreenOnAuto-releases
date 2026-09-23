@@ -47,7 +47,7 @@ Bunlar, normal Android API'lerinin yapamadıklarını açar. **[Shizuku](https:/
 > [!IMPORTANT]
 > **ADB ile başlatılan bir Shizuku sunucusu, telefonu arabaya taktığınızda kapanır.** USB bağlantısı telefonu aksesuar moduna alır; bu da ADB'yi yeniden başlatır ve Shizuku'yu da beraberinde götürür — kablosuz hata ayıklama da aynı ADB üzerinden çalıştığı için işe yaramaz. Shizuku'yu yeniden başlatmanız yeterli, ScreenOnAuto kendiliğinden yeniden bağlanır; daha da iyisi, watchdog hizmeti onu sizin yerinize yeniden başlatan [thedjchi sürümünü](https://github.com/thedjchi/Shizuku) kullanın. Root kullanıcıları ve kablosuz Android Auto bağlantıları bundan etkilenmez.
 
-> **Ekran kapandıktan sonra tekrar uyandırma:** dokunmatik ekran panelle birlikte kapandığı için telefona dokunmak işe yaramaz. Yansıtmayı durdurun veya Android Auto bağlantısını kesin, ya da telefonun güç düğmesine **iki kez** basın (ilk basış aslında cihazı uyku moduna alan basıştır, çünkü Android panelin kapalı olduğunu hiç bilmedi). Araç ekranındaki **Otomatik Karartma** düğmesi de işe yarar, ancak yalnızca onu **Ekran düğmeleri → İşlev düğmeleri** bölümünden açtıysanız — varsayılan olarak kapalıdır.
+> **Ekran kapandıktan sonra tekrar uyandırma:** dokunmatik ekran panelle birlikte kapandığı için telefona dokunmak işe yaramaz. Araç ekranındaki **Otomatik Karartma** düğmesine dokunun — Otomatik Karartma'yı açıp kapatmak ekranı uyandırır (düğmeyi önce **Ekran düğmeleri → İşlev düğmeleri** bölümünden açın; varsayılan olarak kapalıdır). Ya da telefonun güç düğmesine **iki kez** basın, çünkü ilk basış sistemi uyku moduna alan basıştır. Yansıtmayı durdurmak veya Android Auto bağlantısını kesmek de ekranı geri getirir.
 
 ## Gereksinimler
 

@@ -170,7 +170,8 @@ permalink: /es/
     <div class="card"><b>Botones de navegación del teléfono</b><p>Atrás / Inicio / Recientes funcionan sin ningún Servicio de accesibilidad activado. Actívalos en Botones en pantalla → Botones de función.</p></div>
     <div class="card"><b>Ajustar la pantalla del teléfono a la del coche</b><p>Remodela la pantalla del teléfono a la relación de aspecto de la unidad del coche durante la duplicación, eliminando de raíz las barras negras y la distorsión en pantalla dividida.</p></div>
   </div>
-  <p class="muted">Nota: un servidor Shizuku iniciado por ADB puede apagarse al conectar por USB — si las funciones con privilegios dejan de funcionar justo después de conectar, vuelve a iniciar Shizuku.</p>
+  <p class="muted"><b>Un servidor Shizuku iniciado por ADB se apaga al conectar al coche.</b> La conexión USB pone el teléfono en modo accesorio, lo que reinicia ADB y se lleva a Shizuku por delante — la depuración inalámbrica usa el mismo ADB, así que no ayuda. Inicia Shizuku otra vez y ScreenOnAuto se reconecta solo; mejor aún, usa el <a href="https://github.com/thedjchi/Shizuku">fork de thedjchi</a>, cuyo servicio watchdog lo reinicia por ti. Los usuarios con root y las conexiones inalámbricas de Android Auto no se ven afectados.</p>
+  <p class="muted"><b>Cómo volver a encender la pantalla tras apagarla:</b> la pantalla táctil se apaga junto con el panel, así que tocar el teléfono no hace nada. Pulsa el botón <b>Atenuación automática</b> en la pantalla del coche — alternar la atenuación automática enciende la pantalla (antes tienes que activar el botón en <b>Botones en pantalla → Botones de función</b>; viene desactivado). O pulsa el botón de encendido del teléfono <b>dos veces</b>, ya que la primera pulsación es la que pone el sistema en reposo. Detener la duplicación o desconectar Android Auto también vuelve a encender la pantalla.</p>
 </section>
 
 <section class="wrap" id="requirements">

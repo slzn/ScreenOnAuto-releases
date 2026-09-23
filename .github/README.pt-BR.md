@@ -47,7 +47,7 @@ Estes desbloqueiam o que as APIs normais do Android não conseguem fazer. Exigem
 > [!IMPORTANT]
 > **Um servidor Shizuku iniciado via ADB é encerrado quando você conecta ao carro.** A conexão USB coloca o celular em modo acessório, o que reinicia o ADB e derruba o Shizuku junto — a depuração sem fio passa pelo mesmo ADB, então não ajuda. Basta iniciar o Shizuku de novo e o ScreenOnAuto reconecta sozinho; melhor ainda, use o [fork do thedjchi](https://github.com/thedjchi/Shizuku), cujo serviço de watchdog o reinicia para você. Usuários com root e conexões sem fio do Android Auto não são afetados.
 
-> **Como acordar a tela depois do desligamento:** a tela sensível ao toque desliga junto com o painel, então tocar no celular não faz nada. Pare o espelhamento ou desconecte o Android Auto, ou pressione o botão liga/desliga do celular **duas vezes** (o primeiro toque é o que realmente coloca o aparelho para dormir, já que o Android nunca soube que o painel estava desligado). O botão **Escurecimento automático** na tela do carro também funciona, mas só se você o tiver ativado em **Botões na tela → Botões de função** — ele vem desligado.
+> **Como acordar a tela depois do desligamento:** a tela sensível ao toque desliga junto com o painel, então tocar no celular não faz nada. Toque no botão **Escurecimento automático** na tela do carro — alternar o escurecimento automático acorda a tela (ative o botão antes em **Botões na tela → Botões de função**; ele vem desligado). Ou pressione o botão liga/desliga do celular **duas vezes**, já que o primeiro toque é o que coloca o sistema para dormir. Parar o espelhamento ou desconectar o Android Auto também traz a tela de volta.
 
 ## Requisitos
 

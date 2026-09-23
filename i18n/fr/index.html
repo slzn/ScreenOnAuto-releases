@@ -169,7 +169,8 @@ permalink: /fr/
     <div class="card"><b>Boutons de navigation du téléphone</b><p>Retour / Accueil / Récents fonctionnent sans aucun service d'accessibilité activé. Activez-les dans Boutons à l'écran → Boutons de fonction.</p></div>
     <div class="card"><b>Adapter l'écran du téléphone à celui de la voiture</b><p>Redimensionne l'écran du téléphone au format de l'écran de la voiture pendant la duplication, supprimant à la source les bandes noires et la déformation en écran partagé.</p></div>
   </div>
-  <p class="muted">Remarque : un serveur Shizuku démarré via ADB peut s'arrêter lors d'une connexion USB — si les fonctions privilégiées cessent de fonctionner juste après le branchement, relancez Shizuku.</p>
+  <p class="muted"><b>Un serveur Shizuku démarré via ADB s'arrête lorsque vous branchez le téléphone à la voiture.</b> La connexion USB fait passer le téléphone en mode accessoire, ce qui redémarre ADB et emporte Shizuku avec lui — le débogage sans fil passe par le même ADB et n'y change rien. Relancez Shizuku et ScreenOnAuto se reconnecte tout seul ; mieux encore, utilisez le <a href="https://github.com/thedjchi/Shizuku">fork de thedjchi</a>, dont le service watchdog le relance pour vous. Les utilisateurs root et les connexions Android Auto sans fil ne sont pas concernés.</p>
+  <p class="muted"><b>Réveiller l'écran après son extinction :</b> la dalle tactile s'éteint avec l'écran, toucher le téléphone ne fait donc rien. Touchez le bouton <b>Atténuation automatique</b> sur l'écran de la voiture — basculer l'atténuation automatique réveille l'écran (activez d'abord le bouton dans <b>Boutons à l'écran → Boutons de fonction</b> ; il est désactivé par défaut). Ou appuyez <b>deux fois</b> sur le bouton d'alimentation du téléphone, car la première pression est celle qui met le système en veille. Arrêter la duplication ou déconnecter Android Auto rallume aussi l'écran.</p>
 </section>
 
 <section class="wrap" id="requirements">

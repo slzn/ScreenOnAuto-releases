@@ -165,7 +165,8 @@
     <div class="card"><b>Phone Navigation Buttons</b><p>Back / Home / Recents work with no Accessibility Service enabled at all. Turn them on in On-screen buttons → Control buttons.</p></div>
     <div class="card"><b>Match the Phone Screen to the Car</b><p>Reshape the phone's display to the head unit's aspect ratio while mirroring, so the black bars and split-view distortion are gone at the source.</p></div>
   </div>
-  <p class="muted">Note: a Shizuku server started via ADB can shut down when you connect over USB — if the privileged features stop working right after you plug in, start Shizuku again.</p>
+  <p class="muted"><b>A Shizuku server started via ADB shuts down when you plug into the car.</b> The USB connection puts the phone into accessory mode, which restarts ADB and takes Shizuku with it — wireless debugging goes through the same ADB, so it does not help. Start Shizuku again and ScreenOnAuto reconnects on its own; better still, use the <a href="https://github.com/thedjchi/Shizuku">thedjchi fork</a>, whose watchdog service restarts it for you. Root users and wireless Android Auto connections are unaffected.</p>
+  <p class="muted"><b>Waking the screen again:</b> the touchscreen powers down with the panel, so tapping the phone does nothing. Tap the <b>Auto Dim</b> button on the car screen — toggling Auto Dim wakes the screen (turn the button on first in <b>On-screen buttons → Control buttons</b>; it is off by default). Or press the phone's power button <b>twice</b>, since the first press is what puts the system to sleep. Stopping the mirror or disconnecting Android Auto also brings the screen back.</p>
 </section>
 
 <section class="wrap" id="requirements">

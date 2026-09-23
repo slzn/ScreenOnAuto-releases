@@ -169,7 +169,8 @@ permalink: /tr/
     <div class="card"><b>Telefon gezinme düğmeleri</b><p>Geri / Ana ekran / Son uygulamalar hiçbir Erişilebilirlik Hizmeti etkin olmadan çalışır. Düğmeleri Ekran düğmeleri → İşlev düğmeleri bölümünden açın.</p></div>
     <div class="card"><b>Telefon ekranını arabaya uydur</b><p>Yansıtma sırasında telefon ekranını araba ünitesinin en boy oranına dönüştürür, böylece siyah kenarlıklar ve bölünmüş ekrandaki bozulma kaynağında ortadan kalkar.</p></div>
   </div>
-  <p class="muted">Not: ADB ile başlatılan bir Shizuku sunucusu USB ile bağlandığınızda kapanabilir — ayrıcalıklı özellikler bağlandıktan hemen sonra çalışmayı bırakırsa Shizuku'yu yeniden başlatın.</p>
+  <p class="muted"><b>ADB ile başlatılan bir Shizuku sunucusu, telefonu arabaya taktığınızda kapanır.</b> USB bağlantısı telefonu aksesuar moduna alır; bu da ADB'yi yeniden başlatır ve Shizuku'yu da beraberinde götürür — kablosuz hata ayıklama da aynı ADB üzerinden çalıştığı için işe yaramaz. Shizuku'yu yeniden başlatmanız yeterli, ScreenOnAuto kendiliğinden yeniden bağlanır; daha da iyisi, watchdog hizmeti onu sizin yerinize yeniden başlatan <a href="https://github.com/thedjchi/Shizuku">thedjchi sürümünü</a> kullanın. Root kullanıcıları ve kablosuz Android Auto bağlantıları bundan etkilenmez.</p>
+  <p class="muted"><b>Ekran kapandıktan sonra tekrar uyandırma:</b> dokunmatik ekran panelle birlikte kapandığı için telefona dokunmak işe yaramaz. Araç ekranındaki <b>Otomatik Karartma</b> düğmesine dokunun — Otomatik Karartma'yı açıp kapatmak ekranı uyandırır (düğmeyi önce <b>Ekran düğmeleri → İşlev düğmeleri</b> bölümünden açın; varsayılan olarak kapalıdır). Ya da telefonun güç düğmesine <b>iki kez</b> basın, çünkü ilk basış sistemi uyku moduna alan basıştır. Yansıtmayı durdurmak veya Android Auto bağlantısını kesmek de ekranı geri getirir.</p>
 </section>
 
 <section class="wrap" id="requirements">
