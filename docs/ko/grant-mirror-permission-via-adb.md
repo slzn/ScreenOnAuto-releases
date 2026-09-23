@@ -5,7 +5,7 @@ lang: ko
 slug: grant-mirror-permission-via-adb
 permalink: /docs/ko/grant-mirror-permission-via-adb/
 date: 2026-08-14
-last_modified_at: 2026-08-14
+last_modified_at: 2026-09-23
 ---
 
 # ADB로 미러링 권한 부여
@@ -13,6 +13,8 @@ last_modified_at: 2026-08-14
 
 기본적으로 Android는 ScreenOnAuto가 화면 미러링을 시작할 때마다 권한 대화상자를 표시합니다.
 ADB로 **화면 캡처 (MediaProjection)** 권한을 미리 부여해 두면 이 대화상자가 다시는 나타나지 않습니다.
+
+**이 앱만 미러링**(Android 15 이상)을 쓰려면 이 권한 부여가 반드시 필요합니다. 권한이 없으면 이 기능은 동작하지 않습니다.
 
 ## 사전 준비
 
@@ -53,4 +55,4 @@ adb shell appops set idv.lzn.screenonauto android:project_media default
 - **`error: device unauthorized`** — 휴대전화에 "USB 디버깅을 허용하시겠습니까?" 대화상자가 떠 있는지 확인하고 **허용**을 누르세요.
 - **대화상자가 계속 나타남** — ScreenOnAuto를 강제 종료한 뒤 다시 실행하세요. 그래도 계속된다면 위 명령으로 권한을 해제했다가 다시 부여하세요.
 - **앱을 재설치했거나 Play와 사이드로드 채널을 바꿈** — 앱을 제거하면 부여된 권한도 함께 사라집니다. 다시 설치한 뒤 권한 부여 명령을 다시 실행하세요.
-- **재부팅하면 권한이 초기화됨** — 일부 ROM(예: MIUI/HyperOS)에서는 `appops` 권한이 재부팅 후에도 유지되지 않습니다. 재시작할 때마다 명령을 다시 실행하거나 Wi-Fi를 통한 ADB를 사용하세요.
+- **재부팅하면 권한이 초기화됨** — 일부 ROM(예: MIUI/HyperOS)에서는 `appops` 권한이 재부팅 후에도 유지되지 않습니다. 재시작할 때마다 명령을 다시 실행하세요. Wi-Fi를 통한 ADB(무선 디버깅)를 쓰면 매번 케이블을 연결하지 않아도 되지만, 권한 초기화 자체를 막지는 못합니다.

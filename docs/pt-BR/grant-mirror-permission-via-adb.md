@@ -5,7 +5,7 @@ lang: pt-BR
 slug: grant-mirror-permission-via-adb
 permalink: /docs/pt-BR/grant-mirror-permission-via-adb/
 date: 2026-07-16
-last_modified_at: 2026-07-16
+last_modified_at: 2026-09-23
 ---
 
 # Conceder Permissão de Espelhamento via ADB
@@ -14,6 +14,8 @@ last_modified_at: 2026-07-16
 Por padrão, o Android mostra um diálogo de permissão toda vez que o ScreenOnAuto inicia
 o espelhamento de tela. Você pode conceder previamente a permissão de **Captura de tela
 (MediaProjection)** via ADB para que o diálogo nunca mais apareça.
+
+Ela também é obrigatória para **Espelhar apenas este app** (Android 15+), que não funciona sem ela.
 
 ## Pré-requisitos
 
@@ -54,4 +56,4 @@ adb shell appops set idv.lzn.screenonauto android:project_media default
 - **`error: device unauthorized`** — Procure o diálogo "Permitir depuração USB?" no celular e toque em **Permitir**.
 - **O diálogo continua aparecendo** — Force o encerramento do ScreenOnAuto e abra de novo. Se persistir, revogue e conceda novamente com os comandos acima.
 - **Reinstalou o app (ou trocou entre os canais Play e sideload)** — desinstalar apaga a concessão; execute o comando de novo depois de reinstalar.
-- **A permissão some após reiniciar** — Em algumas ROMs (ex.: MIUI/HyperOS), concessões via `appops` não sobrevivem à reinicialização. Execute o comando de novo após cada reinício, ou use ADB por Wi-Fi.
+- **A permissão some após reiniciar** — Em algumas ROMs (ex.: MIUI/HyperOS), concessões via `appops` não sobrevivem à reinicialização. Execute o comando de novo após cada reinício; o ADB por Wi-Fi (depuração sem fio) poupa você de conectar o cabo toda vez, mas não impede que a permissão seja apagada.

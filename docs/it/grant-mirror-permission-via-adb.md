@@ -5,7 +5,7 @@ lang: it
 slug: grant-mirror-permission-via-adb
 permalink: /docs/it/grant-mirror-permission-via-adb/
 date: 2026-07-17
-last_modified_at: 2026-07-17
+last_modified_at: 2026-09-23
 ---
 
 # Concedere il permesso di mirroring via ADB
@@ -13,6 +13,8 @@ last_modified_at: 2026-07-17
 
 Per impostazione predefinita, Android mostra una finestra di autorizzazione a ogni avvio del mirroring.
 Puoi pre-concedere l'autorizzazione di **cattura schermo (MediaProjection)** con ADB, così la finestra non comparirà più.
+
+È anche indispensabile per **Esegui il mirroring solo di questa app** (Android 15+), che senza questa autorizzazione non funziona.
 
 ## Prerequisiti
 
@@ -53,4 +55,4 @@ adb shell appops set idv.lzn.screenonauto android:project_media default
 - **`error: device unauthorized`** — Cerca sul telefono la finestra «Consentire il debug USB?» e tocca **Consenti**.
 - **La finestra compare ancora** — Forza l'arresto di ScreenOnAuto e riaprilo. Se persiste, revoca e ri-concedi con i comandi sopra.
 - **App reinstallata (o passaggio tra canale Play e sideload)** — la disinstallazione cancella la concessione; riesegui il comando dopo la reinstallazione.
-- **L'autorizzazione si azzera al riavvio** — Su alcune ROM (per es. MIUI/HyperOS) le concessioni `appops` non sopravvivono al riavvio. Riesegui il comando dopo ogni riavvio, oppure usa ADB via Wi-Fi.
+- **L'autorizzazione si azzera al riavvio** — Su alcune ROM (per es. MIUI/HyperOS) le concessioni `appops` non sopravvivono al riavvio. Riesegui il comando dopo ogni riavvio; ADB via Wi-Fi (debug wireless) ti evita di collegare il cavo ogni volta, ma non impedisce l'azzeramento.

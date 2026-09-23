@@ -5,7 +5,7 @@ lang: en
 slug: grant-mirror-permission-via-adb
 permalink: /docs/en/grant-mirror-permission-via-adb/
 date: 2026-07-16
-last_modified_at: 2026-07-16
+last_modified_at: 2026-09-23
 ---
 
 # Grant Mirror Permission via ADB
@@ -13,6 +13,8 @@ last_modified_at: 2026-07-16
 
 By default, Android displays a permission dialog every time ScreenOnAuto starts screen mirroring.
 You can pre-grant the **Screen Capture (MediaProjection)** permission with ADB so the dialog never appears again.
+
+It is also required for **Mirror only this app** (Android 15+), which does not work without it.
 
 ## Prerequisites
 
@@ -53,4 +55,4 @@ adb shell appops set idv.lzn.screenonauto android:project_media default
 - **`error: device unauthorized`** — Look for the "Allow USB debugging?" dialog on your phone and tap **Allow**.
 - **Dialog still appears** — Force-stop ScreenOnAuto and relaunch. If it persists, revoke and re-grant using the commands above.
 - **Reinstalled the app (or switched between the Play and sideload channels)** — uninstalling clears the grant; re-run the grant command after reinstalling.
-- **Permission resets after reboot** — On some ROMs (e.g. MIUI/HyperOS), `appops` grants don't survive reboots. Re-run the command after each restart, or use ADB over Wi-Fi.
+- **Permission resets after reboot** — On some ROMs (e.g. MIUI/HyperOS), `appops` grants don't survive reboots. Re-run the command after each restart; ADB over Wi-Fi (wireless debugging) saves you plugging in a cable each time, but does not stop the reset.

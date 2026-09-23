@@ -5,7 +5,7 @@ lang: tr
 slug: grant-mirror-permission-via-adb
 permalink: /docs/tr/grant-mirror-permission-via-adb/
 date: 2026-07-20
-last_modified_at: 2026-07-20
+last_modified_at: 2026-09-23
 ---
 
 # ADB ile Yansıtma İzni Verme
@@ -13,6 +13,8 @@ last_modified_at: 2026-07-20
 
 Android, varsayılan olarak ScreenOnAuto ekran yansıtmayı her başlattığında bir izin penceresi gösterir.
 **Ekran Kaydı (MediaProjection)** iznini ADB ile önceden vererek pencerenin bir daha hiç görünmemesini sağlayabilirsiniz.
+
+Bu izin, **Yalnızca bu uygulamayı yansıt** (Android 15+) özelliği için de gereklidir; izin olmadan özellik çalışmaz.
 
 ## Ön Koşullar
 
@@ -53,4 +55,4 @@ adb shell appops set idv.lzn.screenonauto android:project_media default
 - **`error: device unauthorized`** — Telefonunuzda "USB hata ayıklamaya izin verilsin mi?" penceresini bulun ve **İzin ver**'e dokunun.
 - **Pencere hâlâ görünüyor** — ScreenOnAuto'yu zorla durdurun ve yeniden başlatın. Sorun sürerse yukarıdaki komutlarla izni geri alıp yeniden verin.
 - **Uygulamayı yeniden yüklediniz (veya Play ile elle yükleme kanalları arasında geçiş yaptınız)** — kaldırma işlemi izni siler; yeniden yükledikten sonra izin komutunu tekrar çalıştırın.
-- **İzin yeniden başlatmada sıfırlanıyor** — Bazı ROM'larda (ör. MIUI/HyperOS) `appops` izinleri yeniden başlatmayı atlatamaz. Her yeniden başlatmadan sonra komutu tekrar çalıştırın veya Wi-Fi üzerinden ADB kullanın.
+- **İzin yeniden başlatmada sıfırlanıyor** — Bazı ROM'larda (ör. MIUI/HyperOS) `appops` izinleri yeniden başlatmayı atlatamaz. Her yeniden başlatmadan sonra komutu tekrar çalıştırın; Wi-Fi üzerinden ADB (kablosuz hata ayıklama) her seferinde kablo takma zahmetini ortadan kaldırır, ancak iznin sıfırlanmasını engellemez.

@@ -5,7 +5,7 @@ lang: de
 slug: grant-mirror-permission-via-adb
 permalink: /docs/de/grant-mirror-permission-via-adb/
 date: 2026-07-16
-last_modified_at: 2026-09-15
+last_modified_at: 2026-09-23
 ---
 
 # Spiegelungsberechtigung per ADB erteilen
@@ -14,6 +14,8 @@ last_modified_at: 2026-09-15
 Standardmäßig zeigt Android bei jedem Start der Bildschirmspiegelung von ScreenOnAuto
 einen Berechtigungsdialog. Du kannst die Berechtigung **Bildschirmaufnahme
 (MediaProjection)** per ADB vorab erteilen, sodass der Dialog nie wieder erscheint.
+
+Sie ist außerdem Voraussetzung für **Nur diese App spiegeln** (Android 15+), das ohne sie nicht funktioniert.
 
 ## Voraussetzungen
 
@@ -54,4 +56,4 @@ adb shell appops set idv.lzn.screenonauto android:project_media default
 - **`error: device unauthorized`** – Suche auf dem Telefon den Dialog „USB-Debugging zulassen?" und tippe auf **Zulassen**.
 - **Der Dialog erscheint weiterhin** – Beende ScreenOnAuto zwangsweise und starte es neu. Hilft das nicht, widerrufe die Berechtigung und erteile sie mit den obigen Befehlen erneut.
 - **App neu installiert (oder zwischen Play- und Sideload-Kanal gewechselt)** – Deinstallieren löscht die erteilte Berechtigung; führe den Befehl nach der Neuinstallation erneut aus.
-- **Berechtigung nach Neustart weg** – Auf manchen ROMs (z. B. MIUI/HyperOS) überleben `appops`-Erteilungen keinen Neustart. Führe den Befehl nach jedem Neustart erneut aus oder nutze ADB über WLAN.
+- **Berechtigung nach Neustart weg** – Auf manchen ROMs (z. B. MIUI/HyperOS) überleben `appops`-Erteilungen keinen Neustart. Führe den Befehl nach jedem Neustart erneut aus; ADB über WLAN (Wireless Debugging) erspart dir dabei das Kabel, verhindert das Zurücksetzen aber nicht.
