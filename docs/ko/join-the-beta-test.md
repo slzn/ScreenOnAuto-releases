@@ -5,7 +5,7 @@ lang: ko
 slug: join-the-beta-test
 permalink: /docs/ko/join-the-beta-test/
 date: 2026-08-14
-last_modified_at: 2026-08-28
+last_modified_at: 2026-09-23
 ---
 
 # 베타 테스트 참여
@@ -53,8 +53,14 @@ Google Play 베타 테스터 목록을 통해 ScreenOnAuto를 설치합니다 �
 
 ## 테스트 탈퇴
 
-자리를 다른 사람에게 넘기려면, **삭제할 계정으로 로그인한 상태에서** **탈퇴** 양식을 열고
-제출하세요:
+ScreenOnAuto를 설치한 뒤에는 다음 순번을 위해 자리를 반납해 주세요. 자리가 한정되어
+있어 일찍 반납할수록 대기 중인 분이 앱을 더 빨리 받을 수 있습니다.
+
+**탈퇴해도 이미 설치된 앱에는 영향이 없으며** 평소대로 작동합니다. Play를 통한
+업데이트만 받지 않게 될 뿐이며, 나중에 새 버전이 필요하면 위의 양식으로 다시 신청하면
+됩니다.
+
+**삭제할 계정으로 로그인한 상태에서** **탈퇴** 양식을 열고 제출하세요:
 
 <a class="formcta" href="https://docs.google.com/forms/d/1-pLXdA4YDparnHh6WBcohaibO3xYcK8PjuWQv6R6_18/viewform"><span class="lab">테스트 탈퇴</span><span class="host">docs.google.com</span></a>
 ## 참고 사항

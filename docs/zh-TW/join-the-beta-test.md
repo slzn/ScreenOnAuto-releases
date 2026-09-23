@@ -5,7 +5,7 @@ lang: zh-TW
 slug: join-the-beta-test
 permalink: /docs/zh-TW/join-the-beta-test/
 date: 2026-07-16
-last_modified_at: 2026-08-28
+last_modified_at: 2026-09-23
 ---
 
 # 加入 Beta 測試
@@ -43,7 +43,12 @@ last_modified_at: 2026-08-28
 
 ## 退出測試
 
-若要把名額讓給其他人,請**以要退出的 Google 帳號登入**後開啟**退出**表單並送出:
+安裝完成後，請把名額讓給下一位——名額有限，提早釋出能讓候補的人更快拿到 App。
+
+**退出不會影響已經安裝在手機上的 App**，它會照常運作。只是不會再透過 Play 收到更新；
+日後想要新版本，用上面的表單重新報名即可。
+
+若要退出，請**以要退出的 Google 帳號登入**後開啟**退出**表單並送出：
 
 <a class="formcta" href="https://docs.google.com/forms/d/1NmqeCP-HV299BTCBu56rhjHD6zkY5zgd1iiWH0B_JW0/viewform"><span class="lab">退出測試</span><span class="host">docs.google.com</span></a>
 ## 注意事項

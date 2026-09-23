@@ -5,7 +5,7 @@ lang: de
 slug: join-the-beta-test
 permalink: /docs/de/join-the-beta-test/
 date: 2026-07-16
-last_modified_at: 2026-09-15
+last_modified_at: 2026-09-23
 ---
 
 # Beta-Test beitreten
@@ -58,8 +58,16 @@ Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play – auf **A
 
 ## Test verlassen
 
-Um deinen Platz für jemand anderen freizugeben, öffne das **Austrittsformular**,
-**angemeldet mit dem Konto, das entfernt werden soll**, und sende ab:
+Wenn du ScreenOnAuto installiert hast, gib deinen Platz bitte für die nächste Person
+frei — die Plätze sind begrenzt, und eine frühe Freigabe bringt Wartende schneller an
+die App.
+
+**Das Verlassen betrifft die bereits installierte App nicht** — sie läuft ganz normal
+weiter. Du erhältst lediglich keine Updates mehr über Play; wenn du eine neuere
+Version möchtest, melde dich einfach über das Formular oben wieder an.
+
+Öffne das **Austrittsformular**, **angemeldet mit dem Konto, das entfernt werden
+soll**, und sende ab:
 
 <a class="formcta" href="https://docs.google.com/forms/d/13VQcvnjWEf4bn2xv4aYx5AOLhHJ44Euq2akqy3KiJls/viewform"><span class="lab">Test verlassen</span><span class="host">docs.google.com</span></a>
 ## Hinweise

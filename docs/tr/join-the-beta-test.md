@@ -5,7 +5,7 @@ lang: tr
 slug: join-the-beta-test
 permalink: /docs/tr/join-the-beta-test/
 date: 2026-07-20
-last_modified_at: 2026-08-28
+last_modified_at: 2026-09-23
 ---
 
 # Beta Testine Katılın
@@ -58,8 +58,16 @@ ScreenOnAuto'yu Google Play beta test kullanıcısı listesi üzerinden yükleyi
 
 ## Testten Ayrılma
 
-Yerinizi bir başkasına bırakmak için **Ayrılma** formunu **kaldırmak istediğiniz
-hesapla oturum açmış olarak** açın ve gönderin:
+ScreenOnAuto'yu yükledikten sonra lütfen yerinizi sıradaki kişiye bırakın — yerler
+sınırlıdır ve erken bırakmanız bekleyen birinin uygulamaya daha çabuk kavuşmasını
+sağlar.
+
+**Ayrılmak telefonunuzdaki kurulu uygulamayı etkilemez**; normal şekilde çalışmaya
+devam eder. Yalnızca Play üzerinden güncelleme almazsınız; daha yeni bir sürüm
+istediğinizde yukarıdaki formla yeniden kaydolmanız yeterlidir.
+
+**Ayrılma** formunu **kaldırmak istediğiniz hesapla oturum açmış olarak** açın ve
+gönderin:
 
 <a class="formcta" href="https://docs.google.com/forms/d/1CaLlyfOFeduNU22GN9rufE4R-NlEEx3KExDPOvjawZ0/viewform"><span class="lab">Testten ayrıl</span><span class="host">docs.google.com</span></a>
 ## Notlar
