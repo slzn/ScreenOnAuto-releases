@@ -47,11 +47,11 @@ ScreenOnAuto-releases/
 ├── i18n/<lang>/index.html  ← translated landing pages, one dir per language
 ├── assets/styles.css       ← shared landing-page stylesheet
 ├── assets/carousel.js      ← shared carousel script
-├── docs/<lang>/<slug>.md   ← on-site copies of the 3 wiki guides × 10 languages
+├── docs/<lang>/<slug>.md   ← on-site copies of the 4 wiki guides × 10 languages
 ├── _config.yml             ← Jekyll config; defaults apply _layouts/doc.html to docs/
 ├── _layouts/doc.html       ← doc layout: SEO head, hreflang (Liquid, from slug+lang), TechArticle JSON-LD
 ├── images/                 ← site images (incl. how-to-use screenshots)
-├── robots.txt / sitemap.xml← this site's own SEO files (sitemap: 40 URLs)
+├── robots.txt / sitemap.xml← this site's own SEO files (sitemap: 50 URLs)
 ├── .claude/CLAUDE.md       ← This file (tracked; Jekyll skips dot-dirs, so it is
 │                             never published as a page)
 ├── .claude/settings.local.json ← personal Claude Code settings (gitignored)
@@ -123,7 +123,7 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
   scores > casual game (shows touch forwarding) > video-call grid; rejected as
   low-appeal: weather radar, Media Controller shot, delivery-app mock.
 - **Docs:** `docs/<lang>/<slug>.md`, slugs `join-the-beta-test` / `how-to-use` /
-  `grant-mirror-permission-via-adb`. These are **converted copies of the wiki pages** —
+  `grant-mirror-permission-via-adb` / `control-mirroring-from-another-app`. These are **converted copies of the wiki pages** —
   the wiki is the editing source (see below).
 - GitHub Pages renders **any** root `.md` into `<name>.html` with the primer theme,
   front matter or not — verified 2026-07-27: `/README.zh-TW.html` was live, themed, and
@@ -146,20 +146,20 @@ Remote: `https://github.com/slzn/ScreenOnAuto-releases.wiki.git`
 
 ### Current pages
 
-`Home.md` plus **3 guides × 10 languages** (30 guide pages):
+`Home.md` plus **4 guides × 10 languages** (40 guide pages):
 
-| Lang | `join-the-beta-test` | `how-to-use` | `grant-mirror-permission-via-adb` |
-|---|---|---|---|
-| en | Join-the-Beta-Test | How-to-Use | Grant-Mirror-Permission-via-ADB |
-| zh-TW | 加入-Beta-測試 | 如何使用 | 使用-ADB-授予鏡像權限 |
-| pt-BR | Participar-do-Teste-Beta | Como-Usar | Conceder-Permissão-de-Espelhamento-via-ADB |
-| es | Unirse-a-la-Beta | Cómo-Usar | Conceder-Permiso-de-Duplicación-por-ADB |
-| de | Beta-Test-beitreten | Verwendung | Spiegelungsberechtigung-per-ADB-erteilen |
-| fr | Rejoindre-le-test-bêta | Comment-utiliser | Accorder-la-permission-de-duplication-via-ADB |
-| it | Partecipare-al-beta-test | Come-si-usa | Concedere-il-permesso-di-mirroring-via-ADB |
-| tr | Beta-Testine-Katılın | Nasıl-Kullanılır | ADB-ile-Yansıtma-İzni-Verme |
-| ar | الانضمام-إلى-الاختبار-التجريبي | طريقة-الاستخدام | منح-إذن-النسخ-المطابق-عبر-ADB |
-| ko | 베타-테스트-참여 | 사용-방법 | ADB로-미러링-권한-부여 |
+| Lang | `join-the-beta-test` | `how-to-use` | `grant-mirror-permission-via-adb` | `control-mirroring-from-another-app` |
+|---|---|---|---|---|
+| en | Join-the-Beta-Test | How-to-Use | Grant-Mirror-Permission-via-ADB | Control-Mirroring-from-Another-App |
+| zh-TW | 加入-Beta-測試 | 如何使用 | 使用-ADB-授予鏡像權限 | 從其他應用程式控制鏡像 |
+| pt-BR | Participar-do-Teste-Beta | Como-Usar | Conceder-Permissão-de-Espelhamento-via-ADB | Controlar-o-Espelhamento-a-partir-de-Outro-App |
+| es | Unirse-a-la-Beta | Cómo-Usar | Conceder-Permiso-de-Duplicación-por-ADB | Controlar-la-Duplicación-desde-Otra-App |
+| de | Beta-Test-beitreten | Verwendung | Spiegelungsberechtigung-per-ADB-erteilen | Spiegelung-aus-einer-anderen-App-steuern |
+| fr | Rejoindre-le-test-bêta | Comment-utiliser | Accorder-la-permission-de-duplication-via-ADB | Contrôler-la-duplication-depuis-une-autre-application |
+| it | Partecipare-al-beta-test | Come-si-usa | Concedere-il-permesso-di-mirroring-via-ADB | Controllare-il-mirroring-da-altre-app |
+| tr | Beta-Testine-Katılın | Nasıl-Kullanılır | ADB-ile-Yansıtma-İzni-Verme | Yansıtmayı-Başka-Bir-Uygulamadan-Kontrol-Etme |
+| ar | الانضمام-إلى-الاختبار-التجريبي | طريقة-الاستخدام | منح-إذن-النسخ-المطابق-عبر-ADB | التحكم-في-النسخ-المطابق-من-تطبيق-آخر |
+| ko | 베타-테스트-참여 | 사용-방법 | ADB로-미러링-권한-부여 | 다른-앱에서-미러링-제어 |
 
 ### Updating the wiki — and syncing the on-site docs copies
 
@@ -169,7 +169,8 @@ conversion rules:
 
 - drop the `*🌐 [Web version …]*` backlink line (wiki pages link to their docs copy —
   added 2026-07-17; the docs copy must not link to itself)
-- GitHub alert syntax (`> [!NOTE]` etc.) → bold label (e.g. `**Note:**`)
+- GitHub alert syntax (`> [!NOTE]` etc.) → emoji + bold label on its own quote line,
+  localized (e.g. `> **ℹ️ Note**`, `> **❗ Important**`, `> **💡 Tip**`, `> **⚠️ Warning**`)
 - wiki page interlinks → on-site docs URLs (`/docs/<lang>/<slug>`)
 - README links → landing-page anchors
 - image references → `/images/` paths (copy new images into `images/`)
