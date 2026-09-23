@@ -30,7 +30,7 @@
 - **Atalhos de apps** — Adicione até 4 botões de acesso rápido a apps na tela de espelhamento do Android Auto
 - **Botões na tela** — Mostre ou oculte individualmente os botões da tela de espelhamento na página Botões na tela: Forçar paisagem, Escurecimento automático e Voltar / Início / Apps recentes do celular (até 4 ao mesmo tempo)
 - **Posição dos botões** — No espelhamento Legacy, alinhe os botões à esquerda ou desvie automaticamente da barra de navegação do celular
-- **Ajuste do espelhamento** — Ajuste a largura/altura do espelhamento nas configurações avançadas para centrais que cortam as bordas
+- **Ajuste do espelhamento** — Ajuste a largura/altura do espelhamento nas configurações avançadas para centrais que cortam as bordas; lá, o **Espelhamento desenhado pelo app** (experimental) também evita a distorção na vista dividida
 - **Encaminhamento de toque** *(experimental)* — Toque, role, deslize e use o gesto de pinça para ampliar na tela do Android Auto para controlar o celular
 
 ## Recursos privilegiados

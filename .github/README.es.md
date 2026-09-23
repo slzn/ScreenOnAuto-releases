@@ -30,7 +30,7 @@
 - **Atajos de apps** — Añade hasta 4 botones de acceso rápido a apps en la pantalla de duplicación de Android Auto
 - **Botones en pantalla** — Muestra u oculta individualmente los botones de la pantalla de duplicación en la página Botones en pantalla: Forzar horizontal, Atenuación automática y Atrás / Inicio / Apps recientes del teléfono (hasta 4 a la vez)
 - **Posición de los botones** — En la duplicación Legacy, alinea los botones a la izquierda o esquiva automáticamente la barra de navegación del teléfono
-- **Ajuste de la duplicación** — Recorta el ancho/alto de la duplicación en los ajustes avanzados para unidades que cortan los bordes
+- **Ajuste de la duplicación** — Recorta el ancho/alto de la duplicación en los ajustes avanzados para unidades que cortan los bordes; allí, la **Duplicación dibujada por la app** (experimental) también evita la distorsión en la vista dividida
 - **Reenvío táctil** *(experimental)* — Toca, desplaza, desliza y pellizca para hacer zoom en la pantalla de Android Auto para controlar el teléfono
 
 ## Funciones con privilegios

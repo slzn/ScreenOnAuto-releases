@@ -5,7 +5,7 @@ lang: pt-BR
 slug: how-to-use
 permalink: /docs/pt-BR/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-09-02
+last_modified_at: 2026-09-23
 ---
 
 # Como Usar
@@ -115,5 +115,13 @@ Qualquer uma destas opções funciona:
   visível cresce ou encolhe na vista dividida) — ative **Configurações → Avançado →
   Tamanho fixo do espelhamento**. O espelhamento mantém o tamanho em vez de distorcer
   (parte dele pode ficar oculta). Vale para a entrada de tela cheia **ScreenOnAuto**.
+- **Outra solução para a distorção na vista dividida** — ative **Configurações →
+  Avançado → Espelhamento desenhado pelo app (experimental)**. O app passa a desenhar a
+  imagem do espelhamento em vez de deixar o sistema redimensioná-la, então ela não
+  distorce mais na vista dividida, e os ajustes de largura/altura funcionam igual,
+  definidos antes ou durante a conexão. Consome um pouco mais de bateria e passa a valer
+  no próximo início do espelhamento. Não pode ficar ativo junto com **Ajustar a tela do
+  telefone à do carro** (Recursos privilegiados), que resolve o mesmo problema de outro
+  jeito.
 - A **barra de navegação do Android Auto** na tela do carro é desenhada pelo próprio
   Android Auto e o app não pode ocultá-la.

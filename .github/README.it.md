@@ -30,7 +30,7 @@
 - **Scorciatoie di avvio** — Aggiungi fino a 4 pulsanti di avvio rapido delle app sulla schermata di mirroring di Android Auto
 - **Pulsanti sullo schermo** — Mostra o nascondi singolarmente i pulsanti della schermata di mirroring nella pagina Pulsanti sullo schermo: Forza orizzontale, Oscura, e Indietro / Home / App recenti del telefono (massimo 4 alla volta)
 - **Posizione dei pulsanti** — Nel mirroring Legacy, allinea i pulsanti a sinistra o evita automaticamente la barra di navigazione del telefono
-- **Regolazione del mirroring** — Ritaglia larghezza/altezza dell'immagine nelle impostazioni avanzate per le unità che tagliano i bordi
+- **Regolazione del mirroring** — Ritaglia larghezza/altezza dell'immagine nelle impostazioni avanzate per le unità che tagliano i bordi; lì, l'**Immagine del mirroring disegnata dall'app** (sperimentale) evita anche la distorsione nella vista divisa
 - **Inoltro tocco** *(sperimentale)* — Tocca, scorri, fai swipe e pizzica per lo zoom sul display Android Auto per controllare il telefono
 
 ## Funzioni privilegiate

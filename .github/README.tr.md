@@ -30,7 +30,7 @@
 - **Başlatma Kısayolları** — Android Auto yansıtma ekranına en fazla 4 hızlı uygulama başlatma düğmesi ekleyin
 - **Ekran Düğmeleri** — Yansıtma ekranındaki düğmeleri Ekran düğmeleri sayfasından tek tek gösterin veya gizleyin: Yatay modu zorla, Otomatik karartma ve telefonun Geri / Ana ekran / Son uygulamalar düğmeleri (aynı anda en fazla 4)
 - **Düğme Konumu** — Legacy yansıtmada düğmeleri sola hizalayın veya telefonun gezinme çubuğundan otomatik olarak kaçının
-- **Yansıtma Ayarı** — Kenarları kesen araç ekranları için Gelişmiş ayarlardan yansıtma genişliğini/yüksekliğini kırpın
+- **Yansıtma Ayarı** — Kenarları kesen araç ekranları için Gelişmiş ayarlardan yansıtma genişliğini/yüksekliğini kırpın; aynı yerdeki deneysel **Uygulamanın çizdiği yansıtma** da bölünmüş görünümdeki bozulmayı önler
 - **Dokunma Aktarımı** *(deneysel)* — Telefonunuzu kontrol etmek için Android Auto ekranına dokunun, kaydırın, savurun ve iki parmakla yakınlaştırın
 
 ## Ayrıcalıklı özellikler

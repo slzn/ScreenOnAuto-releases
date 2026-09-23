@@ -5,7 +5,7 @@ lang: de
 slug: how-to-use
 permalink: /docs/de/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-09-15
+last_modified_at: 2026-09-23
 ---
 
 # Verwendung
@@ -119,5 +119,13 @@ Jede dieser Möglichkeiten funktioniert:
   aktiviere **Einstellungen → Erweitert → Feste Spiegelungsgröße**. Die Spiegelung
   behält dann ihre Größe statt zu verzerren (ein Teil kann verdeckt sein). Gilt für
   den Vollbild-Eintrag **ScreenOnAuto**.
+- **Eine andere Lösung gegen Verzerrung in der geteilten Ansicht** – aktiviere
+  **Einstellungen → Erweitert → Selbstgezeichnete Spiegelung (experimentell)**. Die App
+  zeichnet das Bild der Spiegelung dann selbst, statt es vom System skalieren zu lassen,
+  sodass es in der geteilten Ansicht nicht mehr verzerrt; die Breiten-/Höhenanpassung
+  wirkt zudem gleich, ob vor oder während der Verbindung eingestellt. Das kostet etwas
+  mehr Akku und greift beim nächsten Start der Spiegelung. Sie kann nicht zusammen mit
+  **Telefonbildschirm an das Auto anpassen** (Privilegierte Funktionen) aktiv sein, das
+  dasselbe Problem auf andere Weise löst.
 - Die **Android-Auto-Navigationsleiste** auf dem Fahrzeugbildschirm wird von Android
   Auto selbst gezeichnet und kann von der App nicht ausgeblendet werden.

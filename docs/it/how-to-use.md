@@ -5,7 +5,7 @@ lang: it
 slug: how-to-use
 permalink: /docs/it/how-to-use/
 date: 2026-07-17
-last_modified_at: 2026-09-15
+last_modified_at: 2026-09-23
 ---
 
 # Come si usa
@@ -116,5 +116,14 @@ Uno qualsiasi di questi metodi:
   fissa del mirroring**. Il mirroring mantiene così le sue dimensioni invece di
   distorcersi (una parte può restare nascosta). Si applica alla voce a schermo intero
   **ScreenOnAuto**.
+- **Un'altra soluzione alla distorsione nella vista divisa** — attiva **Impostazioni →
+  Avanzate → Immagine del mirroring disegnata dall'app (sperimentale)**. L'app disegna
+  allora da sé l'immagine del mirroring invece di lasciarne il ridimensionamento al
+  sistema, così non si distorce più nella vista divisa, e le regolazioni di
+  larghezza/altezza hanno lo stesso effetto sia impostate prima sia durante la
+  connessione. Consuma un po' più di batteria e ha effetto al prossimo avvio del
+  mirroring. Non può essere attiva insieme ad **Adattare lo schermo del telefono a
+  quello dell'auto** (Funzioni privilegiate), che risolve lo stesso problema in un altro
+  modo.
 - La **barra di navigazione di Android Auto** sullo schermo dell'auto è disegnata da
   Android Auto stesso e l'app non può nasconderla.

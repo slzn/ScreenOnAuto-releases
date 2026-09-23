@@ -5,7 +5,7 @@ lang: fr
 slug: how-to-use
 permalink: /docs/fr/how-to-use/
 date: 2026-07-17
-last_modified_at: 2026-09-02
+last_modified_at: 2026-09-23
 ---
 
 # Comment utiliser
@@ -117,5 +117,13 @@ Au choix :
   visible grandit ou rétrécit en vue partagée) — activez **Réglages → Avancé → Taille
   fixe de la duplication**. La duplication garde alors sa taille au lieu de se déformer
   (une partie peut être masquée). S'applique à l'entrée plein écran **ScreenOnAuto**.
+- **Une autre solution à la déformation en vue partagée** — activez **Réglages → Avancé
+  → Duplication dessinée par l'application (expérimental)**. L'application dessine alors
+  elle-même l'image de la duplication au lieu de laisser le système la redimensionner :
+  elle ne se déforme plus en vue partagée, et les réglages de largeur/hauteur donnent le
+  même résultat, qu'ils soient définis avant ou pendant la connexion. Cela consomme un
+  peu plus de batterie et prend effet au prochain démarrage de la duplication. Elle ne
+  peut pas être activée en même temps que **Adapter l'écran du téléphone à celui de la
+  voiture** (Fonctions privilégiées), qui résout le même problème autrement.
 - La **barre de navigation Android Auto** sur l'écran de la voiture est dessinée par
   Android Auto lui-même et ne peut pas être masquée par l'app.

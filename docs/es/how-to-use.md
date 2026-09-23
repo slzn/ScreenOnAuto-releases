@@ -5,7 +5,7 @@ lang: es
 slug: how-to-use
 permalink: /docs/es/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-09-02
+last_modified_at: 2026-09-23
 ---
 
 # Cómo Usar
@@ -118,5 +118,13 @@ Cualquiera de estas opciones funciona:
   Tamaño fijo de la duplicación**. La duplicación mantiene su tamaño en lugar de
   distorsionarse (parte puede quedar oculta). Aplica a la entrada de pantalla completa
   **ScreenOnAuto**.
+- **Otra solución para la distorsión en la vista dividida** — activa **Ajustes →
+  Avanzado → Duplicación dibujada por la app (experimental)**. La app dibuja entonces la
+  imagen de la duplicación en lugar de dejar que el sistema la escale, así que ya no se
+  distorsiona en la vista dividida, y los ajustes de ancho/alto funcionan igual tanto si
+  los configuras antes de conectar como durante la conexión. Consume algo más de batería
+  y se aplica la próxima vez que empiece la duplicación. No puede estar activada a la
+  vez que **Ajustar la pantalla del teléfono a la del coche** (Funciones con
+  privilegios), que resuelve el mismo problema de otra forma.
 - La **barra de navegación de Android Auto** en la pantalla del coche la dibuja el
   propio Android Auto y la app no puede ocultarla.

@@ -5,7 +5,7 @@ lang: tr
 slug: how-to-use
 permalink: /docs/tr/how-to-use/
 date: 2026-07-20
-last_modified_at: 2026-09-15
+last_modified_at: 2026-09-23
 ---
 
 # Nasıl Kullanılır
@@ -115,5 +115,12 @@ verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](/docs/tr/grant-mirror-pe
   görünümde görünür alan büyüyüp küçüldüğünde) — **Ayarlar → Gelişmiş → Sabit
   yansıtma boyutu**'nu açın. Yansıtma bozulmak yerine boyutunu korur (bir kısmı
   gizlenebilir). Tam ekran **ScreenOnAuto** girişi için geçerlidir.
+- **Bölünmüş görünümdeki bozulmaya başka bir çözüm** — **Ayarlar → Gelişmiş →
+  Uygulamanın çizdiği yansıtma (deneysel)** seçeneğini açın. Uygulama bu durumda
+  ölçeklendirmeyi sisteme bırakmak yerine yansıtma görüntüsünü kendisi çizer; böylece
+  görüntü bölünmüş görünümde artık bozulmaz ve genişlik/yükseklik ayarları bağlantıdan
+  önce de bağlantı sırasında da aynı şekilde çalışır. Biraz daha fazla pil tüketir ve
+  yansıtma bir sonraki başlatılışında etkinleşir. Aynı sorunu farklı bir yolla çözen
+  **Telefon ekranını arabaya uydur** (Ayrıcalıklı özellikler) ile birlikte açık olamaz.
 - Araç ekranındaki **Android Auto gezinme çubuğu** Android Auto'nun kendisi
   tarafından çizilir ve uygulama tarafından gizlenemez.

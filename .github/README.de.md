@@ -30,7 +30,7 @@
 - **App-Verknüpfungen** – Füge dem Android-Auto-Spiegelbildschirm bis zu 4 Schnellstart-Tasten hinzu
 - **Bildschirmtasten** – Blende die Tasten des Spiegelbildschirms auf der Seite Bildschirm-Schaltflächen einzeln ein oder aus: Querformat erzwingen, Automatisches Abdunkeln sowie Zurück / Startbildschirm / Letzte Apps (bis zu 4 gleichzeitig)
 - **Tastenposition** – Richte die Bildschirmtasten auf dem Legacy-Spiegel links aus oder weiche der Navigationsleiste des Telefons automatisch aus
-- **Spiegelungsanpassung** – Passe Breite/Höhe der Spiegelung in den erweiterten Einstellungen an, falls die Head-Unit die Ränder abschneidet
+- **Spiegelungsanpassung** – Passe Breite/Höhe der Spiegelung in den erweiterten Einstellungen an, falls die Head-Unit die Ränder abschneidet; die dortige **Selbstgezeichnete Spiegelung** (experimentell) verhindert außerdem die Verzerrung in der geteilten Ansicht
 - **Touch-Weiterleitung** *(experimentell)* – Tippe, scrolle, wische und zoome mit zwei Fingern auf dem Android-Auto-Display, um das Telefon zu steuern
 
 ## Privilegierte Funktionen

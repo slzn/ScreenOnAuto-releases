@@ -30,7 +30,7 @@
 - **Launch Shortcuts** — Add up to 4 app quick-launch buttons to the Android Auto mirror screen
 - **On-screen Buttons** — Show or hide the mirror-screen buttons individually on the On-screen buttons page: Force Landscape, Auto Dim, and phone Back / Home / Recent apps (up to 4 at once)
 - **Button Placement** — On the Legacy mirror, left-align the on-screen buttons or automatically avoid the phone's navigation bar
-- **Mirror Adjustment** — Trim the mirror width/height in Advanced settings for head units that crop the edges
+- **Mirror Adjustment** — Trim the mirror width/height in Advanced settings for head units that crop the edges; the experimental **Self-drawn mirror** there also prevents split-view distortion
 - **Touch Forwarding** *(Experimental)* — Tap, scroll, fling and pinch-to-zoom on the Android Auto display to control your phone
 
 ## Privileged Features

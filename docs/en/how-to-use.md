@@ -5,7 +5,7 @@ lang: en
 slug: how-to-use
 permalink: /docs/en/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-09-02
+last_modified_at: 2026-09-23
 ---
 
 # How to Use
@@ -111,5 +111,12 @@ Any of these works:
   area grows or shrinks in split view) — turn on **Settings → Advanced → Fixed mirror
   size**. The mirror then keeps its size instead of distorting (part of it may be
   hidden). Applies to the full-screen **ScreenOnAuto** entry.
+- **Another fix for split-view distortion** — turn on **Settings → Advanced → Self-drawn
+  mirror (experimental)**. The app then draws the mirror image itself instead of letting
+  the system scale it, so the image no longer distorts in split view, and the
+  width/height adjustments behave the same whether you set them before or during a
+  connection. It uses slightly more battery and takes effect the next time mirroring
+  starts. It cannot be on together with **Match the phone screen to the car**
+  (Privileged Features), which fixes the same problem a different way.
 - The **Android Auto navigation bar** on the car screen is drawn by Android Auto itself
   and cannot be hidden by the app.

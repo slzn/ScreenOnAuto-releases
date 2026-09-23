@@ -30,7 +30,7 @@
 - **Raccourcis de lancement** — Ajoutez jusqu'à 4 boutons de lancement rapide d'apps sur l'écran de duplication Android Auto
 - **Boutons à l'écran** — Affichez ou masquez individuellement les boutons de l'écran de duplication sur la page Boutons à l'écran : Forcer paysage, Atténuer, et Retour / Accueil / Apps récentes du téléphone (4 au maximum)
 - **Position des boutons** — Sur la duplication Legacy, alignez les boutons à gauche ou évitez automatiquement la barre de navigation du téléphone
-- **Réglage de la duplication** — Rognez la largeur/hauteur de l'image dans les réglages avancés pour les unités qui coupent les bords
+- **Réglage de la duplication** — Rognez la largeur/hauteur de l'image dans les réglages avancés pour les unités qui coupent les bords ; la **Duplication dessinée par l'application** (expérimental), au même endroit, évite aussi la déformation en vue partagée
 - **Transfert tactile** *(Expérimental)* — Touchez, faites défiler, balayez et pincez pour zoomer sur l'affichage Android Auto afin de contrôler votre téléphone
 
 ## Fonctions privilégiées
