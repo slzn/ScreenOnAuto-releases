@@ -151,6 +151,10 @@ Always keep your eyes on the road — do not operate this app while driving.
 
 This project is not affiliated with, endorsed by, or sponsored by Google. Android Auto is a trademark of Google LLC.
 
+## Special Thanks
+
+- **Jurek Harla** — redesigned the ScreenOnAuto, ScreenOnAuto (Legacy) and Media Controller icons so they fit Android's round icon shape (v1.9.2).
+
 ## Sponsor
 
 If you find this app useful, feel free to donate or buy me a bubble tea 🧋
