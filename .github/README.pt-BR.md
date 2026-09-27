@@ -142,6 +142,10 @@ Mantenha sempre os olhos na estrada — não use este app enquanto dirige.
 
 Este projeto não é afiliado, endossado ou patrocinado pelo Google. Android Auto é uma marca registrada da Google LLC.
 
+## Agradecimentos especiais
+
+- **Jurek Harla** — redesenhou os ícones do ScreenOnAuto, do ScreenOnAuto (Legacy) e do Media Controller para que caibam no formato redondo de ícone do Android (v1.9.2).
+
 ## Apoie o projeto
 
 Se este app for útil para você, considere fazer uma doação ou me pagar um bubble tea 🧋

@@ -139,6 +139,10 @@
 
 本專案與 Google 無任何關聯，亦未獲其認可或贊助。Android Auto 為 Google LLC 之商標。
 
+## 特別感謝
+
+- **Jurek Harla** — 重新設計了 ScreenOnAuto、ScreenOnAuto (Legacy) 與 Media Controller 的圖示，讓它們完整落在 Android 的圓形圖示範圍內（v1.9.2）。
+
 ## 贊助
 
 如果這個 App 對您有幫助，歡迎捐款支持或請我喝杯珍珠奶茶 🧋
