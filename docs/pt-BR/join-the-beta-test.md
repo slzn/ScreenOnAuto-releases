@@ -1,11 +1,11 @@
 ---
 title: "Participar do Teste Beta"
-description: "Instale o ScreenOnAuto pela trilha de teste interno da Play Store (obrigatório no Android 14+) — formulário de inscrição e passo a passo."
+description: "Instale o ScreenOnAuto pelo Google Play (obrigatório no Android 14+) — como funcionam as rodadas de inscrição de 30 minutos, passo a passo."
 lang: pt-BR
 slug: join-the-beta-test
 permalink: /docs/pt-BR/join-the-beta-test/
 date: 2026-07-16
-last_modified_at: 2026-09-23
+last_modified_at: 2026-09-30
 ---
 
 # Participar do Teste Beta
@@ -18,56 +18,31 @@ Instale o ScreenOnAuto pela lista de testadores beta do Google Play — **obriga
 > app funcione corretamente com o Android Auto) — **não** é uma versão de avaliação
 > ou inacabada.
 
-## Antes de começar
+## Como funciona
 
-- O formulário pede para você **fazer login no Google** e registra sua conta
-  automaticamente — não há nada para digitar. Portanto, faça login com a **mesma
-  conta Google** usada na Play Store do seu celular; o app não ficará visível para
-  nenhuma outra conta.
-- Adicione **screenonauto@lzn.idv.tw** aos seus contatos **antes** de se inscrever,
-  para que o e-mail de confirmação não seja filtrado.
+- As inscrições acontecem em **rodadas de 30 minutos**, cada uma com um número limitado de vagas. A página de inscrição mostra uma contagem regressiva ao vivo.
+- Quando as inscrições de uma rodada fecham, a lista de testadores no Google Play é atualizada. Alguns minutos depois, quem conseguiu uma vaga tem uma **janela de 25 minutos** para instalar.
+- **Não há lista de espera**: se a rodada lotar, é só tentar a próxima.
+- **Nenhum e-mail** é enviado — tudo acontece na página de inscrição.
 
 ## Como participar
 
-1. Abra o formulário de **inscrição**, faça login se solicitado, marque a
-   caixa que registra seu e-mail e envie:
+1. No celular, abra a página de inscrição e **entre com a conta Google usada na Play Store do celular** — o app só fica visível para essa conta:
 
-   <a class="formcta join" href="https://docs.google.com/forms/d/13J4nqagD6GxuA-8JMby5v306j9KSR_GxVOGb0S1D3P0/viewform"><span class="lab">Entrar no teste</span><span class="host">docs.google.com</span></a>
-2. Você receberá um e-mail de confirmação com um **link de participação (opt-in)**. Abra-o e toque em **Become a tester**.
-3. Abra o link da Play Store no mesmo e-mail e instale o **ScreenOnAuto** normalmente.
+   🟢 **[Abrir a página de inscrição](https://screenonauto.lzn.idv.tw/join/?lang=pt-BR)**
+2. Toque em **Quero participar desta rodada**. A página faz a contagem regressiva até a sua janela de instalação — mantenha-a aberta; os botões de instalação aparecem nela automaticamente.
+3. Quando a sua janela abrir, toque primeiro em **Virar testador**, depois em **Abrir na Play Store**, e instale o **ScreenOnAuto** normalmente. Se a Play Store ainda não mostrar o app, feche a Play Store e toque no link de novo — ele costuma aparecer depois de algumas tentativas.
 4. **Depois de instalar**, abra **Android Auto → Personalizar tela de início** e confirme que as **duas** entradas do ScreenOnAuto aparecem (tela cheia e Legacy). Uma terceira entrada, **Media Controller**, só aparece em versões antigas do Android Auto — nas mais recentes ela não aparece por design, e isso é normal. Veja [Verificar no Android Auto](/pt-BR/#verify) para a lista completa e o que fazer se faltar alguma das duas.
 5. Tudo pronto — veja **[Como Usar](/docs/pt-BR/how-to-use/)** para iniciar o espelhamento no carro.
 
-## Depois de se inscrever
+## Bom saber
 
-> **❗ Importante**
-> - **Se houver vaga:** a lista de testadores é sincronizada com o Google Play em um
->   **lote automático a cada hora cheia**, e o e-mail de confirmação com seu **link de
->   participação** (de **screenonauto@lzn.idv.tw**) é enviado logo em seguida —
->   normalmente chega **em até uma hora**.
-> - **Se a lista estiver cheia:** você recebe **imediatamente um e-mail de lista de
->   espera**; quando uma vaga abrir, você é adicionado automaticamente e o e-mail de
->   confirmação chega em seguida.
-> - **As vagas são limitadas e rotativas:** quando há fila, as vagas ocupadas há mais
->   tempo (mais de cerca de um dia — contado desde quando você recebeu a vaga, não
->   desde a instalação) passam para os próximos da fila. Então **instale logo** depois
->   de ser adicionado.
-> - **Nenhum e-mail?** Verifique **Spam** e **Promoções** e marque como **"Não é spam"**.
->   Depois do opt-in, o app pode levar alguns minutos para aparecer na Play Store da
->   sua conta.
+- **Perdeu a sua janela?** É só se inscrever em outra rodada — não há limite.
+- **Depois que a sua janela termina**, o app instalado continua funcionando normalmente.
+- **Atualizações:** depois que a sua janela termina, a Play Store deixa de oferecer atualizações para você. Para atualizar, inscreva-se em outra rodada e toque nos mesmos links de instalação durante a sua janela — a página da Play Store mostra **Atualizar** no lugar de **Instalar**.
+- **Seu endereço de e-mail** é usado só para incluir você na lista de testadores da sua rodada e é apagado assim que termina a janela de instalação dessa rodada.
+- Mais respostas nas perguntas frequentes da [página de inscrição](https://screenonauto.lzn.idv.tw/join/?lang=pt-BR).
 
-## Sair do teste
-
-Depois de instalar o ScreenOnAuto, libere sua vaga para o próximo da fila — as vagas
-são limitadas, e liberá-la cedo faz quem está esperando receber o app mais rápido.
-
-**Sair não afeta o app já instalado no seu celular** — ele continua funcionando
-normalmente. Você apenas deixa de receber atualizações pela Play; quando quiser uma
-versão mais nova, basta se inscrever de novo pelo formulário acima.
-
-Abra o formulário de **saída** **logado com a conta que deseja remover** e envie:
-
-<a class="formcta" href="https://docs.google.com/forms/d/1gp0I-cF4VAD6-fHEPxppRbMuzivOItU9nub1mx7Rx8k/viewform"><span class="lab">Sair do teste</span><span class="host">docs.google.com</span></a>
 ## Observações
 
 - No **Android 13 ou inferior**, entrar no beta é opcional — você também pode fazer sideload do APK (veja o [guia de instalação](/pt-BR/#install)).

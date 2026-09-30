@@ -71,7 +71,7 @@
 > 릴리스가 Play의 내부 테스트 트랙을 통해 전달될 뿐입니다.
 
 이 앱은 **Play 스토어에서 검색되지 않으며**, 설치는 **초대 기반**입니다.
-신청 양식과 단계별 안내는 **[베타 테스트 참여](https://github.com/slzn/ScreenOnAuto-releases/wiki/베타-테스트-참여)**
+신청 페이지와 단계별 안내는 **[베타 테스트 참여](https://github.com/slzn/ScreenOnAuto-releases/wiki/베타-테스트-참여)**
 를 참고하세요. 설치한 뒤에는 앱을 실행하고 같은 방식으로 앱 내 권한을 부여하면 됩니다.
 
 ### Android 13 이하 — KingInstaller로 사이드로드

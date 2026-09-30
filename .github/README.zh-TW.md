@@ -65,7 +65,7 @@
 > KingInstaller 變通法 —— 因此 Play 是唯一能讓 Android Auto 正常運作的安裝方式。
 > 安裝到的仍是**完整版 App**，內容與 GitHub 版本相同，只是透過 Play 內部測試軌道發佈。
 
-**Play 商店裡搜尋不到本 App** —— 採**邀請制**：報名表單與詳細步驟請見
+**Play 商店裡搜尋不到本 App** —— 採**邀請制**：報名頁與詳細步驟請見
 **[加入 Beta 測試](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)**。
 安裝完成後，啟動 App 並依相同方式授予 App 內權限。
 

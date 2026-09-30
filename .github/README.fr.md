@@ -69,7 +69,7 @@ Elles débloquent ce que les API Android normales ne peuvent pas faire. Elles n�
 
 L'app **n'apparaît pas dans les recherches du Play Store** — l'installation se fait **sur invitation**.
 Consultez **[Rejoindre le test bêta](https://github.com/slzn/ScreenOnAuto-releases/wiki/Rejoindre-le-test-bêta)**
-pour le formulaire d'inscription et les instructions pas à pas. Après l'installation, lancez l'app et
+pour la page d'inscription et les instructions pas à pas. Après l'installation, lancez l'app et
 accordez les permissions demandées de la même manière.
 
 ### Android 13 et moins — installation avec KingInstaller

@@ -69,7 +69,7 @@ Sbloccano ciò che le normali API di Android non possono fare. Richiedono **[Shi
 
 L'app **non è ricercabile sul Play Store** — l'installazione avviene **su invito**.
 Consulta **[Partecipare al beta test](https://github.com/slzn/ScreenOnAuto-releases/wiki/Partecipare-al-beta-test)**
-per il modulo di iscrizione e le istruzioni passo passo. Dopo l'installazione, avvia l'app e
+per la pagina di iscrizione e le istruzioni passo passo. Dopo l'installazione, avvia l'app e
 concedi le autorizzazioni richieste allo stesso modo.
 
 ### Android 13 e precedenti — installazione con KingInstaller

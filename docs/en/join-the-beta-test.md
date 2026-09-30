@@ -1,11 +1,11 @@
 ---
 title: "Join the Beta Test"
-description: "Install ScreenOnAuto via the Play Store internal-testing track (required on Android 14+) — sign-up form and step-by-step instructions."
+description: "Install ScreenOnAuto from Google Play (required on Android 14+) — how the 30-minute sign-up rounds work, step by step."
 lang: en
 slug: join-the-beta-test
 permalink: /docs/en/join-the-beta-test/
 date: 2026-07-16
-last_modified_at: 2026-09-23
+last_modified_at: 2026-09-30
 ---
 
 # Join the Beta Test
@@ -18,54 +18,31 @@ Install ScreenOnAuto through the Google Play beta-tester list — **required on 
 > correctly with Android Auto) — it is **not** a separate trial or unfinished
 > version.
 
-## Before You Start
+## How It Works
 
-- The form asks you to **sign in to Google** and records your signed-in account
-  automatically — there's nothing to type. So make sure you sign in with the **same
-  Google account** that is signed in to your phone's Play Store; the app won't be
-  visible to any other account.
-- Add **screenonauto@lzn.idv.tw** to your contacts **before** signing up, so the
-  confirmation email isn't filtered out.
+- Sign-ups run in **30-minute rounds**, each with a limited number of spots. The sign-up page shows a live countdown.
+- When a round's sign-ups close, the tester list on Google Play is updated. A few minutes later, everyone who got a spot has a **25-minute window** to install.
+- There's **no waiting list**: if a round is full, just try the next one.
+- **No emails** are sent — everything happens on the sign-up page.
 
 ## How to Join
 
-1. Open the **Join** form, sign in if asked, tick the checkbox that records your email,
-   and submit:
+1. On your phone, open the sign-up page and **sign in with the Google account your phone's Play Store uses** — the app is only visible to that account:
 
-   <a class="formcta join" href="https://docs.google.com/forms/d/1tc18YdGins12x4tgGYuQkr0yXiwLCbbNkhf8swmYlM8/viewform"><span class="lab">Join the test</span><span class="host">docs.google.com</span></a>
-2. You'll receive a confirmation email with an **opt-in link**. Open it and tap **Become a tester**.
-3. Open the Play Store link from the same email and install **ScreenOnAuto** as usual.
+   🟢 **[Open the sign-up page](https://screenonauto.lzn.idv.tw/join/?lang=en)**
+2. Tap **Sign me up for this round**. The page counts down to your install window — keep it open; the install buttons appear there automatically.
+3. When your window opens, tap **Become a tester** first, then **Open in the Play Store**, and install **ScreenOnAuto** as usual. If the Play Store doesn't show the app yet, close the Play Store and tap the link again — it usually appears after a few tries.
 4. **After installing**, open **Android Auto → Customize Launcher** and confirm you see the **two** ScreenOnAuto entries (full-screen and Legacy). A third entry, **Media Controller**, appears only on older Android Auto versions — on newer ones it is absent by design, and that is fine. See [Verify in Android Auto](/#verify) for the full list and what to do if one of the two is missing.
 5. You're all set — see **[How to Use](/docs/en/how-to-use/)** for starting the mirror in the car.
 
-## After You Sign Up
+## Good to Know
 
-> **❗ Important**
-> - **If a slot is free:** the tester list syncs to Google Play in an **hourly batch at
->   the top of the hour**, and the confirmation email with your **opt-in link** (from
->   **screenonauto@lzn.idv.tw**) goes out right after — it normally arrives **within an
->   hour**.
-> - **If the list is full:** you'll get a **waitlist email right away**; when a slot
->   frees up you're added automatically and the confirmation email follows.
-> - **Slots are limited and rotate:** when others are waiting, the slots held longest
->   (more than about a day — counted from when you got the slot, not whether you've
->   installed) rotate to the next in line. So **install soon** after you're added.
-> - **No email?** Check **Spam** and **Promotions** and mark it **"Not spam"**. After you
->   opt in, the app can take a few minutes to appear on the Play Store for your account.
+- **Missed your window?** Just sign up for another round — there's no limit.
+- **After your window ends**, the installed app keeps working normally.
+- **Updates:** once your window ends, the Play Store stops offering you updates. To update, sign up for another round and tap the same install links during your window — the Play Store page shows **Update** instead of **Install**.
+- **Your email address** is used only to add you to your round's tester list, and is deleted once that round's install window ends.
+- More answers are in the FAQ on the [sign-up page](https://screenonauto.lzn.idv.tw/join/?lang=en).
 
-## Leaving the Test
-
-Once you have ScreenOnAuto installed, please free your slot for the next person in
-line — slots are limited, and releasing yours early lets someone who is waiting get
-the app sooner.
-
-**Leaving does not affect the app already on your phone** — it keeps working as usual.
-You simply stop receiving updates through Play; when you want a newer version, just
-join again with the form above.
-
-Open the **Leave** form **signed in with the account you want to remove** and submit:
-
-<a class="formcta" href="https://docs.google.com/forms/d/1GwlycvaZv2AfvPGCz5gVpiv7ZpwJJrrK-5QujHz2ySc/viewform"><span class="lab">Leave the test</span><span class="host">docs.google.com</span></a>
 ## Notes
 
 - On **Android 13 and below**, joining the beta is optional — you can sideload the APK instead (see the [installation guide](/#install)).

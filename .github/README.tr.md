@@ -68,7 +68,7 @@ Bunlar, normal Android API'lerinin yapamadıklarını açar. **[Shizuku](https:/
 > üzerinden dağıtılır.
 
 Uygulama **Play Store'da aranarak bulunamaz** — kurulum **davetiyelidir**.
-Kayıt formu ve adım adım talimatlar için
+Kayıt sayfası ve adım adım talimatlar için
 **[Beta Testine Katılın](https://github.com/slzn/ScreenOnAuto-releases/wiki/Beta-Testine-Katılın)**
 sayfasına bakın. Kurulumdan sonra uygulamayı açın ve uygulama içi izinleri aynı şekilde verin.
 

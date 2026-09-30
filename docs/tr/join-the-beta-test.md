@@ -1,11 +1,11 @@
 ---
 title: "Beta Testine Katılın"
-description: "Play Store dahilî test kanalı üzerinden kurulum (Android 14+ için zorunlu) — kayıt formu ve adım adım talimatlar."
+description: "ScreenOnAuto'yu Google Play'den yükleyin (Android 14+ için zorunlu) — 30 dakikalık kayıt turlarının işleyişi, adım adım."
 lang: tr
 slug: join-the-beta-test
 permalink: /docs/tr/join-the-beta-test/
 date: 2026-07-20
-last_modified_at: 2026-09-23
+last_modified_at: 2026-09-30
 ---
 
 # Beta Testine Katılın
@@ -19,57 +19,31 @@ ScreenOnAuto'yu Google Play beta test kullanıcısı listesi üzerinden yükleyi
 > Auto ile doğru çalışmasını sağlayan şeydir) — ayrı bir deneme ya da bitmemiş
 > sürüm **değildir**.
 
-## Başlamadan Önce
+## Nasıl İşler
 
-- Form sizden **Google ile oturum açmanızı** ister ve oturum açtığınız hesabı
-  otomatik olarak kaydeder — yazmanız gereken bir şey yoktur. Bu yüzden
-  telefonunuzun Play Store'unda oturum açmış olan **aynı Google hesabıyla** oturum
-  açtığınızdan emin olun; uygulama başka hiçbir hesaba görünmez.
-- Onay e-postasının filtrelenmemesi için kaydolmadan **önce**
-  **screenonauto@lzn.idv.tw** adresini kişilerinize ekleyin.
+- Kayıtlar, her birinde sınırlı sayıda yer bulunan **30 dakikalık turlar** hâlinde yapılır. Kayıt sayfası canlı bir geri sayım gösterir.
+- Bir turun kayıtları kapandığında Google Play'deki test kullanıcısı listesi güncellenir. Birkaç dakika sonra yer alan herkesin yükleme için **25 dakikalık bir süresi** olur.
+- **Bekleme listesi yoktur**: Bir tur dolarsa bir sonrakini deneyin.
+- **Hiç e-posta gönderilmez** — her şey kayıt sayfasında gerçekleşir.
 
 ## Nasıl Katılınır
 
-1. **Katılım** formunu açın, istenirse oturum açın, e-postanızı kaydeden kutucuğu
-   işaretleyin ve gönderin:
+1. Telefonunuzda kayıt sayfasını açın ve **telefonunuzdaki Play Store'un kullandığı Google hesabıyla giriş yapın** — uygulama yalnızca o hesaba görünür:
 
-   <a class="formcta join" href="https://docs.google.com/forms/d/1NbWZzm__eYXzPb1aFfa3j6aZTpo4Ke0G2bzd03cFAVE/viewform"><span class="lab">Teste katıl</span><span class="host">docs.google.com</span></a>
-2. **Katılım bağlantısı** içeren bir onay e-postası alacaksınız. Bağlantıyı açın ve **Test kullanıcısı ol**'a dokunun.
-3. Aynı e-postadaki Play Store bağlantısını açın ve **ScreenOnAuto**'yu normal şekilde yükleyin.
+   🟢 **[Kayıt sayfasını aç](https://screenonauto.lzn.idv.tw/join/?lang=tr)**
+2. **Bu tura kaydolun** düğmesine dokunun. Sayfa, yükleme sürenize kadar geri sayar — sayfayı açık tutun; yükleme düğmeleri orada otomatik olarak görünür.
+3. Süreniz başladığında önce **Test kullanıcısı ol**, ardından **Play Store'da aç** düğmesine dokunun ve **ScreenOnAuto**'yu normal şekilde yükleyin. Play Store uygulamayı henüz göstermiyorsa Play Store'u kapatıp bağlantıya tekrar dokunun; birkaç denemeden sonra genellikle görünür.
 4. **Yükledikten sonra** **Android Auto → Başlatıcıyı özelleştir**'i açın ve **iki** ScreenOnAuto girişini gördüğünüzü doğrulayın (tam ekran ve Legacy). Üçüncü bir giriş olan **Media Controller** yalnızca eski Android Auto sürümlerinde görünür; yeni sürümlerde tasarım gereği görünmez ve bu normaldir. Tam liste ve bu iki girişten biri eksik olursa yapılacaklar için [Android Auto'da doğrulama](/tr/#verify) bölümüne bakın.
 5. Hazırsınız — arabada yansıtmayı başlatmak için **[Nasıl Kullanılır](/docs/tr/how-to-use/)** kılavuzuna bakın.
 
-## Kaydolduktan Sonra
+## Bilmekte Fayda Var
 
-> **❗ Önemli**
-> - **Boş yer varsa:** test kullanıcısı listesi Google Play ile **her saat başı toplu
->   olarak** eşitlenir ve **katılım bağlantınızı** içeren onay e-postası
->   (**screenonauto@lzn.idv.tw** adresinden) hemen ardından gönderilir — normalde
->   **bir saat içinde** ulaşır.
-> - **Liste doluysa:** **hemen bir bekleme listesi e-postası** alırsınız; bir yer
->   açıldığında otomatik olarak eklenirsiniz ve onay e-postası ardından gelir.
-> - **Yerler sınırlıdır ve dönüşümlüdür:** başkaları beklerken, en uzun süredir
->   tutulan yerler (yaklaşık bir günden fazla — yükleyip yüklemediğinize değil, yeri
->   aldığınız ana göre sayılır) sıradakilere devredilir. Bu yüzden eklendikten sonra
->   **kısa sürede yükleyin**.
-> - **E-posta gelmedi mi?** **Spam** ve **Tanıtımlar** klasörlerini kontrol edin ve
->   **"Spam değil"** olarak işaretleyin. Katılımdan sonra uygulamanın hesabınız için
->   Play Store'da görünmesi birkaç dakika sürebilir.
+- **Sürenizi kaçırdınız mı?** Başka bir tura kaydolmanız yeterli — sınır yoktur.
+- **Süreniz bittikten sonra** yüklü uygulama normal şekilde çalışmaya devam eder.
+- **Güncellemeler:** Süreniz bittikten sonra Play Store size güncelleme sunmaz. Güncellemek için başka bir tura kaydolun ve süreniz içinde aynı yükleme bağlantılarına dokunun; Play Store sayfasında **Yükle** yerine **Güncelle** görünür.
+- **E-posta adresiniz** yalnızca sizi turunuzun test kullanıcısı listesine eklemek için kullanılır ve o turun yükleme süresi biter bitmez silinir.
+- Daha fazla yanıtı [kayıt sayfasındaki](https://screenonauto.lzn.idv.tw/join/?lang=tr) sık sorulan sorularda bulabilirsiniz.
 
-## Testten Ayrılma
-
-ScreenOnAuto'yu yükledikten sonra lütfen yerinizi sıradaki kişiye bırakın — yerler
-sınırlıdır ve erken bırakmanız bekleyen birinin uygulamaya daha çabuk kavuşmasını
-sağlar.
-
-**Ayrılmak telefonunuzdaki kurulu uygulamayı etkilemez**; normal şekilde çalışmaya
-devam eder. Yalnızca Play üzerinden güncelleme almazsınız; daha yeni bir sürüm
-istediğinizde yukarıdaki formla yeniden kaydolmanız yeterlidir.
-
-**Ayrılma** formunu **kaldırmak istediğiniz hesapla oturum açmış olarak** açın ve
-gönderin:
-
-<a class="formcta" href="https://docs.google.com/forms/d/1CaLlyfOFeduNU22GN9rufE4R-NlEEx3KExDPOvjawZ0/viewform"><span class="lab">Testten ayrıl</span><span class="host">docs.google.com</span></a>
 ## Notlar
 
 - **Android 13 ve altında** betaya katılmak isteğe bağlıdır — bunun yerine APK'yı elle de yükleyebilirsiniz (bkz. [kurulum kılavuzu](/tr/#install)).

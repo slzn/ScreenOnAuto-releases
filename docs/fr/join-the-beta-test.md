@@ -1,11 +1,11 @@
 ---
 title: "Rejoindre le test bêta"
-description: "Installation via le canal de test interne du Play Store (obligatoire sur Android 14+) — formulaire d'inscription et instructions pas à pas."
+description: "Installez ScreenOnAuto depuis Google Play (obligatoire sur Android 14+) — le fonctionnement des tours d'inscription de 30 minutes, étape par étape."
 lang: fr
 slug: join-the-beta-test
 permalink: /docs/fr/join-the-beta-test/
 date: 2026-07-17
-last_modified_at: 2026-09-23
+last_modified_at: 2026-09-30
 ---
 
 # Rejoindre le test bêta
@@ -19,58 +19,31 @@ Installez ScreenOnAuto via la liste de testeurs bêta de Google Play — **oblig
 > de fonctionner correctement avec Android Auto) — ce n'est **pas** une version
 > d'essai ou inachevée.
 
-## Avant de commencer
+## Comment ça marche
 
-- Le formulaire vous demande de **vous connecter à Google** et enregistre automatiquement
-  le compte connecté — il n'y a rien à saisir. Connectez-vous donc avec le **même compte
-  Google** que celui du Play Store de votre téléphone ; l'app ne sera visible pour aucun
-  autre compte.
-- Ajoutez **screenonauto@lzn.idv.tw** à vos contacts **avant** de vous inscrire, pour que
-  l'e-mail de confirmation ne soit pas filtré.
+- Les inscriptions se font par **tours de 30 minutes**, chacun avec un nombre de places limité. La page d'inscription affiche un compte à rebours en direct.
+- À la clôture des inscriptions d'un tour, la liste des testeurs sur Google Play est mise à jour. Quelques minutes plus tard, les personnes retenues disposent d'une **fenêtre de 25 minutes** pour installer l'app.
+- Il n'y a **pas de liste d'attente** : si un tour est complet, essayez simplement le suivant.
+- **Aucun e-mail** n'est envoyé : tout se passe sur la page d'inscription.
 
 ## Comment s'inscrire
 
-1. Ouvrez le formulaire d'**inscription**, connectez-vous si nécessaire, cochez la case
-   qui enregistre votre adresse e-mail, puis envoyez :
+1. Sur votre téléphone, ouvrez la page d'inscription et **connectez-vous avec le compte Google utilisé par le Play Store de votre téléphone** — l'app n'est visible que pour ce compte :
 
-   <a class="formcta join" href="https://docs.google.com/forms/d/1dWKNUO7b5cMwTaQTtGW7b0F5PqK6plGzNbShktpOI7E/viewform"><span class="lab">Rejoindre le test</span><span class="host">docs.google.com</span></a>
-2. Vous recevrez un e-mail de confirmation avec un **lien d'opt-in**. Ouvrez-le et touchez **Devenir testeur**.
-3. Ouvrez le lien Play Store du même e-mail et installez **ScreenOnAuto** normalement.
+   🟢 **[Ouvrir la page d'inscription](https://screenonauto.lzn.idv.tw/join/?lang=fr)**
+2. Touchez **M'inscrire à ce tour**. La page affiche le compte à rebours jusqu'à votre fenêtre d'installation — gardez-la ouverte ; les boutons d'installation y apparaîtront automatiquement.
+3. Quand votre fenêtre s'ouvre, touchez d'abord **Devenir testeur**, puis **Ouvrir dans le Play Store**, et installez **ScreenOnAuto** normalement. Si le Play Store n'affiche pas encore l'app, fermez-le et touchez à nouveau le lien ; elle apparaît généralement après quelques essais.
 4. **Après l'installation**, ouvrez **Android Auto → Personnaliser le lanceur** et vérifiez que les **deux** entrées ScreenOnAuto apparaissent (plein écran et Legacy). Une troisième entrée, **Media Controller**, n'apparaît que sur les anciennes versions d'Android Auto — sur les récentes elle est absente par conception, et c'est normal. Voir [Vérifier dans Android Auto](/fr/#verify) pour la liste complète et quoi faire s'il manque l'une des deux.
 5. C'est prêt — consultez **[Comment utiliser](/docs/fr/how-to-use/)** pour démarrer la duplication dans la voiture.
 
-## Après l'inscription
+## Bon à savoir
 
-> **❗ Important**
-> - **Si une place est libre :** la liste des testeurs est synchronisée avec Google Play
->   par **lot horaire à l'heure pile**, et l'e-mail de confirmation avec votre **lien
->   d'opt-in** (envoyé par **screenonauto@lzn.idv.tw**) part juste après — il arrive
->   normalement **en moins d'une heure**.
-> - **Si la liste est pleine :** vous recevez **immédiatement un e-mail de liste
->   d'attente** ; dès qu'une place se libère, vous êtes ajouté automatiquement et
->   l'e-mail de confirmation suit.
-> - **Les places sont limitées et tournent :** quand d'autres personnes attendent, les
->   places détenues le plus longtemps (plus d'un jour environ — compté à partir de
->   l'obtention de la place, installation ou non) passent aux suivants. **Installez donc
->   rapidement** après avoir été ajouté.
-> - **Pas d'e-mail ?** Vérifiez **Spam** et **Promotions** et marquez-le **« Non spam »**.
->   Après l'opt-in, l'app peut mettre quelques minutes à apparaître sur le Play Store
->   pour votre compte.
+- **Fenêtre manquée ?** Inscrivez-vous simplement à un autre tour — il n'y a pas de limite.
+- **Après la fin de votre fenêtre**, l'app installée continue de fonctionner normalement.
+- **Mises à jour :** après la fin de votre fenêtre, le Play Store ne vous propose plus de mises à jour. Pour mettre à jour, inscrivez-vous à un autre tour et touchez les mêmes liens d'installation pendant votre fenêtre : la page du Play Store affiche **Mettre à jour** à la place d'**Installer**.
+- **Votre adresse e-mail** sert uniquement à vous ajouter à la liste des testeurs de votre tour, et elle est supprimée dès la fin de la fenêtre d'installation de ce tour.
+- D'autres réponses se trouvent dans la FAQ de la [page d'inscription](https://screenonauto.lzn.idv.tw/join/?lang=fr).
 
-## Quitter le test
-
-Une fois ScreenOnAuto installé, libérez votre place pour la personne suivante : les
-places sont limitées, et la libérer tôt permet à quelqu'un en attente d'obtenir l'app
-plus vite.
-
-**Quitter le test n'affecte pas l'app déjà installée sur votre téléphone** — elle
-continue de fonctionner normalement. Vous cessez simplement de recevoir les mises à
-jour via Play ; quand vous voudrez une version plus récente, réinscrivez-vous avec le
-formulaire ci-dessus.
-
-Ouvrez le formulaire de **départ** **connecté avec le compte à retirer** et envoyez :
-
-<a class="formcta" href="https://docs.google.com/forms/d/1uWwF1mXaarqYUXW--IyFT58j4vf4LXv-EFVRvtL8Us4/viewform"><span class="lab">Quitter le test</span><span class="host">docs.google.com</span></a>
 ## Remarques
 
 - Sur **Android 13 et moins**, rejoindre la bêta est facultatif — vous pouvez aussi installer l'APK en sideload (voir le [guide d'installation](/fr/#install)).

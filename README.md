@@ -78,7 +78,7 @@ These unlock things the normal Android APIs cannot do. They need **[Shizuku](htt
 
 The app is **not searchable on the Play Store** — installation is **invite-based**.
 See **[Join the Beta Test](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)**
-for the sign-up form and step-by-step instructions. After installing, launch the app and grant
+for the sign-up page and step-by-step instructions. After installing, launch the app and grant
 the in-app permissions the same way.
 
 ### Android 13 and below — sideload with KingInstaller

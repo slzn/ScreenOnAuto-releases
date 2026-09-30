@@ -69,7 +69,7 @@ Diese schalten frei, was die normalen Android-APIs nicht können. Sie benötigen
 
 Die App ist im Play Store **nicht über die Suche zu finden** – die Installation erfolgt **auf Einladung**.
 Siehe **[Beta-Test beitreten](https://github.com/slzn/ScreenOnAuto-releases/wiki/Beta-Test-beitreten)**
-für das Anmeldeformular und die Schritt-für-Schritt-Anleitung. Nach der Installation die App
+für die Anmeldeseite und die Schritt-für-Schritt-Anleitung. Nach der Installation die App
 öffnen und die angeforderten Berechtigungen wie üblich erteilen.
 
 ### Android 13 und niedriger – Sideload mit KingInstaller

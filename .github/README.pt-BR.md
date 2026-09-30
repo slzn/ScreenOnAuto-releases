@@ -69,7 +69,7 @@ Estes desbloqueiam o que as APIs normais do Android não conseguem fazer. Exigem
 
 O app **não aparece na busca da Play Store** — a instalação é **por convite**.
 Veja **[Participar do Teste Beta](https://github.com/slzn/ScreenOnAuto-releases/wiki/Participar-do-Teste-Beta)**
-para o formulário de inscrição e o passo a passo. Depois de instalar, abra o app e conceda
+para a página de inscrição e o passo a passo. Depois de instalar, abra o app e conceda
 as permissões solicitadas normalmente.
 
 ### Android 13 ou inferior — sideload com KingInstaller
