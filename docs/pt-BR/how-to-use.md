@@ -5,7 +5,7 @@ lang: pt-BR
 slug: how-to-use
 permalink: /docs/pt-BR/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-09-23
+last_modified_at: 2026-09-30
 ---
 
 # Como Usar
@@ -125,3 +125,17 @@ Qualquer uma destas opções funciona:
   jeito.
 - A **barra de navegação do Android Auto** na tela do carro é desenhada pelo próprio
   Android Auto e o app não pode ocultá-la.
+- **Um servidor Shizuku iniciado via ADB é encerrado quando você conecta ao carro** — a
+  conexão USB coloca o celular em modo acessório, o que reinicia o ADB e derruba o
+  Shizuku junto — a depuração sem fio passa pelo mesmo ADB, então não ajuda. Basta
+  iniciar o Shizuku de novo e o ScreenOnAuto reconecta sozinho; melhor ainda, use o
+  [fork do thedjchi](https://github.com/thedjchi/Shizuku), cujo serviço de watchdog o
+  reinicia para você. Usuários com root e conexões sem fio do Android Auto não são
+  afetados.
+- **Como acordar a tela depois do desligamento** — a tela sensível ao toque desliga
+  junto com o painel, então tocar no celular não faz nada. Toque no botão
+  **Escurecimento automático** na tela do carro — alternar o escurecimento automático
+  acorda a tela (ative o botão antes em **Botões na tela → Botões de função**; ele vem
+  desligado). Ou pressione o botão liga/desliga do celular **duas vezes**, já que o
+  primeiro toque é o que coloca o sistema para dormir. Parar o espelhamento ou
+  desconectar o Android Auto também traz a tela de volta.

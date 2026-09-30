@@ -201,6 +201,7 @@ section h3 { font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 60
 .grid.more .card { padding: 12px 14px; }
 .grid.more .card b { font-size: 0.95rem; }
 .grid.more .card p { font-size: 0.88rem; }
+.grid.priv { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }  /* 2×2 on desktop */
 
 .steps, .doc ol { counter-reset: step; padding-left: 0; list-style: none; }
 .steps > li, .doc ol > li { position: relative; padding-left: 42px; margin: 14px 0; }

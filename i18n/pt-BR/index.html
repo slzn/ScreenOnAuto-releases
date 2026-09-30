@@ -50,7 +50,7 @@ permalink: /pt-BR/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons, Match the phone screen to the car, Virtual touchscreen for gesture apps, Start mirroring in the background, Reverse landscape"
 }
 </script>
 
@@ -130,36 +130,30 @@ permalink: /pt-BR/
 <section class="wrap" id="features">
   <h2>Recursos</h2>
   <div class="grid core">
-    <div class="card"><b>Espelhamento de tela</b><p>Captura e espelha a tela do celular na central multimídia do Android Auto em tempo real.</p></div>
-    <div class="card"><b>Proxy de sessão de mídia</b><p>Controle qualquer app de mídia do celular pela interface de mídia nativa do Android Auto.</p></div>
-    <div class="card"><b>Encaminhamento de toque <span class="muted">(experimental)</span></b><p>Toque, role, deslize e use o gesto de pinça para ampliar na tela do Android Auto para controlar o celular.</p></div>
+    <div class="card"><b>Espelhamento de tela</b><p>Mostre a tela do celular no display do carro — em tela cheia ou lado a lado com o mapa.</p></div>
+    <div class="card"><b>Controles de mídia</b><p>Controle qualquer app de mídia do celular pelo painel de mídia do próprio Android Auto.</p></div>
+    <div class="card"><b>Início automático</b><p>O espelhamento começa quando o carro conecta, pode abrir um app escolhido e pode iniciar em segundo plano, sem o app aparecer no celular.</p></div>
   </div>
   <div class="grid more">
-    <div class="card"><b>Início automático</b><p>Começa a espelhar automaticamente quando o Android Auto conecta.</p></div>
-    <div class="card"><b>Lançar app automaticamente</b><p>Abre automaticamente um app escolhido no celular quando o espelhamento inicia.</p></div>
-    <div class="card"><b>Espelhar apenas este app <span class="muted">(Android 15+)</span></b><p>Envia ao carro somente o app de abertura automática, em vez da tela inteira. Requer a permissão de captura concedida previamente via ADB.</p></div>
-    <div class="card"><b>Controle Externo</b><p>Inicie, pare ou alterne o espelhamento com um intent, de um app de automação, um atalho ou ADB. <a href="https://screenonauto.lzn.idv.tw/docs/pt-BR/control-mirroring-from-another-app/">Controlar o Espelhamento a partir de Outro App →</a></p></div>
-    <div class="card"><b>Forçar paisagem</b><p>Força o celular para o modo paisagem durante o espelhamento, com botão de alternância na tela.</p></div>
-    <div class="card"><b>Escurecimento automático</b><p>Reduz automaticamente o brilho da tela durante o espelhamento ocioso (atraso de 15–120 s).</p></div>
-    <div class="card"><b>Impedir suspensão</b><p>Mantém a tela do celular acesa durante o espelhamento; para automaticamente ao desconectar.</p></div>
-    <div class="card"><b>Atalhos de apps</b><p>Adicione até 4 botões de acesso rápido a apps na tela de espelhamento do Android Auto.</p></div>
-    <div class="card"><b>Botões na tela</b><p>Mostre ou oculte individualmente os botões: Forçar paisagem, Escurecimento automático e Voltar / Início / Apps recentes.</p></div>
-    <div class="card"><b>Posição dos botões</b><p>No espelhamento Legacy, alinhe os botões à esquerda ou desvie automaticamente da barra de navegação do celular.</p></div>
-    <div class="card"><b>Ajuste do espelhamento</b><p>Ajuste a largura/altura do espelhamento para centrais que cortam as bordas. O Espelhamento desenhado pelo app (experimental), nas configurações avançadas, também evita a distorção na vista dividida.</p></div>
+    <div class="card"><b>Espelhar apenas este app <span class="muted">(Android 15+)</span></b><p>Envie só um app para o carro em vez da tela inteira.</p></div>
+    <div class="card"><b>Botões na tela</b><p>Atalhos de apps na tela do carro, além de Forçar paisagem, Escurecimento automático e Voltar / Início / Recentes.</p></div>
+    <div class="card"><b>Tela e bateria</b><p>Forçar paisagem (em qualquer sentido), escurecer quando ocioso e manter o celular acordado durante o espelhamento.</p></div>
+    <div class="card"><b>Ajuste à tela do carro</b><p>Corrija bordas cortadas pela central e mantenha a imagem sem distorção na tela dividida.</p></div>
+    <div class="card"><b>Controle Externo</b><p>Inicie ou pare o espelhamento pelo Tasker, por um atalho ou via ADB. <a href="https://screenonauto.lzn.idv.tw/docs/pt-BR/control-mirroring-from-another-app/">Como funciona →</a></p></div>
+    <div class="card"><b>Encaminhamento de toque <span class="muted">(experimental)</span></b><p>Toque e role no celular pela tela do carro.</p></div>
   </div>
 </section>
 
 <section class="wrap" id="privileged">
   <h2>Recursos privilegiados</h2>
-  <p class="muted">Opcionais e totalmente sob seu controle: exigem <a href="https://shizuku.rikka.app/">Shizuku</a> ou root. Se o celular não tiver nenhum dos dois, nada muda — a seção continua listada nas configurações do app, mas tudo nela fica esmaecido, e todos os outros recursos funcionam exatamente como antes.</p>
-  <div class="grid core">
-    <div class="card"><b>Desligar a tela do telefone</b><p>Desliga o painel do celular quando o Escurecimento automático entra em ação, enquanto o carro continua exibindo o espelhamento.</p></div>
-    <div class="card"><b>Injeção de toque real</b><p>Encaminha os movimentos reais do seu dedo, então pressionar e segurar, arrastar e multitoque funcionam no espelhamento Legacy.</p></div>
-    <div class="card"><b>Botões de navegação do celular</b><p>Voltar / Início / Recentes funcionam sem nenhum Serviço de acessibilidade ativado. Ative-os em Botões na tela → Botões de função.</p></div>
-    <div class="card"><b>Ajustar a tela do telefone à do carro</b><p>Remodela a tela do celular para a proporção da unidade do carro durante o espelhamento, eliminando na origem as barras pretas e a distorção na tela dividida.</p></div>
+  <p class="muted">Opcional — requer <a href="https://shizuku.rikka.app/">Shizuku</a> ou root. Sem eles, todo o resto funciona exatamente igual.</p>
+  <div class="grid core priv">
+    <div class="card"><b>Desligar a tela do telefone</b><p>O painel do celular apaga enquanto o carro continua mostrando o espelhamento.</p></div>
+    <div class="card"><b>Injeção de toque real</b><p>Toque longo, arrastar e gestos com vários dedos a partir da tela do carro. Com a tela sensível virtual ativada, apps de gestos como o GMD também os recebem.</p></div>
+    <div class="card"><b>Botões de navegação do celular</b><p>Voltar / Início / Recentes sem precisar de serviço de acessibilidade.</p></div>
+    <div class="card"><b>Ajustar a tela do telefone à do carro</b><p>Adapta o celular à proporção do carro durante o espelhamento — sem barras pretas nem distorção.</p></div>
   </div>
-  <p class="muted"><b>Um servidor Shizuku iniciado via ADB é encerrado quando você conecta ao carro.</b> A conexão USB coloca o celular em modo acessório, o que reinicia o ADB e derruba o Shizuku junto — a depuração sem fio passa pelo mesmo ADB, então não ajuda. Basta iniciar o Shizuku de novo e o ScreenOnAuto reconecta sozinho; melhor ainda, use o <a href="https://github.com/thedjchi/Shizuku">fork do thedjchi</a>, cujo serviço de watchdog o reinicia para você. Usuários com root e conexões sem fio do Android Auto não são afetados.</p>
-  <p class="muted"><b>Como acordar a tela depois do desligamento:</b> a tela sensível ao toque desliga junto com o painel, então tocar no celular não faz nada. Toque no botão <b>Escurecimento automático</b> na tela do carro — alternar o escurecimento automático acorda a tela (ative o botão antes em <b>Botões na tela → Botões de função</b>; ele vem desligado). Ou pressione o botão liga/desliga do celular <b>duas vezes</b>, já que o primeiro toque é o que coloca o sistema para dormir. Parar o espelhamento ou desconectar o Android Auto também traz a tela de volta.</p>
+  <p class="muted">O Shizuku parou ao conectar no carro, ou a tela não acorda? Veja <a href="https://screenonauto.lzn.idv.tw/docs/pt-BR/how-to-use/#solução-de-problemas">Solução de problemas</a>.</p>
 </section>
 
 <section class="wrap" id="requirements">
@@ -176,8 +170,7 @@ permalink: /pt-BR/
   <h2>Instalação</h2>
 
   <h3>Android 14 ou superior — instale pelo Google Play</h3>
-  <p class="muted">O Android Auto só executa apps instalados pela Play Store, e o Android 14+ bloqueia o método alternativo com o KingInstaller — então o Play é a única forma de obter uma versão que o Android Auto aceite. O que você instala continua sendo o app completo, distribuído pela trilha de teste interno do Play.</p>
-  <p>A instalação é feita pelo teste interno do Google Play — o app não aparece na busca da Play Store. <a href="https://screenonauto.lzn.idv.tw/join/?lang=pt-BR"><b>Inscreva-se na página de instalação</b></a>: uma nova rodada abre a cada 30 minutos, e o link de instalação aparece quando a rodada começa. Passo a passo completo: <a href="https://screenonauto.lzn.idv.tw/docs/pt-BR/join-the-beta-test/"><b>Participar do Teste Beta</b></a>.</p>
+  <p>O Android Auto só executa apps instalados pela Play Store, e o Android 14+ bloqueia o método do KingInstaller — por isso, instale pelo teste interno do Google Play. É o mesmo app completo do GitHub, mas ele não aparece na busca da Play Store: <a href="https://screenonauto.lzn.idv.tw/join/?lang=pt-BR"><b>inscreva-se na página de instalação</b></a>. Uma nova rodada abre a cada 30 minutos, e o link de instalação aparece quando a rodada começa. Passo a passo completo: <a href="https://screenonauto.lzn.idv.tw/docs/pt-BR/join-the-beta-test/"><b>Participar do Teste Beta</b></a>.</p>
 
   <h3>Android 13 ou inferior — sideload com KingInstaller</h3>
   <p class="muted">O Android Auto exige apps instalados pela Google Play Store. Um APK instalado diretamente é rejeitado; o <a href="https://github.com/fcaronte/KingInstaller/releases">KingInstaller</a> instala APKs informando a Google Play Store como origem da instalação.</p>
@@ -198,7 +191,7 @@ permalink: /pt-BR/
       <tr><td><img class="mini" src="../images/icon_legacy.png" alt=""></td><td><b>ScreenOnAuto (Legacy)</b></td><td>Espelha pela via de projeção Legacy — pode ser exibido lado a lado com o mapa.</td></tr>
     </table>
   </div>
-  <p>Dependendo da sua <b>versão do Android Auto</b>, você também pode ver uma terceira entrada, <b>ScreenOnAuto Media Controller</b> — ou não. Os dois casos são normais: versões antigas a listam com ícone próprio; as mais recentes integram o painel de mídia embutido diretamente, então não é preciso um ícone separado. <b>O controle de mídia continua funcionando nos dois casos.</b></p>
+  <p>Versões mais antigas do Android Auto também mostram uma terceira entrada, <b>ScreenOnAuto Media Controller</b>. Se ela não aparecer, é normal — o controle de mídia funciona do mesmo jeito.</p>
   <p>Tudo pronto? Veja <a href="https://screenonauto.lzn.idv.tw/docs/pt-BR/how-to-use/"><b>Como Usar</b></a> para iniciar o espelhamento no carro.</p>
 </section>
 
@@ -208,9 +201,9 @@ permalink: /pt-BR/
     <table>
       <tr><th>Permissão</th><th>Necessária para</th></tr>
       <tr><td>Captura de tela (MediaProjection)</td><td>Espelhamento de tela</td></tr>
-      <tr><td>Acesso às notificações</td><td>Proxy de sessão de mídia</td></tr>
+      <tr><td>Acesso às notificações</td><td>Controles de mídia</td></tr>
       <tr><td>Sobrepor a outros apps</td><td>Escurecimento automático e Forçar paisagem</td></tr>
-      <tr><td>Serviço de acessibilidade</td><td>Encaminhamento de toque (experimental) e os botões Voltar / Início / Apps recentes — com os recursos privilegiados nenhum dos dois precisa dele: os botões funcionam assim que um backend é conectado, e o encaminhamento de toque quando Injeção de toque real está ativado</td></tr>
+      <tr><td>Serviço de acessibilidade</td><td>Encaminhamento de toque e botões Voltar / Início / Recentes (desnecessário com os recursos privilegiados)</td></tr>
     </table>
   </div>
   <p class="muted">Dica: para evitar o diálogo de permissão de captura de tela a cada início, conceda a permissão uma única vez via ADB — veja <a href="https://screenonauto.lzn.idv.tw/docs/pt-BR/grant-mirror-permission-via-adb/">Conceder Permissão de Espelhamento via ADB</a>. Isso também é o que libera <b>Espelhar apenas este app</b>.</p>
@@ -219,7 +212,7 @@ permalink: /pt-BR/
 <section class="wrap" id="limitations">
   <h2>Limitações conhecidas</h2>
   <ul>
-    <li><b>A tela do celular precisa ficar ligada durante o espelhamento</b> — o espelhamento mostra exatamente o que está na tela do celular, então não continua com a tela desligada ou bloqueada. Use <b>Impedir suspensão</b> para manter a tela acesa e <b>Escurecimento automático</b> para escurecê-la e economizar bateria em vez de desligá-la. Com Shizuku ou root e o Escurecimento automático ativado, Desligar a tela do telefone remove essa limitação: desliga o painel enquanto o espelhamento continua.</li>
+    <li><b>A tela do celular precisa ficar ligada durante o espelhamento</b> — o espelhamento mostra o que está na tela do celular. Use <b>Impedir suspensão</b> para mantê-la acesa e <b>Escurecimento automático</b> para economizar bateria; com Shizuku ou root, Desligar a tela do telefone remove essa limitação.</li>
     <li><b>Conteúdo protegido por DRM não pode ser espelhado</b> — apps como Netflix ou Disney+ mostram uma tela preta. É uma restrição da plataforma Android que o app não tem como contornar.</li>
     <li>A <b>barra de navegação do Android Auto</b> na tela do carro é desenhada pelo próprio Android Auto e não pode ser ocultada.</li>
   </ul>

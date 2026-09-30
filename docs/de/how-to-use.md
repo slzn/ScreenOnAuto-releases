@@ -5,7 +5,7 @@ lang: de
 slug: how-to-use
 permalink: /docs/de/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-09-23
+last_modified_at: 2026-09-30
 ---
 
 # Verwendung
@@ -129,3 +129,19 @@ Jede dieser Möglichkeiten funktioniert:
   dasselbe Problem auf andere Weise löst.
 - Die **Android-Auto-Navigationsleiste** auf dem Fahrzeugbildschirm wird von Android
   Auto selbst gezeichnet und kann von der App nicht ausgeblendet werden.
+- **Ein per ADB gestarteter Shizuku-Server wird beendet, sobald du das Telefon ans Auto
+  anschließt** – die USB-Verbindung versetzt das Telefon in den Zubehörmodus, wodurch
+  ADB neu startet und Shizuku mitnimmt – Wireless Debugging läuft über dasselbe ADB und
+  hilft daher nicht. Starte Shizuku einfach neu, ScreenOnAuto verbindet sich von selbst
+  wieder; besser noch: Verwende den
+  [thedjchi-Fork](https://github.com/thedjchi/Shizuku), dessen Watchdog-Dienst ihn für
+  dich neu startet. Root-Nutzer und drahtlose Android-Auto-Verbindungen sind nicht
+  betroffen.
+- **Den Bildschirm nach dem Ausschalten wieder aufwecken** – der Touchscreen wird
+  zusammen mit dem Display abgeschaltet, Tippen auf das Telefon bewirkt also nichts.
+  Tippe auf dem Autobildschirm auf die Schaltfläche **Automatisches Abdunkeln** – das
+  Umschalten des automatischen Abdunkelns weckt den Bildschirm auf (aktiviere die
+  Schaltfläche zuerst unter **Bildschirm-Schaltflächen → Funktionsschaltflächen**; sie
+  ist standardmäßig aus). Oder drücke die Ein-/Aus-Taste des Telefons **zweimal**, denn
+  der erste Druck versetzt das System erst in den Ruhezustand. Auch das Beenden der
+  Spiegelung oder das Trennen von Android Auto schaltet den Bildschirm wieder ein.

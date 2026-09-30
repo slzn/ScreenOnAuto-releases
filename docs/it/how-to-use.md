@@ -5,7 +5,7 @@ lang: it
 slug: how-to-use
 permalink: /docs/it/how-to-use/
 date: 2026-07-17
-last_modified_at: 2026-09-23
+last_modified_at: 2026-09-30
 ---
 
 # Come si usa
@@ -127,3 +127,18 @@ Uno qualsiasi di questi metodi:
   modo.
 - La **barra di navigazione di Android Auto** sullo schermo dell'auto è disegnata da
   Android Auto stesso e l'app non può nasconderla.
+- **Un server Shizuku avviato via ADB si spegne quando colleghi il telefono all'auto** —
+  la connessione USB mette il telefono in modalità accessorio, il che riavvia ADB e si
+  porta via Shizuku — il debug wireless passa dallo stesso ADB, quindi non aiuta.
+  Riavvia Shizuku e ScreenOnAuto si riconnette da solo; meglio ancora, usa il [fork di
+  thedjchi](https://github.com/thedjchi/Shizuku), il cui servizio watchdog lo riavvia al
+  posto tuo. Gli utenti root e le connessioni Android Auto wireless non sono
+  interessati.
+- **Come riaccendere lo schermo dopo lo spegnimento** — il touchscreen si spegne insieme
+  al pannello, quindi toccare il telefono non produce alcun effetto. Tocca il pulsante
+  **Oscuramento automatico** sullo schermo dell'auto: attivare o disattivare
+  l'oscuramento automatico riaccende lo schermo (prima attiva il pulsante in **Pulsanti
+  sullo schermo → Pulsanti funzione**; è disattivato per impostazione predefinita).
+  Oppure premi **due volte** il tasto di accensione del telefono, perché la prima
+  pressione è quella che mette il sistema in sospensione. Anche interrompere il
+  mirroring o scollegare Android Auto riaccende lo schermo.

@@ -49,7 +49,7 @@ permalink: /ar/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons, Match the phone screen to the car, Virtual touchscreen for gesture apps, Start mirroring in the background, Reverse landscape"
 }
 </script>
 
@@ -129,36 +129,30 @@ permalink: /ar/
 <section class="wrap" id="features">
   <h2>الميزات</h2>
   <div class="grid core">
-    <div class="card"><b>النسخ المطابق للشاشة</b><p>يلتقط شاشة الهاتف ويعرضها على وحدة Android Auto في الوقت الفعلي.</p></div>
-    <div class="card"><b>وسيط جلسة الوسائط</b><p>تحكَّم بأي تطبيق وسائط على الهاتف من واجهة الوسائط المدمجة في Android Auto.</p></div>
-    <div class="card"><b>إعادة توجيه اللمس <span class="muted">(تجريبي)</span></b><p>المس واسحب وحرِّك بسرعة وقرِّص للتكبير على شاشة Android Auto للتحكم في هاتفك.</p></div>
+    <div class="card"><b>النسخ المطابق للشاشة</b><p>اعرض شاشة هاتفك على شاشة السيارة — بملء الشاشة أو بجانب الخريطة.</p></div>
+    <div class="card"><b>التحكم في الوسائط</b><p>تحكّم في أي تطبيق وسائط على الهاتف من لوحة الوسائط المدمجة في Android Auto.</p></div>
+    <div class="card"><b>البدء التلقائي</b><p>يبدأ النسخ المطابق عند اتصال السيارة، ويمكنه فتح تطبيق تختاره، والبدء في الخلفية دون أن يظهر التطبيق على الهاتف.</p></div>
   </div>
   <div class="grid more">
-    <div class="card"><b>البدء التلقائي</b><p>يبدأ النسخ المطابق تلقائيًا عند اتصال Android Auto.</p></div>
-    <div class="card"><b>تشغيل تطبيق تلقائيًا</b><p>يفتح تطبيقًا تختاره على الهاتف تلقائيًا عند بدء النسخ المطابق.</p></div>
-    <div class="card"><b>نسخ هذا التطبيق فقط <span class="muted">(Android 15+)</span></b><p>يُرسل إلى السيارة التطبيق الذي يُفتح تلقائيًا فقط بدلًا من الشاشة بأكملها. يتطلب إذن تسجيل الشاشة ممنوحًا مسبقًا عبر ADB.</p></div>
-    <div class="card"><b>التحكم الخارجي</b><p>ابدأ النسخ المطابق أو أوقفه أو بدّل حالته عبر Intent، من تطبيق أتمتة أو اختصار أو ADB. <a href="https://screenonauto.lzn.idv.tw/docs/ar/control-mirroring-from-another-app/">التحكم في النسخ المطابق من تطبيق آخر ←</a></p></div>
-    <div class="card"><b>فرض الوضع الأفقي</b><p>يفرض الوضع الأفقي على الهاتف أثناء النسخ المطابق؛ مع زر على الشاشة.</p></div>
-    <div class="card"><b>التعتيم التلقائي</b><p>يخفض سطوع الهاتف تلقائيًا عند عدم الاستخدام أثناء النسخ المطابق (مهلة 15–120 ثانية).</p></div>
-    <div class="card"><b>منع إطفاء الشاشة</b><p>يبقي شاشة الهاتف مضاءة أثناء النسخ المطابق؛ يتوقف تلقائيًا عند قطع الاتصال.</p></div>
-    <div class="card"><b>اختصارات التشغيل</b><p>أضف حتى 4 أزرار تشغيل سريع للتطبيقات على شاشة النسخ المطابق في Android Auto.</p></div>
-    <div class="card"><b>أزرار الشاشة</b><p>أظهر أو أخفِ كل زر: فرض الوضع الأفقي، التعتيم، ورجوع / الشاشة الرئيسية / التطبيقات الأخيرة.</p></div>
-    <div class="card"><b>موضع الأزرار</b><p>حاذِ الأزرار إلى اليسار في النسخ المطابق Legacy أو تجنَّب شريط تنقل الهاتف تلقائيًا.</p></div>
-    <div class="card"><b>ضبط الصورة</b><p>قصّ عرض/ارتفاع الصورة للوحدات التي تقتطع الحواف. كما يمنع خيار النسخ المطابق المرسوم داخل التطبيق (تجريبي) في الإعدادات المتقدمة تشوّه الصورة في العرض المقسّم.</p></div>
+    <div class="card"><b>نسخ هذا التطبيق فقط <span class="muted">(Android 15+)</span></b><p>أرسل تطبيقًا واحدًا إلى السيارة بدل الشاشة كاملة.</p></div>
+    <div class="card"><b>أزرار الشاشة</b><p>اختصارات للتطبيقات على شاشة السيارة، إضافةً إلى فرض الوضع الأفقي والتعتيم التلقائي وأزرار الرجوع / الرئيسية / الأخيرة.</p></div>
+    <div class="card"><b>الشاشة والبطارية</b><p>فرض الوضع الأفقي (بالاتجاهين)، والتعتيم عند الخمول، وإبقاء الهاتف مستيقظًا أثناء النسخ المطابق.</p></div>
+    <div class="card"><b>ملاءمة شاشة السيارة</b><p>استعِد الحواف التي تقصّها شاشة السيارة، وتجنّب التشوّه في العرض المقسّم.</p></div>
+    <div class="card"><b>التحكم الخارجي</b><p>ابدأ النسخ المطابق أو أوقفه من Tasker أو اختصار أو ADB. <a href="https://screenonauto.lzn.idv.tw/docs/ar/control-mirroring-from-another-app/">طريقة العمل ←</a></p></div>
+    <div class="card"><b>إعادة توجيه اللمس <span class="muted">(تجريبي)</span></b><p>انقر ومرّر على الهاتف من شاشة السيارة.</p></div>
   </div>
 </section>
 
 <section class="wrap" id="privileged">
   <h2>الميزات المتميزة</h2>
-  <p class="muted">اختيارية بالكامل وأنت من يقرر تفعيلها: تتطلب <a href="https://shizuku.rikka.app/">Shizuku</a> أو صلاحيات الجذر (root). إن لم يكن في هاتفك أي منهما، لن يتغير شيء — يظل القسم ظاهرًا في إعدادات التطبيق، لكن كل ما فيه يبقى باهتًا وغير قابل للتفعيل، وتعمل جميع الميزات الأخرى تمامًا كما كانت.</p>
-  <div class="grid core">
-    <div class="card"><b>إطفاء شاشة الهاتف</b><p>يُطفئ شاشة الهاتف عند تفعّل التعتيم التلقائي، بينما تواصل السيارة عرض النسخ المطابق.</p></div>
-    <div class="card"><b>حقن اللمس الحقيقي</b><p>ينقل حركات إصبعك الحقيقية، فيعمل الضغط المطوّل والسحب واللمس المتعدد على النسخ المطابق Legacy.</p></div>
-    <div class="card"><b>أزرار تنقّل الهاتف</b><p>تعمل أزرار رجوع / الشاشة الرئيسية / الأخيرة دون تفعيل أي خدمة إمكانية وصول على الإطلاق. فعِّلها من أزرار الشاشة ← أزرار الوظائف.</p></div>
-    <div class="card"><b>مطابقة شاشة الهاتف مع شاشة السيارة</b><p>يعيد تشكيل شاشة الهاتف لتطابق نسبة أبعاد شاشة السيارة أثناء النسخ المطابق، فتختفي الأشرطة السوداء والتشوّه في الشاشة المقسّمة من المصدر.</p></div>
+  <p class="muted">اختيارية — تتطلب <a href="https://shizuku.rikka.app/">Shizuku</a> أو صلاحيات الجذر. بدونهما يعمل كل شيء آخر كما هو تمامًا.</p>
+  <div class="grid core priv">
+    <div class="card"><b>إطفاء شاشة الهاتف</b><p>تنطفئ شاشة الهاتف بينما تواصل السيارة عرض النسخ المطابق.</p></div>
+    <div class="card"><b>حقن اللمس الحقيقي</b><p>الضغط المطوّل والسحب والإيماءات بعدة أصابع من شاشة السيارة. مع تفعيل شاشة اللمس الافتراضية، تتلقاها أيضًا تطبيقات الإيماءات مثل GMD.</p></div>
+    <div class="card"><b>أزرار تنقّل الهاتف</b><p>الرجوع / الرئيسية / الأخيرة دون الحاجة إلى خدمة إمكانية الوصول.</p></div>
+    <div class="card"><b>مطابقة شاشة الهاتف مع شاشة السيارة</b><p>يضبط الهاتف على نسبة أبعاد السيارة أثناء النسخ المطابق — بلا أشرطة سوداء أو تشوّه.</p></div>
   </div>
-  <p class="muted"><b>يتوقف خادم Shizuku الذي بدأ عبر ADB عند توصيل الهاتف بالسيارة.</b> يضع اتصال USB الهاتف في وضع الملحقات، ما يعيد تشغيل ADB ويُسقط Shizuku معه — وتصحيح الأخطاء اللاسلكي يمر عبر ADB نفسه، لذا لا يفيد. ابدأ Shizuku من جديد وسيعيد ScreenOnAuto الاتصال تلقائيًا؛ والأفضل استخدام <a href="https://github.com/thedjchi/Shizuku">نسخة thedjchi</a>، التي تعيد تشغيله تلقائيًا عبر خدمة المراقبة (watchdog). أما مستخدمو الروت واتصالات Android Auto اللاسلكية فلا يتأثرون.</p>
-  <p class="muted"><b>كيفية إيقاظ الشاشة بعد إطفائها:</b> تنطفئ شاشة اللمس مع الشاشة نفسها، لذا لن يفيد لمس الهاتف. اضغط زر <b>التعتيم التلقائي</b> على شاشة السيارة — فتبديل التعتيم التلقائي يوقظ الشاشة (فعّل الزر أولًا من <b>أزرار الشاشة ← أزرار الوظائف</b>؛ فهو مُعطَّل افتراضيًا). أو اضغط زر التشغيل في الهاتف <b>مرتين</b>، لأن الضغطة الأولى هي ما يُدخل النظام في السكون. كما يعيد إيقاف النسخ المطابق أو فصل Android Auto تشغيل الشاشة.</p>
+  <p class="muted">توقف Shizuku عند توصيل الهاتف بالسيارة، أو لا تستيقظ الشاشة؟ راجع <a href="https://screenonauto.lzn.idv.tw/docs/ar/how-to-use/#استكشاف-الأخطاء">استكشاف الأخطاء</a>.</p>
 </section>
 
 <section class="wrap" id="requirements">
@@ -175,8 +169,7 @@ permalink: /ar/
   <h2>التثبيت</h2>
 
   <h3>Android 14 وأحدث — التثبيت عبر Google Play</h3>
-  <p class="muted">لا يشغِّل Android Auto إلا التطبيقات المثبَّتة من متجر Play، ويمنع Android 14+ طريقة KingInstaller — لذا فإن Play هو السبيل الوحيد للحصول على نسخة يقبلها Android Auto. ما تثبِّته هو التطبيق الكامل؛ يوزَّع عبر قناة الاختبار الداخلي في Play.</p>
-  <p>يتم التثبيت عبر الاختبار الداخلي في Google Play (التطبيق لا يظهر في نتائج البحث في متجر Play). <a href="https://screenonauto.lzn.idv.tw/join/?lang=ar"><b>سجّل في صفحة التثبيت</b></a>: تبدأ جولة جديدة كل 30 دقيقة، ويظهر رابط التثبيت عند بدء الجولة. الخطوات الكاملة: <a href="https://screenonauto.lzn.idv.tw/docs/ar/join-the-beta-test/"><b>الانضمام إلى الاختبار التجريبي</b></a>.</p>
+  <p>لا يشغِّل Android Auto إلا التطبيقات المثبَّتة من متجر Play، ويمنع Android 14+ طريقة KingInstaller — لذا ثبّت التطبيق عبر الاختبار الداخلي في Google Play. إنه التطبيق الكامل نفسه الموجود على GitHub، لكنه لا يظهر في نتائج البحث في متجر Play: <a href="https://screenonauto.lzn.idv.tw/join/?lang=ar"><b>سجّل في صفحة التثبيت</b></a>. تبدأ جولة جديدة كل 30 دقيقة، ويظهر رابط التثبيت عند بدء الجولة. الخطوات الكاملة: <a href="https://screenonauto.lzn.idv.tw/docs/ar/join-the-beta-test/"><b>الانضمام إلى الاختبار التجريبي</b></a>.</p>
 
   <h3>Android 13 وأقدم — التثبيت عبر KingInstaller</h3>
   <p class="muted">يشترط Android Auto أن تكون التطبيقات مثبَّتة عبر Google Play. ملف APK المثبَّت مباشرة يُرفض؛ يثبِّت <a href="https://github.com/fcaronte/KingInstaller/releases">KingInstaller</a> ملفات APK مع الإعلان عن متجر Google Play كمصدر التثبيت.</p>
@@ -197,7 +190,7 @@ permalink: /ar/
       <tr><td><img class="mini" src="../images/icon_legacy.png" alt=""></td><td><b>ScreenOnAuto (Legacy)</b></td><td>نسخ مطابق عبر مسار العرض Legacy — يمكن عرضه جنبًا إلى جنب مع الخريطة.</td></tr>
     </table>
   </div>
-  <p dir="rtl">حسب <b>إصدار Android Auto</b> لديك قد ترى أيضًا إدخالًا ثالثًا، <b>ScreenOnAuto Media Controller</b>، وقد لا تراه. كلتا الحالتين طبيعية: الإصدارات الأقدم تُدرجه بأيقونته الخاصة، والإصدارات الأحدث تدمج لوحة الوسائط المدمجة مباشرةً فلا حاجة إلى أيقونة منفصلة. <b>التحكم بالوسائط يعمل في الحالتين.</b></p>
+  <p>تعرض الإصدارات الأقدم من Android Auto عنصرًا ثالثًا أيضًا هو <b>ScreenOnAuto Media Controller</b>. إن لم تجده فهذا طبيعي — التحكم في الوسائط يعمل في الحالتين.</p>
   <p>جاهز؟ راجع دليل <a href="https://screenonauto.lzn.idv.tw/docs/ar/how-to-use/"><b>طريقة الاستخدام</b></a> لبدء النسخ المطابق في السيارة.</p>
 </section>
 
@@ -207,9 +200,9 @@ permalink: /ar/
     <table>
       <tr><th>الإذن</th><th>الميزة التي تتطلبه</th></tr>
       <tr><td>تسجيل الشاشة (MediaProjection)</td><td>النسخ المطابق للشاشة</td></tr>
-      <tr><td>الوصول إلى الإشعارات</td><td>وسيط جلسة الوسائط</td></tr>
+      <tr><td>الوصول إلى الإشعارات</td><td>التحكم في الوسائط</td></tr>
       <tr><td>العرض فوق التطبيقات الأخرى</td><td>التعتيم التلقائي وفرض الوضع الأفقي</td></tr>
-      <tr><td>خدمة إمكانية الوصول</td><td>إعادة توجيه اللمس (تجريبي) وأزرار رجوع / الشاشة الرئيسية / التطبيقات الأخيرة — مع الميزات المتميزة لا يحتاج أي منهما إليها: تعمل الأزرار فور اتصال الواجهة الخلفية، ويعمل إعادة توجيه اللمس عند تفعيل حقن اللمس الحقيقي</td></tr>
+      <tr><td>خدمة إمكانية الوصول</td><td>إعادة توجيه اللمس وأزرار الرجوع / الرئيسية / الأخيرة (غير مطلوبة مع الميزات المميّزة)</td></tr>
     </table>
   </div>
   <p class="muted">نصيحة: لتجنّب نافذة إذن تسجيل الشاشة عند كل تشغيل، امنح الإذن مسبقًا عبر ADB — راجع <a href="https://screenonauto.lzn.idv.tw/docs/ar/grant-mirror-permission-via-adb/">منح إذن النسخ المطابق عبر ADB</a>. وهذا أيضًا ما يفعّل <b>نسخ هذا التطبيق فقط</b>.</p>
@@ -218,7 +211,7 @@ permalink: /ar/
 <section class="wrap" id="limitations">
   <h2>القيود المعروفة</h2>
   <ul>
-    <li><b>يجب أن تبقى شاشة الهاتف مضاءة أثناء النسخ المطابق</b> — لا يعرض النسخ المطابق إلا ما يظهر على شاشة الهاتف؛ فلا يمكنه الاستمرار والشاشة مطفأة أو مقفلة. استخدم <b>منع إطفاء الشاشة</b> لإبقائها مضاءة، و<b>التعتيم التلقائي</b> لخفض سطوعها بدل إطفائها وتوفير البطارية. مع Shizuku أو صلاحيات الجذر ومع تفعيل التعتيم التلقائي، تُلغي ميزة إطفاء شاشة الهاتف هذا القيد: تُطفئ الشاشة بينما يستمر النسخ المطابق.</li>
+    <li><b>يجب أن تبقى شاشة الهاتف مضاءة أثناء النسخ المطابق</b> — فالنسخ المطابق يعرض ما يظهر على شاشة الهاتف. استخدم <b>منع إطفاء الشاشة</b> لإبقائها مضاءة و<b>التعتيم التلقائي</b> لتوفير البطارية؛ ومع Shizuku أو صلاحيات الجذر تُلغي ميزة إطفاء شاشة الهاتف هذا القيد.</li>
     <li><b>لا يمكن نسخ المحتوى المحمي بإدارة الحقوق الرقمية (DRM)</b> — تعرض تطبيقات مثل Netflix أو +Disney شاشة سوداء. هذا قيد في منصة Android لا يمكن للتطبيق تجاوزه.</li>
     <li><b>شريط تنقل Android Auto</b> على شاشة السيارة يرسمه Android Auto نفسه ولا يمكن إخفاؤه.</li>
   </ul>

@@ -48,7 +48,7 @@ layout: null
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons, Match the phone screen to the car, Virtual touchscreen for gesture apps, Start mirroring in the background, Reverse landscape"
 }
 </script>
 
@@ -128,36 +128,30 @@ layout: null
 <section class="wrap" id="features">
   <h2>Features</h2>
   <div class="grid core">
-    <div class="card"><b>Screen Mirroring</b><p>Capture and mirror your phone screen to the Android Auto head unit in real time.</p></div>
-    <div class="card"><b>Media Session Proxy</b><p>Control any phone media app from Android Auto's native media UI.</p></div>
-    <div class="card"><b>Touch Forwarding <span class="muted">(experimental)</span></b><p>Tap, scroll, fling and pinch-to-zoom on the Android Auto display to control your phone.</p></div>
+    <div class="card"><b>Screen Mirroring</b><p>Show your phone screen on the car display — full screen, or side by side with the map.</p></div>
+    <div class="card"><b>Media Controls</b><p>Control any media app on the phone from Android Auto's own media panel.</p></div>
+    <div class="card"><b>Auto Start</b><p>Mirroring starts when the car connects, can open a chosen app, and can start in the background without the app popping up on the phone.</p></div>
   </div>
   <div class="grid more">
-    <div class="card"><b>Auto Start</b><p>Begin mirroring automatically when Android Auto connects.</p></div>
-    <div class="card"><b>Auto Launch App</b><p>Automatically launch a chosen app on the phone when mirroring starts.</p></div>
-    <div class="card"><b>Mirror Only This App <span class="muted">(Android 15+)</span></b><p>Send just the auto-launch app to the car instead of the whole screen. Needs the capture permission pre-granted via ADB.</p></div>
-    <div class="card"><b>External Control</b><p>Start, stop or toggle mirroring with an intent, from an automation app, a shortcut or ADB. <a href="https://screenonauto.lzn.idv.tw/docs/en/control-mirroring-from-another-app/">Control Mirroring from Another App →</a></p></div>
-    <div class="card"><b>Force Landscape</b><p>Force the phone into landscape while mirroring, with an on-screen toggle.</p></div>
-    <div class="card"><b>Auto Dim</b><p>Automatically dim phone screen brightness during idle mirroring (15–120 s delay).</p></div>
-    <div class="card"><b>Prevent Sleep</b><p>Keep the phone screen awake during mirroring; stop automatically on disconnect.</p></div>
-    <div class="card"><b>Launch Shortcuts</b><p>Add up to 4 app quick-launch buttons to the Android Auto mirror screen.</p></div>
-    <div class="card"><b>On-screen Buttons</b><p>Show or hide mirror-screen buttons individually: Force Landscape, Auto Dim, and phone Back / Home / Recents.</p></div>
-    <div class="card"><b>Button Placement</b><p>On the Legacy mirror, left-align the buttons or automatically avoid the phone's navigation bar.</p></div>
-    <div class="card"><b>Mirror Adjustment</b><p>Trim the mirror width/height for head units that crop the edges. The experimental Self-drawn mirror in Advanced settings also prevents split-view distortion.</p></div>
+    <div class="card"><b>Mirror Only This App <span class="muted">(Android 15+)</span></b><p>Send just one app to the car instead of the whole screen.</p></div>
+    <div class="card"><b>On-screen Buttons</b><p>App shortcuts on the car screen, plus Force Landscape, Auto Dim and Back / Home / Recents.</p></div>
+    <div class="card"><b>Screen &amp; Battery</b><p>Force landscape (either way round), dim when idle, and keep the phone awake while mirroring.</p></div>
+    <div class="card"><b>Fit the Car Screen</b><p>Trim edges the head unit crops, and keep the picture undistorted in split view.</p></div>
+    <div class="card"><b>External Control</b><p>Start or stop mirroring from Tasker, a shortcut or ADB. <a href="https://screenonauto.lzn.idv.tw/docs/en/control-mirroring-from-another-app/">How it works →</a></p></div>
+    <div class="card"><b>Touch Forwarding <span class="muted">(experimental)</span></b><p>Tap and scroll the phone from the car screen.</p></div>
   </div>
 </section>
 
 <section class="wrap" id="privileged">
   <h2>Privileged Features</h2>
-  <p class="muted">Optional and entirely opt-in: these need <a href="https://shizuku.rikka.app/">Shizuku</a> or root. If your phone has neither, nothing changes — the section is still listed in the app's settings, but everything on it stays greyed out, and every other feature works exactly as before.</p>
-  <div class="grid core">
-    <div class="card"><b>Turn the Phone Screen Off</b><p>Switch the phone's panel off when Auto Dim kicks in, while the car keeps showing the mirror.</p></div>
-    <div class="card"><b>Real Touch Injection</b><p>Forward your actual finger movements, so long-press, drag and multi-finger work on the Legacy mirror.</p></div>
-    <div class="card"><b>Phone Navigation Buttons</b><p>Back / Home / Recents work with no Accessibility Service enabled at all. Turn them on in On-screen buttons → Control buttons.</p></div>
-    <div class="card"><b>Match the Phone Screen to the Car</b><p>Reshape the phone's display to the head unit's aspect ratio while mirroring, so the black bars and split-view distortion are gone at the source.</p></div>
+  <p class="muted">Optional — needs <a href="https://shizuku.rikka.app/">Shizuku</a> or root. Without either, everything else works exactly the same.</p>
+  <div class="grid core priv">
+    <div class="card"><b>Turn the Phone Screen Off</b><p>The phone's panel goes dark while the car keeps showing the mirror.</p></div>
+    <div class="card"><b>Real Touch Injection</b><p>Long-press, drag and multi-finger gestures from the car screen. With the virtual touchscreen on, gesture apps such as GMD see them too.</p></div>
+    <div class="card"><b>Phone Navigation Buttons</b><p>Back / Home / Recents with no Accessibility Service needed.</p></div>
+    <div class="card"><b>Match the Phone Screen to the Car</b><p>Reshape the phone to the car's aspect ratio while mirroring — no black bars or distortion.</p></div>
   </div>
-  <p class="muted"><b>A Shizuku server started via ADB shuts down when you plug into the car.</b> The USB connection puts the phone into accessory mode, which restarts ADB and takes Shizuku with it — wireless debugging goes through the same ADB, so it does not help. Start Shizuku again and ScreenOnAuto reconnects on its own; better still, use the <a href="https://github.com/thedjchi/Shizuku">thedjchi fork</a>, whose watchdog service restarts it for you. Root users and wireless Android Auto connections are unaffected.</p>
-  <p class="muted"><b>Waking the screen again:</b> the touchscreen powers down with the panel, so tapping the phone does nothing. Tap the <b>Auto Dim</b> button on the car screen — toggling Auto Dim wakes the screen (turn the button on first in <b>On-screen buttons → Control buttons</b>; it is off by default). Or press the phone's power button <b>twice</b>, since the first press is what puts the system to sleep. Stopping the mirror or disconnecting Android Auto also brings the screen back.</p>
+  <p class="muted">Shizuku stopped when you plugged in, or the screen won't wake up? See <a href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/#troubleshooting">Troubleshooting</a>.</p>
 </section>
 
 <section class="wrap" id="requirements">
@@ -174,8 +168,7 @@ layout: null
   <h2>Installation</h2>
 
   <h3>Android 14 and above — install via Google Play</h3>
-  <p class="muted">Android Auto only runs apps installed from the Play Store, and Android 14+ blocks the KingInstaller workaround — so Play is the only way to get a build that Android Auto accepts. It is still the full app, delivered through Play's internal-testing track.</p>
-  <p>Installation goes through Google Play's internal testing — the app is not searchable on the Play Store. <a href="https://screenonauto.lzn.idv.tw/join/?lang=en"><b>Sign up on the install page</b></a>: a new round opens every 30 minutes, and your install link appears when the round starts. Full steps: <a href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"><b>Join the Beta Test</b></a>.</p>
+  <p>Android Auto only runs apps installed from the Play Store, and Android 14+ blocks the KingInstaller workaround — so install through Google Play's internal testing. It's the same full app as on GitHub, but it isn't searchable on the Play Store: <a href="https://screenonauto.lzn.idv.tw/join/?lang=en"><b>sign up on the install page</b></a>. A new round opens every 30 minutes, and your install link appears when the round starts. Full steps: <a href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"><b>Join the Beta Test</b></a>.</p>
 
   <h3>Android 13 and below — sideload with KingInstaller</h3>
   <p class="muted">Android Auto requires apps installed via Google Play. A directly-installed APK is rejected; <a href="https://github.com/fcaronte/KingInstaller/releases">KingInstaller</a> installs APKs while reporting Google Play Store as the installer source.</p>
@@ -196,7 +189,7 @@ layout: null
       <tr><td><img class="mini" src="images/icon_legacy.png" alt=""></td><td><b>ScreenOnAuto (Legacy)</b></td><td>Mirrors via the Legacy projection path — can run side-by-side with the map.</td></tr>
     </table>
   </div>
-  <p>Depending on your <b>Android Auto version</b> you may also see a third entry, <b>ScreenOnAuto Media Controller</b> — and you may not. Both are normal: older Android Auto lists it with its own icon, while newer Android Auto integrates its built-in media panel directly, so no separate icon is needed. <b>Media control still works either way.</b></p>
+  <p>Older Android Auto also lists a third entry, <b>ScreenOnAuto Media Controller</b>. If you don't see it, that's normal — media control works either way.</p>
   <p>Ready to go? See <a href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"><b>How to Use</b></a> for starting the mirror in the car.</p>
 </section>
 
@@ -206,9 +199,9 @@ layout: null
     <table>
       <tr><th>Permission</th><th>Required for</th></tr>
       <tr><td>Screen Capture (MediaProjection)</td><td>Screen Mirroring</td></tr>
-      <tr><td>Notification Listener</td><td>Media Session Proxy</td></tr>
+      <tr><td>Notification Listener</td><td>Media controls</td></tr>
       <tr><td>Display Over Other Apps</td><td>Auto Dim &amp; Force Landscape</td></tr>
-      <tr><td>Accessibility Service</td><td>Touch Forwarding (experimental) &amp; the Back / Home / Recents buttons — with the privileged features neither needs it: the buttons work as soon as a backend is connected, Touch Forwarding once Real touch injection is on</td></tr>
+      <tr><td>Accessibility Service</td><td>Touch Forwarding &amp; the Back / Home / Recents buttons (not needed with the privileged features)</td></tr>
     </table>
   </div>
   <p class="muted">Tip: to skip the Screen Capture dialog on every launch, pre-grant it via ADB — see <a href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/">Grant Mirror Permission via ADB</a>. This is also what unlocks <b>Mirror only this app</b>.</p>
@@ -217,7 +210,7 @@ layout: null
 <section class="wrap" id="limitations">
   <h2>Known Limitations</h2>
   <ul>
-    <li><b>The phone screen must stay on while mirroring</b> — the mirror simply shows what's on the phone screen, so it cannot keep running with the screen off or locked. Use <b>Prevent Sleep</b> to keep the screen awake, and <b>Auto Dim</b> to darken it and save battery instead of turning it off. With Shizuku or root and Auto Dim on, Turn the Phone Screen Off lifts this: it powers the panel down while the mirror keeps running.</li>
+    <li><b>The phone screen must stay on while mirroring</b> — the mirror shows what's on the phone screen. Use <b>Prevent Sleep</b> to keep it awake and <b>Auto Dim</b> to save battery; with Shizuku or root, Turn the Phone Screen Off lifts this.</li>
     <li><b>DRM-protected content cannot be mirrored</b> — apps such as Netflix or Disney+ show a black screen. This is an Android platform restriction the app cannot work around.</li>
     <li>The <b>Android Auto navigation bar</b> on the car screen is drawn by Android Auto itself and cannot be hidden.</li>
   </ul>

@@ -5,7 +5,7 @@ lang: es
 slug: how-to-use
 permalink: /docs/es/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-09-23
+last_modified_at: 2026-09-30
 ---
 
 # Cómo Usar
@@ -128,3 +128,18 @@ Cualquiera de estas opciones funciona:
   privilegios), que resuelve el mismo problema de otra forma.
 - La **barra de navegación de Android Auto** en la pantalla del coche la dibuja el
   propio Android Auto y la app no puede ocultarla.
+- **Un servidor Shizuku iniciado por ADB se apaga al conectar al coche** — la conexión
+  USB pone el teléfono en modo accesorio, lo que reinicia ADB y se lleva a Shizuku por
+  delante — la depuración inalámbrica usa el mismo ADB, así que no ayuda. Inicia Shizuku
+  otra vez y ScreenOnAuto se reconecta solo; mejor aún, usa el [fork de
+  thedjchi](https://github.com/thedjchi/Shizuku), cuyo servicio watchdog lo reinicia por
+  ti. Los usuarios con root y las conexiones inalámbricas de Android Auto no se ven
+  afectados.
+- **Cómo volver a encender la pantalla tras apagarla** — la pantalla táctil se apaga
+  junto con el panel, así que tocar el teléfono no hace nada. Pulsa el botón
+  **Atenuación automática** en la pantalla del coche — alternar la atenuación automática
+  enciende la pantalla (antes tienes que activar el botón en **Botones en pantalla →
+  Botones de función**; viene desactivado). O pulsa el botón de encendido del teléfono
+  **dos veces**, ya que la primera pulsación es la que pone el sistema en reposo.
+  Detener la duplicación o desconectar Android Auto también vuelve a encender la
+  pantalla.

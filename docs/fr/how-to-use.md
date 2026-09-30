@@ -5,7 +5,7 @@ lang: fr
 slug: how-to-use
 permalink: /docs/fr/how-to-use/
 date: 2026-07-17
-last_modified_at: 2026-09-23
+last_modified_at: 2026-09-30
 ---
 
 # Comment utiliser
@@ -127,3 +127,17 @@ Au choix :
   voiture** (Fonctions privilégiées), qui résout le même problème autrement.
 - La **barre de navigation Android Auto** sur l'écran de la voiture est dessinée par
   Android Auto lui-même et ne peut pas être masquée par l'app.
+- **Un serveur Shizuku démarré via ADB s'arrête lorsque vous branchez le téléphone à la
+  voiture** — la connexion USB fait passer le téléphone en mode accessoire, ce qui
+  redémarre ADB et emporte Shizuku avec lui — le débogage sans fil passe par le même ADB
+  et n'y change rien. Relancez Shizuku et ScreenOnAuto se reconnecte tout seul ; mieux
+  encore, utilisez le [fork de thedjchi](https://github.com/thedjchi/Shizuku), dont le
+  service watchdog le relance pour vous. Les utilisateurs root et les connexions Android
+  Auto sans fil ne sont pas concernés.
+- **Réveiller l'écran après son extinction** — la dalle tactile s'éteint avec l'écran,
+  toucher le téléphone ne fait donc rien. Touchez le bouton **Atténuation automatique**
+  sur l'écran de la voiture — basculer l'atténuation automatique réveille l'écran
+  (activez d'abord le bouton dans **Boutons à l'écran → Boutons de fonction** ; il est
+  désactivé par défaut). Ou appuyez **deux fois** sur le bouton d'alimentation du
+  téléphone, car la première pression est celle qui met le système en veille. Arrêter la
+  duplication ou déconnecter Android Auto rallume aussi l'écran.

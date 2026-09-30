@@ -5,7 +5,7 @@ lang: tr
 slug: how-to-use
 permalink: /docs/tr/how-to-use/
 date: 2026-07-20
-last_modified_at: 2026-09-23
+last_modified_at: 2026-09-30
 ---
 
 # Nasıl Kullanılır
@@ -124,3 +124,17 @@ verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](/docs/tr/grant-mirror-pe
   **Telefon ekranını arabaya uydur** (Ayrıcalıklı özellikler) ile birlikte açık olamaz.
 - Araç ekranındaki **Android Auto gezinme çubuğu** Android Auto'nun kendisi
   tarafından çizilir ve uygulama tarafından gizlenemez.
+- **ADB ile başlatılan bir Shizuku sunucusu, telefonu arabaya taktığınızda kapanır** —
+  USB bağlantısı telefonu aksesuar moduna alır; bu da ADB'yi yeniden başlatır ve
+  Shizuku'yu da beraberinde götürür — kablosuz hata ayıklama da aynı ADB üzerinden
+  çalıştığı için işe yaramaz. Shizuku'yu yeniden başlatmanız yeterli, ScreenOnAuto
+  kendiliğinden yeniden bağlanır; daha da iyisi, watchdog hizmeti onu sizin yerinize
+  yeniden başlatan [thedjchi sürümünü](https://github.com/thedjchi/Shizuku) kullanın.
+  Root kullanıcıları ve kablosuz Android Auto bağlantıları bundan etkilenmez.
+- **Ekran kapandıktan sonra tekrar uyandırma** — dokunmatik ekran panelle birlikte
+  kapandığı için telefona dokunmak işe yaramaz. Araç ekranındaki **Otomatik Karartma**
+  düğmesine dokunun — Otomatik Karartma'yı açıp kapatmak ekranı uyandırır (düğmeyi önce
+  **Ekran düğmeleri → İşlev düğmeleri** bölümünden açın; varsayılan olarak kapalıdır).
+  Ya da telefonun güç düğmesine **iki kez** basın, çünkü ilk basış sistemi uyku moduna
+  alan basıştır. Yansıtmayı durdurmak veya Android Auto bağlantısını kesmek de ekranı
+  geri getirir.

@@ -49,7 +49,7 @@ permalink: /tr/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons, Match the phone screen to the car, Virtual touchscreen for gesture apps, Start mirroring in the background, Reverse landscape"
 }
 </script>
 
@@ -129,36 +129,30 @@ permalink: /tr/
 <section class="wrap" id="features">
   <h2>Özellikler</h2>
   <div class="grid core">
-    <div class="card"><b>Ekran yansıtma</b><p>Telefon ekranını gerçek zamanlı olarak Android Auto ünitesine yakalayıp yansıtır.</p></div>
-    <div class="card"><b>Medya oturumu aracısı</b><p>Telefondaki herhangi bir medya uygulamasını Android Auto'nun yerleşik medya arayüzünden kontrol edin.</p></div>
-    <div class="card"><b>Dokunma aktarımı <span class="muted">(deneysel)</span></b><p>Telefonunuzu kontrol etmek için Android Auto ekranına dokunun, kaydırın, savurun ve iki parmakla yakınlaştırın.</p></div>
+    <div class="card"><b>Ekran yansıtma</b><p>Telefon ekranını araç ekranında gösterin — tam ekran veya haritayla yan yana.</p></div>
+    <div class="card"><b>Medya kontrolleri</b><p>Telefondaki herhangi bir medya uygulamasını Android Auto'nun kendi medya panelinden kontrol edin.</p></div>
+    <div class="card"><b>Otomatik başlatma</b><p>Araç bağlandığında yansıtma başlar, seçilen bir uygulamayı açabilir ve uygulama telefonda görünmeden arka planda başlayabilir.</p></div>
   </div>
   <div class="grid more">
-    <div class="card"><b>Otomatik başlatma</b><p>Android Auto bağlandığında yansıtmayı otomatik olarak başlatır.</p></div>
-    <div class="card"><b>Uygulamayı otomatik başlat</b><p>Yansıtma başladığında telefonda seçtiğiniz bir uygulamayı otomatik olarak açar.</p></div>
-    <div class="card"><b>Yalnızca bu uygulamayı yansıt <span class="muted">(Android 15+)</span></b><p>Tüm ekran yerine yalnızca otomatik başlatılan uygulamayı arabaya gönderir. Ekran kaydı izninin ADB ile önceden verilmiş olmasını gerektirir.</p></div>
-    <div class="card"><b>Harici Kontrol</b><p>Yansıtmayı bir intent ile başlatın, durdurun veya değiştirin; otomasyon uygulamasından, kısayoldan veya ADB'den. <a href="https://screenonauto.lzn.idv.tw/docs/tr/control-mirroring-from-another-app/">Yansıtmayı Başka Bir Uygulamadan Kontrol Etme →</a></p></div>
-    <div class="card"><b>Yatay modu zorla</b><p>Yansıtma sırasında telefonu yatay moda zorlar; ekranda düğmesi vardır.</p></div>
-    <div class="card"><b>Otomatik karartma</b><p>Yansıtma boştayken telefonun parlaklığını otomatik olarak düşürür (15–120 sn gecikme).</p></div>
-    <div class="card"><b>Uykuyu engelle</b><p>Yansıtma sırasında telefon ekranını açık tutar; bağlantı kesilince otomatik durur.</p></div>
-    <div class="card"><b>Başlatma kısayolları</b><p>Android Auto yansıtma ekranına en fazla 4 hızlı uygulama başlatma düğmesi ekleyin.</p></div>
-    <div class="card"><b>Ekran düğmeleri</b><p>Düğmeleri tek tek gösterin veya gizleyin: Yatay modu zorla, Karartma ve Geri / Ana ekran / Son uygulamalar.</p></div>
-    <div class="card"><b>Düğme konumu</b><p>Legacy yansıtmada düğmeleri sola hizalayın veya telefonun gezinme çubuğundan otomatik kaçının.</p></div>
-    <div class="card"><b>Yansıtma ayarı</b><p>Kenarları kesen üniteler için görüntünün genişliğini/yüksekliğini kırpın. Gelişmiş ayarlardaki deneysel Uygulamanın çizdiği yansıtma da bölünmüş görünümdeki bozulmayı önler.</p></div>
+    <div class="card"><b>Yalnızca bu uygulamayı yansıt <span class="muted">(Android 15+)</span></b><p>Tüm ekran yerine yalnızca tek bir uygulamayı araca gönderin.</p></div>
+    <div class="card"><b>Ekran düğmeleri</b><p>Araç ekranında uygulama kısayolları; ayrıca Yatay modu zorla, Otomatik karartma ve Geri / Ana ekran / Son uygulamalar.</p></div>
+    <div class="card"><b>Ekran ve pil</b><p>Yatay modu zorlayın (iki yönde de), boştayken karartın ve yansıtma sırasında telefonu uyanık tutun.</p></div>
+    <div class="card"><b>Araç ekranına uydur</b><p>Araç ünitesinin kırptığı kenarları düzeltin, bölünmüş görünümde görüntü bozulmasın.</p></div>
+    <div class="card"><b>Harici Kontrol</b><p>Yansıtmayı Tasker, bir kısayol veya ADB ile başlatın ya da durdurun. <a href="https://screenonauto.lzn.idv.tw/docs/tr/control-mirroring-from-another-app/">Nasıl çalışır →</a></p></div>
+    <div class="card"><b>Dokunma aktarımı <span class="muted">(deneysel)</span></b><p>Araç ekranından telefona dokunun ve kaydırın.</p></div>
   </div>
 </section>
 
 <section class="wrap" id="privileged">
   <h2>Ayrıcalıklı özellikler</h2>
-  <p class="muted">İsteğe bağlı ve tamamen sizin tercihiniz: <a href="https://shizuku.rikka.app/">Shizuku</a> veya root gerektirir. Telefonunuzda ikisi de yoksa hiçbir şey değişmez — bölüm uygulamanın ayarlarında görünmeye devam eder, ancak içindeki her şey soluk ve devre dışı kalır ve diğer tüm özellikler tam olarak eskisi gibi çalışır.</p>
-  <div class="grid core">
-    <div class="card"><b>Telefon ekranını kapat</b><p>Otomatik Karartma devreye girdiğinde telefonun panelini kapatır, araç ise yansıtmayı göstermeye devam eder.</p></div>
-    <div class="card"><b>Gerçek dokunma enjeksiyonu</b><p>Gerçek parmak hareketlerinizi aktarır; uzun basma, sürükleme ve çoklu dokunma Legacy yansıtmasında çalışır.</p></div>
-    <div class="card"><b>Telefon gezinme düğmeleri</b><p>Geri / Ana ekran / Son uygulamalar hiçbir Erişilebilirlik Hizmeti etkin olmadan çalışır. Düğmeleri Ekran düğmeleri → İşlev düğmeleri bölümünden açın.</p></div>
-    <div class="card"><b>Telefon ekranını arabaya uydur</b><p>Yansıtma sırasında telefon ekranını araba ünitesinin en boy oranına dönüştürür, böylece siyah kenarlıklar ve bölünmüş ekrandaki bozulma kaynağında ortadan kalkar.</p></div>
+  <p class="muted">İsteğe bağlı — <a href="https://shizuku.rikka.app/">Shizuku</a> veya root gerektirir. Bunlar olmadan diğer her şey aynen çalışır.</p>
+  <div class="grid core priv">
+    <div class="card"><b>Telefon ekranını kapat</b><p>Araç yansıtmayı göstermeye devam ederken telefonun paneli kararır.</p></div>
+    <div class="card"><b>Gerçek dokunma enjeksiyonu</b><p>Araç ekranından uzun basma, sürükleme ve çok parmaklı hareketler. Sanal dokunmatik ekran açıkken GMD gibi hareket uygulamaları da bunları algılar.</p></div>
+    <div class="card"><b>Telefon gezinme düğmeleri</b><p>Erişilebilirlik hizmetine gerek kalmadan Geri / Ana ekran / Son uygulamalar.</p></div>
+    <div class="card"><b>Telefon ekranını arabaya uydur</b><p>Yansıtma sırasında telefonu aracın en-boy oranına getirir — siyah bant ya da bozulma olmaz.</p></div>
   </div>
-  <p class="muted"><b>ADB ile başlatılan bir Shizuku sunucusu, telefonu arabaya taktığınızda kapanır.</b> USB bağlantısı telefonu aksesuar moduna alır; bu da ADB'yi yeniden başlatır ve Shizuku'yu da beraberinde götürür — kablosuz hata ayıklama da aynı ADB üzerinden çalıştığı için işe yaramaz. Shizuku'yu yeniden başlatmanız yeterli, ScreenOnAuto kendiliğinden yeniden bağlanır; daha da iyisi, watchdog hizmeti onu sizin yerinize yeniden başlatan <a href="https://github.com/thedjchi/Shizuku">thedjchi sürümünü</a> kullanın. Root kullanıcıları ve kablosuz Android Auto bağlantıları bundan etkilenmez.</p>
-  <p class="muted"><b>Ekran kapandıktan sonra tekrar uyandırma:</b> dokunmatik ekran panelle birlikte kapandığı için telefona dokunmak işe yaramaz. Araç ekranındaki <b>Otomatik Karartma</b> düğmesine dokunun — Otomatik Karartma'yı açıp kapatmak ekranı uyandırır (düğmeyi önce <b>Ekran düğmeleri → İşlev düğmeleri</b> bölümünden açın; varsayılan olarak kapalıdır). Ya da telefonun güç düğmesine <b>iki kez</b> basın, çünkü ilk basış sistemi uyku moduna alan basıştır. Yansıtmayı durdurmak veya Android Auto bağlantısını kesmek de ekranı geri getirir.</p>
+  <p class="muted">Araca takınca Shizuku durdu mu, ya da ekran uyanmıyor mu? <a href="https://screenonauto.lzn.idv.tw/docs/tr/how-to-use/#sorun-giderme">Sorun Giderme</a> bölümüne bakın.</p>
 </section>
 
 <section class="wrap" id="requirements">
@@ -175,8 +169,7 @@ permalink: /tr/
   <h2>Kurulum</h2>
 
   <h3>Android 14 ve üzeri — Google Play üzerinden kurulum</h3>
-  <p class="muted">Android Auto yalnızca Play Store'dan yüklenen uygulamaları çalıştırır ve Android 14+ KingInstaller yöntemini engeller — Android Auto'nun kabul ettiği bir sürümü edinmenin tek yolu Play'dir. Yüklediğiniz yine uygulamanın tamamıdır; Play'in dahilî test kanalı üzerinden dağıtılır.</p>
-  <p>Kurulum Google Play dahili testi üzerinden yapılır — uygulama Play Store aramalarında görünmez. <a href="https://screenonauto.lzn.idv.tw/join/?lang=tr"><b>Yükleme sayfasından kaydolun</b></a>: her 30 dakikada yeni bir tur açılır ve tur başladığında yükleme bağlantınız görünür. Tüm adımlar: <a href="https://screenonauto.lzn.idv.tw/docs/tr/join-the-beta-test/"><b>Beta Testine Katılın</b></a>.</p>
+  <p>Android Auto yalnızca Play Store'dan yüklenen uygulamaları çalıştırır ve Android 14+ KingInstaller yöntemini engeller — bu yüzden Google Play dahili testi üzerinden yükleyin. GitHub'dakiyle aynı tam uygulamadır, ancak Play Store aramalarında görünmez: <a href="https://screenonauto.lzn.idv.tw/join/?lang=tr"><b>yükleme sayfasından kaydolun</b></a>. Her 30 dakikada yeni bir tur açılır ve tur başladığında yükleme bağlantınız görünür. Tüm adımlar: <a href="https://screenonauto.lzn.idv.tw/docs/tr/join-the-beta-test/"><b>Beta Testine Katılın</b></a>.</p>
 
   <h3>Android 13 ve altı — KingInstaller ile kurulum</h3>
   <p class="muted">Android Auto, uygulamaların Google Play üzerinden yüklenmesini şart koşar. Doğrudan yüklenen bir APK reddedilir; <a href="https://github.com/fcaronte/KingInstaller/releases">KingInstaller</a>, APK'ları yükleyici kaynağı olarak Google Play Store'u bildirerek kurar.</p>
@@ -197,7 +190,7 @@ permalink: /tr/
       <tr><td><img class="mini" src="../images/icon_legacy.png" alt=""></td><td><b>ScreenOnAuto (Legacy)</b></td><td>Legacy projeksiyon yoluyla yansıtma — haritayla yan yana gösterilebilir.</td></tr>
     </table>
   </div>
-  <p><b>Android Auto sürümünüze</b> bağlı olarak üçüncü bir giriş olan <b>ScreenOnAuto Media Controller</b>'ı görebilir ya da göremeyebilirsiniz. İkisi de normaldir: eski sürümler onu kendi simgesiyle listeler, yeni sürümler yerleşik medya panelini doğrudan bütünleştirdiği için ayrı bir simgeye gerek kalmaz. <b>Her iki durumda da medya kontrolü çalışır.</b></p>
+  <p>Eski Android Auto sürümleri üçüncü bir öğe de gösterir: <b>ScreenOnAuto Media Controller</b>. Görmüyorsanız bu normaldir — medya kontrolü yine çalışır.</p>
   <p>Hazır mısınız? Arabada yansıtmayı başlatmak için <a href="https://screenonauto.lzn.idv.tw/docs/tr/how-to-use/"><b>Nasıl Kullanılır</b></a> kılavuzuna bakın.</p>
 </section>
 
@@ -207,9 +200,9 @@ permalink: /tr/
     <table>
       <tr><th>İzin</th><th>Gerekli olduğu özellik</th></tr>
       <tr><td>Ekran Kaydı (MediaProjection)</td><td>Ekran yansıtma</td></tr>
-      <tr><td>Bildirim erişimi</td><td>Medya oturumu aracısı</td></tr>
+      <tr><td>Bildirim erişimi</td><td>Medya kontrolleri</td></tr>
       <tr><td>Diğer uygulamaların üzerinde göster</td><td>Otomatik karartma ve Yatay modu zorlama</td></tr>
-      <tr><td>Erişilebilirlik hizmeti</td><td>Dokunma aktarımı (deneysel) ve Geri / Ana ekran / Son uygulamalar düğmeleri — ayrıcalıklı özellikler ile ikisi de bunu gerektirmez: düğmeler bir arka uç bağlanır bağlanmaz, dokunma aktarımı ise Gerçek dokunma enjeksiyonu açıkken çalışır</td></tr>
+      <tr><td>Erişilebilirlik hizmeti</td><td>Dokunma aktarımı ve Geri / Ana ekran / Son uygulamalar düğmeleri (ayrıcalıklı özelliklerle gerekmez)</td></tr>
     </table>
   </div>
   <p class="muted">İpucu: her başlatmada ekran kaydı izin penceresiyle karşılaşmamak için izni ADB ile önceden verin — bkz. <a href="https://screenonauto.lzn.idv.tw/docs/tr/grant-mirror-permission-via-adb/">ADB ile Yansıtma İzni Verme</a>. Bu aynı zamanda <b>Yalnızca bu uygulamayı yansıt</b> özelliğini de açar.</p>
@@ -218,7 +211,7 @@ permalink: /tr/
 <section class="wrap" id="limitations">
   <h2>Bilinen sınırlamalar</h2>
   <ul>
-    <li><b>Yansıtma sırasında telefon ekranı açık kalmalıdır</b> — yansıtma yalnızca telefon ekranında görüneni gösterir; ekran kapalıyken veya kilitliyken çalışmaya devam edemez. Ekranı açık tutmak için <b>Uykuyu engelle</b>'yi, kapatmak yerine karartıp pil tasarrufu yapmak için <b>Otomatik karartma</b>'yı kullanın. Shizuku veya root ile ve Otomatik Karartma açıkken Telefon ekranını kapat bu sınırlamayı kaldırır: yansıtma çalışmaya devam ederken paneli kapatır.</li>
+    <li><b>Yansıtma sırasında telefon ekranı açık kalmalıdır</b> — yansıtma telefon ekranında görüneni gösterir. Ekranı açık tutmak için <b>Uykuyu engelle</b>'yi, pil tasarrufu için <b>Otomatik karartma</b>'yı kullanın; Shizuku veya root ile Telefon ekranını kapat bu sınırlamayı kaldırır.</li>
     <li><b>DRM korumalı içerik yansıtılamaz</b> — Netflix veya Disney+ gibi uygulamalar siyah ekran gösterir. Bu, uygulamanın aşamayacağı bir Android platform kısıtlamasıdır.</li>
     <li>Araç ekranındaki <b>Android Auto gezinme çubuğu</b> Android Auto'nun kendisi tarafından çizilir ve gizlenemez.</li>
   </ul>

@@ -50,7 +50,7 @@ permalink: /es/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons, Match the phone screen to the car, Virtual touchscreen for gesture apps, Start mirroring in the background, Reverse landscape"
 }
 </script>
 
@@ -130,36 +130,30 @@ permalink: /es/
 <section class="wrap" id="features">
   <h2>Funciones</h2>
   <div class="grid core">
-    <div class="card"><b>Duplicación de pantalla</b><p>Captura y duplica la pantalla del teléfono en la unidad principal de Android Auto en tiempo real.</p></div>
-    <div class="card"><b>Proxy de sesión de medios</b><p>Controla cualquier app de medios del teléfono desde la interfaz de medios nativa de Android Auto.</p></div>
-    <div class="card"><b>Reenvío táctil <span class="muted">(experimental)</span></b><p>Toca, desplaza, desliza y pellizca para hacer zoom en la pantalla de Android Auto para controlar el teléfono.</p></div>
+    <div class="card"><b>Duplicación de pantalla</b><p>Muestra la pantalla del teléfono en la del coche — a pantalla completa o junto al mapa.</p></div>
+    <div class="card"><b>Controles multimedia</b><p>Controla cualquier app multimedia del teléfono desde el panel de medios del propio Android Auto.</p></div>
+    <div class="card"><b>Inicio automático</b><p>La duplicación empieza al conectar el coche, puede abrir una app elegida y puede iniciarse en segundo plano sin que la app aparezca en el teléfono.</p></div>
   </div>
   <div class="grid more">
-    <div class="card"><b>Inicio automático</b><p>Comienza a duplicar automáticamente cuando Android Auto se conecta.</p></div>
-    <div class="card"><b>Lanzar app automáticamente</b><p>Abre automáticamente una app elegida en el teléfono cuando empieza la duplicación.</p></div>
-    <div class="card"><b>Duplicar solo esta app <span class="muted">(Android 15+)</span></b><p>Envía al coche solo la app de inicio automático en lugar de toda la pantalla. Necesita el permiso de captura concedido previamente por ADB.</p></div>
-    <div class="card"><b>Control Externo</b><p>Inicia, detén o alterna la duplicación con un intent, desde una app de automatización, un acceso directo o ADB. <a href="https://screenonauto.lzn.idv.tw/docs/es/control-mirroring-from-another-app/">Controlar la Duplicación desde Otra App →</a></p></div>
-    <div class="card"><b>Forzar horizontal</b><p>Fuerza el teléfono a modo horizontal durante la duplicación, con botón en pantalla.</p></div>
-    <div class="card"><b>Atenuación automática</b><p>Atenúa automáticamente el brillo del teléfono durante la duplicación inactiva (retardo de 15–120 s).</p></div>
-    <div class="card"><b>Evitar suspensión</b><p>Evita que la pantalla del teléfono se apague durante la duplicación; se detiene al desconectar.</p></div>
-    <div class="card"><b>Atajos de apps</b><p>Añade hasta 4 botones de acceso rápido a apps en la pantalla de duplicación de Android Auto.</p></div>
-    <div class="card"><b>Botones en pantalla</b><p>Muestra u oculta individualmente los botones: Forzar horizontal, Atenuación automática y Atrás / Inicio / Apps recientes.</p></div>
-    <div class="card"><b>Posición de los botones</b><p>En la duplicación Legacy, alinea los botones a la izquierda o esquiva automáticamente la barra de navegación del teléfono.</p></div>
-    <div class="card"><b>Ajuste de la duplicación</b><p>Recorta el ancho/alto de la duplicación para unidades que cortan los bordes. La Duplicación dibujada por la app (experimental), en los ajustes avanzados, también evita la distorsión en la vista dividida.</p></div>
+    <div class="card"><b>Duplicar solo esta app <span class="muted">(Android 15+)</span></b><p>Envía solo una app al coche en lugar de toda la pantalla.</p></div>
+    <div class="card"><b>Botones en pantalla</b><p>Atajos de apps en la pantalla del coche, además de Forzar horizontal, Atenuación automática y Atrás / Inicio / Recientes.</p></div>
+    <div class="card"><b>Pantalla y batería</b><p>Forzar horizontal (en cualquier sentido), atenuar en reposo y mantener el teléfono despierto durante la duplicación.</p></div>
+    <div class="card"><b>Ajuste a la pantalla del coche</b><p>Recorta los bordes que corta la unidad principal y evita la distorsión en pantalla dividida.</p></div>
+    <div class="card"><b>Control Externo</b><p>Inicia o detén la duplicación desde Tasker, un atajo o ADB. <a href="https://screenonauto.lzn.idv.tw/docs/es/control-mirroring-from-another-app/">Cómo funciona →</a></p></div>
+    <div class="card"><b>Reenvío táctil <span class="muted">(experimental)</span></b><p>Toca y desplázate en el teléfono desde la pantalla del coche.</p></div>
   </div>
 </section>
 
 <section class="wrap" id="privileged">
   <h2>Funciones con privilegios</h2>
-  <p class="muted">Opcionales y totalmente voluntarias: requieren <a href="https://shizuku.rikka.app/">Shizuku</a> o root. Si tu teléfono no tiene ninguno de los dos, nada cambia — la sección sigue apareciendo en los ajustes de la app, pero todo lo que contiene queda atenuado, y el resto de funciones se comporta exactamente igual que antes.</p>
-  <div class="grid core">
-    <div class="card"><b>Apagar la pantalla del teléfono</b><p>Apaga el panel del teléfono cuando se activa la Atenuación automática, mientras el coche sigue mostrando la duplicación.</p></div>
-    <div class="card"><b>Inyección táctil real</b><p>Reenvía los movimientos reales de tu dedo, así que mantener pulsado, arrastrar y multitáctil funcionan en la duplicación Legacy.</p></div>
-    <div class="card"><b>Botones de navegación del teléfono</b><p>Atrás / Inicio / Recientes funcionan sin ningún Servicio de accesibilidad activado. Actívalos en Botones en pantalla → Botones de función.</p></div>
-    <div class="card"><b>Ajustar la pantalla del teléfono a la del coche</b><p>Remodela la pantalla del teléfono a la relación de aspecto de la unidad del coche durante la duplicación, eliminando de raíz las barras negras y la distorsión en pantalla dividida.</p></div>
+  <p class="muted">Opcional — requiere <a href="https://shizuku.rikka.app/">Shizuku</a> o root. Sin ellos, todo lo demás funciona exactamente igual.</p>
+  <div class="grid core priv">
+    <div class="card"><b>Apagar la pantalla del teléfono</b><p>El panel del teléfono se apaga mientras el coche sigue mostrando la duplicación.</p></div>
+    <div class="card"><b>Inyección táctil real</b><p>Pulsación larga, arrastre y gestos con varios dedos desde la pantalla del coche. Con la pantalla táctil virtual activada, las apps de gestos como GMD también los reciben.</p></div>
+    <div class="card"><b>Botones de navegación del teléfono</b><p>Atrás / Inicio / Recientes sin necesidad de un servicio de accesibilidad.</p></div>
+    <div class="card"><b>Ajustar la pantalla del teléfono a la del coche</b><p>Adapta el teléfono a la proporción del coche durante la duplicación — sin barras negras ni distorsión.</p></div>
   </div>
-  <p class="muted"><b>Un servidor Shizuku iniciado por ADB se apaga al conectar al coche.</b> La conexión USB pone el teléfono en modo accesorio, lo que reinicia ADB y se lleva a Shizuku por delante — la depuración inalámbrica usa el mismo ADB, así que no ayuda. Inicia Shizuku otra vez y ScreenOnAuto se reconecta solo; mejor aún, usa el <a href="https://github.com/thedjchi/Shizuku">fork de thedjchi</a>, cuyo servicio watchdog lo reinicia por ti. Los usuarios con root y las conexiones inalámbricas de Android Auto no se ven afectados.</p>
-  <p class="muted"><b>Cómo volver a encender la pantalla tras apagarla:</b> la pantalla táctil se apaga junto con el panel, así que tocar el teléfono no hace nada. Pulsa el botón <b>Atenuación automática</b> en la pantalla del coche — alternar la atenuación automática enciende la pantalla (antes tienes que activar el botón en <b>Botones en pantalla → Botones de función</b>; viene desactivado). O pulsa el botón de encendido del teléfono <b>dos veces</b>, ya que la primera pulsación es la que pone el sistema en reposo. Detener la duplicación o desconectar Android Auto también vuelve a encender la pantalla.</p>
+  <p class="muted">¿Shizuku se detuvo al conectar el coche, o la pantalla no se despierta? Consulta <a href="https://screenonauto.lzn.idv.tw/docs/es/how-to-use/#solución-de-problemas">Solución de problemas</a>.</p>
 </section>
 
 <section class="wrap" id="requirements">
@@ -176,8 +170,7 @@ permalink: /es/
   <h2>Instalación</h2>
 
   <h3>Android 14 o superior — instalar desde Google Play</h3>
-  <p class="muted">Android Auto solo ejecuta apps instaladas desde Play Store, y Android 14+ bloquea el método alternativo con KingInstaller — así que Play es la única forma de obtener una versión que Android Auto acepte. Lo que instalas sigue siendo la app completa, distribuida por el canal de pruebas internas de Play.</p>
-  <p>La instalación se hace a través de las pruebas internas de Google Play — la app no aparece en las búsquedas de Play Store. <a href="https://screenonauto.lzn.idv.tw/join/?lang=es"><b>Inscríbete en la página de instalación</b></a>: cada 30 minutos se abre una nueva ronda y tu enlace de instalación aparece cuando empieza la ronda. Pasos completos: <a href="https://screenonauto.lzn.idv.tw/docs/es/join-the-beta-test/"><b>Unirse a la Beta</b></a>.</p>
+  <p>Android Auto solo ejecuta apps instaladas desde Play Store, y Android 14+ bloquea el método de KingInstaller — así que instala mediante las pruebas internas de Google Play. Es la misma app completa que en GitHub, pero no aparece en las búsquedas de Play Store: <a href="https://screenonauto.lzn.idv.tw/join/?lang=es"><b>inscríbete en la página de instalación</b></a>. Cada 30 minutos se abre una nueva ronda y tu enlace de instalación aparece cuando empieza la ronda. Pasos completos: <a href="https://screenonauto.lzn.idv.tw/docs/es/join-the-beta-test/"><b>Unirse a la Beta</b></a>.</p>
 
   <h3>Android 13 o inferior — sideload con KingInstaller</h3>
   <p class="muted">Android Auto exige que las apps se instalen desde Google Play Store. Un APK instalado directamente es rechazado; <a href="https://github.com/fcaronte/KingInstaller/releases">KingInstaller</a> instala APKs indicando Google Play Store como origen de la instalación.</p>
@@ -198,7 +191,7 @@ permalink: /es/
       <tr><td><img class="mini" src="../images/icon_legacy.png" alt=""></td><td><b>ScreenOnAuto (Legacy)</b></td><td>Duplica por la vía de proyección Legacy — puede mostrarse junto al mapa.</td></tr>
     </table>
   </div>
-  <p>Según tu <b>versión de Android Auto</b>, puede que veas también una tercera entrada, <b>ScreenOnAuto Media Controller</b>, o puede que no. Ambos casos son normales: las versiones antiguas la listan con su propio icono; las recientes integran directamente su panel de medios, así que no hace falta un icono aparte. <b>El control de medios sigue funcionando en ambos casos.</b></p>
+  <p>Las versiones anteriores de Android Auto también muestran una tercera entrada, <b>ScreenOnAuto Media Controller</b>. Si no la ves, es normal — el control multimedia funciona igual.</p>
   <p>¿Todo listo? Consulta <a href="https://screenonauto.lzn.idv.tw/docs/es/how-to-use/"><b>Cómo Usar</b></a> para iniciar la duplicación en el coche.</p>
 </section>
 
@@ -208,9 +201,9 @@ permalink: /es/
     <table>
       <tr><th>Permiso</th><th>Necesario para</th></tr>
       <tr><td>Captura de pantalla (MediaProjection)</td><td>Duplicación de pantalla</td></tr>
-      <tr><td>Acceso a notificaciones</td><td>Proxy de sesión de medios</td></tr>
+      <tr><td>Acceso a notificaciones</td><td>Controles multimedia</td></tr>
       <tr><td>Mostrar sobre otras apps</td><td>Atenuación automática y Forzar horizontal</td></tr>
-      <tr><td>Servicio de accesibilidad</td><td>Reenvío táctil (experimental) y los botones Atrás / Inicio / Apps recientes — con las funciones con privilegios ninguno lo necesita: los botones funcionan en cuanto hay un backend conectado, y el reenvío táctil cuando Inyección táctil real está activada</td></tr>
+      <tr><td>Servicio de accesibilidad</td><td>Reenvío táctil y botones Atrás / Inicio / Recientes (no hace falta con las funciones privilegiadas)</td></tr>
     </table>
   </div>
   <p class="muted">Consejo: para evitar el diálogo de permiso de captura de pantalla en cada inicio, concédelo una sola vez vía ADB — consulta <a href="https://screenonauto.lzn.idv.tw/docs/es/grant-mirror-permission-via-adb/">Conceder Permiso de Duplicación por ADB</a>. Esto es también lo que habilita <b>Duplicar solo esta app</b>.</p>
@@ -219,7 +212,7 @@ permalink: /es/
 <section class="wrap" id="limitations">
   <h2>Limitaciones conocidas</h2>
   <ul>
-    <li><b>La pantalla del teléfono debe permanecer encendida durante la duplicación</b> — la duplicación muestra exactamente lo que hay en la pantalla del teléfono, así que no puede continuar con la pantalla apagada o bloqueada. Usa <b>Evitar suspensión</b> para mantener la pantalla activa y <b>Atenuación automática</b> para oscurecerla y ahorrar batería en lugar de apagarla. Con Shizuku o root y la Atenuación automática activada, Apagar la pantalla del teléfono elimina esta limitación: apaga el panel mientras la duplicación sigue funcionando.</li>
+    <li><b>La pantalla del teléfono debe permanecer encendida durante la duplicación</b> — la duplicación muestra lo que hay en la pantalla del teléfono. Usa <b>Evitar suspensión</b> para mantenerla activa y <b>Atenuación automática</b> para ahorrar batería; con Shizuku o root, Apagar la pantalla del teléfono elimina esta limitación.</li>
     <li><b>El contenido protegido por DRM no se puede duplicar</b> — apps como Netflix o Disney+ muestran una pantalla negra. Es una restricción de la plataforma Android que la app no puede evitar.</li>
     <li>La <b>barra de navegación de Android Auto</b> en la pantalla del coche la dibuja el propio Android Auto y no se puede ocultar.</li>
   </ul>

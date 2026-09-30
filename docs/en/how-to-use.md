@@ -5,7 +5,7 @@ lang: en
 slug: how-to-use
 permalink: /docs/en/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-09-23
+last_modified_at: 2026-09-30
 ---
 
 # How to Use
@@ -120,3 +120,15 @@ Any of these works:
   (Privileged Features), which fixes the same problem a different way.
 - The **Android Auto navigation bar** on the car screen is drawn by Android Auto itself
   and cannot be hidden by the app.
+- **A Shizuku server started via ADB shuts down when you plug into the car** — the USB
+  connection puts the phone into accessory mode, which restarts ADB and takes Shizuku
+  with it — wireless debugging goes through the same ADB, so it does not help. Start
+  Shizuku again and ScreenOnAuto reconnects on its own; better still, use the [thedjchi
+  fork](https://github.com/thedjchi/Shizuku), whose watchdog service restarts it for
+  you. Root users and wireless Android Auto connections are unaffected.
+- **Waking the screen again** — the touchscreen powers down with the panel, so tapping
+  the phone does nothing. Tap the **Auto Dim** button on the car screen — toggling Auto
+  Dim wakes the screen (turn the button on first in **On-screen buttons → Control
+  buttons**; it is off by default). Or press the phone's power button **twice**, since
+  the first press is what puts the system to sleep. Stopping the mirror or disconnecting
+  Android Auto also brings the screen back.
