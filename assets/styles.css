@@ -170,7 +170,8 @@ header.hero::before {
 .carousel-btn:hover { color: #4cb578; border-color: #4cb578; }
 
 /* ============ sections ============ */
-section { padding: 44px 0 8px; }
+/* section.wrap, not section: .wrap's `padding: 0 20px` would otherwise zero the vertical padding */
+section.wrap { padding-top: 48px; padding-bottom: 8px; }
 section h2 {
   font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 600;
   font-size: 1.5rem; letter-spacing: 0.01em; margin: 0 0 20px;
@@ -213,7 +214,7 @@ section h3 { font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 60
 table { border-collapse: collapse; width: 100%; margin: 10px 0 20px; }
 th, td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: middle; }
 th { background: var(--bg-alt); }
-td img.mini { width: 44px; height: 44px; border-radius: 10px; }
+td img.mini { width: 44px; height: 44px; max-width: none; border-radius: 10px; }  /* don't shrink in a squeezed column */
 footer {
   border-top: 1px solid var(--border); margin-top: 48px; padding: 28px 0 40px;
   color: var(--muted); font-size: 0.85rem;
