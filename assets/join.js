@@ -45,7 +45,7 @@
     return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
   }
   function clockTime(tm) {
-    return new Date(tm - skew).toLocaleTimeString(lang, { hour: "2-digit", minute: "2-digit" });
+    return new Date(tm - skew).toLocaleTimeString(lang, { hour: "numeric", minute: "2-digit" });
   }
 
   // ---- state ----
