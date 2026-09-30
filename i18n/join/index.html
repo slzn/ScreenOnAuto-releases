@@ -1,0 +1,100 @@
+---
+layout: null
+permalink: /join/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join the beta — ScreenOnAuto</title>
+<!-- Not linked from anywhere and not indexed until the rotation cutover. -->
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="/images/icon_launcher.png">
+
+<script>
+/* Apply saved theme before first paint; fall back to the system preference. */
+(function () {
+  var saved = null;
+  try { saved = localStorage.getItem("theme"); } catch (err) {}  /* storage may be blocked */
+  var light = matchMedia("(prefers-color-scheme: light)");
+  document.documentElement.dataset.theme =
+    (saved === "light" || saved === "dark") ? saved : (light.matches ? "light" : "dark");
+  light.addEventListener("change", function (e) {
+    var s = null;
+    try { s = localStorage.getItem("theme"); } catch (err) {}
+    if (!s)
+      document.documentElement.dataset.theme = e.matches ? "light" : "dark";
+  });
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/assets/join.css">
+</head>
+<body>
+
+<button class="theme-toggle" type="button" aria-label="Toggle light / dark theme">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M19.4 4.6l-1.8 1.8M6.4 17.6l-1.8 1.8"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+</button>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow" data-t="eyebrow"></p>
+    <h1><a href="/" class="home"><img class="app-icon" src="/images/icon_launcher.png" alt="ScreenOnAuto"></a><span data-t="h1"></span></h1>
+    <p class="tagline" data-t="lede"></p>
+  </div>
+</header>
+
+<main class="wrap join">
+  <!-- The round clock: a "screen" surface, dark in both themes. -->
+  <section class="clock" aria-live="polite">
+    <div class="clock-head">
+      <span class="led" aria-hidden="true"></span>
+      <span class="phase mono" id="phase"></span>
+    </div>
+    <div class="clock-main">
+      <span class="digits mono" id="digits">--:--</span>
+      <span class="digits-label mono" id="digits-label"></span>
+    </div>
+    <div class="meter" aria-hidden="true"><span id="meter-fill"></span></div>
+    <p class="meter-label mono" id="meter-label"></p>
+  </section>
+
+  <p class="account-warn" data-t="accountWarn"></p>
+
+  <section class="card" id="action" aria-live="polite"></section>
+
+  <p class="account" id="account" hidden>
+    <span id="account-email"></span> ·
+    <button type="button" class="linkish" id="switch" data-t="switchAccount"></button>
+  </p>
+
+  <p class="aside">
+    <span data-t="olderAndroid"></span>
+    <a href="https://github.com/slzn/ScreenOnAuto-releases/releases/latest" data-t="downloadApk"></a>
+  </p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-t="footerRoad"></p>
+    <p data-t="footerGoogle"></p>
+  </div>
+</footer>
+
+<script src="/assets/join-strings.js"></script>
+<script src="/assets/join.js"></script>
+<script>
+document.querySelector(".theme-toggle").addEventListener("click", function () {
+  var next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+  document.documentElement.dataset.theme = next;
+  try { localStorage.setItem("theme", next); } catch (err) {}
+});
+</script>
+</body>
+</html>

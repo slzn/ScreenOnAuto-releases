@@ -1,0 +1,79 @@
+/* /join/ page — layered on top of styles.css (tokens, theme toggle, hero, .btn, footer). */
+
+.hero .home { display: flex; }
+/* One narrow column: the hero shares the main column's width so their edges line up. */
+.hero .wrap, .join, footer .wrap { max-width: 640px; }
+.join { padding-top: 8px; padding-bottom: 48px; }
+
+/* ============ round clock: a powered-on "screen", dark in both themes ============ */
+.clock {
+  background: var(--panel); border: 1px solid var(--panel-line); border-radius: 16px;
+  padding: 18px 22px 16px; color: var(--panel-text); box-shadow: var(--shadow);
+  margin: 0 0 18px;
+}
+.clock-head { display: flex; align-items: center; gap: 10px; }
+.clock .led {
+  width: 8px; height: 8px; border-radius: 50%; background: #4cb578;
+  box-shadow: 0 0 10px rgba(76, 181, 120, 0.8);
+}
+.clock.swapping .led { background: #d9a441; box-shadow: 0 0 10px rgba(217, 164, 65, 0.8); }
+.clock .phase { font-size: 0.78rem; letter-spacing: 0.14em; color: #4cb578; }
+.clock.swapping .phase { color: #d9a441; }
+.clock-main { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin: 6px 0 14px; }
+.clock .digits {
+  font-size: clamp(2.6rem, 11vw, 3.6rem); font-weight: 500; color: #e9eff5;
+  font-variant-numeric: tabular-nums; line-height: 1.1;
+}
+.clock .digits-label { font-size: 0.85rem; }
+.meter { height: 6px; border-radius: 3px; background: var(--panel-raise); overflow: hidden; }
+.meter span { display: block; height: 100%; width: 0; background: #4cb578; transition: width 0.4s; }
+.meter-label { font-size: 0.78rem; margin: 8px 0 0; }
+
+/* ============ account + action card ============ */
+.account-warn {
+  background: var(--warn-bg); border: 1px solid var(--warn-border); border-radius: 12px;
+  padding: 10px 14px; font-size: 0.92rem; margin: 0 0 18px;
+}
+.card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+  padding: 20px 22px; margin: 0 0 12px;
+}
+.card.go { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 7%, var(--card)); }
+.card h2 {
+  font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 600;
+  font-size: 1.3rem; margin: 0 0 8px; display: block;
+}
+.card h2::after { content: none; }   /* styles.css rules section h2s with a trailing line */
+.card p { margin: 0 0 14px; }
+.card .btn { cursor: pointer; font-size: 1rem; }
+.card .btn:disabled { opacity: 0.6; cursor: progress; }
+.card .gis { min-height: 44px; }
+.card .hint { color: var(--muted); font-size: 0.88rem; margin: 12px 0 0; }
+.card .notice-line { color: var(--amber); font-size: 0.92rem; margin: 12px 0 0; }
+
+.install-steps { list-style: none; margin: 0; padding: 0; counter-reset: step; }
+.install-steps li {
+  counter-increment: step; display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  padding: 10px 0; border-top: 1px solid var(--border);
+}
+.install-steps li:first-child { border-top: 0; }
+.install-steps li::before {
+  content: counter(step); font-family: "IBM Plex Mono", ui-monospace, monospace;
+  color: var(--amber); width: 1.2em;
+}
+.install-steps .btn { min-width: 12em; text-align: center; }
+.install-steps span { color: var(--muted); font-size: 0.92rem; flex: 1 1 14em; }
+
+.account { color: var(--muted); font-size: 0.88rem; margin: 0 0 24px; }
+.linkish {
+  background: none; border: 0; padding: 0; font: inherit; color: var(--accent);
+  cursor: pointer; text-decoration: underline;
+}
+.aside { color: var(--muted); font-size: 0.92rem; }
+
+@media (max-width: 520px) {
+  .install-steps .btn { width: 100%; }
+}
+
+/* ============ RTL (ar) ============ */
+[dir="rtl"] .clock .phase, [dir="rtl"] .card h2 { letter-spacing: 0; }
