@@ -196,9 +196,17 @@
   // Built at click time so it carries the state the visitor is actually looking at. The
   // issue is public, so it never includes the email address — only what helps find the
   // round in the VM's rotate.log.
+  // Round numbers are half hours since 1970 UTC; show when the round started too, in the
+  // owner's zone (Taipei, as in rotate.log) and UTC.
+  function roundStartText(round, zone) {
+    return new Intl.DateTimeFormat("sv-SE", {
+      timeZone: zone, year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit"
+    }).format(new Date(round * ROUND_MS));
+  }
   function reportUrl() {
     var n = now(), state = !token ? "signed-out" : (me ? me.state : "loading");
     var round = Math.floor(n / ROUND_MS);
+    var taipei = roundStartText(round, "Asia/Taipei");
     var body = [
       "<!-- " + t("reportIntro") + " -->",
       "**" + t("reportWhat") + "**",
@@ -206,13 +214,14 @@
       "---",
       "Diagnostics (filled in automatically):",
       "- Page state: " + state,
-      "- Round: " + round + " (" + (collecting(n) ? "sign-ups open" : "swapping") + ")",
+      "- Round: " + round + " — started " + taipei + " Taipei (" + roundStartText(round, "UTC").slice(11) +
+        " UTC), " + (collecting(n) ? "sign-ups open" : "swapping"),
       "- Time (UTC): " + new Date(n).toISOString().slice(0, 16).replace("T", " "),
       "- Slots: " + (slots === null ? "?" : taken + " / " + slots),
       "- Page language: " + lang,
       "- Browser: " + navigator.userAgent
     ].join("\n");
-    return ISSUES + "?title=" + encodeURIComponent("[Sign-up] " + state + " — round " + round) +
+    return ISSUES + "?title=" + encodeURIComponent("[Sign-up] " + state + " — round " + round + " (" + taipei + " Taipei)") +
       "&body=" + encodeURIComponent(body);
   }
   function reportLink() {
