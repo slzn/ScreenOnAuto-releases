@@ -43,8 +43,10 @@ ScreenOnAuto-releases/
 ├── README.md               ← English; the only README at the root (GitHub renders it)
 ├── .github/README.<lang>.md← the 9 translated READMEs (zh-TW/pt-BR/es/de/fr/it/tr/ar/ko)
 ├── CNAME                   ← screenonauto.lzn.idv.tw (GitHub Pages custom domain)
-├── index.html              ← English landing page (the only page served from the root)
+├── index.html              ← English landing page (the only page served from the root;
+│                             carries empty `layout: null` front matter so Liquid includes work)
 ├── i18n/<lang>/index.html  ← translated landing pages, one dir per language
+├── _includes/tools.html    ← shared top-right cluster: GitHub icon · language menu · theme toggle
 ├── assets/styles.css       ← shared landing-page stylesheet
 ├── assets/carousel.js      ← shared carousel script
 ├── docs/<lang>/<slug>.md   ← on-site copies of the 4 wiki guides × 10 languages
@@ -84,16 +86,24 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
   asphalt/signal-green/amber). "Screen" surfaces (`--panel*`) stay dark in both themes.
 - **Type:** Chakra Petch (display/H1/H2/buttons) + IBM Plex Mono (eyebrows, captions,
   footer) via Google Fonts `<link>` in every page head; body stays system-ui.
-- **Theme toggle:** fixed top-right button (left in RTL) in every landing page and
-  `_layouts/doc.html`; pre-paint script in `<head>` reads localStorage `theme`,
-  falls back to system. Aria-labels are localized per language.
+- **Top-right tools (since 2026-09-30):** `_includes/tools.html`, used by all ten landing
+  pages (`{% include tools.html lang="<code>" %}`) and inside the docbar of
+  `_layouts/doc.html` (`lang=page.lang`). It holds a GitHub icon link, a `<details>`
+  language menu, and the light/dark toggle. The menu lists all ten languages. The current
+  one is ticked and not linked. On doc pages it links to the same doc in each language,
+  via the layout's `variants`. It replaced the hero's language row, which also carried a
+  GitHub link, and the docbar's language list. The cluster is `position: absolute`
+  (scrolls away), left in RTL. The pre-paint script in `<head>` still reads localStorage
+  `theme` and falls back to the system setting.
 - **Hero:** eyebrow + h1-with-icon + two `.paths` install cards (Android 14+ Play /
   ≤13 APK) — these **replaced the old `.cta` buttons and the yellow `.notice` block**
   (notice content was merged into the cards). Features grid is tiered
-  `.grid.core` (3) + `.grid.more` (9).
+  `.grid.core` (3) + `.grid.more` (6), one-sentence cards; Privileged Features is a
+  2×2 `.grid.core.priv`. Keep the landing page short: troubleshooting and long caveats
+  belong in How to Use → Troubleshooting, and the landing page links there (2026-09-30).
 - **Carousel** is framed as a head-unit bezel purely via CSS (markup/carousel.js
   unchanged); top 3px of slide images are clipped in CSS (baked-in artifact).
-- **RTL:** `[dir="rtl"]` block at the end of assets/styles.css also moves the toggle and
+- **RTL:** `[dir="rtl"]` block at the end of assets/styles.css also moves the `.tools` cluster and
   zeroes letter-spacing (Arabic joining) — keep in sync for new components.
 - **Doc pages:** content screenshots auto-frame as dark panels via
   `.doc p:has(> img:only-child)` (top 3px clipped — source images carry a dashed
@@ -208,14 +218,29 @@ The APK arrives in `release/` already named — this repo never builds it.
 
 ## README Structure Notes
 
-All ten READMEs use a **4-step installation flow via KingInstaller**:
+All ten READMEs share one structure (en at the root, the other nine in `.github/`):
 
-1. Install KingInstaller (from https://github.com/fcaronte/KingInstaller/releases)
-2. Use KingInstaller to install ScreenOnAuto APK (so Android Auto accepts it as Play Store installed)
-3. Verify in Android Auto — Settings → Connected devices → Android Auto → Customize Launcher — confirm two entries appear: **ScreenOnAuto** (mirror) and **ScreenOnAuto Media Controller** (media proxy)
-4. Grant required permissions
+- **Install notice** (IMPORTANT alert under the screenshot):
+  - Android 14+ → Google Play only, through the half-hourly sign-up at
+    `https://screenonauto.lzn.idv.tw/join/?lang=<code>`.
+  - Android ≤13 → KingInstaller sideload.
+- **Installation → Android 14 and above** is one paragraph: why Play, then sign up on `/join/`
+  (30-minute rounds, install link at round start), then a link to the Join the Beta Test
+  wiki page. There is no "invite-based" wording and no Google Form any more.
+- **Installation → Android 13 and below** is the KingInstaller flow:
+  1. Install KingInstaller. Step 1.2 says to allow unknown-app installs, without a
+     hard-coded settings path.
+  2. Install `ScreenOnAuto-*.apk` from the latest release.
+  3. Grant permissions.
+- **Verify in Android Auto** expects **two** entries: ScreenOnAuto and ScreenOnAuto
+  (Legacy). ScreenOnAuto Media Controller appears only on older Android Auto, and its
+  absence is normal. Do not describe it as a required entry.
+- **Privileged Features**: a one-line intro, the table, and a single line linking to
+  How to Use → Troubleshooting (the Shizuku-over-USB and screen-wake notes live there).
+- The READMEs keep the full Features list. The landing pages carry the condensed
+  9-card version. Keep the two consistent in substance, not in length.
 
-When updating the installation section in future versions, keep this 4-step structure and update the APK filename in Step 2.
+When the install flow changes, update all ten READMEs **and** the ten landing pages.
 
 ## Publishing a New Release
 
@@ -279,11 +304,11 @@ sed -i 's/{prev-date}/{new-date}/g' index.html i18n/*/index.html   # hits dateMo
 
 **1b. READMEs — usually a no-op.** The READMEs reference the APK **version-agnostically** —
 `ScreenOnAuto-*.apk` downloaded from the
-[latest release](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) page (see
-`README.md` line ~58 / `.github/README.zh-TW.md` line ~55) — so a routine version bump needs **no README edit**.
+[latest release](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) page (Step 2 of the
+Android 13 and below install section in every README) — so a routine version bump needs **no README edit**.
 The GitHub Release in Step 3 (`--latest`) is what makes that link resolve to the new build.
-Only edit the READMEs when the install flow itself changes (e.g. the 4-step KingInstaller
-sequence) — then update **all ten READMEs and the ten landing pages**.
+Only edit the READMEs when the install flow itself changes (e.g. the KingInstaller
+sequence or the Android 14+ sign-up) — then update **all ten READMEs and the ten landing pages**.
 
 Commit whatever Step 1 touched:
 
