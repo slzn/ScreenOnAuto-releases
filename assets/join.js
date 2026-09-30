@@ -282,6 +282,30 @@
     });
   }
 
+  // FAQ: static copy; {verify} / {howto} in an answer become links to the landing page's
+  // "Verify in Android Auto" section and the How to Use guide, in the page's language.
+  var FAQ_COUNT = 8;
+  function renderFaq() {
+    var links = {
+      verify: [(lang === "en" ? "/" : "/" + lang + "/") + "#verify", t("verifyLink")],
+      howto: ["/docs/" + lang + "/how-to-use/", t("howtoLink")]
+    };
+    var list = document.getElementById("faq-list");
+    list.textContent = "";
+    for (var i = 1; i <= FAQ_COUNT; i++) {
+      var d = el("details");
+      d.appendChild(el("summary", null, t("faq" + i + "q")));
+      var p = el("p");
+      t("faq" + i + "a").split(/(\{verify\}|\{howto\})/).forEach(function (part) {
+        var m = /^\{(verify|howto)\}$/.exec(part);
+        if (m) p.appendChild(el("a", { href: links[m[1]][0] }, links[m[1]][1]));
+        else if (part) p.appendChild(document.createTextNode(part));
+      });
+      d.appendChild(p);
+      list.appendChild(d);
+    }
+  }
+
   document.getElementById("switch").addEventListener("click", function () {
     if (gisReady) google.accounts.id.disableAutoSelect();
     saveToken(null); me = null; notice = ""; lastKey = ""; render();
@@ -298,6 +322,7 @@
   document.head.appendChild(gsi);
 
   applyStaticText();
+  renderFaq();
   render();
   refresh();
   setInterval(function () {
