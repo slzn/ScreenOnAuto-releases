@@ -64,7 +64,10 @@ window.JOIN_STRINGS = {
       "faq8a": "In Android Auto's Customize Launcher you'll see two icons: ScreenOnAuto (full-screen mirror) and ScreenOnAuto (Legacy). To check them, see {verify}; to start using the app, see {howto}.",
       "verifyLink": "Verify in Android Auto",
       "howtoLink": "How to Use",
-      "syncingBody": "The tester list is being updated — the install buttons will appear here within a few minutes. Keep this page open."
+      "syncingBody": "The tester list is being updated — the install buttons will appear here within a few minutes. Keep this page open.",
+      "reportLink": "Still can't install? Report the problem on GitHub",
+      "reportIntro": "This issue is public — please don't post your email address here.",
+      "reportWhat": "What happened:"
   },
   "zh-TW": {
       "title": "安裝 ScreenOnAuto",
@@ -126,7 +129,10 @@ window.JOIN_STRINGS = {
       "faq8a": "在 Android Auto 的「自訂啟動器」裡會看到兩個圖示：ScreenOnAuto（全螢幕鏡像）和 ScreenOnAuto (Legacy)。確認方式請看{verify}，開始使用請看{howto}。",
       "verifyLink": "在 Android Auto 中驗證",
       "howtoLink": "如何使用",
-      "syncingBody": "正在更新測試者名單，安裝按鈕會在幾分鐘內自動出現在這裡。請保持這個頁面開著。"
+      "syncingBody": "正在更新測試者名單，安裝按鈕會在幾分鐘內自動出現在這裡。請保持這個頁面開著。",
+      "reportLink": "還是沒辦法安裝？到 GitHub 回報問題",
+      "reportIntro": "這個 issue 是公開的，請不要在這裡貼出你的 email。",
+      "reportWhat": "發生了什麼事："
   },
   "pt-BR": {
       "title": "Instalar o ScreenOnAuto",
@@ -188,7 +194,10 @@ window.JOIN_STRINGS = {
       "faq8a": "Em Personalizar tela de início do Android Auto, você verá dois ícones: ScreenOnAuto (espelhamento em tela cheia) e ScreenOnAuto (Legacy). Para conferir, veja {verify}; para começar a usar, veja {howto}.",
       "verifyLink": "Verificar no Android Auto",
       "howtoLink": "Como Usar",
-      "syncingBody": "A lista de testadores está sendo atualizada — os botões de instalação vão aparecer aqui em alguns minutos. Mantenha esta página aberta."
+      "syncingBody": "A lista de testadores está sendo atualizada — os botões de instalação vão aparecer aqui em alguns minutos. Mantenha esta página aberta.",
+      "reportLink": "Ainda não consegue instalar? Relate o problema no GitHub",
+      "reportIntro": "Este issue é público — não publique seu endereço de e-mail aqui.",
+      "reportWhat": "O que aconteceu:"
   },
   "es": {
       "title": "Instalar ScreenOnAuto",
@@ -250,7 +259,10 @@ window.JOIN_STRINGS = {
       "faq8a": "En Personalizar menú de aplicaciones de Android Auto verás dos iconos: ScreenOnAuto (duplicación a pantalla completa) y ScreenOnAuto (Legacy). Para comprobarlos, consulta {verify}; para empezar a usarla, consulta {howto}.",
       "verifyLink": "Verificar en Android Auto",
       "howtoLink": "Cómo Usar",
-      "syncingBody": "Se está actualizando la lista de testers; los botones de instalación aparecerán aquí en unos minutos. Deja esta página abierta."
+      "syncingBody": "Se está actualizando la lista de testers; los botones de instalación aparecerán aquí en unos minutos. Deja esta página abierta.",
+      "reportLink": "¿Sigues sin poder instalar? Informa del problema en GitHub",
+      "reportIntro": "Este issue es público: no publiques aquí tu dirección de correo.",
+      "reportWhat": "Qué pasó:"
   },
   "de": {
       "title": "ScreenOnAuto installieren",
@@ -312,7 +324,10 @@ window.JOIN_STRINGS = {
       "faq8a": "Unter „Launcher anpassen“ in Android Auto siehst du zwei Symbole: ScreenOnAuto (Vollbild-Spiegelung) und ScreenOnAuto (Legacy). Wie du sie überprüfst, steht unter {verify}; wie du loslegst, unter {howto}.",
       "verifyLink": "In Android Auto überprüfen",
       "howtoLink": "Verwendung",
-      "syncingBody": "Die Testerliste wird gerade aktualisiert – die Installations-Buttons erscheinen hier in wenigen Minuten. Lass diese Seite geöffnet."
+      "syncingBody": "Die Testerliste wird gerade aktualisiert – die Installations-Buttons erscheinen hier in wenigen Minuten. Lass diese Seite geöffnet.",
+      "reportLink": "Klappt die Installation immer noch nicht? Melde das Problem auf GitHub",
+      "reportIntro": "Dieses Issue ist öffentlich – bitte poste hier nicht deine E-Mail-Adresse.",
+      "reportWhat": "Was ist passiert:"
   },
   "fr": {
       "title": "Installer ScreenOnAuto",
@@ -374,7 +389,10 @@ window.JOIN_STRINGS = {
       "faq8a": "Dans Personnaliser le lanceur d'Android Auto, vous verrez deux icônes : ScreenOnAuto (duplication en plein écran) et ScreenOnAuto (Legacy). Pour les vérifier, consultez {verify} ; pour commencer, consultez {howto}.",
       "verifyLink": "Vérifier dans Android Auto",
       "howtoLink": "Comment utiliser",
-      "syncingBody": "La liste des testeurs est en cours de mise à jour — les boutons d'installation apparaîtront ici d'ici quelques minutes. Gardez cette page ouverte."
+      "syncingBody": "La liste des testeurs est en cours de mise à jour — les boutons d'installation apparaîtront ici d'ici quelques minutes. Gardez cette page ouverte.",
+      "reportLink": "Toujours impossible d'installer ? Signalez le problème sur GitHub",
+      "reportIntro": "Ce ticket est public — ne publiez pas votre adresse e-mail ici.",
+      "reportWhat": "Ce qui s'est passé :"
   },
   "it": {
       "title": "Installa ScreenOnAuto",
@@ -436,7 +454,10 @@ window.JOIN_STRINGS = {
       "faq8a": "In Personalizza avvio applicazioni di Android Auto vedrai due icone: ScreenOnAuto (mirroring a schermo intero) e ScreenOnAuto (Legacy). Per verificarle, consulta {verify}; per iniziare, consulta {howto}.",
       "verifyLink": "Verifica in Android Auto",
       "howtoLink": "Come si usa",
-      "syncingBody": "L'elenco dei tester è in aggiornamento: i pulsanti di installazione compariranno qui entro pochi minuti. Tieni aperta questa pagina."
+      "syncingBody": "L'elenco dei tester è in aggiornamento: i pulsanti di installazione compariranno qui entro pochi minuti. Tieni aperta questa pagina.",
+      "reportLink": "Ancora non riesci a installare? Segnala il problema su GitHub",
+      "reportIntro": "Questa issue è pubblica: non pubblicare qui il tuo indirizzo email.",
+      "reportWhat": "Cosa è successo:"
   },
   "tr": {
       "title": "ScreenOnAuto'yu yükleyin",
@@ -498,7 +519,10 @@ window.JOIN_STRINGS = {
       "faq8a": "Android Auto'nun Başlatıcıyı özelleştir ekranında iki simge göreceksiniz: ScreenOnAuto (tam ekran yansıtma) ve ScreenOnAuto (Legacy). Kontrol etmek için {verify} bölümüne, kullanmaya başlamak için {howto} sayfasına bakın.",
       "verifyLink": "Android Auto'da doğrulama",
       "howtoLink": "Nasıl Kullanılır",
-      "syncingBody": "Test kullanıcısı listesi güncelleniyor — yükleme düğmeleri birkaç dakika içinde burada görünecek. Bu sayfayı açık tutun."
+      "syncingBody": "Test kullanıcısı listesi güncelleniyor — yükleme düğmeleri birkaç dakika içinde burada görünecek. Bu sayfayı açık tutun.",
+      "reportLink": "Hâlâ yükleyemiyor musunuz? Sorunu GitHub'da bildirin",
+      "reportIntro": "Bu kayıt herkese açıktır — lütfen e-posta adresinizi buraya yazmayın.",
+      "reportWhat": "Ne oldu:"
   },
   "ar": {
       "title": "ثبِّت ScreenOnAuto",
@@ -560,7 +584,10 @@ window.JOIN_STRINGS = {
       "faq8a": "في «تخصيص المشغِّل» في Android Auto سترى أيقونتين: ScreenOnAuto (نسخ مطابق بملء الشاشة) و ScreenOnAuto (Legacy). للتحقق منهما راجع {verify}، ولبدء الاستخدام راجع {howto}.",
       "verifyLink": "التحقق في Android Auto",
       "howtoLink": "طريقة الاستخدام",
-      "syncingBody": "جارٍ تحديث قائمة المختبِرين — ستظهر أزرار التثبيت هنا خلال بضع دقائق. أبقِ هذه الصفحة مفتوحة."
+      "syncingBody": "جارٍ تحديث قائمة المختبِرين — ستظهر أزرار التثبيت هنا خلال بضع دقائق. أبقِ هذه الصفحة مفتوحة.",
+      "reportLink": "ما زلت لا تستطيع التثبيت؟ أبلغ عن المشكلة على GitHub",
+      "reportIntro": "هذه المشكلة منشورة للعموم — يُرجى عدم نشر بريدك الإلكتروني هنا.",
+      "reportWhat": "ماذا حدث:"
   },
   "ko": {
       "title": "ScreenOnAuto 설치",
@@ -622,6 +649,9 @@ window.JOIN_STRINGS = {
       "faq8a": "Android Auto의 런처 맞춤설정에서 ScreenOnAuto(전체 화면 미러링)와 ScreenOnAuto (Legacy) 두 개의 아이콘이 보입니다. 확인 방법은 {verify}, 사용법은 {howto} 문서를 참고하세요.",
       "verifyLink": "Android Auto에서 확인",
       "howtoLink": "사용 방법",
-      "syncingBody": "테스터 목록을 업데이트하고 있습니다. 몇 분 안에 설치 버튼이 여기에 자동으로 나타납니다. 이 페이지를 열어 두세요."
+      "syncingBody": "테스터 목록을 업데이트하고 있습니다. 몇 분 안에 설치 버튼이 여기에 자동으로 나타납니다. 이 페이지를 열어 두세요.",
+      "reportLink": "여전히 설치할 수 없나요? GitHub에 문제를 알려 주세요",
+      "reportIntro": "이 이슈는 공개됩니다. 이메일 주소는 여기에 올리지 마세요.",
+      "reportWhat": "무슨 일이 있었나요:"
   }
 };

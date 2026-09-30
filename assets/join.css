@@ -79,6 +79,7 @@
 .faq details[open] summary::after { content: "−"; }
 .faq summary:hover { color: var(--accent); }
 .faq details p { margin: 0 4px 16px; color: var(--muted); }
+.faq .report { margin: 20px 4px 0; font-size: 0.92rem; }
 .linkish {
   background: none; border: 0; padding: 0; font: inherit; color: var(--accent);
   cursor: pointer; text-decoration: underline;

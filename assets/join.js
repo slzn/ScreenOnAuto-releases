@@ -9,6 +9,7 @@
   var CLIENT_ID = "745158970576-s17vs6mgqn21eib74fkun0auigbbfbha.apps.googleusercontent.com";
   var OPT_IN = "https://play.google.com/apps/internaltest/4701398309137571774";
   var STORE = "https://play.google.com/store/apps/details?id=idv.lzn.screenonauto";
+  var ISSUES = "https://github.com/slzn/ScreenOnAuto-releases/issues/new";
   var ROUND_MS = 30 * 60 * 1000, COLLECT_MS = 25 * 60 * 1000;
   var POLL_MS = 30 * 1000;       // refresh the slot count this often
   var SYNCING_POLL_MS = 10 * 1000;   // … and this often while waiting for the swap to land
@@ -191,6 +192,35 @@
     });
   }
 
+  // ---- problem report: a prefilled GitHub issue ----
+  // Built at click time so it carries the state the visitor is actually looking at. The
+  // issue is public, so it never includes the email address — only what helps find the
+  // round in the VM's rotate.log.
+  function reportUrl() {
+    var n = now(), state = !token ? "signed-out" : (me ? me.state : "loading");
+    var round = Math.floor(n / ROUND_MS);
+    var body = [
+      "<!-- " + t("reportIntro") + " -->",
+      "**" + t("reportWhat") + "**",
+      "", "", "",
+      "---",
+      "Diagnostics (filled in automatically):",
+      "- Page state: " + state,
+      "- Round: " + round + " (" + (collecting(n) ? "sign-ups open" : "swapping") + ")",
+      "- Time (UTC): " + new Date(n).toISOString().slice(0, 16).replace("T", " "),
+      "- Slots: " + (slots === null ? "?" : taken + " / " + slots),
+      "- Page language: " + lang,
+      "- Browser: " + navigator.userAgent
+    ].join("\n");
+    return ISSUES + "?title=" + encodeURIComponent("[Sign-up] " + state + " — round " + round) +
+      "&body=" + encodeURIComponent(body);
+  }
+  function reportLink() {
+    var a = el("a", { href: ISSUES, target: "_blank", rel: "noopener" }, t("reportLink"));
+    a.addEventListener("click", function () { a.href = reportUrl(); });
+    return a;
+  }
+
   // ---- rendering ----
   function el(tag, attrs, text) {
     var e = document.createElement(tag);
@@ -250,7 +280,10 @@
       title("waitingTitle");
       body(t("waitingBody", { mmss: mmss(me.from - n), time: clockTime(me.from) }));
     } else if (me.state === "failed" || me.state === "none") {
-      if (me.state === "failed") { title("failedTitle"); body(t("failedBody")); }
+      if (me.state === "failed") {
+        title("failedTitle"); body(t("failedBody"));
+        var rp = el("p", { "class": "hint" }); rp.appendChild(reportLink()); box.appendChild(rp);
+      }
       if (!open) {
         if (me.state !== "failed") title("closedTitle");
         body(t("closedBody", { mmss: mmss(nextOpen - n), time: clockTime(nextOpen) }));
@@ -323,6 +356,9 @@
       d.appendChild(p);
       list.appendChild(d);
     }
+    var rp = el("p", { "class": "report" });
+    rp.appendChild(reportLink());
+    list.appendChild(rp);
   }
 
   document.getElementById("switch").addEventListener("click", function () {
