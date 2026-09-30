@@ -12,7 +12,7 @@
 
 > [!IMPORTANT]
 > **How you install depends on your Android version:**
-> - **Android 14 and above** — install via **Google Play only** (invite-based — the app is **not searchable** on the Play Store). [Join the tester list →](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)
+> - **Android 14 and above** — install via **Google Play only**: sign up for a half-hourly round, then install within 25 minutes (the app is **not searchable** on the Play Store). [Sign up →](https://screenonauto.lzn.idv.tw/join/?lang=en)
 > - **Android 13 and below** — sideload the APK with KingInstaller ([steps below](#installation)), or install via Google Play.
 
 ## Features
@@ -35,7 +35,7 @@
 
 ## Privileged Features
 
-These unlock things the normal Android APIs cannot do. They need **[Shizuku](https://shizuku.rikka.app/) or root**, and they are entirely opt-in: if your phone has neither, **nothing changes** — the section is still listed in Settings, but everything on it stays greyed out, and every other feature works exactly as before.
+Optional — needs [Shizuku](https://shizuku.rikka.app/) or root. Without either, everything else works exactly the same.
 
 | Feature | What it does |
 |---|---|
@@ -44,20 +44,7 @@ These unlock things the normal Android APIs cannot do. They need **[Shizuku](htt
 | **Phone Navigation Buttons** | Back / Home / Recent apps work with **no Accessibility Service enabled at all**. Turn the buttons on in **On-screen buttons → Control buttons** |
 | **Match the Phone Screen to the Car** | Reshapes the phone's display to the head unit's aspect ratio while mirroring, so the black bars and the split-view distortion are gone at the source — the car screen is measured automatically |
 
-> [!IMPORTANT]
-> **A Shizuku server started via ADB shuts down when you plug into the car.** The USB
-> connection puts the phone into accessory mode, which restarts ADB and takes Shizuku with
-> it — wireless debugging goes through the same ADB, so it does not help. Start Shizuku
-> again and ScreenOnAuto reconnects on its own; better still, use the
-> [thedjchi fork](https://github.com/thedjchi/Shizuku), whose watchdog service restarts it
-> for you. Root users and wireless Android Auto connections are unaffected.
-
-> **Waking the screen again:** the touchscreen powers down with the panel, so tapping the
-> phone does nothing. Tap the **Auto Dim** button on the car screen — toggling Auto Dim
-> wakes the screen (turn the button on first in **On-screen buttons → Control buttons**; it
-> is off by default). Or press the phone's power button **twice**, since the first press is
-> what puts the system to sleep. Stopping the mirror or disconnecting Android Auto also
-> brings the screen back.
+Shizuku stopped when you plugged in, or the screen won't wake up? See [Troubleshooting](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use#troubleshooting).
 
 ## Requirements
 
@@ -70,16 +57,7 @@ These unlock things the normal Android APIs cannot do. They need **[Shizuku](htt
 
 ### Android 14 and above — install via Google Play
 
-> **Why Google Play?**  
-> Android Auto only runs apps installed from the Play Store, and Android 14+ blocks
-> the KingInstaller workaround below — so Play is the only way to get a build that
-> Android Auto accepts. What you install is still the **full app** — the same release
-> as the GitHub APK, just delivered through Play's internal-testing track.
-
-The app is **not searchable on the Play Store** — installation is **invite-based**.
-See **[Join the Beta Test](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test)**
-for the sign-up page and step-by-step instructions. After installing, launch the app and grant
-the in-app permissions the same way.
+Android Auto only runs apps installed from the Play Store, and Android 14+ blocks the KingInstaller workaround — so install through Google Play's internal testing. It's the same full app as on GitHub, but it isn't searchable on the Play Store: [**sign up on the install page**](https://screenonauto.lzn.idv.tw/join/?lang=en). A new round opens every 30 minutes, and your install link appears when the round starts. Full steps: [**Join the Beta Test**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Join-the-Beta-Test).
 
 ### Android 13 and below — sideload with KingInstaller
 
@@ -92,7 +70,7 @@ the in-app permissions the same way.
 #### Step 1 — Install KingInstaller
 
 1. Go to [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases) and download the latest `KingInstaller.apk`
-2. On your phone: **Settings → Security → Enable "Install unknown apps"** for your browser or file manager
+2. Allow your browser or file manager to **install unknown apps** — Android asks the first time you open an APK
 3. Open `KingInstaller.apk` and tap **Install**
 
 #### Step 2 — Install ScreenOnAuto via KingInstaller
@@ -117,14 +95,8 @@ You should see these **two** ScreenOnAuto entries:
 | <img src="images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Mirrors the phone screen full-screen — replaces the map area for a full-screen view |
 | <img src="images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Mirrors the phone screen using the Legacy projection path — can be displayed side-by-side with the map |
 
-Depending on your **Android Auto version** you may also see a third entry,
-<img src="images/icon_media.png" width="20"> **ScreenOnAuto Media Controller** — and you may not. **Both are normal:**
-
-- **Older Android Auto** — the entry is listed, with its own icon.
-- **Newer Android Auto** — no entry. The Media Controller has no UI of its own: it drives Android Auto's built-in media panel, and newer Android Auto integrates that panel directly, so no separate icon is needed. **Media control still works.**
-
-If either of the **two** entries above is missing, that *is* a problem: for a sideload install, reinstall via KingInstaller and ensure it reports Google Play Store as the installer source; for a Google Play install, make sure the Play build finished installing, then re-open Android Auto.
-**Don't reinstall just because the Media Controller entry is absent** — that is expected on newer Android Auto.
+Older Android Auto also lists a third entry, **ScreenOnAuto Media Controller**. If you don't see it, that's normal — media control works either way.
+If either of the **two** entries above is missing, reinstall — through KingInstaller for a sideload, or let the Play install finish — then reopen Android Auto.
 
 Ready to go? See **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use)** for starting the mirror in the car.
 
@@ -135,13 +107,13 @@ Ready to go? See **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wi
 | Screen Capture (MediaProjection) | Screen Mirroring |
 | Notification Listener | Media Session Proxy |
 | Display Over Other Apps | Auto Dim & Force Landscape |
-| Accessibility Service | Touch Forwarding *(Experimental)* & the Back / Home / Recent apps buttons — with the [Privileged Features](#privileged-features) neither needs it: the buttons work as soon as a backend is connected, Touch Forwarding once **Real touch injection** is on |
+| Accessibility Service | Touch Forwarding & the Back / Home / Recent apps buttons (not needed with the privileged features) |
 
 > **Tip:** To avoid the Screen Capture permission dialog on every launch, you can pre-grant it via ADB — see [Grant Mirror Permission via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB). This is also what unlocks **Mirror only this app**.
 
 ## Known Limitations
 
-- **The phone screen must stay on while mirroring** — the mirror simply shows what's on the phone screen, so it cannot keep running with the screen off or locked. Use **Prevent Sleep** to keep the screen awake, and **Auto Dim** to darken it and save battery instead of turning it off. *(With Shizuku or root **and Auto Dim on**, [Turn the Phone Screen Off](#privileged-features) lifts this — it powers the panel down while the mirror keeps running.)*
+- **The phone screen must stay on while mirroring** — the mirror shows what's on the phone screen. Use **Prevent Sleep** to keep it awake and **Auto Dim** to save battery; with Shizuku or root, Turn the Phone Screen Off lifts this.
 - **DRM-protected content cannot be mirrored** — apps such as Netflix or Disney+ show a black screen on the mirror. This is an Android platform restriction that the app cannot work around.
 - The **Android Auto navigation bar** on the car screen is drawn by Android Auto itself and cannot be hidden.
 

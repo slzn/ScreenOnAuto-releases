@@ -12,7 +12,7 @@
 
 > [!IMPORTANT]
 > **La méthode d'installation dépend de votre version d'Android :**
-> - **Android 14 et plus** — installation via **Google Play uniquement** (sur invitation — l'app **n'apparaît pas** dans les recherches du Play Store). [Rejoindre la liste des testeurs →](https://github.com/slzn/ScreenOnAuto-releases/wiki/Rejoindre-le-test-bêta)
+> - **Android 14 et plus** — installation **uniquement via Google Play** : inscrivez-vous à un tour toutes les demi-heures, puis installez dans les 25 minutes (l'app **n'apparaît pas dans les recherches** du Play Store). [S'inscrire →](https://screenonauto.lzn.idv.tw/join/?lang=fr)
 > - **Android 13 et moins** — installez l'APK avec KingInstaller ([étapes ci-dessous](#installation)), ou via Google Play.
 
 ## Fonctionnalités
@@ -35,7 +35,7 @@
 
 ## Fonctions privilégiées
 
-Elles débloquent ce que les API Android normales ne peuvent pas faire. Elles nécessitent **[Shizuku](https://shizuku.rikka.app/) ou root** et sont entièrement facultatives : si votre téléphone n'a ni l'un ni l'autre, **rien ne change** — la section reste affichée dans les paramètres, mais tout ce qu'elle contient est grisé, et toutes les autres fonctionnalités se comportent exactement comme avant.
+Facultatif — nécessite [Shizuku](https://shizuku.rikka.app/) ou root. Sans eux, tout le reste fonctionne exactement pareil.
 
 | Fonction | Ce qu'elle fait |
 |---|---|
@@ -44,10 +44,7 @@ Elles débloquent ce que les API Android normales ne peuvent pas faire. Elles n�
 | **Boutons de navigation du téléphone** | Retour / Accueil / Apps récentes fonctionnent **sans aucun service d'accessibilité activé**. Activez les boutons dans **Boutons à l'écran → Boutons de fonction** |
 | **Adapter l'écran du téléphone à celui de la voiture** | Redimensionne l'écran du téléphone au format de l'écran de la voiture pendant la duplication, supprimant à la source les bandes noires et la déformation en écran partagé — l'écran de la voiture est mesuré automatiquement |
 
-> [!IMPORTANT]
-> **Un serveur Shizuku démarré via ADB s'arrête lorsque vous branchez le téléphone à la voiture.** La connexion USB fait passer le téléphone en mode accessoire, ce qui redémarre ADB et emporte Shizuku avec lui — le débogage sans fil passe par le même ADB et n'y change rien. Relancez Shizuku et ScreenOnAuto se reconnecte tout seul ; mieux encore, utilisez le [fork de thedjchi](https://github.com/thedjchi/Shizuku), dont le service watchdog le relance pour vous. Les utilisateurs root et les connexions Android Auto sans fil ne sont pas concernés.
-
-> **Réveiller l'écran après son extinction :** la dalle tactile s'éteint avec l'écran, toucher le téléphone ne fait donc rien. Touchez le bouton **Atténuation automatique** sur l'écran de la voiture — basculer l'atténuation automatique réveille l'écran (activez d'abord le bouton dans **Boutons à l'écran → Boutons de fonction** ; il est désactivé par défaut). Ou appuyez **deux fois** sur le bouton d'alimentation du téléphone, car la première pression est celle qui met le système en veille. Arrêter la duplication ou déconnecter Android Auto rallume aussi l'écran.
+Shizuku s'est arrêté au branchement dans la voiture, ou l'écran ne se réveille plus ? Consultez [Dépannage](https://github.com/slzn/ScreenOnAuto-releases/wiki/Comment-utiliser#dépannage).
 
 ## Prérequis
 
@@ -60,17 +57,7 @@ Elles débloquent ce que les API Android normales ne peuvent pas faire. Elles n�
 
 ### Android 14 et plus — installation via Google Play
 
-> **Pourquoi Google Play ?**  
-> Android Auto n'exécute que les apps installées depuis le Play Store, et Android 14+
-> bloque le contournement KingInstaller ci-dessous — Play est donc le seul moyen
-> d'obtenir une version acceptée par Android Auto. Vous installez bien l'**app
-> complète** — la même version que l'APK GitHub, simplement livrée via le canal de
-> test interne de Play.
-
-L'app **n'apparaît pas dans les recherches du Play Store** — l'installation se fait **sur invitation**.
-Consultez **[Rejoindre le test bêta](https://github.com/slzn/ScreenOnAuto-releases/wiki/Rejoindre-le-test-bêta)**
-pour la page d'inscription et les instructions pas à pas. Après l'installation, lancez l'app et
-accordez les permissions demandées de la même manière.
+Android Auto n'exécute que les apps installées depuis le Play Store, et Android 14+ bloque la méthode KingInstaller — installez donc via les tests internes de Google Play. C'est la même app complète que sur GitHub, mais elle n'apparaît pas dans les recherches du Play Store : [**inscrivez-vous sur la page d'installation**](https://screenonauto.lzn.idv.tw/join/?lang=fr). Un nouveau tour s'ouvre toutes les 30 minutes, et votre lien d'installation apparaît au début du tour. Toutes les étapes : [**Rejoindre le test bêta**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Rejoindre-le-test-bêta).
 
 ### Android 13 et moins — installation avec KingInstaller
 
@@ -83,7 +70,7 @@ accordez les permissions demandées de la même manière.
 #### Étape 1 — Installer KingInstaller
 
 1. Allez sur [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases) et téléchargez le dernier `KingInstaller.apk`
-2. Sur votre téléphone : **Paramètres → Sécurité → activez « Installer des apps inconnues »** pour votre navigateur ou gestionnaire de fichiers
+2. Autorisez votre navigateur ou gestionnaire de fichiers à **installer des applis inconnues** — Android le demande la première fois que vous ouvrez un APK
 3. Ouvrez `KingInstaller.apk` et touchez **Installer**
 
 #### Étape 2 — Installer ScreenOnAuto via KingInstaller
@@ -108,14 +95,8 @@ Vous devriez voir ces **deux** entrées ScreenOnAuto :
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Duplique l'écran du téléphone en plein écran — remplace la zone de carte |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Duplique l'écran via le chemin de projection Legacy — peut s'afficher côte à côte avec la carte |
 
-Selon votre **version d'Android Auto**, vous verrez peut-être aussi une troisième entrée,
-<img src="../images/icon_media.png" width="20"> **ScreenOnAuto Media Controller** — ou peut-être pas. **Les deux cas sont normaux :**
-
-- **Ancienne version d'Android Auto** — l'entrée est listée, avec sa propre icône.
-- **Version récente d'Android Auto** — aucune entrée. Le Media Controller n'a jamais eu d'interface propre : il pilote le panneau multimédia intégré d'Android Auto, et les versions récentes l'intègrent directement, donc aucune icône distincte n'est nécessaire. **Le contrôle multimédia fonctionne toujours.**
-
-S'il manque l'une des **deux** entrées ci-dessus, il y a bien un problème : pour une installation KingInstaller, réinstallez en vérifiant que Google Play Store est déclaré comme source ; pour une installation Google Play, attendez la fin de l'installation puis rouvrez Android Auto.
-**Ne réinstallez pas simplement parce que l'entrée Media Controller est absente** — c'est normal sur les versions récentes d'Android Auto.
+Les anciennes versions d'Android Auto affichent aussi une troisième entrée, **ScreenOnAuto Media Controller**. Si vous ne la voyez pas, c'est normal — le contrôle multimédia fonctionne quand même.
+S'il manque l'une des **deux** entrées ci-dessus, réinstallez — via KingInstaller pour un sideload, ou laissez l'installation Play se terminer — puis rouvrez Android Auto.
 
 Prêt ? Consultez **[Comment utiliser](https://github.com/slzn/ScreenOnAuto-releases/wiki/Comment-utiliser)** pour démarrer la duplication dans la voiture.
 
@@ -126,13 +107,13 @@ Prêt ? Consultez **[Comment utiliser](https://github.com/slzn/ScreenOnAuto-rele
 | Capture d'écran (MediaProjection) | Duplication d'écran |
 | Accès aux notifications | Proxy de session multimédia |
 | Afficher par-dessus les autres apps | Atténuation automatique et Forcer le paysage |
-| Service d'accessibilité | Transfert tactile *(Expérimental)* et boutons Retour / Accueil / Apps récentes — avec les [Fonctions privilégiées](#fonctions-privilégiées), aucun des deux n'en a besoin : les boutons fonctionnent dès qu'un backend est connecté, le transfert tactile dès que **Injection tactile réelle** est activée |
+| Service d'accessibilité | Transfert tactile et boutons Retour / Accueil / Récents (inutile avec les fonctions privilégiées) |
 
 > **Astuce :** pour éviter la boîte de dialogue de capture d'écran à chaque lancement, vous pouvez pré-accorder la permission via ADB — voir [Accorder la permission de duplication via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Accorder-la-permission-de-duplication-via-ADB). C'est aussi ce qui débloque **Dupliquer seulement cette application**.
 
 ## Limitations connues
 
-- **L'écran du téléphone doit rester allumé pendant la duplication** — la duplication montre exactement ce qui est affiché sur le téléphone ; elle ne peut pas continuer écran éteint ou verrouillé. Utilisez **Empêcher la mise en veille** pour garder l'écran actif, et **Atténuation automatique** pour l'assombrir et économiser la batterie au lieu de l'éteindre. *(Avec Shizuku ou root et l'Atténuation automatique activée, [Éteindre l'écran du téléphone](#fonctions-privilégiées) lève cette limitation : la dalle s'éteint pendant que la duplication continue.)*
+- **L'écran du téléphone doit rester allumé pendant la duplication** — la duplication montre ce qui s'affiche sur le téléphone. Utilisez **Empêcher la mise en veille** pour le garder actif et **Atténuation automatique** pour économiser la batterie ; avec Shizuku ou root, Éteindre l'écran du téléphone lève cette limite.
 - **Les contenus protégés par DRM ne peuvent pas être dupliqués** — les apps comme Netflix ou Disney+ affichent un écran noir. C'est une restriction de la plateforme Android que l'app ne peut pas contourner.
 - La **barre de navigation Android Auto** sur l'écran de la voiture est dessinée par Android Auto lui-même et ne peut pas être masquée.
 

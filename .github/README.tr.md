@@ -12,7 +12,7 @@
 
 > [!IMPORTANT]
 > **Kurulum yönteminiz Android sürümünüze bağlıdır:**
-> - **Android 14 ve üzeri** — yalnızca **Google Play** üzerinden kurulum (davetiyeli — uygulama Play Store'da **aranarak bulunamaz**). [Test kullanıcısı listesine katılın →](https://github.com/slzn/ScreenOnAuto-releases/wiki/Beta-Testine-Katılın)
+> - **Android 14 ve üzeri** — **yalnızca Google Play üzerinden** kurulur: yarım saatte bir açılan bir tura kaydolun, ardından 25 dakika içinde yükleyin (uygulama Play Store'da **aramada görünmez**). [Kaydol →](https://screenonauto.lzn.idv.tw/join/?lang=tr)
 > - **Android 13 ve altı** — APK'yı KingInstaller ile elle yükleyin ([adımlar aşağıda](#kurulum)) veya Google Play üzerinden kurun.
 
 ## Özellikler
@@ -35,7 +35,7 @@
 
 ## Ayrıcalıklı özellikler
 
-Bunlar, normal Android API'lerinin yapamadıklarını açar. **[Shizuku](https://shizuku.rikka.app/) veya root** gerektirir ve tamamen isteğe bağlıdır: telefonunuzda ikisi de yoksa **hiçbir şey değişmez** — bölüm ayarlarda görünmeye devam eder, ancak içindeki her şey soluk ve devre dışı kalır ve diğer tüm özellikler tam olarak eskisi gibi çalışır.
+İsteğe bağlı — [Shizuku](https://shizuku.rikka.app/) veya root gerektirir. Bunlar olmadan diğer her şey aynen çalışır.
 
 | Özellik | Ne yapar |
 |---|---|
@@ -44,10 +44,7 @@ Bunlar, normal Android API'lerinin yapamadıklarını açar. **[Shizuku](https:/
 | **Telefon gezinme düğmeleri** | Geri / Ana ekran / Son uygulamalar **hiçbir Erişilebilirlik Hizmeti etkin olmadan** çalışır. Düğmeleri **Ekran düğmeleri → İşlev düğmeleri** bölümünden açın |
 | **Telefon ekranını arabaya uydur** | Yansıtma sırasında telefon ekranını araba ünitesinin en boy oranına dönüştürür, böylece siyah kenarlıklar ve bölünmüş ekrandaki bozulma kaynağında ortadan kalkar — araba ekranı otomatik olarak ölçülür |
 
-> [!IMPORTANT]
-> **ADB ile başlatılan bir Shizuku sunucusu, telefonu arabaya taktığınızda kapanır.** USB bağlantısı telefonu aksesuar moduna alır; bu da ADB'yi yeniden başlatır ve Shizuku'yu da beraberinde götürür — kablosuz hata ayıklama da aynı ADB üzerinden çalıştığı için işe yaramaz. Shizuku'yu yeniden başlatmanız yeterli, ScreenOnAuto kendiliğinden yeniden bağlanır; daha da iyisi, watchdog hizmeti onu sizin yerinize yeniden başlatan [thedjchi sürümünü](https://github.com/thedjchi/Shizuku) kullanın. Root kullanıcıları ve kablosuz Android Auto bağlantıları bundan etkilenmez.
-
-> **Ekran kapandıktan sonra tekrar uyandırma:** dokunmatik ekran panelle birlikte kapandığı için telefona dokunmak işe yaramaz. Araç ekranındaki **Otomatik Karartma** düğmesine dokunun — Otomatik Karartma'yı açıp kapatmak ekranı uyandırır (düğmeyi önce **Ekran düğmeleri → İşlev düğmeleri** bölümünden açın; varsayılan olarak kapalıdır). Ya da telefonun güç düğmesine **iki kez** basın, çünkü ilk basış sistemi uyku moduna alan basıştır. Yansıtmayı durdurmak veya Android Auto bağlantısını kesmek de ekranı geri getirir.
+Araca takınca Shizuku durdu mu, ya da ekran uyanmıyor mu? [Sorun Giderme](https://github.com/slzn/ScreenOnAuto-releases/wiki/Nasıl-Kullanılır#sorun-giderme) bölümüne bakın.
 
 ## Gereksinimler
 
@@ -60,17 +57,7 @@ Bunlar, normal Android API'lerinin yapamadıklarını açar. **[Shizuku](https:/
 
 ### Android 14 ve üzeri — Google Play üzerinden kurulum
 
-> **Neden Google Play?**  
-> Android Auto yalnızca Play Store'dan yüklenen uygulamaları çalıştırır ve Android 14+
-> aşağıdaki KingInstaller yöntemini engeller — dolayısıyla Android Auto'nun kabul
-> ettiği bir sürümü edinmenin tek yolu Play'dir. Yüklediğiniz yine **uygulamanın
-> tamamıdır** — GitHub APK'sıyla aynı sürüm, yalnızca Play'in dahilî test kanalı
-> üzerinden dağıtılır.
-
-Uygulama **Play Store'da aranarak bulunamaz** — kurulum **davetiyelidir**.
-Kayıt sayfası ve adım adım talimatlar için
-**[Beta Testine Katılın](https://github.com/slzn/ScreenOnAuto-releases/wiki/Beta-Testine-Katılın)**
-sayfasına bakın. Kurulumdan sonra uygulamayı açın ve uygulama içi izinleri aynı şekilde verin.
+Android Auto yalnızca Play Store'dan yüklenen uygulamaları çalıştırır ve Android 14+ KingInstaller yöntemini engeller — bu yüzden Google Play dahili testi üzerinden yükleyin. GitHub'dakiyle aynı tam uygulamadır, ancak Play Store aramalarında görünmez: [**yükleme sayfasından kaydolun**](https://screenonauto.lzn.idv.tw/join/?lang=tr). Her 30 dakikada yeni bir tur açılır ve tur başladığında yükleme bağlantınız görünür. Tüm adımlar: [**Beta Testine Katılın**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Beta-Testine-Katılın).
 
 ### Android 13 ve altı — KingInstaller ile elle yükleme
 
@@ -83,7 +70,7 @@ sayfasına bakın. Kurulumdan sonra uygulamayı açın ve uygulama içi izinleri
 #### 1. Adım — KingInstaller'ı kurun
 
 1. [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases) sayfasına gidin ve en yeni `KingInstaller.apk` dosyasını indirin
-2. Telefonunuzda: tarayıcınız veya dosya yöneticiniz için **Ayarlar → Güvenlik → "Bilinmeyen uygulamaları yükle"yi etkinleştirin**
+2. Tarayıcınızın veya dosya yöneticinizin **bilinmeyen uygulamaları yüklemesine** izin verin — Android bunu bir APK'yı ilk açtığınızda sorar
 3. `KingInstaller.apk` dosyasını açın ve **Yükle**'ye dokunun
 
 #### 2. Adım — ScreenOnAuto'yu KingInstaller ile kurun
@@ -108,14 +95,8 @@ Telefonunuzda **Ayarlar → Bağlı cihazlar → Android Auto → Başlatıcıy�
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Telefon ekranını tam ekran yansıtır — tam ekran görünüm için harita alanının yerini alır |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Telefon ekranını Legacy projeksiyon yoluyla yansıtır — haritayla yan yana gösterilebilir |
 
-**Android Auto sürümünüze** bağlı olarak üçüncü bir giriş de görebilirsiniz:
-<img src="../images/icon_media.png" width="20"> **ScreenOnAuto Media Controller** — ya da göremeyebilirsiniz. **İkisi de normaldir:**
-
-- **Eski Android Auto** — giriş kendi simgesiyle listelenir.
-- **Yeni Android Auto** — giriş yok. Media Controller'ın kendine ait bir arayüzü hiç olmadı: Android Auto'nun yerleşik medya panelini sürer; yeni sürümler bu paneli doğrudan bütünleştirdiği için ayrı bir simgeye gerek kalmaz. **Medya kontrolü çalışmaya devam eder.**
-
-Yukarıdaki **iki** girişten biri eksikse, o gerçekten bir sorundur: elle yüklemede KingInstaller ile yeniden kurun ve yükleyici kaynağının Google Play Store olarak bildirildiğinden emin olun; Google Play kurulumunda Play sürümünün kurulumunun bittiğinden emin olun ve Android Auto'yu yeniden açın.
-**Yalnızca Media Controller girişi görünmüyor diye yeniden kurmayın** — yeni Android Auto sürümlerinde bu beklenen durumdur.
+Eski Android Auto sürümleri üçüncü bir öğe de gösterir: **ScreenOnAuto Media Controller**. Görmüyorsanız bu normaldir — medya kontrolü yine çalışır.
+Yukarıdaki **iki** öğeden biri eksikse yeniden yükleyin — sideload için KingInstaller ile, Play için kurulumun bitmesini bekleyin — ve Android Auto'yu yeniden açın.
 
 Hazır mısınız? Arabada yansıtmayı başlatmak için **[Nasıl Kullanılır](https://github.com/slzn/ScreenOnAuto-releases/wiki/Nasıl-Kullanılır)** kılavuzuna bakın.
 
@@ -126,13 +107,13 @@ Hazır mısınız? Arabada yansıtmayı başlatmak için **[Nasıl Kullanılır]
 | Ekran Kaydı (MediaProjection) | Ekran Yansıtma |
 | Bildirim Dinleyici | Medya Oturumu Aracısı |
 | Diğer uygulamaların üzerinde göster | Otomatik Karartma ve Yatay Modu Zorlama |
-| Erişilebilirlik Hizmeti | Dokunma Aktarımı *(deneysel)* ve Geri / Ana ekran / Son uygulamalar düğmeleri — [Ayrıcalıklı özellikler](#ayrıcalıklı-özellikler) ile ikisi de bunu gerektirmez: düğmeler bir arka uç bağlanır bağlanmaz, dokunma aktarımı ise **Gerçek dokunma enjeksiyonu** açıkken çalışır |
+| Erişilebilirlik Hizmeti | Dokunma aktarımı ve Geri / Ana ekran / Son uygulamalar düğmeleri (ayrıcalıklı özelliklerle gerekmez) |
 
 > **İpucu:** Her başlatmada Ekran Kaydı izin penceresiyle karşılaşmamak için izni ADB ile önceden verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](https://github.com/slzn/ScreenOnAuto-releases/wiki/ADB-ile-Yansıtma-İzni-Verme). Bu aynı zamanda **Yalnızca bu uygulamayı yansıt** özelliğini de açar.
 
 ## Bilinen Sınırlamalar
 
-- **Yansıtma sırasında telefon ekranı açık kalmalıdır** — yansıtma yalnızca telefon ekranında ne varsa onu gösterir; ekran kapalıyken veya kilitliyken çalışmaya devam edemez. Ekranı açık tutmak için **Uykuyu Engelleme**'yi, kapatmak yerine karartıp pil tasarrufu yapmak için **Otomatik Karartma**'yı kullanın. *(Shizuku veya root ile ve Otomatik Karartma açıkken [Telefon ekranını kapat](#ayrıcalıklı-özellikler) bu sınırlamayı kaldırır: yansıtma çalışmaya devam ederken paneli kapatır.)*
+- **Yansıtma sırasında telefon ekranı açık kalmalıdır** — yansıtma telefon ekranında görüneni gösterir. Ekranı açık tutmak için **Uykuyu engelle**'yi, pil tasarrufu için **Otomatik karartma**'yı kullanın; Shizuku veya root ile Telefon ekranını kapat bu sınırlamayı kaldırır.
 - **DRM korumalı içerik yansıtılamaz** — Netflix veya Disney+ gibi uygulamalar yansıtmada siyah ekran gösterir. Bu, uygulamanın aşamayacağı bir Android platform kısıtlamasıdır.
 - Araç ekranındaki **Android Auto gezinme çubuğu** Android Auto'nun kendisi tarafından çizilir ve gizlenemez.
 

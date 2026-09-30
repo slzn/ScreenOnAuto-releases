@@ -12,7 +12,7 @@
 
 > [!IMPORTANT]
 > **安裝方式取決於你的 Android 版本：**
-> - **Android 14 以上（含）** — **僅能透過 Play 商店安裝**（採邀請制，**商店搜尋不到**）。[加入測試者名單 →](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)
+> - **Android 14 以上（含）** — **僅能透過 Play 商店安裝**：每半小時一輪報名，之後 25 分鐘內安裝（**商店搜尋不到**）。[前往報名 →](https://screenonauto.lzn.idv.tw/join/?lang=zh-TW)
 > - **Android 13 以下（含）** — 用 KingInstaller sideload 安裝 APK（[步驟見下方](#安裝步驟)），或改用 Play 商店安裝。
 
 ## 功能介紹
@@ -35,7 +35,7 @@
 
 ## 特權功能
 
-這些功能可解鎖一般 Android API 做不到的事。需要 **[Shizuku](https://shizuku.rikka.app/) 或 root**，且完全是選用的：手機若兩者皆無，**一切照舊**——這個區塊仍會列在設定中，只是裡面的項目都是灰色的、無法開啟，其他功能運作完全不變。
+選用功能，需要 [Shizuku](https://shizuku.rikka.app/) 或 root；沒有的話，其他功能完全不受影響。
 
 | 功能 | 說明 |
 |---|---|
@@ -44,10 +44,7 @@
 | **手機導覽按鈕** | 返回/主畫面/最近應用程式按鈕**完全不需要啟用無障礙服務**。請在**畫面按鈕 → 功能按鈕**中開啟這些按鈕 |
 | **讓手機畫面比例對齊車機** | 鏡像期間將手機畫面調整為車機的長寬比，從源頭消除黑邊與分割畫面的變形——車機尺寸會自動偵測 |
 
-> [!IMPORTANT]
-> **以 ADB 啟動的 Shizuku 會在插上車機時被關閉。** USB 連線會讓手機進入配件模式，這會重啟 ADB 並一併帶走 Shizuku——無線偵錯走的是同一個 ADB，所以一樣沒用。重新啟動 Shizuku 即可，ScreenOnAuto 會自行重新連線；更省事的做法是改用 [thedjchi 分支版](https://github.com/thedjchi/Shizuku)，它的 watchdog 服務會自動幫你重啟。root 使用者與無線 Android Auto 連線不受影響。
-
-> **螢幕關閉後如何再喚醒：**觸控面板會隨螢幕一同斷電，因此點手機不會有反應。點車機畫面上的**自動調暗**按鈕即可——切換自動調暗會喚醒螢幕（前提是已在**畫面按鈕 → 功能按鈕**中開啟它，該按鈕預設為關閉）；或連按手機電源鍵**兩次**，因為第一下是讓系統進入休眠。停止鏡像或中斷 Android Auto 也會讓螢幕恢復。
+插上車機後 Shizuku 停止了、螢幕關閉後不知道怎麼喚醒？請見[疑難排解](https://github.com/slzn/ScreenOnAuto-releases/wiki/如何使用#疑難排解)。
 
 ## 系統需求
 
@@ -60,14 +57,7 @@
 
 ### Android 14 以上（含）— 透過 Play 商店安裝
 
-> **為什麼要用 Play 商店安裝？**  
-> Android Auto 只接受由 Play 商店安裝的 App，而 Android 14+ 已擋掉下方的
-> KingInstaller 變通法 —— 因此 Play 是唯一能讓 Android Auto 正常運作的安裝方式。
-> 安裝到的仍是**完整版 App**，內容與 GitHub 版本相同，只是透過 Play 內部測試軌道發佈。
-
-**Play 商店裡搜尋不到本 App** —— 採**邀請制**：報名頁與詳細步驟請見
-**[加入 Beta 測試](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)**。
-安裝完成後，啟動 App 並依相同方式授予 App 內權限。
+Android Auto 只接受從 Play 商店安裝的 App，而 Android 14 起 KingInstaller 已無法使用，因此請透過 Google Play 內部測試安裝。內容與 GitHub 版本相同，只是 Play 商店搜尋不到：到[**安裝頁面報名**](https://screenonauto.lzn.idv.tw/join/?lang=zh-TW)，每 30 分鐘一輪，輪次開始時就會出現安裝連結。完整步驟請見 [**加入 Beta 測試**](https://github.com/slzn/ScreenOnAuto-releases/wiki/加入-Beta-測試)。
 
 ### Android 13 以下（含）— 透過 KingInstaller sideload
 
@@ -80,7 +70,7 @@
 #### 第一步 — 安裝 KingInstaller
 
 1. 前往 [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases)，下載最新版 `KingInstaller.apk`
-2. 在手機上開啟：**設定 → 安全性 → 允許安裝未知來源應用程式**
+2. 允許瀏覽器或檔案管理器**安裝不明應用程式**——第一次開啟 APK 時 Android 會詢問
 3. 開啟 `KingInstaller.apk` 並點選**安裝**
 
 #### 第二步 — 透過 KingInstaller 安裝 ScreenOnAuto
@@ -105,14 +95,8 @@
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | 將手機螢幕鏡像至 Android Auto，取代地圖位置達到全螢幕顯示 |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | 使用舊版投影路徑鏡像手機螢幕，可與地圖並列顯示 |
 
-依您的 **Android Auto 版本**，可能還會看到第三個項目
-<img src="../images/icon_media.png" width="20"> **ScreenOnAuto Media Controller**，也可能不會。**兩種都正常：**
-
-- **較舊的 Android Auto** — 會列出該項目，並有獨立圖示。
-- **較新的 Android Auto** — 不會列出。媒體控制器本來就沒有自己的介面：它驅動的是 Android Auto 內建的媒體面板，而新版 Android Auto 已將該面板整合，因此不需要獨立圖示。**媒體控制功能仍然正常。**
-
-若上述**兩個**項目有任何一個缺失，那才是真的有問題：sideload 安裝者請重新透過 KingInstaller 安裝並確認安裝來源為 Google Play 商店；Play 商店安裝者請確認 Play 版已安裝完成，再重新開啟 Android Auto。
-**請勿只因為看不到 Media Controller 項目就重新安裝** — 在新版 Android Auto 上這是預期行為。
+較舊的 Android Auto 還會多列一個 **ScreenOnAuto Media Controller**；沒看到也正常，媒體控制照樣能用。
+若上述**兩個**項目有任何一個缺失：sideload 安裝請重新透過 KingInstaller 安裝，Play 安裝請確認已安裝完成，再重新開啟 Android Auto。
 
 安裝完成後，請見 **[如何使用](https://github.com/slzn/ScreenOnAuto-releases/wiki/如何使用)** 了解如何在車上啟動鏡像。
 
@@ -123,13 +107,13 @@
 | 螢幕擷取（MediaProjection） | 螢幕鏡像 |
 | 通知存取服務 | 媒體工作階段代理 |
 | 在其他應用程式上層顯示 | 自動調暗與強制橫向 |
-| 無障礙服務 | 觸控轉發 *（實驗性功能）* 與返回/主畫面/最近應用程式按鈕——使用[特權功能](#特權功能)時兩者都不需要此權限：按鈕在連上後端後立即生效，觸控轉發則需另外開啟**真實觸控注入** |
+| 無障礙服務 | 觸控轉發與返回／主畫面／最近應用程式按鈕（使用特權功能時不需要） |
 
 > **小提示：** 若希望每次鏡像時不再顯示螢幕擷取權限對話框，可透過 ADB 預先授予此權限——請參閱[使用 ADB 授予鏡像權限](https://github.com/slzn/ScreenOnAuto-releases/wiki/使用-ADB-授予鏡像權限)。 這也是解鎖**只鏡像這個應用程式**的方式。
 
 ## 已知限制
 
-- **鏡像期間手機螢幕必須保持開啟**——鏡像顯示的就是手機螢幕當下的畫面，螢幕關閉或鎖定後便無法維持鏡像。可用**防止進入休眠**讓螢幕保持喚醒，並以**自動調暗**代替關螢幕來省電。 *（使用 Shizuku 或 root、且已開啟自動調暗時，[關閉手機螢幕](#特權功能)可解除此限制——它會關閉面板，但鏡像持續運作。）*
+- **鏡像期間手機螢幕必須開著**——鏡像的就是手機當下的畫面。可用**防止進入休眠**保持喚醒、用**自動調暗**省電；有 Shizuku 或 root 時，可改用「關閉手機螢幕」。
 - **受 DRM 保護的內容無法鏡像** — Netflix、Disney+ 等 app 在鏡像畫面上會顯示黑畫面。這是 Android 平台的限制，app 無法繞過。
 - 車機畫面上的 **Android Auto 導覽列**由 Android Auto 自行繪製，無法隱藏。
 

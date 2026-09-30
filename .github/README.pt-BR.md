@@ -12,7 +12,7 @@
 
 > [!IMPORTANT]
 > **A forma de instalar depende da sua versão do Android:**
-> - **Android 14 ou superior** — instale **somente pelo Google Play** (por convite — o app **não aparece na busca** da Play Store). [Entrar na lista de testadores →](https://github.com/slzn/ScreenOnAuto-releases/wiki/Participar-do-Teste-Beta)
+> - **Android 14 ou superior** — instale **somente pelo Google Play**: inscreva-se em uma rodada a cada meia hora e instale em até 25 minutos (o app **não aparece na busca** da Play Store). [Inscrever-se →](https://screenonauto.lzn.idv.tw/join/?lang=pt-BR)
 > - **Android 13 ou inferior** — faça sideload do APK com o KingInstaller ([passos abaixo](#instalação)) ou instale pelo Google Play.
 
 ## Recursos
@@ -35,7 +35,7 @@
 
 ## Recursos privilegiados
 
-Estes desbloqueiam o que as APIs normais do Android não conseguem fazer. Exigem **[Shizuku](https://shizuku.rikka.app/) ou root** e são totalmente opcionais: se o celular não tiver nenhum dos dois, **nada muda** — a seção continua listada nas configurações, mas tudo nela fica esmaecido, e todos os outros recursos funcionam exatamente como antes.
+Opcional — requer [Shizuku](https://shizuku.rikka.app/) ou root. Sem eles, todo o resto funciona exatamente igual.
 
 | Recurso | O que faz |
 |---|---|
@@ -44,10 +44,7 @@ Estes desbloqueiam o que as APIs normais do Android não conseguem fazer. Exigem
 | **Botões de navegação do celular** | Voltar / Início / Apps recentes funcionam **sem nenhum Serviço de acessibilidade ativado**. Ative os botões em **Botões na tela → Botões de função** |
 | **Ajustar a tela do telefone à do carro** | Remodela a tela do celular para a proporção da unidade do carro durante o espelhamento, eliminando na origem as barras pretas e a distorção na tela dividida — a tela do carro é medida automaticamente |
 
-> [!IMPORTANT]
-> **Um servidor Shizuku iniciado via ADB é encerrado quando você conecta ao carro.** A conexão USB coloca o celular em modo acessório, o que reinicia o ADB e derruba o Shizuku junto — a depuração sem fio passa pelo mesmo ADB, então não ajuda. Basta iniciar o Shizuku de novo e o ScreenOnAuto reconecta sozinho; melhor ainda, use o [fork do thedjchi](https://github.com/thedjchi/Shizuku), cujo serviço de watchdog o reinicia para você. Usuários com root e conexões sem fio do Android Auto não são afetados.
-
-> **Como acordar a tela depois do desligamento:** a tela sensível ao toque desliga junto com o painel, então tocar no celular não faz nada. Toque no botão **Escurecimento automático** na tela do carro — alternar o escurecimento automático acorda a tela (ative o botão antes em **Botões na tela → Botões de função**; ele vem desligado). Ou pressione o botão liga/desliga do celular **duas vezes**, já que o primeiro toque é o que coloca o sistema para dormir. Parar o espelhamento ou desconectar o Android Auto também traz a tela de volta.
+O Shizuku parou ao conectar no carro, ou a tela não acorda? Veja [Solução de problemas](https://github.com/slzn/ScreenOnAuto-releases/wiki/Como-Usar#solução-de-problemas).
 
 ## Requisitos
 
@@ -60,17 +57,7 @@ Estes desbloqueiam o que as APIs normais do Android não conseguem fazer. Exigem
 
 ### Android 14 ou superior — instale pelo Google Play
 
-> **Por que o Google Play?**  
-> O Android Auto só executa apps instalados pela Play Store, e o Android 14+ bloqueia
-> o método alternativo com o KingInstaller descrito abaixo — então o Play é a única
-> forma de obter uma versão que o Android Auto aceite. O que você instala continua
-> sendo o **app completo** — a mesma versão do APK do GitHub, apenas distribuída pela
-> trilha de teste interno do Play.
-
-O app **não aparece na busca da Play Store** — a instalação é **por convite**.
-Veja **[Participar do Teste Beta](https://github.com/slzn/ScreenOnAuto-releases/wiki/Participar-do-Teste-Beta)**
-para a página de inscrição e o passo a passo. Depois de instalar, abra o app e conceda
-as permissões solicitadas normalmente.
+O Android Auto só executa apps instalados pela Play Store, e o Android 14+ bloqueia o método do KingInstaller — por isso, instale pelo teste interno do Google Play. É o mesmo app completo do GitHub, mas ele não aparece na busca da Play Store: [**inscreva-se na página de instalação**](https://screenonauto.lzn.idv.tw/join/?lang=pt-BR). Uma nova rodada abre a cada 30 minutos, e o link de instalação aparece quando a rodada começa. Passo a passo completo: [**Participar do Teste Beta**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Participar-do-Teste-Beta).
 
 ### Android 13 ou inferior — sideload com KingInstaller
 
@@ -83,7 +70,7 @@ as permissões solicitadas normalmente.
 #### Passo 1 — Instale o KingInstaller
 
 1. Acesse [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases) e baixe o `KingInstaller.apk` mais recente
-2. No celular: **Configurações → Segurança → Ative "Instalar apps desconhecidos"** para o seu navegador ou gerenciador de arquivos
+2. Permita que o navegador ou gerenciador de arquivos **instale apps desconhecidos** — o Android pergunta na primeira vez que você abre um APK
 3. Abra o `KingInstaller.apk` e toque em **Instalar**
 
 #### Passo 2 — Instale o ScreenOnAuto pelo KingInstaller
@@ -108,14 +95,8 @@ Você deve ver estas **duas** entradas do ScreenOnAuto:
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Espelha a tela do celular em tela cheia — substitui a área do mapa |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Espelha a tela do celular pelo caminho de projeção Legacy — pode ser exibido lado a lado com o mapa |
 
-Dependendo da sua **versão do Android Auto**, você também pode ver uma terceira entrada,
-<img src="../images/icon_media.png" width="20"> **ScreenOnAuto Media Controller** — ou não. **Os dois casos são normais:**
-
-- **Android Auto mais antigo** — a entrada aparece, com ícone próprio.
-- **Android Auto mais recente** — sem entrada. O Media Controller nunca teve interface própria: ele comanda o painel de mídia embutido do Android Auto, e as versões mais recentes integram esse painel diretamente, então não é preciso um ícone separado. **O controle de mídia continua funcionando.**
-
-Se faltar alguma das **duas** entradas acima, aí sim há um problema: em instalação por sideload, reinstale pelo KingInstaller e confirme que ele registra a Google Play Store como origem; em instalação pelo Google Play, aguarde a instalação do Play concluir e reabra o Android Auto.
-**Não reinstale só porque a entrada do Media Controller não aparece** — isso é esperado nas versões mais recentes do Android Auto.
+Versões mais antigas do Android Auto também mostram uma terceira entrada, **ScreenOnAuto Media Controller**. Se ela não aparecer, é normal — o controle de mídia funciona do mesmo jeito.
+Se faltar qualquer uma das **duas** entradas acima, reinstale — pelo KingInstaller no sideload, ou aguarde a instalação do Play terminar — e abra o Android Auto de novo.
 
 Tudo pronto? Veja **[Como Usar](https://github.com/slzn/ScreenOnAuto-releases/wiki/Como-Usar)** para iniciar o espelhamento no carro.
 
@@ -126,13 +107,13 @@ Tudo pronto? Veja **[Como Usar](https://github.com/slzn/ScreenOnAuto-releases/wi
 | Captura de tela (MediaProjection) | Espelhamento de tela |
 | Acesso às notificações | Proxy de sessão de mídia |
 | Sobrepor a outros apps | Escurecimento automático e Forçar paisagem |
-| Serviço de acessibilidade | Encaminhamento de toque *(experimental)* e os botões Voltar / Início / Apps recentes — com os [Recursos privilegiados](#recursos-privilegiados) nenhum dos dois precisa dele: os botões funcionam assim que um backend é conectado, e o encaminhamento de toque quando **Injeção de toque real** está ativado |
+| Serviço de acessibilidade | Encaminhamento de toque e botões Voltar / Início / Recentes (desnecessário com os recursos privilegiados) |
 
 > **Dica:** para evitar o diálogo de permissão de captura de tela a cada início, você pode conceder a permissão uma única vez via ADB — veja [Conceder Permissão de Espelhamento via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permissão-de-Espelhamento-via-ADB). Isso também é o que libera **Espelhar apenas este app**.
 
 ## Limitações conhecidas
 
-- **A tela do celular precisa ficar ligada durante o espelhamento** — o espelhamento mostra exatamente o que está na tela do celular, então não continua com a tela desligada ou bloqueada. Use **Impedir suspensão** para manter a tela acesa e **Escurecimento automático** para escurecê-la e economizar bateria em vez de desligá-la. *(Com Shizuku ou root e o Escurecimento automático ativado, [Desligar a tela do telefone](#recursos-privilegiados) remove essa limitação: desliga o painel enquanto o espelhamento continua.)*
+- **A tela do celular precisa ficar ligada durante o espelhamento** — o espelhamento mostra o que está na tela do celular. Use **Impedir suspensão** para mantê-la acesa e **Escurecimento automático** para economizar bateria; com Shizuku ou root, Desligar a tela do telefone remove essa limitação.
 - **Conteúdo protegido por DRM não pode ser espelhado** — apps como Netflix ou Disney+ mostram uma tela preta no espelhamento. É uma restrição da plataforma Android que o app não tem como contornar.
 - A **barra de navegação do Android Auto** na tela do carro é desenhada pelo próprio Android Auto e não pode ser ocultada.
 
