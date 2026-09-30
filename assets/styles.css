@@ -36,7 +36,7 @@ img { max-width: 100%; height: auto; }
 /* ============ theme toggle (shown only once JS has set data-theme) ============ */
 .theme-toggle {
   position: fixed; top: 18px; right: 18px; z-index: 10;
-  width: 40px; height: 40px; border-radius: 10px; cursor: pointer; padding: 0;
+  width: 40px; height: 40px; flex: none; border-radius: 10px; cursor: pointer; padding: 0;
   border: 1px solid var(--border); background: var(--card); color: var(--muted);
   display: none; align-items: center; justify-content: center;
 }
@@ -45,6 +45,39 @@ img { max-width: 100%; height: auto; }
 .theme-toggle svg { width: 18px; height: 18px; display: none; }
 :root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
 :root[data-theme="light"] .theme-toggle .icon-moon { display: block; }
+
+/* ============ top-right tools: GitHub · language menu · theme toggle ============ */
+.tools {
+  position: absolute; top: 18px; right: 18px; z-index: 10;
+  display: flex; align-items: center; gap: 8px;
+}
+.tools .theme-toggle { position: static; }
+.tool {
+  height: 40px; min-width: 40px; padding: 0 11px; border-radius: 10px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--card); color: var(--muted);
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  text-decoration: none; font-family: inherit; font-size: 0.88rem; font-weight: 500;
+}
+a.tool { padding: 0; }
+.tool:hover, .lang-menu[open] > .tool { color: var(--accent); border-color: var(--accent); }
+.tool svg { width: 18px; height: 18px; flex: none; }
+.tool .caret { width: 12px; height: 12px; }
+.lang-menu { position: relative; }
+.lang-menu > summary { list-style: none; }
+.lang-menu > summary::-webkit-details-marker { display: none; }
+.lang-menu ul {
+  position: absolute; top: calc(100% + 6px); right: 0; z-index: 20;
+  margin: 0; padding: 6px; list-style: none; min-width: 200px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+}
+.lang-menu li a, .lang-menu li span {
+  display: flex; justify-content: space-between; gap: 12px;
+  padding: 8px 10px; border-radius: 7px; text-decoration: none; color: var(--text);
+}
+.lang-menu li a:hover { background: var(--bg-alt); color: var(--accent); }
+.lang-menu li [aria-current] { color: var(--accent); font-weight: 600; }
+.lang-menu li [aria-current]::after { content: "✓"; }
 
 /* ============ hero ============ */
 header.hero { padding: 72px 0 0; position: relative; overflow: hidden; }
@@ -84,8 +117,6 @@ header.hero::before {
 }
 .path .d { display: block; color: var(--muted); font-size: 0.88rem; line-height: 1.5; }
 .path.primary { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--card)); }
-.langs { font-size: 0.85rem; color: var(--muted); font-family: "IBM Plex Mono", ui-monospace, monospace; }
-.langs a { margin-right: 10px; }
 
 /* ============ legacy hero buttons (still used by not-yet-migrated pages) ============ */
 .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
@@ -206,7 +237,8 @@ footer .updated { border-top: 0; margin-top: 0; padding-top: 0; }
 .docbar .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px; }
 .docbar .home { display: inline-flex; align-items: center; gap: 9px; font-weight: 700; color: var(--text); text-decoration: none; font-family: "Chakra Petch", system-ui, sans-serif; }
 .docbar .home img { width: 28px; height: 28px; border-radius: 7px; }
-.docbar .langs a { margin: 0 0 0 12px; font-size: 0.85rem; }
+/* stays right-aligned even when the bar wraps on a phone, so the menu opens on-screen */
+.docbar .tools { position: static; margin-inline-start: auto; }
 .doc { max-width: 780px; padding-top: 10px; padding-bottom: 30px; }
 .doc h1 { font-family: "Chakra Petch", system-ui, sans-serif; font-size: 1.9rem; letter-spacing: 0.01em; margin-bottom: 0.4em; }
 .doc h2 { font-family: "Chakra Petch", system-ui, sans-serif; margin-top: 2em; font-size: 1.4rem; letter-spacing: 0.01em; }
@@ -262,10 +294,10 @@ footer .updated { border-top: 0; margin-top: 0; padding-top: 0; }
 [dir="rtl"] .steps > li, [dir="rtl"] .doc ol > li { padding-left: 0; padding-right: 42px; }
 [dir="rtl"] .steps > li::before, [dir="rtl"] .doc ol > li::before { left: auto; right: 0; }
 [dir="rtl"] .doc blockquote { border-left: 0; border-right: 4px solid var(--accent); border-radius: 8px 0 0 8px; }
-[dir="rtl"] .docbar .langs a { margin: 0 12px 0 0; }
 [dir="rtl"] pre { direction: ltr; text-align: left; }
 [dir="rtl"] .theme-toggle { right: auto; left: 18px; }
-[dir="rtl"] .langs a { margin-right: 0; margin-left: 10px; }
+[dir="rtl"] .tools { right: auto; left: 18px; }
+[dir="rtl"] .lang-menu ul { right: auto; left: 0; }
 [dir="rtl"] .carousel::after { right: auto; left: 16px; }
 /* Arabic script must not be letter-spaced — it breaks the letter joins */
 [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] .btn, [dir="rtl"] .path b,
@@ -273,7 +305,7 @@ footer .updated { border-top: 0; margin-top: 0; padding-top: 0; }
 [dir="rtl"] .formcta .lab { letter-spacing: 0; }
 
 @media (max-width: 720px) {
-  header.hero { padding-top: 56px; }
+  header.hero { padding-top: 76px; }  /* clear the top-right tools */
   .paths { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {

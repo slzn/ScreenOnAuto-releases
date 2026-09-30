@@ -54,19 +54,11 @@
 <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
-<button class="theme-toggle" type="button" aria-label="Toggle light / dark theme">
-  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M19.4 4.6l-1.8 1.8M6.4 17.6l-1.8 1.8"/></svg>
-  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
-</button>
 {%- if page.lang == "en" %}{% assign home = "/" %}{% else %}{% assign home = "/" | append: page.lang | append: "/" %}{% endif %}
 <header class="docbar">
   <div class="wrap">
     <a class="home" href="{{ home }}"><img src="/images/icon_launcher.png" alt="">ScreenOnAuto</a>
-    <nav class="langs">
-      {%- for p in variants %}{% unless p.lang == page.lang %}
-      <a href="{{ p.url }}">{% case p.lang %}{% when "en" %}English{% when "zh-TW" %}繁體中文{% when "pt-BR" %}Português (Brasil){% when "es" %}Español{% when "de" %}Deutsch{% when "fr" %}Français{% when "it" %}Italiano{% when "tr" %}Türkçe{% when "ar" %}العربية{% when "ko" %}한국어{% endcase %}</a>
-      {%- endunless %}{% endfor %}
-    </nav>
+    {% include tools.html lang=page.lang %}
   </div>
 </header>
 
