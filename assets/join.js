@@ -16,7 +16,9 @@
   var BOUNDARY_LAG_MS = 3000;    // refresh this long after a phase boundary
   // A fresh browser's first request to Apps Script often hangs 17–25+ s (a retry, or curl at
   // the same moment, answers in ~2 s). Without a timeout the fetch never reaches the retry.
-  var REQUEST_TIMEOUT_MS = 10000;
+  // 30 s, not shorter: under load a normal reply can take 15–30 s (2026-09-30), and aborting
+  // it only piles a retry onto the same backend queue.
+  var REQUEST_TIMEOUT_MS = 30000;
   var TOKEN_KEY = "join.idToken";
 
   // ---- language ----
