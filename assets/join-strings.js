@@ -63,7 +63,8 @@ window.JOIN_STRINGS = {
       "faq8q": "What do I do after installing?",
       "faq8a": "In Android Auto's Customize Launcher you'll see two icons: ScreenOnAuto (full-screen mirror) and ScreenOnAuto (Legacy). To check them, see {verify}; to start using the app, see {howto}.",
       "verifyLink": "Verify in Android Auto",
-      "howtoLink": "How to Use"
+      "howtoLink": "How to Use",
+      "syncingBody": "The tester list is being updated — the install buttons will appear here within a few minutes. Keep this page open."
   },
   "zh-TW": {
       "title": "安裝 ScreenOnAuto",
@@ -124,7 +125,8 @@ window.JOIN_STRINGS = {
       "faq8q": "裝好之後要做什麼？",
       "faq8a": "在 Android Auto 的「自訂啟動器」裡會看到兩個圖示：ScreenOnAuto（全螢幕鏡像）和 ScreenOnAuto (Legacy)。確認方式請看{verify}，開始使用請看{howto}。",
       "verifyLink": "在 Android Auto 中驗證",
-      "howtoLink": "如何使用"
+      "howtoLink": "如何使用",
+      "syncingBody": "正在更新測試者名單，安裝按鈕會在幾分鐘內自動出現在這裡。請保持這個頁面開著。"
   },
   "pt-BR": {
       "title": "Instalar o ScreenOnAuto",
@@ -185,7 +187,8 @@ window.JOIN_STRINGS = {
       "faq8q": "O que faço depois de instalar?",
       "faq8a": "Em Personalizar tela de início do Android Auto, você verá dois ícones: ScreenOnAuto (espelhamento em tela cheia) e ScreenOnAuto (Legacy). Para conferir, veja {verify}; para começar a usar, veja {howto}.",
       "verifyLink": "Verificar no Android Auto",
-      "howtoLink": "Como Usar"
+      "howtoLink": "Como Usar",
+      "syncingBody": "A lista de testadores está sendo atualizada — os botões de instalação vão aparecer aqui em alguns minutos. Mantenha esta página aberta."
   },
   "es": {
       "title": "Instalar ScreenOnAuto",
@@ -246,7 +249,8 @@ window.JOIN_STRINGS = {
       "faq8q": "¿Qué hago después de instalarla?",
       "faq8a": "En Personalizar menú de aplicaciones de Android Auto verás dos iconos: ScreenOnAuto (duplicación a pantalla completa) y ScreenOnAuto (Legacy). Para comprobarlos, consulta {verify}; para empezar a usarla, consulta {howto}.",
       "verifyLink": "Verificar en Android Auto",
-      "howtoLink": "Cómo Usar"
+      "howtoLink": "Cómo Usar",
+      "syncingBody": "Se está actualizando la lista de testers; los botones de instalación aparecerán aquí en unos minutos. Deja esta página abierta."
   },
   "de": {
       "title": "ScreenOnAuto installieren",
@@ -307,7 +311,8 @@ window.JOIN_STRINGS = {
       "faq8q": "Was mache ich nach der Installation?",
       "faq8a": "Unter „Launcher anpassen“ in Android Auto siehst du zwei Symbole: ScreenOnAuto (Vollbild-Spiegelung) und ScreenOnAuto (Legacy). Wie du sie überprüfst, steht unter {verify}; wie du loslegst, unter {howto}.",
       "verifyLink": "In Android Auto überprüfen",
-      "howtoLink": "Verwendung"
+      "howtoLink": "Verwendung",
+      "syncingBody": "Die Testerliste wird gerade aktualisiert – die Installations-Buttons erscheinen hier in wenigen Minuten. Lass diese Seite geöffnet."
   },
   "fr": {
       "title": "Installer ScreenOnAuto",
@@ -368,7 +373,8 @@ window.JOIN_STRINGS = {
       "faq8q": "Que faire après l'installation ?",
       "faq8a": "Dans Personnaliser le lanceur d'Android Auto, vous verrez deux icônes : ScreenOnAuto (duplication en plein écran) et ScreenOnAuto (Legacy). Pour les vérifier, consultez {verify} ; pour commencer, consultez {howto}.",
       "verifyLink": "Vérifier dans Android Auto",
-      "howtoLink": "Comment utiliser"
+      "howtoLink": "Comment utiliser",
+      "syncingBody": "La liste des testeurs est en cours de mise à jour — les boutons d'installation apparaîtront ici d'ici quelques minutes. Gardez cette page ouverte."
   },
   "it": {
       "title": "Installa ScreenOnAuto",
@@ -429,7 +435,8 @@ window.JOIN_STRINGS = {
       "faq8q": "Cosa faccio dopo l'installazione?",
       "faq8a": "In Personalizza avvio applicazioni di Android Auto vedrai due icone: ScreenOnAuto (mirroring a schermo intero) e ScreenOnAuto (Legacy). Per verificarle, consulta {verify}; per iniziare, consulta {howto}.",
       "verifyLink": "Verifica in Android Auto",
-      "howtoLink": "Come si usa"
+      "howtoLink": "Come si usa",
+      "syncingBody": "L'elenco dei tester è in aggiornamento: i pulsanti di installazione compariranno qui entro pochi minuti. Tieni aperta questa pagina."
   },
   "tr": {
       "title": "ScreenOnAuto'yu yükleyin",
@@ -490,7 +497,8 @@ window.JOIN_STRINGS = {
       "faq8q": "Yükledikten sonra ne yapmalıyım?",
       "faq8a": "Android Auto'nun Başlatıcıyı özelleştir ekranında iki simge göreceksiniz: ScreenOnAuto (tam ekran yansıtma) ve ScreenOnAuto (Legacy). Kontrol etmek için {verify} bölümüne, kullanmaya başlamak için {howto} sayfasına bakın.",
       "verifyLink": "Android Auto'da doğrulama",
-      "howtoLink": "Nasıl Kullanılır"
+      "howtoLink": "Nasıl Kullanılır",
+      "syncingBody": "Test kullanıcısı listesi güncelleniyor — yükleme düğmeleri birkaç dakika içinde burada görünecek. Bu sayfayı açık tutun."
   },
   "ar": {
       "title": "ثبِّت ScreenOnAuto",
@@ -551,7 +559,8 @@ window.JOIN_STRINGS = {
       "faq8q": "ماذا أفعل بعد التثبيت؟",
       "faq8a": "في «تخصيص المشغِّل» في Android Auto سترى أيقونتين: ScreenOnAuto (نسخ مطابق بملء الشاشة) و ScreenOnAuto (Legacy). للتحقق منهما راجع {verify}، ولبدء الاستخدام راجع {howto}.",
       "verifyLink": "التحقق في Android Auto",
-      "howtoLink": "طريقة الاستخدام"
+      "howtoLink": "طريقة الاستخدام",
+      "syncingBody": "جارٍ تحديث قائمة المختبِرين — ستظهر أزرار التثبيت هنا خلال بضع دقائق. أبقِ هذه الصفحة مفتوحة."
   },
   "ko": {
       "title": "ScreenOnAuto 설치",
@@ -612,6 +621,7 @@ window.JOIN_STRINGS = {
       "faq8q": "설치한 다음에는 무엇을 하나요?",
       "faq8a": "Android Auto의 런처 맞춤설정에서 ScreenOnAuto(전체 화면 미러링)와 ScreenOnAuto (Legacy) 두 개의 아이콘이 보입니다. 확인 방법은 {verify}, 사용법은 {howto} 문서를 참고하세요.",
       "verifyLink": "Android Auto에서 확인",
-      "howtoLink": "사용 방법"
+      "howtoLink": "사용 방법",
+      "syncingBody": "테스터 목록을 업데이트하고 있습니다. 몇 분 안에 설치 버튼이 여기에 자동으로 나타납니다. 이 페이지를 열어 두세요."
   }
 };

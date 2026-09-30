@@ -11,6 +11,7 @@
   var STORE = "https://play.google.com/store/apps/details?id=idv.lzn.screenonauto";
   var ROUND_MS = 30 * 60 * 1000, COLLECT_MS = 25 * 60 * 1000;
   var POLL_MS = 30 * 1000;       // refresh the slot count this often
+  var SYNCING_POLL_MS = 10 * 1000;   // … and this often while waiting for the swap to land
   var BOUNDARY_LAG_MS = 3000;    // refresh this long after a phase boundary
   // A fresh browser's first request to Apps Script often hangs 17–25+ s (a retry, or curl at
   // the same moment, answers in ~2 s). Without a timeout the fetch never reaches the retry.
@@ -122,10 +123,18 @@
     });
   }
 
+  // The install window has come but the swap hasn't landed yet: the backend says "syncing"
+  // (it allows a grace period before calling the round failed), or it still says "waiting"
+  // with a start time that has passed.
+  function syncing(n) {
+    return !!me && (me.state === "syncing" || (me.state === "waiting" && me.from <= n));
+  }
+
   function scheduleRefresh() {
     var n = now(), rs = roundStart(n);
     var boundary = collecting(n) ? rs + COLLECT_MS : rs + ROUND_MS;
-    var at = Math.min(n + POLL_MS, boundary + BOUNDARY_LAG_MS);
+    var poll = syncing(n) ? SYNCING_POLL_MS : POLL_MS;
+    var at = Math.min(n + poll, boundary + BOUNDARY_LAG_MS);
     nextRefresh = Date.now() + (at - n);
   }
 
@@ -234,6 +243,9 @@
       var done = el("p", { "class": "hint" });
       done.appendChild(el("a", { href: "/docs/" + lang + "/how-to-use/" }, t("installDone")));
       box.appendChild(done);
+    } else if (syncing(n)) {
+      title("waitingTitle");
+      body(t("syncingBody"));
     } else if (me.state === "waiting") {
       title("waitingTitle");
       body(t("waitingBody", { mmss: mmss(me.from - n), time: clockTime(me.from) }));
