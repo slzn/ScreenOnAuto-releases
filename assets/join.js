@@ -12,6 +12,9 @@
   var ROUND_MS = 30 * 60 * 1000, COLLECT_MS = 25 * 60 * 1000;
   var POLL_MS = 30 * 1000;       // refresh the slot count this often
   var BOUNDARY_LAG_MS = 3000;    // refresh this long after a phase boundary
+  // A fresh browser's first request to Apps Script often hangs 17–25+ s (a retry, or curl at
+  // the same moment, answers in ~2 s). Without a timeout the fetch never reaches the retry.
+  var REQUEST_TIMEOUT_MS = 10000;
   var TOKEN_KEY = "join.idToken";
 
   // ---- language ----
@@ -51,7 +54,7 @@
   // ---- state ----
   var token = loadToken();
   var email = token ? tokenEmail(token) : null;
-  var slots = 95, taken = 0;
+  var slots = null, taken = 0;  // null until the backend first answers — show "…", not a made-up count
   var me = null;           // {state, from?, until?} from the backend; null when signed out
   var busy = false;        // a join request is in flight
   var notice = "";         // one-line error under the action card
@@ -80,15 +83,18 @@
   function call(body, attempt) {
     attempt = attempt || 0;
     var sentAt = Date.now();
+    var ctrl = new AbortController();
+    var timer = setTimeout(function () { ctrl.abort(); }, REQUEST_TIMEOUT_MS);
     var req = body
-      ? fetch(API, { method: "POST", headers: { "Content-Type": "text/plain" }, body: JSON.stringify(body) })
-      : fetch(API);
+      ? fetch(API, { method: "POST", headers: { "Content-Type": "text/plain" }, body: JSON.stringify(body), signal: ctrl.signal })
+      : fetch(API, { signal: ctrl.signal });
     return req
       .then(function (r) { return r.json(); })
       .then(function (data) {
+        clearTimeout(timer);
         if (typeof data.now === "number") skew = data.now - (sentAt + Date.now()) / 2;
         return data;
-      })
+      }, function (err) { clearTimeout(timer); throw err; })
       .catch(function (err) {
         if (attempt >= 2) throw err;
         return new Promise(function (ok) { setTimeout(ok, 1200 * (attempt + 1)); })
@@ -128,7 +134,8 @@
     busy = true; notice = ""; render();
     call({ action: "join", idToken: token }).then(function (data) {
       if (data.ok) {
-        slots = data.slots; taken = data.taken; me = data.me;
+        if (data.slots !== slots) { slots = data.slots; applyStaticText(); }
+        taken = data.taken; me = data.me;
       } else if (data.error === "auth") {
         saveToken(null); me = null; notice = t("errSignin"); promptSignIn();
       } else if (data.error === "busy") {
@@ -189,8 +196,8 @@
     document.querySelector(".clock").classList.toggle("swapping", !open);
     document.getElementById("digits").textContent = mmss((open ? rs + COLLECT_MS : rs + ROUND_MS) - n);
     document.getElementById("digits-label").textContent = open ? t("closesIn") : t("opensIn");
-    document.getElementById("meter-fill").style.width = Math.min(100, taken / slots * 100) + "%";
-    document.getElementById("meter-label").textContent = t("spots", { taken: taken, slots: slots });
+    document.getElementById("meter-fill").style.width = slots ? Math.min(100, taken / slots * 100) + "%" : "0";
+    document.getElementById("meter-label").textContent = slots === null ? "…" : t("spots", { taken: taken, slots: slots });
   }
 
   function renderAction() {
@@ -278,7 +285,7 @@
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
     document.title = t("title");
     document.querySelectorAll("[data-t]").forEach(function (e) {
-      e.textContent = t(e.getAttribute("data-t"), { slots: slots });
+      e.textContent = t(e.getAttribute("data-t"), { slots: slots === null ? "…" : slots });
     });
   }
 
