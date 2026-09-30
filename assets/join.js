@@ -63,6 +63,7 @@
   var busy = false;        // a join request is in flight
   var notice = "";         // one-line error under the action card
   var nextRefresh = 0;
+  var refreshing = null;   // the status request in flight, so callers share it instead of stacking
 
   function loadToken() {
     try {
@@ -106,10 +107,17 @@
       });
   }
 
+  // One status request at a time: the poll, tab-visible and sign-in paths all call this, and
+  // with a slow backend overlapping calls only add to its queue. A call made while one is in
+  // flight joins it; if the token changed meanwhile (sign-in), the answer is for the old
+  // token, so ask again as soon as it lands.
   function refresh() {
-    nextRefresh = Infinity;   // no overlapping refreshes; reset when this one settles
+    if (refreshing) return refreshing;
+    nextRefresh = Infinity;   // reset when this one settles
+    var sentToken = token, stale = false;
     var req = token ? call({ action: "status", idToken: token }) : call(null);
-    return req.then(function (data) {
+    return refreshing = req.then(function (data) {
+      if (token !== sentToken) { stale = true; return; }   // signed in or out while in flight
       if (!data.ok && data.error === "auth") {
         saveToken(null); me = null; notice = t("errSignin");
         promptSignIn();
@@ -120,8 +128,11 @@
         if (notice === t("errNetwork")) notice = "";
       }
     }, function () {
-      notice = t("errNetwork");
+      if (token !== sentToken) stale = true;
+      else notice = t("errNetwork");
     }).then(function () {
+      refreshing = null;
+      if (stale) return refresh();
       scheduleRefresh(); render();
     });
   }
