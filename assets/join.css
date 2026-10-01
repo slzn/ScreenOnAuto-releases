@@ -58,10 +58,6 @@
 .flow-caption b { color: #e9eff5; font-weight: 500; }
 
 /* ============ account + action card ============ */
-.account-warn {
-  background: var(--warn-bg); border: 1px solid var(--warn-border); border-radius: 12px;
-  padding: 10px 14px; font-size: 0.92rem; margin: 0 0 18px;
-}
 .card {
   background: var(--card); border: 1px solid var(--border); border-radius: 14px;
   padding: 20px 22px; margin: 0 0 12px;

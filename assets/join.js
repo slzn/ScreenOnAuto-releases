@@ -407,7 +407,7 @@
 
   // FAQ: static copy; {verify} / {howto} in an answer become links to the landing page's
   // "Verify in Android Auto" section and the How to Use guide, in the page's language.
-  var FAQ_COUNT = 8;
+  var FAQ_COUNT = 9;
   function renderFaq() {
     var links = {
       verify: [(lang === "en" ? "/" : "/" + lang + "/") + "#verify", t("verifyLink")],
