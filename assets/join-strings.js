@@ -67,7 +67,14 @@ window.JOIN_STRINGS = {
       "syncingBody": "The tester list is being updated — the install buttons will appear here within a few minutes. Keep this page open.",
       "reportLink": "Still can't install? Report the problem on GitHub",
       "reportIntro": "This issue is public — please don't post your email address here.",
-      "reportWhat": "What happened:"
+      "reportWhat": "What happened:",
+      "flowSignup": "Sign up",
+      "flowInstall": "Install",
+      "flowMin": "{n} min",
+      "flowCapOpen": "Sign up now → closes at {close} → 25 minutes to install from {open}",
+      "flowCapIn": "You're in → the list updates at {close} → 25 minutes to install from {open}",
+      "flowCapSwap": "Sign-ups are closed and the list is updating → installing opens at {open}",
+      "flowCapInstall": "Your install window is open until {until}"
   },
   "zh-TW": {
       "title": "安裝 ScreenOnAuto",
@@ -132,7 +139,14 @@ window.JOIN_STRINGS = {
       "syncingBody": "正在更新測試者名單，安裝按鈕會在幾分鐘內自動出現在這裡。請保持這個頁面開著。",
       "reportLink": "還是沒辦法安裝？到 GitHub 回報問題",
       "reportIntro": "這個 issue 是公開的，請不要在這裡貼出你的 email。",
-      "reportWhat": "發生了什麼事："
+      "reportWhat": "發生了什麼事：",
+      "flowSignup": "報名",
+      "flowInstall": "安裝",
+      "flowMin": "{n} 分鐘",
+      "flowCapOpen": "現在報名 → {close} 截止 → {open} 起有 25 分鐘可以安裝",
+      "flowCapIn": "你已報名 → {close} 更新名單 → {open} 起有 25 分鐘可以安裝",
+      "flowCapSwap": "報名已截止，正在更新名單 → {open} 開放安裝",
+      "flowCapInstall": "你的安裝時間開放到 {until}"
   },
   "pt-BR": {
       "title": "Instalar o ScreenOnAuto",
@@ -197,7 +211,14 @@ window.JOIN_STRINGS = {
       "syncingBody": "A lista de testadores está sendo atualizada — os botões de instalação vão aparecer aqui em alguns minutos. Mantenha esta página aberta.",
       "reportLink": "Ainda não consegue instalar? Relate o problema no GitHub",
       "reportIntro": "Este issue é público — não publique seu endereço de e-mail aqui.",
-      "reportWhat": "O que aconteceu:"
+      "reportWhat": "O que aconteceu:",
+      "flowSignup": "Inscrição",
+      "flowInstall": "Instalação",
+      "flowMin": "{n} min",
+      "flowCapOpen": "Inscreva-se agora → fecha às {close} → 25 minutos para instalar a partir das {open}",
+      "flowCapIn": "Você está inscrito → a lista é atualizada às {close} → 25 minutos para instalar a partir das {open}",
+      "flowCapSwap": "Inscrições encerradas, atualizando a lista → a instalação abre às {open}",
+      "flowCapInstall": "Sua janela de instalação fica aberta até {until}"
   },
   "es": {
       "title": "Instalar ScreenOnAuto",
@@ -262,7 +283,14 @@ window.JOIN_STRINGS = {
       "syncingBody": "Se está actualizando la lista de testers; los botones de instalación aparecerán aquí en unos minutos. Deja esta página abierta.",
       "reportLink": "¿Sigues sin poder instalar? Informa del problema en GitHub",
       "reportIntro": "Este issue es público: no publiques aquí tu dirección de correo.",
-      "reportWhat": "Qué pasó:"
+      "reportWhat": "Qué pasó:",
+      "flowSignup": "Inscripción",
+      "flowInstall": "Instalación",
+      "flowMin": "{n} min",
+      "flowCapOpen": "Inscríbete ahora → cierra a las {close} → 25 minutos para instalar desde las {open}",
+      "flowCapIn": "Ya estás dentro → la lista se actualiza a las {close} → 25 minutos para instalar desde las {open}",
+      "flowCapSwap": "Inscripciones cerradas, actualizando la lista → la instalación se abre a las {open}",
+      "flowCapInstall": "Tu ventana de instalación está abierta hasta las {until}"
   },
   "de": {
       "title": "ScreenOnAuto installieren",
@@ -327,7 +355,14 @@ window.JOIN_STRINGS = {
       "syncingBody": "Die Testerliste wird gerade aktualisiert – die Installations-Buttons erscheinen hier in wenigen Minuten. Lass diese Seite geöffnet.",
       "reportLink": "Klappt die Installation immer noch nicht? Melde das Problem auf GitHub",
       "reportIntro": "Dieses Issue ist öffentlich – bitte poste hier nicht deine E-Mail-Adresse.",
-      "reportWhat": "Was ist passiert:"
+      "reportWhat": "Was ist passiert:",
+      "flowSignup": "Anmelden",
+      "flowInstall": "Installieren",
+      "flowMin": "{n} Min.",
+      "flowCapOpen": "Jetzt anmelden → schließt um {close} → ab {open} 25 Minuten zum Installieren",
+      "flowCapIn": "Du bist dabei → die Liste wird um {close} aktualisiert → ab {open} 25 Minuten zum Installieren",
+      "flowCapSwap": "Anmeldung geschlossen, Liste wird aktualisiert → Installation startet um {open}",
+      "flowCapInstall": "Dein Installationsfenster ist bis {until} offen"
   },
   "fr": {
       "title": "Installer ScreenOnAuto",
@@ -392,7 +427,14 @@ window.JOIN_STRINGS = {
       "syncingBody": "La liste des testeurs est en cours de mise à jour — les boutons d'installation apparaîtront ici d'ici quelques minutes. Gardez cette page ouverte.",
       "reportLink": "Toujours impossible d'installer ? Signalez le problème sur GitHub",
       "reportIntro": "Ce ticket est public — ne publiez pas votre adresse e-mail ici.",
-      "reportWhat": "Ce qui s'est passé :"
+      "reportWhat": "Ce qui s'est passé :",
+      "flowSignup": "Inscription",
+      "flowInstall": "Installation",
+      "flowMin": "{n} min",
+      "flowCapOpen": "Inscrivez-vous maintenant → fermeture à {close} → 25 minutes pour installer à partir de {open}",
+      "flowCapIn": "Vous êtes inscrit → la liste est mise à jour à {close} → 25 minutes pour installer à partir de {open}",
+      "flowCapSwap": "Inscriptions fermées, mise à jour de la liste → l'installation ouvre à {open}",
+      "flowCapInstall": "Votre fenêtre d'installation est ouverte jusqu'à {until}"
   },
   "it": {
       "title": "Installa ScreenOnAuto",
@@ -457,7 +499,14 @@ window.JOIN_STRINGS = {
       "syncingBody": "L'elenco dei tester è in aggiornamento: i pulsanti di installazione compariranno qui entro pochi minuti. Tieni aperta questa pagina.",
       "reportLink": "Ancora non riesci a installare? Segnala il problema su GitHub",
       "reportIntro": "Questa issue è pubblica: non pubblicare qui il tuo indirizzo email.",
-      "reportWhat": "Cosa è successo:"
+      "reportWhat": "Cosa è successo:",
+      "flowSignup": "Iscrizione",
+      "flowInstall": "Installazione",
+      "flowMin": "{n} min",
+      "flowCapOpen": "Iscriviti ora → chiude alle {close} → 25 minuti per installare dalle {open}",
+      "flowCapIn": "Sei dentro → l'elenco si aggiorna alle {close} → 25 minuti per installare dalle {open}",
+      "flowCapSwap": "Iscrizioni chiuse, elenco in aggiornamento → l'installazione si apre alle {open}",
+      "flowCapInstall": "La tua finestra di installazione è aperta fino alle {until}"
   },
   "tr": {
       "title": "ScreenOnAuto'yu yükleyin",
@@ -522,7 +571,14 @@ window.JOIN_STRINGS = {
       "syncingBody": "Test kullanıcısı listesi güncelleniyor — yükleme düğmeleri birkaç dakika içinde burada görünecek. Bu sayfayı açık tutun.",
       "reportLink": "Hâlâ yükleyemiyor musunuz? Sorunu GitHub'da bildirin",
       "reportIntro": "Bu kayıt herkese açıktır — lütfen e-posta adresinizi buraya yazmayın.",
-      "reportWhat": "Ne oldu:"
+      "reportWhat": "Ne oldu:",
+      "flowSignup": "Kayıt",
+      "flowInstall": "Yükleme",
+      "flowMin": "{n} dk",
+      "flowCapOpen": "Şimdi kaydolun → kapanış: {close} → {open} itibarıyla 25 dakika yükleme süresi",
+      "flowCapIn": "Kaydınız alındı → liste güncellemesi: {close} → {open} itibarıyla 25 dakika yükleme süresi",
+      "flowCapSwap": "Kayıtlar kapandı, liste güncelleniyor → yükleme açılışı: {open}",
+      "flowCapInstall": "Yükleme süreniz şu saate kadar açık: {until}"
   },
   "ar": {
       "title": "ثبِّت ScreenOnAuto",
@@ -587,7 +643,14 @@ window.JOIN_STRINGS = {
       "syncingBody": "جارٍ تحديث قائمة المختبِرين — ستظهر أزرار التثبيت هنا خلال بضع دقائق. أبقِ هذه الصفحة مفتوحة.",
       "reportLink": "ما زلت لا تستطيع التثبيت؟ أبلغ عن المشكلة على GitHub",
       "reportIntro": "هذه المشكلة منشورة للعموم — يُرجى عدم نشر بريدك الإلكتروني هنا.",
-      "reportWhat": "ماذا حدث:"
+      "reportWhat": "ماذا حدث:",
+      "flowSignup": "التسجيل",
+      "flowInstall": "التثبيت",
+      "flowMin": "{n} دقيقة",
+      "flowCapOpen": "سجّل الآن ← يُغلق في الساعة {close} ← 25 دقيقة للتثبيت بدءًا من الساعة {open}",
+      "flowCapIn": "أنت مسجَّل ← تُحدَّث القائمة في الساعة {close} ← 25 دقيقة للتثبيت بدءًا من الساعة {open}",
+      "flowCapSwap": "أُغلق التسجيل وجارٍ تحديث القائمة ← يبدأ التثبيت في الساعة {open}",
+      "flowCapInstall": "نافذة التثبيت الخاصة بك مفتوحة حتى الساعة {until}"
   },
   "ko": {
       "title": "ScreenOnAuto 설치",
@@ -652,6 +715,13 @@ window.JOIN_STRINGS = {
       "syncingBody": "테스터 목록을 업데이트하고 있습니다. 몇 분 안에 설치 버튼이 여기에 자동으로 나타납니다. 이 페이지를 열어 두세요.",
       "reportLink": "여전히 설치할 수 없나요? GitHub에 문제를 알려 주세요",
       "reportIntro": "이 이슈는 공개됩니다. 이메일 주소는 여기에 올리지 마세요.",
-      "reportWhat": "무슨 일이 있었나요:"
+      "reportWhat": "무슨 일이 있었나요:",
+      "flowSignup": "신청",
+      "flowInstall": "설치",
+      "flowMin": "{n}분",
+      "flowCapOpen": "지금 신청 → {close} 마감 → {open}부터 25분 동안 설치",
+      "flowCapIn": "신청 완료 → {close} 목록 업데이트 → {open}부터 25분 동안 설치",
+      "flowCapSwap": "신청 마감, 목록 업데이트 중 → {open}에 설치 열림",
+      "flowCapInstall": "{until}까지 설치할 수 있습니다"
   }
 };

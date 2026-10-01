@@ -261,6 +261,53 @@
     document.getElementById("digits-label").textContent = open ? t("closesIn") : t("opensIn");
     document.getElementById("meter-fill").style.width = slots ? Math.min(100, taken / slots * 100) + "%" : "0";
     document.getElementById("meter-label").textContent = slots === null ? "…" : t("spots", { taken: taken, slots: slots });
+    renderFlow(n, rs, open);
+  }
+
+  // The strip under the clock: which step of a round is happening now. It follows this
+  // round, except while the visitor's own install window is open (or about to be).
+  function renderFlow(n, rs, open) {
+    var sync = syncing(n), mine = me && me.state === "installable";
+    var steps = { signup: [0, ""], swap: [0, ""], install: [0, ""] };   // [fill 0–1, class]
+    var from = mine ? (me.from || me.until - COLLECT_MS) : 0;
+    if (mine) {
+      steps.signup[1] = steps.swap[1] = "done";
+      steps.install = [(n - from) / (me.until - from), "on"];
+    } else if (sync) {
+      steps.signup[1] = "done";
+      steps.swap = [1, "on"];
+    } else if (open) {
+      steps.signup = [(n - rs) / COLLECT_MS, "on"];
+    } else {
+      steps.signup[1] = "done";
+      steps.swap = [(n - rs - COLLECT_MS) / (ROUND_MS - COLLECT_MS), "on"];
+    }
+    Object.keys(steps).forEach(function (k) {
+      var seg = document.getElementById("flow-" + k), s = steps[k];
+      seg.classList.toggle("on", s[1] === "on");
+      seg.classList.toggle("done", s[1] === "done");
+      seg.querySelector(".flow-bar span").style.width =
+        (s[1] === "done" ? 100 : s[1] ? Math.max(0, Math.min(1, s[0])) * 100 : 0) + "%";
+    });
+
+    var cap = "", vars = { close: clockTime(rs + COLLECT_MS), open: clockTime(rs + ROUND_MS) };
+    if (mine) { cap = "flowCapInstall"; vars.until = clockTime(me.until); }
+    else if (sync) cap = "";
+    else if (me && me.state === "waiting") { cap = open ? "flowCapIn" : "flowCapSwap"; vars.open = clockTime(me.from); }
+    else if (!open) cap = "flowCapSwap";
+    else if (slots === null || taken < slots) cap = "flowCapOpen";
+    var text = cap ? t(cap) : "";
+    var box = document.getElementById("flow-caption");
+    var key = [cap, vars.close, vars.open, vars.until].join("|");
+    if (box.getAttribute("data-key") === key) return;   // rebuilt only when it changes
+    box.setAttribute("data-key", key);
+    box.textContent = "";
+    // The times are bold; everything else is plain text.
+    text.split(/(\{close\}|\{open\}|\{until\})/).forEach(function (part) {
+      var m = /^\{(close|open|until)\}$/.exec(part);
+      if (m) box.appendChild(el("b", null, vars[m[1]]));
+      else if (part) box.appendChild(document.createTextNode(part));
+    });
   }
 
   function renderAction() {
@@ -354,7 +401,7 @@
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
     document.title = t("title");
     document.querySelectorAll("[data-t]").forEach(function (e) {
-      e.textContent = t(e.getAttribute("data-t"), { slots: slots === null ? "…" : slots });
+      e.textContent = t(e.getAttribute("data-t"), { slots: slots === null ? "…" : slots, n: e.getAttribute("data-n") });
     });
   }
 

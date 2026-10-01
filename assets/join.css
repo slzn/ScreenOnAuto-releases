@@ -29,6 +29,34 @@
 .meter span { display: block; height: 100%; width: 0; background: #4cb578; transition: width 0.4s; }
 .meter-label { font-size: 0.78rem; margin: 8px 0 0; }
 
+/* Round flow strip: segment widths follow the minutes (25 / 5 / 25). Fixed colours —
+   the panel is dark in both themes. */
+.flow { margin: 16px 0 0; padding-top: 14px; border-top: 1px solid var(--panel-line); }
+.flow-track { display: flex; gap: 4px; }
+.flow-seg { min-width: 0; display: flex; flex-direction: column; gap: 6px; --c: #4cb578; }
+.flow-seg.long { flex: 25 1 0; }
+.flow-seg.short { flex: 7 1 0; --c: #d9a441; }
+#flow-install { --c: #5aa9e6; }
+.flow-head { display: flex; align-items: center; gap: 6px; color: #3a4b5c; transition: color 0.3s; }
+.flow-head .icon {
+  width: 22px; height: 22px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.flow-name { font-size: 0.8rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.flow-bar { height: 4px; border-radius: 2px; background: var(--panel-raise); overflow: hidden; }
+.flow-bar span { display: block; height: 100%; width: 0; background: var(--c); transition: width 0.4s; }
+.flow-dur { font-size: 0.7rem; color: #3a4b5c; }
+.flow-seg.done .flow-head { color: var(--panel-text); }
+.flow-seg.done .flow-bar span { background: #3a4b5c; }
+.flow-seg.on .flow-head { color: var(--c); }
+.flow-seg.on .flow-dur { color: var(--panel-text); }
+.flow-seg.short.on .icon { animation: flow-spin 1.6s linear infinite; }
+@keyframes flow-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .flow-seg.short.on .icon { animation: none; } }
+.flow-caption { font-size: 0.8rem; margin: 10px 0 0; }
+.flow-caption:empty { display: none; }
+.flow-caption b { color: #e9eff5; font-weight: 500; }
+
 /* ============ account + action card ============ */
 .account-warn {
   background: var(--warn-bg); border: 1px solid var(--warn-border); border-radius: 12px;

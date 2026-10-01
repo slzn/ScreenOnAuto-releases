@@ -63,6 +63,34 @@ permalink: /join/
     </div>
     <div class="meter" aria-hidden="true"><span id="meter-fill"></span></div>
     <p class="meter-label mono" id="meter-label"></p>
+    <!-- One round's life: sign-ups 25 min → list swap 5 min → install 25 min. -->
+    <div class="flow">
+      <div class="flow-track" aria-hidden="true">
+        <div class="flow-seg long" id="flow-signup">
+          <div class="flow-head">
+            <svg class="icon" viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M19 8v6M16 11h6"/></svg>
+            <span class="flow-name" data-t="flowSignup"></span>
+          </div>
+          <div class="flow-bar"><span></span></div>
+          <span class="flow-dur mono" data-t="flowMin" data-n="25"></span>
+        </div>
+        <div class="flow-seg short" id="flow-swap">
+          <div class="flow-head">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.7-4.4L4 8"/><path d="M4 3v5h5"/><path d="M4 13a8 8 0 0 0 14.7 4.4L20 16"/><path d="M20 21v-5h-5"/></svg>
+          </div>
+          <div class="flow-bar"><span></span></div>
+        </div>
+        <div class="flow-seg long" id="flow-install">
+          <div class="flow-head">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+            <span class="flow-name" data-t="flowInstall"></span>
+          </div>
+          <div class="flow-bar"><span></span></div>
+          <span class="flow-dur mono" data-t="flowMin" data-n="25"></span>
+        </div>
+      </div>
+      <p class="flow-caption" id="flow-caption"></p>
+    </div>
   </section>
 
   <p class="account-warn" data-t="accountWarn"></p>
