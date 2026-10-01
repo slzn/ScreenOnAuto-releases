@@ -16,12 +16,12 @@ site `ko/` + `docs/ko/<slug>`. Terminology follows the app's `values-ko` strings
 mirroring is `미러링`, the privileged section is `특권 기능`, screen-off is
 `휴대전화 화면 끄기`, touch forwarding is `터치 전달`.
 
-Google Forms and opt-in/queue emails are also 10-language (fr/it forms created
-2026-07-17 via `createFrItForms()`, tr via `createTrForms()`, ar via `createArForms()`,
-ko via `createKoForms()` — zero-trigger Plan-A mode; the copy lives in the .gs maps
-in the private tooling repo). The app UI itself has 16
-locales (adds ja/ko/zh-CN/pl/ru/in/vi/ar). Doc terminology must match the app's
-`values-<lang>` strings (e.g. fr "duplication", it "mirroring", tr "yansıtma",
+The `/join/` sign-up page (`i18n/join/index.html`, copy in `assets/join-strings.js`) is
+also 10-language. It is the only way to become a tester: half-hourly rounds of up to 95,
+run by the rotation backend in the private tooling repo. The old Google Forms + opt-in
+email roster was retired and deleted on 2026-10-01 — don't reintroduce form links.
+The app UI itself has 16 locales (adds ja/ko/zh-CN/pl/ru/in/vi/ar). Doc terminology must
+match the app's `values-<lang>` strings (e.g. fr "duplication", it "mirroring", tr "yansıtma",
 ar "النسخ المطابق").
 
 Turkish page names: wiki `Beta-Testine-Katılın` / `Nasıl-Kullanılır` /
