@@ -25,9 +25,7 @@
   font-variant-numeric: tabular-nums; line-height: 1.1;
 }
 .clock .digits-label { font-size: 0.85rem; }
-.meter { height: 6px; border-radius: 3px; background: var(--panel-raise); overflow: hidden; }
-.meter span { display: block; height: 100%; width: 0; background: #4cb578; transition: width 0.4s; }
-.meter-label { font-size: 0.78rem; margin: 8px 0 0; }
+.spots { font-size: 0.78rem; margin: 0; }
 
 /* Round flow strip: segment widths follow the minutes (25 / 5 / 25). Fixed colours —
    the panel is dark in both themes. */

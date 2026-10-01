@@ -259,8 +259,7 @@
     document.querySelector(".clock").classList.toggle("swapping", !open);
     document.getElementById("digits").textContent = mmss((open ? rs + COLLECT_MS : rs + ROUND_MS) - n);
     document.getElementById("digits-label").textContent = open ? t("closesIn") : t("opensIn");
-    document.getElementById("meter-fill").style.width = slots ? Math.min(100, taken / slots * 100) + "%" : "0";
-    document.getElementById("meter-label").textContent = slots === null ? "…" : t("spots", { taken: taken, slots: slots });
+    document.getElementById("spots").textContent = slots === null ? "…" : t("spots", { taken: taken, slots: slots });
     renderFlow(n, rs, open);
   }
 
