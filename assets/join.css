@@ -69,7 +69,9 @@
 .card p { margin: 0 0 14px; }
 .card .btn { cursor: pointer; font-size: 1rem; }
 .card .btn:disabled { opacity: 0.6; cursor: progress; }
-.card .gis { min-height: 44px; }
+/* The GSI iframe's document is light; matching color-scheme keeps Chrome from painting
+   an opaque white box behind it on the dark theme. */
+.card .gis { min-height: 44px; color-scheme: light; }
 .card .hint { color: var(--muted); font-size: 0.88rem; margin: 12px 0 0; }
 .card .notice-line { color: var(--amber); font-size: 0.92rem; margin: 12px 0 0; }
 

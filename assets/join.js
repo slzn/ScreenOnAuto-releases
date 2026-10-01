@@ -435,6 +435,10 @@
     if (gisReady) google.accounts.id.disableAutoSelect();
     saveToken(null); me = null; notice = ""; lastKey = ""; render();
   });
+  // The Google button's theme is fixed when it renders, so redraw it when the theme flips.
+  new MutationObserver(function () {
+    if (!token) { lastKey = ""; render(); }
+  }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
   document.addEventListener("visibilitychange", function () {
     if (document.visibilityState === "visible") refresh();
   });
