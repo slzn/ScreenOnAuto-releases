@@ -51,8 +51,10 @@
     var s = Math.max(0, Math.ceil(ms / 1000));
     return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
   }
+  // Round to the minute: the boundaries are whole minutes on the server clock, and a few ms
+  // of skew would otherwise show 10:25 as 10:24 (toLocaleTimeString truncates).
   function clockTime(tm) {
-    return new Date(tm - skew).toLocaleTimeString(lang, { hour: "numeric", minute: "2-digit" });
+    return new Date(Math.round((tm - skew) / 60000) * 60000).toLocaleTimeString(lang, { hour: "numeric", minute: "2-digit" });
   }
 
   // ---- state ----
