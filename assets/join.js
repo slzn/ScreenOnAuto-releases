@@ -226,6 +226,8 @@
       "<!-- " + t("reportIntro") + " -->",
       "**" + t("reportWhat") + "**",
       "", "", "",
+      "**" + t("reportScreens") + "**",
+      "", "", "",
       "---",
       "Diagnostics (filled in automatically):",
       "- Page state: " + state,
