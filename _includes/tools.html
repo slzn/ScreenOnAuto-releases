@@ -4,6 +4,9 @@ Top-right tools: GitHub · language menu · light/dark toggle.
 On a doc page the layout's `variants` (the same doc in each language) supplies the menu links;
 elsewhere each language links to its landing page. The current language is listed (ticked) but
 not linked — the reader is already on it.
+  include.join — /join/ mode. That page is one URL for every language, picked at run time from
+  ?lang= or the browser, so the build cannot know the current one: every language links to
+  /join/?lang=<code>, and join.js ticks the current one (markLangMenu) once it has picked.
 {%- endcomment -%}
 {%- assign order = "en,zh-TW,pt-BR,es,de,fr,it,tr,ar,ko" | split: "," -%}
 {%- assign names = "English,繁體中文,Português (Brasil),Español,Deutsch,Français,Italiano,Türkçe,العربية,한국어" | split: "," -%}
@@ -16,16 +19,19 @@ not linked — the reader is already on it.
   <details class="lang-menu">
     <summary class="tool" title="{{ label }}" aria-label="{{ label }}: {{ current }}">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
-      <span class="cur">{{ current }}</span>
+      <span class="cur">{% unless include.join %}{{ current }}{% endunless %}</span>
       <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
     </summary>
     <ul>
       {%- for l in order -%}
       {%- assign name = names[forloop.index0] -%}
-      {%- if variants -%}{%- assign v = variants | where: "lang", l | first -%}{%- assign href = v.url -%}
+      {%- if include.join -%}{%- assign href = "/join/?lang=" | append: l -%}
+      {%- elsif variants -%}{%- assign v = variants | where: "lang", l | first -%}{%- assign href = v.url -%}
       {%- elsif l == "en" -%}{%- assign href = "/" -%}
       {%- else -%}{%- assign href = "/" | append: l | append: "/" -%}{%- endif %}
-      {%- if l == include.lang %}
+      {%- if include.join %}
+      <li><a href="{{ href }}" lang="{{ l }}" hreflang="{{ l }}" data-label="{{ labels[forloop.index0] }}">{{ name }}</a></li>
+      {%- elsif l == include.lang %}
       <li><span lang="{{ l }}" aria-current="page">{{ name }}</span></li>
       {%- elsif href %}
       <li><a href="{{ href }}" lang="{{ l }}" hreflang="{{ l }}">{{ name }}</a></li>

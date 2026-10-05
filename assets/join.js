@@ -397,6 +397,24 @@
     if (key !== lastKey) { lastKey = key; renderAction(); }
   }
 
+  // The shared top-right language menu (_includes/tools.html, join mode) links every language
+  // to /join/?lang=…, because the build can't know which one this visit picks. Tick the
+  // current one the way the landing pages do: an unlinked entry with aria-current, its name
+  // on the menu button.
+  function markLangMenu() {
+    var link = document.querySelector('.lang-menu a[lang="' + lang + '"]');
+    if (!link) return;
+    var cur = document.createElement("span");
+    cur.lang = lang;
+    cur.setAttribute("aria-current", "page");
+    cur.textContent = link.textContent;
+    link.parentNode.replaceChild(cur, link);
+    var summary = document.querySelector(".lang-menu > summary");
+    summary.querySelector(".cur").textContent = cur.textContent;
+    summary.title = link.getAttribute("data-label");
+    summary.setAttribute("aria-label", link.getAttribute("data-label") + ": " + cur.textContent);
+  }
+
   function applyStaticText() {
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
@@ -453,6 +471,7 @@
   document.head.appendChild(gsi);
 
   applyStaticText();
+  markLangMenu();
   renderFaq();
   render();
   refresh();
