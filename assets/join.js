@@ -1,11 +1,12 @@
 /* /join/ — sign-up page for the half-hourly tester rotation.
-   Backend: the "ScreenOnAuto Rotation" Apps Script web app.
+   Backend: rotation-server on the VM, behind Caddy (ScreenOnAuto-util/rotation-server).
+   It replaced the Apps Script web app in October 2026 and speaks the same protocol.
    Rounds are UTC-aligned half hours: sign-ups :00–:25, the VM swaps the Play tester
    list at :25, and the batch can install from the next :00/:30 until the next swap. */
 (function () {
   "use strict";
 
-  var API = "https://script.google.com/macros/s/AKfycbwFQnQeb_c8kVVa7Jv5PfuRIurBOn3S4dE5fTLUl5cJbAV9mY7pwIMrgKnPhrrEJ44m/exec";
+  var API = "https://api.screenonauto.lzn.idv.tw/";
   var CLIENT_ID = "745158970576-s17vs6mgqn21eib74fkun0auigbbfbha.apps.googleusercontent.com";
   var OPT_IN = "https://play.google.com/apps/internaltest/4701398309137571774";
   var STORE = "https://play.google.com/store/apps/details?id=idv.lzn.screenonauto";
@@ -14,11 +15,10 @@
   var POLL_MS = 30 * 1000;       // refresh the slot count this often
   var SYNCING_POLL_MS = 10 * 1000;   // … and this often while waiting for the swap to land
   var BOUNDARY_LAG_MS = 3000;    // refresh this long after a phase boundary
-  // A fresh browser's first request to Apps Script often hangs 17–25+ s (a retry, or curl at
-  // the same moment, answers in ~2 s). Without a timeout the fetch never reaches the retry.
-  // 30 s, not shorter: under load a normal reply can take 15–30 s (2026-09-30), and aborting
-  // it only piles a retry onto the same backend queue.
-  var REQUEST_TIMEOUT_MS = 30000;
+  // The backend answers in well under a second, so a request still open after 10 s is lost
+  // (a dropped mobile connection) — abort it and let call() retry. Without a timeout the fetch
+  // never reaches the retry. (It was 30 s for Apps Script, whose cold starts hung 17–25+ s.)
+  var REQUEST_TIMEOUT_MS = 10000;
   var TOKEN_KEY = "join.idToken";
 
   // ---- language ----
@@ -85,8 +85,8 @@
   function tokenEmail(tk) { return claims(tk).email || ""; }
 
   // ---- backend ----
-  // Every call is safe to repeat, and a fresh Apps Script deployment sometimes answers the
-  // redirect hop with a 404 page, so retry anything that isn't JSON.
+  // Every call is safe to repeat, so retry anything that isn't JSON — e.g. Caddy's 502 for
+  // the few seconds the backend container restarts during a deploy.
   function call(body, attempt) {
     attempt = attempt || 0;
     var sentAt = Date.now();
