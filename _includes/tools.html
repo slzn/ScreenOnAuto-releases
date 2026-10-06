@@ -8,9 +8,9 @@ not linked — the reader is already on it.
   ?lang= or the browser, so the build cannot know the current one: every language links to
   /join/?lang=<code>, and join.js ticks the current one (markLangMenu) once it has picked.
 {%- endcomment -%}
-{%- assign order = "en,zh-TW,pt-BR,es,de,fr,it,tr,ar,ko" | split: "," -%}
-{%- assign names = "English,繁體中文,Português (Brasil),Español,Deutsch,Français,Italiano,Türkçe,العربية,한국어" | split: "," -%}
-{%- assign labels = "Language,語言,Idioma,Idioma,Sprache,Langue,Lingua,Dil,اللغة,언어" | split: "," -%}
+{%- assign order = "en,zh-TW,pt-BR,es,de,fr,it,tr,ar,ko,ru" | split: "," -%}
+{%- assign names = "English,繁體中文,Português (Brasil),Español,Deutsch,Français,Italiano,Türkçe,العربية,한국어,Русский" | split: "," -%}
+{%- assign labels = "Language,語言,Idioma,Idioma,Sprache,Langue,Lingua,Dil,اللغة,언어,Язык" | split: "," -%}
 {%- for l in order -%}{%- if l == include.lang -%}{%- assign current = names[forloop.index0] -%}{%- assign label = labels[forloop.index0] -%}{%- endif -%}{%- endfor %}
 <div class="tools">
   <a class="tool" href="https://github.com/slzn/ScreenOnAuto-releases" aria-label="GitHub" title="GitHub">
