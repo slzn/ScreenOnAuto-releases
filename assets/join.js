@@ -60,7 +60,7 @@
   // ---- state ----
   var token = loadToken();
   var email = token ? tokenEmail(token) : null;
-  var slots = null, taken = 0;  // null until the backend first answers — show "…", not a made-up count
+  var slots = null, taken = 0, installable = 0;  // null until the backend first answers — show "…", not a made-up count
   var me = null;           // {state, from?, until?} from the backend; null when signed out
   var busy = false;        // a join request is in flight
   var notice = "";         // one-line error under the action card
@@ -125,7 +125,7 @@
         promptSignIn();
       } else if (data.ok) {
         if (data.slots !== slots) { slots = data.slots; applyStaticText(); }
-        taken = data.taken;
+        taken = data.taken; installable = data.installable || 0;
         me = data.me || null;
         if (notice === t("errNetwork")) notice = "";
       }
@@ -160,7 +160,7 @@
     call({ action: "join", idToken: token }).then(function (data) {
       if (data.ok) {
         if (data.slots !== slots) { slots = data.slots; applyStaticText(); }
-        taken = data.taken; me = data.me;
+        taken = data.taken; installable = data.installable || 0; me = data.me;
       } else if (data.error === "auth") {
         saveToken(null); me = null; notice = t("errSignin"); promptSignIn();
       } else if (data.error === "busy") {
@@ -261,7 +261,12 @@
     document.querySelector(".clock").classList.toggle("swapping", !open);
     document.getElementById("digits").textContent = mmss((open ? rs + COLLECT_MS : rs + ROUND_MS) - n);
     document.getElementById("digits-label").textContent = open ? t("closesIn") : t("opensIn");
-    document.getElementById("spots").textContent = slots === null ? "…" : t("spots", { taken: taken, slots: slots });
+    // While the list is being swapped, this round's count is gone from the backend (and would
+    // read as "your sign-up vanished"), so say what's happening instead of showing 0 / 95.
+    document.getElementById("spots").textContent = !open ? t("spotsSwapping")
+      : slots === null ? "…"
+      : t("spots", { taken: taken, slots: slots }) +
+        (installable > 0 ? " · " + t("spotsInstallable", { n: installable }) : "");
     renderFlow(n, rs, open);
   }
 
