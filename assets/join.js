@@ -2,16 +2,18 @@
    Backend: rotation-server on the VM, behind Caddy (ScreenOnAuto-util/rotation-server).
    It replaced the Apps Script web app in October 2026 and speaks the same protocol.
    Rounds are UTC-aligned half hours: sign-ups :00–:25, the VM swaps the Play tester
-   list at :25, and the batch can install from the next :00/:30 until the next swap. */
+   list at :25, and the batch can install from the next :00/:30 until the next swap.
+   In the last 5 minutes of an install window the batch can extend into the next round
+   (it takes a slot there), as often as they like — the Play Store sometimes needs longer. */
 (function () {
   "use strict";
 
   var API = "https://api.screenonauto.lzn.idv.tw/";
   var CLIENT_ID = "745158970576-s17vs6mgqn21eib74fkun0auigbbfbha.apps.googleusercontent.com";
   var OPT_IN = "https://play.google.com/apps/internaltest/4701398309137571774";
-  var STORE = "https://play.google.com/store/apps/details?id=idv.lzn.screenonauto";
   var ISSUES = "https://github.com/slzn/ScreenOnAuto-releases/issues/new";
   var ROUND_MS = 30 * 60 * 1000, COLLECT_MS = 25 * 60 * 1000;
+  var EXTEND_MS = 5 * 60 * 1000;  // the extend button shows this long before the window ends
   var POLL_MS = 30 * 1000;       // refresh the slot count this often
   var SYNCING_POLL_MS = 10 * 1000;   // … and this often while waiting for the swap to land
   var BOUNDARY_LAG_MS = 3000;    // refresh this long after a phase boundary
@@ -154,10 +156,14 @@
     nextRefresh = Date.now() + (at - n);
   }
 
-  function join() {
+  // join and extend answer alike; extend's own errors: full (no slot left in the next
+  // round), too_early / not_installing (a stale page) — the status call sorts those out.
+  function join() { send("join"); }
+  function extend() { send("extend"); }
+  function send(action) {
     if (busy) return;
     busy = true; notice = ""; render();
-    call({ action: "join", idToken: token }).then(function (data) {
+    call({ action: action, idToken: token }).then(function (data) {
       if (data.ok) {
         if (data.slots !== slots) { slots = data.slots; applyStaticText(); }
         taken = data.taken; installable = data.installable || 0; me = data.me;
@@ -165,6 +171,8 @@
         saveToken(null); me = null; notice = t("errSignin"); promptSignIn();
       } else if (data.error === "busy") {
         notice = t("errBusy");
+      } else if (action === "extend" && data.error === "full") {
+        notice = t("errExtendFull");
       } else {
         // full / closed / installing: the status call shows the right screen.
         return refresh();
@@ -297,7 +305,7 @@
     });
 
     var cap = "", vars = { close: clockTime(rs + COLLECT_MS), open: clockTime(rs + ROUND_MS) };
-    if (mine) { cap = "flowCapInstall"; vars.until = clockTime(me.until); }
+    if (mine) { cap = "flowCapInstall"; vars.until = clockTime(me.extendedUntil || me.until); }
     else if (sync) cap = "";
     else if (me && me.state === "waiting") { cap = open ? "flowCapIn" : "flowCapSwap"; vars.open = clockTime(me.from); }
     else if (!open) cap = "flowCapSwap";
@@ -337,14 +345,14 @@
       box.classList.add("go");
       title("installTitle");
       body(t("installBody", { mmss: mmss(me.until - n) }));
+      // One link is enough: once the invite is accepted, Play's opt-in page turns into the
+      // download link. The second row is the extend button.
       var steps = el("ol", { "class": "install-steps" });
-      [["step1", "step1Desc", OPT_IN], ["step2", "step2Desc", STORE]].forEach(function (s) {
-        var li = el("li");
-        var a = el("a", { "class": "btn primary", href: s[2], target: "_blank", rel: "noopener" }, t(s[0]));
-        li.appendChild(a);
-        li.appendChild(el("span", null, t(s[1])));
-        steps.appendChild(li);
-      });
+      var li = el("li");
+      li.appendChild(el("a", { "class": "btn primary", href: OPT_IN, target: "_blank", rel: "noopener" }, t("step1")));
+      li.appendChild(el("span", null, t("step1Desc")));
+      steps.appendChild(li);
+      renderExtend(steps, n);
       box.appendChild(steps);
       box.appendChild(el("p", { "class": "hint" }, t("installHint")));
       var done = el("p", { "class": "hint" });
@@ -381,6 +389,35 @@
     }
     if (me && me.state !== "installable") box.classList.remove("go");
     if (notice) box.appendChild(el("p", { "class": "notice-line" }, notice));
+  }
+
+  // The install window's second row: extend it into the next round. The button stays
+  // greyed out until the last EXTEND_MS of the window. extendedUntil is set once they have;
+  // after the swap the backend just reports the new, later until (and the button greys
+  // out again until that window's last minutes).
+  function renderExtend(list, n) {
+    if (!collecting(n) || n >= me.until) {
+      if (!me.extendedUntil) return;   // the swap is under way; too late to extend
+    }
+    var next = me.until + ROUND_MS, label, desc, enabled = false;
+    if (me.extendedUntil) {
+      label = t("extendedBtn", { time: clockTime(me.extendedUntil) });
+      desc = t("extendedNote", { time: clockTime(me.extendedUntil) });
+    } else if (me.until - n > EXTEND_MS) {
+      label = t("extendBtn", { time: clockTime(next) });
+      desc = t("extendSoon", { time: clockTime(me.until - EXTEND_MS) });
+    } else {
+      label = busy ? t("extending") : t("extendBtn", { time: clockTime(next) });
+      desc = t("extendBody", { time: clockTime(next) });
+      enabled = !busy;
+    }
+    var li = el("li", { "class": "extend" });
+    var btn = el("button", { "class": "btn", type: "button" }, label);
+    btn.disabled = !enabled;
+    if (enabled) btn.addEventListener("click", extend);
+    li.appendChild(btn);
+    li.appendChild(el("span", null, desc));
+    list.appendChild(li);
   }
 
   function renderAccount() {

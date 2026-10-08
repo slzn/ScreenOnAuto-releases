@@ -5,7 +5,7 @@ lang: tr
 slug: join-the-beta-test
 permalink: /docs/tr/join-the-beta-test/
 date: 2026-07-20
-last_modified_at: 2026-09-30
+last_modified_at: 2026-10-08
 ---
 
 # Beta Testine Katılın
@@ -32,7 +32,7 @@ ScreenOnAuto'yu Google Play beta test kullanıcısı listesi üzerinden yükleyi
 
    🟢 **[Kayıt sayfasını aç](https://screenonauto.lzn.idv.tw/join/?lang=tr)**
 2. **Bu tura kaydolun** düğmesine dokunun. Sayfa, yükleme sürenize kadar geri sayar — sayfayı açık tutun; yükleme düğmeleri orada otomatik olarak görünür.
-3. Süreniz başladığında önce **Test kullanıcısı ol**, ardından **Play Store'da aç** düğmesine dokunun ve **ScreenOnAuto**'yu normal şekilde yükleyin. Play Store uygulamayı henüz göstermiyorsa Play Store'u kapatıp bağlantıya tekrar dokunun; birkaç denemeden sonra genellikle görünür.
+3. Süreniz başladığında **Test kullanıcısı ol** düğmesine dokunup daveti kabul edin; ardından sayfada bir indirme bağlantısı görünür: ona dokunun ve **ScreenOnAuto**'yu normal şekilde yükleyin. Play Store uygulamayı henüz göstermiyorsa Play Store'u kapatıp bağlantıya tekrar dokunun; birkaç denemeden sonra genellikle görünür. Hâlâ yok mu? Sürenizin son 5 dakikasında kayıt sayfasındaki **… saatine kadar uzat** düğmesine dokunarak sürenizi bir tur daha açık tutun (bunu her turda yapabilirsiniz).
 4. **Yükledikten sonra** **Android Auto → Başlatıcıyı özelleştir**'i açın ve **iki** ScreenOnAuto girişini gördüğünüzü doğrulayın (tam ekran ve Legacy). Üçüncü bir giriş olan **Media Controller** yalnızca eski Android Auto sürümlerinde görünür; yeni sürümlerde tasarım gereği görünmez ve bu normaldir. Tam liste ve bu iki girişten biri eksik olursa yapılacaklar için [Android Auto'da doğrulama](/tr/#verify) bölümüne bakın.
 5. Hazırsınız — arabada yansıtmayı başlatmak için **[Nasıl Kullanılır](/docs/tr/how-to-use/)** kılavuzuna bakın.
 

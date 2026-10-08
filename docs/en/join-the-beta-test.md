@@ -5,7 +5,7 @@ lang: en
 slug: join-the-beta-test
 permalink: /docs/en/join-the-beta-test/
 date: 2026-07-16
-last_modified_at: 2026-09-30
+last_modified_at: 2026-10-08
 ---
 
 # Join the Beta Test
@@ -31,7 +31,7 @@ Install ScreenOnAuto through the Google Play beta-tester list — **required on 
 
    🟢 **[Open the sign-up page](https://screenonauto.lzn.idv.tw/join/?lang=en)**
 2. Tap **Sign me up for this round**. The page counts down to your install window — keep it open; the install buttons appear there automatically.
-3. When your window opens, tap **Become a tester** first, then **Open in the Play Store**, and install **ScreenOnAuto** as usual. If the Play Store doesn't show the app yet, close the Play Store and tap the link again — it usually appears after a few tries.
+3. When your window opens, tap **Become a tester** and accept the invitation — the page then shows a download link: tap it and install **ScreenOnAuto** as usual. If the Play Store doesn't show the app yet, close the Play Store and tap the link again — it usually appears after a few tries. Still not there? In the last 5 minutes of your window, tap **Extend to …** on the sign-up page to keep your window open for another round (you can do this every round).
 4. **After installing**, open **Android Auto → Customize Launcher** and confirm you see the **two** ScreenOnAuto entries (full-screen and Legacy). A third entry, **Media Controller**, appears only on older Android Auto versions — on newer ones it is absent by design, and that is fine. See [Verify in Android Auto](/#verify) for the full list and what to do if one of the two is missing.
 5. You're all set — see **[How to Use](/docs/en/how-to-use/)** for starting the mirror in the car.
 
