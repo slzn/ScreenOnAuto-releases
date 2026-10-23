@@ -80,13 +80,19 @@ Android Auto führt nur Apps aus, die über den Play Store installiert wurden, u
 2. Öffne **KingInstaller**, tippe auf das **Ordner-Symbol** und wähle die heruntergeladene APK
 3. Tippe auf **Installieren** – KingInstaller installiert sie, als käme sie aus dem Google Play Store
 
-#### Schritt 3 – Berechtigungen erteilen
+### Alternative – mit einem AAWireless-Dongle
 
-Starte **ScreenOnAuto** und folge den Hinweisen in der App, um die erforderlichen Berechtigungen zu erteilen.
+> **Wann das hilft:** Die Installation über Google Play schlägt fehl – etwa unter GrapheneOS mit Sandboxed Google Play – und du hast einen AAWireless-Dongle. Dessen Developer Mode lässt Android Auto auch Apps anzeigen, die nicht aus dem Play Store stammen, sodass sich die APK direkt installieren lässt.
+
+1. Lade die neueste `ScreenOnAuto-*.apk` von der [aktuellen Version](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) herunter und installiere sie
+2. Verbinde das Telefon über den Dongle mit dem Auto. Schalte in der **AAWireless**-App **Passthrough mode** aus und **Developer Mode** ein
+3. Öffne in den Android-Auto-Einstellungen auf dem Telefon die **Entwicklereinstellungen**, setze den **Anwendungsmodus** auf **Entwickler** und aktiviere **Unbekannte Quellen**
+   - Keine Entwicklereinstellungen zu sehen? Tippe 10-mal auf **Versions- und Berechtigungsinformationen** und öffne dann das ⋮-Menü
+4. Starte das Telefon neu
 
 ## In Android Auto überprüfen
 
-Das gilt **unabhängig von der Installationsart** – KingInstaller-Sideload *oder* Google Play.
+Das gilt **unabhängig von der Installationsart** – KingInstaller-Sideload, Google Play *oder* der AAWireless-Weg.
 
 Gehe auf dem Telefon zu **Einstellungen → Verbundene Geräte → Android Auto → Launcher anpassen**.
 Dort sollten diese **zwei** ScreenOnAuto-Einträge erscheinen:
@@ -97,7 +103,7 @@ Dort sollten diese **zwei** ScreenOnAuto-Einträge erscheinen:
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Spiegelt den Telefonbildschirm über den Legacy-Projektionspfad – kann neben der Karte angezeigt werden |
 
 Ältere Android-Auto-Versionen zeigen zusätzlich einen dritten Eintrag, **ScreenOnAuto Media Controller**. Fehlt er, ist das normal – die Mediensteuerung funktioniert trotzdem.
-Fehlt einer der **beiden** Einträge oben, installiere neu – per KingInstaller beim Sideload, oder lass die Play-Installation fertig werden – und öffne Android Auto erneut.
+Fehlt einer der **beiden** Einträge oben, installiere neu – per KingInstaller beim Sideload, oder lass die Play-Installation fertig werden – und öffne Android Auto erneut. Prüfe beim AAWireless-Weg, ob Developer Mode und Unbekannte Quellen noch aktiviert sind.
 
 Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wiki/Verwendung)** zum Starten der Spiegelung im Auto.
 

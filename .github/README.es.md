@@ -80,13 +80,19 @@ Android Auto solo ejecuta apps instaladas desde Play Store, y Android 14+ bloque
 2. Abre **KingInstaller**, pulsa el **icono de carpeta** y selecciona el APK descargado
 3. Pulsa **Instalar** — KingInstaller lo instalará como si viniera de Google Play Store
 
-#### Paso 3 — Concede los permisos
+### Alternativa — con un adaptador AAWireless
 
-Abre **ScreenOnAuto** y sigue las indicaciones de la app para conceder los permisos necesarios.
+> **Cuándo usarla:** la instalación desde Google Play falla — por ejemplo, en GrapheneOS con Google Play en sandbox — y tienes un adaptador AAWireless. Su Developer Mode permite que Android Auto muestre apps que no se instalaron desde Play Store, así que puedes instalar el APK directamente.
+
+1. Descarga el `ScreenOnAuto-*.apk` más reciente desde la [última versión](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) e instálalo
+2. Conecta el teléfono al coche a través del adaptador. En la app **AAWireless**, desactiva **Passthrough mode** y activa **Developer Mode**
+3. En los ajustes de Android Auto del teléfono, abre **Configuración para desarrolladores**, cambia **Modo de aplicación** a **Desarrollador** y activa **Fuentes desconocidas**
+   - ¿No ves Configuración para desarrolladores? Toca **Información de versión y permisos** 10 veces y luego abre el menú ⋮
+4. Reinicia el teléfono
 
 ## Verificar en Android Auto
 
-Esto aplica **sin importar cómo instalaste** — sideload con KingInstaller *o* Google Play.
+Esto aplica **sin importar cómo instalaste** — sideload con KingInstaller, Google Play *o* la vía AAWireless.
 
 En el teléfono, ve a **Ajustes → Dispositivos conectados → Android Auto → Personalizar menú de aplicaciones**.
 Deberías ver estas **dos** entradas de ScreenOnAuto:
@@ -97,7 +103,7 @@ Deberías ver estas **dos** entradas de ScreenOnAuto:
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Duplica la pantalla del teléfono por la vía de proyección Legacy — puede mostrarse junto al mapa |
 
 Las versiones anteriores de Android Auto también muestran una tercera entrada, **ScreenOnAuto Media Controller**. Si no la ves, es normal — el control multimedia funciona igual.
-Si falta cualquiera de las **dos** entradas anteriores, reinstala — con KingInstaller si fue sideload, o deja que termine la instalación de Play — y vuelve a abrir Android Auto.
+Si falta cualquiera de las **dos** entradas anteriores, reinstala — con KingInstaller si fue sideload, o deja que termine la instalación de Play — y vuelve a abrir Android Auto. Si usaste la vía AAWireless, comprueba que Developer Mode y Fuentes desconocidas sigan activados.
 
 ¿Todo listo? Consulta **[Cómo Usar](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cómo-Usar)** para iniciar la duplicación en el coche.
 

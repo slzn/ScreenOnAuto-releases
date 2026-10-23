@@ -77,13 +77,19 @@ Android Auto 只接受從 Play 商店安裝的 App，而 Android 14 起 KingInst
 2. 開啟 **KingInstaller**，點選**資料夾圖示**，選取已下載的 APK
 3. 點選**安裝** — KingInstaller 會以 Google Play 商店身份完成安裝
 
-#### 第三步 — 授予權限
+### 替代方式 — 使用 AAWireless 轉接器
 
-啟動 **ScreenOnAuto**，依照 App 內提示授予所需權限。
+> **適用情況**：Google Play 安裝失敗（例如在使用沙盒化 Google Play 的 GrapheneOS 上），而你有 AAWireless 轉接器。它的 Developer Mode 能讓 Android Auto 顯示並非從 Play 商店安裝的 app，因此可以直接安裝 APK。
+
+1. 從 [最新版本](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) 頁面下載最新的 `ScreenOnAuto-*.apk` 並安裝
+2. 透過轉接器將手機連上車機。在 **AAWireless** app 中關閉 **Passthrough mode**，並開啟 **Developer Mode**
+3. 在手機的 Android Auto 設定中開啟**開發人員設定**，將**應用程式模式**設為**開發人員**，並開啟**不明來源**
+   - 找不到開發人員設定？連續點選**版本和權限資訊** 10 次，再開啟 ⋮ 選單
+4. 重新啟動手機
 
 ## 在 Android Auto 中驗證
 
-**無論你用哪種方式安裝**——KingInstaller sideload 或 Play 商店——都適用此段。
+**無論你用哪種方式安裝**——KingInstaller sideload、Play 商店或 AAWireless 方式——都適用此段。
 
 在手機上前往 **設定 → 已連結的裝置 → Android Auto → 自訂啟動器**。您應可看到這 **兩個** ScreenOnAuto 項目：
 
@@ -92,7 +98,7 @@ Android Auto 只接受從 Play 商店安裝的 App，而 Android 14 起 KingInst
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | 將手機螢幕鏡像至 Android Auto，取代地圖位置達到全螢幕顯示 |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | 使用舊版投影路徑鏡像手機螢幕，可與地圖並列顯示 |
 
-較舊的 Android Auto 還會多列一個 **ScreenOnAuto Media Controller**；沒看到也正常，媒體控制照樣能用。若上述**兩個**項目有任何一個缺失：sideload 安裝請重新透過 KingInstaller 安裝，Play 安裝請確認已安裝完成，再重新開啟 Android Auto。
+較舊的 Android Auto 還會多列一個 **ScreenOnAuto Media Controller**；沒看到也正常，媒體控制照樣能用。若上述**兩個**項目有任何一個缺失：sideload 安裝請重新透過 KingInstaller 安裝，Play 安裝請確認已安裝完成，再重新開啟 Android Auto。若使用 AAWireless 方式，請確認 Developer Mode 與不明來源仍維持開啟。
 
 安裝完成後，請見 **[如何使用](https://github.com/slzn/ScreenOnAuto-releases/wiki/如何使用)** 了解如何在車上啟動鏡像。
 

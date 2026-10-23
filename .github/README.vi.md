@@ -80,13 +80,19 @@ Android Auto chỉ chạy những ứng dụng được cài từ Cửa hàng Pl
 2. Mở **KingInstaller**, nhấn **biểu tượng thư mục** và chọn tệp APK vừa tải
 3. Nhấn **Install** — KingInstaller sẽ cài ứng dụng như thể nó đến từ Cửa hàng Google Play
 
-#### Bước 3 — Cấp quyền
+### Cách khác — dùng bộ chuyển AAWireless
 
-Mở **ScreenOnAuto** và làm theo hướng dẫn trong ứng dụng để cấp các quyền cần thiết.
+> **Khi nào dùng cách này:** cài qua Google Play không thành công — ví dụ trên GrapheneOS với Google Play chạy trong sandbox — và bạn có bộ chuyển AAWireless. Developer Mode của nó cho phép Android Auto hiển thị cả ứng dụng không cài từ Cửa hàng Play, nên có thể cài APK trực tiếp.
+
+1. Tải `ScreenOnAuto-*.apk` mới nhất từ [bản phát hành mới nhất](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) rồi cài đặt
+2. Kết nối điện thoại với xe qua bộ chuyển. Trong ứng dụng **AAWireless**, tắt **Passthrough mode** và bật **Developer Mode**
+3. Trong phần cài đặt Android Auto trên điện thoại, mở **Cài đặt cho nhà phát triển**, đặt **Chế độ ứng dụng** thành **Nhà phát triển** và bật **Nguồn không xác định**
+   - Không thấy Cài đặt cho nhà phát triển? Nhấn **Thông tin về phiên bản và quyền** 10 lần, rồi mở menu ⋮
+4. Khởi động lại điện thoại
 
 ## Kiểm tra trong Android Auto
 
-Bước này áp dụng **dù bạn cài bằng cách nào** — KingInstaller *hay* Google Play.
+Bước này áp dụng **dù bạn cài bằng cách nào** — KingInstaller, Google Play *hay* cách dùng AAWireless.
 
 Trên điện thoại, vào **Cài đặt → Thiết bị đã kết nối → Android Auto → Tùy chỉnh trình chạy**.
 Bạn sẽ thấy **hai** mục ScreenOnAuto sau:
@@ -97,7 +103,7 @@ Bạn sẽ thấy **hai** mục ScreenOnAuto sau:
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Phản chiếu màn hình điện thoại theo cách chiếu Legacy — có thể hiển thị bên cạnh bản đồ |
 
 Android Auto phiên bản cũ còn có mục thứ ba, **Trình điều khiển đa phương tiện ScreenOnAuto**. Không thấy mục này là bình thường — điều khiển đa phương tiện vẫn hoạt động.
-Nếu thiếu một trong **hai** mục ở trên, hãy cài lại — bằng KingInstaller nếu cài APK, hoặc đợi Google Play cài xong — rồi mở lại Android Auto.
+Nếu thiếu một trong **hai** mục ở trên, hãy cài lại — bằng KingInstaller nếu cài APK, hoặc đợi Google Play cài xong — rồi mở lại Android Auto. Nếu dùng cách AAWireless, hãy kiểm tra Developer Mode và Nguồn không xác định vẫn đang bật.
 
 Sẵn sàng rồi? Xem **[Cách sử dụng](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cách-sử-dụng)** để bắt đầu phản chiếu trên xe.
 

@@ -77,13 +77,19 @@ Android Auto は Play ストアからインストールされたアプリしか�
 2. **KingInstaller** を開いて **フォルダのアイコン** をタップし、ダウンロードした APK を選びます
 3. **Install** をタップします。KingInstaller が、Google Play ストアからインストールしたものとして扱われるようにインストールします
 
-#### ステップ 3 — 権限を許可
+### 別の方法 — AAWireless ドングルを使う
 
-**ScreenOnAuto** を起動し、アプリの案内に従って必要な権限を許可します。
+> **この方法を使う場面**：Google Play からのインストールがうまくいかず（たとえば、サンドボックス化された Google Play を使う GrapheneOS の場合）、AAWireless ドングルを持っている場合です。AAWireless の Developer Mode を使うと、Play ストア以外からインストールしたアプリも Android Auto に表示されるため、APK を直接インストールできます。
+
+1. [最新リリース](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) から最新の `ScreenOnAuto-*.apk` をダウンロードしてインストールします
+2. ドングル経由でスマホを車に接続します。**AAWireless** アプリで **Passthrough mode** をオフにし、**Developer Mode** をオンにします
+3. スマホの Android Auto の設定で **デベロッパー設定** を開き、**アプリケーション モード** を **デベロッパー** にして、**提供元不明のアプリ** をオンにします
+   - デベロッパー設定が見つからない場合は、**バージョンと権限の情報** を 10 回タップしてから ⋮ メニューを開きます
+4. スマホを再起動します
 
 ## Android Auto で確認
 
-この確認は、KingInstaller でのサイドロード *でも* Google Play でも、**どの方法でインストールした場合も**同じです。
+この確認は、KingInstaller でのサイドロード *でも*、Google Play でも、AAWireless を使う方法でも、**どの方法でインストールした場合も**同じです。
 
 スマホで **設定 → 接続設定 → Android Auto → ランチャーをカスタマイズ** を開きます。次の **2 つ** の ScreenOnAuto の項目が表示されているはずです。
 
@@ -92,7 +98,7 @@ Android Auto は Play ストアからインストールされたアプリしか�
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | スマホの画面を全画面でミラーリングします。地図のエリアを置き換えて全画面で表示します |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Legacy の投影方式でスマホの画面をミラーリングします。地図と並べて表示できます |
 
-古い Android Auto では、3 つ目の項目 **ScreenOnAuto メディアコントローラー** も表示されます。表示されなくても正常で、メディアの操作はどちらでも使えます。上の **2 つ** の項目のどちらかがない場合は、再インストールしてください（サイドロードなら KingInstaller で、Play ならインストールが完了するまで待つ）。その後、Android Auto を開き直してください。
+古い Android Auto では、3 つ目の項目 **ScreenOnAuto メディアコントローラー** も表示されます。表示されなくても正常で、メディアの操作はどちらでも使えます。上の **2 つ** の項目のどちらかがない場合は、再インストールしてください（サイドロードなら KingInstaller で、Play ならインストールが完了するまで待つ）。その後、Android Auto を開き直してください。AAWireless を使う方法の場合は、Developer Mode と提供元不明のアプリがオンのままか確認してください。
 
 準備ができたら、車でミラーリングを始める方法は **[使い方](https://github.com/slzn/ScreenOnAuto-releases/wiki/使い方)** を参照してください。
 

@@ -305,7 +305,13 @@ All fourteen READMEs share one structure (en at the root, the other thirteen in 
   1. Install KingInstaller. Step 1.2 says to allow unknown-app installs, without a
      hard-coded settings path.
   2. Install `ScreenOnAuto-*.apk` from the latest release.
-  3. Grant permissions.
+
+  (There is no separate "grant permissions" step since PR #48 — the app prompts on first launch.)
+- **Installation → Alternative — with an AAWireless dongle** (added 2026-10-23, PR #48): for
+  when the Play install fails (e.g. GrapheneOS with sandboxed Play). Four steps: install the
+  APK directly; AAWireless app Passthrough mode off + Developer Mode on; Android Auto
+  Developer settings → Application mode Developer + Unknown sources; reboot. The AAWireless
+  app's labels (Passthrough mode, Developer Mode) stay in English in every language.
 - **Verify in Android Auto** expects **two** entries: ScreenOnAuto and ScreenOnAuto
   (Legacy). ScreenOnAuto Media Controller appears only on older Android Auto, and its
   absence is normal. Do not describe it as a required entry.

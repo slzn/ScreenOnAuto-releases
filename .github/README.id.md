@@ -80,13 +80,19 @@ Android Auto hanya menjalankan aplikasi yang diinstal dari Play Store, dan Andro
 2. Buka **KingInstaller**, ketuk **ikon folder**, lalu pilih APK yang sudah diunduh
 3. Ketuk **Install** — KingInstaller akan menginstalnya seolah-olah berasal dari Google Play Store
 
-#### Langkah 3 — Berikan izin
+### Alternatif — dengan dongle AAWireless
 
-Buka **ScreenOnAuto** dan ikuti petunjuk di aplikasi untuk memberikan izin yang diperlukan.
+> **Kapan memakai cara ini:** instalasi lewat Google Play gagal — misalnya di GrapheneOS dengan Google Play dalam sandbox — dan Anda punya dongle AAWireless. Developer Mode pada dongle ini membuat Android Auto menampilkan aplikasi yang tidak diinstal dari Play Store, sehingga APK bisa diinstal langsung.
+
+1. Unduh `ScreenOnAuto-*.apk` terbaru dari [rilis terbaru](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) lalu instal
+2. Hubungkan ponsel ke mobil lewat dongle. Di aplikasi **AAWireless**, matikan **Passthrough mode** dan aktifkan **Developer Mode**
+3. Di setelan Android Auto pada ponsel, buka **Setelan developer**, setel **Mode aplikasi** ke **Developer**, lalu aktifkan **Sumber tidak dikenal**
+   - Tidak melihat Setelan developer? Ketuk **Info versi dan izin** 10 kali, lalu buka menu ⋮
+4. Mulai ulang ponsel
 
 ## Verifikasi di Android Auto
 
-Langkah ini berlaku **bagaimanapun cara Anda menginstal** — pasang manual dengan KingInstaller *maupun* Google Play.
+Langkah ini berlaku **bagaimanapun cara Anda menginstal** — pasang manual dengan KingInstaller, Google Play, *maupun* cara AAWireless.
 
 Di ponsel, buka **Setelan → Perangkat terhubung → Android Auto → Sesuaikan peluncur**.
 Anda seharusnya melihat **dua** entri ScreenOnAuto berikut:
@@ -97,7 +103,7 @@ Anda seharusnya melihat **dua** entri ScreenOnAuto berikut:
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Mencerminkan layar ponsel melalui jalur proyeksi Legacy — bisa ditampilkan berdampingan dengan peta |
 
 Android Auto versi lama juga menampilkan entri ketiga, **Pengontrol Media ScreenOnAuto**. Jika Anda tidak melihatnya, itu normal — kontrol media tetap berfungsi.
-Jika salah satu dari **dua** entri di atas tidak ada, instal ulang — lewat KingInstaller untuk pemasangan manual, atau biarkan instalasi dari Play selesai — lalu buka lagi Android Auto.
+Jika salah satu dari **dua** entri di atas tidak ada, instal ulang — lewat KingInstaller untuk pemasangan manual, atau biarkan instalasi dari Play selesai — lalu buka lagi Android Auto. Untuk cara AAWireless, pastikan Developer Mode dan Sumber tidak dikenal masih aktif.
 
 Siap? Lihat **[Cara Menggunakan](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cara-Menggunakan)** untuk memulai pencerminan di mobil.
 

@@ -80,13 +80,19 @@ Android Auto yalnızca Play Store'dan yüklenen uygulamaları çalıştırır ve
 2. **KingInstaller**'ı açın, **klasör simgesine** dokunun ve indirdiğiniz APK'yı seçin
 3. **Yükle**'ye dokunun — KingInstaller uygulamayı Google Play Store'dan gelmiş gibi kurar
 
-#### 3. Adım — İzinleri verin
+### Alternatif — AAWireless adaptörüyle
 
-**ScreenOnAuto**'yu başlatın ve gerekli izinleri vermek için uygulama içi yönergeleri izleyin.
+> **Ne zaman kullanılır:** Google Play üzerinden kurulum başarısız oluyorsa — örneğin korumalı alanda (sandboxed) Google Play kullanan GrapheneOS'ta — ve bir AAWireless adaptörünüz varsa. Adaptörün Developer Mode özelliği, Play Store'dan yüklenmemiş uygulamaların da Android Auto'da görünmesini sağlar; böylece APK doğrudan kurulabilir.
+
+1. En yeni `ScreenOnAuto-*.apk` dosyasını [en son sürümden](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) indirip kurun
+2. Telefonu adaptör üzerinden araca bağlayın. **AAWireless** uygulamasında **Passthrough mode**'u kapatın ve **Developer Mode**'u açın
+3. Telefondaki Android Auto ayarlarında **Geliştirici ayarları**'nı açın, **Uygulama modu**'nu **Geliştirici** olarak ayarlayın ve **Bilinmeyen kaynaklar**'ı açın
+   - Geliştirici ayarlarını göremiyor musunuz? **Sürüm ve izin bilgileri**'ne 10 kez dokunun, ardından ⋮ menüsünü açın
+4. Telefonu yeniden başlatın
 
 ## Android Auto'da Doğrulama
 
-Bu adım **kurulum yönteminizden bağımsız** çalışır — KingInstaller ile elle yükleme *veya* Google Play.
+Bu adım **kurulum yönteminizden bağımsız** çalışır — KingInstaller ile elle yükleme, Google Play *veya* AAWireless yöntemi.
 
 Telefonunuzda **Ayarlar → Bağlı cihazlar → Android Auto → Başlatıcıyı özelleştir** yolunu izleyin.
 Şu **iki** ScreenOnAuto girişini görmelisiniz:
@@ -97,7 +103,7 @@ Telefonunuzda **Ayarlar → Bağlı cihazlar → Android Auto → Başlatıcıy�
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Telefon ekranını Legacy projeksiyon yoluyla yansıtır — haritayla yan yana gösterilebilir |
 
 Eski Android Auto sürümleri üçüncü bir öğe de gösterir: **ScreenOnAuto Media Controller**. Görmüyorsanız bu normaldir — medya kontrolü yine çalışır.
-Yukarıdaki **iki** öğeden biri eksikse yeniden yükleyin — sideload için KingInstaller ile, Play için kurulumun bitmesini bekleyin — ve Android Auto'yu yeniden açın.
+Yukarıdaki **iki** öğeden biri eksikse yeniden yükleyin — sideload için KingInstaller ile, Play için kurulumun bitmesini bekleyin — ve Android Auto'yu yeniden açın. AAWireless yönteminde Developer Mode ve Bilinmeyen kaynaklar ayarlarının hâlâ açık olduğunu kontrol edin.
 
 Hazır mısınız? Arabada yansıtmayı başlatmak için **[Nasıl Kullanılır](https://github.com/slzn/ScreenOnAuto-releases/wiki/Nasıl-Kullanılır)** kılavuzuna bakın.
 

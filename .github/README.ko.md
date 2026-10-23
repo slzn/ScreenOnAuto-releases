@@ -80,13 +80,19 @@ Android Auto는 Play 스토어에서 설치한 앱만 실행하며, Android 14 �
 2. **KingInstaller**를 열고 **폴더 아이콘**을 눌러 내려받은 APK를 선택합니다
 3. **설치**를 누릅니다 — KingInstaller가 Google Play 스토어에서 온 것처럼 설치해 줍니다
 
-#### 3단계 — 권한 부여
+### 대안 — AAWireless 동글 사용
 
-**ScreenOnAuto**를 실행하고 앱 안내에 따라 필요한 권한을 부여하세요.
+> **이럴 때 사용하세요:** Google Play 설치가 실패하고(예: 샌드박스 Google Play를 쓰는 GrapheneOS) AAWireless 동글이 있는 경우입니다. AAWireless의 Developer Mode를 켜면 Play 스토어에서 설치하지 않은 앱도 Android Auto에 표시되므로 APK를 직접 설치할 수 있습니다.
+
+1. [최신 릴리스](https://github.com/slzn/ScreenOnAuto-releases/releases/latest)에서 최신 `ScreenOnAuto-*.apk`를 내려받아 설치합니다
+2. 동글을 통해 휴대전화를 차량에 연결합니다. **AAWireless** 앱에서 **Passthrough mode**를 끄고 **Developer Mode**를 켭니다
+3. 휴대전화의 Android Auto 설정에서 **개발자 설정**을 열고, **애플리케이션 모드**를 **개발자**로 설정한 뒤 **알 수 없는 출처**를 켭니다
+   - 개발자 설정이 보이지 않나요? **버전 및 권한 정보**를 10번 누른 다음 ⋮ 메뉴를 여세요
+4. 휴대전화를 재부팅합니다
 
 ## Android Auto에서 확인
 
-**설치 방법과 관계없이** 동일합니다 — KingInstaller 사이드로드든 Google Play든 마찬가지입니다.
+**설치 방법과 관계없이** 동일합니다 — KingInstaller 사이드로드든 Google Play든 AAWireless 방식이든 마찬가지입니다.
 
 휴대전화에서 **설정 → 연결된 기기 → Android Auto → 런처 맞춤설정**으로 이동하세요.
 ScreenOnAuto 항목 **두 개**가 보여야 합니다:
@@ -97,7 +103,7 @@ ScreenOnAuto 항목 **두 개**가 보여야 합니다:
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Legacy 프로젝션 경로로 휴대전화 화면을 미러링합니다 — 지도와 나란히 표시할 수 있습니다 |
 
 이전 버전의 Android Auto에서는 세 번째 항목인 **ScreenOnAuto 미디어 컨트롤러**도 표시됩니다. 보이지 않아도 정상이며, 미디어 제어는 그대로 작동합니다.
-위의 **두** 항목 중 하나라도 없다면, 사이드로드는 KingInstaller로 다시 설치하고 Play 설치는 설치가 끝났는지 확인한 뒤 Android Auto를 다시 여세요.
+위의 **두** 항목 중 하나라도 없다면, 사이드로드는 KingInstaller로 다시 설치하고 Play 설치는 설치가 끝났는지 확인한 뒤 Android Auto를 다시 여세요. AAWireless 방식이라면 Developer Mode와 알 수 없는 출처가 여전히 켜져 있는지 확인하세요.
 
 준비되셨나요? 차량에서 미러링을 시작하는 방법은 **[사용 방법](https://github.com/slzn/ScreenOnAuto-releases/wiki/사용-방법)** 을 참고하세요.
 
