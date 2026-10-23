@@ -311,7 +311,9 @@ All fourteen READMEs share one structure (en at the root, the other thirteen in 
   when the Play install fails (e.g. GrapheneOS with sandboxed Play). Four steps: install the
   APK directly; AAWireless app Passthrough mode off + Developer Mode on; Android Auto
   Developer settings → Application mode Developer + Unknown sources; reboot. The AAWireless
-  app's labels (Passthrough mode, Developer Mode) stay in English in every language.
+  app's labels (Passthrough mode, Developer Mode) stay in English in every language. The
+  landing pages carry only a short `<h3>` + one paragraph that links to this README section
+  (`…/blob/main/.github/README.<lang>.md#<anchor>`) — rewording the README heading breaks it.
 - **Verify in Android Auto** expects **two** entries: ScreenOnAuto and ScreenOnAuto
   (Legacy). ScreenOnAuto Media Controller appears only on older Android Auto, and its
   absence is normal. Do not describe it as a required entry.
