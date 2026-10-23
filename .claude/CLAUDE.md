@@ -298,6 +298,7 @@ All fourteen READMEs share one structure (en at the root, the other thirteen in 
   - Android 14+ → Google Play only, through the half-hourly sign-up at
     `https://screenonauto.lzn.idv.tw/join/?lang=<code>`.
   - Android ≤13 → KingInstaller sideload.
+  - Play install fails + AAWireless dongle → link to the AAWireless alternative section.
 - **Installation → Android 14 and above** is one paragraph: why Play, then sign up on `/join/`
   (30-minute rounds, install link at round start), then a link to the Join the Beta Test
   wiki page. There is no "invite-based" wording and no Google Form any more.

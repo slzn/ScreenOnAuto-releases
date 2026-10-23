@@ -14,6 +14,7 @@
 > **설치 방법은 Android 버전에 따라 다릅니다:**
 > - **Android 14 이상** — **Google Play로만** 설치: 30분마다 열리는 회차에 신청하고 25분 안에 설치하세요(앱은 Play 스토어에서 **검색되지 않습니다**). [신청하기 →](https://screenonauto.lzn.idv.tw/join/?lang=ko)
 > - **Android 13 이하** — KingInstaller로 APK를 사이드로드하거나([아래 단계](#설치)), Google Play로 설치합니다.
+> - **Play 설치가 실패하는데 AAWireless 동글이 있다면?** — APK를 직접 설치할 수 있습니다([대안](#대안--aawireless-동글-사용)).
 
 ## 기능
 
@@ -84,7 +85,7 @@ Android Auto는 Play 스토어에서 설치한 앱만 실행하며, Android 14 �
 
 > **이럴 때 사용하세요:** Google Play 설치가 실패하고(예: 샌드박스 Google Play를 쓰는 GrapheneOS) AAWireless 동글이 있는 경우입니다. AAWireless의 Developer Mode를 켜면 Play 스토어에서 설치하지 않은 앱도 Android Auto에 표시되므로 APK를 직접 설치할 수 있습니다.
 
-1. [최신 릴리스](https://github.com/slzn/ScreenOnAuto-releases/releases/latest)에서 최신 `ScreenOnAuto-*.apk`를 내려받아 설치합니다
+1. [최신 릴리스](https://github.com/slzn/ScreenOnAuto-releases/releases/latest)에서 최신 `ScreenOnAuto-*.apk`를 내려받아 설치합니다 — Android가 물어보면 브라우저나 파일 관리자에서 **알 수 없는 앱 설치**를 허용하세요
 2. 동글을 통해 휴대전화를 차량에 연결합니다. **AAWireless** 앱에서 **Passthrough mode**를 끄고 **Developer Mode**를 켭니다
 3. 휴대전화의 Android Auto 설정에서 **개발자 설정**을 열고, **애플리케이션 모드**를 **개발자**로 설정한 뒤 **알 수 없는 출처**를 켭니다
    - 개발자 설정이 보이지 않나요? **버전 및 권한 정보**를 10번 누른 다음 ⋮ 메뉴를 여세요

@@ -14,6 +14,7 @@
 > **A forma de instalar depende da sua versão do Android:**
 > - **Android 14 ou superior** — instale **somente pelo Google Play**: inscreva-se em uma rodada a cada meia hora e instale em até 25 minutos (o app **não aparece na busca** da Play Store). [Inscrever-se →](https://screenonauto.lzn.idv.tw/join/?lang=pt-BR)
 > - **Android 13 ou inferior** — faça sideload do APK com o KingInstaller ([passos abaixo](#instalação)) ou instale pelo Google Play.
+> - **A instalação pelo Play falha e você tem um adaptador AAWireless?** — instale o APK diretamente ([passos alternativos](#alternativa--com-um-adaptador-aawireless)).
 
 ## Recursos
 
@@ -84,7 +85,7 @@ O Android Auto só executa apps instalados pela Play Store, e o Android 14+ bloq
 
 > **Quando usar:** a instalação pelo Google Play falha — por exemplo, no GrapheneOS com o Google Play em sandbox — e você tem um adaptador AAWireless. O Developer Mode dele faz o Android Auto mostrar apps que não foram instalados pela Play Store, então dá para instalar o APK diretamente.
 
-1. Baixe o `ScreenOnAuto-*.apk` mais recente na [última versão](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) e instale
+1. Baixe o `ScreenOnAuto-*.apk` mais recente na [última versão](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) e instale — se o Android perguntar, permita que o navegador ou gerenciador de arquivos **instale apps desconhecidos**
 2. Conecte o celular ao carro pelo adaptador. No app **AAWireless**, desative o **Passthrough mode** e ative o **Developer Mode**
 3. Nas configurações do Android Auto no celular, abra **Configurações do desenvolvedor**, defina **Modo de aplicativo** como **Desenvolvedor** e ative **Fontes desconhecidas**
    - Não aparece Configurações do desenvolvedor? Toque 10 vezes em **Informações de versão e permissão** e depois abra o menu ⋮

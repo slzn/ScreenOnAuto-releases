@@ -14,6 +14,7 @@
 > **安裝方式取決於你的 Android 版本：**
 > - **Android 14 以上（含）** — **僅能透過 Play 商店安裝**：每半小時一輪報名，之後 25 分鐘內安裝（**商店搜尋不到**）。[前往報名 →](https://screenonauto.lzn.idv.tw/join/?lang=zh-TW)
 > - **Android 13 以下（含）** — 用 KingInstaller sideload 安裝 APK（[步驟見下方](#安裝步驟)），或改用 Play 商店安裝。
+> - **Play 商店安裝失敗，但有 AAWireless 轉接器？** — 可改為直接安裝 APK（[替代方式](#替代方式--使用-aawireless-轉接器)）。
 
 ## 功能介紹
 
@@ -81,7 +82,7 @@ Android Auto 只接受從 Play 商店安裝的 App，而 Android 14 起 KingInst
 
 > **適用情況**：Google Play 安裝失敗（例如在使用沙盒化 Google Play 的 GrapheneOS 上），而你有 AAWireless 轉接器。它的 Developer Mode 能讓 Android Auto 顯示並非從 Play 商店安裝的 app，因此可以直接安裝 APK。
 
-1. 從 [最新版本](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) 頁面下載最新的 `ScreenOnAuto-*.apk` 並安裝
+1. 從 [最新版本](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) 頁面下載最新的 `ScreenOnAuto-*.apk` 並安裝，Android 詢問時請允許瀏覽器或檔案管理器**安裝不明應用程式**
 2. 透過轉接器將手機連上車機。在 **AAWireless** app 中關閉 **Passthrough mode**，並開啟 **Developer Mode**
 3. 在手機的 Android Auto 設定中開啟**開發人員設定**，將**應用程式模式**設為**開發人員**，並開啟**不明來源**
    - 找不到開發人員設定？連續點選**版本和權限資訊** 10 次，再開啟 ⋮ 選單

@@ -14,6 +14,7 @@
 > **Cách cài đặt tùy thuộc vào phiên bản Android của bạn:**
 > - **Android 14 trở lên** — chỉ cài đặt được **qua Google Play**: đăng ký vào một lượt (mở mỗi nửa giờ), rồi cài đặt trong vòng 25 phút (ứng dụng **không tìm thấy được** bằng tìm kiếm trên Cửa hàng Play). [Đăng ký →](https://screenonauto.lzn.idv.tw/join/?lang=vi)
 > - **Android 13 trở xuống** — cài APK bằng KingInstaller ([các bước bên dưới](#cài-đặt)), hoặc cài qua Google Play.
+> - **Cài qua Play không được và bạn có bộ chuyển AAWireless?** — hãy cài APK trực tiếp ([các bước thay thế](#cách-khác--dùng-bộ-chuyển-aawireless)).
 
 ## Tính năng
 
@@ -84,7 +85,7 @@ Android Auto chỉ chạy những ứng dụng được cài từ Cửa hàng Pl
 
 > **Khi nào dùng cách này:** cài qua Google Play không thành công — ví dụ trên GrapheneOS với Google Play chạy trong sandbox — và bạn có bộ chuyển AAWireless. Developer Mode của nó cho phép Android Auto hiển thị cả ứng dụng không cài từ Cửa hàng Play, nên có thể cài APK trực tiếp.
 
-1. Tải `ScreenOnAuto-*.apk` mới nhất từ [bản phát hành mới nhất](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) rồi cài đặt
+1. Tải `ScreenOnAuto-*.apk` mới nhất từ [bản phát hành mới nhất](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) rồi cài đặt — nếu Android hỏi, hãy cho phép trình duyệt hoặc trình quản lý tệp **cài ứng dụng không rõ nguồn gốc**
 2. Kết nối điện thoại với xe qua bộ chuyển. Trong ứng dụng **AAWireless**, tắt **Passthrough mode** và bật **Developer Mode**
 3. Trong phần cài đặt Android Auto trên điện thoại, mở **Cài đặt cho nhà phát triển**, đặt **Chế độ ứng dụng** thành **Nhà phát triển** và bật **Nguồn không xác định**
    - Không thấy Cài đặt cho nhà phát triển? Nhấn **Thông tin về phiên bản và quyền** 10 lần, rồi mở menu ⋮

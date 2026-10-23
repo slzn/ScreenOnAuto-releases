@@ -14,6 +14,7 @@
 > **Kurulum yönteminiz Android sürümünüze bağlıdır:**
 > - **Android 14 ve üzeri** — **yalnızca Google Play üzerinden** kurulur: yarım saatte bir açılan bir tura kaydolun, ardından 25 dakika içinde yükleyin (uygulama Play Store'da **aramada görünmez**). [Kaydol →](https://screenonauto.lzn.idv.tw/join/?lang=tr)
 > - **Android 13 ve altı** — APK'yı KingInstaller ile elle yükleyin ([adımlar aşağıda](#kurulum)) veya Google Play üzerinden kurun.
+> - **Play kurulumu başarısız mı ve AAWireless adaptörünüz var mı?** — APK'yı doğrudan kurun ([alternatif adımlar](#alternatif--aawireless-adaptörüyle)).
 
 ## Özellikler
 
@@ -84,7 +85,7 @@ Android Auto yalnızca Play Store'dan yüklenen uygulamaları çalıştırır ve
 
 > **Ne zaman kullanılır:** Google Play üzerinden kurulum başarısız oluyorsa — örneğin korumalı alanda (sandboxed) Google Play kullanan GrapheneOS'ta — ve bir AAWireless adaptörünüz varsa. Adaptörün Developer Mode özelliği, Play Store'dan yüklenmemiş uygulamaların da Android Auto'da görünmesini sağlar; böylece APK doğrudan kurulabilir.
 
-1. En yeni `ScreenOnAuto-*.apk` dosyasını [en son sürümden](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) indirip kurun
+1. En yeni `ScreenOnAuto-*.apk` dosyasını [en son sürümden](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) indirip kurun — Android sorarsa tarayıcınızın veya dosya yöneticinizin **bilinmeyen uygulamaları yüklemesine** izin verin
 2. Telefonu adaptör üzerinden araca bağlayın. **AAWireless** uygulamasında **Passthrough mode**'u kapatın ve **Developer Mode**'u açın
 3. Telefondaki Android Auto ayarlarında **Geliştirici ayarları**'nı açın, **Uygulama modu**'nu **Geliştirici** olarak ayarlayın ve **Bilinmeyen kaynaklar**'ı açın
    - Geliştirici ayarlarını göremiyor musunuz? **Sürüm ve izin bilgileri**'ne 10 kez dokunun, ardından ⋮ menüsünü açın

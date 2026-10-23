@@ -14,6 +14,7 @@
 > **インストール方法は Android のバージョンによって異なります：**
 > - **Android 14 以上** — **Google Play からのみ**インストールできます。30 分ごとのラウンドに登録し、25 分以内にインストールしてください（Play ストアでは**検索に表示されません**）。[登録する →](https://screenonauto.lzn.idv.tw/join/?lang=ja)
 > - **Android 13 以下** — KingInstaller で APK をサイドロードするか（[下記の手順](#インストール)）、Google Play からインストールします。
+> - **Google Play からインストールできず、AAWireless ドングルがある場合** — APK を直接インストールできます（[別の方法](#別の方法--aawireless-ドングルを使う)）。
 
 ## 機能
 
@@ -81,7 +82,7 @@ Android Auto は Play ストアからインストールされたアプリしか�
 
 > **この方法を使う場面**：Google Play からのインストールがうまくいかず（たとえば、サンドボックス化された Google Play を使う GrapheneOS の場合）、AAWireless ドングルを持っている場合です。AAWireless の Developer Mode を使うと、Play ストア以外からインストールしたアプリも Android Auto に表示されるため、APK を直接インストールできます。
 
-1. [最新リリース](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) から最新の `ScreenOnAuto-*.apk` をダウンロードしてインストールします
+1. [最新リリース](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) から最新の `ScreenOnAuto-*.apk` をダウンロードしてインストールします（Android に確認されたら、ブラウザまたはファイルマネージャーに **不明なアプリのインストール** を許可します）
 2. ドングル経由でスマホを車に接続します。**AAWireless** アプリで **Passthrough mode** をオフにし、**Developer Mode** をオンにします
 3. スマホの Android Auto の設定で **デベロッパー設定** を開き、**アプリケーション モード** を **デベロッパー** にして、**提供元不明のアプリ** をオンにします
    - デベロッパー設定が見つからない場合は、**バージョンと権限の情報** を 10 回タップしてから ⋮ メニューを開きます

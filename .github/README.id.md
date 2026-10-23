@@ -14,6 +14,7 @@
 > **Cara instal tergantung versi Android Anda:**
 > - **Android 14 ke atas** — instal **hanya melalui Google Play**: daftar di salah satu putaran (dibuka setiap setengah jam), lalu instal dalam 25 menit (aplikasi ini **tidak bisa dicari** di Play Store). [Daftar →](https://screenonauto.lzn.idv.tw/join/?lang=id)
 > - **Android 13 ke bawah** — pasang APK secara manual dengan KingInstaller ([langkah-langkah di bawah](#instalasi)), atau instal melalui Google Play.
+> - **Instalasi lewat Play gagal dan Anda punya dongle AAWireless?** — instal APK secara langsung ([langkah alternatif](#alternatif--dengan-dongle-aawireless)).
 
 ## Fitur
 
@@ -84,7 +85,7 @@ Android Auto hanya menjalankan aplikasi yang diinstal dari Play Store, dan Andro
 
 > **Kapan memakai cara ini:** instalasi lewat Google Play gagal — misalnya di GrapheneOS dengan Google Play dalam sandbox — dan Anda punya dongle AAWireless. Developer Mode pada dongle ini membuat Android Auto menampilkan aplikasi yang tidak diinstal dari Play Store, sehingga APK bisa diinstal langsung.
 
-1. Unduh `ScreenOnAuto-*.apk` terbaru dari [rilis terbaru](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) lalu instal
+1. Unduh `ScreenOnAuto-*.apk` terbaru dari [rilis terbaru](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) lalu instal — jika Android bertanya, izinkan browser atau pengelola file Anda untuk **menginstal aplikasi yang tidak dikenal**
 2. Hubungkan ponsel ke mobil lewat dongle. Di aplikasi **AAWireless**, matikan **Passthrough mode** dan aktifkan **Developer Mode**
 3. Di setelan Android Auto pada ponsel, buka **Setelan developer**, setel **Mode aplikasi** ke **Developer**, lalu aktifkan **Sumber tidak dikenal**
    - Tidak melihat Setelan developer? Ketuk **Info versi dan izin** 10 kali, lalu buka menu ⋮

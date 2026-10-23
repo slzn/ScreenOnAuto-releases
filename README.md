@@ -14,6 +14,7 @@
 > **How you install depends on your Android version:**
 > - **Android 14 and above** — install via **Google Play only**: sign up for a half-hourly round, then install within 25 minutes (the app is **not searchable** on the Play Store). [Sign up →](https://screenonauto.lzn.idv.tw/join/?lang=en)
 > - **Android 13 and below** — sideload the APK with KingInstaller ([steps below](#installation)), or install via Google Play.
+> - **Play install fails, and you have an AAWireless dongle?** — install the APK directly instead ([alternative steps](#alternative--with-an-aawireless-dongle)).
 
 ## Features
 
@@ -84,7 +85,7 @@ Android Auto only runs apps installed from the Play Store, and Android 14+ block
 
 > **When to use this:** the Google Play install fails — for example on GrapheneOS with sandboxed Google Play — and you have an AAWireless dongle. Its Developer Mode lets Android Auto show apps that weren't installed from the Play Store, so the APK can be installed directly.
 
-1. Download the latest `ScreenOnAuto-*.apk` from the [latest release](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) and install it
+1. Download the latest `ScreenOnAuto-*.apk` from the [latest release](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) and install it — allow your browser or file manager to **install unknown apps** if Android asks
 2. Connect the phone to the car through the dongle. In the **AAWireless** app, turn **Passthrough mode** off and **Developer Mode** on
 3. In the Android Auto settings on the phone, open **Developer settings**, set **Application mode** to **Developer**, and turn on **Unknown sources**
    - Don't see Developer settings? Tap **Version and permission info** 10 times, then open the ⋮ menu
