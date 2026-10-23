@@ -80,13 +80,19 @@ Android Auto only runs apps installed from the Play Store, and Android 14+ block
 2. Open **KingInstaller**, tap the **folder icon**, and select the downloaded APK
 3. Tap **Install** — KingInstaller will install it as if it came from Google Play Store
 
-#### Step 3 — Grant Permissions
+### Alternative — with an AAWireless dongle
 
-Launch **ScreenOnAuto** and follow the in-app prompts to grant required permissions.
+> **When to use this:** the Google Play install fails — for example on GrapheneOS with sandboxed Google Play — and you have an AAWireless dongle. Its Developer Mode lets Android Auto show apps that weren't installed from the Play Store, so the APK can be installed directly.
+
+1. Download the latest `ScreenOnAuto-*.apk` from the [latest release](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) and install it
+2. Connect the phone to the car through the dongle. In the **AAWireless** app, turn **Passthrough mode** off and **Developer Mode** on
+3. In the Android Auto settings on the phone, open **Developer settings**, set **Application mode** to **Developer**, and turn on **Unknown sources**
+   - Don't see Developer settings? Tap **Version and permission info** 10 times, then open the ⋮ menu
+4. Reboot the phone
 
 ## Verify in Android Auto
 
-This works **however you installed** — KingInstaller sideload *or* Google Play.
+This works **however you installed** — KingInstaller sideload, Google Play, *or* the AAWireless route.
 
 On your phone, go to **Settings → Connected devices → Android Auto → Customize Launcher**.
 You should see these **two** ScreenOnAuto entries:
@@ -97,7 +103,7 @@ You should see these **two** ScreenOnAuto entries:
 | <img src="images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Mirrors the phone screen using the Legacy projection path — can be displayed side-by-side with the map |
 
 Older Android Auto also lists a third entry, **ScreenOnAuto Media Controller**. If you don't see it, that's normal — media control works either way.
-If either of the **two** entries above is missing, reinstall — through KingInstaller for a sideload, or let the Play install finish — then reopen Android Auto.
+If either of the **two** entries above is missing, reinstall — through KingInstaller for a sideload, or let the Play install finish — then reopen Android Auto. On the AAWireless route, check that Developer Mode and Unknown sources are still on.
 
 Ready to go? See **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use)** for starting the mirror in the car.
 
