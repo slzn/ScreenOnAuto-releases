@@ -80,7 +80,7 @@ Android Auto 只接受從 Play 商店安裝的 App，而 Android 14 起 KingInst
 
 ### 替代方式 — 使用 AAWireless 轉接器
 
-> **適用情況**：Google Play 安裝失敗（例如在使用沙盒化 Google Play 的 GrapheneOS 上），而你有 AAWireless 轉接器。它的 Developer Mode 能讓 Android Auto 顯示並非從 Play 商店安裝的 app，因此可以直接安裝 APK。
+> **適用情況**：Google Play 安裝失敗（例如在使用沙盒化 Google Play 的 GrapheneOS 上），而你有 AAWireless 轉接器。在真車上，Android Auto 會忽略自己的**不明來源**設定，要靠轉接器的 Developer Mode 才會生效，所以**沒有轉接器就無法使用這個方法**。
 
 1. 從 [最新版本](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) 頁面下載最新的 `ScreenOnAuto-*.apk` 並安裝，Android 詢問時請允許瀏覽器或檔案管理器**安裝不明應用程式**
 2. 透過轉接器將手機連上車機。在 **AAWireless** app 中關閉 **Passthrough mode**，並開啟 **Developer Mode**

@@ -83,7 +83,7 @@ Android Auto chỉ chạy những ứng dụng được cài từ Cửa hàng Pl
 
 ### Cách khác — dùng bộ chuyển AAWireless
 
-> **Khi nào dùng cách này:** cài qua Google Play không thành công — ví dụ trên GrapheneOS với Google Play chạy trong sandbox — và bạn có bộ chuyển AAWireless. Developer Mode của nó cho phép Android Auto hiển thị cả ứng dụng không cài từ Cửa hàng Play, nên có thể cài APK trực tiếp.
+> **Khi nào dùng cách này:** cài qua Google Play không thành công — ví dụ trên GrapheneOS với Google Play chạy trong sandbox — và bạn có bộ chuyển AAWireless. Trên xe thật, Android Auto bỏ qua cài đặt **Nguồn không xác định** của chính nó; chính Developer Mode của bộ chuyển mới làm cài đặt này có hiệu lực, nên **cách này không dùng được nếu không có bộ chuyển**.
 
 1. Tải `ScreenOnAuto-*.apk` mới nhất từ [bản phát hành mới nhất](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) rồi cài đặt — nếu Android hỏi, hãy cho phép trình duyệt hoặc trình quản lý tệp **cài ứng dụng không rõ nguồn gốc**
 2. Kết nối điện thoại với xe qua bộ chuyển. Trong ứng dụng **AAWireless**, tắt **Passthrough mode** và bật **Developer Mode**

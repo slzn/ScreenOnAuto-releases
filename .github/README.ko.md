@@ -83,7 +83,7 @@ Android Auto는 Play 스토어에서 설치한 앱만 실행하며, Android 14 �
 
 ### 대안 — AAWireless 동글 사용
 
-> **이럴 때 사용하세요:** Google Play 설치가 실패하고(예: 샌드박스 Google Play를 쓰는 GrapheneOS) AAWireless 동글이 있는 경우입니다. AAWireless의 Developer Mode를 켜면 Play 스토어에서 설치하지 않은 앱도 Android Auto에 표시되므로 APK를 직접 설치할 수 있습니다.
+> **이럴 때 사용하세요:** Google Play 설치가 실패하고(예: 샌드박스 Google Play를 쓰는 GrapheneOS) AAWireless 동글이 있는 경우입니다. 실제 차량에서는 Android Auto가 자체 **알 수 없는 출처** 설정을 무시합니다. 동글의 Developer Mode가 있어야 이 설정이 적용되므로 **동글 없이는 이 방법을 쓸 수 없습니다**.
 
 1. [최신 릴리스](https://github.com/slzn/ScreenOnAuto-releases/releases/latest)에서 최신 `ScreenOnAuto-*.apk`를 내려받아 설치합니다 — Android가 물어보면 브라우저나 파일 관리자에서 **알 수 없는 앱 설치**를 허용하세요
 2. 동글을 통해 휴대전화를 차량에 연결합니다. **AAWireless** 앱에서 **Passthrough mode**를 끄고 **Developer Mode**를 켭니다

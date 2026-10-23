@@ -83,7 +83,7 @@ Android Auto führt nur Apps aus, die über den Play Store installiert wurden, u
 
 ### Alternative – mit einem AAWireless-Dongle
 
-> **Wann das hilft:** Die Installation über Google Play schlägt fehl – etwa unter GrapheneOS mit Sandboxed Google Play – und du hast einen AAWireless-Dongle. Dessen Developer Mode lässt Android Auto auch Apps anzeigen, die nicht aus dem Play Store stammen, sodass sich die APK direkt installieren lässt.
+> **Wann das hilft:** Die Installation über Google Play schlägt fehl – etwa unter GrapheneOS mit Sandboxed Google Play – und du hast einen AAWireless-Dongle. Im echten Auto ignoriert Android Auto seine eigene Einstellung **Unbekannte Quellen**; erst der Developer Mode des Dongles bringt sie zur Wirkung – **ohne den Dongle funktioniert dieser Weg also nicht**.
 
 1. Lade die neueste `ScreenOnAuto-*.apk` von der [aktuellen Version](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) herunter und installiere sie – fragt Android nach, erlaube deinem Browser oder Dateimanager, **unbekannte Apps zu installieren**
 2. Verbinde das Telefon über den Dongle mit dem Auto. Schalte in der **AAWireless**-App **Passthrough mode** aus und **Developer Mode** ein

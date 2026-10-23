@@ -80,7 +80,7 @@ Android Auto は Play ストアからインストールされたアプリしか�
 
 ### 別の方法 — AAWireless ドングルを使う
 
-> **この方法を使う場面**：Google Play からのインストールがうまくいかず（たとえば、サンドボックス化された Google Play を使う GrapheneOS の場合）、AAWireless ドングルを持っている場合です。AAWireless の Developer Mode を使うと、Play ストア以外からインストールしたアプリも Android Auto に表示されるため、APK を直接インストールできます。
+> **この方法を使う場面**：Google Play からのインストールがうまくいかず（たとえば、サンドボックス化された Google Play を使う GrapheneOS の場合）、AAWireless ドングルを持っている場合です。実際の車では、Android Auto は自身の **提供元不明のアプリ** 設定を無視します。この設定を有効にするのがドングルの Developer Mode なので、**ドングルがないとこの方法は使えません**。
 
 1. [最新リリース](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) から最新の `ScreenOnAuto-*.apk` をダウンロードしてインストールします（Android に確認されたら、ブラウザまたはファイルマネージャーに **不明なアプリのインストール** を許可します）
 2. ドングル経由でスマホを車に接続します。**AAWireless** アプリで **Passthrough mode** をオフにし、**Developer Mode** をオンにします

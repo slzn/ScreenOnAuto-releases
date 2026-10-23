@@ -83,7 +83,7 @@ Android Auto yalnızca Play Store'dan yüklenen uygulamaları çalıştırır ve
 
 ### Alternatif — AAWireless adaptörüyle
 
-> **Ne zaman kullanılır:** Google Play üzerinden kurulum başarısız oluyorsa — örneğin korumalı alanda (sandboxed) Google Play kullanan GrapheneOS'ta — ve bir AAWireless adaptörünüz varsa. Adaptörün Developer Mode özelliği, Play Store'dan yüklenmemiş uygulamaların da Android Auto'da görünmesini sağlar; böylece APK doğrudan kurulabilir.
+> **Ne zaman kullanılır:** Google Play üzerinden kurulum başarısız oluyorsa — örneğin korumalı alanda (sandboxed) Google Play kullanan GrapheneOS'ta — ve bir AAWireless adaptörünüz varsa. Gerçek bir araçta Android Auto kendi **Bilinmeyen kaynaklar** ayarını yok sayar; bu ayarı etkin kılan, adaptörün Developer Mode özelliğidir. Bu yüzden **bu yöntem adaptör olmadan çalışmaz**.
 
 1. En yeni `ScreenOnAuto-*.apk` dosyasını [en son sürümden](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) indirip kurun — Android sorarsa tarayıcınızın veya dosya yöneticinizin **bilinmeyen uygulamaları yüklemesine** izin verin
 2. Telefonu adaptör üzerinden araca bağlayın. **AAWireless** uygulamasında **Passthrough mode**'u kapatın ve **Developer Mode**'u açın

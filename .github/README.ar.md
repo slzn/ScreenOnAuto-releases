@@ -83,7 +83,7 @@
 
 ### بديل — باستخدام محوّل AAWireless
 
-> **متى تستخدم هذه الطريقة:** عندما يفشل التثبيت عبر Google Play — مثلًا على GrapheneOS مع Google Play المعزول (sandboxed) — ولديك محوّل AAWireless. يتيح Developer Mode في هذا المحوّل لـ Android Auto عرض التطبيقات غير المثبَّتة من متجر Play، فيمكن تثبيت ملف APK مباشرة.
+> **متى تستخدم هذه الطريقة:** عندما يفشل التثبيت عبر Google Play — مثلًا على GrapheneOS مع Google Play المعزول (sandboxed) — ولديك محوّل AAWireless. في السيارة الحقيقية يتجاهل Android Auto إعداد **مصادر غير معروفة** الخاص به، ووضع Developer Mode في المحوّل هو ما يجعل هذا الإعداد يعمل، لذا **لا تعمل هذه الطريقة دون المحوّل**.
 
 1. نزِّل أحدث ملف `ScreenOnAuto-*.apk` من [أحدث إصدار](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) وثبِّته — وإذا سألك Android، فاسمح للمتصفح أو مدير الملفات **بتثبيت التطبيقات غير المعروفة**
 2. وصِّل الهاتف بالسيارة عبر المحوّل. في تطبيق **AAWireless**، أوقف **Passthrough mode** وشغِّل **Developer Mode**
