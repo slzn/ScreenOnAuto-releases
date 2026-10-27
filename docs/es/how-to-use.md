@@ -113,25 +113,24 @@ iníciala con el interruptor **Duplicar pantalla**.
 
 #### Barras negras alrededor de la imagen
 
-Las pantallas del teléfono y del coche tienen proporciones distintas; el botón **Forzar
-horizontal** en la pantalla de duplicación (o **Forzar horizontal automáticamente** en
-los ajustes de la app) suele llenar la pantalla mucho mejor. Si quedan huecos finos o
-bordes cortados, afínalo en **Ajustes → Avanzado → Ajustar ancho de la duplicación /
-Ajustar alto de la duplicación** (píxeles positivos recogen un borde cortado, negativos
-empujan para rellenar una barra negra).
+Las pantallas del teléfono y del coche tienen proporciones distintas. Usa el botón
+**Bloquear orientación** en la pantalla de duplicación (o **Bloquear la orientación
+automáticamente** en los ajustes). Para ajustarse exactamente al área útil del coche,
+activa **Ajustar la pantalla del teléfono a la del coche** en Funciones con privilegios
+(Shizuku o root).
 
 #### La imagen se ve estirada o distorsionada tras cambiar la disposición
 
-Ocurre cuando el área visible crece o se reduce en la vista dividida. Dos ajustes pueden
-solucionarlo:
+Ocurre cuando el área visible crece o se reduce en la vista dividida. Girar el teléfono
+para que la pantalla cambie entre vertical y horizontal lo devuelve a la normalidad (si **Bloquear orientación** está activo, desactívalo antes con su botón en pantalla). Dos
+ajustes también pueden solucionarlo:
 
 - Activa **Ajustes → Avanzado → Tamaño fijo de la duplicación**. La duplicación mantiene
   su tamaño en lugar de distorsionarse (parte puede quedar oculta). Aplica a la entrada
   de pantalla completa **ScreenOnAuto**.
 - Activa **Ajustes → Avanzado → Duplicación dibujada por la app (experimental)**. La app
   dibuja entonces la imagen de la duplicación en lugar de dejar que el sistema la
-  escale, así que ya no se distorsiona en la vista dividida, y los ajustes de ancho/alto
-  funcionan igual tanto si los configuras antes de conectar como durante la conexión.
+  escale, así que ya no se distorsiona en la vista dividida.
   Consume algo más de batería y se aplica la próxima vez que empiece la duplicación. **Ajustar la pantalla del teléfono a la del coche** (Funciones con privilegios) resuelve el mismo problema de otra forma, y ambas pueden estar activadas a la vez.
 
 #### El Google Maps de Android Auto se pone negro durante la duplicación

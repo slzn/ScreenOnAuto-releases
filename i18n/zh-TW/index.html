@@ -38,7 +38,7 @@ permalink: /zh-TW/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Night dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons, Match the phone screen to the car, Virtual touchscreen for gesture apps, Start mirroring in the background, Reverse landscape"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Night dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Lock orientation, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons, Match the phone screen to the car, Virtual touchscreen for gesture apps, Start mirroring in the background, Reverse landscape"
 }
 </script>
 
@@ -76,7 +76,7 @@ permalink: /zh-TW/
     <p class="free">完全免費——所有功能無需額外付費。</p>
     <div class="paths">
       <a class="path primary" href="https://screenonauto.lzn.idv.tw/join/?lang=zh-TW">
-        <span class="k">Android 14 以上（含）</span>
+        <span class="k">建議 · 任何 Android 版本</span>
         <b>從 Google&nbsp;Play 安裝</b>
         <span class="d">每半小時一輪報名，之後 25 分鐘內安裝。</span>
       </a>
@@ -124,8 +124,8 @@ permalink: /zh-TW/
   </div>
   <div class="grid more">
     <div class="card"><b>只鏡像這個應用程式 <span class="muted">(Android 15+)</span></b><p>只把一個 App 送到車機，而不是整個畫面。</p></div>
-    <div class="card"><b>畫面按鈕</b><p>車機畫面上的 App 快捷鍵，以及強制橫向、自動調暗、夜間調暗、返回／主畫面／最近應用程式按鈕。</p></div>
-    <div class="card"><b>螢幕與省電</b><p>強制橫向（可反向）、閒置時調暗手機、夜間調暗車機畫面、鏡像期間保持手機喚醒。</p></div>
+    <div class="card"><b>畫面按鈕</b><p>車機畫面上的 App 快捷鍵，以及強制固定方向、自動調暗、夜間調暗、返回／主畫面／最近應用程式按鈕。</p></div>
+    <div class="card"><b>螢幕與省電</b><p>固定方向（橫向可反向或直式，或配合車機畫面）、閒置時調暗手機、夜間調暗車機畫面、鏡像期間保持手機喚醒。</p></div>
     <div class="card"><b>貼合車機螢幕</b><p>修正被車機裁掉的邊緣，分割畫面時也不變形。</p></div>
     <div class="card"><b>外部控制</b><p>用 Tasker、捷徑或 ADB 啟動或停止鏡像。<a href="https://screenonauto.lzn.idv.tw/docs/zh-TW/control-mirroring-from-another-app/">說明 →</a></p></div>
     <div class="card"><b>觸控轉發 <span class="muted">（實驗性）</span></b><p>在車機畫面上點擊、捲動來操作手機。</p></div>
@@ -135,11 +135,15 @@ permalink: /zh-TW/
 <section class="wrap" id="privileged">
   <h2>特權功能</h2>
   <p class="muted">選用功能，需要 <a href="https://shizuku.rikka.app/">Shizuku</a> 或 root；沒有的話，其他功能完全不受影響。</p>
-  <div class="grid core priv">
+  <div class="grid core">
     <div class="card"><b>關閉手機螢幕</b><p>手機面板熄滅，車機上的鏡像照常顯示。</p></div>
     <div class="card"><b>真實觸控注入</b><p>長按、拖曳、多指操作都能從車機送到手機；開啟虛擬觸控螢幕後，GMD 等手勢 App 也收得到。</p></div>
-    <div class="card"><b>手機導覽按鈕</b><p>返回／主畫面／最近應用程式按鈕，不需要無障礙服務。</p></div>
     <div class="card"><b>讓手機畫面比例對齊車機</b><p>鏡像時把手機調成車機的長寬比，不再有黑邊或變形。</p></div>
+  </div>
+  <div class="grid more">
+    <div class="card"><b>手機導覽按鈕</b><p>返回／主畫面／最近應用程式按鈕，不需要無障礙服務。</p></div>
+    <div class="card"><b>手機深色模式跟隨車機日夜 <span class="muted">(Android 10+)</span></b><p>鏡像期間，手機的深色主題跟著 Android Auto 切換。</p></div>
+    <div class="card"><b>鏡像時的字型大小</b><p>鏡像期間讓手機使用另一個字型大小。</p></div>
   </div>
   <p class="muted">插上車機後 Shizuku 停止了、螢幕關閉後不知道怎麼喚醒？請見<a href="https://screenonauto.lzn.idv.tw/docs/zh-TW/how-to-use/#特權功能shizuku--root">疑難排解</a>。</p>
 </section>
@@ -157,10 +161,10 @@ permalink: /zh-TW/
 <section class="wrap" id="install">
   <h2>安裝步驟</h2>
 
-  <h3>Android 14 以上（含）— 透過 Play 商店安裝</h3>
-  <p>Android Auto 只接受從 Play 商店安裝的 App，而 Android 14 起 KingInstaller 已無法使用，因此請透過 Google Play 內部測試安裝。內容與 GitHub 版本相同，只是 Play 商店搜尋不到：到<a href="https://screenonauto.lzn.idv.tw/join/?lang=zh-TW"><b>安裝頁面報名</b></a>，每 30 分鐘一輪，你報名的那一輪截止幾分鐘後就會出現安裝連結。完整步驟請見 <a href="https://screenonauto.lzn.idv.tw/docs/zh-TW/join-the-beta-test/"><b>透過 Google Play 測試計畫安裝</b></a>。</p>
+  <h3>透過 Play 商店安裝（建議）</h3>
+  <p>任何 Android 版本都適用，Android Auto 直接就能使用、不需要額外設定（Android Auto 只接受從 Play 商店安裝的 App，而 Android 14 起 KingInstaller 已無法使用）。這是 Google Play 的內部測試，內容與 GitHub 版本相同，只是 Play 商店搜尋不到：到<a href="https://screenonauto.lzn.idv.tw/join/?lang=zh-TW"><b>安裝頁面報名</b></a>，每 30 分鐘一輪，你報名的那一輪截止幾分鐘後就會出現安裝連結。完整步驟請見 <a href="https://screenonauto.lzn.idv.tw/docs/zh-TW/join-the-beta-test/"><b>透過 Google Play 測試計畫安裝</b></a>。</p>
 
-  <h3>Android 13 以下（含）— 透過 KingInstaller sideload</h3>
+  <h3>替代方式 — Android 13 以下（含）：透過 KingInstaller sideload</h3>
   <p class="muted">Android Auto 要求 app 必須透過 Google Play 商店安裝，直接安裝 APK 會被拒絕使用；<a href="https://github.com/fcaronte/KingInstaller/releases">KingInstaller</a> 能以 Google Play 商店身份安裝 APK，解決此限制。</p>
   <ol class="steps">
     <li><b>安裝 KingInstaller</b>——從其 <a href="https://github.com/fcaronte/KingInstaller/releases">Releases 頁面</a>下載最新版 <code>KingInstaller.apk</code>，允許瀏覽器或檔案管理器「安裝未知來源應用程式」後安裝。</li>
@@ -168,7 +172,7 @@ permalink: /zh-TW/
   </ol>
 
   <h3>替代方式 — 使用 AAWireless 轉接器</h3>
-  <p>若 Google Play 安裝失敗（例如在使用沙盒化 Google Play 的 GrapheneOS 上），而你有 AAWireless 轉接器，可以用它的 Developer Mode 讓 Android Auto 接受直接安裝的 APK。<a href="https://github.com/slzn/ScreenOnAuto-releases/blob/main/.github/README.zh-TW.md#替代方式--使用-aawireless-轉接器"><b>查看步驟</b></a>。</p>
+  <p>有 AAWireless 轉接器嗎？它的 Developer Mode 能讓 Android Auto 接受直接安裝的 APK，不必經過 Google Play；在 Play 無法安裝的環境（例如使用沙盒化 Google Play 的 GrapheneOS）也能用。<a href="https://github.com/slzn/ScreenOnAuto-releases/blob/main/.github/README.zh-TW.md#替代方式--使用-aawireless-轉接器"><b>查看步驟</b></a>。</p>
 </section>
 
 <section class="wrap" id="verify">
@@ -192,7 +196,7 @@ permalink: /zh-TW/
       <tr><th>權限</th><th>用途</th></tr>
       <tr><td>螢幕擷取（MediaProjection）</td><td>螢幕鏡像</td></tr>
       <tr><td>通知存取服務</td><td>媒體控制</td></tr>
-      <tr><td>在其他應用程式上層顯示</td><td>自動調暗、強制橫向與夜間調暗</td></tr>
+      <tr><td>在其他應用程式上層顯示</td><td>自動調暗、強制固定方向與夜間調暗</td></tr>
       <tr><td>無障礙服務</td><td>觸控轉發與返回／主畫面／最近應用程式按鈕（使用特權功能時不需要）</td></tr>
     </table>
   </div>

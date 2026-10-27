@@ -11,10 +11,10 @@
 <p align="center"><img src="../images/screenshot-legacy-split.png" alt="Android Auto ekranında haritayla yan yana yansıtılan telefon ekranı"></p>
 
 > [!IMPORTANT]
-> **Kurulum yönteminiz Android sürümünüze bağlıdır:**
-> - **Android 14 ve üzeri** — **yalnızca Google Play üzerinden** kurulur: yarım saatte bir açılan bir tura kaydolun, ardından 25 dakika içinde yükleyin (uygulama Play Store'da **aramada görünmez**). [Kaydol →](https://screenonauto.lzn.idv.tw/join/?lang=tr)
-> - **Android 13 ve altı** — APK'yı KingInstaller ile elle yükleyin ([adımlar aşağıda](#kurulum)) veya Google Play üzerinden kurun.
-> - **Play kurulumu başarısız mı ve AAWireless adaptörünüz var mı?** — APK'yı doğrudan kurun ([alternatif adımlar](#alternatif--aawireless-adaptörüyle)).
+> **Nasıl kurulur:**
+> - **Önerilen — Google Play**, tüm Android sürümlerinde: yarım saatte bir açılan bir tura kaydolun, ardından 25 dakika içinde yükleyin (uygulama Play Store'da **aramada görünmez**). Android Auto uygulamayı ek bir ayar gerektirmeden kabul eder. [Kaydol →](https://screenonauto.lzn.idv.tw/join/?lang=tr)
+> - **Android 13 ve altı** — APK'yı KingInstaller ile elle de yükleyebilirsiniz ([adımlar aşağıda](#alternatif--android-13-ve-altı-kinginstaller-ile-elle-yükleme)).
+> - **AAWireless adaptörünüz mü var?** — APK'yı tüm Android sürümlerinde doğrudan da kurabilirsiniz ([adımlar aşağıda](#alternatif--aawireless-adaptörüyle)).
 
 ## Özellikler
 
@@ -28,10 +28,10 @@
 - **Bağlantı Kesilince Durdurma** — Android Auto bağlantısı kesildiğinde yansıtmayı otomatik olarak durdurun
 - **Uygulamayı Otomatik Başlatma** — Yansıtma başladığında ve Android Auto bağlıyken seçtiğiniz bir uygulamayı telefonda otomatik olarak açın
 - **Yalnızca bu uygulamayı yansıt** *(Android 15+)* — Tüm ekran yerine yalnızca otomatik başlatılan uygulamayı arabaya gönderir, telefonun geri kalanı gizli kalır. Ekran Kaydı izninin [ADB ile önceden verilmiş olmasını](https://github.com/slzn/ScreenOnAuto-releases/wiki/ADB-ile-Yansıtma-İzni-Verme) gerektirir; o uygulamadan ayrıldığınızda araba ekranı boş kalır
-- **Yatay Modu Zorlama** — Yansıtma sırasında telefonu yatay moda zorlayın; bağlantıda otomatik başlar, ekranda aç/kapat düğmesi vardır
-- **Başlatma Kısayolları** — Android Auto yansıtma ekranına en fazla 4 hızlı uygulama başlatma düğmesi ekleyin
-- **Ekran Düğmeleri** — Yansıtma ekranındaki düğmeleri Ekran düğmeleri sayfasından tek tek gösterin veya gizleyin: Yatay modu zorla, Otomatik karartma, Gece karartması ve telefonun Geri / Ana ekran / Son uygulamalar düğmeleri (aynı anda en fazla 4)
-- **Düğme Konumu** — Legacy yansıtmada düğmeleri sola hizalayın veya telefonun gezinme çubuğundan otomatik olarak kaçının
+- **Yönü Kilitle** — Yansıtma sırasında telefonu yatay (iki yönde de) veya dikey konumda kilitleyin ya da araç ekranının şekline uydurun; bağlantıda otomatik başlar, ekranda aç/kapat düğmesi vardır
+- **Başlatma Kısayolları** — Android Auto yansıtma ekranına en fazla 4 hızlı uygulama başlatma düğmesi ekleyin; araçta gösterilen metni değiştirmek için birine uzun basın
+- **Ekran Düğmeleri** — Yansıtma ekranındaki düğmeleri Ekran düğmeleri sayfasından tek tek gösterin veya gizleyin: Yönü kilitle, Otomatik karartma, Gece karartması ve telefonun Geri / Ana ekran / Son uygulamalar düğmeleri (aynı anda en fazla 4)
+- **Düğme Konumu** — Legacy yansıtmada düğmeleri sola hizalayın, telefonun gezinme çubuğundan uzak tutun veya aracın kendi kontrollerini kapatmamaları için kenarlara olan mesafelerini (kısayol çubuğu dahil) ayarlayın
 - **Yansıtma Ayarı** — Kenarları kesen araç ekranları için Gelişmiş ayarlardan yansıtma genişliğini/yüksekliğini kırpın; aynı yerdeki deneysel **Uygulamanın çizdiği yansıtma** da bölünmüş görünümdeki bozulmayı önler
 - **Dokunma Aktarımı** *(deneysel)* — Telefonunuzu kontrol etmek için Android Auto ekranına dokunun, kaydırın, savurun ve iki parmakla yakınlaştırın
 
@@ -43,8 +43,15 @@
 |---|---|
 | **Telefon ekranını kapat** | Otomatik Karartma devreye girdiğinde telefonun panelini kapatır, araç ise yansıtmayı göstermeye devam eder — pil tasarrufu sağlar ve gece telefonun kabini aydınlatmasını önler |
 | **Gerçek dokunma enjeksiyonu** | Sentezlenmiş hareketler yerine gerçek parmak hareketlerinizi aktarır; böylece **uzun basma, sürükleme ve çoklu dokunma** Legacy yansıtmasında çalışır |
-| **Telefon gezinme düğmeleri** | Geri / Ana ekran / Son uygulamalar **hiçbir Erişilebilirlik Hizmeti etkin olmadan** çalışır. Düğmeleri **Ekran düğmeleri → İşlev düğmeleri** bölümünden açın |
 | **Telefon ekranını arabaya uydur** | Yansıtma sırasında telefon ekranını araba ünitesinin en boy oranına dönüştürür, böylece siyah kenarlıklar ve bölünmüş ekrandaki bozulma kaynağında ortadan kalkar — araba ekranı otomatik olarak ölçülür |
+
+Shizuku veya root ile ayrıca:
+
+- **Telefon gezinme düğmeleri** — Hiçbir Erişilebilirlik Hizmeti etkin olmadan Geri / Ana ekran / Son uygulamalar; düğmeleri **Ekran düğmeleri → İşlev düğmeleri** bölümünden açın
+- **Aracın gündüz/gece modunu izle** *(Android 10+)* — Yansıtma sırasında telefon, Android Auto ile birlikte açık ve koyu tema arasında geçiş yapar
+- **Yansıtma sırasında yazı tipi boyutu** — Yansıtma sırasında telefona farklı bir yazı tipi boyutu verin
+
+Yansıtma bittiğinde telefonun kendi teması ve yazı tipi boyutu geri gelir.
 
 Araca takınca Shizuku durdu mu, ya da ekran uyanmıyor mu? [Sorun Giderme](https://github.com/slzn/ScreenOnAuto-releases/wiki/Nasıl-Kullanılır#ayrıcalıklı-özellikler-shizuku--root) bölümüne bakın.
 
@@ -57,11 +64,11 @@ Araca takınca Shizuku durdu mu, ya da ekran uyanmıyor mu? [Sorun Giderme](http
 
 ## Kurulum
 
-### Android 14 ve üzeri — Google Play üzerinden kurulum
+### Google Play (önerilen)
 
-Android Auto yalnızca Play Store'dan yüklenen uygulamaları çalıştırır ve Android 14+ KingInstaller yöntemini engeller — bu yüzden Google Play dahili testi üzerinden yükleyin. GitHub'dakiyle aynı tam uygulamadır, ancak Play Store aramalarında görünmez: [**yükleme sayfasından kaydolun**](https://screenonauto.lzn.idv.tw/join/?lang=tr). Her 30 dakikada yeni bir tur açılır ve kendi turunuzun kayıtları kapandıktan birkaç dakika sonra yükleme bağlantınız görünür. Tüm adımlar: [**Google Play Test Programı Üzerinden Yükleme**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Google-Play-Test-Programı-Üzerinden-Yükleme).
+Tüm Android sürümlerinde çalışır ve Android Auto uygulamayı ek bir ayar gerektirmeden kabul eder (Android Auto yalnızca Play Store'dan yüklenen uygulamaları çalıştırır ve Android 14+ KingInstaller yöntemini engeller). Bu, Google Play dahili testidir — GitHub'dakiyle aynı tam uygulamadır, ancak Play Store aramalarında görünmez: [**yükleme sayfasından kaydolun**](https://screenonauto.lzn.idv.tw/join/?lang=tr). Her 30 dakikada yeni bir tur açılır ve kendi turunuzun kayıtları kapandıktan birkaç dakika sonra yükleme bağlantınız görünür. Tüm adımlar: [**Google Play Test Programı Üzerinden Yükleme**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Google-Play-Test-Programı-Üzerinden-Yükleme).
 
-### Android 13 ve altı — KingInstaller ile elle yükleme
+### Alternatif — Android 13 ve altı: KingInstaller ile elle yükleme
 
 > **Neden KingInstaller?**  
 > Android Auto, uygulamaların Google Play Store üzerinden yüklenmesini şart koşar.
@@ -83,7 +90,7 @@ Android Auto yalnızca Play Store'dan yüklenen uygulamaları çalıştırır ve
 
 ### Alternatif — AAWireless adaptörüyle
 
-> **Ne zaman kullanılır:** Google Play üzerinden kurulum başarısız oluyorsa — örneğin korumalı alanda (sandboxed) Google Play kullanan GrapheneOS'ta — ve bir AAWireless adaptörünüz varsa. Gerçek bir araçta Android Auto kendi **Bilinmeyen kaynaklar** ayarını yok sayar; bu ayarı etkin kılan, adaptörün Developer Mode özelliğidir. Bu yüzden **bu yöntem adaptör olmadan çalışmaz**.
+> **Ne zaman kullanılır:** Bir AAWireless adaptörünüz varsa ve APK'yı Google Play yerine doğrudan kurmayı tercih ediyorsanız — Play'in kuramadığı yerlerde de çalışır, örneğin korumalı alanda (sandboxed) Google Play kullanan GrapheneOS'ta. Gerçek bir araçta Android Auto kendi **Bilinmeyen kaynaklar** ayarını yok sayar; bu ayarı etkin kılan, adaptörün Developer Mode özelliğidir. Bu yüzden **bu yöntem adaptör olmadan çalışmaz**.
 
 1. En yeni `ScreenOnAuto-*.apk` dosyasını [en son sürümden](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) indirip kurun — Android sorarsa tarayıcınızın veya dosya yöneticinizin **bilinmeyen uygulamaları yüklemesine** izin verin
 2. Telefonu adaptör üzerinden araca bağlayın. **AAWireless** uygulamasında **Passthrough mode**'u kapatın ve **Developer Mode**'u açın
@@ -114,7 +121,7 @@ Hazır mısınız? Arabada yansıtmayı başlatmak için **[Nasıl Kullanılır]
 |---|---|
 | Ekran Kaydı (MediaProjection) | Ekran Yansıtma |
 | Bildirim Dinleyici | Medya Oturumu Aracısı |
-| Diğer uygulamaların üzerinde göster | Otomatik Karartma, Yatay Modu Zorlama ve Gece Karartması |
+| Diğer uygulamaların üzerinde göster | Otomatik Karartma, Yönü Kilitle ve Gece Karartması |
 | Erişilebilirlik Hizmeti | Dokunma aktarımı ve Geri / Ana ekran / Son uygulamalar düğmeleri (ayrıcalıklı özelliklerle gerekmez) |
 
 > **İpucu:** Her başlatmada Ekran Kaydı izin penceresiyle karşılaşmamak için izni ADB ile önceden verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](https://github.com/slzn/ScreenOnAuto-releases/wiki/ADB-ile-Yansıtma-İzni-Verme). Bu aynı zamanda **Yalnızca bu uygulamayı yansıt** özelliğini de açar.

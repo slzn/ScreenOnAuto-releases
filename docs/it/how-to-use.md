@@ -112,26 +112,24 @@ oppure avvialo con l'interruttore del **mirroring**.
 
 #### Bande nere attorno all'immagine
 
-Telefono e schermo dell'auto hanno proporzioni diverse; il pulsante **Forza
-orizzontale** sulla schermata di mirroring (o la **Forza automaticamente la modalità
-orizzontale** nelle impostazioni dell'app) di solito riempie molto meglio lo schermo. Se
-restano sottili spazi o bordi tagliati, rifinisci con **Impostazioni → Avanzate → Regola
-larghezza / altezza del mirroring** (pixel positivi per recuperare un bordo tagliato,
-negativi per riempire una banda nera).
+Telefono e schermo dell'auto hanno proporzioni diverse. Usa il pulsante **Blocca
+orientamento** sulla schermata di mirroring (o **Blocca automaticamente l'orientamento**
+nelle impostazioni). Per riempire esattamente l'area utile dell'auto, attiva **Adattare
+lo schermo del telefono a quello dell'auto** nelle Funzioni privilegiate (Shizuku o
+root).
 
 #### Immagine allungata o distorta dopo un cambio di layout
 
-Succede quando l'area visibile cresce o si riduce in vista divisa. Due impostazioni
-possono risolverlo:
+Succede quando l'area visibile cresce o si riduce in vista divisa. Ruotare il telefono in
+modo che lo schermo passi da verticale a orizzontale fa tornare l'immagine a posto (se **Blocca orientamento** è attivo, sbloccalo prima con il suo pulsante sullo schermo). Due
+impostazioni possono anche risolverlo:
 
 - Attiva **Impostazioni → Avanzate → Dimensione fissa del mirroring**. Il mirroring
   mantiene così le sue dimensioni invece di distorcersi (una parte può restare
   nascosta). Si applica alla voce a schermo intero **ScreenOnAuto**.
 - Attiva **Impostazioni → Avanzate → Immagine del mirroring disegnata dall'app
   (sperimentale)**. L'app disegna allora da sé l'immagine del mirroring invece di
-  lasciarne il ridimensionamento al sistema, così non si distorce più nella vista
-  divisa, e le regolazioni di larghezza/altezza hanno lo stesso effetto sia impostate
-  prima sia durante la connessione. Consuma un po' più di batteria e ha effetto al
+  lasciarne il ridimensionamento al sistema, così non si distorce più nella vista divisa. Consuma un po' più di batteria e ha effetto al
   prossimo avvio del mirroring. **Adattare lo schermo del telefono a quello dell'auto** (Funzioni privilegiate) risolve lo stesso problema in un altro modo, e le due funzioni possono essere attive insieme.
 
 #### Google Maps di Android Auto diventa nero durante il mirroring

@@ -37,7 +37,7 @@ permalink: /it/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Night dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons, Match the phone screen to the car, Virtual touchscreen for gesture apps, Start mirroring in the background, Reverse landscape"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Night dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Lock orientation, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons, Match the phone screen to the car, Virtual touchscreen for gesture apps, Start mirroring in the background, Reverse landscape"
 }
 </script>
 
@@ -75,7 +75,7 @@ permalink: /it/
     <p class="free">Gratuita — nessuna funzionalità richiede pagamenti aggiuntivi.</p>
     <div class="paths">
       <a class="path primary" href="https://screenonauto.lzn.idv.tw/join/?lang=it">
-        <span class="k">Android 14 e successivi</span>
+        <span class="k">Consigliato · qualsiasi versione di Android</span>
         <b>Installa da Google&nbsp;Play</b>
         <span class="d">Iscriviti ogni mezz'ora, poi installa entro 25 minuti.</span>
       </a>
@@ -123,8 +123,8 @@ permalink: /it/
   </div>
   <div class="grid more">
     <div class="card"><b>Esegui il mirroring solo di questa app <span class="muted">(Android 15+)</span></b><p>Invia all'auto una sola app invece dell'intero schermo.</p></div>
-    <div class="card"><b>Pulsanti sullo schermo</b><p>Scorciatoie alle app sullo schermo dell'auto, più Forza orizzontale, Oscuramento automatico, Oscuramento notturno e Indietro / Home / Recenti.</p></div>
-    <div class="card"><b>Schermo e batteria</b><p>Forza l'orizzontale (in entrambi i versi), oscura il telefono quando inattivo e lo schermo dell'auto di notte, e tieni sveglio il telefono durante il mirroring.</p></div>
+    <div class="card"><b>Pulsanti sullo schermo</b><p>Scorciatoie alle app sullo schermo dell'auto, più Blocca orientamento, Oscuramento automatico, Oscuramento notturno e Indietro / Home / Recenti.</p></div>
+    <div class="card"><b>Schermo e batteria</b><p>Blocca l'orientamento (orizzontale in entrambi i versi o verticale, oppure in base allo schermo dell'auto), oscura il telefono quando inattivo e lo schermo dell'auto di notte, e tieni sveglio il telefono durante il mirroring.</p></div>
     <div class="card"><b>Adatta allo schermo dell'auto</b><p>Recupera i bordi tagliati dall'autoradio ed evita la distorsione nella vista divisa.</p></div>
     <div class="card"><b>Controllo esterno</b><p>Avvia o ferma il mirroring da Tasker, da una scorciatoia o via ADB. <a href="https://screenonauto.lzn.idv.tw/docs/it/control-mirroring-from-another-app/">Come funziona →</a></p></div>
     <div class="card"><b>Inoltro tocco <span class="muted">(sperimentale)</span></b><p>Tocca e scorri il telefono dallo schermo dell'auto.</p></div>
@@ -134,11 +134,15 @@ permalink: /it/
 <section class="wrap" id="privileged">
   <h2>Funzioni privilegiate</h2>
   <p class="muted">Facoltativo — richiede <a href="https://shizuku.rikka.app/">Shizuku</a> o root. Senza, tutto il resto funziona esattamente come prima.</p>
-  <div class="grid core priv">
+  <div class="grid core">
     <div class="card"><b>Spegni lo schermo del telefono</b><p>Il pannello del telefono si spegne mentre l'auto continua a mostrare il mirroring.</p></div>
     <div class="card"><b>Iniezione tocco reale</b><p>Pressione prolungata, trascinamento e gesti a più dita dallo schermo dell'auto. Con il touchscreen virtuale attivo, anche le app di gesti come GMD li ricevono.</p></div>
-    <div class="card"><b>Pulsanti di navigazione del telefono</b><p>Indietro / Home / Recenti senza alcun servizio di accessibilità.</p></div>
     <div class="card"><b>Adattare lo schermo del telefono a quello dell'auto</b><p>Adatta il telefono alle proporzioni dell'auto durante il mirroring — niente bande nere né distorsioni.</p></div>
+  </div>
+  <div class="grid more">
+    <div class="card"><b>Pulsanti di navigazione del telefono</b><p>Indietro / Home / Recenti senza alcun servizio di accessibilità.</p></div>
+    <div class="card"><b>Segui giorno/notte dell'auto <span class="muted">(Android 10+)</span></b><p>Il tema scuro del telefono segue Android Auto durante il mirroring.</p></div>
+    <div class="card"><b>Carattere durante il mirroring</b><p>Una diversa dimensione del carattere sul telefono durante il mirroring.</p></div>
   </div>
   <p class="muted">Shizuku si è fermato collegando l'auto, o lo schermo non si riattiva? Vedi <a href="https://screenonauto.lzn.idv.tw/docs/it/how-to-use/#funzioni-privilegiate-shizuku--root">Risoluzione dei problemi</a>.</p>
 </section>
@@ -156,10 +160,10 @@ permalink: /it/
 <section class="wrap" id="install">
   <h2>Installazione</h2>
 
-  <h3>Android 14 e successivi — installazione tramite Google Play</h3>
-  <p>Android Auto esegue solo le app installate dal Play Store, e Android 14+ blocca il metodo KingInstaller — quindi installa tramite il test interno di Google Play. È la stessa app completa di GitHub, ma non è ricercabile sul Play Store: <a href="https://screenonauto.lzn.idv.tw/join/?lang=it"><b>iscriviti nella pagina di installazione</b></a>. Ogni 30 minuti si apre un nuovo turno e il link di installazione compare pochi minuti dopo la chiusura delle iscrizioni del tuo turno. Tutti i passaggi: <a href="https://screenonauto.lzn.idv.tw/docs/it/join-the-beta-test/"><b>Installare tramite il programma di test di Google Play</b></a>.</p>
+  <h3>Google Play (consigliato)</h3>
+  <p>Funziona su qualsiasi versione di Android, e Android Auto la accetta senza alcuna configurazione aggiuntiva (Android Auto esegue solo le app installate dal Play Store, e Android 14+ blocca il metodo KingInstaller). È il test interno di Google Play: la stessa app completa di GitHub, ma non è ricercabile sul Play Store: <a href="https://screenonauto.lzn.idv.tw/join/?lang=it"><b>iscriviti nella pagina di installazione</b></a>. Ogni 30 minuti si apre un nuovo turno e il link di installazione compare pochi minuti dopo la chiusura delle iscrizioni del tuo turno. Tutti i passaggi: <a href="https://screenonauto.lzn.idv.tw/docs/it/join-the-beta-test/"><b>Installare tramite il programma di test di Google Play</b></a>.</p>
 
-  <h3>Android 13 e precedenti — installazione con KingInstaller</h3>
+  <h3>Alternativa — Android 13 e precedenti: installazione con KingInstaller</h3>
   <p class="muted">Android Auto richiede app installate tramite Google Play. Un APK installato direttamente viene rifiutato; <a href="https://github.com/fcaronte/KingInstaller/releases">KingInstaller</a> installa gli APK dichiarando Google Play Store come origine dell'installazione.</p>
   <ol class="steps">
     <li><b>Installa KingInstaller</b> — scarica l'ultimo <code>KingInstaller.apk</code> dalla sua <a href="https://github.com/fcaronte/KingInstaller/releases">pagina delle release</a>, consenti «Installa app sconosciute» per il tuo browser o file manager, poi installalo.</li>
@@ -167,7 +171,7 @@ permalink: /it/
   </ol>
 
   <h3>Alternativa — con un dongle AAWireless</h3>
-  <p>Se l'installazione da Google Play non riesce — ad esempio su GrapheneOS con Google Play in sandbox — e hai un dongle AAWireless, la sua Developer Mode permette ad Android Auto di accettare l'APK installato direttamente. <a href="https://github.com/slzn/ScreenOnAuto-releases/blob/main/.github/README.it.md#alternativa--con-un-dongle-aawireless"><b>Vedi i passaggi</b></a>.</p>
+  <p>Hai un dongle AAWireless? La sua Developer Mode permette ad Android Auto di accettare l'APK installato direttamente, così puoi fare a meno di Google Play — funziona anche dove Play non riesce a installare, ad esempio su GrapheneOS con Google Play in sandbox. <a href="https://github.com/slzn/ScreenOnAuto-releases/blob/main/.github/README.it.md#alternativa--con-un-dongle-aawireless"><b>Vedi i passaggi</b></a>.</p>
 </section>
 
 <section class="wrap" id="verify">
@@ -191,7 +195,7 @@ permalink: /it/
       <tr><th>Autorizzazione</th><th>Necessaria per</th></tr>
       <tr><td>Cattura schermo (MediaProjection)</td><td>Mirroring schermo</td></tr>
       <tr><td>Accesso alle notifiche</td><td>Controlli multimediali</td></tr>
-      <tr><td>Mostra sopra le altre app</td><td>Oscuramento automatico, Forza orizzontale e Oscuramento notturno</td></tr>
+      <tr><td>Mostra sopra le altre app</td><td>Oscuramento automatico, Blocca orientamento e Oscuramento notturno</td></tr>
       <tr><td>Servizio di accessibilità</td><td>Inoltro tocco e pulsanti Indietro / Home / Recenti (non serve con le funzioni privilegiate)</td></tr>
     </table>
   </div>

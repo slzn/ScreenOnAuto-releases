@@ -1,6 +1,6 @@
 ---
 title: "Über das Google-Play-Testprogramm installieren"
-description: "ScreenOnAuto über Google Play installieren (unter Android 14+ erforderlich) – so funktionieren die 30-Minuten-Anmelderunden, Schritt für Schritt."
+description: "ScreenOnAuto über Google Play installieren (auf jeder Android-Version empfohlen) – so funktionieren die 30-Minuten-Anmelderunden, Schritt für Schritt."
 lang: de
 slug: join-the-beta-test
 permalink: /docs/de/join-the-beta-test/
@@ -10,7 +10,7 @@ last_modified_at: 2026-10-14
 
 # Über das Google-Play-Testprogramm installieren
 
-Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play – auf **Android 14 und höher erforderlich**.
+Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play – **der empfohlene Weg auf jeder Android-Version** und auf Android 14 und höher ohne AAWireless-Dongle der einzige.
 
 > **ℹ️ Hinweis**
 > Installiert wird die **vollständige, offizielle ScreenOnAuto-App**. Googles
@@ -53,7 +53,7 @@ Sobald die App installiert ist, geht es oben mit Schritt 4 weiter.
 
 ## Hinweise
 
-- Auf **Android 13 und niedriger** ist der Beta-Beitritt optional – du kannst das APK auch per Sideload installieren (siehe [Installationsanleitung](/de/#install)).
+- **Google Play ist der empfohlene Weg.** Weitere Wege, die ebenfalls funktionieren können: Sideload mit KingInstaller auf Android 13 und niedriger oder die APK direkt mit einem AAWireless-Dongle installieren (siehe [Installationsanleitung](/de/#install)).
 - Eine über Play installierte Version und ein per Sideload installiertes APK verwenden
   **unterschiedliche Signaturzertifikate** und können sich daher auf demselben Gerät
   nicht gegenseitig aktualisieren. Zum Kanalwechsel zuerst die vorhandene Version

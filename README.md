@@ -11,10 +11,10 @@
 <p align="center"><img src="images/screenshot-legacy-split.png" alt="Phone screen mirrored on the Android Auto display, side-by-side with the map"></p>
 
 > [!IMPORTANT]
-> **How you install depends on your Android version:**
-> - **Android 14 and above** — install via **Google Play only**: sign up for a half-hourly round, then install within 25 minutes (the app is **not searchable** on the Play Store). [Sign up →](https://screenonauto.lzn.idv.tw/join/?lang=en)
-> - **Android 13 and below** — sideload the APK with KingInstaller ([steps below](#installation)), or install via Google Play.
-> - **Play install fails, and you have an AAWireless dongle?** — install the APK directly instead ([alternative steps](#alternative--with-an-aawireless-dongle)).
+> **How to install:**
+> - **Recommended — Google Play**, on any Android version: sign up for a half-hourly round, then install within 25 minutes (the app is **not searchable** on the Play Store). Android Auto accepts it with no extra setup. [Sign up →](https://screenonauto.lzn.idv.tw/join/?lang=en)
+> - **Android 13 and below** — you can also sideload the APK with KingInstaller ([steps below](#alternative--android-13-and-below-sideload-with-kinginstaller)).
+> - **Have an AAWireless dongle?** — you can also install the APK directly, on any Android version ([steps below](#alternative--with-an-aawireless-dongle)).
 
 ## Features
 
@@ -28,10 +28,10 @@
 - **Stop on Disconnect** — Automatically stop mirroring when Android Auto disconnects
 - **Auto Launch App** — Automatically launch a chosen app on the phone when mirroring starts and Android Auto is connected
 - **Mirror Only This App** *(Android 15+)* — Send just the auto-launch app to the car instead of the whole screen, leaving the rest of the phone private. Needs the Screen Capture permission [pre-granted via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB); the car screen blanks while you are away from that app
-- **Force Landscape** — Force the phone into landscape while mirroring; auto-starts on connect, with an on-screen toggle
-- **Launch Shortcuts** — Add up to 4 app quick-launch buttons to the Android Auto mirror screen
-- **On-screen Buttons** — Show or hide the mirror-screen buttons individually on the On-screen buttons page: Force Landscape, Auto Dim, Night Dim, and phone Back / Home / Recent apps (up to 4 at once)
-- **Button Placement** — On the Legacy mirror, left-align the on-screen buttons or automatically avoid the phone's navigation bar
+- **Lock Orientation** — Lock the phone in landscape (either way round) or portrait while mirroring, or match the car screen's shape; auto-starts on connect, with an on-screen toggle
+- **Launch Shortcuts** — Add up to 4 app quick-launch buttons to the Android Auto mirror screen; long-press one to rename it on the car
+- **On-screen Buttons** — Show or hide the mirror-screen buttons individually on the On-screen buttons page: Lock Orientation, Auto Dim, Night Dim, and phone Back / Home / Recent apps (up to 4 at once)
+- **Button Placement** — On the Legacy mirror, left-align the buttons, keep them clear of the phone's navigation bar, or set their gaps from the edges (shortcut bar too) to clear the head unit's own controls
 - **Mirror Adjustment** — Trim the mirror width/height in Advanced settings for head units that crop the edges; the experimental **Self-drawn mirror** there also prevents split-view distortion
 - **Touch Forwarding** *(Experimental)* — Tap, scroll, fling and pinch-to-zoom on the Android Auto display to control your phone
 
@@ -43,8 +43,15 @@ Optional — needs [Shizuku](https://shizuku.rikka.app/) or root. Without either
 |---|---|
 | **Turn the Phone Screen Off** | Switches the phone's panel off when Auto Dim kicks in, while the car keeps showing the mirror — saves battery and stops the phone lighting up the cabin at night |
 | **Real Touch Injection** | Forwards your actual finger movements instead of synthesised gestures, so **long-press, drag and multi-finger** work on the Legacy mirror |
-| **Phone Navigation Buttons** | Back / Home / Recent apps work with **no Accessibility Service enabled at all**. Turn the buttons on in **On-screen buttons → Control buttons** |
 | **Match the Phone Screen to the Car** | Reshapes the phone's display to the head unit's aspect ratio while mirroring, so the black bars and the split-view distortion are gone at the source — the car screen is measured automatically |
+
+Also with Shizuku or root:
+
+- **Phone Navigation Buttons** — Back / Home / Recent apps with no Accessibility Service enabled; turn them on in **On-screen buttons → Control buttons**
+- **Follow the Car's Day/Night Mode** *(Android 10+)* — Switch the phone between light and dark theme with Android Auto while mirroring
+- **Font Size While Mirroring** — Give the phone a different font size while mirroring
+
+The phone's own theme and font size come back when mirroring stops.
 
 Shizuku stopped when you plugged in, or the screen won't wake up? See [Troubleshooting](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use#privileged-features-shizuku--root).
 
@@ -57,11 +64,11 @@ Shizuku stopped when you plugged in, or the screen won't wake up? See [Troublesh
 
 ## Installation
 
-### Android 14 and above — install via Google Play
+### Google Play (recommended)
 
-Android Auto only runs apps installed from the Play Store, and Android 14+ blocks the KingInstaller workaround — so install through Google Play's internal testing. It's the same full app as on GitHub, but it isn't searchable on the Play Store: [**sign up on the install page**](https://screenonauto.lzn.idv.tw/join/?lang=en). A new round opens every 30 minutes, and your install link appears a few minutes after your round's sign-ups close. Full steps: [**Install via the Google Play Testing Program**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Install-via-the-Google-Play-Testing-Program).
+Works on every Android version, and Android Auto accepts it with no extra setup (Android Auto only runs apps installed from the Play Store, and Android 14+ blocks the KingInstaller workaround). It's Google Play's internal testing — the same full app as on GitHub, but it isn't searchable on the Play Store: [**sign up on the install page**](https://screenonauto.lzn.idv.tw/join/?lang=en). A new round opens every 30 minutes, and your install link appears a few minutes after your round's sign-ups close. Full steps: [**Install via the Google Play Testing Program**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Install-via-the-Google-Play-Testing-Program).
 
-### Android 13 and below — sideload with KingInstaller
+### Alternative — Android 13 and below: sideload with KingInstaller
 
 > **Why KingInstaller?**  
 > Android Auto requires apps to be installed via Google Play Store.
@@ -83,7 +90,7 @@ Android Auto only runs apps installed from the Play Store, and Android 14+ block
 
 ### Alternative — with an AAWireless dongle
 
-> **When to use this:** the Google Play install fails — for example on GrapheneOS with sandboxed Google Play — and you have an AAWireless dongle. In a real car, Android Auto ignores its own **Unknown sources** setting; the dongle's Developer Mode is what makes that setting take effect, so **this route doesn't work without the dongle**.
+> **When to use this:** you have an AAWireless dongle and would rather install the APK directly than go through Google Play — this also works where Play can't install, such as GrapheneOS with sandboxed Google Play. In a real car, Android Auto ignores its own **Unknown sources** setting; the dongle's Developer Mode is what makes that setting take effect, so **this route doesn't work without the dongle**.
 
 1. Download the latest `ScreenOnAuto-*.apk` from the [latest release](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) and install it — allow your browser or file manager to **install unknown apps** if Android asks
 2. Connect the phone to the car through the dongle. In the **AAWireless** app, turn **Passthrough mode** off and **Developer Mode** on
@@ -114,7 +121,7 @@ Ready to go? See **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wi
 |---|---|
 | Screen Capture (MediaProjection) | Screen Mirroring |
 | Notification Listener | Media Session Proxy |
-| Display Over Other Apps | Auto Dim, Force Landscape & Night Dim |
+| Display Over Other Apps | Auto Dim, Lock Orientation & Night Dim |
 | Accessibility Service | Touch Forwarding & the Back / Home / Recent apps buttons (not needed with the privileged features) |
 
 > **Tip:** To avoid the Screen Capture permission dialog on every launch, you can pre-grant it via ADB — see [Grant Mirror Permission via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB). This is also what unlocks **Mirror only this app**.

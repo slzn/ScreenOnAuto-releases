@@ -1,6 +1,6 @@
 ---
 title: "Instal melalui Program Pengujian Google Play"
-description: "Instal ScreenOnAuto dari Google Play (wajib di Android 14+) — cara kerja putaran pendaftaran 30 menit, langkah demi langkah."
+description: "Instal ScreenOnAuto dari Google Play (disarankan di semua versi Android) — cara kerja putaran pendaftaran 30 menit, langkah demi langkah."
 lang: id
 slug: join-the-beta-test
 permalink: /docs/id/join-the-beta-test/
@@ -10,7 +10,7 @@ last_modified_at: 2026-10-15
 
 # Instal melalui Program Pengujian Google Play
 
-Instal ScreenOnAuto melalui daftar penguji beta Google Play — **wajib di Android 14 ke atas**.
+Instal ScreenOnAuto melalui daftar penguji beta Google Play — **cara yang disarankan di semua versi Android**, dan satu-satunya cara di Android 14 ke atas tanpa dongle AAWireless.
 
 > **ℹ️ Catatan**
 > Cara ini menginstal **aplikasi ScreenOnAuto resmi yang lengkap**. Daftar penguji
@@ -53,7 +53,7 @@ Setelah terinstal, lanjutkan dengan langkah 4 di atas.
 
 ## Catatan
 
-- Di **Android 13 ke bawah**, bergabung dengan beta bersifat opsional — Anda bisa memasang APK secara manual (lihat [panduan instalasi](/id/#install)).
+- **Google Play adalah cara yang disarankan.** Cara lain yang mungkin juga berhasil: memasang manual dengan KingInstaller di Android 13 ke bawah, atau menginstal APK langsung dengan dongle AAWireless (lihat [panduan instalasi](/id/#install)).
 - Build yang diinstal dari Play dan APK yang dipasang manual memakai **sertifikat penandatanganan
   yang berbeda**, sehingga tidak bisa saling memperbarui di perangkat yang sama. Untuk berpindah
   saluran, copot dulu yang sudah terpasang.

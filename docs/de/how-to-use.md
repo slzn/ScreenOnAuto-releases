@@ -114,26 +114,24 @@ oder starte sie über den Schalter **Bildschirmspiegelung**.
 
 #### Schwarze Balken um das Bild
 
-Telefon- und Fahrzeugbildschirm haben unterschiedliche Seitenverhältnisse; die Taste
-**Querformat erzwingen** auf dem Spiegelbildschirm (oder **Querformat automatisch
-erzwingen** in den App-Einstellungen) füllt den Bildschirm meist deutlich besser.
-Bleiben schmale Lücken oder abgeschnittene Ränder, justiere unter **Einstellungen →
-Erweitert → Spiegelungsbreite anpassen / Spiegelungshöhe anpassen** nach (positive Pixel
-holen einen abgeschnittenen Rand herein, negative füllen einen schwarzen Balken auf).
+Telefon- und Fahrzeugbildschirm haben unterschiedliche Seitenverhältnisse. Nutze die Taste
+**Ausrichtung sperren** auf dem Spiegelbildschirm (oder **Ausrichtung automatisch
+sperren** in den Einstellungen). Um die nutzbare Fläche des Autos exakt auszufüllen,
+aktiviere **Telefonbildschirm an das Auto anpassen** in den Privilegierten Funktionen
+(Shizuku oder Root).
 
 #### Das Bild wirkt gestreckt oder verzerrt, nachdem sich das Layout geändert hat
 
 Das passiert, wenn der sichtbare Bereich in der geteilten Ansicht wächst oder schrumpft.
-Zwei Einstellungen können helfen:
+Dreh das Telefon, sodass der Bildschirm zwischen Hoch- und Querformat wechselt – dann
+stimmt das Bild wieder (ist **Ausrichtung sperren** aktiv, hebe die Sperre vorher mit der Taste auf dem Bildschirm auf). Zwei Einstellungen können außerdem helfen:
 
 - aktiviere **Einstellungen → Erweitert → Feste Spiegelungsgröße**. Die Spiegelung
   behält dann ihre Größe statt zu verzerren (ein Teil kann verdeckt sein). Gilt für den
   Vollbild-Eintrag **ScreenOnAuto**.
 - Aktiviere **Einstellungen → Erweitert → Selbstgezeichnete Spiegelung
   (experimentell)**. Die App zeichnet das Bild der Spiegelung dann selbst, statt es vom
-  System skalieren zu lassen, sodass es in der geteilten Ansicht nicht mehr verzerrt;
-  die Breiten-/Höhenanpassung wirkt zudem gleich, ob vor oder während der Verbindung
-  eingestellt. Das kostet etwas mehr Akku und greift beim nächsten Start der Spiegelung.
+  System skalieren zu lassen, sodass es in der geteilten Ansicht nicht mehr verzerrt. Das kostet etwas mehr Akku und greift beim nächsten Start der Spiegelung.
   **Telefonbildschirm an das Auto anpassen** (Privilegierte Funktionen) löst dasselbe Problem auf andere Weise; beide können gleichzeitig aktiv sein.
 
 #### Google Maps in Android Auto wird während der Spiegelung schwarz

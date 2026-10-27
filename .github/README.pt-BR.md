@@ -11,10 +11,10 @@
 <p align="center"><img src="../images/screenshot-legacy-split.png" alt="Tela do celular espelhada na tela do Android Auto, lado a lado com o mapa"></p>
 
 > [!IMPORTANT]
-> **A forma de instalar depende da sua versão do Android:**
-> - **Android 14 ou superior** — instale **somente pelo Google Play**: inscreva-se em uma rodada a cada meia hora e instale em até 25 minutos (o app **não aparece na busca** da Play Store). [Inscrever-se →](https://screenonauto.lzn.idv.tw/join/?lang=pt-BR)
-> - **Android 13 ou inferior** — faça sideload do APK com o KingInstaller ([passos abaixo](#instalação)) ou instale pelo Google Play.
-> - **A instalação pelo Play falha e você tem um adaptador AAWireless?** — instale o APK diretamente ([passos alternativos](#alternativa--com-um-adaptador-aawireless)).
+> **Como instalar:**
+> - **Recomendado — Google Play**, em qualquer versão do Android: inscreva-se em uma rodada a cada meia hora e instale em até 25 minutos (o app **não aparece na busca** da Play Store). O Android Auto aceita o app sem nenhuma configuração extra. [Inscrever-se →](https://screenonauto.lzn.idv.tw/join/?lang=pt-BR)
+> - **Android 13 ou inferior** — você também pode fazer sideload do APK com o KingInstaller ([passos abaixo](#alternativa--android-13-ou-inferior-sideload-com-kinginstaller)).
+> - **Tem um adaptador AAWireless?** — você também pode instalar o APK diretamente, em qualquer versão do Android ([passos abaixo](#alternativa--com-um-adaptador-aawireless)).
 
 ## Recursos
 
@@ -28,10 +28,10 @@
 - **Parar ao desconectar** — Para o espelhamento automaticamente quando o Android Auto desconecta
 - **Lançar app automaticamente** — Abre automaticamente um app escolhido no celular quando o espelhamento inicia com o Android Auto conectado
 - **Espelhar apenas este app** *(Android 15+)* — Envia ao carro somente o app de abertura automática, em vez da tela inteira, mantendo o resto do celular privado. Requer a permissão de Captura de tela [concedida previamente via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permissão-de-Espelhamento-via-ADB); a tela do carro fica em branco enquanto você está fora desse app
-- **Forçar paisagem** — Força o celular para o modo paisagem durante o espelhamento; ativa automaticamente ao conectar, com botão de alternância na tela
-- **Atalhos de apps** — Adicione até 4 botões de acesso rápido a apps na tela de espelhamento do Android Auto
-- **Botões na tela** — Mostre ou oculte individualmente os botões da tela de espelhamento na página Botões na tela: Forçar paisagem, Escurecimento automático, Escurecimento noturno e Voltar / Início / Apps recentes do celular (até 4 ao mesmo tempo)
-- **Posição dos botões** — No espelhamento Legacy, alinhe os botões à esquerda ou desvie automaticamente da barra de navegação do celular
+- **Travar orientação** — Trava o celular em paisagem (em qualquer sentido) ou retrato durante o espelhamento, ou acompanha o formato da tela do carro; ativa automaticamente ao conectar, com botão de alternância na tela
+- **Atalhos de apps** — Adicione até 4 botões de acesso rápido a apps na tela de espelhamento do Android Auto; toque e segure um deles para mudar o nome exibido no carro
+- **Botões na tela** — Mostre ou oculte individualmente os botões da tela de espelhamento na página Botões na tela: Travar orientação, Escurecimento automático, Escurecimento noturno e Voltar / Início / Apps recentes do celular (até 4 ao mesmo tempo)
+- **Posição dos botões** — No espelhamento Legacy, alinhe os botões à esquerda, afaste-os da barra de navegação do celular ou defina a distância deles até as bordas (barra de atalhos também) para não cobrir os controles da própria central
 - **Ajuste do espelhamento** — Ajuste a largura/altura do espelhamento nas configurações avançadas para centrais que cortam as bordas; lá, o **Espelhamento desenhado pelo app** (experimental) também evita a distorção na vista dividida
 - **Encaminhamento de toque** *(experimental)* — Toque, role, deslize e use o gesto de pinça para ampliar na tela do Android Auto para controlar o celular
 
@@ -43,8 +43,15 @@ Opcional — requer [Shizuku](https://shizuku.rikka.app/) ou root. Sem eles, tod
 |---|---|
 | **Desligar a tela do telefone** | Desliga o painel do celular quando o Escurecimento automático entra em ação, enquanto o carro continua exibindo o espelhamento — economiza bateria e evita que o celular ilumine o interior à noite |
 | **Injeção de toque real** | Encaminha os movimentos reais do seu dedo em vez de gestos sintetizados, então **pressionar e segurar, arrastar e multitoque** funcionam no espelhamento Legacy |
-| **Botões de navegação do celular** | Voltar / Início / Apps recentes funcionam **sem nenhum Serviço de acessibilidade ativado**. Ative os botões em **Botões na tela → Botões de função** |
 | **Ajustar a tela do telefone à do carro** | Remodela a tela do celular para a proporção da unidade do carro durante o espelhamento, eliminando na origem as barras pretas e a distorção na tela dividida — a tela do carro é medida automaticamente |
+
+Também com Shizuku ou root:
+
+- **Botões de navegação do celular** — Voltar / Início / Apps recentes sem nenhum Serviço de acessibilidade ativado; ative-os em **Botões na tela → Botões de função**
+- **Seguir o modo dia/noite do carro** *(Android 10+)* — Alterna o celular entre o tema claro e o escuro junto com o Android Auto durante o espelhamento
+- **Tamanho da fonte durante o espelhamento** — Usa outro tamanho de fonte no celular durante o espelhamento
+
+O tema e o tamanho de fonte do próprio celular voltam quando o espelhamento termina.
 
 O Shizuku parou ao conectar no carro, ou a tela não acorda? Veja [Solução de problemas](https://github.com/slzn/ScreenOnAuto-releases/wiki/Como-Usar#recursos-privilegiados-shizuku--root).
 
@@ -57,11 +64,11 @@ O Shizuku parou ao conectar no carro, ou a tela não acorda? Veja [Solução de 
 
 ## Instalação
 
-### Android 14 ou superior — instale pelo Google Play
+### Google Play (recomendado)
 
-O Android Auto só executa apps instalados pela Play Store, e o Android 14+ bloqueia o método do KingInstaller — por isso, instale pelo teste interno do Google Play. É o mesmo app completo do GitHub, mas ele não aparece na busca da Play Store: [**inscreva-se na página de instalação**](https://screenonauto.lzn.idv.tw/join/?lang=pt-BR). Uma nova rodada abre a cada 30 minutos, e o link de instalação aparece alguns minutos depois que as inscrições da sua rodada fecham. Passo a passo completo: [**Instalar pelo programa de testes do Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Instalar-pelo-programa-de-testes-do-Google-Play).
+Funciona em qualquer versão do Android, e o Android Auto aceita o app sem nenhuma configuração extra (o Android Auto só executa apps instalados pela Play Store, e o Android 14+ bloqueia o método do KingInstaller). É o teste interno do Google Play — o mesmo app completo do GitHub, mas ele não aparece na busca da Play Store: [**inscreva-se na página de instalação**](https://screenonauto.lzn.idv.tw/join/?lang=pt-BR). Uma nova rodada abre a cada 30 minutos, e o link de instalação aparece alguns minutos depois que as inscrições da sua rodada fecham. Passo a passo completo: [**Instalar pelo programa de testes do Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Instalar-pelo-programa-de-testes-do-Google-Play).
 
-### Android 13 ou inferior — sideload com KingInstaller
+### Alternativa — Android 13 ou inferior: sideload com KingInstaller
 
 > **Por que o KingInstaller?**  
 > O Android Auto exige que os apps sejam instalados pela Google Play Store.
@@ -83,7 +90,7 @@ O Android Auto só executa apps instalados pela Play Store, e o Android 14+ bloq
 
 ### Alternativa — com um adaptador AAWireless
 
-> **Quando usar:** a instalação pelo Google Play falha — por exemplo, no GrapheneOS com o Google Play em sandbox — e você tem um adaptador AAWireless. Em um carro de verdade, o Android Auto ignora a própria opção **Fontes desconhecidas**; é o Developer Mode do adaptador que faz ela funcionar, então **esse caminho não funciona sem o adaptador**.
+> **Quando usar:** você tem um adaptador AAWireless e prefere instalar o APK diretamente em vez de passar pelo Google Play — também funciona onde o Play não consegue instalar, como no GrapheneOS com o Google Play em sandbox. Em um carro de verdade, o Android Auto ignora a própria opção **Fontes desconhecidas**; é o Developer Mode do adaptador que faz ela funcionar, então **esse caminho não funciona sem o adaptador**.
 
 1. Baixe o `ScreenOnAuto-*.apk` mais recente na [última versão](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) e instale — se o Android perguntar, permita que o navegador ou gerenciador de arquivos **instale apps desconhecidos**
 2. Conecte o celular ao carro pelo adaptador. No app **AAWireless**, desative o **Passthrough mode** e ative o **Developer Mode**
@@ -114,7 +121,7 @@ Tudo pronto? Veja **[Como Usar](https://github.com/slzn/ScreenOnAuto-releases/wi
 |---|---|
 | Captura de tela (MediaProjection) | Espelhamento de tela |
 | Acesso às notificações | Proxy de sessão de mídia |
-| Sobrepor a outros apps | Escurecimento automático, Forçar paisagem e Escurecimento noturno |
+| Sobrepor a outros apps | Escurecimento automático, Travar orientação e Escurecimento noturno |
 | Serviço de acessibilidade | Encaminhamento de toque e botões Voltar / Início / Recentes (desnecessário com os recursos privilegiados) |
 
 > **Dica:** para evitar o diálogo de permissão de captura de tela a cada início, você pode conceder a permissão uma única vez via ADB — veja [Conceder Permissão de Espelhamento via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permissão-de-Espelhamento-via-ADB). Isso também é o que libera **Espelhar apenas este app**.

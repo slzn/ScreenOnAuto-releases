@@ -1,6 +1,6 @@
 ---
 title: "Google Play Test Programı Üzerinden Yükleme"
-description: "ScreenOnAuto'yu Google Play'den yükleyin (Android 14+ için zorunlu) — 30 dakikalık kayıt turlarının işleyişi, adım adım."
+description: "ScreenOnAuto'yu Google Play'den yükleyin (tüm Android sürümlerinde önerilir) — 30 dakikalık kayıt turlarının işleyişi, adım adım."
 lang: tr
 slug: join-the-beta-test
 permalink: /docs/tr/join-the-beta-test/
@@ -11,7 +11,7 @@ last_modified_at: 2026-10-14
 # Google Play Test Programı Üzerinden Yükleme
 
 
-ScreenOnAuto'yu Google Play beta test kullanıcısı listesi üzerinden yükleyin — **Android 14 ve üzerinde zorunludur**.
+ScreenOnAuto'yu Google Play beta test kullanıcısı listesi üzerinden yükleyin — **tüm Android sürümlerinde önerilen yöntemdir** ve Android 14 ve üzerinde, AAWireless adaptörü olmadan tek yöntemdir.
 
 > **ℹ️ Not**
 > Bu şekilde **eksiksiz, resmî ScreenOnAuto uygulamasını** yüklersiniz. Google'ın
@@ -54,7 +54,7 @@ Yükleme bittikten sonra yukarıdaki 4. adımla devam edin.
 
 ## Notlar
 
-- **Android 13 ve altında** betaya katılmak isteğe bağlıdır — bunun yerine APK'yı elle de yükleyebilirsiniz (bkz. [kurulum kılavuzu](/tr/#install)).
+- **Önerilen yöntem Google Play'dir.** İşe yarayabilecek diğer yollar: Android 13 ve altında KingInstaller ile elle yükleme veya bir AAWireless adaptörüyle APK'yı doğrudan kurma (bkz. [kurulum kılavuzu](/tr/#install)).
 - Play üzerinden yüklenen sürüm ile elle yüklenen APK **farklı imza sertifikaları**
   kullanır; aynı cihazda birbirini güncelleyemezler. Kanal değiştirmek için önce
   mevcut olanı kaldırın.

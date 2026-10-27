@@ -1,6 +1,6 @@
 ---
 title: "التثبيت عبر برنامج اختبار Google Play"
-description: "ثبّت ScreenOnAuto من Google Play (إلزامي على Android 14 وأحدث) — كيف تعمل جولات التسجيل ذات الـ30 دقيقة، خطوة بخطوة."
+description: "ثبّت ScreenOnAuto من Google Play (موصى به على أي إصدار من Android) — كيف تعمل جولات التسجيل ذات الـ30 دقيقة، خطوة بخطوة."
 lang: ar
 slug: join-the-beta-test
 permalink: /docs/ar/join-the-beta-test/
@@ -11,7 +11,7 @@ last_modified_at: 2026-10-14
 # التثبيت عبر برنامج اختبار Google Play
 
 
-ثبِّت ScreenOnAuto عبر قائمة مختبري Google Play — **إلزامي على Android 14 وأحدث**.
+ثبِّت ScreenOnAuto عبر قائمة مختبري Google Play — **الطريقة الموصى بها على أي إصدار من Android**، والوحيدة على Android 14 وأحدث دون محوّل AAWireless.
 
 > **ℹ️ ملاحظة**
 > هذا يثبِّت **تطبيق ScreenOnAuto الرسمي الكامل**. قائمة المختبرين في Google
@@ -57,7 +57,7 @@ last_modified_at: 2026-10-14
 
 ## ملاحظات
 
-- على **Android 13 وأقدم**، الانضمام إلى الاختبار اختياري — يمكنك تثبيت ملف APK يدويًا بدلًا من ذلك (راجع [دليل التثبيت](/ar/#install)).
+- **Google Play هو الطريقة الموصى بها.** وهناك طرق أخرى قد تعمل أيضًا: التثبيت اليدوي عبر KingInstaller على Android 13 وأقدم، أو تثبيت ملف APK مباشرة باستخدام محوّل AAWireless (راجع [دليل التثبيت](/ar/#install)).
 - نسخة Play المثبَّتة وملف APK اليدوي يستخدمان **شهادتَي توقيع مختلفتين**، فلا
   يمكن لأحدهما تحديث الآخر على الجهاز نفسه. للتبديل بين القناتين احذف
   المثبَّت أولًا.

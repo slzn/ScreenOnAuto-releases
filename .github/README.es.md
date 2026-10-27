@@ -11,10 +11,10 @@
 <p align="center"><img src="../images/screenshot-legacy-split.png" alt="Pantalla del teléfono duplicada en la pantalla de Android Auto, junto al mapa"></p>
 
 > [!IMPORTANT]
-> **Cómo instalar depende de tu versión de Android:**
-> - **Android 14 o superior** — instala **solo desde Google Play**: inscríbete en una ronda cada media hora e instala en un plazo de 25 minutos (la app **no aparece en las búsquedas** de Play Store). [Inscribirse →](https://screenonauto.lzn.idv.tw/join/?lang=es)
-> - **Android 13 o inferior** — instala el APK con KingInstaller ([pasos abajo](#instalación)) o desde Google Play.
-> - **¿Falla la instalación desde Play y tienes un adaptador AAWireless?** — instala el APK directamente ([pasos alternativos](#alternativa--con-un-adaptador-aawireless)).
+> **Cómo instalar:**
+> - **Recomendado — Google Play**, en cualquier versión de Android: inscríbete en una ronda cada media hora e instala en un plazo de 25 minutos (la app **no aparece en las búsquedas** de Play Store). Android Auto la acepta sin ninguna configuración adicional. [Inscribirse →](https://screenonauto.lzn.idv.tw/join/?lang=es)
+> - **Android 13 o inferior** — también puedes instalar el APK con KingInstaller ([pasos abajo](#alternativa--android-13-o-inferior-sideload-con-kinginstaller)).
+> - **¿Tienes un adaptador AAWireless?** — también puedes instalar el APK directamente, en cualquier versión de Android ([pasos abajo](#alternativa--con-un-adaptador-aawireless)).
 
 ## Funciones
 
@@ -28,10 +28,10 @@
 - **Detener al desconectar** — Detiene la duplicación automáticamente cuando Android Auto se desconecta
 - **Lanzar app automáticamente** — Abre automáticamente una app elegida en el teléfono cuando empieza la duplicación con Android Auto conectado
 - **Duplicar solo esta app** *(Android 15+)* — Envía al coche solo la app de inicio automático en lugar de toda la pantalla, manteniendo privado el resto del teléfono. Necesita el permiso de Captura de pantalla [concedido previamente por ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permiso-de-Duplicación-por-ADB); la pantalla del coche queda en blanco mientras estás fuera de esa app
-- **Forzar horizontal** — Fuerza el teléfono a modo horizontal durante la duplicación; se activa al conectar, con botón en pantalla
-- **Atajos de apps** — Añade hasta 4 botones de acceso rápido a apps en la pantalla de duplicación de Android Auto
-- **Botones en pantalla** — Muestra u oculta individualmente los botones de la pantalla de duplicación en la página Botones en pantalla: Forzar horizontal, Atenuación automática, Atenuación nocturna y Atrás / Inicio / Apps recientes del teléfono (hasta 4 a la vez)
-- **Posición de los botones** — En la duplicación Legacy, alinea los botones a la izquierda o esquiva automáticamente la barra de navegación del teléfono
+- **Bloquear orientación** — Bloquea el teléfono en horizontal (en cualquier sentido) o vertical durante la duplicación, o se adapta a la forma de la pantalla del coche; se activa al conectar, con botón en pantalla
+- **Atajos de apps** — Añade hasta 4 botones de acceso rápido a apps en la pantalla de duplicación de Android Auto; mantén pulsado uno para cambiar el texto que se muestra en el coche
+- **Botones en pantalla** — Muestra u oculta individualmente los botones de la pantalla de duplicación en la página Botones en pantalla: Bloquear orientación, Atenuación automática, Atenuación nocturna y Atrás / Inicio / Apps recientes del teléfono (hasta 4 a la vez)
+- **Posición de los botones** — En la duplicación Legacy, alinea los botones a la izquierda, apártalos de la barra de navegación del teléfono o define su distancia a los bordes (también la barra de atajos) para no tapar los controles propios de la pantalla del coche
 - **Ajuste de la duplicación** — Recorta el ancho/alto de la duplicación en los ajustes avanzados para unidades que cortan los bordes; allí, la **Duplicación dibujada por la app** (experimental) también evita la distorsión en la vista dividida
 - **Reenvío táctil** *(experimental)* — Toca, desplaza, desliza y pellizca para hacer zoom en la pantalla de Android Auto para controlar el teléfono
 
@@ -43,8 +43,15 @@ Opcional — requiere [Shizuku](https://shizuku.rikka.app/) o root. Sin ellos, t
 |---|---|
 | **Apagar la pantalla del teléfono** | Apaga el panel del teléfono cuando se activa la Atenuación automática, mientras el coche sigue mostrando la duplicación — ahorra batería y evita que el teléfono ilumine el habitáculo de noche |
 | **Inyección táctil real** | Reenvía los movimientos reales de tu dedo en lugar de gestos sintetizados, así que **mantener pulsado, arrastrar y multitáctil** funcionan en la duplicación Legacy |
-| **Botones de navegación del teléfono** | Atrás / Inicio / Apps recientes funcionan **sin ningún Servicio de accesibilidad activado**. Activa los botones en **Botones en pantalla → Botones de función** |
 | **Ajustar la pantalla del teléfono a la del coche** | Remodela la pantalla del teléfono a la relación de aspecto de la unidad del coche durante la duplicación, eliminando de raíz las barras negras y la distorsión en pantalla dividida — la pantalla del coche se mide automáticamente |
+
+También con Shizuku o root:
+
+- **Botones de navegación del teléfono** — Atrás / Inicio / Apps recientes sin ningún Servicio de accesibilidad activado; actívalos en **Botones en pantalla → Botones de función**
+- **Seguir el modo día/noche del coche** *(Android 10+)* — Cambia el teléfono entre tema claro y oscuro junto con Android Auto durante la duplicación
+- **Tamaño de fuente durante la duplicación** — Usa otro tamaño de fuente en el teléfono durante la duplicación
+
+El tema y el tamaño de fuente propios del teléfono vuelven cuando termina la duplicación.
 
 ¿Shizuku se detuvo al conectar el coche, o la pantalla no se despierta? Consulta [Solución de problemas](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cómo-Usar#funciones-con-privilegios-shizuku--root).
 
@@ -57,11 +64,11 @@ Opcional — requiere [Shizuku](https://shizuku.rikka.app/) o root. Sin ellos, t
 
 ## Instalación
 
-### Android 14 o superior — instalar desde Google Play
+### Google Play (recomendado)
 
-Android Auto solo ejecuta apps instaladas desde Play Store, y Android 14+ bloquea el método de KingInstaller — así que instala mediante las pruebas internas de Google Play. Es la misma app completa que en GitHub, pero no aparece en las búsquedas de Play Store: [**inscríbete en la página de instalación**](https://screenonauto.lzn.idv.tw/join/?lang=es). Cada 30 minutos se abre una nueva ronda y tu enlace de instalación aparece unos minutos después de que se cierren las inscripciones de tu ronda. Pasos completos: [**Instalar mediante el programa de pruebas de Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Instalar-mediante-el-programa-de-pruebas-de-Google-Play).
+Funciona en cualquier versión de Android, y Android Auto la acepta sin ninguna configuración adicional (Android Auto solo ejecuta apps instaladas desde Play Store, y Android 14+ bloquea el método de KingInstaller). Son las pruebas internas de Google Play: la misma app completa que en GitHub, pero no aparece en las búsquedas de Play Store: [**inscríbete en la página de instalación**](https://screenonauto.lzn.idv.tw/join/?lang=es). Cada 30 minutos se abre una nueva ronda y tu enlace de instalación aparece unos minutos después de que se cierren las inscripciones de tu ronda. Pasos completos: [**Instalar mediante el programa de pruebas de Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Instalar-mediante-el-programa-de-pruebas-de-Google-Play).
 
-### Android 13 o inferior — sideload con KingInstaller
+### Alternativa — Android 13 o inferior: sideload con KingInstaller
 
 > **¿Por qué KingInstaller?**  
 > Android Auto exige que las apps se instalen desde Google Play Store.
@@ -83,7 +90,7 @@ Android Auto solo ejecuta apps instaladas desde Play Store, y Android 14+ bloque
 
 ### Alternativa — con un adaptador AAWireless
 
-> **Cuándo usarla:** la instalación desde Google Play falla — por ejemplo, en GrapheneOS con Google Play en sandbox — y tienes un adaptador AAWireless. En un coche real, Android Auto ignora su propio ajuste **Fuentes desconocidas**; es el Developer Mode del adaptador lo que hace que surta efecto, así que **esta vía no funciona sin el adaptador**.
+> **Cuándo usarla:** tienes un adaptador AAWireless y prefieres instalar el APK directamente en lugar de pasar por Google Play — también funciona donde Play no puede instalar, como en GrapheneOS con Google Play en sandbox. En un coche real, Android Auto ignora su propio ajuste **Fuentes desconocidas**; es el Developer Mode del adaptador lo que hace que surta efecto, así que **esta vía no funciona sin el adaptador**.
 
 1. Descarga el `ScreenOnAuto-*.apk` más reciente desde la [última versión](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) e instálalo — si Android lo pregunta, permite que el navegador o el gestor de archivos **instale apps desconocidas**
 2. Conecta el teléfono al coche a través del adaptador. En la app **AAWireless**, desactiva **Passthrough mode** y activa **Developer Mode**
@@ -114,7 +121,7 @@ Si falta cualquiera de las **dos** entradas anteriores, reinstala — con KingIn
 |---|---|
 | Captura de pantalla (MediaProjection) | Duplicación de pantalla |
 | Acceso a notificaciones | Proxy de sesión de medios |
-| Mostrar sobre otras apps | Atenuación automática, Forzar horizontal y Atenuación nocturna |
+| Mostrar sobre otras apps | Atenuación automática, Bloquear orientación y Atenuación nocturna |
 | Servicio de accesibilidad | Reenvío táctil y botones Atrás / Inicio / Recientes (no hace falta con las funciones privilegiadas) |
 
 > **Consejo:** para evitar el diálogo de permiso de captura de pantalla en cada inicio, puedes concederlo una sola vez vía ADB — consulta [Conceder Permiso de Duplicación por ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permiso-de-Duplicación-por-ADB). Esto es también lo que habilita **Duplicar solo esta app**.

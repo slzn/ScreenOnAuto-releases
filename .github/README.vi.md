@@ -11,10 +11,10 @@
 <p align="center"><img src="../images/screenshot-legacy-split.png" alt="Màn hình điện thoại được phản chiếu lên màn hình Android Auto, bên cạnh bản đồ"></p>
 
 > [!IMPORTANT]
-> **Cách cài đặt tùy thuộc vào phiên bản Android của bạn:**
-> - **Android 14 trở lên** — chỉ cài đặt được **qua Google Play**: đăng ký vào một lượt (mở mỗi nửa giờ), rồi cài đặt trong vòng 25 phút (ứng dụng **không tìm thấy được** bằng tìm kiếm trên Cửa hàng Play). [Đăng ký →](https://screenonauto.lzn.idv.tw/join/?lang=vi)
-> - **Android 13 trở xuống** — cài APK bằng KingInstaller ([các bước bên dưới](#cài-đặt)), hoặc cài qua Google Play.
-> - **Cài qua Play không được và bạn có bộ chuyển AAWireless?** — hãy cài APK trực tiếp ([các bước thay thế](#cách-khác--dùng-bộ-chuyển-aawireless)).
+> **Cách cài đặt:**
+> - **Khuyên dùng — Google Play**, trên mọi phiên bản Android: đăng ký vào một lượt (mở mỗi nửa giờ), rồi cài đặt trong vòng 25 phút (ứng dụng **không tìm thấy được** bằng tìm kiếm trên Cửa hàng Play). Android Auto chấp nhận ứng dụng mà không cần thiết lập thêm. [Đăng ký →](https://screenonauto.lzn.idv.tw/join/?lang=vi)
+> - **Android 13 trở xuống** — bạn cũng có thể cài APK bằng KingInstaller ([các bước bên dưới](#cách-khác--android-13-trở-xuống-cài-bằng-kinginstaller)).
+> - **Bạn có bộ chuyển AAWireless?** — bạn cũng có thể cài APK trực tiếp, trên mọi phiên bản Android ([các bước bên dưới](#cách-khác--dùng-bộ-chuyển-aawireless)).
 
 ## Tính năng
 
@@ -28,10 +28,10 @@
 - **Dừng khi ngắt kết nối** — Tự động dừng phản chiếu khi Android Auto ngắt kết nối
 - **Tự động mở ứng dụng** — Tự động mở một ứng dụng đã chọn trên điện thoại khi phản chiếu bắt đầu và Android Auto đang kết nối
 - **Chỉ phản chiếu ứng dụng này** *(Android 15+)* — Chỉ gửi lên xe ứng dụng tự động mở thay vì toàn bộ màn hình, phần còn lại của điện thoại vẫn được giữ riêng tư. Cần quyền Ghi màn hình được [cấp trước qua ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cấp-quyền-phản-chiếu-qua-ADB); màn hình xe sẽ trống khi bạn rời khỏi ứng dụng đó
-- **Buộc xoay ngang** — Buộc điện thoại xoay ngang trong khi phản chiếu; tự động bật khi kết nối, kèm nút bật/tắt trên màn hình
-- **Lối tắt khởi chạy** — Thêm tối đa 4 nút mở nhanh ứng dụng vào màn hình phản chiếu Android Auto
-- **Nút trên màn hình** — Hiện hoặc ẩn từng nút trên màn hình phản chiếu ở trang Nút trên màn hình: Buộc xoay ngang, Tự động làm tối, Làm tối ban đêm, và Quay lại / Màn hình chính / Ứng dụng gần đây của điện thoại (tối đa 4 nút cùng lúc)
-- **Vị trí nút** — Trên phản chiếu Legacy, căn các nút trên màn hình sang trái hoặc tự động tránh thanh điều hướng của điện thoại
+- **Khóa hướng xoay** — Khóa điện thoại ở hướng ngang (theo cả hai chiều) hoặc dọc trong khi phản chiếu, hoặc theo hình dạng màn hình xe; tự động bật khi kết nối, kèm nút bật/tắt trên màn hình
+- **Lối tắt khởi chạy** — Thêm tối đa 4 nút mở nhanh ứng dụng vào màn hình phản chiếu Android Auto; nhấn giữ một nút để đổi chữ hiển thị trên xe
+- **Nút trên màn hình** — Hiện hoặc ẩn từng nút trên màn hình phản chiếu ở trang Nút trên màn hình: Khóa hướng xoay, Tự động làm tối, Làm tối ban đêm, và Quay lại / Màn hình chính / Ứng dụng gần đây của điện thoại (tối đa 4 nút cùng lúc)
+- **Vị trí nút** — Trên phản chiếu Legacy, căn các nút sang trái, giữ chúng tránh thanh điều hướng của điện thoại, hoặc đặt khoảng cách của chúng tới các mép (cả thanh lối tắt) để không che các nút điều khiển riêng của màn hình xe
 - **Điều chỉnh phản chiếu** — Cắt bớt chiều rộng/chiều cao phản chiếu trong cài đặt Nâng cao cho những màn hình xe bị cắt mép; tùy chọn thử nghiệm **Tự vẽ hình phản chiếu** ở đó còn giúp tránh méo hình khi chia đôi màn hình
 - **Chuyển tiếp cảm ứng** *(Thử nghiệm)* — Chạm, cuộn, vuốt nhanh và chụm để thu phóng trên màn hình Android Auto để điều khiển điện thoại
 
@@ -43,8 +43,15 @@ Tùy chọn — cần [Shizuku](https://shizuku.rikka.app/) hoặc Root. Nếu k
 |---|---|
 | **Tắt màn hình điện thoại** | Tắt hẳn màn hình điện thoại khi Tự động làm tối kích hoạt, trong khi xe vẫn hiển thị hình phản chiếu — tiết kiệm pin và không để điện thoại chiếu sáng trong xe vào ban đêm |
 | **Chèn chạm thật** | Chuyển tiếp chuyển động ngón tay thật của bạn thay vì cử chỉ tổng hợp, nhờ đó **nhấn giữ, kéo và đa điểm chạm** hoạt động trên phản chiếu Legacy |
-| **Nút điều hướng của điện thoại** | Quay lại / Màn hình chính / Ứng dụng gần đây hoạt động mà **không cần bật Dịch vụ hỗ trợ tiếp cận**. Bật các nút trong **Nút trên màn hình → Nút chức năng** |
 | **Khớp màn hình điện thoại với xe** | Đổi màn hình điện thoại sang cùng tỉ lệ khung hình với màn hình xe trong khi phản chiếu, nên viền đen và hiện tượng méo hình khi chia đôi màn hình được loại bỏ từ gốc — màn hình xe được đo tự động |
+
+Cũng với Shizuku hoặc root:
+
+- **Nút điều hướng của điện thoại** — Quay lại / Màn hình chính / Ứng dụng gần đây mà không cần bật Dịch vụ hỗ trợ tiếp cận; bật các nút trong **Nút trên màn hình → Nút chức năng**
+- **Theo chế độ ngày/đêm của xe** *(Android 10+)* — Trong khi phản chiếu, điện thoại chuyển giữa giao diện sáng và tối cùng với Android Auto
+- **Cỡ chữ khi phản chiếu** — Dùng một cỡ chữ khác trên điện thoại trong khi phản chiếu
+
+Giao diện và cỡ chữ gốc của điện thoại sẽ trở lại khi dừng phản chiếu.
 
 Shizuku dừng lại khi bạn cắm cáp vào xe, hoặc màn hình không sáng lại? Xem [Khắc phục sự cố](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cách-sử-dụng#tính-năng-đặc-quyền-shizuku--root).
 
@@ -57,11 +64,11 @@ Shizuku dừng lại khi bạn cắm cáp vào xe, hoặc màn hình không sán
 
 ## Cài đặt
 
-### Android 14 trở lên — cài qua Google Play
+### Google Play (khuyên dùng)
 
-Android Auto chỉ chạy những ứng dụng được cài từ Cửa hàng Play, và Android 14+ chặn cách cài vòng qua KingInstaller — vì vậy hãy cài qua chương trình thử nghiệm nội bộ của Google Play. Đây vẫn là ứng dụng đầy đủ giống như trên GitHub, nhưng không tìm thấy được bằng tìm kiếm trên Cửa hàng Play: [**đăng ký trên trang cài đặt**](https://screenonauto.lzn.idv.tw/join/?lang=vi). Cứ 30 phút lại mở một lượt mới, và liên kết cài đặt của bạn xuất hiện vài phút sau khi lượt của bạn đóng đăng ký. Các bước chi tiết: [**Cài đặt qua chương trình thử nghiệm Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cài-đặt-qua-chương-trình-thử-nghiệm-Google-Play).
+Dùng được trên mọi phiên bản Android, và Android Auto chấp nhận ứng dụng mà không cần thiết lập thêm (Android Auto chỉ chạy những ứng dụng được cài từ Cửa hàng Play, và Android 14+ chặn cách cài vòng qua KingInstaller). Đây là chương trình thử nghiệm nội bộ của Google Play — vẫn là ứng dụng đầy đủ giống như trên GitHub, nhưng không tìm thấy được bằng tìm kiếm trên Cửa hàng Play: [**đăng ký trên trang cài đặt**](https://screenonauto.lzn.idv.tw/join/?lang=vi). Cứ 30 phút lại mở một lượt mới, và liên kết cài đặt của bạn xuất hiện vài phút sau khi lượt của bạn đóng đăng ký. Các bước chi tiết: [**Cài đặt qua chương trình thử nghiệm Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cài-đặt-qua-chương-trình-thử-nghiệm-Google-Play).
 
-### Android 13 trở xuống — cài bằng KingInstaller
+### Cách khác — Android 13 trở xuống: cài bằng KingInstaller
 
 > **Vì sao cần KingInstaller?**  
 > Android Auto yêu cầu ứng dụng phải được cài từ Cửa hàng Google Play.
@@ -83,7 +90,7 @@ Android Auto chỉ chạy những ứng dụng được cài từ Cửa hàng Pl
 
 ### Cách khác — dùng bộ chuyển AAWireless
 
-> **Khi nào dùng cách này:** cài qua Google Play không thành công — ví dụ trên GrapheneOS với Google Play chạy trong sandbox — và bạn có bộ chuyển AAWireless. Trên xe thật, Android Auto bỏ qua cài đặt **Nguồn không xác định** của chính nó; chính Developer Mode của bộ chuyển mới làm cài đặt này có hiệu lực, nên **cách này không dùng được nếu không có bộ chuyển**.
+> **Khi nào dùng cách này:** bạn có bộ chuyển AAWireless và muốn cài APK trực tiếp thay vì qua Google Play — cách này cũng dùng được ở nơi Play không cài được, ví dụ trên GrapheneOS với Google Play chạy trong sandbox. Trên xe thật, Android Auto bỏ qua cài đặt **Nguồn không xác định** của chính nó; chính Developer Mode của bộ chuyển mới làm cài đặt này có hiệu lực, nên **cách này không dùng được nếu không có bộ chuyển**.
 
 1. Tải `ScreenOnAuto-*.apk` mới nhất từ [bản phát hành mới nhất](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) rồi cài đặt — nếu Android hỏi, hãy cho phép trình duyệt hoặc trình quản lý tệp **cài ứng dụng không rõ nguồn gốc**
 2. Kết nối điện thoại với xe qua bộ chuyển. Trong ứng dụng **AAWireless**, tắt **Passthrough mode** và bật **Developer Mode**
@@ -114,7 +121,7 @@ Sẵn sàng rồi? Xem **[Cách sử dụng](https://github.com/slzn/ScreenOnAut
 |---|---|
 | Ghi màn hình (MediaProjection) | Phản chiếu màn hình |
 | Quyền truy cập thông báo | Proxy phiên đa phương tiện |
-| Hiển thị trên các ứng dụng khác | Tự động làm tối, Buộc xoay ngang & Làm tối ban đêm |
+| Hiển thị trên các ứng dụng khác | Tự động làm tối, Khóa hướng xoay & Làm tối ban đêm |
 | Dịch vụ hỗ trợ tiếp cận | Chuyển tiếp cảm ứng & các nút Quay lại / Màn hình chính / Ứng dụng gần đây (không cần khi dùng tính năng đặc quyền) |
 
 > **Mẹo:** Để hộp thoại xin quyền Ghi màn hình không hiện ra mỗi lần mở, bạn có thể cấp trước quyền này qua ADB — xem [Cấp quyền phản chiếu qua ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cấp-quyền-phản-chiếu-qua-ADB). Đây cũng là điều kiện để dùng **Chỉ phản chiếu ứng dụng này**.

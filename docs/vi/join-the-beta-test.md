@@ -1,6 +1,6 @@
 ---
 title: "Cài đặt qua chương trình thử nghiệm Google Play"
-description: "Cài ScreenOnAuto từ Google Play (bắt buộc trên Android 14+) — các lượt đăng ký 30 phút hoạt động thế nào, từng bước một."
+description: "Cài ScreenOnAuto từ Google Play (khuyên dùng trên mọi phiên bản Android) — các lượt đăng ký 30 phút hoạt động thế nào, từng bước một."
 lang: vi
 slug: join-the-beta-test
 permalink: /docs/vi/join-the-beta-test/
@@ -10,7 +10,7 @@ last_modified_at: 2026-10-15
 
 # Cài đặt qua chương trình thử nghiệm Google Play
 
-Cài ScreenOnAuto qua danh sách người thử nghiệm của Google Play — **bắt buộc trên Android 14 trở lên**.
+Cài ScreenOnAuto qua danh sách người thử nghiệm của Google Play — **cách được khuyên dùng trên mọi phiên bản Android**, và là cách duy nhất trên Android 14 trở lên nếu không có bộ chuyển AAWireless.
 
 > **ℹ️ Lưu ý**
 > Cách này cài **ứng dụng ScreenOnAuto chính thức, đầy đủ**. Danh sách người thử nghiệm
@@ -53,7 +53,7 @@ Cài xong rồi thì tiếp tục từ bước 4 ở trên.
 
 ## Ghi chú
 
-- Trên **Android 13 trở xuống**, tham gia chương trình thử nghiệm là không bắt buộc — bạn có thể cài tệp APK thay thế (xem [hướng dẫn cài đặt](/vi/#install)).
+- **Google Play là cách được khuyên dùng.** Các cách khác cũng có thể dùng được: cài bằng KingInstaller trên Android 13 trở xuống, hoặc cài APK trực tiếp khi có bộ chuyển AAWireless (xem [hướng dẫn cài đặt](/vi/#install)).
 - Bản cài từ Play và tệp APK cài thủ công dùng **chứng chỉ ký khác nhau**, nên
   không thể cập nhật lẫn nhau trên cùng một thiết bị. Muốn đổi kênh, hãy gỡ cài đặt
   bản hiện có trước.

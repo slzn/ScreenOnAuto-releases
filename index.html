@@ -36,7 +36,7 @@ layout: null
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Night dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons, Match the phone screen to the car, Virtual touchscreen for gesture apps, Start mirroring in the background, Reverse landscape"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Night dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Lock orientation, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons, Match the phone screen to the car, Virtual touchscreen for gesture apps, Start mirroring in the background, Reverse landscape"
 }
 </script>
 
@@ -74,7 +74,7 @@ layout: null
     <p class="free">Free to use — no features require additional payment.</p>
     <div class="paths">
       <a class="path primary" href="https://screenonauto.lzn.idv.tw/join/?lang=en">
-        <span class="k">Android 14 and above</span>
+        <span class="k">Recommended · any Android version</span>
         <b>Install from Google&nbsp;Play</b>
         <span class="d">Sign up each half hour, then install within 25 minutes.</span>
       </a>
@@ -122,8 +122,8 @@ layout: null
   </div>
   <div class="grid more">
     <div class="card"><b>Mirror Only This App <span class="muted">(Android 15+)</span></b><p>Send just one app to the car instead of the whole screen.</p></div>
-    <div class="card"><b>On-screen Buttons</b><p>App shortcuts on the car screen, plus Force Landscape, Auto Dim, Night Dim and Back / Home / Recents.</p></div>
-    <div class="card"><b>Screen &amp; Battery</b><p>Force landscape (either way round), dim the phone when idle and the car screen at night, and keep the phone awake while mirroring.</p></div>
+    <div class="card"><b>On-screen Buttons</b><p>App shortcuts on the car screen, plus Lock Orientation, Auto Dim, Night Dim and Back / Home / Recents.</p></div>
+    <div class="card"><b>Screen &amp; Battery</b><p>Lock the orientation (landscape either way round or portrait, or match the car's screen), dim the phone when idle and the car screen at night, and keep the phone awake while mirroring.</p></div>
     <div class="card"><b>Fit the Car Screen</b><p>Trim edges the head unit crops, and keep the picture undistorted in split view.</p></div>
     <div class="card"><b>External Control</b><p>Start or stop mirroring from Tasker, a shortcut or ADB. <a href="https://screenonauto.lzn.idv.tw/docs/en/control-mirroring-from-another-app/">How it works →</a></p></div>
     <div class="card"><b>Touch Forwarding <span class="muted">(experimental)</span></b><p>Tap and scroll the phone from the car screen.</p></div>
@@ -133,11 +133,15 @@ layout: null
 <section class="wrap" id="privileged">
   <h2>Privileged Features</h2>
   <p class="muted">Optional — needs <a href="https://shizuku.rikka.app/">Shizuku</a> or root. Without either, everything else works exactly the same.</p>
-  <div class="grid core priv">
+  <div class="grid core">
     <div class="card"><b>Turn the Phone Screen Off</b><p>The phone's panel goes dark while the car keeps showing the mirror.</p></div>
     <div class="card"><b>Real Touch Injection</b><p>Long-press, drag and multi-finger gestures from the car screen. With the virtual touchscreen on, gesture apps such as GMD see them too.</p></div>
-    <div class="card"><b>Phone Navigation Buttons</b><p>Back / Home / Recents with no Accessibility Service needed.</p></div>
     <div class="card"><b>Match the Phone Screen to the Car</b><p>Reshape the phone to the car's aspect ratio while mirroring — no black bars or distortion.</p></div>
+  </div>
+  <div class="grid more">
+    <div class="card"><b>Phone Navigation Buttons</b><p>Back / Home / Recents with no Accessibility Service needed.</p></div>
+    <div class="card"><b>Follow the Car's Day/Night <span class="muted">(Android 10+)</span></b><p>The phone's dark theme follows Android Auto while mirroring.</p></div>
+    <div class="card"><b>Font Size While Mirroring</b><p>A different font size on the phone while mirroring.</p></div>
   </div>
   <p class="muted">Shizuku stopped when you plugged in, or the screen won't wake up? See <a href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/#privileged-features-shizuku--root">Troubleshooting</a>.</p>
 </section>
@@ -155,10 +159,10 @@ layout: null
 <section class="wrap" id="install">
   <h2>Installation</h2>
 
-  <h3>Android 14 and above — install via Google Play</h3>
-  <p>Android Auto only runs apps installed from the Play Store, and Android 14+ blocks the KingInstaller workaround — so install through Google Play's internal testing. It's the same full app as on GitHub, but it isn't searchable on the Play Store: <a href="https://screenonauto.lzn.idv.tw/join/?lang=en"><b>sign up on the install page</b></a>. A new round opens every 30 minutes, and your install link appears a few minutes after your round's sign-ups close. Full steps: <a href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"><b>Install via the Google Play Testing Program</b></a>.</p>
+  <h3>Google Play (recommended)</h3>
+  <p>Works on every Android version, and Android Auto accepts it with no extra setup (Android Auto only runs apps installed from the Play Store, and Android 14+ blocks the KingInstaller workaround). It's Google Play's internal testing — the same full app as on GitHub, but it isn't searchable on the Play Store: <a href="https://screenonauto.lzn.idv.tw/join/?lang=en"><b>sign up on the install page</b></a>. A new round opens every 30 minutes, and your install link appears a few minutes after your round's sign-ups close. Full steps: <a href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"><b>Install via the Google Play Testing Program</b></a>.</p>
 
-  <h3>Android 13 and below — sideload with KingInstaller</h3>
+  <h3>Alternative — Android 13 and below: sideload with KingInstaller</h3>
   <p class="muted">Android Auto requires apps installed via Google Play. A directly-installed APK is rejected; <a href="https://github.com/fcaronte/KingInstaller/releases">KingInstaller</a> installs APKs while reporting Google Play Store as the installer source.</p>
   <ol class="steps">
     <li><b>Install KingInstaller</b> — download the latest <code>KingInstaller.apk</code> from its <a href="https://github.com/fcaronte/KingInstaller/releases">releases page</a>, allow "Install unknown apps" for your browser or file manager, then install it.</li>
@@ -166,7 +170,7 @@ layout: null
   </ol>
 
   <h3>Alternative — with an AAWireless dongle</h3>
-  <p>If the Google Play install fails — for example on GrapheneOS with sandboxed Google Play — and you have an AAWireless dongle, its Developer Mode lets Android Auto accept the APK installed directly. <a href="https://github.com/slzn/ScreenOnAuto-releases#alternative--with-an-aawireless-dongle"><b>See the steps</b></a>.</p>
+  <p>Have an AAWireless dongle? Its Developer Mode lets Android Auto accept the APK installed directly, so you can skip Google Play — this also works where Play can't install, such as GrapheneOS with sandboxed Google Play. <a href="https://github.com/slzn/ScreenOnAuto-releases#alternative--with-an-aawireless-dongle"><b>See the steps</b></a>.</p>
 </section>
 
 <section class="wrap" id="verify">
@@ -190,7 +194,7 @@ layout: null
       <tr><th>Permission</th><th>Required for</th></tr>
       <tr><td>Screen Capture (MediaProjection)</td><td>Screen Mirroring</td></tr>
       <tr><td>Notification Listener</td><td>Media controls</td></tr>
-      <tr><td>Display Over Other Apps</td><td>Auto Dim, Force Landscape &amp; Night Dim</td></tr>
+      <tr><td>Display Over Other Apps</td><td>Auto Dim, Lock Orientation &amp; Night Dim</td></tr>
       <tr><td>Accessibility Service</td><td>Touch Forwarding &amp; the Back / Home / Recents buttons (not needed with the privileged features)</td></tr>
     </table>
   </div>

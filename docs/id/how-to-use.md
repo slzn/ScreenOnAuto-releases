@@ -111,25 +111,23 @@ lewat sakelar **Pencerminan layar**.
 
 #### Ada bilah hitam di sekeliling gambar
 
-Layar ponsel dan layar mobil memiliki rasio aspek yang berbeda; tombol **Paksa lanskap** di
-layar pencerminan (atau **Paksa lanskap otomatis** di pengaturan aplikasi) biasanya mengisi
-layar jauh lebih baik. Jika masih ada celah tipis atau tepi yang terpotong, sesuaikan lewat
-**Pengaturan → Lanjutan → Sesuaikan lebar pencerminan / Sesuaikan tinggi pencerminan** (nilai
-positif menarik masuk tepi yang terpotong, nilai negatif melebarkan keluar untuk mengisi bilah
-hitam).
+Layar ponsel dan layar mobil memiliki rasio aspek yang berbeda. Gunakan tombol **Kunci orientasi**
+di layar pencerminan (atau **Kunci orientasi otomatis** di pengaturan). Agar pas persis dengan area
+layar mobil yang bisa dipakai, aktifkan **Samakan layar ponsel dengan mobil** di Fitur istimewa
+(Shizuku atau root).
 
 #### Gambar terlihat melar atau terdistorsi setelah tata letak berubah
 
-Ini terjadi saat area yang terlihat membesar atau mengecil dalam tampilan terpisah. Dua
-pengaturan bisa memperbaikinya:
+Ini terjadi saat area yang terlihat membesar atau mengecil dalam tampilan terpisah. Memutar
+ponsel hingga layar berganti antara potret dan lanskap akan memulihkannya (jika **Kunci orientasi** aktif, lepaskan dulu lewat tombolnya di layar). Dua pengaturan
+juga bisa memperbaikinya:
 
 - Aktifkan **Pengaturan → Lanjutan → Ukuran pencerminan tetap**. Pencerminan kemudian
   mempertahankan ukurannya alih-alih terdistorsi (sebagian mungkin tersembunyi). Berlaku untuk
   entri layar penuh **ScreenOnAuto**.
 - Aktifkan **Pengaturan → Lanjutan → Pencerminan digambar aplikasi (eksperimental)**. Aplikasi
   kemudian menggambar sendiri gambar pencerminan alih-alih menyerahkan penskalaan ke sistem,
-  sehingga gambar tidak lagi terdistorsi dalam tampilan terpisah, dan penyesuaian lebar/tinggi
-  bekerja sama saja baik diatur sebelum maupun selama tersambung. Fitur ini memakai sedikit
+  sehingga gambar tidak lagi terdistorsi dalam tampilan terpisah. Fitur ini memakai sedikit
   lebih banyak baterai dan berlaku saat pencerminan dimulai berikutnya. **Samakan layar ponsel dengan mobil** (Fitur istimewa) memperbaiki masalah yang sama dengan cara lain, dan keduanya bisa aktif bersamaan.
 
 #### Google Maps di Android Auto menjadi hitam selama pencerminan

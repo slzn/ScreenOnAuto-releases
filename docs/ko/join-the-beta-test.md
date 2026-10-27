@@ -1,6 +1,6 @@
 ---
 title: "Google Play 테스트 프로그램으로 설치"
-description: "Google Play에서 ScreenOnAuto 설치하기(Android 14 이상 필수) — 30분 단위 신청 회차가 어떻게 운영되는지 단계별로 안내합니다."
+description: "Google Play에서 ScreenOnAuto 설치하기(모든 Android 버전에서 권장) — 30분 단위 신청 회차가 어떻게 운영되는지 단계별로 안내합니다."
 lang: ko
 slug: join-the-beta-test
 permalink: /docs/ko/join-the-beta-test/
@@ -10,7 +10,7 @@ last_modified_at: 2026-10-14
 
 # Google Play 테스트 프로그램으로 설치
 
-Google Play 베타 테스터 목록을 통해 ScreenOnAuto를 설치합니다 — **Android 14 이상에서는 필수입니다**.
+Google Play 베타 테스터 목록을 통해 ScreenOnAuto를 설치합니다 — **모든 Android 버전에서 권장하는 방법**이며, Android 14 이상에서 AAWireless 동글이 없다면 유일한 방법입니다.
 
 > **ℹ️ 참고**
 > 이렇게 설치되는 것은 **완전한 정식 ScreenOnAuto 앱**입니다. Google의 베타 테스터
@@ -52,6 +52,6 @@ Google Play 베타 테스터 목록을 통해 ScreenOnAuto를 설치합니다 �
 
 ## 참고 사항
 
-- **Android 13 이하**에서는 베타 참여가 선택 사항입니다 — 대신 APK를 사이드로드할 수 있습니다([설치 안내](/#install) 참고).
+- **Google Play 설치를 권장합니다.** 그 밖에 쓸 수 있는 방법: Android 13 이하에서 KingInstaller로 사이드로드하거나, AAWireless 동글이 있으면 APK를 직접 설치할 수 있습니다([설치 안내](/#install) 참고).
 - Play로 설치한 빌드와 사이드로드한 APK는 **서명 인증서가 다르기 때문에** 같은 기기에서
   서로 업데이트할 수 없습니다. 채널을 바꾸려면 기존에 설치된 쪽을 먼저 제거하세요.

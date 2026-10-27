@@ -37,7 +37,7 @@ permalink: /tr/
   "image": "https://screenonauto.lzn.idv.tw/images/icon_launcher.png",
   "author": { "@type": "Person", "name": "Chih-En Liu", "alternateName": ["LZN", "slzn"], "url": "https://lzn.idv.tw" },
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Night dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Force landscape, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons, Match the phone screen to the car, Virtual touchscreen for gesture apps, Start mirroring in the background, Reverse landscape"
+  "featureList": "Screen mirroring to Android Auto, Media session proxy, Auto dim, Night dim, Auto start, Prevent sleep, Auto launch app, Mirror only this app, External control, Lock orientation, Launch shortcuts, On-screen buttons, Mirror adjustment, Touch forwarding, Pinch to zoom, Turn the phone screen off, Real touch injection, Phone navigation buttons, Match the phone screen to the car, Virtual touchscreen for gesture apps, Start mirroring in the background, Reverse landscape"
 }
 </script>
 
@@ -75,7 +75,7 @@ permalink: /tr/
     <p class="free">Ücretsiz — hiçbir özellik ek ödeme gerektirmez.</p>
     <div class="paths">
       <a class="path primary" href="https://screenonauto.lzn.idv.tw/join/?lang=tr">
-        <span class="k">Android 14 ve üzeri</span>
+        <span class="k">Önerilen · tüm Android sürümleri</span>
         <b>Google&nbsp;Play'den yükleyin</b>
         <span class="d">Her yarım saatte bir kaydolun, ardından 25 dakika içinde yükleyin.</span>
       </a>
@@ -123,8 +123,8 @@ permalink: /tr/
   </div>
   <div class="grid more">
     <div class="card"><b>Yalnızca bu uygulamayı yansıt <span class="muted">(Android 15+)</span></b><p>Tüm ekran yerine yalnızca tek bir uygulamayı araca gönderin.</p></div>
-    <div class="card"><b>Ekran düğmeleri</b><p>Araç ekranında uygulama kısayolları; ayrıca Yatay modu zorla, Otomatik karartma, Gece karartması ve Geri / Ana ekran / Son uygulamalar.</p></div>
-    <div class="card"><b>Ekran ve pil</b><p>Yatay modu zorlayın (iki yönde de), boştayken telefonu, geceleri araç ekranını karartın ve yansıtma sırasında telefonu uyanık tutun.</p></div>
+    <div class="card"><b>Ekran düğmeleri</b><p>Araç ekranında uygulama kısayolları; ayrıca Yönü kilitle, Otomatik karartma, Gece karartması ve Geri / Ana ekran / Son uygulamalar.</p></div>
+    <div class="card"><b>Ekran ve pil</b><p>Yönü kilitleyin (iki yönde yatay veya dikey ya da araç ekranına göre), boştayken telefonu, geceleri araç ekranını karartın ve yansıtma sırasında telefonu uyanık tutun.</p></div>
     <div class="card"><b>Araç ekranına uydur</b><p>Araç ünitesinin kırptığı kenarları düzeltin, bölünmüş görünümde görüntü bozulmasın.</p></div>
     <div class="card"><b>Harici Kontrol</b><p>Yansıtmayı Tasker, bir kısayol veya ADB ile başlatın ya da durdurun. <a href="https://screenonauto.lzn.idv.tw/docs/tr/control-mirroring-from-another-app/">Nasıl çalışır →</a></p></div>
     <div class="card"><b>Dokunma aktarımı <span class="muted">(deneysel)</span></b><p>Araç ekranından telefona dokunun ve kaydırın.</p></div>
@@ -134,11 +134,15 @@ permalink: /tr/
 <section class="wrap" id="privileged">
   <h2>Ayrıcalıklı özellikler</h2>
   <p class="muted">İsteğe bağlı — <a href="https://shizuku.rikka.app/">Shizuku</a> veya root gerektirir. Bunlar olmadan diğer her şey aynen çalışır.</p>
-  <div class="grid core priv">
+  <div class="grid core">
     <div class="card"><b>Telefon ekranını kapat</b><p>Araç yansıtmayı göstermeye devam ederken telefonun paneli kararır.</p></div>
     <div class="card"><b>Gerçek dokunma enjeksiyonu</b><p>Araç ekranından uzun basma, sürükleme ve çok parmaklı hareketler. Sanal dokunmatik ekran açıkken GMD gibi hareket uygulamaları da bunları algılar.</p></div>
-    <div class="card"><b>Telefon gezinme düğmeleri</b><p>Erişilebilirlik hizmetine gerek kalmadan Geri / Ana ekran / Son uygulamalar.</p></div>
     <div class="card"><b>Telefon ekranını arabaya uydur</b><p>Yansıtma sırasında telefonu aracın en-boy oranına getirir — siyah bant ya da bozulma olmaz.</p></div>
+  </div>
+  <div class="grid more">
+    <div class="card"><b>Telefon gezinme düğmeleri</b><p>Erişilebilirlik hizmetine gerek kalmadan Geri / Ana ekran / Son uygulamalar.</p></div>
+    <div class="card"><b>Aracın gündüz/gecesini izle <span class="muted">(Android 10+)</span></b><p>Yansıtma sırasında telefonun koyu teması Android Auto'yu izler.</p></div>
+    <div class="card"><b>Yansıtmada yazı tipi boyutu</b><p>Yansıtma sırasında telefonda farklı bir yazı tipi boyutu.</p></div>
   </div>
   <p class="muted">Araca takınca Shizuku durdu mu, ya da ekran uyanmıyor mu? <a href="https://screenonauto.lzn.idv.tw/docs/tr/how-to-use/#ayrıcalıklı-özellikler-shizuku--root">Sorun Giderme</a> bölümüne bakın.</p>
 </section>
@@ -156,10 +160,10 @@ permalink: /tr/
 <section class="wrap" id="install">
   <h2>Kurulum</h2>
 
-  <h3>Android 14 ve üzeri — Google Play üzerinden kurulum</h3>
-  <p>Android Auto yalnızca Play Store'dan yüklenen uygulamaları çalıştırır ve Android 14+ KingInstaller yöntemini engeller — bu yüzden Google Play dahili testi üzerinden yükleyin. GitHub'dakiyle aynı tam uygulamadır, ancak Play Store aramalarında görünmez: <a href="https://screenonauto.lzn.idv.tw/join/?lang=tr"><b>yükleme sayfasından kaydolun</b></a>. Her 30 dakikada yeni bir tur açılır ve kendi turunuzun kayıtları kapandıktan birkaç dakika sonra yükleme bağlantınız görünür. Tüm adımlar: <a href="https://screenonauto.lzn.idv.tw/docs/tr/join-the-beta-test/"><b>Google Play Test Programı Üzerinden Yükleme</b></a>.</p>
+  <h3>Google Play (önerilen)</h3>
+  <p>Tüm Android sürümlerinde çalışır ve Android Auto uygulamayı ek bir ayar gerektirmeden kabul eder (Android Auto yalnızca Play Store'dan yüklenen uygulamaları çalıştırır ve Android 14+ KingInstaller yöntemini engeller). Bu, Google Play dahili testidir — GitHub'dakiyle aynı tam uygulamadır, ancak Play Store aramalarında görünmez: <a href="https://screenonauto.lzn.idv.tw/join/?lang=tr"><b>yükleme sayfasından kaydolun</b></a>. Her 30 dakikada yeni bir tur açılır ve kendi turunuzun kayıtları kapandıktan birkaç dakika sonra yükleme bağlantınız görünür. Tüm adımlar: <a href="https://screenonauto.lzn.idv.tw/docs/tr/join-the-beta-test/"><b>Google Play Test Programı Üzerinden Yükleme</b></a>.</p>
 
-  <h3>Android 13 ve altı — KingInstaller ile kurulum</h3>
+  <h3>Alternatif — Android 13 ve altı: KingInstaller ile kurulum</h3>
   <p class="muted">Android Auto, uygulamaların Google Play üzerinden yüklenmesini şart koşar. Doğrudan yüklenen bir APK reddedilir; <a href="https://github.com/fcaronte/KingInstaller/releases">KingInstaller</a>, APK'ları yükleyici kaynağı olarak Google Play Store'u bildirerek kurar.</p>
   <ol class="steps">
     <li><b>KingInstaller'ı kurun</b> — en yeni <code>KingInstaller.apk</code> dosyasını <a href="https://github.com/fcaronte/KingInstaller/releases">sürümler sayfasından</a> indirin, tarayıcınız veya dosya yöneticiniz için "Bilinmeyen uygulamaları yükle"ye izin verin ve kurun.</li>
@@ -167,7 +171,7 @@ permalink: /tr/
   </ol>
 
   <h3>Alternatif — AAWireless adaptörüyle</h3>
-  <p>Google Play üzerinden kurulum başarısız oluyorsa — örneğin korumalı alanda Google Play kullanan GrapheneOS'ta — ve bir AAWireless adaptörünüz varsa, adaptörün Developer Mode özelliği doğrudan kurulan APK'nın Android Auto'da kullanılmasını sağlar. <a href="https://github.com/slzn/ScreenOnAuto-releases/blob/main/.github/README.tr.md#alternatif--aawireless-adaptörüyle"><b>Adımlara bakın</b></a>.</p>
+  <p>AAWireless adaptörünüz mü var? Adaptörün Developer Mode özelliği doğrudan kurulan APK'nın Android Auto'da kullanılmasını sağlar, böylece Google Play'e gerek kalmaz — Play'in kuramadığı yerlerde de çalışır, örneğin korumalı alanda Google Play kullanan GrapheneOS'ta. <a href="https://github.com/slzn/ScreenOnAuto-releases/blob/main/.github/README.tr.md#alternatif--aawireless-adaptörüyle"><b>Adımlara bakın</b></a>.</p>
 </section>
 
 <section class="wrap" id="verify">
@@ -191,7 +195,7 @@ permalink: /tr/
       <tr><th>İzin</th><th>Gerekli olduğu özellik</th></tr>
       <tr><td>Ekran Kaydı (MediaProjection)</td><td>Ekran yansıtma</td></tr>
       <tr><td>Bildirim erişimi</td><td>Medya kontrolleri</td></tr>
-      <tr><td>Diğer uygulamaların üzerinde göster</td><td>Otomatik karartma, Yatay modu zorlama ve Gece karartması</td></tr>
+      <tr><td>Diğer uygulamaların üzerinde göster</td><td>Otomatik karartma, Yönü kilitle ve Gece karartması</td></tr>
       <tr><td>Erişilebilirlik hizmeti</td><td>Dokunma aktarımı ve Geri / Ana ekran / Son uygulamalar düğmeleri (ayrıcalıklı özelliklerle gerekmez)</td></tr>
     </table>
   </div>

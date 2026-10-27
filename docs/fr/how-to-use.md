@@ -114,26 +114,24 @@ le téléphone, ou lancez-la via l'interrupteur de **duplication**.
 
 #### Bandes noires autour de l'image
 
-Le téléphone et l'écran de la voiture ont des formats différents ; le bouton **Forcer
-paysage** sur l'écran de duplication (ou **Forcer le paysage automatiquement** dans les
-réglages de l'app) remplit généralement bien mieux l'écran. S'il reste de fins espaces
-ou des bords coupés, affinez avec **Réglages → Avancé → Régler la largeur / la hauteur
-de la duplication** (pixels positifs pour ramener un bord coupé, négatifs pour combler
-une bande noire).
+Le téléphone et l'écran de la voiture ont des formats différents. Utilisez le bouton
+**Verrouiller l'orientation** sur l'écran de duplication (ou **Verrouiller automatiquement
+l'orientation** dans les réglages). Pour remplir exactement la zone utile de la voiture,
+activez **Adapter l'écran du téléphone à celui de la voiture** dans les Fonctions
+privilégiées (Shizuku ou root).
 
 #### Image étirée ou déformée après un changement de disposition
 
-Cela se produit quand la zone visible grandit ou rétrécit en vue partagée. Deux réglages
-peuvent corriger cela :
+Cela se produit quand la zone visible grandit ou rétrécit en vue partagée. Faire pivoter
+le téléphone pour que l'écran passe du portrait au paysage rétablit l'image (si **Verrouiller l'orientation** est actif, désactivez-le d'abord avec son bouton à l'écran). Deux réglages
+peuvent aussi corriger cela :
 
 - Activez **Réglages → Avancé → Taille fixe de la duplication**. La duplication garde
   alors sa taille au lieu de se déformer (une partie peut être masquée). S'applique à
   l'entrée plein écran **ScreenOnAuto**.
 - Activez **Réglages → Avancé → Duplication dessinée par l'application (expérimental)**.
   L'application dessine alors elle-même l'image de la duplication au lieu de laisser le
-  système la redimensionner : elle ne se déforme plus en vue partagée, et les réglages
-  de largeur/hauteur donnent le même résultat, qu'ils soient définis avant ou pendant la
-  connexion. Cela consomme un peu plus de batterie et prend effet au prochain démarrage
+  système la redimensionner : elle ne se déforme plus en vue partagée. Cela consomme un peu plus de batterie et prend effet au prochain démarrage
   de la duplication. **Adapter l'écran du téléphone à celui de la voiture** (Fonctions privilégiées) résout le même problème autrement, et les deux peuvent être activées en même temps.
 
 #### Google Maps dans Android Auto devient noir pendant la duplication

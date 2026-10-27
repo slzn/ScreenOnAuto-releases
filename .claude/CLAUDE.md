@@ -155,11 +155,12 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
   GitHub link, and the docbar's language list. The cluster is `position: absolute`
   (scrolls away), left in RTL. The pre-paint script in `<head>` still reads localStorage
   `theme` and falls back to the system setting.
-- **Hero:** eyebrow + h1-with-icon + two `.paths` install cards (Android 14+ Play /
-  ≤13 APK) — these **replaced the old `.cta` buttons and the yellow `.notice` block**
+- **Hero:** eyebrow + h1-with-icon + two `.paths` install cards (Play, labelled
+  "Recommended · any Android version" / ≤13 APK) — these **replaced the old `.cta` buttons and the yellow `.notice` block**
   (notice content was merged into the cards). Features grid is tiered
-  `.grid.core` (3) + `.grid.more` (6), one-sentence cards; Privileged Features is a
-  2×2 `.grid.core.priv`. Keep the landing page short: troubleshooting and long caveats
+  `.grid.core` (3) + `.grid.more` (6), one-sentence cards; Privileged Features is tiered the
+  same way: `.grid.core` (3 main: screen off, touch injection, match screen) + `.grid.more`
+  (3 minor: nav buttons, follow day/night, font size). `.grid.priv` was removed (2026-10-27). Keep the landing page short: troubleshooting and long caveats
   belong in How to Use → Troubleshooting, and the landing page links there (2026-09-30).
 - **Carousel** is framed as a head-unit bezel purely via CSS (markup/carousel.js
   unchanged); top 3px of slide images are clipped in CSS (baked-in artifact).
@@ -295,21 +296,25 @@ The APK arrives in `release/` already named — this repo never builds it.
 All fourteen READMEs share one structure (en at the root, the other thirteen in `.github/`):
 
 - **Install notice** (IMPORTANT alert under the screenshot):
-  - Android 14+ → Google Play only, through the half-hourly sign-up at
-    `https://screenonauto.lzn.idv.tw/join/?lang=<code>`.
-  - Android ≤13 → KingInstaller sideload.
-  - Play install fails + AAWireless dongle → link to the AAWireless alternative section.
-- **Installation → Android 14 and above** is one paragraph: why Play, then sign up on `/join/`
+  - Recommended → Google Play on any Android version, through the half-hourly sign-up at
+    `https://screenonauto.lzn.idv.tw/join/?lang=<code>` (Android Auto accepts it with no
+    extra setup). Play is presented as THE recommended route, the others as extra options.
+  - Android ≤13 → can also sideload with KingInstaller.
+  - Have an AAWireless dongle → can install the APK directly on any Android version; link to
+    the AAWireless alternative section. Framed as an extra option, not as a fallback for a
+    failed Play install.
+- **Installation → Google Play (recommended)** is one paragraph: why Play, then sign up on `/join/`
   (30-minute rounds, install link at round start), then a link to the Join the Beta Test
   wiki page. There is no "invite-based" wording and no Google Form any more.
-- **Installation → Android 13 and below** is the KingInstaller flow:
+- **Installation → Alternative — Android 13 and below: sideload with KingInstaller** is the KingInstaller flow:
   1. Install KingInstaller. Step 1.2 says to allow unknown-app installs, without a
      hard-coded settings path.
   2. Install `ScreenOnAuto-*.apk` from the latest release.
 
   (There is no separate "grant permissions" step since PR #48 — the app prompts on first launch.)
 - **Installation → Alternative — with an AAWireless dongle** (added 2026-10-23, PR #48): for
-  when the Play install fails (e.g. GrapheneOS with sandboxed Play). Four steps: install the
+  anyone with the dongle who would rather install the APK directly; also covers phones where
+  Play can't install (e.g. GrapheneOS with sandboxed Play). Four steps: install the
   APK directly; AAWireless app Passthrough mode off + Developer Mode on; Android Auto
   Developer settings → Application mode Developer + Unknown sources; reboot. The AAWireless
   app's labels (Passthrough mode, Developer Mode) stay in English in every language. The
@@ -318,8 +323,11 @@ All fourteen READMEs share one structure (en at the root, the other thirteen in 
 - **Verify in Android Auto** expects **two** entries: ScreenOnAuto and ScreenOnAuto
   (Legacy). ScreenOnAuto Media Controller appears only on older Android Auto, and its
   absence is normal. Do not describe it as a required entry.
-- **Privileged Features**: a one-line intro, the table, and a single line linking to
-  How to Use → Troubleshooting (the Shizuku-over-USB and screen-wake notes live there).
+- **Privileged Features**: a one-line intro, the table of the three main features (screen
+  off, real touch injection, match the phone screen), an "Also with Shizuku or root" list of
+  the minor ones (phone navigation buttons, follow day/night mode *(Android 10+)*, font size
+  while mirroring) with a line saying the phone's own theme and font size come back, and a
+  single line linking to How to Use → Troubleshooting (the Shizuku-over-USB and screen-wake notes live there).
   Since 2026-10-14 that link, here and on the landing pages, targets the troubleshooting
   group's own heading, "Privileged Features (Shizuku / root)" — `#privileged-features-shizuku--root`
   and its counterpart in each language, generated from the heading text by both GitHub and
@@ -402,7 +410,7 @@ sed -i 's/{prev-date}/{new-date}/g' index.html i18n/*/index.html   # hits dateMo
 Android 13 and below install section in every README) — so a routine version bump needs **no README edit**.
 The GitHub Release in Step 3 (`--latest`) is what makes that link resolve to the new build.
 Only edit the READMEs when the install flow itself changes (e.g. the KingInstaller
-sequence or the Android 14+ sign-up) — then update **all fourteen READMEs and the fourteen landing pages**.
+sequence or the Google Play sign-up) — then update **all fourteen READMEs and the fourteen landing pages**.
 
 Commit whatever Step 1 touched:
 

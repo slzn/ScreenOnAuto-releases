@@ -11,10 +11,10 @@
 <p align="center"><img src="../images/screenshot-legacy-split.png" alt="Layar ponsel dicerminkan di layar Android Auto, berdampingan dengan peta"></p>
 
 > [!IMPORTANT]
-> **Cara instal tergantung versi Android Anda:**
-> - **Android 14 ke atas** — instal **hanya melalui Google Play**: daftar di salah satu putaran (dibuka setiap setengah jam), lalu instal dalam 25 menit (aplikasi ini **tidak bisa dicari** di Play Store). [Daftar →](https://screenonauto.lzn.idv.tw/join/?lang=id)
-> - **Android 13 ke bawah** — pasang APK secara manual dengan KingInstaller ([langkah-langkah di bawah](#instalasi)), atau instal melalui Google Play.
-> - **Instalasi lewat Play gagal dan Anda punya dongle AAWireless?** — instal APK secara langsung ([langkah alternatif](#alternatif--dengan-dongle-aawireless)).
+> **Cara instal:**
+> - **Disarankan — Google Play**, di semua versi Android: daftar di salah satu putaran (dibuka setiap setengah jam), lalu instal dalam 25 menit (aplikasi ini **tidak bisa dicari** di Play Store). Android Auto langsung menerimanya tanpa pengaturan tambahan. [Daftar →](https://screenonauto.lzn.idv.tw/join/?lang=id)
+> - **Android 13 ke bawah** — Anda juga bisa memasang APK secara manual dengan KingInstaller ([langkah-langkah di bawah](#alternatif--android-13-ke-bawah-pasang-manual-dengan-kinginstaller)).
+> - **Punya dongle AAWireless?** — Anda juga bisa menginstal APK secara langsung, di semua versi Android ([langkah-langkah di bawah](#alternatif--dengan-dongle-aawireless)).
 
 ## Fitur
 
@@ -28,10 +28,10 @@
 - **Hentikan saat terputus** — Menghentikan pencerminan secara otomatis saat Android Auto terputus
 - **Luncurkan aplikasi otomatis** — Membuka aplikasi pilihan di ponsel secara otomatis saat pencerminan dimulai dan Android Auto terhubung
 - **Cerminkan aplikasi ini saja** *(Android 15+)* — Hanya mengirim aplikasi yang diluncurkan otomatis ke mobil, bukan seluruh layar, sehingga bagian lain ponsel tetap privat. Memerlukan izin Perekaman layar yang [diberikan lebih dulu lewat ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Berikan-Izin-Pencerminan-melalui-ADB); layar mobil menjadi kosong selama Anda meninggalkan aplikasi tersebut
-- **Paksa lanskap** — Memaksa ponsel ke orientasi lanskap selama pencerminan; dimulai otomatis saat terhubung, dengan sakelar di layar
-- **Pintasan peluncuran** — Tambahkan hingga 4 tombol peluncur aplikasi ke layar pencerminan Android Auto
-- **Tombol layar** — Tampilkan atau sembunyikan tombol di layar pencerminan satu per satu di halaman Tombol layar: Paksa lanskap, Peredupan otomatis, Peredupan malam, serta Kembali / Beranda / Aplikasi terbaru ponsel (hingga 4 sekaligus)
-- **Penempatan tombol** — Pada pencerminan Legacy, ratakan tombol layar ke kiri atau hindari bilah navigasi ponsel secara otomatis
+- **Kunci orientasi** — Mengunci ponsel ke lanskap (ke kedua arah) atau potret selama pencerminan, atau menyesuaikan dengan bentuk layar mobil; dimulai otomatis saat terhubung, dengan sakelar di layar
+- **Pintasan peluncuran** — Tambahkan hingga 4 tombol peluncur aplikasi ke layar pencerminan Android Auto; tekan lama salah satunya untuk mengubah teks yang ditampilkan di mobil
+- **Tombol layar** — Tampilkan atau sembunyikan tombol di layar pencerminan satu per satu di halaman Tombol layar: Kunci orientasi, Peredupan otomatis, Peredupan malam, serta Kembali / Beranda / Aplikasi terbaru ponsel (hingga 4 sekaligus)
+- **Penempatan tombol** — Pada pencerminan Legacy, ratakan tombol ke kiri, jauhkan dari bilah navigasi ponsel, atau atur jaraknya dari tepi (termasuk bilah pintasan) agar tidak menutupi kontrol bawaan head unit
 - **Penyesuaian pencerminan** — Pangkas lebar/tinggi pencerminan di pengaturan Lanjutan untuk head unit yang memotong tepinya; **Pencerminan digambar aplikasi** yang eksperimental di sana juga mencegah distorsi tampilan terpisah
 - **Penerusan sentuhan** *(Eksperimental)* — Ketuk, gulir, sentak, dan cubit untuk zoom di layar Android Auto untuk mengendalikan ponsel
 
@@ -43,8 +43,15 @@ Opsional — memerlukan [Shizuku](https://shizuku.rikka.app/) atau Root. Tanpa k
 |---|---|
 | **Matikan layar ponsel** | Mematikan panel ponsel saat Peredupan otomatis aktif, sementara mobil tetap menampilkan pencerminan — menghemat baterai dan mencegah ponsel menerangi kabin di malam hari |
 | **Injeksi sentuh nyata** | Meneruskan gerakan jari Anda yang sebenarnya, bukan gestur buatan, sehingga **tekan lama, seret, dan multi-jari** berfungsi pada pencerminan Legacy |
-| **Tombol navigasi ponsel** | Kembali / Beranda / Aplikasi terbaru berfungsi **tanpa mengaktifkan Layanan Aksesibilitas sama sekali**. Aktifkan tombolnya di **Tombol layar → Tombol fungsi** |
 | **Samakan layar ponsel dengan mobil** | Mengubah bentuk layar ponsel ke rasio aspek head unit selama pencerminan, sehingga bilah hitam dan distorsi tampilan terpisah hilang dari sumbernya — layar mobil diukur secara otomatis |
+
+Juga dengan Shizuku atau root:
+
+- **Tombol navigasi ponsel** — Kembali / Beranda / Aplikasi terbaru tanpa mengaktifkan Layanan Aksesibilitas; aktifkan di **Tombol layar → Tombol fungsi**
+- **Ikuti mode siang/malam mobil** *(Android 10+)* — Selama pencerminan, ponsel beralih antara tema terang dan gelap bersama Android Auto
+- **Ukuran font saat pencerminan** — Gunakan ukuran font lain di ponsel selama pencerminan
+
+Tema dan ukuran font asli ponsel kembali saat pencerminan berhenti.
 
 Shizuku berhenti saat ponsel dicolokkan, atau layar tidak mau menyala lagi? Lihat [Pemecahan masalah](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cara-Menggunakan#fitur-istimewa-shizuku--root).
 
@@ -57,11 +64,11 @@ Shizuku berhenti saat ponsel dicolokkan, atau layar tidak mau menyala lagi? Liha
 
 ## Instalasi
 
-### Android 14 ke atas — instal melalui Google Play
+### Google Play (disarankan)
 
-Android Auto hanya menjalankan aplikasi yang diinstal dari Play Store, dan Android 14+ memblokir cara KingInstaller — jadi instal melalui pengujian internal Google Play. Ini aplikasi lengkap yang sama seperti di GitHub, tetapi tidak bisa dicari di Play Store: [**daftar di halaman instal**](https://screenonauto.lzn.idv.tw/join/?lang=id). Putaran baru dibuka setiap 30 menit, dan tautan instal Anda muncul beberapa menit setelah pendaftaran putaran Anda ditutup. Langkah lengkap: [**Instal melalui Program Pengujian Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Instal-melalui-Program-Pengujian-Google-Play).
+Berfungsi di semua versi Android, dan Android Auto langsung menerimanya tanpa pengaturan tambahan (Android Auto hanya menjalankan aplikasi yang diinstal dari Play Store, dan Android 14+ memblokir cara KingInstaller). Ini pengujian internal Google Play — aplikasi lengkap yang sama seperti di GitHub, tetapi tidak bisa dicari di Play Store: [**daftar di halaman instal**](https://screenonauto.lzn.idv.tw/join/?lang=id). Putaran baru dibuka setiap 30 menit, dan tautan instal Anda muncul beberapa menit setelah pendaftaran putaran Anda ditutup. Langkah lengkap: [**Instal melalui Program Pengujian Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Instal-melalui-Program-Pengujian-Google-Play).
 
-### Android 13 ke bawah — pasang manual dengan KingInstaller
+### Alternatif — Android 13 ke bawah: pasang manual dengan KingInstaller
 
 > **Mengapa KingInstaller?**  
 > Android Auto mengharuskan aplikasi diinstal melalui Google Play Store.
@@ -83,7 +90,7 @@ Android Auto hanya menjalankan aplikasi yang diinstal dari Play Store, dan Andro
 
 ### Alternatif — dengan dongle AAWireless
 
-> **Kapan memakai cara ini:** instalasi lewat Google Play gagal — misalnya di GrapheneOS dengan Google Play dalam sandbox — dan Anda punya dongle AAWireless. Di mobil sungguhan, Android Auto mengabaikan setelan **Sumber tidak dikenal** miliknya sendiri; Developer Mode pada dongle-lah yang membuat setelan itu berlaku, jadi **cara ini tidak bisa dipakai tanpa dongle**.
+> **Kapan memakai cara ini:** Anda punya dongle AAWireless dan lebih suka menginstal APK langsung daripada lewat Google Play — cara ini juga berfungsi di tempat Play tidak bisa menginstal, misalnya di GrapheneOS dengan Google Play dalam sandbox. Di mobil sungguhan, Android Auto mengabaikan setelan **Sumber tidak dikenal** miliknya sendiri; Developer Mode pada dongle-lah yang membuat setelan itu berlaku, jadi **cara ini tidak bisa dipakai tanpa dongle**.
 
 1. Unduh `ScreenOnAuto-*.apk` terbaru dari [rilis terbaru](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) lalu instal — jika Android bertanya, izinkan browser atau pengelola file Anda untuk **menginstal aplikasi yang tidak dikenal**
 2. Hubungkan ponsel ke mobil lewat dongle. Di aplikasi **AAWireless**, matikan **Passthrough mode** dan aktifkan **Developer Mode**
@@ -114,7 +121,7 @@ Siap? Lihat **[Cara Menggunakan](https://github.com/slzn/ScreenOnAuto-releases/w
 |---|---|
 | Perekaman layar (MediaProjection) | Pencerminan layar |
 | Akses notifikasi | Proksi sesi media |
-| Tampilkan di atas aplikasi lain | Peredupan otomatis, Paksa lanskap & Peredupan malam |
+| Tampilkan di atas aplikasi lain | Peredupan otomatis, Kunci orientasi & Peredupan malam |
 | Layanan Aksesibilitas | Penerusan sentuhan & tombol Kembali / Beranda / Aplikasi terbaru (tidak diperlukan dengan fitur istimewa) |
 
 > **Tips:** Agar dialog izin Perekaman layar tidak muncul setiap kali aplikasi dibuka, Anda bisa memberikan izin itu lebih dulu lewat ADB — lihat [Berikan Izin Pencerminan melalui ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Berikan-Izin-Pencerminan-melalui-ADB). Cara ini juga yang membuka fitur **Cerminkan aplikasi ini saja**.

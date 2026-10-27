@@ -113,25 +113,23 @@ yansıtma** anahtarıyla başlatın.
 
 #### Görüntünün etrafında siyah bantlar var
 
-Telefon ve araç ekranlarının en-boy oranları farklıdır; yansıtma ekranındaki **Yatay
-modu zorla** düğmesi (veya uygulama ayarlarındaki **Yatay modu otomatik olarak zorla**)
-genellikle ekranı çok daha iyi doldurur. İnce boşluklar veya kesilen kenarlar kalırsa
-**Ayarlar → Gelişmiş → Yansıtma genişliğini ayarla / Yansıtma yüksekliğini ayarla** ile
-ince ayar yapın (pozitif pikseller kesilen kenarı içeri çeker, negatif pikseller siyah
-bandı doldurmak için dışarı genişletir).
+Telefon ve araç ekranlarının en-boy oranları farklıdır. Yansıtma ekranındaki **Yönü
+kilitle** düğmesini (veya ayarlardaki **Yönü otomatik olarak kilitle** seçeneğini)
+kullanın. Aracın kullanılabilir alanını tam olarak doldurmak için Ayrıcalıklı
+özellikler'deki **Telefon ekranını arabaya uydur** seçeneğini açın (Shizuku veya root).
 
 #### Düzen değiştikten sonra görüntü gerilmiş veya bozulmuş görünüyor
 
-Bu, bölünmüş görünümde görünür alan büyüyüp küçüldüğünde olur. İki ayar bunu
-düzeltebilir:
+Bu, bölünmüş görünümde görünür alan büyüyüp küçüldüğünde olur. Telefonu döndürüp
+ekranın dikey ile yatay arasında geçmesini sağlamak görüntüyü düzeltir (**Yönü kilitle** açıksa önce ekrandaki düğmesiyle kilidi kaldırın). İki ayar da
+bunu düzeltebilir:
 
 - **Ayarlar → Gelişmiş → Sabit yansıtma boyutu**'nu açın. Yansıtma bozulmak yerine
   boyutunu korur (bir kısmı gizlenebilir). Tam ekran **ScreenOnAuto** girişi için
   geçerlidir.
 - **Ayarlar → Gelişmiş → Uygulamanın çizdiği yansıtma (deneysel)** seçeneğini açın.
   Uygulama bu durumda ölçeklendirmeyi sisteme bırakmak yerine yansıtma görüntüsünü
-  kendisi çizer; böylece görüntü bölünmüş görünümde artık bozulmaz ve genişlik/yükseklik
-  ayarları bağlantıdan önce de bağlantı sırasında da aynı şekilde çalışır. Biraz daha
+  kendisi çizer; böylece görüntü bölünmüş görünümde artık bozulmaz. Biraz daha
   fazla pil tüketir ve yansıtma bir sonraki başlatılışında etkinleşir. **Telefon ekranını arabaya uydur** (Ayrıcalıklı özellikler) aynı sorunu farklı bir yolla çözer ve ikisi birlikte açık olabilir.
 
 #### Yansıtma sırasında Android Auto'daki Google Haritalar siyah ekrana dönüyor

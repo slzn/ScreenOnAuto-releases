@@ -110,24 +110,23 @@ the **Mirror** switch.
 
 #### Black bars around the image
 
-The phone and car screens have different aspect ratios; the **Force Landscape** button
-on the mirror screen (or **Auto-start Force Landscape** in the app's settings) usually
-fills the screen much better. If thin gaps or cut-off edges remain, fine-tune them with
-**Settings → Advanced → Adjust mirror width / Adjust mirror height** (positive pixels
-pull in a cut-off edge, negative pixels push out to fill a black bar).
+The phone and car screens have different aspect ratios. Use the **Lock Orientation**
+button on the mirror screen (or **Auto-start Lock Orientation** in settings). To fit the
+car's usable area exactly, turn on **Match the phone screen to the car** in Privileged
+Features (Shizuku or root).
 
 #### Image looks stretched or distorted after the layout changes
 
-This happens when the visible area grows or shrinks in split view. Two settings can fix
-it:
+This happens when the visible area grows or shrinks in split view. Rotating the phone so
+the screen switches between portrait and landscape brings it back (release **Lock Orientation** with its on-screen button first if it's on). Two settings can also
+fix it:
 
 - Turn on **Settings → Advanced → Fixed mirror size**. The mirror then keeps its size
   instead of distorting (part of it may be hidden). Applies to the full-screen
   **ScreenOnAuto** entry.
 - Turn on **Settings → Advanced → Self-drawn mirror (experimental)**. The app then draws
   the mirror image itself instead of letting the system scale it, so the image no longer
-  distorts in split view, and the width/height adjustments behave the same whether you
-  set them before or during a connection. It uses slightly more battery and takes effect
+  distorts in split view. It uses slightly more battery and takes effect
   the next time mirroring starts. **Match the phone screen to the car** (Privileged Features) fixes the same problem a different way, and the two can be on together.
 
 #### Android Auto's Google Maps turns black while mirroring

@@ -1,6 +1,6 @@
 ---
 title: "透過 Google Play 測試計畫安裝"
-description: "透過 Google Play 安裝 ScreenOnAuto（Android 14 以上必須）——每 30 分鐘一輪的報名方式與逐步說明。"
+description: "透過 Google Play 安裝 ScreenOnAuto（任何 Android 版本皆建議）——每 30 分鐘一輪的報名方式與逐步說明。"
 lang: zh-TW
 slug: join-the-beta-test
 permalink: /docs/zh-TW/join-the-beta-test/
@@ -10,7 +10,7 @@ last_modified_at: 2026-10-14
 
 # 透過 Google Play 測試計畫安裝
 
-透過 Google Play 的 beta 測試者名單安裝 ScreenOnAuto——**Android 14 以上（含）必須**用此方式。
+透過 Google Play 的 beta 測試者名單安裝 ScreenOnAuto——**任何 Android 版本都建議使用此方式**；在 Android 14 以上（含），沒有 AAWireless 轉接器的話也只能用這個方式。
 
 > **ℹ️ 說明**
 > 這是安裝**完整的正式版 ScreenOnAuto**。Google 的 beta 測試者名單只是它的**安裝／發佈方式**（也是讓它能在 Android Auto 正常運作的關鍵），**並不是**另一個試用或未完成的版本。
@@ -50,5 +50,5 @@ last_modified_at: 2026-10-14
 
 ## 注意事項
 
-- <b>Android 13 以下（含）</b>不一定要走 beta 名單，也可以改用 sideload 安裝 APK（見 [安裝說明](/zh-TW/#install)）。
+- <b>建議透過 Google Play 安裝</b>。其他可能可行的方式：Android 13 以下（含）用 KingInstaller sideload，或在有 AAWireless 轉接器時直接安裝 APK（見 [安裝說明](/zh-TW/#install)）。
 - Play 安裝版與 sideload 的 APK 使用**不同的簽署憑證**，因此無法在同一台裝置上互相更新。要切換管道請先解除安裝現有的那個。

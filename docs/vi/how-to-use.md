@@ -108,24 +108,21 @@ công tắc **Phản chiếu màn hình**.
 
 #### Có viền đen quanh hình
 
-Màn hình điện thoại và màn hình xe có tỉ lệ khung hình khác nhau; nút **Buộc xoay ngang**
-trên màn hình phản chiếu (hoặc **Tự động buộc xoay ngang** trong cài đặt của ứng dụng) thường
-giúp lấp đầy màn hình tốt hơn nhiều. Nếu vẫn còn khe hở mỏng hoặc mép bị cắt, hãy tinh chỉnh bằng
-**Cài đặt → Nâng cao → Điều chỉnh chiều rộng phản chiếu / Điều chỉnh chiều cao phản chiếu** (giá trị pixel dương
-thu vào để hiện lại mép bị cắt, giá trị âm nới ra để lấp dải đen).
+Màn hình điện thoại và màn hình xe có tỉ lệ khung hình khác nhau. Hãy dùng nút **Khóa hướng xoay**
+trên màn hình phản chiếu (hoặc **Tự động khóa hướng xoay** trong cài đặt). Để vừa khít vùng màn hình
+xe có thể dùng, hãy bật **Khớp màn hình điện thoại với xe** trong Tính năng đặc quyền (Shizuku hoặc root).
 
 #### Hình bị kéo giãn hoặc méo sau khi bố cục thay đổi
 
-Hiện tượng này xảy ra khi vùng hiển thị to ra hoặc nhỏ lại ở chế độ chia đôi màn hình. Có hai cài đặt
+Hiện tượng này xảy ra khi vùng hiển thị to ra hoặc nhỏ lại ở chế độ chia đôi màn hình. Xoay điện thoại
+để màn hình chuyển giữa dọc và ngang sẽ đưa hình trở lại bình thường (nếu đang bật **Khóa hướng xoay**, hãy tắt nó trước bằng nút trên màn hình). Cũng có hai cài đặt
 có thể khắc phục:
 
 - Bật **Cài đặt → Nâng cao → Cố định kích thước phản chiếu**. Hình phản chiếu sẽ giữ nguyên kích thước
   thay vì bị méo (một phần có thể bị che khuất). Áp dụng cho mục toàn màn hình
   **ScreenOnAuto**.
 - Bật **Cài đặt → Nâng cao → Tự vẽ hình phản chiếu (thử nghiệm)**. Ứng dụng sẽ tự vẽ
-  hình phản chiếu thay vì để hệ thống co giãn, nên hình không còn bị méo khi chia đôi
-  màn hình, và các mức điều chỉnh chiều rộng/chiều cao hoạt động giống nhau dù bạn đặt
-  trước hay trong khi kết nối. Tính năng này tốn pin hơn một chút và có hiệu lực
+  hình phản chiếu thay vì để hệ thống co giãn, nên hình không còn bị méo khi chia đôi màn hình. Tính năng này tốn pin hơn một chút và có hiệu lực
   vào lần bắt đầu phản chiếu tiếp theo. **Khớp màn hình điện thoại với xe** (Tính năng đặc quyền) khắc phục cùng vấn đề này theo cách khác, và có thể bật cả hai cùng lúc.
 
 #### Google Maps của Android Auto bị đen khi đang phản chiếu

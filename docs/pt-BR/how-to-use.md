@@ -113,25 +113,23 @@ inicie pela chave **Espelhar tela**.
 
 #### Barras pretas ao redor da imagem
 
-As telas do celular e do carro têm proporções diferentes; o botão **Forçar paisagem** na
-tela de espelhamento (ou **Forçar paisagem automaticamente** nas configurações do app)
-costuma preencher a tela muito melhor. Se restarem frestas finas ou bordas cortadas,
-ajuste fino em **Configurações → Avançado → Ajustar largura do espelhamento / Ajustar
-altura do espelhamento** (pixels positivos recolhem uma borda cortada, negativos
-empurram para preencher uma barra preta).
+As telas do celular e do carro têm proporções diferentes. Use o botão **Travar orientação**
+na tela de espelhamento (ou **Travar orientação automaticamente** nas configurações). Para
+preencher exatamente a área útil do carro, ative **Ajustar a tela do telefone à do carro**
+nos Recursos privilegiados (Shizuku ou root).
 
 #### A imagem fica esticada ou distorcida depois que o layout muda
 
-Isso acontece quando a área visível cresce ou encolhe na vista dividida. Duas
-configurações podem resolver:
+Isso acontece quando a área visível cresce ou encolhe na vista dividida. Girar o celular
+para a tela alternar entre retrato e paisagem faz a imagem voltar ao normal (se **Travar orientação** estiver ativo, libere-o antes pelo botão na tela). Duas
+configurações também podem resolver:
 
 - Ative **Configurações → Avançado → Tamanho fixo do espelhamento**. O espelhamento
   mantém o tamanho em vez de distorcer (parte dele pode ficar oculta). Vale para a
   entrada de tela cheia **ScreenOnAuto**.
 - Ative **Configurações → Avançado → Espelhamento desenhado pelo app (experimental)**. O
   app passa a desenhar a imagem do espelhamento em vez de deixar o sistema
-  redimensioná-la, então ela não distorce mais na vista dividida, e os ajustes de
-  largura/altura funcionam igual, definidos antes ou durante a conexão. Consome um pouco
+  redimensioná-la, então ela não distorce mais na vista dividida. Consome um pouco
   mais de bateria e passa a valer no próximo início do espelhamento. **Ajustar a tela do telefone à do carro** (Recursos privilegiados) resolve o mesmo problema de outro jeito, e os dois podem ficar ativos juntos.
 
 #### O Google Maps do Android Auto fica preto durante o espelhamento
