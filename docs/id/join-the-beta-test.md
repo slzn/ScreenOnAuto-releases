@@ -5,7 +5,7 @@ lang: id
 slug: join-the-beta-test
 permalink: /docs/id/join-the-beta-test/
 date: 2026-10-15
-last_modified_at: 2026-10-15
+last_modified_at: 2026-10-27
 ---
 
 # Instal melalui Program Pengujian Google Play

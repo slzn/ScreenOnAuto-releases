@@ -5,7 +5,7 @@ lang: vi
 slug: join-the-beta-test
 permalink: /docs/vi/join-the-beta-test/
 date: 2026-10-15
-last_modified_at: 2026-10-15
+last_modified_at: 2026-10-27
 ---
 
 # Cài đặt qua chương trình thử nghiệm Google Play

@@ -5,7 +5,7 @@ lang: it
 slug: how-to-use
 permalink: /docs/it/how-to-use/
 date: 2026-07-17
-last_modified_at: 2026-10-21
+last_modified_at: 2026-10-27
 ---
 
 # Come si usa

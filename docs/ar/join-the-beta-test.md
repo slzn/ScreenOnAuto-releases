@@ -5,7 +5,7 @@ lang: ar
 slug: join-the-beta-test
 permalink: /docs/ar/join-the-beta-test/
 date: 2026-07-20
-last_modified_at: 2026-10-14
+last_modified_at: 2026-10-27
 ---
 
 # التثبيت عبر برنامج اختبار Google Play

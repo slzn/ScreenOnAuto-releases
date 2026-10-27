@@ -5,7 +5,7 @@ lang: ko
 slug: join-the-beta-test
 permalink: /docs/ko/join-the-beta-test/
 date: 2026-08-14
-last_modified_at: 2026-10-14
+last_modified_at: 2026-10-27
 ---
 
 # Google Play 테스트 프로그램으로 설치

@@ -5,7 +5,7 @@ lang: zh-TW
 slug: join-the-beta-test
 permalink: /docs/zh-TW/join-the-beta-test/
 date: 2026-07-16
-last_modified_at: 2026-10-14
+last_modified_at: 2026-10-27
 ---
 
 # 透過 Google Play 測試計畫安裝
