@@ -160,7 +160,9 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
   (notice content was merged into the cards). Features grid is tiered
   `.grid.core` (3) + `.grid.more` (6), one-sentence cards; Privileged Features is tiered the
   same way: `.grid.core` (3 main: screen off, touch injection, match screen) + `.grid.more`
-  (3 minor: nav buttons, follow day/night, font size). `.grid.priv` was removed (2026-10-27). Keep the landing page short: troubleshooting and long caveats
+  (2 minor: nav buttons, and one "phone settings while mirroring" card covering follow day/night,
+  font size and navigation mode — merged 2026-10-28 rather than growing to 4 cards; a
+  `#privileged .grid.more` rule makes that grid `auto-fit` so the two stretch instead of leaving a column empty). `.grid.priv` was removed (2026-10-27). Keep the landing page short: troubleshooting and long caveats
   belong in How to Use → Troubleshooting, and the landing page links there (2026-09-30).
 - **Carousel** is framed as a head-unit bezel purely via CSS (markup/carousel.js
   unchanged); top 3px of slide images are clipped in CSS (baked-in artifact).
@@ -326,7 +328,7 @@ All fourteen READMEs share one structure (en at the root, the other thirteen in 
 - **Privileged Features**: a one-line intro, the table of the three main features (screen
   off, real touch injection, match the phone screen), an "Also with Shizuku or root" list of
   the minor ones (phone navigation buttons, follow day/night mode *(Android 10+)*, font size
-  while mirroring) with a line saying the phone's own theme and font size come back, and a
+  while mirroring, navigation mode while mirroring *(Android 10+)*) with a line saying the phone's own theme, font size and navigation mode come back, and a
   single line linking to How to Use → Troubleshooting (the Shizuku-over-USB and screen-wake notes live there).
   Since 2026-10-14 that link, here and on the landing pages, targets the troubleshooting
   group's own heading, "Privileged Features (Shizuku / root)" — `#privileged-features-shizuku--root`

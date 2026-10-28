@@ -50,8 +50,9 @@ Juga dengan Shizuku atau root:
 - **Tombol navigasi ponsel** — Kembali / Beranda / Aplikasi terbaru tanpa mengaktifkan Layanan Aksesibilitas; aktifkan di **Tombol layar → Tombol fungsi**
 - **Ikuti mode siang/malam mobil** *(Android 10+)* — Selama pencerminan, ponsel beralih antara tema terang dan gelap bersama Android Auto
 - **Ukuran font saat pencerminan** — Gunakan ukuran font lain di ponsel selama pencerminan
+- **Mode navigasi saat pencerminan** *(Android 10+)* — Selama pencerminan, ponsel beralih ke navigasi gestur, navigasi 2 tombol, atau navigasi 3 tombol
 
-Tema dan ukuran font asli ponsel kembali saat pencerminan berhenti.
+Tema, ukuran font, dan mode navigasi asli ponsel kembali saat pencerminan berhenti.
 
 Shizuku berhenti saat ponsel dicolokkan, atau layar tidak mau menyala lagi? Lihat [Pemecahan masalah](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cara-Menggunakan#fitur-istimewa-shizuku--root).
 

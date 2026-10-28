@@ -198,6 +198,8 @@ section h3 { font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 60
   font-size: 1.05rem; margin-bottom: 6px;
 }
 .grid.more { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; }
+/* the privileged section has only two minor cards: stretch them rather than leave a column empty */
+#privileged .grid.more { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
 .grid.more .card { padding: 12px 14px; }
 .grid.more .card b { font-size: 0.95rem; }
 .grid.more .card p { font-size: 0.88rem; }

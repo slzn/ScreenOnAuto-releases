@@ -50,8 +50,9 @@ Facultatif — nécessite [Shizuku](https://shizuku.rikka.app/) ou root. Sans eu
 - **Boutons de navigation du téléphone** — Retour / Accueil / Apps récentes sans aucun service d'accessibilité activé ; activez-les dans **Boutons à l'écran → Boutons de fonction**
 - **Suivre le mode jour/nuit de la voiture** *(Android 10+)* — Fait passer le téléphone du thème clair au thème sombre en même temps qu'Android Auto pendant la duplication
 - **Taille de police pendant la duplication** — Donne au téléphone une autre taille de police pendant la duplication
+- **Mode de navigation pendant la duplication** *(Android 10+)* — Fait passer le téléphone à la navigation par gestes, à deux boutons ou à trois boutons pendant la duplication
 
-Le thème et la taille de police du téléphone sont rétablis à la fin de la duplication.
+Le thème, la taille de police et le mode de navigation du téléphone sont rétablis à la fin de la duplication.
 
 Shizuku s'est arrêté au branchement dans la voiture, ou l'écran ne se réveille plus ? Consultez [Dépannage](https://github.com/slzn/ScreenOnAuto-releases/wiki/Comment-utiliser#fonctions-privilégiées-shizuku--root).
 

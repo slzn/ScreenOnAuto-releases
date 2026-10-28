@@ -50,8 +50,9 @@ Inoltre, con Shizuku o root:
 - **Pulsanti di navigazione del telefono** — Indietro / Home / App recenti senza alcun Servizio di accessibilità attivo; attivali in **Pulsanti sullo schermo → Pulsanti funzione**
 - **Segui la modalità giorno/notte dell'auto** *(Android 10+)* — Durante il mirroring, il telefono passa dal tema chiaro a quello scuro insieme ad Android Auto
 - **Dimensione carattere durante il mirroring** — Usa una diversa dimensione del carattere sul telefono durante il mirroring
+- **Modalità di navigazione durante il mirroring** *(Android 10+)* — Durante il mirroring, il telefono passa alla navigazione tramite gesti, con due pulsanti o con tre pulsanti
 
-Il tema e la dimensione del carattere del telefono vengono ripristinati al termine del mirroring.
+Il tema, la dimensione del carattere e la modalità di navigazione del telefono vengono ripristinati al termine del mirroring.
 
 Shizuku si è fermato collegando l'auto, o lo schermo non si riattiva? Vedi [Risoluzione dei problemi](https://github.com/slzn/ScreenOnAuto-releases/wiki/Come-si-usa#funzioni-privilegiate-shizuku--root).
 

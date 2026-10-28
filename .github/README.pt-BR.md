@@ -50,8 +50,9 @@ Também com Shizuku ou root:
 - **Botões de navegação do celular** — Voltar / Início / Apps recentes sem nenhum Serviço de acessibilidade ativado; ative-os em **Botões na tela → Botões de função**
 - **Seguir o modo dia/noite do carro** *(Android 10+)* — Alterna o celular entre o tema claro e o escuro junto com o Android Auto durante o espelhamento
 - **Tamanho da fonte durante o espelhamento** — Usa outro tamanho de fonte no celular durante o espelhamento
+- **Modo de navegação durante o espelhamento** *(Android 10+)* — Muda o celular para navegação por gestos, com 2 botões ou com 3 botões durante o espelhamento
 
-O tema e o tamanho de fonte do próprio celular voltam quando o espelhamento termina.
+O tema, o tamanho de fonte e o modo de navegação do próprio celular voltam quando o espelhamento termina.
 
 O Shizuku parou ao conectar no carro, ou a tela não acorda? Veja [Solução de problemas](https://github.com/slzn/ScreenOnAuto-releases/wiki/Como-Usar#recursos-privilegiados-shizuku--root).
 

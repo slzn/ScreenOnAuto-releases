@@ -50,8 +50,9 @@ Also with Shizuku or root:
 - **Phone Navigation Buttons** — Back / Home / Recent apps with no Accessibility Service enabled; turn them on in **On-screen buttons → Control buttons**
 - **Follow the Car's Day/Night Mode** *(Android 10+)* — Switch the phone between light and dark theme with Android Auto while mirroring
 - **Font Size While Mirroring** — Give the phone a different font size while mirroring
+- **Navigation Mode While Mirroring** *(Android 10+)* — Switch the phone to gesture, 2-button or 3-button navigation while mirroring
 
-The phone's own theme and font size come back when mirroring stops.
+The phone's own theme, font size and navigation mode come back when mirroring stops.
 
 Shizuku stopped when you plugged in, or the screen won't wake up? See [Troubleshooting](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use#privileged-features-shizuku--root).
 

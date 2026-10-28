@@ -50,8 +50,9 @@ Shizuku veya root ile ayrıca:
 - **Telefon gezinme düğmeleri** — Hiçbir Erişilebilirlik Hizmeti etkin olmadan Geri / Ana ekran / Son uygulamalar; düğmeleri **Ekran düğmeleri → İşlev düğmeleri** bölümünden açın
 - **Aracın gündüz/gece modunu izle** *(Android 10+)* — Yansıtma sırasında telefon, Android Auto ile birlikte açık ve koyu tema arasında geçiş yapar
 - **Yansıtma sırasında yazı tipi boyutu** — Yansıtma sırasında telefona farklı bir yazı tipi boyutu verin
+- **Yansıtma sırasında gezinme modu** *(Android 10+)* — Yansıtma sırasında telefonu hareketle gezinmeye, 2 düğmeli veya 3 düğmeli gezinmeye geçirin
 
-Yansıtma bittiğinde telefonun kendi teması ve yazı tipi boyutu geri gelir.
+Yansıtma bittiğinde telefonun kendi teması, yazı tipi boyutu ve gezinme modu geri gelir.
 
 Araca takınca Shizuku durdu mu, ya da ekran uyanmıyor mu? [Sorun Giderme](https://github.com/slzn/ScreenOnAuto-releases/wiki/Nasıl-Kullanılır#ayrıcalıklı-özellikler-shizuku--root) bölümüne bakın.
 
