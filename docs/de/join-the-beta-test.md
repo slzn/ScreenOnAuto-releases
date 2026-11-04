@@ -27,7 +27,7 @@ Installiere ScreenOnAuto über die Beta-Tester-Liste von Google Play – **der e
 
 ## So trittst du bei
 
-1. Öffne auf deinem Handy die Anmeldeseite und **melde dich mit dem Google-Konto an, das der Play Store auf deinem Handy nutzt** – nur dieses Konto sieht die App:
+1. Öffne auf deinem Handy die Anmeldeseite und **logge dich mit dem Google-Konto ein, das der Play Store auf deinem Handy nutzt** – nur dieses Konto sieht die App:
 
    <a class="formcta join" href="https://screenonauto.lzn.idv.tw/join/?lang=de"><span class="lab">Anmeldeseite öffnen</span><span class="host">screenonauto.lzn.idv.tw</span></a>
 2. Tippe auf **Für diese Runde anmelden**. Die Seite zählt bis zu deinem Installationsfenster herunter – lass sie geöffnet; die Installations-Buttons erscheinen dort automatisch.

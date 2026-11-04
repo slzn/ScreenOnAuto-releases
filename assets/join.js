@@ -402,7 +402,15 @@
         if (me.state !== "failed") title("fullTitle");
         body(t("fullBody", { mmss: mmss(nextOpen - n), time: clockTime(nextOpen) }));
       } else {
-        if (me.state !== "failed") title("openTitle");
+        // Signed in but never signed up: say so, or the Google sign-in reads as the sign-up.
+        // ("failed" has its own title and "sign up again"; "installable" here signed up for an
+        // earlier round — "not signed up yet" would read as if that sign-up was lost.) The
+        // line is its own paragraph, and it goes while the sign-up is in flight, when the
+        // button already says "Signing you up…".
+        var fresh = me.state === "none";
+        if (fresh) title("signupTitle");
+        else if (me.state !== "failed") title("openTitle");
+        if (fresh && !busy) body(t("notSignedUp"));
         body(t("openBody", {
           left: slots - taken, slots: slots,
           mmss: mmss(rs + COLLECT_MS - n), time: clockTime(nextOpen)
