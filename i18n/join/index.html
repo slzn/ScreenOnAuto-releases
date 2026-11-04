@@ -35,7 +35,7 @@ permalink: /join/
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/assets/styles.css">
-<link rel="stylesheet" href="/assets/join.css?v=3">
+<link rel="stylesheet" href="/assets/join.css?v=4">
 </head>
 <body>
 
@@ -90,6 +90,9 @@ permalink: /join/
     </div>
   </section>
 
+  <!-- Play Store heads-up, swap through install window (join.js renderPrep): outside the action card's live region, which is rebuilt every second. -->
+  <aside class="prep" id="prep" hidden></aside>
+
   <section class="card" id="action" aria-live="polite"></section>
 
   <p class="account" id="account" hidden>
@@ -111,8 +114,8 @@ permalink: /join/
   </div>
 </footer>
 
-<script src="/assets/join-strings.js?v=3"></script>
-<script src="/assets/join.js?v=6"></script>
+<script src="/assets/join-strings.js?v=4"></script>
+<script src="/assets/join.js?v=7"></script>
 <script>
 document.querySelector(".theme-toggle").addEventListener("click", function () {
   var next = document.documentElement.dataset.theme === "light" ? "dark" : "light";

@@ -84,6 +84,49 @@
 .card .hint { color: var(--muted); font-size: 0.88rem; margin: 12px 0 0; }
 .card .notice-line { color: var(--amber); font-size: 0.92rem; margin: 12px 0 0; }
 
+/* Swap-phase heads-up under the action card: what the Play Store may do in the install
+   window ahead. Amber like the swap segment, so it reads as "get ready", not as an error. */
+.prep {
+  margin: 0 0 12px; padding: 16px 22px; border-radius: 14px;
+  border: 1px solid color-mix(in srgb, var(--amber) 45%, var(--border));
+  background: color-mix(in srgb, var(--amber) 7%, var(--card));
+}
+.prep[hidden] { display: none; }
+/* Folded ("Got it") it is just the title row, with an amber "Show tips ⌄" pill to unfold
+   it again; unfolded, the pill is just the arrow, turned up. */
+.prep.folded { padding-block: 10px; }   /* class set by join.js; :has() is missing in older WebViews */
+.prep summary {
+  cursor: pointer; list-style: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}
+.prep summary::-webkit-details-marker { display: none; }
+.prep details[open] summary { margin: 0 0 6px; }
+.prep-toggle {
+  flex: none; display: inline-flex; align-items: center; gap: 4px;
+  color: var(--amber); font-size: 0.85rem; font-weight: 600; white-space: nowrap;
+  border: 1px solid var(--amber); border-radius: 999px; padding-block: 3px; padding-inline: 12px 8px;
+}
+.prep-toggle .icon {
+  width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.2;
+  stroke-linecap: round; stroke-linejoin: round; transition: transform 0.2s;
+}
+.prep summary:hover .prep-toggle { background: color-mix(in srgb, var(--amber) 14%, transparent); }
+.prep details[open] .prep-toggle { padding: 3px; border-color: color-mix(in srgb, var(--amber) 45%, transparent); }
+.prep details[open] .prep-show { display: none; }
+.prep details[open] .prep-toggle .icon { transform: rotate(180deg); }
+.prep h3 {
+  font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 600;
+  font-size: 1rem; margin: 0; color: var(--amber);
+}
+.prep-ok {
+  margin: 12px 0 0; background: none; cursor: pointer; font: inherit; font-size: 0.85rem;
+  color: var(--text); border: 1px solid var(--border); border-radius: 999px; padding: 4px 14px;
+}
+.prep-ok:hover { border-color: var(--amber); }
+.prep p { margin: 0 0 8px; font-size: 0.92rem; }
+.prep ul { margin: 0; padding-inline-start: 1.2em; font-size: 0.92rem; color: var(--muted); }
+.prep li + li { margin-top: 4px; }
+
 .install-steps { list-style: none; margin: 0; padding: 0; counter-reset: step; }
 /* Number | button | description. On a phone the description drops under the button, still
    right of the number — never the number alone on a line of its own. */

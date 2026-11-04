@@ -417,6 +417,83 @@
     if (notice) box.appendChild(el("p", { "class": "notice-line" }, notice));
   }
 
+  // From the tester-list swap (:25–:30, or later while the backend still says "syncing")
+  // through the install window, a box above the action card tells a signed-up visitor what
+  // the Play Store is likely to do (issue #32: "Try again" / "Item not found" until Play
+  // catches up) and what to try — first before they hit it, then while they do.
+  // It lives outside the action card on purpose: the card is an aria-live region rebuilt
+  // every second (its countdown), and screen readers would re-read the whole box each time.
+  // So it is built once and only shown or hidden.
+  // It is a <details>: "Got it" folds it to its title row, whose "Show tips" pill unfolds it
+  // again. The code sets it open or folded only when the phase changes (before the window →
+  // in it), never on a clock boundary, so an extended visitor's tips don't fold at :25:
+  // - before the window it starts open, unless the visitor folded it for this window — the
+  //   fold is stored with the window's start (me.from; the current half hour while syncing),
+  //   so it opens again for the next round. Only the visitor's own clicks are stored, not
+  //   the code's. sessionStorage may be blocked; then the fold lasts until a reload.
+  // - once the window opens it folds, whatever it was, so the install buttons stay near the
+  //   top; the visitor can unfold it from there.
+  var PREP_TIPS = 3;
+  var PREP_KEY = "join.prepFolded";
+  var prepFolded = (function () {
+    try { return Number(sessionStorage.getItem(PREP_KEY)) || 0; } catch (err) { return 0; }
+  })();
+  var prepBox = null;      // the <details>, built on first show
+  var prepPhase = "";      // "before" / "install" / "" (hidden) — when it last set open/folded
+  var prepKey = 0;         // the start of the window the "before" phase is for
+  var prepByUser = false;  // the next toggle event comes from the visitor's click
+  function buildPrep(prep) {
+    var box = el("details");
+    var sum = el("summary");
+    sum.appendChild(el("h3", null, t("prepTitle")));
+    var pill = el("span", { "class": "prep-toggle" });
+    pill.appendChild(el("span", { "class": "prep-show" }, t("prepShow")));
+    pill.insertAdjacentHTML("beforeend",
+      '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>');
+    sum.appendChild(pill);
+    sum.addEventListener("click", function () { prepByUser = true; });
+    box.appendChild(sum);
+    box.appendChild(el("p", null, t("prepIntro")));
+    var list = el("ul");
+    for (var i = 1; i <= PREP_TIPS; i++) list.appendChild(el("li", null, t("prepTip" + i)));
+    box.appendChild(list);
+    var ok = el("button", { "class": "prep-ok", type: "button" }, t("prepGotIt"));
+    ok.addEventListener("click", function () {
+      prepByUser = true; box.open = false;
+      sum.focus();   // the button just folded away; keep keyboard focus where it was
+    });
+    box.appendChild(ok);
+    box.addEventListener("toggle", function () {
+      prep.classList.toggle("folded", !box.open);
+      if (prepByUser && prepPhase === "before") {
+        prepFolded = box.open ? 0 : prepKey;
+        try { sessionStorage.setItem(PREP_KEY, String(prepFolded)); } catch (err) {}
+      }
+      prepByUser = false;
+    });
+    prep.classList.add("folded");   // a new <details> starts closed
+    prep.appendChild(box);
+    return box;
+  }
+  function renderPrep(n) {
+    var prep = document.getElementById("prep");
+    var mine = installing();
+    var show = !!token && !!me &&
+      (mine || syncing(n) || (me.state === "waiting" && !collecting(n)));
+    if (show) {
+      if (!prepBox) prepBox = buildPrep(prep);
+      var phase = mine ? "install" : "before";
+      var key = mine ? 0 : (me.state === "waiting" && me.from) || roundStart(n);
+      if (phase !== prepPhase || key !== prepKey) {
+        prepPhase = phase; prepKey = key;
+        prepBox.open = !mine && prepFolded !== key;
+      }
+    } else {
+      prepPhase = "";
+    }
+    if (prep.hidden === show) prep.hidden = !show;
+  }
+
   // The install window's second row: extend it into the next round. The button stays
   // greyed out until the last EXTEND_MS of the window. extendedUntil is set once they have;
   // after the swap the backend just reports the new, later until (and the button greys
@@ -463,6 +540,7 @@
       Math.floor(n / 1000)].join("|");
     if (!token) key = [0, notice, collecting(n)].join("|");   // keep the sign-in button still
     if (key !== lastKey) { lastKey = key; renderAction(); }
+    renderPrep(n);
   }
 
   // The shared top-right language menu (_includes/tools.html, join mode) links every language

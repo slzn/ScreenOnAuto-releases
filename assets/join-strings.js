@@ -83,7 +83,14 @@ window.JOIN_STRINGS = {
       "flowCapOpen": "Sign up now → closes at {close} → 25 minutes to install from {open}",
       "flowCapIn": "You're in → the list updates at {close} → 25 minutes to install from {open}",
       "flowCapSwap": "Sign-ups are closed and the list is updating → installing opens at {open}",
-      "flowCapInstall": "Your install window is open until {until}"
+      "flowCapInstall": "Your install window is open until {until}",
+      "prepTitle": "Before you install",
+      "prepIntro": "Right after your window opens, the Play Store often doesn't know you're a tester yet. For a few minutes, sometimes longer, it may say “Try again” or “Item not found”. That's normal.",
+      "prepTip1": "If you see that, fully close the Play Store and tap the link again. Try 3–5 times in a row.",
+      "prepTip2": "Still nothing? Wait 5–10 minutes and try again.",
+      "prepTip3": "Running out of time? In the last 5 minutes, tap “Extend to …” to keep your window open for another round.",
+      "prepGotIt": "Got it",
+      "prepShow": "Show tips"
   },
   "zh-TW": {
       "title": "安裝 ScreenOnAuto",
@@ -164,7 +171,14 @@ window.JOIN_STRINGS = {
       "flowCapOpen": "現在報名 → {close} 截止 → {open} 起有 25 分鐘可以安裝",
       "flowCapIn": "你已報名 → {close} 更新名單 → {open} 起有 25 分鐘可以安裝",
       "flowCapSwap": "報名已截止，正在更新名單 → {open} 開放安裝",
-      "flowCapInstall": "你的安裝時間開放到 {until}"
+      "flowCapInstall": "你的安裝時間開放到 {until}",
+      "prepTitle": "安裝前須知",
+      "prepIntro": "安裝時段剛開始時，Play 商店常常還沒認得你是測試人員，可能會有幾分鐘（有時更久）顯示「重試」或「找不到項目」之類的錯誤。這是正常現象。",
+      "prepTip1": "遇到這種情況，請把 Play 商店完全關掉，再點一次連結，連續試 3–5 次。",
+      "prepTip2": "還是不行？等 5–10 分鐘再試一次。",
+      "prepTip3": "時間快不夠了？在最後 5 分鐘點「延長到 …」，就能把安裝時間再延長一輪。",
+      "prepGotIt": "我知道了",
+      "prepShow": "查看提示"
   },
   "pt-BR": {
       "title": "Instalar o ScreenOnAuto",
@@ -245,7 +259,14 @@ window.JOIN_STRINGS = {
       "flowCapOpen": "Inscreva-se agora → fecha às {close} → 25 minutos para instalar a partir das {open}",
       "flowCapIn": "Você está inscrito → a lista é atualizada às {close} → 25 minutos para instalar a partir das {open}",
       "flowCapSwap": "Inscrições encerradas, atualizando a lista → a instalação abre às {open}",
-      "flowCapInstall": "Sua janela de instalação fica aberta até {until}"
+      "flowCapInstall": "Sua janela de instalação fica aberta até {until}",
+      "prepTitle": "Antes de instalar",
+      "prepIntro": "Logo que sua janela abre, a Play Store muitas vezes ainda não sabe que você é testador. Por alguns minutos, às vezes mais, ela pode mostrar um erro (por exemplo, que o item não foi encontrado). Isso é normal.",
+      "prepTip1": "Se isso acontecer, feche a Play Store por completo e toque no link de novo. Tente de 3 a 5 vezes seguidas.",
+      "prepTip2": "Ainda nada? Espere de 5 a 10 minutos e tente de novo.",
+      "prepTip3": "O tempo está acabando? Nos últimos 5 minutos, toque em “Estender até …” para manter sua janela aberta por mais uma rodada.",
+      "prepGotIt": "Entendi",
+      "prepShow": "Ver dicas"
   },
   "es": {
       "title": "Instalar ScreenOnAuto",
@@ -326,7 +347,14 @@ window.JOIN_STRINGS = {
       "flowCapOpen": "Inscríbete ahora → cierra a las {close} → 25 minutos para instalar desde las {open}",
       "flowCapIn": "Ya estás dentro → la lista se actualiza a las {close} → 25 minutos para instalar desde las {open}",
       "flowCapSwap": "Inscripciones cerradas, actualizando la lista → la instalación se abre a las {open}",
-      "flowCapInstall": "Tu ventana de instalación está abierta hasta las {until}"
+      "flowCapInstall": "Tu ventana de instalación está abierta hasta las {until}",
+      "prepTitle": "Antes de instalar",
+      "prepIntro": "Justo al abrirse tu ventana, Play Store a menudo aún no sabe que eres tester. Durante unos minutos, a veces más, puede mostrar un error (por ejemplo, que no se encuentra el elemento). Es normal.",
+      "prepTip1": "Si te pasa, cierra Play Store por completo y vuelve a pulsar el enlace. Inténtalo de 3 a 5 veces seguidas.",
+      "prepTip2": "¿Sigue sin aparecer? Espera de 5 a 10 minutos y vuelve a intentarlo.",
+      "prepTip3": "¿Se te acaba el tiempo? En los últimos 5 minutos, pulsa “Ampliar hasta las …” para mantener tu ventana abierta otra ronda.",
+      "prepGotIt": "Entendido",
+      "prepShow": "Ver consejos"
   },
   "de": {
       "title": "ScreenOnAuto installieren",
@@ -407,7 +435,14 @@ window.JOIN_STRINGS = {
       "flowCapOpen": "Jetzt anmelden → schließt um {close} → ab {open} 25 Minuten zum Installieren",
       "flowCapIn": "Du bist dabei → die Liste wird um {close} aktualisiert → ab {open} 25 Minuten zum Installieren",
       "flowCapSwap": "Anmeldung geschlossen, Liste wird aktualisiert → Installation startet um {open}",
-      "flowCapInstall": "Dein Installationsfenster ist bis {until} offen"
+      "flowCapInstall": "Dein Installationsfenster ist bis {until} offen",
+      "prepTitle": "Vor der Installation",
+      "prepIntro": "Direkt nach dem Start deines Fensters weiß der Play Store oft noch nicht, dass du Tester bist. Ein paar Minuten lang, manchmal länger, zeigt er womöglich einen Fehler (etwa, dass der Artikel nicht gefunden wurde). Das ist normal.",
+      "prepTip1": "Passiert das, schließe den Play Store vollständig und tippe erneut auf den Link. Versuche es 3–5 Mal hintereinander.",
+      "prepTip2": "Immer noch nichts? Warte 5–10 Minuten und versuche es erneut.",
+      "prepTip3": "Wird die Zeit knapp? Tippe in den letzten 5 Minuten auf „Bis … verlängern“, um dein Fenster um eine Runde zu verlängern.",
+      "prepGotIt": "Verstanden",
+      "prepShow": "Tipps anzeigen"
   },
   "fr": {
       "title": "Installer ScreenOnAuto",
@@ -488,7 +523,14 @@ window.JOIN_STRINGS = {
       "flowCapOpen": "Inscrivez-vous maintenant → fermeture à {close} → 25 minutes pour installer à partir de {open}",
       "flowCapIn": "Vous êtes inscrit → la liste est mise à jour à {close} → 25 minutes pour installer à partir de {open}",
       "flowCapSwap": "Inscriptions fermées, mise à jour de la liste → l'installation ouvre à {open}",
-      "flowCapInstall": "Votre fenêtre d'installation est ouverte jusqu'à {until}"
+      "flowCapInstall": "Votre fenêtre d'installation est ouverte jusqu'à {until}",
+      "prepTitle": "Avant d'installer",
+      "prepIntro": "Juste après l'ouverture de votre fenêtre, le Play Store ne sait souvent pas encore que vous êtes testeur. Pendant quelques minutes, parfois plus, il peut afficher une erreur (par exemple, élément introuvable). C'est normal.",
+      "prepTip1": "Dans ce cas, fermez complètement le Play Store et touchez à nouveau le lien. Essayez 3 à 5 fois de suite.",
+      "prepTip2": "Toujours rien ? Attendez 5 à 10 minutes puis réessayez.",
+      "prepTip3": "Le temps presse ? Dans les 5 dernières minutes, touchez « Prolonger jusqu'à … » pour garder votre fenêtre ouverte un tour de plus.",
+      "prepGotIt": "Compris",
+      "prepShow": "Voir les conseils"
   },
   "it": {
       "title": "Installa ScreenOnAuto",
@@ -569,7 +611,14 @@ window.JOIN_STRINGS = {
       "flowCapOpen": "Iscriviti ora → chiude alle {close} → 25 minuti per installare dalle {open}",
       "flowCapIn": "Sei dentro → l'elenco si aggiorna alle {close} → 25 minuti per installare dalle {open}",
       "flowCapSwap": "Iscrizioni chiuse, elenco in aggiornamento → l'installazione si apre alle {open}",
-      "flowCapInstall": "La tua finestra di installazione è aperta fino alle {until}"
+      "flowCapInstall": "La tua finestra di installazione è aperta fino alle {until}",
+      "prepTitle": "Prima di installare",
+      "prepIntro": "Appena si apre la tua finestra, spesso il Play Store non sa ancora che sei un tester. Per qualche minuto, a volte di più, può mostrare un errore (ad esempio, elemento non trovato). È normale.",
+      "prepTip1": "Se succede, chiudi del tutto il Play Store e tocca di nuovo il link. Prova 3-5 volte di fila.",
+      "prepTip2": "Ancora niente? Aspetta 5-10 minuti e riprova.",
+      "prepTip3": "Il tempo sta per scadere? Negli ultimi 5 minuti tocca “Prolunga fino alle …” per tenere aperta la finestra per un altro turno.",
+      "prepGotIt": "Ho capito",
+      "prepShow": "Mostra consigli"
   },
   "tr": {
       "title": "ScreenOnAuto'yu yükleyin",
@@ -650,7 +699,14 @@ window.JOIN_STRINGS = {
       "flowCapOpen": "Şimdi kaydolun → kapanış: {close} → {open} itibarıyla 25 dakika yükleme süresi",
       "flowCapIn": "Kaydınız alındı → liste güncellemesi: {close} → {open} itibarıyla 25 dakika yükleme süresi",
       "flowCapSwap": "Kayıtlar kapandı, liste güncelleniyor → yükleme açılışı: {open}",
-      "flowCapInstall": "Yükleme süreniz şu saate kadar açık: {until}"
+      "flowCapInstall": "Yükleme süreniz şu saate kadar açık: {until}",
+      "prepTitle": "Yüklemeden önce",
+      "prepIntro": "Süreniz başlar başlamaz Play Store çoğu zaman test kullanıcısı olduğunuzu henüz bilmez. Birkaç dakika, bazen daha uzun süre bir hata (örneğin öğenin bulunamadığı) gösterebilir. Bu normaldir.",
+      "prepTip1": "Böyle olursa Play Store'u tamamen kapatıp bağlantıya tekrar dokunun. Art arda 3–5 kez deneyin.",
+      "prepTip2": "Hâlâ bir şey yok mu? 5–10 dakika bekleyip tekrar deneyin.",
+      "prepTip3": "Süreniz azaldı mı? Son 5 dakikada “… saatine kadar uzat” düğmesine dokunarak sürenizi bir tur daha uzatın.",
+      "prepGotIt": "Anladım",
+      "prepShow": "İpuçlarını göster"
   },
   "ar": {
       "title": "ثبِّت ScreenOnAuto",
@@ -731,7 +787,14 @@ window.JOIN_STRINGS = {
       "flowCapOpen": "سجّل الآن ← يُغلق في الساعة {close} ← 25 دقيقة للتثبيت بدءًا من الساعة {open}",
       "flowCapIn": "أنت مسجَّل ← تُحدَّث القائمة في الساعة {close} ← 25 دقيقة للتثبيت بدءًا من الساعة {open}",
       "flowCapSwap": "أُغلق التسجيل وجارٍ تحديث القائمة ← يبدأ التثبيت في الساعة {open}",
-      "flowCapInstall": "نافذة التثبيت الخاصة بك مفتوحة حتى الساعة {until}"
+      "flowCapInstall": "نافذة التثبيت الخاصة بك مفتوحة حتى الساعة {until}",
+      "prepTitle": "قبل التثبيت",
+      "prepIntro": "بعد فتح نافذتك مباشرةً، كثيرًا ما لا يعرف متجر Play بعد أنك مختبِر. لبضع دقائق، وأحيانًا أكثر، قد يعرض خطأً (مثل عدم العثور على العنصر). هذا طبيعي.",
+      "prepTip1": "إذا حدث ذلك، أغلق متجر Play تمامًا وانقر الرابط مرة أخرى. حاول 3–5 مرات متتالية.",
+      "prepTip2": "لا شيء بعد؟ انتظر 5–10 دقائق ثم حاول مرة أخرى.",
+      "prepTip3": "يكاد الوقت ينفد؟ في آخر 5 دقائق، انقر «التمديد حتى …» لإبقاء نافذتك مفتوحة جولة أخرى.",
+      "prepGotIt": "فهمت",
+      "prepShow": "عرض النصائح"
   },
   "ko": {
       "title": "ScreenOnAuto 설치",
@@ -812,7 +875,14 @@ window.JOIN_STRINGS = {
       "flowCapOpen": "지금 신청 → {close} 마감 → {open}부터 25분 동안 설치",
       "flowCapIn": "신청 완료 → {close} 목록 업데이트 → {open}부터 25분 동안 설치",
       "flowCapSwap": "신청 마감, 목록 업데이트 중 → {open}에 설치 열림",
-      "flowCapInstall": "{until}까지 설치할 수 있습니다"
+      "flowCapInstall": "{until}까지 설치할 수 있습니다",
+      "prepTitle": "설치 전 안내",
+      "prepIntro": "설치 시간이 막 시작되면 Play 스토어가 아직 테스터로 인식하지 못하는 경우가 많습니다. 몇 분, 때로는 더 오래 오류(예: 항목을 찾을 수 없음)가 표시될 수 있습니다. 정상적인 현상입니다.",
+      "prepTip1": "이럴 때는 Play 스토어를 완전히 닫고 링크를 다시 누르세요. 3~5번 연달아 시도해 보세요.",
+      "prepTip2": "그래도 안 되나요? 5~10분 기다렸다가 다시 시도하세요.",
+      "prepTip3": "시간이 얼마 안 남았나요? 마지막 5분 동안 ‘…까지 연장’을 누르면 설치 시간을 한 라운드 더 늘릴 수 있습니다.",
+      "prepGotIt": "알겠습니다",
+      "prepShow": "팁 보기"
   },
   "ru": {
       "title": "Установка ScreenOnAuto",
@@ -893,7 +963,14 @@ window.JOIN_STRINGS = {
       "flowCapOpen": "Запишитесь сейчас → запись закроется в {close} → 25 минут на установку с {open}",
       "flowCapIn": "Вы записаны → список обновится в {close} → 25 минут на установку с {open}",
       "flowCapSwap": "Запись закрыта, список обновляется → установка откроется в {open}",
-      "flowCapInstall": "Окно установки открыто до {until}"
+      "flowCapInstall": "Окно установки открыто до {until}",
+      "prepTitle": "Перед установкой",
+      "prepIntro": "Сразу после открытия окна Play Маркет часто ещё не знает, что вы тестировщик. Несколько минут, а иногда и дольше, он может показывать ошибку (например, что объект не найден). Это нормально.",
+      "prepTip1": "В таком случае полностью закройте Play Маркет и снова нажмите ссылку. Попробуйте 3–5 раз подряд.",
+      "prepTip2": "Всё ещё ничего? Подождите 5–10 минут и попробуйте снова.",
+      "prepTip3": "Время на исходе? В последние 5 минут нажмите «Продлить до …», чтобы окно оставалось открытым ещё один раунд.",
+      "prepGotIt": "Понятно",
+      "prepShow": "Показать советы"
   },
   "vi": {
       "title": "Cài đặt ScreenOnAuto",
@@ -974,7 +1051,14 @@ window.JOIN_STRINGS = {
       "flowCapOpen": "Đăng ký ngay → đóng lúc {close} → 25 phút để cài đặt từ {open}",
       "flowCapIn": "Bạn đã có suất → danh sách cập nhật lúc {close} → 25 phút để cài đặt từ {open}",
       "flowCapSwap": "Đã đóng đăng ký và danh sách đang cập nhật → có thể cài đặt từ {open}",
-      "flowCapInstall": "Thời gian cài đặt của bạn mở đến {until}"
+      "flowCapInstall": "Thời gian cài đặt của bạn mở đến {until}",
+      "prepTitle": "Trước khi cài đặt",
+      "prepIntro": "Ngay khi thời gian cài đặt bắt đầu, Cửa hàng Play thường chưa nhận ra bạn là người thử nghiệm. Trong vài phút, đôi khi lâu hơn, nó có thể báo lỗi (ví dụ: không tìm thấy mục). Điều này là bình thường.",
+      "prepTip1": "Nếu gặp tình trạng đó, hãy đóng hẳn Cửa hàng Play rồi nhấn lại liên kết. Thử liên tiếp 3–5 lần.",
+      "prepTip2": "Vẫn chưa được? Đợi 5–10 phút rồi thử lại.",
+      "prepTip3": "Sắp hết giờ? Trong 5 phút cuối, nhấn “Kéo dài đến …” để giữ thời gian cài đặt thêm một vòng.",
+      "prepGotIt": "Tôi đã hiểu",
+      "prepShow": "Xem mẹo"
   },
   "id": {
       "title": "Instal ScreenOnAuto",
@@ -1055,7 +1139,14 @@ window.JOIN_STRINGS = {
       "flowCapOpen": "Daftar sekarang → ditutup pukul {close} → 25 menit untuk menginstal mulai {open}",
       "flowCapIn": "Anda masuk → daftar diperbarui pukul {close} → 25 menit untuk menginstal mulai {open}",
       "flowCapSwap": "Pendaftaran ditutup dan daftar sedang diperbarui → instalasi dibuka pukul {open}",
-      "flowCapInstall": "Waktu instal Anda terbuka sampai {until}"
+      "flowCapInstall": "Waktu instal Anda terbuka sampai {until}",
+      "prepTitle": "Sebelum menginstal",
+      "prepIntro": "Begitu waktu instal Anda dimulai, Play Store sering kali belum tahu bahwa Anda penguji. Selama beberapa menit, kadang lebih lama, Play Store mungkin menampilkan error (misalnya, item tidak ditemukan). Ini normal.",
+      "prepTip1": "Jika itu terjadi, tutup Play Store sepenuhnya lalu ketuk tautannya lagi. Coba 3–5 kali berturut-turut.",
+      "prepTip2": "Masih belum? Tunggu 5–10 menit lalu coba lagi.",
+      "prepTip3": "Waktu hampir habis? Dalam 5 menit terakhir, ketuk “Perpanjang sampai …” agar waktu instal Anda tetap terbuka satu putaran lagi.",
+      "prepGotIt": "Mengerti",
+      "prepShow": "Lihat tips"
   },
   "ja": {
       "title": "ScreenOnAuto をインストール",
@@ -1136,6 +1227,13 @@ window.JOIN_STRINGS = {
       "flowCapOpen": "今すぐ登録 → {close} に締め切り → {open} から 25 分間インストール可能",
       "flowCapIn": "登録済み → {close} にリスト更新 → {open} から 25 分間インストール可能",
       "flowCapSwap": "登録は締め切られ、リストを更新中 → {open} からインストール可能",
-      "flowCapInstall": "インストール時間は {until} まで"
+      "flowCapInstall": "インストール時間は {until} まで",
+      "prepTitle": "インストールの前に",
+      "prepIntro": "インストール時間が始まった直後は、Play ストアがまだあなたをテスターとして認識していないことがよくあります。数分間（ときにはそれ以上）、エラー（アイテムが見つからない、など）が表示されることがありますが、これは正常です。",
+      "prepTip1": "その場合は Play ストアを完全に閉じてから、もう一度リンクをタップしてください。3〜5 回続けて試してみてください。",
+      "prepTip2": "それでも表示されない場合は、5〜10 分待ってからもう一度お試しください。",
+      "prepTip3": "時間が足りなくなりそうなら、最後の 5 分間に「… まで延長」をタップすると、インストール時間をもう 1 ラウンド延ばせます。",
+      "prepGotIt": "わかりました",
+      "prepShow": "ヒントを見る"
   }
 };
