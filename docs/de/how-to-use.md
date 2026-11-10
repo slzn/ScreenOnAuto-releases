@@ -157,8 +157,8 @@ Android-Auto-Verbindungen sind nicht betroffen.
 #### Den Bildschirm nach dem Ausschalten wieder aufwecken
 
 Der Touchscreen wird zusammen mit dem Display abgeschaltet, Tippen auf das Telefon
-bewirkt also nichts. Tippe auf dem Autobildschirm auf die Schaltfläche **Automatisches
-Abdunkeln** – das Umschalten des automatischen Abdunkelns weckt den Bildschirm auf
+bewirkt also nichts. Tippe auf dem Autobildschirm auf die Schaltfläche **Auto-Dimmen** – das Umschalten von
+Auto-Dimmen weckt den Bildschirm auf
 (aktiviere die Schaltfläche zuerst unter **Bildschirm-Schaltflächen →
 Funktionsschaltflächen**; sie ist standardmäßig aus). Oder drücke die Ein-/Aus-Taste des
 Telefons **zweimal**, denn der erste Druck versetzt das System erst in den Ruhezustand.
