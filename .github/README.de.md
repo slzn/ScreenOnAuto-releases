@@ -122,7 +122,7 @@ Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wi
 |---|---|
 | Bildschirmaufnahme (MediaProjection) | Bildschirmspiegelung |
 | Benachrichtigungszugriff | Mediensitzungs-Proxy |
-| Über anderen Apps einblenden | Auto-Dimmen, Ausrichtung sperren & Nachtdimmen |
+| Über anderen Apps anzeigen | Auto-Dimmen, Ausrichtung sperren & Nachtdimmen |
 | Bedienungshilfen-Dienst | Touch-Weiterleitung und die Schaltflächen Zurück / Startseite / Letzte Apps (mit den privilegierten Funktionen nicht nötig) |
 
 > **Tipp:** Um den Berechtigungsdialog für die Bildschirmaufnahme nicht bei jedem Start zu sehen, kannst du die Berechtigung einmalig per ADB erteilen – siehe [Spiegelungsberechtigung per ADB erteilen](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen). Damit wird auch **Nur diese App spiegeln** freigeschaltet.
