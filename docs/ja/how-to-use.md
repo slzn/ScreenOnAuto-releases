@@ -5,7 +5,7 @@ lang: ja
 slug: how-to-use
 permalink: /docs/ja/how-to-use/
 date: 2026-10-15
-last_modified_at: 2026-10-27
+last_modified_at: 2026-11-10
 ---
 
 # 使い方

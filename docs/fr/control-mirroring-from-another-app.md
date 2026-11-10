@@ -5,7 +5,7 @@ lang: fr
 slug: control-mirroring-from-another-app
 permalink: /docs/fr/control-mirroring-from-another-app/
 date: 2026-09-23
-last_modified_at: 2026-09-23
+last_modified_at: 2026-11-10
 ---
 
 # Contrôler la duplication depuis une autre application

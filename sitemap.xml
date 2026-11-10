@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://screenonauto.lzn.idv.tw/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -24,7 +24,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/zh-TW/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/pt-BR/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/es/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -87,7 +87,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/de/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -108,7 +108,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/fr/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -129,7 +129,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/it/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -192,7 +192,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/pt-BR/join-the-beta-test/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
@@ -213,7 +213,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/es/join-the-beta-test/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
@@ -234,7 +234,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/de/join-the-beta-test/</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
@@ -255,7 +255,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/fr/join-the-beta-test/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
@@ -276,7 +276,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/it/join-the-beta-test/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
@@ -318,7 +318,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/zh-TW/how-to-use/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
@@ -381,7 +381,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/de/how-to-use/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
@@ -423,7 +423,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/it/how-to-use/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
@@ -591,7 +591,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/tr/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -612,7 +612,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/tr/join-the-beta-test/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
@@ -675,7 +675,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/ar/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -696,7 +696,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/ko/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -717,7 +717,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/ru/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -738,7 +738,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/vi/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -759,7 +759,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/id/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -780,7 +780,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/ja/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/"/>
@@ -801,7 +801,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/ar/join-the-beta-test/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/join-the-beta-test/"/>
@@ -927,7 +927,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/ar/how-to-use/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
@@ -1032,7 +1032,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/ja/how-to-use/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/how-to-use/"/>
@@ -1095,7 +1095,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/ru/grant-mirror-permission-via-adb/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/grant-mirror-permission-via-adb/"/>
@@ -1284,7 +1284,7 @@
   </url>
   <url>
     <loc>https://screenonauto.lzn.idv.tw/docs/fr/control-mirroring-from-another-app/</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/control-mirroring-from-another-app/"/>
