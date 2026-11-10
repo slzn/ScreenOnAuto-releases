@@ -56,3 +56,39 @@ jobs:
           git commit -m 'Sync page dates with git' \
                      -m 'Automated by .github/workflows/sync-content-dates.yml.'
           git push
+
+  # Ping IndexNow (Bing, Yandex, Seznam, Naver, ...) with the pages this push
+  # changed, once GitHub Pages has deployed it, so the engines fetch the new
+  # content rather than the old. Google ignores IndexNow and keeps using
+  # sitemap.xml. The bot's date-only commit above is not a push by a person,
+  # and tools/indexnow.py ignores date-only diffs anyway, so nothing is sent twice.
+  indexnow:
+    if: github.event_name == 'push' && github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Wait for GitHub Pages to deploy this commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Look for this commit among recent builds rather than at "latest":
+          # a later push (or the date-sync commit) may already have overtaken it.
+          for i in $(seq 1 60); do
+            status=$(gh api "repos/${{ github.repository }}/pages/builds?per_page=10" \
+              --jq '[.[] | select(.commit == "${{ github.sha }}")][0].status // "pending"')
+            echo "attempt $i: $status"
+            [ "$status" = built ] && exit 0
+            [ "$status" = errored ] && { echo "Pages build failed"; exit 1; }
+            sleep 10
+          done
+          echo "Pages did not deploy ${{ github.sha }} within 10 minutes"
+          exit 1
+
+      - name: Submit changed pages
+        run: python3 tools/indexnow.py "${{ github.event.before }}" "${{ github.sha }}"

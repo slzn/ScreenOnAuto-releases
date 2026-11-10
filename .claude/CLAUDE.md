@@ -112,7 +112,11 @@ ScreenOnAuto-releases/
 ├── _layouts/doc.html       ← doc layout: SEO head, hreflang (Liquid, from slug+lang), TechArticle JSON-LD
 ├── images/                 ← site images (incl. how-to-use screenshots)
 ├── robots.txt / sitemap.xml← this site's own SEO files (sitemap: 70 URLs)
-├── tools/                  ← excluded from the site in _config.yml; sync-content-dates.py (run by CI) and bold_check.py (lists * / ** that
+├── <32-hex>.txt            ← IndexNow key file; must sit at the site root to cover the whole host
+│                             (the key is public by design; it is also KEY in tools/indexnow.py)
+├── tools/                  ← excluded from the site in _config.yml; sync-content-dates.py (run by CI), indexnow.py
+│                             (run by CI after Pages deploys a push: submits the pages whose content changed to
+│                             IndexNow — Bing etc., not Google; `--dry-run` to preview), and bold_check.py (lists * / ** that
 │                             GitHub won't render as emphasis — run it on CJK wiki/README copy: `tools/bold_check.py <files>`)
 ├── .claude/CLAUDE.md       ← This file (tracked; Jekyll skips dot-dirs, so it is
 │                             never published as a page)
