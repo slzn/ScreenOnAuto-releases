@@ -79,15 +79,15 @@ Works on every Android version, and Android Auto accepts it with no extra setup 
 
 #### Step 1 — Install KingInstaller
 
-1. Go to [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases) and download the latest `KingInstaller.apk`
+1. Go to [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases/latest) and download the latest `KingInstaller-*.apk`
 2. Allow your browser or file manager to **install unknown apps** — Android asks the first time you open an APK
-3. Open `KingInstaller.apk` and tap **Install**
+3. Open `KingInstaller-*.apk` and tap **Install**
 
 #### Step 2 — Install ScreenOnAuto via KingInstaller
 
 1. Download the latest `ScreenOnAuto-*.apk` from the [latest release](https://github.com/slzn/ScreenOnAuto-releases/releases/latest)
-2. Open **KingInstaller**, tap the **folder icon**, and select the downloaded APK
-3. Tap **Install** — KingInstaller will install it as if it came from Google Play Store
+2. Open **KingInstaller**, tap the button to select a file, and choose the downloaded APK
+3. Tap **Install as king** — KingInstaller will install it as if it came from Google Play Store
 
 ### Alternative — with an AAWireless dongle
 

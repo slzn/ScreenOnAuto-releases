@@ -27,11 +27,11 @@
 - **Ruhezustand verhindern** – Verhindert, dass sich der Telefonbildschirm während der Spiegelung abschaltet
 - **Stopp bei Trennung** – Beendet die Spiegelung automatisch, wenn Android Auto getrennt wird
 - **App automatisch starten** – Öffnet beim Start der Spiegelung automatisch eine gewählte App auf dem Telefon, wenn Android Auto verbunden ist
-- **Nur diese App spiegeln** *(Android 15+)* – Sendet nur die automatisch gestartete App ans Auto statt des ganzen Bildschirms, der Rest des Telefons bleibt privat. Erfordert die Bildschirmaufnahme-Berechtigung, [vorab per ADB erteilt](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen); der Autobildschirm bleibt leer, solange du diese App verlässt
+- **Nur diese App spiegeln** *(Android 15+)* – Sendet nur die automatisch gestartete App ans Auto statt des ganzen Bildschirms, der Rest des Telefons bleibt privat. Erfordert die Bildschirmaufnahme-Berechtigung, [vorab per ADB erteilt](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen); der Autobildschirm bleibt leer, solange du dich nicht in dieser App befindest
 - **Ausrichtung sperren** – Sperrt das Telefon während der Spiegelung im Querformat (in beide Richtungen) oder Hochformat oder passt es an die Form des Autobildschirms an; startet automatisch beim Verbinden, mit Umschalter auf dem Bildschirm
-- **App-Verknüpfungen** – Füge dem Android-Auto-Spiegelbildschirm bis zu 4 Schnellstart-Tasten hinzu; lange drücken, um den im Auto angezeigten Text zu ändern
-- **Bildschirmtasten** – Blende die Tasten des Spiegelbildschirms auf der Seite Bildschirm-Schaltflächen einzeln ein oder aus: Ausrichtung sperren, Automatisches Abdunkeln, Nachtdimmen sowie Zurück / Startbildschirm / Letzte Apps (bis zu 4 gleichzeitig)
-- **Tastenposition** – Richte die Tasten auf dem Legacy-Spiegel links aus, halte sie von der Navigationsleiste des Telefons fern oder lege ihren Abstand zu den Rändern fest (auch für die Verknüpfungsleiste), damit die eigenen Bedienelemente des Autodisplays frei bleiben
+- **App-Verknüpfungen** – Füge dem Android-Auto-Spiegelbildschirm bis zu 4 Schnellstart-Schaltflächen hinzu; lange drücken, um den im Auto angezeigten Text zu ändern
+- **Bildschirm-Schaltflächen** – Blende die Schaltflächen des Spiegelbildschirms auf der Seite Bildschirm-Schaltflächen einzeln ein oder aus: Ausrichtung sperren, Automatisches Abdunkeln, Nachtdimmen sowie Zurück / Startbildschirm / Letzte Apps (bis zu 4 gleichzeitig)
+- **Position der Schaltflächen** – Richte die Schaltflächen auf dem Legacy-Spiegel links aus, halte sie von der Navigationsleiste des Telefons fern oder lege ihren Abstand zu den Rändern fest (auch für die Verknüpfungsleiste), damit die eigenen Bedienelemente des Autodisplays frei bleiben
 - **Spiegelungsanpassung** – Passe Breite/Höhe der Spiegelung in den erweiterten Einstellungen an, falls die Head-Unit die Ränder abschneidet; die dortige **Selbstgezeichnete Spiegelung** (experimentell) verhindert außerdem die Verzerrung in der geteilten Ansicht
 - **Touch-Weiterleitung** *(experimentell)* – Tippe, scrolle, wische und zoome mit zwei Fingern auf dem Android-Auto-Display, um das Telefon zu steuern
 
@@ -47,7 +47,7 @@ Optional – erfordert [Shizuku](https://shizuku.rikka.app/) oder Root. Ohne bei
 
 Außerdem mit Shizuku oder Root:
 
-- **Telefon-Navigationstasten** – Zurück / Startbildschirm / Letzte Apps ohne aktivierten Bedienungshilfen-Dienst; aktiviere sie unter **Bildschirm-Schaltflächen → Funktionsschaltflächen**
+- **Navigationsschaltflächen des Telefons** – Zurück / Startbildschirm / Letzte Apps ohne aktivierten Bedienungshilfen-Dienst; aktiviere sie unter **Bildschirm-Schaltflächen → Funktionsschaltflächen**
 - **Tag-/Nachtmodus des Autos folgen** *(Android 10+)* – Schaltet das Telefon während der Spiegelung zusammen mit Android Auto zwischen hellem und dunklem Design um
 - **Schriftgröße während der Spiegelung** – Gibt dem Telefon während der Spiegelung eine andere Schriftgröße
 - **Navigationsmodus während der Spiegelung** *(Android 10+)* – Stellt das Telefon während der Spiegelung auf Gestensteuerung oder Bedienung über 2 bzw. 3 Schaltflächen um
@@ -79,15 +79,15 @@ Funktioniert auf jeder Android-Version, und Android Auto akzeptiert die App ohne
 
 #### Schritt 1 – KingInstaller installieren
 
-1. Gehe zu [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases) und lade die neueste `KingInstaller.apk` herunter
+1. Gehe zu [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases/latest) und lade die neueste `KingInstaller-*.apk` herunter
 2. Erlaube deinem Browser oder Dateimanager, **unbekannte Apps zu installieren** – Android fragt beim ersten Öffnen einer APK danach
-3. `KingInstaller.apk` öffnen und auf **Installieren** tippen
+3. `KingInstaller-*.apk` öffnen und auf **Installieren** tippen
 
 #### Schritt 2 – ScreenOnAuto über KingInstaller installieren
 
 1. Lade die neueste `ScreenOnAuto-*.apk` von der [aktuellen Version](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) herunter
-2. Öffne **KingInstaller**, tippe auf das **Ordner-Symbol** und wähle die heruntergeladene APK
-3. Tippe auf **Installieren** – KingInstaller installiert sie, als käme sie aus dem Google Play Store
+2. Öffne **KingInstaller**, tippe auf die Schaltfläche zur Dateiauswahl und wähle die heruntergeladene APK
+3. Tippe auf **Als King installieren** – KingInstaller installiert sie, als käme sie aus dem Google Play Store
 
 ### Alternative – mit einem AAWireless-Dongle
 
@@ -111,7 +111,7 @@ Dort sollten diese **zwei** ScreenOnAuto-Einträge erscheinen:
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Spiegelt den Telefonbildschirm im Vollbild – ersetzt den Kartenbereich |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Spiegelt den Telefonbildschirm über den Legacy-Projektionspfad – kann neben der Karte angezeigt werden |
 
-Ältere Android-Auto-Versionen zeigen zusätzlich einen dritten Eintrag, **ScreenOnAuto Media Controller**. Fehlt er, ist das normal – die Mediensteuerung funktioniert trotzdem.
+Ältere Android-Auto-Versionen zeigen zusätzlich einen dritten Eintrag, **ScreenOnAuto Mediensteuerung**. Fehlt er, ist das normal – die Mediensteuerung funktioniert trotzdem.
 Fehlt einer der **beiden** Einträge oben, installiere neu – per KingInstaller beim Sideload, oder lass die Play-Installation fertig werden – und öffne Android Auto erneut. Prüfe beim AAWireless-Weg, ob Developer Mode und Unbekannte Quellen noch aktiviert sind.
 
 Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wiki/Verwendung)** zum Starten der Spiegelung im Auto.
@@ -123,7 +123,7 @@ Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wi
 | Bildschirmaufnahme (MediaProjection) | Bildschirmspiegelung |
 | Benachrichtigungszugriff | Mediensitzungs-Proxy |
 | Über anderen Apps einblenden | Automatisches Abdunkeln, Ausrichtung sperren & Nachtdimmen |
-| Bedienungshilfen-Dienst | Touch-Weiterleitung und die Tasten Zurück / Startseite / Letzte Apps (mit den privilegierten Funktionen nicht nötig) |
+| Bedienungshilfen-Dienst | Touch-Weiterleitung und die Schaltflächen Zurück / Startseite / Letzte Apps (mit den privilegierten Funktionen nicht nötig) |
 
 > **Tipp:** Um den Berechtigungsdialog für die Bildschirmaufnahme nicht bei jedem Start zu sehen, kannst du die Berechtigung einmalig per ADB erteilen – siehe [Spiegelungsberechtigung per ADB erteilen](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen). Damit wird auch **Nur diese App spiegeln** freigeschaltet.
 
@@ -142,7 +142,7 @@ Dieses Projekt ist nicht mit Google verbunden und wird von Google weder unterst�
 
 ## Besonderer Dank
 
-- **Jurek Harla** — hat die Symbole von ScreenOnAuto, ScreenOnAuto (Legacy) und Media Controller neu gestaltet, damit sie in die runde Symbolform von Android passen (v1.9.2).
+- **Jurek Harla** — hat die Symbole von ScreenOnAuto, ScreenOnAuto (Legacy) und Mediensteuerung neu gestaltet, damit sie in die runde Symbolform von Android passen (v1.9.2).
 
 ## Unterstützen
 

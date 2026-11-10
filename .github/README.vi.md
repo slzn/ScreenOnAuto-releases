@@ -79,15 +79,15 @@ Dùng được trên mọi phiên bản Android, và Android Auto chấp nhận 
 
 #### Bước 1 — Cài KingInstaller
 
-1. Vào [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases) và tải về `KingInstaller.apk` mới nhất
+1. Vào [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases/latest) và tải về `KingInstaller-*.apk` mới nhất
 2. Cho phép trình duyệt hoặc trình quản lý tệp **cài ứng dụng không rõ nguồn gốc** — Android sẽ hỏi ở lần đầu bạn mở một tệp APK
-3. Mở `KingInstaller.apk` và nhấn **Cài đặt**
+3. Mở `KingInstaller-*.apk` và nhấn **Cài đặt**
 
 #### Bước 2 — Cài ScreenOnAuto bằng KingInstaller
 
 1. Tải `ScreenOnAuto-*.apk` mới nhất từ [bản phát hành mới nhất](https://github.com/slzn/ScreenOnAuto-releases/releases/latest)
-2. Mở **KingInstaller**, nhấn **biểu tượng thư mục** và chọn tệp APK vừa tải
-3. Nhấn **Install** — KingInstaller sẽ cài ứng dụng như thể nó đến từ Cửa hàng Google Play
+2. Mở **KingInstaller**, nhấn nút chọn tệp và chọn tệp APK vừa tải
+3. Nhấn **Install as king** — KingInstaller sẽ cài ứng dụng như thể nó đến từ Cửa hàng Google Play
 
 ### Cách khác — dùng bộ chuyển AAWireless
 

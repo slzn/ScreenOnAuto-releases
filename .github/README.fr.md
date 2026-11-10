@@ -27,7 +27,7 @@
 - **Empêcher la mise en veille** — Empêche l'écran du téléphone de se mettre en veille pendant la duplication
 - **Arrêter à la déconnexion** — Arrête automatiquement la duplication à la déconnexion d'Android Auto
 - **Lancer une app automatiquement** — Ouvre automatiquement une app choisie sur le téléphone quand la duplication démarre et qu'Android Auto est connecté
-- **Dupliquer seulement cette application** *(Android 15+)* — Envoie à la voiture uniquement l'application lancée automatiquement au lieu de tout l'écran, le reste du téléphone reste privé. Nécessite la permission de capture d'écran [accordée au préalable via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Accorder-la-permission-de-duplication-via-ADB) ; l'écran de la voiture reste vide tant que vous quittez cette application
+- **Dupliquer seulement cette application** *(Android 15+)* — Envoie à la voiture uniquement l'application lancée automatiquement au lieu de tout l'écran, le reste du téléphone reste privé. Nécessite la permission de capture d'écran [accordée au préalable via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Accorder-la-permission-de-duplication-via-ADB) ; l'écran de la voiture reste vide tant que vous n'êtes pas dans cette application
 - **Verrouiller l'orientation** — Verrouille le téléphone en paysage (dans les deux sens) ou en portrait pendant la duplication, ou suit la forme de l'écran de la voiture ; s'active à la connexion, avec un bouton à l'écran
 - **Raccourcis de lancement** — Ajoutez jusqu'à 4 boutons de lancement rapide d'apps sur l'écran de duplication Android Auto ; appui long sur l'un d'eux pour changer le texte affiché dans la voiture
 - **Boutons à l'écran** — Affichez ou masquez individuellement les boutons de l'écran de duplication sur la page Boutons à l'écran : Verrouiller l'orientation, Atténuer, Atténuation de nuit, et Retour / Accueil / Apps récentes du téléphone (4 au maximum)
@@ -79,15 +79,15 @@ Fonctionne sur toutes les versions d'Android, et Android Auto l'accepte sans auc
 
 #### Étape 1 — Installer KingInstaller
 
-1. Allez sur [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases) et téléchargez le dernier `KingInstaller.apk`
+1. Allez sur [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases/latest) et téléchargez le dernier `KingInstaller-*.apk`
 2. Autorisez votre navigateur ou gestionnaire de fichiers à **installer des applis inconnues** — Android le demande la première fois que vous ouvrez un APK
-3. Ouvrez `KingInstaller.apk` et touchez **Installer**
+3. Ouvrez `KingInstaller-*.apk` et touchez **Installer**
 
 #### Étape 2 — Installer ScreenOnAuto via KingInstaller
 
 1. Téléchargez le dernier `ScreenOnAuto-*.apk` depuis la [dernière version](https://github.com/slzn/ScreenOnAuto-releases/releases/latest)
-2. Ouvrez **KingInstaller**, touchez l'**icône de dossier** et sélectionnez l'APK téléchargé
-3. Touchez **Installer** — KingInstaller l'installera comme s'il provenait du Google Play Store
+2. Ouvrez **KingInstaller**, touchez le bouton pour choisir un fichier et sélectionnez l'APK téléchargé
+3. Touchez **Installer en tant que king** — KingInstaller l'installera comme s'il provenait du Google Play Store
 
 ### Alternative — avec un dongle AAWireless
 
@@ -111,7 +111,7 @@ Vous devriez voir ces **deux** entrées ScreenOnAuto :
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Duplique l'écran du téléphone en plein écran — remplace la zone de carte |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Duplique l'écran via le chemin de projection Legacy — peut s'afficher côte à côte avec la carte |
 
-Les anciennes versions d'Android Auto affichent aussi une troisième entrée, **ScreenOnAuto Media Controller**. Si vous ne la voyez pas, c'est normal — le contrôle multimédia fonctionne quand même.
+Les anciennes versions d'Android Auto affichent aussi une troisième entrée, **ScreenOnAuto Contrôleur multimédia**. Si vous ne la voyez pas, c'est normal — le contrôle multimédia fonctionne quand même.
 S'il manque l'une des **deux** entrées ci-dessus, réinstallez — via KingInstaller pour un sideload, ou laissez l'installation Play se terminer — puis rouvrez Android Auto. Avec la méthode AAWireless, vérifiez que Developer Mode et Sources inconnues sont toujours activés.
 
 Prêt ? Consultez **[Comment utiliser](https://github.com/slzn/ScreenOnAuto-releases/wiki/Comment-utiliser)** pour démarrer la duplication dans la voiture.
@@ -142,7 +142,7 @@ Ce projet n'est ni affilié à, ni approuvé, ni sponsorisé par Google. Android
 
 ## Remerciements
 
-- **Jurek Harla** — a repensé les icônes de ScreenOnAuto, ScreenOnAuto (Legacy) et Media Controller pour qu’elles tiennent dans la forme ronde des icônes Android (v1.9.2).
+- **Jurek Harla** — a repensé les icônes de ScreenOnAuto, ScreenOnAuto (Legacy) et Contrôleur multimédia pour qu’elles tiennent dans la forme ronde des icônes Android (v1.9.2).
 
 ## Soutenir
 

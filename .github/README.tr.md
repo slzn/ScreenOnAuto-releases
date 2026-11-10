@@ -79,15 +79,15 @@ Tüm Android sürümlerinde çalışır ve Android Auto uygulamayı ek bir ayar 
 
 #### 1. Adım — KingInstaller'ı kurun
 
-1. [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases) sayfasına gidin ve en yeni `KingInstaller.apk` dosyasını indirin
+1. [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases/latest) sayfasına gidin ve en yeni `KingInstaller-*.apk` dosyasını indirin
 2. Tarayıcınızın veya dosya yöneticinizin **bilinmeyen uygulamaları yüklemesine** izin verin — Android bunu bir APK'yı ilk açtığınızda sorar
-3. `KingInstaller.apk` dosyasını açın ve **Yükle**'ye dokunun
+3. `KingInstaller-*.apk` dosyasını açın ve **Yükle**'ye dokunun
 
 #### 2. Adım — ScreenOnAuto'yu KingInstaller ile kurun
 
 1. En yeni `ScreenOnAuto-*.apk` dosyasını [en son sürümden](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) indirin
-2. **KingInstaller**'ı açın, **klasör simgesine** dokunun ve indirdiğiniz APK'yı seçin
-3. **Yükle**'ye dokunun — KingInstaller uygulamayı Google Play Store'dan gelmiş gibi kurar
+2. **KingInstaller**'ı açın, dosya seçme düğmesine dokunun ve indirdiğiniz APK'yı seçin
+3. **Install as king**'e dokunun — KingInstaller uygulamayı Google Play Store'dan gelmiş gibi kurar
 
 ### Alternatif — AAWireless adaptörüyle
 
@@ -111,7 +111,7 @@ Telefonunuzda **Ayarlar → Bağlı cihazlar → Android Auto → Başlatıcıy�
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Telefon ekranını tam ekran yansıtır — tam ekran görünüm için harita alanının yerini alır |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Telefon ekranını Legacy projeksiyon yoluyla yansıtır — haritayla yan yana gösterilebilir |
 
-Eski Android Auto sürümleri üçüncü bir öğe de gösterir: **ScreenOnAuto Media Controller**. Görmüyorsanız bu normaldir — medya kontrolü yine çalışır.
+Eski Android Auto sürümleri üçüncü bir öğe de gösterir: **ScreenOnAuto Medya Denetleyicisi**. Görmüyorsanız bu normaldir — medya kontrolü yine çalışır.
 Yukarıdaki **iki** öğeden biri eksikse yeniden yükleyin — sideload için KingInstaller ile, Play için kurulumun bitmesini bekleyin — ve Android Auto'yu yeniden açın. AAWireless yönteminde Developer Mode ve Bilinmeyen kaynaklar ayarlarının hâlâ açık olduğunu kontrol edin.
 
 Hazır mısınız? Arabada yansıtmayı başlatmak için **[Nasıl Kullanılır](https://github.com/slzn/ScreenOnAuto-releases/wiki/Nasıl-Kullanılır)** kılavuzuna bakın.
@@ -142,7 +142,7 @@ Bu proje Google ile bağlantılı değildir; Google tarafından onaylanmamış v
 
 ## Özel Teşekkürler
 
-- **Jurek Harla** — ScreenOnAuto, ScreenOnAuto (Legacy) ve Media Controller simgelerini Android’in yuvarlak simge biçimine sığacak şekilde yeniden tasarladı (v1.9.2).
+- **Jurek Harla** — ScreenOnAuto, ScreenOnAuto (Legacy) ve Medya Denetleyicisi simgelerini Android’in yuvarlak simge biçimine sığacak şekilde yeniden tasarladı (v1.9.2).
 
 ## Destek
 

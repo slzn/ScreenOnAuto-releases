@@ -33,7 +33,7 @@ ScreenOnAuto'yu Google Play beta test kullanıcısı listesi üzerinden yükleyi
    <a class="formcta join" href="https://screenonauto.lzn.idv.tw/join/?lang=tr"><span class="lab">Kayıt sayfasını aç</span><span class="host">screenonauto.lzn.idv.tw</span></a>
 2. **Bu tura kaydolun** düğmesine dokunun. Sayfa, yükleme sürenize kadar geri sayar — sayfayı açık tutun; yükleme düğmeleri orada otomatik olarak görünür.
 3. Süreniz başladığında **Test kullanıcısı ol** düğmesine dokunup daveti kabul edin. Ardından sayfada bir indirme bağlantısı görünür: ona dokunun ve **ScreenOnAuto**'yu normal şekilde yükleyin. Play Store uygulamayı göstermiyorsa aşağıdaki **Play Store Uygulamayı Göstermiyorsa** bölümüne bakın.
-4. **Yükledikten sonra** **Android Auto → Başlatıcıyı özelleştir**'i açın ve **iki** ScreenOnAuto girişini gördüğünüzü doğrulayın (tam ekran ve Legacy). Üçüncü bir giriş olan **Media Controller** yalnızca eski Android Auto sürümlerinde görünür; yeni sürümlerde tasarım gereği görünmez ve bu normaldir. Tam liste ve bu iki girişten biri eksik olursa yapılacaklar için [Android Auto'da doğrulama](/tr/#verify) bölümüne bakın.
+4. **Yükledikten sonra** **Android Auto → Başlatıcıyı özelleştir**'i açın ve **iki** ScreenOnAuto girişini gördüğünüzü doğrulayın (tam ekran ve Legacy). Üçüncü bir giriş olan **Medya Denetleyicisi** yalnızca eski Android Auto sürümlerinde görünür; yeni sürümlerde tasarım gereği görünmez ve bu normaldir. Tam liste ve bu iki girişten biri eksik olursa yapılacaklar için [Android Auto'da doğrulama](/tr/#verify) bölümüne bakın.
 5. Hazırsınız — arabada yansıtmayı başlatmak için **[Nasıl Kullanılır](/docs/tr/how-to-use/)** kılavuzuna bakın.
 
 ### Play Store Uygulamayı Göstermiyorsa

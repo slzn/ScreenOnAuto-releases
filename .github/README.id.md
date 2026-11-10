@@ -27,7 +27,7 @@
 - **Cegah layar tidur** — Mencegah layar ponsel tidur selama pencerminan
 - **Hentikan saat terputus** — Menghentikan pencerminan secara otomatis saat Android Auto terputus
 - **Luncurkan aplikasi otomatis** — Membuka aplikasi pilihan di ponsel secara otomatis saat pencerminan dimulai dan Android Auto terhubung
-- **Cerminkan aplikasi ini saja** *(Android 15+)* — Hanya mengirim aplikasi yang diluncurkan otomatis ke mobil, bukan seluruh layar, sehingga bagian lain ponsel tetap privat. Memerlukan izin Perekaman layar yang [diberikan lebih dulu lewat ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Berikan-Izin-Pencerminan-melalui-ADB); layar mobil menjadi kosong selama Anda meninggalkan aplikasi tersebut
+- **Cerminkan aplikasi ini saja** *(Android 15+)* — Hanya mengirim aplikasi yang diluncurkan otomatis ke mobil, bukan seluruh layar, sehingga bagian lain ponsel tetap privat. Memerlukan izin Perekaman layar yang [diberikan lebih dulu lewat ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Berikan-Izin-Pencerminan-melalui-ADB); layar mobil menjadi kosong selama Anda berada di luar aplikasi tersebut
 - **Kunci orientasi** — Mengunci ponsel ke lanskap (ke kedua arah) atau potret selama pencerminan, atau menyesuaikan dengan bentuk layar mobil; dimulai otomatis saat terhubung, dengan sakelar di layar
 - **Pintasan peluncuran** — Tambahkan hingga 4 tombol peluncur aplikasi ke layar pencerminan Android Auto; tekan lama salah satunya untuk mengubah teks yang ditampilkan di mobil
 - **Tombol layar** — Tampilkan atau sembunyikan tombol di layar pencerminan satu per satu di halaman Tombol layar: Kunci orientasi, Peredupan otomatis, Peredupan malam, serta Kembali / Beranda / Aplikasi terbaru ponsel (hingga 4 sekaligus)
@@ -79,15 +79,15 @@ Berfungsi di semua versi Android, dan Android Auto langsung menerimanya tanpa pe
 
 #### Langkah 1 — Instal KingInstaller
 
-1. Buka [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases) dan unduh `KingInstaller.apk` terbaru
+1. Buka [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases/latest) dan unduh `KingInstaller-*.apk` terbaru
 2. Izinkan browser atau pengelola file Anda untuk **menginstal aplikasi yang tidak dikenal** — Android menanyakannya saat pertama kali Anda membuka APK
-3. Buka `KingInstaller.apk` lalu ketuk **Instal**
+3. Buka `KingInstaller-*.apk` lalu ketuk **Instal**
 
 #### Langkah 2 — Instal ScreenOnAuto lewat KingInstaller
 
 1. Unduh `ScreenOnAuto-*.apk` terbaru dari [rilis terbaru](https://github.com/slzn/ScreenOnAuto-releases/releases/latest)
-2. Buka **KingInstaller**, ketuk **ikon folder**, lalu pilih APK yang sudah diunduh
-3. Ketuk **Install** — KingInstaller akan menginstalnya seolah-olah berasal dari Google Play Store
+2. Buka **KingInstaller**, ketuk tombol pilih file, lalu pilih APK yang sudah diunduh
+3. Ketuk **Install as king** — KingInstaller akan menginstalnya seolah-olah berasal dari Google Play Store
 
 ### Alternatif — dengan dongle AAWireless
 

@@ -79,15 +79,15 @@ Shizuku 또는 루트로 쓸 수 있는 기능이 더 있습니다:
 
 #### 1단계 — KingInstaller 설치
 
-1. [KingInstaller 릴리스](https://github.com/fcaronte/KingInstaller/releases)에서 최신 `KingInstaller.apk`를 내려받습니다
+1. [KingInstaller 릴리스](https://github.com/fcaronte/KingInstaller/releases/latest)에서 최신 `KingInstaller-*.apk`를 내려받습니다
 2. 브라우저나 파일 관리자에서 **알 수 없는 앱 설치**를 허용하세요 — APK를 처음 열 때 Android가 물어봅니다
-3. `KingInstaller.apk`를 열고 **설치**를 누릅니다
+3. `KingInstaller-*.apk`를 열고 **설치**를 누릅니다
 
 #### 2단계 — KingInstaller로 ScreenOnAuto 설치
 
 1. [최신 릴리스](https://github.com/slzn/ScreenOnAuto-releases/releases/latest)에서 최신 `ScreenOnAuto-*.apk`를 내려받습니다
-2. **KingInstaller**를 열고 **폴더 아이콘**을 눌러 내려받은 APK를 선택합니다
-3. **설치**를 누릅니다 — KingInstaller가 Google Play 스토어에서 온 것처럼 설치해 줍니다
+2. **KingInstaller**를 열고 파일 선택 버튼을 눌러 내려받은 APK를 선택합니다
+3. **Install as king**을 누릅니다 — KingInstaller가 Google Play 스토어에서 온 것처럼 설치해 줍니다
 
 ### 대안 — AAWireless 동글 사용
 

@@ -145,7 +145,7 @@ Android Auto stesso e l'app non può nasconderla.
 
 #### Un server Shizuku avviato via ADB si spegne quando colleghi il telefono all'auto
 
-la connessione USB mette il telefono in modalità accessorio, il che riavvia ADB e si
+La connessione USB mette il telefono in modalità accessorio, il che riavvia ADB e si
 porta via Shizuku — il debug wireless passa dallo stesso ADB, quindi non aiuta. Riavvia
 Shizuku e ScreenOnAuto si riconnette da solo; meglio ancora, usa il [fork
 Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next), il cui servizio watchdog lo

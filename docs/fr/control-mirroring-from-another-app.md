@@ -90,7 +90,7 @@ erreur nulle part.
 > par défaut sur de nombreux téléphones :
 >
 > - **Démarrage automatique.** Beaucoup de téléphones embarquent une gestion de l'énergie qui
->   empêche purement et simplement une application d'être réveillé par un broadcast.
+>   empêche purement et simplement une application d'être réveillée par un broadcast.
 >   Cherchez un gestionnaire de démarrage automatique dans les réglages de batterie ou du
 >   gestionnaire du téléphone et autorisez-y ScreenOnAuto. Le téléphone peut chercher à vous
 >   en dissuader.

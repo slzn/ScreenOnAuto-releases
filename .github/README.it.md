@@ -79,15 +79,15 @@ Funziona su qualsiasi versione di Android, e Android Auto la accetta senza alcun
 
 #### Passaggio 1 — Installa KingInstaller
 
-1. Vai su [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases) e scarica l'ultimo `KingInstaller.apk`
+1. Vai su [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases/latest) e scarica l'ultimo `KingInstaller-*.apk`
 2. Consenti al browser o al file manager di **installare app sconosciute** — Android lo chiede la prima volta che apri un APK
-3. Apri `KingInstaller.apk` e tocca **Installa**
+3. Apri `KingInstaller-*.apk` e tocca **Installa**
 
 #### Passaggio 2 — Installa ScreenOnAuto tramite KingInstaller
 
 1. Scarica l'ultimo `ScreenOnAuto-*.apk` dalla [release più recente](https://github.com/slzn/ScreenOnAuto-releases/releases/latest)
-2. Apri **KingInstaller**, tocca l'**icona della cartella** e seleziona l'APK scaricato
-3. Tocca **Installa** — KingInstaller lo installerà come se provenisse dal Google Play Store
+2. Apri **KingInstaller**, tocca il pulsante per scegliere un file e seleziona l'APK scaricato
+3. Tocca **Installa come un king** — KingInstaller lo installerà come se provenisse dal Google Play Store
 
 ### Alternativa — con un dongle AAWireless
 
@@ -111,7 +111,7 @@ Dovresti vedere queste **due** voci ScreenOnAuto:
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | Mirroring dello schermo a schermo intero — sostituisce l'area della mappa |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | Mirroring tramite il percorso di proiezione Legacy — può essere affiancato alla mappa |
 
-Le versioni meno recenti di Android Auto mostrano anche una terza voce, **ScreenOnAuto Media Controller**. Se non la vedi è normale — il controllo multimediale funziona comunque.
+Le versioni meno recenti di Android Auto mostrano anche una terza voce, **ScreenOnAuto Controller multimediale**. Se non la vedi è normale — il controllo multimediale funziona comunque.
 Se manca una delle **due** voci sopra, reinstalla — con KingInstaller per il sideload, oppure lascia completare l'installazione da Play — e riapri Android Auto. Con il metodo AAWireless, controlla che Developer Mode e Origini sconosciute siano ancora attivi.
 
 Pronto? Consulta **[Come si usa](https://github.com/slzn/ScreenOnAuto-releases/wiki/Come-si-usa)** per avviare il mirroring in auto.
@@ -142,7 +142,7 @@ Questo progetto non è affiliato, approvato o sponsorizzato da Google. Android A
 
 ## Ringraziamenti speciali
 
-- **Jurek Harla** — ha ridisegnato le icone di ScreenOnAuto, ScreenOnAuto (Legacy) e Media Controller perché rientrino nella forma rotonda delle icone di Android (v1.9.2).
+- **Jurek Harla** — ha ridisegnato le icone di ScreenOnAuto, ScreenOnAuto (Legacy) e Controller multimediale perché rientrino nella forma rotonda delle icone di Android (v1.9.2).
 
 ## Sostieni il progetto
 

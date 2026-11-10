@@ -114,7 +114,7 @@ oder starte sie über den Schalter **Bildschirmspiegelung**.
 
 #### Schwarze Balken um das Bild
 
-Telefon- und Fahrzeugbildschirm haben unterschiedliche Seitenverhältnisse. Nutze die Taste
+Telefon- und Fahrzeugbildschirm haben unterschiedliche Seitenverhältnisse. Nutze die Schaltfläche
 **Ausrichtung sperren** auf dem Spiegelbildschirm (oder **Ausrichtung automatisch
 sperren** in den Einstellungen). Um die nutzbare Fläche des Autos exakt auszufüllen,
 aktiviere **Telefonbildschirm an das Auto anpassen** in den Privilegierten Funktionen
@@ -124,9 +124,9 @@ aktiviere **Telefonbildschirm an das Auto anpassen** in den Privilegierten Funkt
 
 Das passiert, wenn der sichtbare Bereich in der geteilten Ansicht wächst oder schrumpft.
 Dreh das Telefon, sodass der Bildschirm zwischen Hoch- und Querformat wechselt – dann
-stimmt das Bild wieder (ist **Ausrichtung sperren** aktiv, hebe die Sperre vorher mit der Taste auf dem Bildschirm auf). Zwei Einstellungen können außerdem helfen:
+stimmt das Bild wieder (ist **Ausrichtung sperren** aktiv, hebe die Sperre vorher mit der Schaltfläche auf dem Bildschirm auf). Zwei Einstellungen können außerdem helfen:
 
-- aktiviere **Einstellungen → Erweitert → Feste Spiegelungsgröße**. Die Spiegelung
+- Aktiviere **Einstellungen → Erweitert → Feste Spiegelungsgröße**. Die Spiegelung
   behält dann ihre Größe statt zu verzerren (ein Teil kann verdeckt sein). Gilt für den
   Vollbild-Eintrag **ScreenOnAuto**.
 - Aktiviere **Einstellungen → Erweitert → Selbstgezeichnete Spiegelung

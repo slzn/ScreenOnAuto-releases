@@ -76,15 +76,15 @@ Android のバージョンを問わず使え、Android Auto で追加の設定�
 
 #### ステップ 1 — KingInstaller をインストール
 
-1. [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases) を開き、最新の `KingInstaller.apk` をダウンロードします
+1. [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases/latest) を開き、最新の `KingInstaller-*.apk` をダウンロードします
 2. ブラウザまたはファイルマネージャーに **不明なアプリのインストール** を許可します（初めて APK を開いたときに Android が確認します）
-3. `KingInstaller.apk` を開き、**インストール** をタップします
+3. `KingInstaller-*.apk` を開き、**インストール** をタップします
 
 #### ステップ 2 — KingInstaller で ScreenOnAuto をインストール
 
 1. [最新リリース](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) から最新の `ScreenOnAuto-*.apk` をダウンロードします
-2. **KingInstaller** を開いて **フォルダのアイコン** をタップし、ダウンロードした APK を選びます
-3. **Install** をタップします。KingInstaller が、Google Play ストアからインストールしたものとして扱われるようにインストールします
+2. **KingInstaller** を開いて ファイル選択ボタンをタップし、ダウンロードした APK を選びます
+3. **Install as king** をタップします。KingInstaller が、Google Play ストアからインストールしたものとして扱われるようにインストールします
 
 ### 別の方法 — AAWireless ドングルを使う
 

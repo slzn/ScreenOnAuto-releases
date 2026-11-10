@@ -76,15 +76,15 @@
 
 #### 第一步 — 安裝 KingInstaller
 
-1. 前往 [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases)，下載最新版 `KingInstaller.apk`
+1. 前往 [KingInstaller Releases](https://github.com/fcaronte/KingInstaller/releases/latest)，下載最新版 `KingInstaller-*.apk`
 2. 允許瀏覽器或檔案管理器**安裝不明應用程式**——第一次開啟 APK 時 Android 會詢問
-3. 開啟 `KingInstaller.apk` 並點選**安裝**
+3. 開啟 `KingInstaller-*.apk` 並點選**安裝**
 
 #### 第二步 — 透過 KingInstaller 安裝 ScreenOnAuto
 
 1. 從 [最新版本](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) 頁面下載最新的 `ScreenOnAuto-*.apk`
-2. 開啟 **KingInstaller**，點選**資料夾圖示**，選取已下載的 APK
-3. 點選**安裝** — KingInstaller 會以 Google Play 商店身份完成安裝
+2. 開啟 **KingInstaller**，點一下選擇檔案的按鈕，挑選已下載的 APK
+3. 點選 **Install as king** — KingInstaller 會以 Google Play 商店身份完成安裝
 
 ### 替代方式 — 使用 AAWireless 轉接器
 
@@ -107,7 +107,7 @@
 | <img src="../images/icon_launcher.png" width="48"> | **ScreenOnAuto** | 將手機螢幕鏡像至 Android Auto，取代地圖位置達到全螢幕顯示 |
 | <img src="../images/icon_legacy.png" width="48"> | **ScreenOnAuto (Legacy)** | 使用舊版投影路徑鏡像手機螢幕，可與地圖並列顯示 |
 
-較舊的 Android Auto 還會多列一個 **ScreenOnAuto Media Controller**；沒看到也正常，媒體控制照樣能用。若上述**兩個**項目有任何一個缺失：sideload 安裝請重新透過 KingInstaller 安裝，Play 安裝請確認已安裝完成，再重新開啟 Android Auto。若使用 AAWireless 方式，請確認 Developer Mode 與不明來源仍維持開啟。
+較舊的 Android Auto 還會多列一個 **ScreenOnAuto 媒體控制器**；沒看到也正常，媒體控制照樣能用。若上述**兩個**項目有任何一個缺失：sideload 安裝請重新透過 KingInstaller 安裝，Play 安裝請確認已安裝完成，再重新開啟 Android Auto。若使用 AAWireless 方式，請確認 Developer Mode 與不明來源仍維持開啟。
 
 安裝完成後，請見 **[如何使用](https://github.com/slzn/ScreenOnAuto-releases/wiki/如何使用)** 了解如何在車上啟動鏡像。
 
@@ -137,7 +137,7 @@
 
 ## 特別感謝
 
-- **Jurek Harla** — 重新設計了 ScreenOnAuto、ScreenOnAuto (Legacy) 與 Media Controller 的圖示，讓它們完整落在 Android 的圓形圖示範圍內（v1.9.2）。
+- **Jurek Harla** — 重新設計了 ScreenOnAuto、ScreenOnAuto (Legacy) 與媒體控制器的圖示，讓它們完整落在 Android 的圓形圖示範圍內（v1.9.2）。
 
 ## 贊助
 
