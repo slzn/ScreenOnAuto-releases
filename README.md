@@ -1,6 +1,6 @@
 # <img src="images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
 
-[繁體中文](.github/README.zh-TW.md) | [Português (Brasil)](.github/README.pt-BR.md) | [Español](.github/README.es.md) | [Deutsch](.github/README.de.md) | [Français](.github/README.fr.md) | [Italiano](.github/README.it.md) | [Türkçe](.github/README.tr.md) | [العربية](.github/README.ar.md) | [한국어](.github/README.ko.md) | [Русский](.github/README.ru.md) | [Tiếng Việt](.github/README.vi.md) | [Bahasa Indonesia](.github/README.id.md) | [日本語](.github/README.ja.md)
+[繁體中文](.github/README.zh-TW.md) | [Português (Brasil)](.github/README.pt-BR.md) | [Español](.github/README.es.md) | [Deutsch](.github/README.de.md) | [Français](.github/README.fr.md) | [Italiano](.github/README.it.md) | [Türkçe](.github/README.tr.md) | [العربية](.github/README.ar.md) | [한국어](.github/README.ko.md) | [Русский](.github/README.ru.md) | [Tiếng Việt](.github/README.vi.md) | [Bahasa Indonesia](.github/README.id.md) | [日本語](.github/README.ja.md) | [ไทย](.github/README.th.md)
 
 *🌐 [Official website](https://screenonauto.lzn.idv.tw/)*
 

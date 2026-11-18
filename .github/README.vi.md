@@ -1,6 +1,6 @@
 # <img src="../images/icon_launcher.png" width="36" align="center"> ScreenOnAuto
 
-[English](../README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md) | [Türkçe](README.tr.md) | [العربية](README.ar.md) | [한국어](README.ko.md) | [Русский](README.ru.md) | [Bahasa Indonesia](README.id.md) | [日本語](README.ja.md)
+[English](../README.md) | [繁體中文](README.zh-TW.md) | [Português (Brasil)](README.pt-BR.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Italiano](README.it.md) | [Türkçe](README.tr.md) | [العربية](README.ar.md) | [한국어](README.ko.md) | [Русский](README.ru.md) | [Bahasa Indonesia](README.id.md) | [日本語](README.ja.md) | [ไทย](README.th.md)
 
 *🌐 [Trang web chính thức](https://screenonauto.lzn.idv.tw/vi/)*
 
