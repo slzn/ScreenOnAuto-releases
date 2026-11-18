@@ -127,6 +127,15 @@ Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wi
 
 > **Tipp:** Um den Berechtigungsdialog für die Bildschirmaufnahme nicht bei jedem Start zu sehen, kannst du die Berechtigung einmalig per ADB erteilen – siehe [Spiegelungsberechtigung per ADB erteilen](https://github.com/slzn/ScreenOnAuto-releases/wiki/Spiegelungsberechtigung-per-ADB-erteilen). Damit wird auch **Nur diese App spiegeln** freigeschaltet.
 
+## Datenschutz
+
+- **ScreenOnAuto hat keine Internetberechtigung** und kann daher nichts von deinem Telefon senden. Der gespiegelte Bildschirm, Berührungen und Medieninfos gehen nur zwischen Telefon und Auto hin und her, über die Android-Auto-Verbindung.
+- Keine Werbung, keine Analyse, kein Konto.
+- Der Benachrichtigungszugriff dient nur dazu, auszulesen, was gerade läuft (Mediensitzungen) – nicht deine Benachrichtigungen. Der Bedienungshilfen-Dienst sendet nur Berührungen und die Aktionen Zurück / Startseite / Letzte Apps; er liest nicht, was auf dem Bildschirm zu sehen ist.
+- Die [Installationsseite](https://screenonauto.lzn.idv.tw/join/?lang=de) verwendet nur die E-Mail-Adresse deines Google-Kontos, um dich auf die Play-Testerliste der jeweiligen Runde zu setzen. Die Liste wird gelöscht, sobald das Installationsfenster der Runde endet.
+
+Alle Details: [Datenschutzerklärung](https://screenonauto.lzn.idv.tw/docs/de/privacy-policy/)
+
 ## Bekannte Einschränkungen
 
 - **Der Telefonbildschirm muss während der Spiegelung eingeschaltet bleiben** – die Spiegelung zeigt, was auf dem Telefonbildschirm zu sehen ist. Nutze **Ruhezustand verhindern**, um ihn wach zu halten, und **Automatisch dimmen**, um Akku zu sparen; mit Shizuku oder Root hebt Telefonbildschirm ausschalten dies auf.

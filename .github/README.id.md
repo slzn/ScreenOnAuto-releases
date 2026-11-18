@@ -127,6 +127,15 @@ Siap? Lihat **[Cara Menggunakan](https://github.com/slzn/ScreenOnAuto-releases/w
 
 > **Tips:** Agar dialog izin Perekaman layar tidak muncul setiap kali aplikasi dibuka, Anda bisa memberikan izin itu lebih dulu lewat ADB — lihat [Berikan Izin Pencerminan melalui ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Berikan-Izin-Pencerminan-melalui-ADB). Cara ini juga yang membuka fitur **Cerminkan aplikasi ini saja**.
 
+## Privasi
+
+- **ScreenOnAuto tidak memiliki izin internet**, jadi tidak bisa mengirim apa pun ke luar ponsel Anda. Layar yang dicerminkan, sentuhan, dan info media hanya berpindah antara ponsel dan mobil, melalui koneksi Android Auto.
+- Tanpa iklan, tanpa analitik, tanpa akun.
+- Akses notifikasi hanya dipakai untuk membaca apa yang sedang diputar (sesi media), bukan notifikasi Anda. Layanan Aksesibilitas hanya mengirim sentuhan serta tindakan Kembali / Beranda / Aplikasi terbaru; layanan ini tidak membaca isi layar.
+- [Halaman instal](https://screenonauto.lzn.idv.tw/join/?lang=id) hanya menggunakan alamat email Akun Google Anda, untuk menambahkan Anda ke daftar penguji Play pada putaran tersebut. Daftar itu dihapus begitu jendela instal putaran berakhir.
+
+Detail lengkap: [Kebijakan Privasi](https://screenonauto.lzn.idv.tw/docs/id/privacy-policy/)
+
 ## Keterbatasan yang diketahui
 
 - **Layar ponsel harus tetap menyala selama pencerminan** — pencerminan menampilkan apa yang ada di layar ponsel. Pakai **Cegah layar tidur** agar layar tetap menyala dan **Peredupan otomatis** untuk menghemat baterai; dengan Shizuku atau Root, Matikan layar ponsel menghapus batasan ini.

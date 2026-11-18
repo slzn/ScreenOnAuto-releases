@@ -81,7 +81,8 @@ do not reintroduce per-language `case`/`when` branches or hand-written hreflang 
 What Jekyll cannot reach still has to be added by hand:
 
 - the landing page `i18n/<code>/index.html` (copy one; keep its `permalink` front matter)
-  and the four `docs/<code>/<slug>.md` guides;
+  and the five `docs/<code>/<slug>.md` pages (the four guides plus `privacy-policy.md` —
+  every landing-page footer and the `/join/` footer link to it, so a missing copy 404s);
 - `.github/README.<code>.md`, plus the switcher line in every other README (GitHub
   renders READMEs directly, without Jekyll);
 - `sitemap.xml`: the new URLs, and a `hreflang` alternate in every existing block;
@@ -107,11 +108,11 @@ ScreenOnAuto-releases/
 ├── _includes/hreflang.html ← the landing pages' hreflang alternates, generated from _data/languages.yml
 ├── assets/styles.css       ← shared landing-page stylesheet
 ├── assets/carousel.js      ← shared carousel script
-├── docs/<lang>/<slug>.md   ← on-site copies of the 4 wiki guides × 14 languages
+├── docs/<lang>/<slug>.md   ← on-site copies of the 4 wiki guides × 14 languages, plus privacy-policy.md (site-only)
 ├── _config.yml             ← Jekyll config; defaults apply _layouts/doc.html to docs/
 ├── _layouts/doc.html       ← doc layout: SEO head, hreflang (Liquid, from slug+lang), TechArticle JSON-LD
 ├── images/                 ← site images (incl. how-to-use screenshots)
-├── robots.txt / sitemap.xml← this site's own SEO files (sitemap: 70 URLs)
+├── robots.txt / sitemap.xml← this site's own SEO files (sitemap: 84 URLs)
 ├── <32-hex>.txt            ← IndexNow key file; must sit at the site root to cover the whole host
 │                             (the key is public by design; it is also KEY in tools/indexnow.py)
 ├── tools/                  ← excluded from the site in _config.yml; sync-content-dates.py (run by CI), indexnow.py
@@ -207,6 +208,19 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
 - **Docs:** `docs/<lang>/<slug>.md`, slugs `join-the-beta-test` / `how-to-use` /
   `grant-mirror-permission-via-adb` / `control-mirroring-from-another-app`. These are **converted copies of the wiki pages** —
   the wiki is the editing source (see below).
+- **Privacy policy** (added 2026-11-18): `docs/<lang>/privacy-policy.md` × 14, linked from every
+  landing-page footer, the `/join/` footer (`privacyLink` in join-strings.js; join.js sets the
+  href per language) and each README's `## Privacy` section. There is no hand-written effective
+  date: the layout's "Last updated" stamp is the policy's date. It is the one docs page with
+  **no wiki counterpart** — edit it here directly. Its URL (`/docs/en/privacy-policy/`) is the
+  one to give Play Console if it ever asks for a privacy-policy link. Every claim in it is
+  checked against the app: no `INTERNET` permission (incl. the merged manifest), the
+  accessibility service reads no window content, the notification listener only uses
+  `getActiveSessions`, `allowBackup=true`; the `/join/` server logs neither IP nor email (Caddy has no access log); `/join/` loads Google
+  Identity Services and keeps the ID token in sessionStorage (`join.idToken`) — the website
+  section says so. **If the
+  app ever gains network access, a new permission or an SDK, update the policy (14 languages,
+  new effective date) and the README Privacy sections in the same change.**
 - GitHub Pages renders **any** root `.md` into `<name>.html` with the primer theme,
   front matter or not — verified 2026-07-27: `/README.zh-TW.html` was live, themed, and
   **self-canonical**, i.e. indexable duplicate content competing with `/zh-TW/`. Moving
@@ -345,6 +359,11 @@ All fourteen READMEs share one structure (en at the root, the other thirteen in 
   and its counterpart in each language. The same rule applies: rewording that heading in
   any language breaks its two links. The landing `<li>` stays at the cause plus the link;
   the fix steps, the restart note and the one-time-code caveat live in How to Use.
+- **Privacy** (added 2026-11-18): a four-bullet `## Privacy` section between Permissions and
+  Known Limitations (no internet permission; no ads/analytics/account; what the notification
+  listener and accessibility service do and don't read; `/join/` uses only the email, deleted
+  after the round), ending with a link to `/docs/<lang>/privacy-policy/`. Keep it in step with
+  the policy page.
 - The READMEs keep the full Features list. The landing pages carry the condensed
   9-card version. Keep the two consistent in substance, not in length.
 

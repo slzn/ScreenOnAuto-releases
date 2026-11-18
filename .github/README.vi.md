@@ -127,6 +127,15 @@ Sẵn sàng rồi? Xem **[Cách sử dụng](https://github.com/slzn/ScreenOnAut
 
 > **Mẹo:** Để hộp thoại xin quyền Ghi màn hình không hiện ra mỗi lần mở, bạn có thể cấp trước quyền này qua ADB — xem [Cấp quyền phản chiếu qua ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cấp-quyền-phản-chiếu-qua-ADB). Đây cũng là điều kiện để dùng **Chỉ phản chiếu ứng dụng này**.
 
+## Quyền riêng tư
+
+- **ScreenOnAuto không có quyền truy cập Internet**, nên không thể gửi bất cứ thứ gì ra khỏi điện thoại của bạn. Hình phản chiếu, thao tác chạm và thông tin đa phương tiện chỉ đi giữa điện thoại và xe, qua kết nối Android Auto.
+- Không quảng cáo, không phân tích, không cần tài khoản.
+- Quyền truy cập thông báo chỉ dùng để đọc nội dung đang phát (phiên đa phương tiện), không đọc thông báo của bạn. Dịch vụ hỗ trợ tiếp cận chỉ gửi thao tác chạm và các thao tác Quay lại / Màn hình chính / Ứng dụng gần đây; dịch vụ này không đọc nội dung trên màn hình.
+- [Trang cài đặt](https://screenonauto.lzn.idv.tw/join/?lang=vi) chỉ dùng địa chỉ email của Tài khoản Google, để thêm bạn vào danh sách người thử nghiệm Play của lượt đó. Danh sách bị xóa khi khung giờ cài đặt của lượt kết thúc.
+
+Chi tiết đầy đủ: [Chính sách quyền riêng tư](https://screenonauto.lzn.idv.tw/docs/vi/privacy-policy/)
+
 ## Hạn chế đã biết
 
 - **Màn hình điện thoại phải luôn bật trong khi phản chiếu** — hình phản chiếu chính là những gì đang hiện trên màn hình điện thoại. Dùng **Ngăn màn hình tắt** để giữ màn hình sáng và **Tự động làm tối** để tiết kiệm pin; với Shizuku hoặc Root, Tắt màn hình điện thoại sẽ gỡ bỏ hạn chế này.

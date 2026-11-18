@@ -127,6 +127,15 @@ Prêt ? Consultez **[Comment utiliser](https://github.com/slzn/ScreenOnAuto-rele
 
 > **Astuce :** pour éviter la boîte de dialogue de capture d'écran à chaque lancement, vous pouvez pré-accorder la permission via ADB — voir [Accorder la permission de duplication via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Accorder-la-permission-de-duplication-via-ADB). C'est aussi ce qui débloque **Dupliquer seulement cette application**.
 
+## Confidentialité
+
+- **ScreenOnAuto n'a pas l'autorisation d'accès à Internet** : il ne peut donc rien envoyer hors de votre téléphone. L'écran dupliqué, les appuis et les infos multimédias circulent uniquement entre le téléphone et la voiture, via la connexion Android Auto.
+- Pas de publicité, pas de statistiques d'usage, pas de compte.
+- L'Accès aux notifications sert uniquement à lire ce qui est en cours de lecture (sessions multimédias), pas vos notifications. Le Service d'accessibilité envoie uniquement des appuis et les actions Retour / Accueil / Récents ; il ne lit pas ce qui s'affiche à l'écran.
+- La [page d'installation](https://screenonauto.lzn.idv.tw/join/?lang=fr) utilise uniquement l'adresse e-mail de votre compte Google, pour vous ajouter à la liste de testeurs Play de la session. La liste est supprimée à la fin de la fenêtre d'installation de la session.
+
+Tous les détails : [Politique de confidentialité](https://screenonauto.lzn.idv.tw/docs/fr/privacy-policy/)
+
 ## Limitations connues
 
 - **L'écran du téléphone doit rester allumé pendant la duplication** — la duplication montre ce qui s'affiche sur le téléphone. Utilisez **Empêcher la mise en veille** pour le garder actif et **Atténuation automatique** pour économiser la batterie ; avec Shizuku ou root, Éteindre l'écran du téléphone lève cette limite.

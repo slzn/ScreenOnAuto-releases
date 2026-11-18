@@ -127,6 +127,15 @@ Si falta cualquiera de las **dos** entradas anteriores, reinstala — con KingIn
 
 > **Consejo:** para evitar el diálogo de permiso de captura de pantalla en cada inicio, puedes concederlo una sola vez vía ADB — consulta [Conceder Permiso de Duplicación por ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permiso-de-Duplicación-por-ADB). Esto es también lo que habilita **Duplicar solo esta app**.
 
+## Privacidad
+
+- **ScreenOnAuto no tiene permiso de acceso a internet**, así que no puede enviar nada fuera de tu teléfono. La pantalla duplicada, los toques y la información multimedia viajan solo entre el teléfono y el coche, a través de la conexión de Android Auto.
+- Sin anuncios, sin analíticas y sin cuenta.
+- El Acceso a notificaciones se usa solo para leer lo que se está reproduciendo (sesiones multimedia), no tus notificaciones. El Servicio de accesibilidad solo envía toques y las acciones Atrás / Inicio / Recientes; no lee lo que hay en la pantalla.
+- La [página de instalación](https://screenonauto.lzn.idv.tw/join/?lang=es) usa solo la dirección de correo de tu cuenta de Google, para añadirte a la lista de testers de Play de esa ronda. La lista se borra cuando termina la ventana de instalación de la ronda.
+
+Todos los detalles: [Política de privacidad](https://screenonauto.lzn.idv.tw/docs/es/privacy-policy/)
+
 ## Limitaciones conocidas
 
 - **La pantalla del teléfono debe permanecer encendida durante la duplicación** — la duplicación muestra lo que hay en la pantalla del teléfono. Usa **Evitar suspensión** para mantenerla activa y **Atenuación automática** para ahorrar batería; con Shizuku o root, Apagar la pantalla del teléfono elimina esta limitación.

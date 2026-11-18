@@ -127,6 +127,15 @@ Pronto? Consulta **[Come si usa](https://github.com/slzn/ScreenOnAuto-releases/w
 
 > **Suggerimento:** per evitare la finestra di richiesta di cattura schermo a ogni avvio, puoi pre-concedere l'autorizzazione via ADB — vedi [Concedere il permesso di mirroring via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Concedere-il-permesso-di-mirroring-via-ADB). È anche ciò che sblocca **Esegui il mirroring solo di questa app**.
 
+## Privacy
+
+- **ScreenOnAuto non ha il permesso di accesso a Internet**, quindi non può inviare nulla fuori dal telefono. Lo schermo in mirroring, i tocchi e le informazioni multimediali viaggiano solo tra il telefono e l'auto, tramite la connessione di Android Auto.
+- Niente pubblicità, niente statistiche di utilizzo, nessun account.
+- L'Accesso alle notifiche serve solo a leggere cosa è in riproduzione (sessioni multimediali), non le tue notifiche. Il Servizio di accessibilità invia solo tocchi e le azioni Indietro / Home / Recenti; non legge ciò che è sullo schermo.
+- La [pagina di installazione](https://screenonauto.lzn.idv.tw/join/?lang=it) usa solo l'indirizzo email del tuo account Google, per aggiungerti alla lista dei tester di Play di quel turno. La lista viene cancellata al termine della finestra di installazione del turno.
+
+Tutti i dettagli: [Informativa sulla privacy](https://screenonauto.lzn.idv.tw/docs/it/privacy-policy/)
+
 ## Limitazioni note
 
 - **Lo schermo del telefono deve restare acceso durante il mirroring** — il mirroring mostra ciò che è sullo schermo del telefono. Usa **Impedisci sospensione** per tenerlo attivo e **Oscuramento automatico** per risparmiare batteria; con Shizuku o root, Spegni lo schermo del telefono rimuove questo limite.

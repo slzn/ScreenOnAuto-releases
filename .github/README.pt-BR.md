@@ -127,6 +127,15 @@ Tudo pronto? Veja **[Como Usar](https://github.com/slzn/ScreenOnAuto-releases/wi
 
 > **Dica:** para evitar o diálogo de permissão de captura de tela a cada início, você pode conceder a permissão uma única vez via ADB — veja [Conceder Permissão de Espelhamento via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Conceder-Permissão-de-Espelhamento-via-ADB). Isso também é o que libera **Espelhar apenas este app**.
 
+## Privacidade
+
+- **O ScreenOnAuto não tem permissão de acesso à internet**, então não consegue enviar nada para fora do seu celular. A tela espelhada, os toques e as informações de mídia trafegam apenas entre o celular e o carro, pela conexão do Android Auto.
+- Sem anúncios, sem análises e sem conta.
+- O Acesso às notificações é usado só para ler o que está tocando (sessões de mídia), não as suas notificações. O Serviço de acessibilidade só envia toques e as ações Voltar / Início / Recentes; ele não lê o que aparece na tela.
+- A [página de instalação](https://screenonauto.lzn.idv.tw/join/?lang=pt-BR) usa apenas o endereço de e-mail da sua Conta do Google, para incluir você na lista de testadores do Play daquela rodada. A lista é apagada quando a janela de instalação da rodada termina.
+
+Detalhes completos: [Política de Privacidade](https://screenonauto.lzn.idv.tw/docs/pt-BR/privacy-policy/)
+
 ## Limitações conhecidas
 
 - **A tela do celular precisa ficar ligada durante o espelhamento** — o espelhamento mostra o que está na tela do celular. Use **Impedir suspensão** para mantê-la acesa e **Escurecimento automático** para economizar bateria; com Shizuku ou root, Desligar a tela do telefone remove essa limitação.

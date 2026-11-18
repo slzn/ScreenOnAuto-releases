@@ -127,6 +127,15 @@ Hazır mısınız? Arabada yansıtmayı başlatmak için **[Nasıl Kullanılır]
 
 > **İpucu:** Her başlatmada Ekran Kaydı izin penceresiyle karşılaşmamak için izni ADB ile önceden verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](https://github.com/slzn/ScreenOnAuto-releases/wiki/ADB-ile-Yansıtma-İzni-Verme). Bu aynı zamanda **Yalnızca bu uygulamayı yansıt** özelliğini de açar.
 
+## Gizlilik
+
+- **ScreenOnAuto'nun internet izni yoktur**, bu yüzden telefonunuzdan dışarıya hiçbir şey gönderemez. Yansıtılan ekran, dokunmalar ve medya bilgileri yalnızca telefonunuz ile araç arasında, Android Auto bağlantısı üzerinden iletilir.
+- Reklam yok, analiz yok, hesap yok.
+- Bildirim Dinleyici yalnızca o an çalan içeriği (medya oturumları) okumak için kullanılır, bildirimlerinizi okumaz. Erişilebilirlik Hizmeti yalnızca dokunmaları ve Geri / Ana ekran / Son uygulamalar eylemlerini gönderir; ekranda ne olduğunu okumaz.
+- [Kurulum sayfası](https://screenonauto.lzn.idv.tw/join/?lang=tr) yalnızca Google hesabınızın e-posta adresini, sizi o turun Play test kullanıcısı listesine eklemek için kullanır. Liste, turun kurulum süresi bittiğinde silinir.
+
+Tüm ayrıntılar: [Gizlilik Politikası](https://screenonauto.lzn.idv.tw/docs/tr/privacy-policy/)
+
 ## Bilinen Sınırlamalar
 
 - **Yansıtma sırasında telefon ekranı açık kalmalıdır** — yansıtma telefon ekranında görüneni gösterir. Ekranı açık tutmak için **Uykuyu engelle**'yi, pil tasarrufu için **Otomatik karartma**'yı kullanın; Shizuku veya root ile Telefon ekranını kapat bu sınırlamayı kaldırır.

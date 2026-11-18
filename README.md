@@ -127,6 +127,15 @@ Ready to go? See **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wi
 
 > **Tip:** To avoid the Screen Capture permission dialog on every launch, you can pre-grant it via ADB — see [Grant Mirror Permission via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Grant-Mirror-Permission-via-ADB). This is also what unlocks **Mirror only this app**.
 
+## Privacy
+
+- **ScreenOnAuto has no internet permission**, so it cannot send anything off your phone. The mirrored screen, touches and media info travel only between your phone and the car, over the Android Auto connection.
+- No ads, no analytics, no account.
+- The Notification Listener is used only to read what's playing (media sessions), not your notifications. The Accessibility Service only sends taps and the Back / Home / Recent apps actions; it does not read what's on the screen.
+- The [install page](https://screenonauto.lzn.idv.tw/join/?lang=en) uses only your Google account's email address, to add you to that round's Play tester list. The list is deleted when the round's install window ends.
+
+Full details: [Privacy Policy](https://screenonauto.lzn.idv.tw/docs/en/privacy-policy/)
+
 ## Known Limitations
 
 - **The phone screen must stay on while mirroring** — the mirror shows what's on the phone screen. Use **Prevent Sleep** to keep it awake and **Auto Dim** to save battery; with Shizuku or root, Turn the Phone Screen Off lifts this.

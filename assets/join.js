@@ -576,6 +576,7 @@
     document.querySelectorAll("[data-t]").forEach(function (e) {
       e.textContent = t(e.getAttribute("data-t"), { slots: slots === null ? "…" : slots, n: e.getAttribute("data-n") });
     });
+    document.getElementById("privacy-link").href = "/docs/" + lang + "/privacy-policy/";
   }
 
   // FAQ: static copy; {verify} / {howto} in an answer become links to the landing page's
