@@ -144,6 +144,8 @@ Android のバージョンを問わず使え、Android Auto で追加の設定�
 
 このプロジェクトは Google と提携しておらず、Google による承認や後援を受けていません。Android Auto は Google LLC の商標です。
 
+ScreenOnAuto は現状のまま提供され、いかなる保証もありません。ご利用は自己責任でお願いします。詳しくは[利用規約](https://screenonauto.lzn.idv.tw/docs/ja/terms-of-use/)をご覧ください。
+
 ## スペシャルサンクス
 
 - **Jurek Harla** — Android の丸いアイコン形状に合うよう、ScreenOnAuto、ScreenOnAuto (Legacy)、メディアコントローラーのアイコンをデザインし直してくれました（v1.9.2）。

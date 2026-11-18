@@ -149,6 +149,8 @@ Gözleriniz her zaman yolda olsun — bu uygulamayı sürüş sırasında kullan
 
 Bu proje Google ile bağlantılı değildir; Google tarafından onaylanmamış veya desteklenmemiştir. Android Auto, Google LLC'nin ticari markasıdır.
 
+ScreenOnAuto olduğu gibi, hiçbir garanti olmaksızın sunulur ve kullanım riski size aittir. [Kullanım Koşulları](https://screenonauto.lzn.idv.tw/docs/tr/terms-of-use/) sayfasına bakın.
+
 ## Özel Teşekkürler
 
 - **Jurek Harla** — ScreenOnAuto, ScreenOnAuto (Legacy) ve Medya Denetleyicisi simgelerini Android’in yuvarlak simge biçimine sığacak şekilde yeniden tasarladı (v1.9.2).

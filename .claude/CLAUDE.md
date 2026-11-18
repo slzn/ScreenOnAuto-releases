@@ -81,8 +81,9 @@ do not reintroduce per-language `case`/`when` branches or hand-written hreflang 
 What Jekyll cannot reach still has to be added by hand:
 
 - the landing page `i18n/<code>/index.html` (copy one; keep its `permalink` front matter)
-  and the five `docs/<code>/<slug>.md` pages (the four guides plus `privacy-policy.md` —
-  every landing-page footer and the `/join/` footer link to it, so a missing copy 404s);
+  and the six `docs/<code>/<slug>.md` pages (the four guides plus `privacy-policy.md` and
+  `terms-of-use.md` — every landing-page footer and the `/join/` footer link to both, so a
+  missing copy 404s);
 - `.github/README.<code>.md`, plus the switcher line in every other README (GitHub
   renders READMEs directly, without Jekyll);
 - `sitemap.xml`: the new URLs, and a `hreflang` alternate in every existing block;
@@ -108,11 +109,11 @@ ScreenOnAuto-releases/
 ├── _includes/hreflang.html ← the landing pages' hreflang alternates, generated from _data/languages.yml
 ├── assets/styles.css       ← shared landing-page stylesheet
 ├── assets/carousel.js      ← shared carousel script
-├── docs/<lang>/<slug>.md   ← on-site copies of the 4 wiki guides × 14 languages, plus privacy-policy.md (site-only)
+├── docs/<lang>/<slug>.md   ← on-site copies of the 4 wiki guides × 14 languages, plus privacy-policy.md and terms-of-use.md (site-only)
 ├── _config.yml             ← Jekyll config; defaults apply _layouts/doc.html to docs/
 ├── _layouts/doc.html       ← doc layout: SEO head, hreflang (Liquid, from slug+lang), TechArticle JSON-LD
 ├── images/                 ← site images (incl. how-to-use screenshots)
-├── robots.txt / sitemap.xml← this site's own SEO files (sitemap: 84 URLs)
+├── robots.txt / sitemap.xml← this site's own SEO files (sitemap: 98 URLs)
 ├── <32-hex>.txt            ← IndexNow key file; must sit at the site root to cover the whole host
 │                             (the key is public by design; it is also KEY in tools/indexnow.py)
 ├── tools/                  ← excluded from the site in _config.yml; sync-content-dates.py (run by CI), indexnow.py
@@ -209,8 +210,8 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
   `grant-mirror-permission-via-adb` / `control-mirroring-from-another-app`. These are **converted copies of the wiki pages** —
   the wiki is the editing source (see below).
 - **Privacy policy** (added 2026-11-18): `docs/<lang>/privacy-policy.md` × 14, linked from every
-  landing-page footer, the `/join/` footer (`privacyLink` in join-strings.js; join.js sets the
-  href per language) and each README's `## Privacy` section. There is no hand-written effective
+  landing-page footer, the `/join/` footer (`privacyLink` in join-strings.js; the link carries
+  `data-doc="privacy-policy"` and join.js points every `a[data-doc]` at the page's language) and each README's `## Privacy` section. There is no hand-written effective
   date: the layout's "Last updated" stamp is the policy's date. It is the one docs page with
   **no wiki counterpart** — edit it here directly. Its URL (`/docs/en/privacy-policy/`) is the
   one to give Play Console if it ever asks for a privacy-policy link. Every claim in it is
@@ -219,8 +220,17 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
   `getActiveSessions`, `allowBackup=true`; the `/join/` server logs neither IP nor email (Caddy has no access log); `/join/` loads Google
   Identity Services and keeps the ID token in sessionStorage (`join.idToken`) — the website
   section says so. **If the
-  app ever gains network access, a new permission or an SDK, update the policy (14 languages,
-  new effective date) and the README Privacy sections in the same change.**
+  app ever gains network access, a new permission or an SDK, update the policy (14 languages)
+  and the README Privacy sections in the same change.**
+- **Terms of use** (added 2026-11-18): `docs/<lang>/terms-of-use.md` × 14, the same site-only
+  setup as the privacy policy (footer link next to it, `termsLink` + `data-doc="terms-of-use"` on `/join/`,
+  no wiki copy, "Last updated" is its date). Decided with the user: free to use by anyone
+  (no "personal use" limit, so professional drivers are fine, with a line telling them to follow
+  employer/platform rules), no modify/decompile-and-redistribute and no republishing under the
+  ScreenOnAuto name; no governing-law clause and no age clause. It names the privileged/rotation
+  settings that can stay changed (plus Turn the Phone Screen Off → press power twice) and the
+  `wm size/density reset` fix — keep that list in step
+  with the app. Each README's Disclaimer has a one-line "as is, at your own risk" link to it.
 - GitHub Pages renders **any** root `.md` into `<name>.html` with the primer theme,
   front matter or not — verified 2026-07-27: `/README.zh-TW.html` was live, themed, and
   **self-canonical**, i.e. indexable duplicate content competing with `/zh-TW/`. Moving

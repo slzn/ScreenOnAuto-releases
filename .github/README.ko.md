@@ -149,6 +149,8 @@ ScreenOnAuto 항목 **두 개**가 보여야 합니다:
 
 이 프로젝트는 Google과 제휴, 보증 또는 후원 관계가 없습니다. Android Auto는 Google LLC의 상표입니다.
 
+ScreenOnAuto는 "있는 그대로" 제공되며 어떠한 보증도 하지 않습니다. 사용에 따른 위험은 사용자 본인이 부담합니다. [이용약관](https://screenonauto.lzn.idv.tw/docs/ko/terms-of-use/)을 참고하세요.
+
 ## 특별 감사
 
 - **Jurek Harla** — Android의 둥근 아이콘 모양에 맞도록 ScreenOnAuto, ScreenOnAuto (Legacy), 미디어 컨트롤러 아이콘을 새로 디자인해 주셨습니다 (v1.9.2).

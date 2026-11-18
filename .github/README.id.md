@@ -149,6 +149,8 @@ Selalu perhatikan jalan — jangan mengoperasikan aplikasi ini saat mengemudi.
 
 Proyek ini tidak berafiliasi dengan, tidak didukung oleh, dan tidak disponsori oleh Google. Android Auto adalah merek dagang Google LLC.
 
+ScreenOnAuto disediakan apa adanya, tanpa jaminan, dan Anda menggunakannya dengan risiko sendiri. Lihat [Ketentuan Penggunaan](https://screenonauto.lzn.idv.tw/docs/id/terms-of-use/).
+
 ## Terima kasih khusus
 
 - **Jurek Harla** — mendesain ulang ikon ScreenOnAuto, ScreenOnAuto (Legacy), dan Pengontrol Media agar sesuai dengan bentuk ikon bulat Android (v1.9.2).

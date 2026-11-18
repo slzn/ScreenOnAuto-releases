@@ -149,6 +149,8 @@
 
 هذا المشروع غير مرتبط بشركة Google وغير معتمد أو مدعوم منها. ‏Android Auto علامة تجارية لشركة Google LLC.
 
+يُقدَّم ScreenOnAuto «كما هو» دون أي ضمان، وتستخدمه على مسؤوليتك الخاصة. راجع [شروط الاستخدام](https://screenonauto.lzn.idv.tw/docs/ar/terms-of-use/).
+
 ## شكر خاص
 
 - **Jurek Harla** — أعاد تصميم أيقونات ScreenOnAuto وScreenOnAuto (Legacy) ووحدة تحكم الوسائط لتتلاءم مع الشكل الدائري لأيقونات Android ‏(v1.9.2).

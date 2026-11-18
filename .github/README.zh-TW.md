@@ -144,6 +144,8 @@
 
 本專案與 Google 無任何關聯，亦未獲其認可或贊助。Android Auto 為 Google LLC 之商標。
 
+ScreenOnAuto 依現狀提供，不附任何保證，使用風險由你自行承擔。詳見[使用條款](https://screenonauto.lzn.idv.tw/docs/zh-TW/terms-of-use/)。
+
 ## 特別感謝
 
 - **Jurek Harla** — 重新設計了 ScreenOnAuto、ScreenOnAuto (Legacy) 與媒體控制器的圖示，讓它們完整落在 Android 的圓形圖示範圍內（v1.9.2）。

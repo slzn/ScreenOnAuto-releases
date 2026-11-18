@@ -149,6 +149,8 @@ Tieni sempre gli occhi sulla strada — non usare questa app mentre guidi.
 
 Questo progetto non è affiliato, approvato o sponsorizzato da Google. Android Auto è un marchio di Google LLC.
 
+ScreenOnAuto è fornito così com'è, senza garanzia, e lo usi a tuo rischio. Vedi i [Termini di utilizzo](https://screenonauto.lzn.idv.tw/docs/it/terms-of-use/).
+
 ## Ringraziamenti speciali
 
 - **Jurek Harla** — ha ridisegnato le icone di ScreenOnAuto, ScreenOnAuto (Legacy) e Controller multimediale perché rientrino nella forma rotonda delle icone di Android (v1.9.2).
