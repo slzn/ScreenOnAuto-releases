@@ -76,18 +76,31 @@ jobs:
       - name: Wait for GitHub Pages to deploy this commit
         env:
           GH_TOKEN: ${{ github.token }}
+          SHA: ${{ github.sha }}
         run: |
-          # Look for this commit among recent builds rather than at "latest":
-          # a later push (or the date-sync commit) may already have overtaken it.
+          # Wait until a Pages build that contains this commit is live: its own,
+          # or a later one. Look among recent builds rather than at "latest": a
+          # later push (or the date-sync commit) may already have overtaken it.
+          # The sync job above often pushes a date-stamp commit right behind a
+          # docs edit, and Pages then abandons this commit's build and reports it
+          # "errored" (2026-11-19: 56c7ce6 errored, e8d335c built 9 s later with
+          # the same content). Only an errored build with nothing newer on main
+          # is a real failure.
           for i in $(seq 1 60); do
-            status=$(gh api "repos/${{ github.repository }}/pages/builds?per_page=10" \
-              --jq '[.[] | select(.commit == "${{ github.sha }}")][0].status // "pending"')
-            echo "attempt $i: $status"
-            [ "$status" = built ] && exit 0
-            [ "$status" = errored ] && { echo "Pages build failed"; exit 1; }
+            git fetch -q origin main
+            builds=$(gh api "repos/${{ github.repository }}/pages/builds?per_page=10" \
+              --jq '.[] | "\(.status) \(.commit)"')
+            own=$(echo "$builds" | awk -v s="$SHA" '$2 == s {print $1; exit}')
+            echo "attempt $i: ${own:-pending}"
+            while read -r status commit; do
+              [ "$status" = built ] && git merge-base --is-ancestor "$SHA" "$commit" 2>/dev/null \
+                && { echo "deployed in $commit"; exit 0; }
+            done <<< "$builds"
+            [ "$own" = errored ] && [ "$(git rev-parse origin/main)" = "$SHA" ] \
+              && { echo "Pages build failed"; exit 1; }
             sleep 10
           done
-          echo "Pages did not deploy ${{ github.sha }} within 10 minutes"
+          echo "Pages did not deploy $SHA within 10 minutes"
           exit 1
 
       - name: Submit changed pages
