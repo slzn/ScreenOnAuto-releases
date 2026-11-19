@@ -5,7 +5,7 @@ lang: it
 slug: terms-of-use
 permalink: /docs/it/terms-of-use/
 date: 2026-11-18
-last_modified_at: 2026-11-18
+last_modified_at: 2026-11-19
 ---
 
 # Termini di utilizzo

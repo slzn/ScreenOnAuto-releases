@@ -5,7 +5,7 @@ lang: vi
 slug: terms-of-use
 permalink: /docs/vi/terms-of-use/
 date: 2026-11-18
-last_modified_at: 2026-11-18
+last_modified_at: 2026-11-19
 ---
 
 # Điều khoản sử dụng

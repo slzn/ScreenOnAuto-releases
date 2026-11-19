@@ -5,7 +5,7 @@ lang: zh-TW
 slug: terms-of-use
 permalink: /docs/zh-TW/terms-of-use/
 date: 2026-11-18
-last_modified_at: 2026-11-18
+last_modified_at: 2026-11-19
 ---
 
 # 使用條款

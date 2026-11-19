@@ -5,7 +5,7 @@ lang: en
 slug: privacy-policy
 permalink: /docs/en/privacy-policy/
 date: 2026-11-18
-last_modified_at: 2026-11-18
+last_modified_at: 2026-11-19
 ---
 
 # Privacy Policy

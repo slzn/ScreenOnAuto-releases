@@ -5,7 +5,7 @@ lang: th
 slug: privacy-policy
 permalink: /docs/th/privacy-policy/
 date: 2026-11-18
-last_modified_at: 2026-11-18
+last_modified_at: 2026-11-19
 ---
 
 # นโยบายความเป็นส่วนตัว

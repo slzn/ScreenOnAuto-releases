@@ -5,7 +5,7 @@ lang: id
 slug: terms-of-use
 permalink: /docs/id/terms-of-use/
 date: 2026-11-18
-last_modified_at: 2026-11-18
+last_modified_at: 2026-11-19
 ---
 
 # Ketentuan Penggunaan

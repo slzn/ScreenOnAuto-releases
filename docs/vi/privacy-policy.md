@@ -5,7 +5,7 @@ lang: vi
 slug: privacy-policy
 permalink: /docs/vi/privacy-policy/
 date: 2026-11-18
-last_modified_at: 2026-11-18
+last_modified_at: 2026-11-19
 ---
 
 # Chính sách quyền riêng tư

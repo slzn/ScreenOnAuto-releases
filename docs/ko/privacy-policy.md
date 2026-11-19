@@ -5,7 +5,7 @@ lang: ko
 slug: privacy-policy
 permalink: /docs/ko/privacy-policy/
 date: 2026-11-18
-last_modified_at: 2026-11-18
+last_modified_at: 2026-11-19
 ---
 
 # 개인정보처리방침

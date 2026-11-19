@@ -5,7 +5,7 @@ lang: th
 slug: terms-of-use
 permalink: /docs/th/terms-of-use/
 date: 2026-11-18
-last_modified_at: 2026-11-18
+last_modified_at: 2026-11-19
 ---
 
 # ข้อกำหนดการใช้งาน
