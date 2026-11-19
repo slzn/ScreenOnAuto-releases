@@ -51,8 +51,9 @@ Cũng với Shizuku hoặc root:
 - **Theo chế độ ngày/đêm của xe** *(Android 10+)* — Trong khi phản chiếu, điện thoại chuyển giữa giao diện sáng và tối cùng với Android Auto
 - **Cỡ chữ khi phản chiếu** — Dùng một cỡ chữ khác trên điện thoại trong khi phản chiếu
 - **Chế độ điều hướng khi phản chiếu** *(Android 10+)* — Trong khi phản chiếu, chuyển điện thoại sang điều hướng bằng cử chỉ, bằng 2 nút hoặc bằng 3 nút
+- **Màn hình chính khi phản chiếu** — Trong khi phản chiếu, chuyển điện thoại sang một trình chạy khác, ví dụ trình chạy giữ nguyên bố cục biểu tượng khi **Khớp màn hình điện thoại với xe** thay đổi hình dạng màn hình
 
-Giao diện, cỡ chữ và chế độ điều hướng gốc của điện thoại sẽ trở lại khi dừng phản chiếu.
+Giao diện, cỡ chữ, chế độ điều hướng và trình chạy gốc của điện thoại sẽ trở lại khi dừng phản chiếu.
 
 Shizuku dừng lại khi bạn cắm cáp vào xe, hoặc màn hình không sáng lại? Xem [Khắc phục sự cố](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cách-sử-dụng#tính-năng-đặc-quyền-shizuku--root).
 

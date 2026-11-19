@@ -31,11 +31,11 @@ Aşağıdakilerin tümü telefonunuzda gerçekleşir. Telefondan çıkan her şe
 | Erişilebilirlik Hizmeti | Araç ekranındaki dokunmaları telefonda dokunmaya dönüştürmek ve Geri / Ana ekran / Son uygulamalar düğmeleri. Ekran içeriğini okumaz ve aldığı erişilebilirlik olaylarını kullanmaz. |
 | Diğer uygulamaların üzerinde göster | Otomatik Karartma, Yönü Kilitle ve Gece Karartması katmanları. |
 | Sistem ayarlarını değiştirme | Android 16 ve sonrasında tablet modunda, yansıtma sırasında ekran döndürmeyi kilitlemek. |
-| Shizuku veya root (isteğe bağlı) | Ayrıcalıklı özellikler: telefon ekranını kapatma, dokunma enjeksiyonu, telefonun gezinme düğmeleri ve yansıtma sırasında telefonun ekran boyutunu, yoğunluğunu, temasını, yazı tipi boyutunu ve gezinme modunu değiştirme. Yansıtma bittiğinde telefonun kendi değerleri geri yüklenir. |
+| Shizuku veya root (isteğe bağlı) | Ayrıcalıklı özellikler: telefon ekranını kapatma, dokunma enjeksiyonu, telefonun gezinme düğmeleri ve yansıtma sırasında telefonun ekran boyutunu, yoğunluğunu, temasını, yazı tipi boyutunu, gezinme modunu ve varsayılan başlatıcısını (ana ekran uygulaması) değiştirme. Yansıtma bittiğinde telefonun kendi değerleri geri yüklenir. |
 
 ### Neler saklanır
 
-Ayarlarınız ve uygulamanın yansıtmadan sonra geri yüklediği telefonun orijinal ekran değerleri, uygulamanın telefonunuzdaki kendi depolama alanında saklanır. Uygulamayı kaldırdığınızda silinir. Android yedeklemesi açıksa Android, çoğu uygulamada olduğu gibi bu ayarları kendi Google hesabınızın yedeğine ekleyebilir veya verilerinizi yeni bir telefona aktarırken oraya kopyalayabilir.
+Ayarlarınız ve uygulamanın yansıtmadan sonra geri yüklediği telefonun orijinal değerleri (ekran boyutu, tema veya varsayılan başlatıcı gibi), uygulamanın telefonunuzdaki kendi depolama alanında saklanır. Uygulamayı kaldırdığınızda silinir. Android yedeklemesi açıksa Android, çoğu uygulamada olduğu gibi bu ayarları kendi Google hesabınızın yedeğine ekleyebilir veya verilerinizi yeni bir telefona aktarırken oraya kopyalayabilir.
 
 ### Google Play
 

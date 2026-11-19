@@ -33,7 +33,7 @@ Geliştirici, uygulamanın araç kullanırken kullanılmasından doğan kazalard
 
 Bazı özellikler yansıtma sırasında telefonun sistem ayarlarını değiştirir ve yansıtma bitince geri yükler:
 
-- Shizuku veya root ile: ekran boyutu, yoğunluk, tema, yazı tipi boyutu ve gezinme modu;
+- Shizuku veya root ile: ekran boyutu, yoğunluk, tema, yazı tipi boyutu, gezinme modu ve varsayılan başlatıcı (ana ekran uygulaması);
 - Android 16 ve sonrasında tablet modunda Yönü Kilitle: sistemin döndürme kilidi.
 
 Geri yükleme başarısız olabilir; örneğin kabloyu çıkardığınız anda Shizuku bağlantısı koparsa. Bu özellikleri kullanma riski size aittir. Bir ayar değişmiş olarak kalırsa telefonun Ayarlar uygulamasından geri alın. Ekran boyutu ve yoğunluk `adb shell wm size reset` ve `adb shell wm density reset` ile de sıfırlanabilir.

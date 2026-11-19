@@ -33,7 +33,7 @@ Lo sviluppatore non è responsabile di incidenti, multe o qualsiasi altra conseg
 
 Alcune funzioni modificano le impostazioni di sistema del telefono durante il mirroring e le ripristinano al termine:
 
-- con Shizuku o root: dimensioni dello schermo, densità, tema, dimensione del carattere e modalità di navigazione;
+- con Shizuku o root: dimensioni dello schermo, densità, tema, dimensione del carattere, modalità di navigazione e launcher predefinito (app per la schermata Home);
 - Blocca orientamento su Android 16 e versioni successive in modalità tablet: il blocco della rotazione di sistema.
 
 Il ripristino può non riuscire, per esempio se la connessione con Shizuku si interrompe proprio quando scolleghi il cavo. Usi queste funzioni a tuo rischio. Se un'impostazione resta modificata, riportala com'era nell'app Impostazioni del telefono. Dimensioni dello schermo e densità si possono ripristinare anche con `adb shell wm size reset` e `adb shell wm density reset`.

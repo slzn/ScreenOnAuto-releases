@@ -51,8 +51,9 @@ También con Shizuku o root:
 - **Seguir el modo día/noche del coche** *(Android 10+)* — Cambia el teléfono entre tema claro y oscuro junto con Android Auto durante la duplicación
 - **Tamaño de fuente durante la duplicación** — Usa otro tamaño de fuente en el teléfono durante la duplicación
 - **Modo de navegación durante la duplicación** *(Android 10+)* — Cambia el teléfono a navegación por gestos, con 2 botones o con 3 botones durante la duplicación
+- **Pantalla de inicio durante la duplicación** — Cambia el teléfono a otro launcher durante la duplicación, por ejemplo uno que mantiene la disposición de los iconos cuando **Ajustar la pantalla del teléfono a la del coche** cambia la forma de la pantalla
 
-El tema, el tamaño de fuente y el modo de navegación propios del teléfono vuelven cuando termina la duplicación.
+El tema, el tamaño de fuente, el modo de navegación y el launcher propios del teléfono vuelven cuando termina la duplicación.
 
 ¿Shizuku se detuvo al conectar el coche, o la pantalla no se despierta? Consulta [Solución de problemas](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cómo-Usar#funciones-con-privilegios-shizuku--root).
 

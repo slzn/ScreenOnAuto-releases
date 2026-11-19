@@ -31,11 +31,11 @@ Todo lo siguiente ocurre en tu teléfono. Lo que sale de él va solo a tu coche,
 | Servicio de accesibilidad | Convertir los toques en la pantalla del coche en toques en el teléfono, y los botones Atrás / Inicio / Recientes. No lee el contenido de la pantalla ni usa los eventos de accesibilidad que recibe. |
 | Mostrar sobre otras apps | Las superposiciones de Atenuación automática, Bloquear orientación y Atenuación nocturna. |
 | Modificar ajustes del sistema | Bloquear la rotación de la pantalla durante la duplicación, en Android 16 y posteriores en modo tablet. |
-| Shizuku o root (opcional) | Las funciones privilegiadas: apagar la pantalla del teléfono, la inyección táctil, los botones de navegación del teléfono y cambiar el tamaño de pantalla, la densidad, el tema, el tamaño de fuente y el modo de navegación del teléfono durante la duplicación. Los valores propios del teléfono se restauran al terminar la duplicación. |
+| Shizuku o root (opcional) | Las funciones privilegiadas: apagar la pantalla del teléfono, la inyección táctil, los botones de navegación del teléfono y cambiar el tamaño de pantalla, la densidad, el tema, el tamaño de fuente, el modo de navegación y el launcher predeterminado (aplicación de pantalla de inicio) del teléfono durante la duplicación. Los valores propios del teléfono se restauran al terminar la duplicación. |
 
 ### Qué se guarda
 
-Tus ajustes, y los valores de pantalla originales del teléfono que la app restaura después de duplicar, se guardan en el almacenamiento propio de la app en tu teléfono. Al desinstalar la app se borran. Si tienes activada la copia de seguridad de Android, Android puede incluir estos ajustes en la copia de tu propia cuenta de Google, o copiarlos a un teléfono nuevo cuando transfieres tus datos, como hace con la mayoría de las apps.
+Tus ajustes, y los valores originales del teléfono que la app restaura después de duplicar (como el tamaño de pantalla, el tema o el launcher predeterminado), se guardan en el almacenamiento propio de la app en tu teléfono. Al desinstalar la app se borran. Si tienes activada la copia de seguridad de Android, Android puede incluir estos ajustes en la copia de tu propia cuenta de Google, o copiarlos a un teléfono nuevo cuando transfieres tus datos, como hace con la mayoría de las apps.
 
 ### Google Play
 

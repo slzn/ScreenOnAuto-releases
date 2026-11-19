@@ -51,8 +51,9 @@ Also with Shizuku or root:
 - **Follow the Car's Day/Night Mode** *(Android 10+)* — Switch the phone between light and dark theme with Android Auto while mirroring
 - **Font Size While Mirroring** — Give the phone a different font size while mirroring
 - **Navigation Mode While Mirroring** *(Android 10+)* — Switch the phone to gesture, 2-button or 3-button navigation while mirroring
+- **Home Screen While Mirroring** — Switch the phone to another launcher while mirroring, for example one that keeps its icon layout when **Match the Phone Screen to the Car** changes the screen shape
 
-The phone's own theme, font size and navigation mode come back when mirroring stops.
+The phone's own theme, font size, navigation mode and launcher come back when mirroring stops.
 
 Shizuku stopped when you plugged in, or the screen won't wake up? See [Troubleshooting](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use#privileged-features-shizuku--root).
 

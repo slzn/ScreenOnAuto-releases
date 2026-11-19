@@ -33,7 +33,7 @@ El desarrollador no se hace responsable de accidentes, multas ni ninguna otra co
 
 Algunas funciones cambian ajustes del sistema del teléfono durante la duplicación y los restauran al terminar:
 
-- con Shizuku o root: el tamaño de pantalla, la densidad, el tema, el tamaño de fuente y el modo de navegación;
+- con Shizuku o root: el tamaño de pantalla, la densidad, el tema, el tamaño de fuente, el modo de navegación y el launcher predeterminado (aplicación de pantalla de inicio);
 - Bloquear orientación en Android 16 y posteriores en modo tablet: el bloqueo de rotación del sistema.
 
 La restauración puede fallar, por ejemplo si se pierde la conexión con Shizuku justo al desconectar el cable. Usas estas funciones bajo tu propia responsabilidad. Si un ajuste se queda cambiado, vuelve a ponerlo en la app Ajustes del teléfono. El tamaño de pantalla y la densidad también se pueden restablecer con `adb shell wm size reset` y `adb shell wm density reset`.

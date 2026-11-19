@@ -33,7 +33,7 @@ Le développeur n'est pas responsable des accidents, amendes ou autres conséque
 
 Certaines fonctions modifient les paramètres système du téléphone pendant la duplication et les rétablissent à la fin :
 
-- avec Shizuku ou root : la taille d'écran, la densité, le thème, la taille de police et le mode de navigation ;
+- avec Shizuku ou root : la taille d'écran, la densité, le thème, la taille de police, le mode de navigation et le lanceur par défaut (application d'écran d'accueil) ;
 - Verrouiller l'orientation sur Android 16 et versions ultérieures en mode tablette : le verrouillage de rotation du système.
 
 Le rétablissement peut échouer, par exemple si la connexion à Shizuku est perdue au moment où vous débranchez le câble. Vous utilisez ces fonctions à vos propres risques. Si un paramètre reste modifié, rétablissez-le dans l'application Paramètres du téléphone. La taille d'écran et la densité peuvent aussi être réinitialisées avec `adb shell wm size reset` et `adb shell wm density reset`.

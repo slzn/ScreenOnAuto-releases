@@ -31,11 +31,11 @@ Tout ce qui suit se passe sur votre téléphone. Ce qui en sort va uniquement ve
 | Service d'accessibilité | Transformer les appuis sur l'écran de la voiture en appuis sur le téléphone, ainsi que les boutons Retour / Accueil / Récents. Il ne lit pas le contenu de l'écran et n'utilise pas les événements d'accessibilité qu'il reçoit. |
 | Afficher par-dessus les autres apps | Les calques d'Atténuation automatique, Verrouiller l'orientation et Atténuation de nuit. |
 | Modifier les paramètres système | Verrouiller la rotation de l'écran pendant la duplication, sur Android 16 et versions ultérieures en mode tablette. |
-| Shizuku ou root (facultatif) | Les fonctions privilégiées : éteindre l'écran du téléphone, l'injection tactile, les boutons de navigation du téléphone, et modifier la taille d'écran, la densité, le thème, la taille de police et le mode de navigation du téléphone pendant la duplication. Les valeurs d'origine du téléphone sont rétablies à la fin de la duplication. |
+| Shizuku ou root (facultatif) | Les fonctions privilégiées : éteindre l'écran du téléphone, l'injection tactile, les boutons de navigation du téléphone, et modifier la taille d'écran, la densité, le thème, la taille de police, le mode de navigation et le lanceur par défaut (application d'écran d'accueil) du téléphone pendant la duplication. Les valeurs d'origine du téléphone sont rétablies à la fin de la duplication. |
 
 ### Ce qui est stocké
 
-Vos réglages, ainsi que les valeurs d'affichage d'origine du téléphone que l'application rétablit après la duplication, sont enregistrés dans le stockage propre de l'application sur votre téléphone. Désinstaller l'application les supprime. Si la sauvegarde Android est activée, Android peut inclure ces réglages dans la sauvegarde de votre propre compte Google, ou les copier sur un nouveau téléphone lors d'un transfert de données, comme pour la plupart des applications.
+Vos réglages, ainsi que les valeurs d'origine du téléphone que l'application rétablit après la duplication (comme la taille d'écran, le thème ou le lanceur par défaut), sont enregistrés dans le stockage propre de l'application sur votre téléphone. Désinstaller l'application les supprime. Si la sauvegarde Android est activée, Android peut inclure ces réglages dans la sauvegarde de votre propre compte Google, ou les copier sur un nouveau téléphone lors d'un transfert de données, comme pour la plupart des applications.
 
 ### Google Play
 

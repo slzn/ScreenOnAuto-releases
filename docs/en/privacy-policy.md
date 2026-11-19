@@ -31,11 +31,11 @@ All of the following happens on your phone. Whatever leaves it goes only to your
 | Accessibility Service | Turning taps on the car screen into taps on the phone, and the Back / Home / Recent apps buttons. It does not read screen content and does not use the accessibility events it receives. |
 | Display Over Other Apps | The Auto Dim, Lock Orientation and Night Dim overlays. |
 | Modify System Settings | Locking the screen rotation while mirroring, on Android 16 and later in tablet mode. |
-| Shizuku or root (optional) | The privileged features: turning the phone screen off, touch injection, the phone navigation buttons, and changing the phone's screen size, density, theme, font size and navigation mode while mirroring. The phone's own values are put back when mirroring ends. |
+| Shizuku or root (optional) | The privileged features: turning the phone screen off, touch injection, the phone navigation buttons, and changing the phone's screen size, density, theme, font size, navigation mode and default launcher (home app) while mirroring. The phone's own values are put back when mirroring ends. |
 
 ### What is stored
 
-Your settings, and the phone's original display values that the app puts back after mirroring, are saved inside the app's own storage on your phone. Uninstalling the app deletes them. If Android backup is turned on, Android may include these settings in your own Google account backup, or copy them to a new phone when you transfer your data, as it does for most apps.
+Your settings, and the phone's own values that the app puts back after mirroring (such as the screen size, theme or default launcher), are saved inside the app's own storage on your phone. Uninstalling the app deletes them. If Android backup is turned on, Android may include these settings in your own Google account backup, or copy them to a new phone when you transfer your data, as it does for most apps.
 
 ### Google Play
 

@@ -31,11 +31,11 @@ Tudo o que está abaixo acontece no seu celular. O que sai dele vai apenas para 
 | Serviço de acessibilidade | Transformar toques na tela do carro em toques no celular, e os botões Voltar / Início / Recentes. Ele não lê o conteúdo da tela e não usa os eventos de acessibilidade que recebe. |
 | Sobrepor a outros apps | As sobreposições de Escurecimento automático, Travar orientação e Escurecimento noturno. |
 | Modificar configurações do sistema | Travar a rotação da tela durante o espelhamento, no Android 16 e posteriores em modo tablet. |
-| Shizuku ou root (opcional) | Os recursos privilegiados: desligar a tela do celular, injeção de toque, os botões de navegação do celular e alterar o tamanho da tela, a densidade, o tema, o tamanho da fonte e o modo de navegação do celular durante o espelhamento. Os valores originais do celular são restaurados quando o espelhamento termina. |
+| Shizuku ou root (opcional) | Os recursos privilegiados: desligar a tela do celular, injeção de toque, os botões de navegação do celular e alterar o tamanho da tela, a densidade, o tema, o tamanho da fonte, o modo de navegação e o launcher padrão (app de tela inicial) do celular durante o espelhamento. Os valores originais do celular são restaurados quando o espelhamento termina. |
 
 ### O que é armazenado
 
-As suas configurações e os valores de tela originais do celular, que o app restaura após o espelhamento, ficam salvos no armazenamento próprio do app no seu celular. Desinstalar o app os apaga. Se o backup do Android estiver ativado, o Android pode incluir essas configurações no backup da sua própria Conta do Google, ou copiá-las para um celular novo quando você transfere os seus dados, como faz com a maioria dos apps.
+As suas configurações e os valores originais do celular que o app restaura após o espelhamento (como o tamanho da tela, o tema ou o launcher padrão) ficam salvos no armazenamento próprio do app no seu celular. Desinstalar o app os apaga. Se o backup do Android estiver ativado, o Android pode incluir essas configurações no backup da sua própria Conta do Google, ou copiá-las para um celular novo quando você transfere os seus dados, como faz com a maioria dos apps.
 
 ### Google Play
 

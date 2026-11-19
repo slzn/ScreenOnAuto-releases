@@ -31,11 +31,11 @@ Mọi xử lý dưới đây đều diễn ra trên điện thoại của bạn.
 | Dịch vụ hỗ trợ tiếp cận | Chuyển thao tác chạm trên màn hình xe thành thao tác chạm trên điện thoại, cùng các nút Quay lại / Màn hình chính / Ứng dụng gần đây. Dịch vụ này không đọc nội dung màn hình và không dùng các sự kiện hỗ trợ tiếp cận mà nó nhận được. |
 | Hiển thị trên các ứng dụng khác | Lớp phủ cho Tự động làm tối, Khóa hướng xoay và Làm tối ban đêm. |
 | Sửa đổi các tùy chọn cài đặt hệ thống | Khóa xoay màn hình trong khi phản chiếu, trên Android 16 trở lên ở chế độ máy tính bảng. |
-| Shizuku hoặc root (không bắt buộc) | Các tính năng đặc quyền: tắt màn hình điện thoại, chèn chạm, các nút điều hướng của điện thoại, và thay đổi kích thước màn hình, mật độ, giao diện, cỡ chữ và chế độ điều hướng của điện thoại trong khi phản chiếu. Các giá trị gốc của điện thoại được khôi phục khi kết thúc phản chiếu. |
+| Shizuku hoặc root (không bắt buộc) | Các tính năng đặc quyền: tắt màn hình điện thoại, chèn chạm, các nút điều hướng của điện thoại, và thay đổi kích thước màn hình, mật độ, giao diện, cỡ chữ, chế độ điều hướng và trình chạy mặc định (ứng dụng màn hình chính) của điện thoại trong khi phản chiếu. Các giá trị gốc của điện thoại được khôi phục khi kết thúc phản chiếu. |
 
 ### Dữ liệu được lưu
 
-Các tùy chọn của bạn, cùng các giá trị hiển thị gốc của điện thoại mà ứng dụng khôi phục sau khi phản chiếu, được lưu trong bộ nhớ riêng của ứng dụng trên điện thoại. Gỡ cài đặt ứng dụng sẽ xóa chúng. Nếu bạn bật sao lưu Android, Android có thể đưa các tùy chọn này vào bản sao lưu trên chính Tài khoản Google của bạn, hoặc sao chép chúng sang điện thoại mới khi bạn chuyển dữ liệu, như với hầu hết ứng dụng khác.
+Các tùy chọn của bạn, cùng các giá trị gốc của điện thoại mà ứng dụng khôi phục sau khi phản chiếu (như kích thước màn hình, giao diện hoặc trình chạy mặc định), được lưu trong bộ nhớ riêng của ứng dụng trên điện thoại. Gỡ cài đặt ứng dụng sẽ xóa chúng. Nếu bạn bật sao lưu Android, Android có thể đưa các tùy chọn này vào bản sao lưu trên chính Tài khoản Google của bạn, hoặc sao chép chúng sang điện thoại mới khi bạn chuyển dữ liệu, như với hầu hết ứng dụng khác.
 
 ### Google Play
 

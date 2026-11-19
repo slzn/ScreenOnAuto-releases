@@ -31,11 +31,11 @@ Alles Folgende geschieht auf deinem Telefon. Was es verlässt, geht nur an dein 
 | Bedienungshilfen-Dienst | Berührungen auf dem Autobildschirm in Berührungen auf dem Telefon umsetzen, dazu die Schaltflächen Zurück / Startseite / Letzte Apps. Er liest keine Bildschirminhalte und nutzt die Bedienungshilfen-Ereignisse nicht, die er erhält. |
 | Über anderen Apps anzeigen | Die Overlays für Auto-Dimmen, Ausrichtung sperren und Nachtdimmen. |
 | Systemeinstellungen ändern | Die Bildschirmdrehung während der Spiegelung sperren, ab Android 16 im Tablet-Modus. |
-| Shizuku oder Root (optional) | Die privilegierten Funktionen: Telefonbildschirm ausschalten, echte Toucheingabe, die Navigationstasten des Telefons sowie Bildschirmgröße, Dichte, Design, Schriftgröße und Navigationsmodus des Telefons während der Spiegelung ändern. Die eigenen Werte des Telefons werden nach der Spiegelung wiederhergestellt. |
+| Shizuku oder Root (optional) | Die privilegierten Funktionen: Telefonbildschirm ausschalten, echte Toucheingabe, die Navigationstasten des Telefons sowie Bildschirmgröße, Dichte, Design, Schriftgröße, Navigationsmodus und Standard-Launcher (Start-App) des Telefons während der Spiegelung ändern. Die eigenen Werte des Telefons werden nach der Spiegelung wiederhergestellt. |
 
 ### Was gespeichert wird
 
-Deine Einstellungen und die ursprünglichen Anzeigewerte des Telefons, die die App nach der Spiegelung wiederherstellt, liegen im eigenen Speicher der App auf deinem Telefon. Beim Deinstallieren der App werden sie gelöscht. Ist die Android-Sicherung aktiviert, kann Android diese Einstellungen – wie bei den meisten Apps – in die Sicherung deines eigenen Google-Kontos aufnehmen oder sie bei einer Datenübertragung auf ein neues Telefon kopieren.
+Deine Einstellungen und die ursprünglichen Werte des Telefons, die die App nach der Spiegelung wiederherstellt (etwa Bildschirmgröße, Design oder Standard-Launcher), liegen im eigenen Speicher der App auf deinem Telefon. Beim Deinstallieren der App werden sie gelöscht. Ist die Android-Sicherung aktiviert, kann Android diese Einstellungen – wie bei den meisten Apps – in die Sicherung deines eigenen Google-Kontos aufnehmen oder sie bei einer Datenübertragung auf ein neues Telefon kopieren.
 
 ### Google Play
 

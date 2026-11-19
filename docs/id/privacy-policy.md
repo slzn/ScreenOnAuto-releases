@@ -31,11 +31,11 @@ Semua hal di bawah ini terjadi di ponsel Anda. Apa pun yang keluar dari ponsel h
 | Layanan Aksesibilitas | Mengubah sentuhan di layar mobil menjadi sentuhan di ponsel, serta tombol Kembali / Beranda / Aplikasi terbaru. Layanan ini tidak membaca isi layar dan tidak menggunakan peristiwa aksesibilitas yang diterimanya. |
 | Tampilkan di atas aplikasi lain | Overlay untuk Peredupan otomatis, Kunci orientasi, dan Peredupan malam. |
 | Ubah setelan sistem | Mengunci rotasi layar selama pencerminan, di Android 16 dan yang lebih baru dalam mode tablet. |
-| Shizuku atau root (opsional) | Fitur istimewa: mematikan layar ponsel, injeksi sentuh, tombol navigasi ponsel, serta mengubah ukuran layar, kepadatan, tema, ukuran font, dan mode navigasi ponsel selama pencerminan. Nilai asli ponsel dikembalikan saat pencerminan berakhir. |
+| Shizuku atau root (opsional) | Fitur istimewa: mematikan layar ponsel, injeksi sentuh, tombol navigasi ponsel, serta mengubah ukuran layar, kepadatan, tema, ukuran font, mode navigasi, dan peluncur default (aplikasi layar utama) ponsel selama pencerminan. Nilai asli ponsel dikembalikan saat pencerminan berakhir. |
 
 ### Apa yang disimpan
 
-Pengaturan Anda, beserta nilai tampilan asli ponsel yang dikembalikan aplikasi setelah pencerminan, disimpan di penyimpanan milik aplikasi di ponsel Anda. Menghapus aplikasi juga menghapusnya. Jika pencadangan Android aktif, Android dapat menyertakan pengaturan ini dalam cadangan Akun Google Anda sendiri, atau menyalinnya ke ponsel baru saat Anda memindahkan data, seperti pada kebanyakan aplikasi.
+Pengaturan Anda, beserta nilai asli ponsel yang dikembalikan aplikasi setelah pencerminan (seperti ukuran layar, tema, atau peluncur default), disimpan di penyimpanan milik aplikasi di ponsel Anda. Menghapus aplikasi juga menghapusnya. Jika pencadangan Android aktif, Android dapat menyertakan pengaturan ini dalam cadangan Akun Google Anda sendiri, atau menyalinnya ke ponsel baru saat Anda memindahkan data, seperti pada kebanyakan aplikasi.
 
 ### Google Play
 

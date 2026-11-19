@@ -33,7 +33,7 @@ O desenvolvedor não se responsabiliza por acidentes, multas ou quaisquer outras
 
 Alguns recursos alteram configurações do sistema do celular durante o espelhamento e as restauram quando ele termina:
 
-- com Shizuku ou root: o tamanho da tela, a densidade, o tema, o tamanho da fonte e o modo de navegação;
+- com Shizuku ou root: o tamanho da tela, a densidade, o tema, o tamanho da fonte, o modo de navegação e o launcher padrão (app de tela inicial);
 - Travar orientação no Android 16 e posteriores em modo tablet: o bloqueio de rotação do sistema.
 
 A restauração pode falhar, por exemplo se a conexão com o Shizuku cair no momento em que você desconecta o cabo. Você usa esses recursos por sua conta e risco. Se uma configuração continuar alterada, volte-a no app Configurações do celular. O tamanho da tela e a densidade também podem ser redefinidos com `adb shell wm size reset` e `adb shell wm density reset`.

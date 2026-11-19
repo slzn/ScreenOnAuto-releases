@@ -33,7 +33,7 @@ The developer is not responsible for accidents, fines or any other consequences 
 
 Some features change your phone's system settings while mirroring and put them back when it ends:
 
-- with Shizuku or root: the screen size, density, theme, font size and navigation mode;
+- with Shizuku or root: the screen size, density, theme, font size, navigation mode and default launcher (home app);
 - Lock Orientation on Android 16 and later in tablet mode: the system rotation lock.
 
 Putting them back can fail, for example if the connection to Shizuku is lost at the moment you unplug. You use these features at your own risk. If a setting stays changed, set it back in the phone's Settings app. The screen size and density can also be reset with `adb shell wm size reset` and `adb shell wm density reset`.

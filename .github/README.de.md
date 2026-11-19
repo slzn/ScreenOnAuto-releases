@@ -51,8 +51,9 @@ Außerdem mit Shizuku oder Root:
 - **Tag-/Nachtmodus des Autos folgen** *(Android 10+)* – Schaltet das Telefon während der Spiegelung zusammen mit Android Auto zwischen hellem und dunklem Design um
 - **Schriftgröße während der Spiegelung** – Gibt dem Telefon während der Spiegelung eine andere Schriftgröße
 - **Navigationsmodus während der Spiegelung** *(Android 10+)* – Stellt das Telefon während der Spiegelung auf Gestensteuerung oder Bedienung über 2 bzw. 3 Schaltflächen um
+- **Startbildschirm während der Spiegelung** – Wechselt das Telefon während der Spiegelung zu einem anderen Launcher, etwa einem, der seine Symbolanordnung behält, wenn **Telefonbildschirm an das Auto anpassen** die Bildschirmform ändert
 
-Design, Schriftgröße und Navigationsmodus des Telefons werden nach dem Ende der Spiegelung wiederhergestellt.
+Design, Schriftgröße, Navigationsmodus und Launcher des Telefons werden nach dem Ende der Spiegelung wiederhergestellt.
 
 Shizuku wurde beim Anstecken ans Auto beendet, oder der Bildschirm wacht nicht auf? Siehe [Fehlerbehebung](https://github.com/slzn/ScreenOnAuto-releases/wiki/Verwendung#privilegierte-funktionen-shizuku--root).
 

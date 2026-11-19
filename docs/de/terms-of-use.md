@@ -33,7 +33,7 @@ Der Entwickler haftet nicht für Unfälle, Bußgelder oder andere Folgen der Nut
 
 Einige Funktionen ändern während der Spiegelung Systemeinstellungen des Telefons und stellen sie danach wieder her:
 
-- mit Shizuku oder Root: Bildschirmgröße, Dichte, Design, Schriftgröße und Navigationsmodus;
+- mit Shizuku oder Root: Bildschirmgröße, Dichte, Design, Schriftgröße, Navigationsmodus und Standard-Launcher (Start-App);
 - Ausrichtung sperren ab Android 16 im Tablet-Modus: die Rotationssperre des Systems.
 
 Das Wiederherstellen kann fehlschlagen, etwa wenn die Verbindung zu Shizuku genau beim Abziehen des Kabels abbricht. Du nutzt diese Funktionen auf eigenes Risiko. Bleibt eine Einstellung verändert, stelle sie in der Einstellungen-App des Telefons zurück. Bildschirmgröße und Dichte lassen sich auch mit `adb shell wm size reset` und `adb shell wm density reset` zurücksetzen.

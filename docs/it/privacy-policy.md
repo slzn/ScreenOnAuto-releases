@@ -31,11 +31,11 @@ Tutto quanto segue avviene sul telefono. Ciò che ne esce va solo all'auto, tram
 | Servizio di accessibilità | Trasformare i tocchi sullo schermo dell'auto in tocchi sul telefono, oltre ai pulsanti Indietro / Home / Recenti. Non legge il contenuto dello schermo e non usa gli eventi di accessibilità che riceve. |
 | Mostra sopra le altre app | Le sovrapposizioni di Oscuramento automatico, Blocca orientamento e Oscuramento notturno. |
 | Modifica impostazioni di sistema | Bloccare la rotazione dello schermo durante il mirroring, su Android 16 e versioni successive in modalità tablet. |
-| Shizuku o root (facoltativo) | Le funzioni privilegiate: spegnere lo schermo del telefono, l'iniezione tocco, i pulsanti di navigazione del telefono e modificare dimensioni dello schermo, densità, tema, dimensione del carattere e modalità di navigazione del telefono durante il mirroring. I valori originali del telefono vengono ripristinati al termine del mirroring. |
+| Shizuku o root (facoltativo) | Le funzioni privilegiate: spegnere lo schermo del telefono, l'iniezione tocco, i pulsanti di navigazione del telefono e modificare dimensioni dello schermo, densità, tema, dimensione del carattere, modalità di navigazione e launcher predefinito (app per la schermata Home) del telefono durante il mirroring. I valori originali del telefono vengono ripristinati al termine del mirroring. |
 
 ### Cosa viene salvato
 
-Le tue impostazioni, e i valori di visualizzazione originali del telefono che l'app ripristina dopo il mirroring, sono salvati nella memoria propria dell'app sul telefono. Disinstallando l'app vengono eliminati. Se il backup di Android è attivo, Android può includere queste impostazioni nel backup del tuo account Google, o copiarle su un nuovo telefono quando trasferisci i dati, come fa per la maggior parte delle app.
+Le tue impostazioni, e i valori originali del telefono che l'app ripristina dopo il mirroring (come dimensioni dello schermo, tema o launcher predefinito), sono salvati nella memoria propria dell'app sul telefono. Disinstallando l'app vengono eliminati. Se il backup di Android è attivo, Android può includere queste impostazioni nel backup del tuo account Google, o copiarle su un nuovo telefono quando trasferisci i dati, come fa per la maggior parte delle app.
 
 ### Google Play
 

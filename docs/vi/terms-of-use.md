@@ -33,7 +33,7 @@ Nhà phát triển không chịu trách nhiệm về tai nạn, tiền phạt ha
 
 Một số tính năng thay đổi cài đặt hệ thống của điện thoại trong khi phản chiếu và khôi phục lại khi kết thúc:
 
-- với Shizuku hoặc root: kích thước màn hình, mật độ, giao diện, cỡ chữ và chế độ điều hướng;
+- với Shizuku hoặc root: kích thước màn hình, mật độ, giao diện, cỡ chữ, chế độ điều hướng và trình chạy mặc định (ứng dụng màn hình chính);
 - Khóa hướng xoay trên Android 16 trở lên ở chế độ máy tính bảng: khóa xoay của hệ thống.
 
 Việc khôi phục có thể thất bại, ví dụ khi kết nối với Shizuku bị mất đúng lúc bạn rút cáp. Bạn tự chịu rủi ro khi dùng các tính năng này. Nếu một cài đặt vẫn bị thay đổi, hãy đặt lại trong ứng dụng Cài đặt của điện thoại. Kích thước màn hình và mật độ cũng có thể được đặt lại bằng `adb shell wm size reset` và `adb shell wm density reset`.

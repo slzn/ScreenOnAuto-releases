@@ -33,7 +33,7 @@ Developer tidak bertanggung jawab atas kecelakaan, denda, atau akibat lain dari 
 
 Beberapa fitur mengubah setelan sistem ponsel selama pencerminan dan mengembalikannya saat pencerminan berakhir:
 
-- dengan Shizuku atau root: ukuran layar, kepadatan, tema, ukuran font, dan mode navigasi;
+- dengan Shizuku atau root: ukuran layar, kepadatan, tema, ukuran font, mode navigasi, dan peluncur default (aplikasi layar utama);
 - Kunci orientasi di Android 16 dan yang lebih baru dalam mode tablet: kunci rotasi sistem.
 
 Pengembalian bisa gagal, misalnya jika koneksi ke Shizuku terputus tepat saat Anda mencabut kabel. Anda menggunakan fitur ini dengan risiko sendiri. Jika ada setelan yang tetap berubah, kembalikan di aplikasi Setelan ponsel. Ukuran layar dan kepadatan juga bisa direset dengan `adb shell wm size reset` dan `adb shell wm density reset`.
