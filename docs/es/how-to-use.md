@@ -80,13 +80,11 @@ la otra entrada la muestra al instante sin volver a pedir permiso.
 
 Si prefieres mantener **Inicio automático** desactivado:
 
-1. Abre ScreenOnAuto en el teléfono, activa el interruptor **Duplicar pantalla** y
-   pulsa **Empezar ahora** (Start now) en el diálogo de permiso.
+1. Abre ScreenOnAuto en el teléfono, pulsa **Iniciar duplicación** y luego **Empezar ahora** (Start now) en el diálogo de permiso.
 2. En la pantalla del coche, abre una de las entradas de ScreenOnAuto — la duplicación
    ya está en marcha y se muestra de inmediato.
 
-(El orden no importa — también puedes abrir la entrada primero y activar el
-interruptor **Duplicar pantalla** después.)
+(El orden no importa — también puedes abrir la entrada primero y pulsar **Iniciar duplicación** después.)
 
 ### Omitir el diálogo de permiso
 
@@ -100,7 +98,7 @@ Cualquiera de estas opciones funciona:
 - **Desconectar del coche** — la duplicación se detiene automáticamente (ajuste
   predeterminado *Detener al desconectar*).
 - Pulsar **Detener duplicación** en la notificación persistente del teléfono.
-- Desactivar el interruptor **Duplicar pantalla** en la app.
+- Pulsar **Detener duplicación** en la app.
 
 ## Solución de problemas
 
@@ -109,7 +107,7 @@ Cualquiera de estas opciones funciona:
 #### La entrada se abre pero queda en blanco
 
 La duplicación aún no ha empezado; mira si hay un diálogo de permiso en el teléfono, o
-iníciala con el interruptor **Duplicar pantalla**.
+iníciala con **Iniciar duplicación** en la app.
 
 #### Barras negras alrededor de la imagen
 

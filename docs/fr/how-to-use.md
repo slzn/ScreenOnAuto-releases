@@ -81,13 +81,11 @@ redemander de permission.
 
 Si vous préférez laisser le **démarrage automatique** désactivé :
 
-1. Ouvrez ScreenOnAuto sur le téléphone, activez l'interrupteur de **duplication**, puis
-   touchez **Commencer** dans la boîte de dialogue.
+1. Ouvrez ScreenOnAuto sur le téléphone, touchez **Démarrer la duplication**, puis **Commencer** dans la boîte de dialogue.
 2. Sur l'écran de la voiture, ouvrez une des entrées ScreenOnAuto — la duplication est
    déjà en cours et s'affiche immédiatement.
 
-(L'ordre n'a pas d'importance — vous pouvez aussi ouvrir l'entrée d'abord et activer
-l'interrupteur ensuite.)
+(L'ordre n'a pas d'importance — vous pouvez aussi ouvrir l'entrée d'abord et toucher **Démarrer la duplication** ensuite.)
 
 ### Éviter la boîte de dialogue de permission
 
@@ -101,7 +99,7 @@ Au choix :
 - **Déconnectez le téléphone de la voiture** — la duplication s'arrête automatiquement
   (réglage par défaut *Arrêter à la déconnexion*).
 - Touchez **Arrêter la duplication** sur la notification persistante du téléphone.
-- Désactivez l'interrupteur de **duplication** dans l'app.
+- Touchez **Arrêter la duplication** dans l'app.
 
 ## Dépannage
 
@@ -110,7 +108,7 @@ Au choix :
 #### L'entrée s'ouvre mais reste vide
 
 La duplication n'a pas encore démarré ; vérifiez la boîte de dialogue de permission sur
-le téléphone, ou lancez-la via l'interrupteur de **duplication**.
+le téléphone, ou lancez-la avec **Démarrer la duplication** dans l'app.
 
 #### Bandes noires autour de l'image
 

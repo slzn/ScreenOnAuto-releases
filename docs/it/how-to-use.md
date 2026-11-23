@@ -80,12 +80,11 @@ attivo, aprire l'altra voce lo mostra subito senza richiedere di nuovo l'autoriz
 
 Se preferisci tenere l'**avvio automatico** disattivato:
 
-1. Apri ScreenOnAuto sul telefono, attiva l'interruttore del **mirroring** e tocca
-   **Avvia adesso** nella finestra di autorizzazione.
+1. Apri ScreenOnAuto sul telefono, tocca **Avvia mirroring** e poi **Avvia adesso** nella finestra di autorizzazione.
 2. Sullo schermo dell'auto, apri una delle voci ScreenOnAuto — il mirroring è già in
    corso e compare subito.
 
-(L'ordine non conta — puoi anche aprire prima la voce e attivare l'interruttore dopo.)
+(L'ordine non conta — puoi anche aprire prima la voce e toccare **Avvia mirroring** dopo.)
 
 ### Saltare la finestra di autorizzazione
 
@@ -99,7 +98,7 @@ Uno qualsiasi di questi metodi:
 - **Scollega il telefono dall'auto** — il mirroring si interrompe automaticamente
   (impostazione predefinita *Interrompi alla disconnessione*).
 - Tocca **Interrompi mirroring** nella notifica persistente del telefono.
-- Disattiva l'interruttore del **mirroring** nell'app.
+- Tocca **Interrompi mirroring** nell'app.
 
 ## Risoluzione dei problemi
 
@@ -108,7 +107,7 @@ Uno qualsiasi di questi metodi:
 #### La voce si apre ma resta vuota
 
 Il mirroring non è ancora partito; controlla la finestra di autorizzazione sul telefono,
-oppure avvialo con l'interruttore del **mirroring**.
+oppure avvialo con **Avvia mirroring** nell'app.
 
 #### Bande nere attorno all'immagine
 

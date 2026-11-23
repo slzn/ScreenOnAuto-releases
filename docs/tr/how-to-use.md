@@ -80,13 +80,11 @@ gösterir.
 
 **Yansıtmayı otomatik başlat**'ı kapalı tutmayı tercih ediyorsanız:
 
-1. Telefonda ScreenOnAuto'yu açın ve **Ekran yansıtma** anahtarını açın, ardından
-   izin penceresinde **Şimdi başlat**'a dokunun.
+1. Telefonda ScreenOnAuto'yu açın ve **Yansıtmayı başlat**'a, ardından izin penceresinde **Şimdi başlat**'a dokunun.
 2. Araç ekranında ScreenOnAuto girişlerinden birini açın — yansıtma zaten çalışıyordur
    ve hemen görünür.
 
-(Sıra önemli değildir — önce girişi açıp **Ekran yansıtma** anahtarını sonra da
-açabilirsiniz.)
+(Sıra önemli değildir — önce girişi açıp **Yansıtmayı başlat**'a sonra da dokunabilirsiniz.)
 
 ### İzin penceresini atlama
 
@@ -100,7 +98,7 @@ verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](/docs/tr/grant-mirror-pe
 - **Arabayla bağlantıyı kesin** — yansıtma otomatik olarak durur (varsayılan
   *Bağlantı kesilince durdur* ayarı).
 - Telefondaki kalıcı bildirimde **Yansıtmayı durdur**'a dokunun.
-- Uygulamadaki **Ekran yansıtma** anahtarını kapatın.
+- Uygulamada **Yansıtmayı durdur**'a dokunun.
 
 ## Sorun Giderme
 
@@ -108,8 +106,7 @@ verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](/docs/tr/grant-mirror-pe
 
 #### Giriş açılıyor ama boş kalıyor
 
-Yansıtma henüz başlamamıştır; telefonda izin penceresini kontrol edin veya **Ekran
-yansıtma** anahtarıyla başlatın.
+Yansıtma henüz başlamamıştır; telefonda izin penceresini kontrol edin veya uygulamada **Yansıtmayı başlat**'a dokunarak başlatın.
 
 #### Görüntünün etrafında siyah bantlar var
 

@@ -76,12 +76,11 @@ mục còn lại sẽ hiện hình ngay mà không cần xin lại quyền.
 
 Nếu bạn muốn để **Tự động bắt đầu phản chiếu** ở trạng thái tắt:
 
-1. Mở ScreenOnAuto trên điện thoại và bật công tắc **Phản chiếu màn hình**, rồi nhấn
-   **Bắt đầu ngay** trong hộp thoại xin quyền.
+1. Mở ScreenOnAuto trên điện thoại và nhấn **Bắt đầu phản chiếu**, rồi nhấn **Bắt đầu ngay** trong hộp thoại xin quyền.
 2. Trên màn hình xe, mở một trong các mục ScreenOnAuto — hình phản chiếu đã chạy sẵn
    và hiện ra ngay.
 
-(Thứ tự không quan trọng — bạn cũng có thể mở mục trước rồi mới bật công tắc **Phản chiếu màn hình**.)
+(Thứ tự không quan trọng — bạn cũng có thể mở mục trước rồi mới nhấn **Bắt đầu phản chiếu**.)
 
 ### Bỏ qua hộp thoại xin quyền
 
@@ -95,7 +94,7 @@ Có thể dùng bất kỳ cách nào sau:
 - **Ngắt kết nối với xe** — phản chiếu tự động dừng (cài đặt mặc định *Dừng khi
   ngắt kết nối*).
 - Nhấn **Dừng phản chiếu** trên thông báo thường trực của điện thoại.
-- Tắt công tắc **Phản chiếu màn hình** trong ứng dụng.
+- Nhấn **Dừng phản chiếu** trong ứng dụng.
 
 ## Khắc phục sự cố
 
@@ -103,8 +102,7 @@ Có thể dùng bất kỳ cách nào sau:
 
 #### Mục mở ra nhưng màn hình vẫn trống
 
-Phản chiếu chưa bắt đầu; hãy xem điện thoại có hiện hộp thoại xin quyền không, hoặc bắt đầu bằng
-công tắc **Phản chiếu màn hình**.
+Phản chiếu chưa bắt đầu; hãy xem điện thoại có hiện hộp thoại xin quyền không, hoặc bắt đầu bằng nút **Bắt đầu phản chiếu** trong ứng dụng.
 
 #### Có viền đen quanh hình
 

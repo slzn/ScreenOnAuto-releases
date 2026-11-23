@@ -80,13 +80,11 @@ execução, abrir a outra entrada o exibe na hora, sem pedir permissão de novo.
 
 Se preferir manter o **Início automático** desativado:
 
-1. Abra o ScreenOnAuto no celular, ative a chave **Espelhar tela** e toque em
-   **Começar agora** (Start now) no diálogo de permissão.
+1. Abra o ScreenOnAuto no celular, toque em **Iniciar espelhamento** e depois em **Começar agora** (Start now) no diálogo de permissão.
 2. Na tela do carro, abra uma das entradas do ScreenOnAuto — o espelhamento já está em
    execução e aparece imediatamente.
 
-(A ordem não importa — você também pode abrir a entrada primeiro e ligar a chave
-**Espelhar tela** depois.)
+(A ordem não importa — você também pode abrir a entrada primeiro e tocar em **Iniciar espelhamento** depois.)
 
 ### Pular o diálogo de permissão
 
@@ -100,7 +98,7 @@ Qualquer uma destas opções funciona:
 - **Desconectar do carro** — o espelhamento para automaticamente (configuração padrão
   *Parar ao desconectar*).
 - Tocar em **Parar espelhamento** na notificação persistente do celular.
-- Desligar a chave **Espelhar tela** no app.
+- Tocar em **Parar espelhamento** no app.
 
 ## Solução de problemas
 
@@ -109,7 +107,7 @@ Qualquer uma destas opções funciona:
 #### A entrada abre mas fica em branco
 
 O espelhamento ainda não começou; verifique se há um diálogo de permissão no celular, ou
-inicie pela chave **Espelhar tela**.
+inicie com **Iniciar espelhamento** no app.
 
 #### Barras pretas ao redor da imagem
 

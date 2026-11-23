@@ -77,13 +77,11 @@ other entry shows it right away without asking for permission again.
 
 If you prefer to keep **Auto Start Mirror** off:
 
-1. Open ScreenOnAuto on the phone and turn on the **Mirror** switch, then tap
-   **Start now** in the permission dialog.
+1. Open ScreenOnAuto on the phone and tap **Start mirroring**, then tap **Start now** in the permission dialog.
 2. On the car screen, open one of the ScreenOnAuto entries — the mirror is already
    running and shows immediately.
 
-(The order doesn't matter — you can also open the entry first and flip the **Mirror**
-switch after.)
+(The order doesn't matter — you can also open the entry first and tap **Start mirroring** after.)
 
 ### Skipping the permission dialog
 
@@ -97,7 +95,7 @@ Any of these works:
 - **Disconnect from the car** — mirroring stops automatically (the default *Stop on
   disconnect* setting).
 - Tap **Stop Mirroring** on the persistent phone notification.
-- Turn off the **Mirror** switch in the app.
+- Tap **Stop mirroring** in the app.
 
 ## Troubleshooting
 
@@ -105,8 +103,7 @@ Any of these works:
 
 #### Entry opens but stays blank
 
-Mirroring hasn't started yet; check the phone for the permission dialog, or start it via
-the **Mirror** switch.
+Mirroring hasn't started yet; check the phone for the permission dialog, or start it with **Start mirroring** in the app.
 
 #### Black bars around the image
 

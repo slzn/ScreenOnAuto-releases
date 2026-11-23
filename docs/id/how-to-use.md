@@ -78,13 +78,11 @@ membuka entri yang lain langsung menampilkannya tanpa meminta izin lagi.
 
 Jika Anda lebih suka membiarkan **Mulai pencerminan otomatis** nonaktif:
 
-1. Buka ScreenOnAuto di ponsel dan aktifkan sakelar **Pencerminan layar**, lalu ketuk
-   **Mulai sekarang** di dialog izin.
+1. Buka ScreenOnAuto di ponsel dan ketuk **Mulai pencerminan**, lalu ketuk **Mulai sekarang** di dialog izin.
 2. Di layar mobil, buka salah satu entri ScreenOnAuto — pencerminan sudah berjalan dan
    langsung tampil.
 
-(Urutannya tidak penting — Anda juga bisa membuka entri lebih dulu, lalu mengaktifkan sakelar
-**Pencerminan layar** sesudahnya.)
+(Urutannya tidak penting — Anda juga bisa membuka entri lebih dulu, lalu mengetuk **Mulai pencerminan** sesudahnya.)
 
 ### Melewati dialog izin
 
@@ -98,7 +96,7 @@ Salah satu cara berikut bisa dipakai:
 - **Putuskan sambungan dari mobil** — pencerminan berhenti otomatis (pengaturan default
   *Hentikan saat terputus*).
 - Ketuk **Hentikan pencerminan** pada notifikasi ponsel yang selalu tampil.
-- Matikan sakelar **Pencerminan layar** di aplikasi.
+- Ketuk **Hentikan pencerminan** di aplikasi.
 
 ## Pemecahan masalah
 
@@ -106,8 +104,7 @@ Salah satu cara berikut bisa dipakai:
 
 #### Entri terbuka tetapi tetap kosong
 
-Pencerminan belum dimulai; periksa apakah ada dialog izin di ponsel, atau mulai pencerminan
-lewat sakelar **Pencerminan layar**.
+Pencerminan belum dimulai; periksa apakah ada dialog izin di ponsel, atau mulai lewat tombol **Mulai pencerminan** di aplikasi.
 
 #### Ada bilah hitam di sekeliling gambar
 

@@ -81,13 +81,11 @@ fragen.
 
 Wenn du **Automatisch starten** lieber deaktiviert lässt:
 
-1. Öffne ScreenOnAuto auf dem Telefon, aktiviere den Schalter **Bildschirmspiegelung**
-   und tippe im Berechtigungsdialog auf **Jetzt starten** (Start now).
+1. Öffne ScreenOnAuto auf dem Telefon, tippe auf **Spiegelung starten** und im Berechtigungsdialog auf **Jetzt starten** (Start now).
 2. Öffne auf dem Fahrzeugbildschirm einen der ScreenOnAuto-Einträge – die Spiegelung
    läuft bereits und wird sofort angezeigt.
 
-(Die Reihenfolge ist egal – du kannst auch zuerst den Eintrag öffnen und danach den
-Schalter **Bildschirmspiegelung** umlegen.)
+(Die Reihenfolge ist egal – du kannst auch zuerst den Eintrag öffnen und danach auf **Spiegelung starten** tippen.)
 
 ### Berechtigungsdialog überspringen
 
@@ -101,7 +99,7 @@ Jede dieser Möglichkeiten funktioniert:
 - **Verbindung zum Auto trennen** – die Spiegelung stoppt automatisch (Standard-
   Einstellung *Bei Trennung stoppen*).
 - Auf **Spiegelung beenden** in der dauerhaften Telefon-Benachrichtigung tippen.
-- Den Schalter **Bildschirmspiegelung** in der App ausschalten.
+- In der App auf **Spiegelung beenden** tippen.
 
 ## Fehlerbehebung
 
@@ -110,7 +108,7 @@ Jede dieser Möglichkeiten funktioniert:
 #### Eintrag öffnet sich, bleibt aber leer
 
 Die Spiegelung hat noch nicht begonnen; prüfe das Telefon auf den Berechtigungsdialog
-oder starte sie über den Schalter **Bildschirmspiegelung**.
+oder starte sie in der App mit **Spiegelung starten**.
 
 #### Schwarze Balken um das Bild
 
