@@ -5,7 +5,7 @@ lang: zh-TW
 slug: privacy-policy
 permalink: /docs/zh-TW/privacy-policy/
 date: 2026-11-18
-last_modified_at: 2026-11-19
+last_modified_at: 2026-11-23
 ---
 
 # 隱私權政策
