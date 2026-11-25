@@ -11,10 +11,10 @@
 <p align="center"><img src="../images/screenshot-legacy-split.png" alt="Écran du téléphone dupliqué sur l'affichage Android Auto, côte à côte avec la carte"></p>
 
 > [!IMPORTANT]
-> **Comment installer :**
-> - **Recommandé — Google Play**, sur toutes les versions d'Android : inscrivez-vous à un tour toutes les demi-heures, puis installez dans les 25 minutes (l'app **n'apparaît pas dans les recherches** du Play Store). Android Auto l'accepte sans aucun réglage supplémentaire. [S'inscrire →](https://screenonauto.lzn.idv.tw/join/?lang=fr)
+> **Comment installer :**
+> - **Recommandé — Google Play**, sur toutes les versions d'Android : inscrivez-vous à un tour toutes les demi-heures, puis installez dans les 25 minutes (l'app **n'apparaît pas dans les recherches** du Play Store). Android Auto l'accepte sans aucun réglage supplémentaire. [S'inscrire →](https://screenonauto.lzn.idv.tw/join/?lang=fr)
 > - **Android 13 et moins** — vous pouvez aussi installer l'APK avec KingInstaller ([étapes ci-dessous](#alternative--android-13-et-moins--installation-avec-kinginstaller)).
-> - **Vous avez un dongle AAWireless ?** — vous pouvez aussi installer l'APK directement, sur toutes les versions d'Android ([étapes ci-dessous](#alternative--avec-un-dongle-aawireless)).
+> - **Vous avez un dongle AAWireless ?** — vous pouvez aussi installer l'APK directement, sur toutes les versions d'Android ([étapes ci-dessous](#alternative--avec-un-dongle-aawireless)).
 
 ## Fonctionnalités
 
@@ -27,12 +27,12 @@
 - **Empêcher la mise en veille** — Empêche l'écran du téléphone de se mettre en veille pendant la duplication
 - **Arrêter à la déconnexion** — Arrête automatiquement la duplication à la déconnexion d'Android Auto
 - **Lancer une app automatiquement** — Ouvre automatiquement une app choisie sur le téléphone quand la duplication démarre et qu'Android Auto est connecté
-- **Dupliquer seulement cette application** *(Android 15+)* — Envoie à la voiture uniquement l'application lancée automatiquement au lieu de tout l'écran, le reste du téléphone reste privé. Nécessite la permission de capture d'écran [accordée au préalable via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Accorder-la-permission-de-duplication-via-ADB) ; l'écran de la voiture reste vide tant que vous n'êtes pas dans cette application
-- **Verrouiller l'orientation** — Verrouille le téléphone en paysage (dans les deux sens) ou en portrait pendant la duplication, ou suit la forme de l'écran de la voiture ; s'active à la connexion, avec un bouton à l'écran
-- **Raccourcis de lancement** — Ajoutez jusqu'à 4 boutons de lancement rapide d'apps sur l'écran de duplication Android Auto ; appui long sur l'un d'eux pour changer le texte affiché dans la voiture
-- **Boutons à l'écran** — Affichez ou masquez individuellement les boutons de l'écran de duplication sur la page Boutons à l'écran : Verrouiller l'orientation, Atténuation automatique, Atténuation de nuit, et Retour / Accueil / Apps récentes du téléphone (4 au maximum)
+- **Dupliquer seulement cette application** *(Android 15+)* — Envoie à la voiture uniquement l'application lancée automatiquement au lieu de tout l'écran, le reste du téléphone reste privé. Nécessite la permission de capture d'écran [accordée au préalable via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Accorder-la-permission-de-duplication-via-ADB) ; l'écran de la voiture reste vide tant que vous n'êtes pas dans cette application
+- **Verrouiller l'orientation** — Verrouille le téléphone en paysage (dans les deux sens) ou en portrait pendant la duplication, ou suit la forme de l'écran de la voiture ; s'active à la connexion, avec un bouton à l'écran
+- **Raccourcis de lancement** — Ajoutez jusqu'à 4 boutons de lancement rapide d'apps sur l'écran de duplication Android Auto ; appui long sur l'un d'eux pour changer le texte affiché dans la voiture
+- **Boutons à l'écran** — Affichez ou masquez individuellement les boutons de l'écran de duplication sur la page Boutons à l'écran : Verrouiller l'orientation, Atténuation automatique, Atténuation de nuit, et Retour / Accueil / Apps récentes du téléphone (4 au maximum)
 - **Position des boutons** — Sur la duplication Legacy, alignez les boutons à gauche, écartez-les de la barre de navigation du téléphone ou réglez leur distance aux bords (barre de raccourcis comprise) pour dégager les commandes propres à l'écran de la voiture
-- **Réglage de la duplication** — Rognez la largeur/hauteur de l'image dans les réglages avancés pour les unités qui coupent les bords ; la **Duplication dessinée par l'application** (expérimental), au même endroit, évite aussi la déformation en vue partagée
+- **Réglage de la duplication** — Rognez la largeur/hauteur de l'image dans les réglages avancés pour les unités qui coupent les bords ; la **Duplication dessinée par l'application** (expérimental), au même endroit, évite aussi la déformation en vue partagée
 - **Transfert tactile** *(Expérimental)* — Touchez, faites défiler, balayez et pincez pour zoomer sur l'affichage Android Auto afin de contrôler votre téléphone
 
 ## Fonctions privilégiées
@@ -42,12 +42,12 @@ Facultatif — nécessite [Shizuku](https://shizuku.rikka.app/) ou root. Sans eu
 | Fonction | Ce qu'elle fait |
 |---|---|
 | **Éteindre l'écran du téléphone** | Éteint la dalle du téléphone lorsque l'Atténuation automatique se déclenche, pendant que la voiture continue d'afficher la duplication — économise la batterie et évite que le téléphone n'éclaire l'habitacle la nuit |
-| **Injection tactile réelle** | Transmet les mouvements réels de votre doigt au lieu de gestes synthétisés : **appui long, glisser et multi-touch** fonctionnent sur la duplication Legacy |
+| **Injection tactile réelle** | Transmet les mouvements réels de votre doigt au lieu de gestes synthétisés : **appui long, glisser et multi-touch** fonctionnent sur la duplication Legacy |
 | **Adapter l'écran du téléphone à celui de la voiture** | Redimensionne l'écran du téléphone au format de l'écran de la voiture pendant la duplication, supprimant à la source les bandes noires et la déformation en écran partagé — l'écran de la voiture est mesuré automatiquement |
 
-Également avec Shizuku ou root :
+Également avec Shizuku ou root :
 
-- **Boutons de navigation du téléphone** — Retour / Accueil / Apps récentes sans aucun service d'accessibilité activé ; activez-les dans **Boutons à l'écran → Boutons de fonction**
+- **Boutons de navigation du téléphone** — Retour / Accueil / Apps récentes sans aucun service d'accessibilité activé ; activez-les dans **Boutons à l'écran → Boutons de fonction**
 - **Suivre le mode jour/nuit de la voiture** *(Android 10+)* — Fait passer le téléphone du thème clair au thème sombre en même temps qu'Android Auto pendant la duplication
 - **Taille de police pendant la duplication** — Donne au téléphone une autre taille de police pendant la duplication
 - **Mode de navigation pendant la duplication** *(Android 10+)* — Fait passer le téléphone à la navigation par gestes, à deux boutons ou à trois boutons pendant la duplication
@@ -55,7 +55,7 @@ Facultatif — nécessite [Shizuku](https://shizuku.rikka.app/) ou root. Sans eu
 
 Le thème, la taille de police, le mode de navigation et le lanceur du téléphone sont rétablis à la fin de la duplication.
 
-Shizuku s'est arrêté au branchement dans la voiture, ou l'écran ne se réveille plus ? Consultez [Dépannage](https://github.com/slzn/ScreenOnAuto-releases/wiki/Comment-utiliser#fonctions-privilégiées-shizuku--root).
+Shizuku s'est arrêté au branchement dans la voiture, ou l'écran ne se réveille plus ? Consultez [Dépannage](https://github.com/slzn/ScreenOnAuto-releases/wiki/Comment-utiliser#fonctions-privilégiées-shizuku--root).
 
 ## Prérequis
 
@@ -68,11 +68,11 @@ Shizuku s'est arrêté au branchement dans la voiture, ou l'écran ne se réveil
 
 ### Google Play (recommandé)
 
-Fonctionne sur toutes les versions d'Android, et Android Auto l'accepte sans aucun réglage supplémentaire (Android Auto n'exécute que les apps installées depuis le Play Store, et Android 14+ bloque la méthode KingInstaller). Ce sont les tests internes de Google Play : la même app complète que sur GitHub, mais elle n'apparaît pas dans les recherches du Play Store : [**inscrivez-vous sur la page d'installation**](https://screenonauto.lzn.idv.tw/join/?lang=fr). Un nouveau tour s'ouvre toutes les 30 minutes, et votre lien d'installation apparaît quelques minutes après la clôture des inscriptions de votre tour. Toutes les étapes : [**Installer via le programme de test Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Installer-via-le-programme-de-test-Google-Play).
+Fonctionne sur toutes les versions d'Android, et Android Auto l'accepte sans aucun réglage supplémentaire (Android Auto n'exécute que les apps installées depuis le Play Store, et Android 14+ bloque la méthode KingInstaller). Ce sont les tests internes de Google Play : la même app complète que sur GitHub, mais elle n'apparaît pas dans les recherches du Play Store : [**inscrivez-vous sur la page d'installation**](https://screenonauto.lzn.idv.tw/join/?lang=fr). Un nouveau tour s'ouvre toutes les 30 minutes, et votre lien d'installation apparaît quelques minutes après la clôture des inscriptions de votre tour. Toutes les étapes : [**Installer via le programme de test Google Play**](https://github.com/slzn/ScreenOnAuto-releases/wiki/Installer-via-le-programme-de-test-Google-Play).
 
 ### Alternative — Android 13 et moins : installation avec KingInstaller
 
-> **Pourquoi KingInstaller ?**  
+> **Pourquoi KingInstaller ?**  
 > Android Auto exige que les apps soient installées via le Google Play Store.
 > Installer l'APK directement enregistre votre navigateur ou gestionnaire de fichiers
 > comme source d'installation, ce qu'Android Auto refuse. KingInstaller installe les
@@ -92,12 +92,12 @@ Fonctionne sur toutes les versions d'Android, et Android Auto l'accepte sans auc
 
 ### Alternative — avec un dongle AAWireless
 
-> **Quand l'utiliser :** vous avez un dongle AAWireless et préférez installer l'APK directement plutôt que de passer par Google Play — cela fonctionne aussi là où Play ne peut pas installer, par exemple sur GrapheneOS avec Google Play en bac à sable. Dans une vraie voiture, Android Auto ignore son propre réglage **Sources inconnues** ; c'est le Developer Mode du dongle qui le rend effectif, donc **cette méthode ne fonctionne pas sans le dongle**.
+> **Quand l'utiliser :** vous avez un dongle AAWireless et préférez installer l'APK directement plutôt que de passer par Google Play — cela fonctionne aussi là où Play ne peut pas installer, par exemple sur GrapheneOS avec Google Play en bac à sable. Dans une vraie voiture, Android Auto ignore son propre réglage **Sources inconnues** ; c'est le Developer Mode du dongle qui le rend effectif, donc **cette méthode ne fonctionne pas sans le dongle**.
 
 1. Téléchargez le dernier `ScreenOnAuto-*.apk` depuis la [dernière version](https://github.com/slzn/ScreenOnAuto-releases/releases/latest) et installez-le — si Android le demande, autorisez votre navigateur ou gestionnaire de fichiers à **installer des applis inconnues**
 2. Connectez le téléphone à la voiture via le dongle. Dans l'app **AAWireless**, désactivez **Passthrough mode** et activez **Developer Mode**
 3. Dans les paramètres Android Auto du téléphone, ouvrez **Paramètres pour les développeurs**, réglez **Mode d'application** sur **Développeur** et activez **Sources inconnues**
-   - Vous ne voyez pas les paramètres pour les développeurs ? Touchez 10 fois **Informations sur la version et les autorisations**, puis ouvrez le menu ⋮
+   - Vous ne voyez pas les paramètres pour les développeurs ? Touchez 10 fois **Informations sur la version et les autorisations**, puis ouvrez le menu ⋮
 4. Redémarrez le téléphone
 
 ## Vérifier dans Android Auto
@@ -105,7 +105,7 @@ Fonctionne sur toutes les versions d'Android, et Android Auto l'accepte sans auc
 Cela fonctionne **quelle que soit la méthode d'installation** — KingInstaller, Google Play *ou* la méthode AAWireless.
 
 Sur votre téléphone, allez dans **Paramètres → Appareils connectés → Android Auto → Personnaliser le lanceur**.
-Vous devriez voir ces **deux** entrées ScreenOnAuto :
+Vous devriez voir ces **deux** entrées ScreenOnAuto :
 
 | Icône | Nom | Fonction |
 |---|---|---|
@@ -115,7 +115,7 @@ Vous devriez voir ces **deux** entrées ScreenOnAuto :
 Les anciennes versions d'Android Auto affichent aussi une troisième entrée, **ScreenOnAuto Contrôleur multimédia**. Si vous ne la voyez pas, c'est normal — le contrôle multimédia fonctionne quand même.
 S'il manque l'une des **deux** entrées ci-dessus, réinstallez — via KingInstaller pour un sideload, ou laissez l'installation Play se terminer — puis rouvrez Android Auto. Avec la méthode AAWireless, vérifiez que Developer Mode et Sources inconnues sont toujours activés.
 
-Prêt ? Consultez **[Comment utiliser](https://github.com/slzn/ScreenOnAuto-releases/wiki/Comment-utiliser)** pour démarrer la duplication dans la voiture. Chaque réglage est expliqué dans le **[Guide des réglages](https://screenonauto.lzn.idv.tw/docs/fr/settings/)**.
+Prêt ? Consultez **[Comment utiliser](https://github.com/slzn/ScreenOnAuto-releases/wiki/Comment-utiliser)** pour démarrer la duplication dans la voiture. Chaque réglage est expliqué dans le **[Guide des réglages](https://screenonauto.lzn.idv.tw/docs/fr/settings/)**.
 
 ## Permissions
 
@@ -126,22 +126,22 @@ Prêt ? Consultez **[Comment utiliser](https://github.com/slzn/ScreenOnAuto-rele
 | Afficher par-dessus les autres apps | Atténuation automatique, Verrouiller l'orientation et Atténuation de nuit |
 | Service d'accessibilité | Transfert tactile et boutons Retour / Accueil / Récents (inutile avec les fonctions privilégiées) |
 
-> **Astuce :** pour éviter la boîte de dialogue de capture d'écran à chaque lancement, vous pouvez pré-accorder la permission via ADB — voir [Accorder la permission de duplication via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Accorder-la-permission-de-duplication-via-ADB). C'est aussi ce qui débloque **Dupliquer seulement cette application**.
+> **Astuce :** pour éviter la boîte de dialogue de capture d'écran à chaque lancement, vous pouvez pré-accorder la permission via ADB — voir [Accorder la permission de duplication via ADB](https://github.com/slzn/ScreenOnAuto-releases/wiki/Accorder-la-permission-de-duplication-via-ADB). C'est aussi ce qui débloque **Dupliquer seulement cette application**.
 
 ## Confidentialité
 
-- **ScreenOnAuto n'a pas l'autorisation d'accès à Internet** : il ne peut donc rien envoyer hors de votre téléphone. L'écran dupliqué, les appuis et les infos multimédias circulent uniquement entre le téléphone et la voiture, via la connexion Android Auto.
+- **ScreenOnAuto n'a pas l'autorisation d'accès à Internet** : il ne peut donc rien envoyer hors de votre téléphone. L'écran dupliqué, les appuis et les infos multimédias circulent uniquement entre le téléphone et la voiture, via la connexion Android Auto.
 - Pas de publicité, pas de statistiques d'usage, pas de compte.
-- L'Accès aux notifications sert uniquement à lire ce qui est en cours de lecture (sessions multimédias), pas vos notifications. Le Service d'accessibilité envoie uniquement des appuis et les actions Retour / Accueil / Récents ; il ne lit pas ce qui s'affiche à l'écran.
+- L'Accès aux notifications sert uniquement à lire ce qui est en cours de lecture (sessions multimédias), pas vos notifications. Le Service d'accessibilité envoie uniquement des appuis et les actions Retour / Accueil / Récents ; il ne lit pas ce qui s'affiche à l'écran.
 - La [page d'installation](https://screenonauto.lzn.idv.tw/join/?lang=fr) utilise uniquement l'adresse e-mail de votre compte Google, pour vous ajouter à la liste de testeurs Play de la session. La liste est supprimée à la fin de la fenêtre d'installation de la session.
 
-Tous les détails : [Politique de confidentialité](https://screenonauto.lzn.idv.tw/docs/fr/privacy-policy/)
+Tous les détails : [Politique de confidentialité](https://screenonauto.lzn.idv.tw/docs/fr/privacy-policy/)
 
 ## Limitations connues
 
-- **L'écran du téléphone doit rester allumé pendant la duplication** — la duplication montre ce qui s'affiche sur le téléphone. Utilisez **Empêcher la mise en veille** pour le garder actif et **Atténuation automatique** pour économiser la batterie ; avec Shizuku ou root, Éteindre l'écran du téléphone lève cette limite.
+- **L'écran du téléphone doit rester allumé pendant la duplication** — la duplication montre ce qui s'affiche sur le téléphone. Utilisez **Empêcher la mise en veille** pour le garder actif et **Atténuation automatique** pour économiser la batterie ; avec Shizuku ou root, Éteindre l'écran du téléphone lève cette limite.
 - **Les contenus protégés par DRM ne peuvent pas être dupliqués** — les apps comme Netflix ou Disney+ affichent un écran noir. C'est une restriction de la plateforme Android que l'app ne peut pas contourner.
-- **Google Maps dans Android Auto peut devenir noir pendant la duplication (Android 15+)** — tant qu'une app capture l'écran, Android masque les apps qu'il juge sensibles, et Google Maps peut figurer dans cette liste. Pour corriger cela, activez **Options pour les développeurs → Désactiver les protections lors du partage d'écran** ; Android cesse alors aussi de masquer les notifications contenant des codes à usage unique pendant le partage d'écran. Le réglage s'applique au prochain démarrage de la duplication ; consultez [Comment utiliser](https://github.com/slzn/ScreenOnAuto-releases/wiki/Comment-utiliser#google-maps-dans-android-auto-devient-noir-pendant-la-duplication) pour la marche à suivre complète.
+- **Google Maps dans Android Auto peut devenir noir pendant la duplication (Android 15+)** — tant qu'une app capture l'écran, Android masque les apps qu'il juge sensibles, et Google Maps peut figurer dans cette liste. Pour corriger cela, activez **Options pour les développeurs → Désactiver les protections lors du partage d'écran** ; Android cesse alors aussi de masquer les notifications contenant des codes à usage unique pendant le partage d'écran. Le réglage s'applique au prochain démarrage de la duplication ; consultez [Comment utiliser](https://github.com/slzn/ScreenOnAuto-releases/wiki/Comment-utiliser#google-maps-dans-android-auto-devient-noir-pendant-la-duplication) pour la marche à suivre complète.
 - La **barre de navigation Android Auto** sur l'écran de la voiture est dessinée par Android Auto lui-même et ne peut pas être masquée.
 
 ## Avertissement

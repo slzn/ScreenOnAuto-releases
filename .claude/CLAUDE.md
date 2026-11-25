@@ -61,6 +61,12 @@ run `tools/bold_check.py` like the CJK languages. Fonts: Chakra Petch covers Tha
 `values-th` (`ตัวเลือกสำหรับนักพัฒนาซอฟต์แวร์`, `การแก้ไขข้อบกพร่องผ่าน USB`, `แสดงทับแอปอื่น`, the capture dialog's `เริ่มเลย`);
 Android Auto's Customize Launcher is left as `ปรับแต่ง Launcher` — have a Thai tester confirm the labels.
 
+French copy (site, wiki, README, /join/ strings) uses a **no-break space (U+00A0)** before `: ; ? !` and inside
+`« »`, so the mark never wraps onto its own line; type it as the character, not `&nbsp;` (Markdown and the
+wiki would show the entity). Not in code spans, command lines or JavaScript — and not in a GitHub heading
+that has no explicit id (README, wiki): GitHub's slugger drops U+00A0, which changes the heading's anchor
+(e.g. README.fr's KingInstaller heading, linked as `#alternative--android-13-et-moins--installation-…`).
+
 The `/join/` sign-up page (`i18n/join/index.html`, copy in `assets/join-strings.js`) is
 also 15-language. It is the only way to become a tester: half-hourly rounds of up to 95,
 run by the rotation backend in the private tooling repo. The old Google Forms + opt-in

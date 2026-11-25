@@ -26,7 +26,7 @@ Elle est aussi indispensable pour **Dupliquer seulement cette application** (And
 
 1. Ouvrez un terminal (Invite de commandes / PowerShell sous Windows).
 
-2. Vérifiez qu'ADB voit votre appareil :
+2. Vérifiez qu'ADB voit votre appareil :
 
    ```
    adb devices
@@ -34,7 +34,7 @@ Elle est aussi indispensable pour **Dupliquer seulement cette application** (And
 
    Votre appareil doit apparaître comme `device` (pas `unauthorized`).
 
-3. Accordez la permission :
+3. Accordez la permission :
 
    ```
    adb shell appops set idv.lzn.screenonauto android:project_media allow
@@ -44,7 +44,7 @@ Elle est aussi indispensable pour **Dupliquer seulement cette application** (And
 
 ## Révoquer la permission
 
-Pour rétablir le comportement par défaut (boîte de dialogue à chaque fois) :
+Pour rétablir le comportement par défaut (boîte de dialogue à chaque fois) :
 
 ```
 adb shell appops set idv.lzn.screenonauto android:project_media default
@@ -52,7 +52,7 @@ adb shell appops set idv.lzn.screenonauto android:project_media default
 
 ## Dépannage
 
-- **`error: device unauthorized`** — Cherchez la boîte de dialogue « Autoriser le débogage USB ? » sur le téléphone et touchez **Autoriser**.
+- **`error: device unauthorized`** — Cherchez la boîte de dialogue « Autoriser le débogage USB ? » sur le téléphone et touchez **Autoriser**.
 - **La boîte de dialogue apparaît encore** — Forcez l'arrêt de ScreenOnAuto et relancez. Si le problème persiste, révoquez puis ré-accordez avec les commandes ci-dessus.
-- **App réinstallée (ou passage entre les canaux Play et sideload)** — la désinstallation efface la permission ; relancez la commande après la réinstallation.
-- **La permission se réinitialise au redémarrage** — Sur certaines ROM (par ex. MIUI/HyperOS), les permissions `appops` ne survivent pas au redémarrage. Relancez la commande après chaque redémarrage ; ADB en Wi-Fi (débogage sans fil) vous évite de brancher le câble à chaque fois, mais n'empêche pas la réinitialisation.
+- **App réinstallée (ou passage entre les canaux Play et sideload)** — la désinstallation efface la permission ; relancez la commande après la réinstallation.
+- **La permission se réinitialise au redémarrage** — Sur certaines ROM (par ex. MIUI/HyperOS), les permissions `appops` ne survivent pas au redémarrage. Relancez la commande après chaque redémarrage ; ADB en Wi-Fi (débogage sans fil) vous évite de brancher le câble à chaque fois, mais n'empêche pas la réinitialisation.

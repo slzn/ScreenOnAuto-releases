@@ -1,6 +1,6 @@
 ---
 title: "Conditions d'utilisation"
-description: "Les conditions d'utilisation de ScreenOnAuto : utilisation gratuite, votre responsabilité au volant, les fonctions privilégiées et l'absence de garantie."
+description: "Les conditions d'utilisation de ScreenOnAuto : utilisation gratuite, votre responsabilité au volant, les fonctions privilégiées et l'absence de garantie."
 lang: fr
 slug: terms-of-use
 permalink: /docs/fr/terms-of-use/
@@ -16,7 +16,7 @@ Ces conditions couvrent ScreenOnAuto, une application Android développée par C
 
 ScreenOnAuto est gratuit. Vous ne pouvez pas modifier ou décompiler l'application et redistribuer le résultat, ni republier l'application, ou quoi que ce soit présenté comme elle, sous le nom ScreenOnAuto, y compris sur des boutiques d'applications. Partager des liens vers les pages de téléchargement officielles est bienvenu.
 
-Procurez-vous l'application uniquement par ses canaux officiels : la [page des versions sur GitHub](https://github.com/slzn/ScreenOnAuto-releases/releases) et le programme de test Google Play sur la [page d'installation](/join/?lang=fr). Les copies venant d'ailleurs peuvent avoir été modifiées.
+Procurez-vous l'application uniquement par ses canaux officiels : la [page des versions sur GitHub](https://github.com/slzn/ScreenOnAuto-releases/releases) et le programme de test Google Play sur la [page d'installation](/join/?lang=fr). Les copies venant d'ailleurs peuvent avoir été modifiées.
 
 ## Sécurité au volant
 
@@ -31,10 +31,10 @@ Le développeur n'est pas responsable des accidents, amendes ou autres conséque
 
 ## Fonctions qui modifient les paramètres système
 
-Certaines fonctions modifient les paramètres système du téléphone pendant la duplication et les rétablissent à la fin :
+Certaines fonctions modifient les paramètres système du téléphone pendant la duplication et les rétablissent à la fin :
 
-- avec Shizuku ou root : la taille d'écran, la densité, le thème, la taille de police, le mode de navigation et le lanceur par défaut (application d'écran d'accueil) ;
-- Verrouiller l'orientation sur Android 16 et versions ultérieures en mode tablette : le verrouillage de rotation du système.
+- avec Shizuku ou root : la taille d'écran, la densité, le thème, la taille de police, le mode de navigation et le lanceur par défaut (application d'écran d'accueil) ;
+- Verrouiller l'orientation sur Android 16 et versions ultérieures en mode tablette : le verrouillage de rotation du système.
 
 Le rétablissement peut échouer, par exemple si la connexion à Shizuku est perdue au moment où vous débranchez le câble. Vous utilisez ces fonctions à vos propres risques. Si un paramètre reste modifié, rétablissez-le dans l'application Paramètres du téléphone. La taille d'écran et la densité peuvent aussi être réinitialisées avec `adb shell wm size reset` et `adb shell wm density reset`.
 
@@ -48,7 +48,7 @@ L'application dépend du fonctionnement d'Android Auto, d'Android et de Google P
 
 ## Absence de garantie
 
-ScreenOnAuto et son site sont fournis « tels quels » et « selon disponibilité », sans garantie d'aucune sorte, expresse ou implicite, y compris les garanties de qualité marchande, d'adéquation à un usage particulier et d'absence de contrefaçon. Rien ne garantit que l'application fonctionne avec votre téléphone ou votre voiture, ni qu'elle fonctionne sans interruption ni erreur.
+ScreenOnAuto et son site sont fournis « tels quels » et « selon disponibilité », sans garantie d'aucune sorte, expresse ou implicite, y compris les garanties de qualité marchande, d'adéquation à un usage particulier et d'absence de contrefaçon. Rien ne garantit que l'application fonctionne avec votre téléphone ou votre voiture, ni qu'elle fonctionne sans interruption ni erreur.
 
 ## Limitation de responsabilité
 
@@ -64,7 +64,7 @@ Le traitement des données est décrit dans la [Politique de confidentialité](/
 
 ## Modifications
 
-Ces conditions peuvent être mises à jour. La nouvelle version sera publiée sur cette page et la date « Dernière mise à jour » ci-dessous changera. Continuer à utiliser ScreenOnAuto après une modification vaut acceptation des nouvelles conditions.
+Ces conditions peuvent être mises à jour. La nouvelle version sera publiée sur cette page et la date « Dernière mise à jour » ci-dessous changera. Continuer à utiliser ScreenOnAuto après une modification vaut acceptation des nouvelles conditions.
 
 ## Contact
 
