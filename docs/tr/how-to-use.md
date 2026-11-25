@@ -5,7 +5,7 @@ lang: tr
 slug: how-to-use
 permalink: /docs/tr/how-to-use/
 date: 2026-07-20
-last_modified_at: 2026-11-23
+last_modified_at: 2026-11-25
 ---
 
 # Nasıl Kullanılır

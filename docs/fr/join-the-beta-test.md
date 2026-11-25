@@ -5,7 +5,7 @@ lang: fr
 slug: join-the-beta-test
 permalink: /docs/fr/join-the-beta-test/
 date: 2026-07-17
-last_modified_at: 2026-11-10
+last_modified_at: 2026-11-25
 ---
 
 # Installer via le programme de test Google Play

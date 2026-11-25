@@ -5,7 +5,7 @@ lang: fr
 slug: grant-mirror-permission-via-adb
 permalink: /docs/fr/grant-mirror-permission-via-adb/
 date: 2026-07-17
-last_modified_at: 2026-09-23
+last_modified_at: 2026-11-25
 ---
 
 # Accorder la permission de duplication via ADB

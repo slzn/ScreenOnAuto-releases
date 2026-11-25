@@ -5,7 +5,7 @@ lang: th
 slug: how-to-use
 permalink: /docs/th/how-to-use/
 date: 2026-11-18
-last_modified_at: 2026-11-23
+last_modified_at: 2026-11-25
 ---
 
 # วิธีใช้
