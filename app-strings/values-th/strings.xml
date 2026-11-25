@@ -181,6 +181,7 @@
     <string name="about_version">เวอร์ชัน %1$s (%2$d)</string>
     <string name="about_version_copy_action">คัดลอกข้อมูลเวอร์ชัน</string>
     <string name="about_version_copied">คัดลอกข้อมูลเวอร์ชันแล้ว</string>
+    <string name="about_no_browser">ไม่มีแอปที่เปิดลิงก์นี้ได้</string>
     <string name="about_link_privacy">นโยบายความเป็นส่วนตัว</string>
     <string name="about_link_terms">ข้อกำหนดการใช้งาน</string>
     <string name="about_link_licenses">สัญญาอนุญาตของบุคคลที่สาม</string>

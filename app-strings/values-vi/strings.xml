@@ -181,6 +181,7 @@
     <string name="about_version">Phiên bản %1$s (%2$d)</string>
     <string name="about_version_copy_action">Sao chép thông tin phiên bản</string>
     <string name="about_version_copied">Đã sao chép thông tin phiên bản</string>
+    <string name="about_no_browser">Không có ứng dụng nào mở được liên kết này</string>
     <string name="about_link_privacy">Chính sách quyền riêng tư</string>
     <string name="about_link_terms">Điều khoản sử dụng</string>
     <string name="about_link_licenses">Giấy phép của bên thứ ba</string>

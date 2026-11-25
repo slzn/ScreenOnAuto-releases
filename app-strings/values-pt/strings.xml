@@ -181,6 +181,7 @@
     <string name="about_version">Versão %1$s (%2$d)</string>
     <string name="about_version_copy_action">Copiar informações da versão</string>
     <string name="about_version_copied">Informações da versão copiadas</string>
+    <string name="about_no_browser">Nenhum app pode abrir este link</string>
     <string name="about_link_privacy">Política de Privacidade</string>
     <string name="about_link_terms">Termos de Uso</string>
     <string name="about_link_licenses">Licenças de terceiros</string>

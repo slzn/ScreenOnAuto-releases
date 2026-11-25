@@ -181,6 +181,7 @@
     <string name="about_version">版本 %1$s (%2$d)</string>
     <string name="about_version_copy_action">複製版本資訊</string>
     <string name="about_version_copied">已複製版本資訊</string>
+    <string name="about_no_browser">沒有可以開啟這個連結的應用程式</string>
     <string name="about_link_privacy">隱私權政策</string>
     <string name="about_link_terms">使用條款</string>
     <string name="about_link_licenses">第三方授權</string>

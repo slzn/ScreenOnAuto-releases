@@ -181,6 +181,7 @@
     <string name="about_version">Sürüm %1$s (%2$d)</string>
     <string name="about_version_copy_action">Sürüm bilgisini kopyala</string>
     <string name="about_version_copied">Sürüm bilgisi kopyalandı</string>
+    <string name="about_no_browser">Bu bağlantıyı açabilecek uygulama yok</string>
     <string name="about_link_privacy">Gizlilik Politikası</string>
     <string name="about_link_terms">Kullanım Koşulları</string>
     <string name="about_link_licenses">Üçüncü taraf lisansları</string>

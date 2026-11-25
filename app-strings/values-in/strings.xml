@@ -181,6 +181,7 @@
     <string name="about_version">Versi %1$s (%2$d)</string>
     <string name="about_version_copy_action">Salin info versi</string>
     <string name="about_version_copied">Info versi disalin</string>
+    <string name="about_no_browser">Tidak ada aplikasi yang dapat membuka tautan ini</string>
     <string name="about_link_privacy">Kebijakan Privasi</string>
     <string name="about_link_terms">Ketentuan Penggunaan</string>
     <string name="about_link_licenses">Lisensi pihak ketiga</string>

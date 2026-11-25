@@ -211,6 +211,7 @@
     <string name="about_version_short" translatable="false">%1$s (%2$d)</string>
     <string name="about_version_copy_action">Copy version info</string>
     <string name="about_version_copied">Version info copied</string>
+    <string name="about_no_browser">No app can open this link</string>
     <string name="about_link_privacy">Privacy Policy</string>
     <string name="about_link_terms">Terms of Use</string>
     <string name="about_link_licenses">Third-party licenses</string>
