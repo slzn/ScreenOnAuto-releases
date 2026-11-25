@@ -175,6 +175,7 @@
     <string name="accessibility_service_description">Pozwala zdarzeniom dotykowym Android Auto sterować dublowanym ekranem telefonu</string>
     <string name="pref_about_title">O aplikacji</string>
     <string name="about_link_github">Zobacz na GitHubie</string>
+    <string name="about_link_settings_guide">Przewodnik po ustawieniach</string>
     <string name="about_link_donate_paypal">Wesprzyj przez PayPal</string>
     <string name="about_link_donate_bubbletea">Postaw mi bubble tea</string>
     <string name="about_version">Wersja %1$s (%2$d)</string>

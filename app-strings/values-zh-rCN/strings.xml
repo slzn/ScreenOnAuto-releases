@@ -175,6 +175,7 @@
     <string name="accessibility_service_description">允许 Android Auto 触控事件控制镜像的手机屏幕</string>
     <string name="pref_about_title">关于</string>
     <string name="about_link_github">在 GitHub 上查看</string>
+    <string name="about_link_settings_guide">设置说明</string>
     <string name="about_link_donate_paypal">通过 PayPal 捐款</string>
     <string name="about_link_donate_bubbletea">请我喝奶茶</string>
     <string name="about_version">版本 %1$s (%2$d)</string>

@@ -175,6 +175,7 @@
     <string name="accessibility_service_description">Permet aux événements tactiles d\'Android Auto de contrôler l\'écran du téléphone en cours de duplication</string>
     <string name="pref_about_title">À propos</string>
     <string name="about_link_github">Voir sur GitHub</string>
+    <string name="about_link_settings_guide">Guide des réglages</string>
     <string name="about_link_donate_paypal">Faire un don via PayPal</string>
     <string name="about_link_donate_bubbletea">M\'offrir un bubble tea</string>
     <string name="about_version">Version %1$s (%2$d)</string>

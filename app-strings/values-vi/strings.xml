@@ -175,6 +175,7 @@
     <string name="accessibility_service_description">Cho phép các sự kiện chạm từ Android Auto điều khiển màn hình điện thoại đang được phản chiếu</string>
     <string name="pref_about_title">Giới thiệu</string>
     <string name="about_link_github">Xem trên GitHub</string>
+    <string name="about_link_settings_guide">Giải thích các cài đặt</string>
     <string name="about_link_donate_paypal">Ủng hộ qua PayPal</string>
     <string name="about_link_donate_bubbletea">Mời tôi một ly trà sữa</string>
     <string name="about_version">Phiên bản %1$s (%2$d)</string>

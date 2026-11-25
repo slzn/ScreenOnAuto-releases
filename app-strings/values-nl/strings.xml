@@ -175,6 +175,7 @@
     <string name="accessibility_service_description">Laat aanrakingen in Android Auto het gespiegelde telefoonscherm bedienen</string>
     <string name="pref_about_title">Over</string>
     <string name="about_link_github">Bekijken op GitHub</string>
+    <string name="about_link_settings_guide">Instellingengids</string>
     <string name="about_link_donate_paypal">Doneren via PayPal</string>
     <string name="about_link_donate_bubbletea">Trakteer me op bubble tea</string>
     <string name="about_version">Versie %1$s (%2$d)</string>

@@ -175,6 +175,7 @@
     <string name="accessibility_service_description">Android Auto のタッチイベントでミラーリングされたスマホの画面を操作します</string>
     <string name="pref_about_title">このアプリについて</string>
     <string name="about_link_github">GitHub で見る</string>
+    <string name="about_link_settings_guide">設定ガイド</string>
     <string name="about_link_donate_paypal">PayPal で寄付</string>
     <string name="about_link_donate_bubbletea">タピオカを奢って</string>
     <string name="about_version">バージョン %1$s (%2$d)</string>

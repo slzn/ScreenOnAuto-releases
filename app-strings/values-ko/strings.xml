@@ -175,6 +175,7 @@
     <string name="accessibility_service_description">Android Auto 터치 이벤트로 미러링된 휴대폰 화면을 제어합니다</string>
     <string name="pref_about_title">정보</string>
     <string name="about_link_github">GitHub에서 보기</string>
+    <string name="about_link_settings_guide">설정 안내</string>
     <string name="about_link_donate_paypal">PayPal로 후원</string>
     <string name="about_link_donate_bubbletea">버블티 사주기</string>
     <string name="about_version">버전 %1$s (%2$d)</string>

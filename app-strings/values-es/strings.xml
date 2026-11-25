@@ -175,6 +175,7 @@
     <string name="accessibility_service_description">Permite que los eventos táctiles de Android Auto controlen la pantalla del teléfono duplicada</string>
     <string name="pref_about_title">Acerca de</string>
     <string name="about_link_github">Ver en GitHub</string>
+    <string name="about_link_settings_guide">Guía de ajustes</string>
     <string name="about_link_donate_paypal">Donar con PayPal</string>
     <string name="about_link_donate_bubbletea">Cómprame un bubble tea</string>
     <string name="about_version">Versión %1$s (%2$d)</string>

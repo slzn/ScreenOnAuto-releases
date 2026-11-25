@@ -175,6 +175,7 @@
     <string name="accessibility_service_description">Дозволяє дотикам в Android Auto керувати продубльованим екраном телефона</string>
     <string name="pref_about_title">Про застосунок</string>
     <string name="about_link_github">Переглянути на GitHub</string>
+    <string name="about_link_settings_guide">Посібник із налаштувань</string>
     <string name="about_link_donate_paypal">Підтримати через PayPal</string>
     <string name="about_link_donate_bubbletea">Пригостити мене бабл-ті</string>
     <string name="about_version">Версія %1$s (%2$d)</string>

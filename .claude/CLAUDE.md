@@ -281,7 +281,8 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
 - **Settings guide** (added 2026-11-25, all 15 languages): `docs/<lang>/settings.md`, site-only like
   the privacy policy (no wiki copy). **Entry points** (keep them when the page moves or is renamed):
   the top tools button (see Design system), a sentence after "Ready? See How to Use" on every
-  landing page and README, a landing-footer link after Wiki, and a short section before
+  landing page and README, a landing-footer link after Wiki, the app's About dialog (its first link
+  row, `/docs/<lang>/settings/` in the app's language; from the release after v1.11.0), and a short section before
   Troubleshooting in every How to Use (wiki → site URL, docs → `/docs/<lang>/settings/`). How to Use
   also links setting names in its text to their guide anchors (`[**Name**](…/settings/#key)`, bold
   inside the link so it renders next to CJK on GitHub) and puts the launcher icon before a mirror's

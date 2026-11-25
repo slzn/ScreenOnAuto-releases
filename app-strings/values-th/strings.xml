@@ -175,6 +175,7 @@
     <string name="accessibility_service_description">ให้การสัมผัสบน Android Auto ควบคุมหน้าจอโทรศัพท์ที่สะท้อนอยู่</string>
     <string name="pref_about_title">เกี่ยวกับ</string>
     <string name="about_link_github">ดูบน GitHub</string>
+    <string name="about_link_settings_guide">คู่มือการตั้งค่า</string>
     <string name="about_link_donate_paypal">บริจาคผ่าน PayPal</string>
     <string name="about_link_donate_bubbletea">เลี้ยงชานมไข่มุกสักแก้ว</string>
     <string name="about_version">เวอร์ชัน %1$s (%2$d)</string>

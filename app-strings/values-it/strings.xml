@@ -175,6 +175,7 @@
     <string name="accessibility_service_description">Consente agli eventi tocco di Android Auto di controllare lo schermo del telefono in mirroring</string>
     <string name="pref_about_title">Informazioni</string>
     <string name="about_link_github">Vedi su GitHub</string>
+    <string name="about_link_settings_guide">Guida alle impostazioni</string>
     <string name="about_link_donate_paypal">Dona con PayPal</string>
     <string name="about_link_donate_bubbletea">Offrimi un bubble tea</string>
     <string name="about_version">Versione %1$s (%2$d)</string>
