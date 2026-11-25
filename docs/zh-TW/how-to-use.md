@@ -13,12 +13,12 @@ last_modified_at: 2026-11-25
 
 > **ℹ️ 說明**
 > **開始前請先確認：**
-> - 已安裝 ScreenOnAuto，且 Android Auto 啟動器中看得到 ScreenOnAuto 的項目。
+> - 已安裝 ScreenOnAuto，且 Android Auto 啟動器中看得到 ScreenOnAuto 的兩個項目：<span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> 和 <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>。
 > - 已在手機上開啟過 app 並授予所需權限。
 
 ## 兩個鏡像入口
 
-Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都是同一個手機畫面——差別在於鏡像**如何顯示**在車機上：
+Android Auto 的 app 啟動器中有**兩個**鏡像入口：<span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> 和 <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>。兩者鏡像的都是同一個手機畫面——差別在於鏡像**如何顯示**在車機上：
 
 ![Android Auto 啟動器中的 ScreenOnAuto 項目](/images/how-to-use/aa-launcher.png)
 
@@ -40,7 +40,7 @@ Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都�
 兩個都試試，哪個在你的車機上表現好就用哪個。兩者顯示的是同一個鏡像，隨時可以切換——鏡像啟動後，打開另一個入口會直接顯示，不會再次要求權限。
 
 > **💡 小技巧**
-> 如果之前開過 <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**（全螢幕入口），現在想改用 <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**，建議先在車機上打開地圖 app（例如 Google 地圖）再啟動 Legacy 鏡像。這樣車機會把地圖 app 重新設回預設地圖，地圖相關的操作就不會被全螢幕鏡像佔用。
+> 如果之前開過 <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span>（全螢幕入口），現在想改用 <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>，建議先在車機上打開地圖 app（例如 Google 地圖）再啟動 Legacy 鏡像。這樣車機會把地圖 app 重新設回預設地圖，地圖相關的操作就不會被全螢幕鏡像佔用。
 
 ## 開始鏡像
 
@@ -102,7 +102,7 @@ Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都�
 
 分割檢視中可視區域變大或變小時就會發生。旋轉手機、讓畫面在直式與橫式之間切換一次，就能恢復正常（若開著**鎖定方向**，請先用畫面上的按鈕解除）。另外也有兩個設定可以改善：
 
-- 開啟[**設定 → 進階 → 固定鏡像尺寸**](/docs/zh-TW/settings/#nav_fixed_size)，鏡像會維持原尺寸不變形（可能被部分遮住）。只適用於全螢幕的 <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** 入口。
+- 開啟[**設定 → 進階 → 固定鏡像尺寸**](/docs/zh-TW/settings/#nav_fixed_size)，鏡像會維持原尺寸不變形（可能被部分遮住）。只適用於全螢幕的 <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> 入口。
 - 開啟[**設定 → 進階 → 自繪鏡像（實驗性）**](/docs/zh-TW/settings/#self_draw)。鏡像畫面改由 app 自行繪製，不再交給系統縮放，分割檢視時就不會變形。耗電略增，切換後於下次開始鏡像時生效。[**讓手機畫面比例對齊車機**](/docs/zh-TW/settings/#root_display_override)（特權功能）以另一種方式解決同一個問題，兩者可以同時開啟。
 
 #### 鏡像時 Android Auto 的 Google 地圖變黑

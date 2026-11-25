@@ -13,12 +13,12 @@ last_modified_at: 2026-11-25
 
 > **ℹ️ Remarque**
 > **Avant de commencer**, vérifiez que :
-> - ScreenOnAuto est installé et que ses entrées apparaissent dans le lanceur d'Android Auto.
+> - ScreenOnAuto est installé et que ses deux entrées, <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> et <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>, apparaissent dans le lanceur d'Android Auto.
 > - Vous avez ouvert l'app une fois sur le téléphone et accordé les permissions demandées.
 
 ## Les deux entrées de duplication
 
-Le lanceur d'apps d'Android Auto affiche **deux** entrées de duplication. Les deux
+Le lanceur d'apps d'Android Auto affiche **deux** entrées de duplication : <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> et <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>. Les deux
 dupliquent le même écran de téléphone — elles diffèrent par la *manière* dont la
 duplication s'affiche sur l'écran de la voiture :
 
@@ -45,8 +45,8 @@ une fois la duplication lancée, ouvrir l'autre entrée l'affiche immédiatement
 redemander de permission.
 
 > **💡 Astuce**
-> Si vous avez déjà ouvert <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (l'entrée plein écran) et souhaitez
-> maintenant utiliser <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**, ouvrez d'abord votre app de carte
+> Si vous avez déjà ouvert <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> (l'entrée plein écran) et souhaitez
+> maintenant utiliser <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>, ouvrez d'abord votre app de carte
 > (par ex. Google Maps) sur l'écran de la voiture, puis lancez la duplication Legacy.
 > Cela rétablit l'app de carte comme carte par défaut de l'écran de la voiture, pour
 > que les fonctions liées à la carte ne restent pas prises par la duplication plein écran.
@@ -129,7 +129,7 @@ le téléphone pour que l'écran passe du portrait au paysage rétablit l'image 
 peuvent aussi corriger cela :
 
 - Activez [**Réglages → Avancé → Taille fixe de la duplication**](/docs/fr/settings/#nav_fixed_size). La duplication garde
-  alors sa taille au lieu de se déformer (une partie peut être masquée). S'applique uniquement à l'entrée plein écran <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**.
+  alors sa taille au lieu de se déformer (une partie peut être masquée). S'applique uniquement à l'entrée plein écran <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span>.
 - Activez [**Réglages → Avancé → Duplication dessinée par l'application (expérimental)**](/docs/fr/settings/#self_draw).
   L'application dessine alors elle-même l'image de la duplication au lieu de laisser le
   système la redimensionner : elle ne se déforme plus en vue partagée. Cela consomme un peu plus de batterie et prend effet au prochain démarrage

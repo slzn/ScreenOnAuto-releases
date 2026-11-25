@@ -13,12 +13,12 @@ last_modified_at: 2026-11-25
 
 > **ℹ️ Nota**
 > **Prima di iniziare**, assicurati che:
-> - ScreenOnAuto sia installato e le sue voci compaiano nel launcher di Android Auto.
+> - ScreenOnAuto sia installato e le sue due voci, <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> e <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>, compaiano nel launcher di Android Auto.
 > - Tu abbia aperto l'app una volta sul telefono e concesso le autorizzazioni richieste.
 
 ## Le due voci di mirroring
 
-Il launcher delle app di Android Auto mostra **due** voci di mirroring. Entrambe
+Il launcher delle app di Android Auto mostra **due** voci di mirroring: <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> e <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>. Entrambe
 duplicano lo stesso schermo del telefono — cambia il *modo* in cui il mirroring viene
 mostrato sullo schermo dell'auto:
 
@@ -44,8 +44,8 @@ mirroring e puoi passare dall'una all'altra in qualsiasi momento — quando il m
 attivo, aprire l'altra voce lo mostra subito senza richiedere di nuovo l'autorizzazione.
 
 > **💡 Suggerimento**
-> Se hai già aperto <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (la voce a schermo intero) e ora vuoi usare
-> <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**, apri prima la tua app di mappe (per es. Google Maps) sullo
+> Se hai già aperto <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> (la voce a schermo intero) e ora vuoi usare
+> <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>, apri prima la tua app di mappe (per es. Google Maps) sullo
 > schermo dell'auto, poi avvia il mirroring Legacy. In questo modo l'app di mappe torna
 > a essere la mappa predefinita dello schermo dell'auto, e le funzioni legate alla mappa
 > non restano occupate dal mirroring a schermo intero.
@@ -129,7 +129,7 @@ impostazioni possono anche risolverlo:
 
 - Attiva [**Impostazioni → Avanzate → Dimensione fissa del mirroring**](/docs/it/settings/#nav_fixed_size). Il mirroring
   mantiene così le sue dimensioni invece di distorcersi (una parte può restare
-  nascosta). Si applica solo alla voce a schermo intero <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**.
+  nascosta). Si applica solo alla voce a schermo intero <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span>.
 - Attiva [**Impostazioni → Avanzate → Immagine del mirroring disegnata dall'app
   (sperimentale)**](/docs/it/settings/#self_draw). L'app disegna allora da sé l'immagine del mirroring invece di
   lasciarne il ridimensionamento al sistema, così non si distorce più nella vista divisa. Consuma un po' più di batteria e ha effetto al

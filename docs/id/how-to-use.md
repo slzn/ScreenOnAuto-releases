@@ -12,12 +12,12 @@ last_modified_at: 2026-11-25
 
 > **ℹ️ Catatan**
 > **Sebelum mulai**, pastikan:
-> - ScreenOnAuto sudah terinstal dan entrinya muncul di peluncur Android Auto.
+> - ScreenOnAuto sudah terinstal dan kedua entrinya (<span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> dan <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>) muncul di peluncur Android Auto.
 > - Anda sudah membuka aplikasi sekali di ponsel dan memberikan izin yang dimintanya.
 
 ## Dua entri pencerminan
 
-Peluncur aplikasi Android Auto menampilkan **dua** entri pencerminan. Keduanya mencerminkan
+Peluncur aplikasi Android Auto menampilkan **dua** entri pencerminan: <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> dan <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>. Keduanya mencerminkan
 layar ponsel yang sama — perbedaannya ada pada *cara* pencerminan ditampilkan di layar mobil:
 
 ![Peluncur Android Auto yang menampilkan entri ScreenOnAuto](/images/how-to-use/aa-launcher.png)
@@ -42,8 +42,8 @@ yang sama, dan Anda bisa berpindah di antaranya kapan saja — saat pencerminan 
 membuka entri yang lain langsung menampilkannya tanpa meminta izin lagi.
 
 > **💡 Tips**
-> Jika sebelumnya Anda pernah membuka <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (entri layar penuh) dan sekarang ingin
-> memakai <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**, buka dulu aplikasi peta Anda (mis. Google Maps) di layar
+> Jika sebelumnya Anda pernah membuka <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> (entri layar penuh) dan sekarang ingin
+> memakai <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>, buka dulu aplikasi peta Anda (mis. Google Maps) di layar
 > mobil, baru kemudian mulai pencerminan Legacy. Dengan begitu aplikasi peta kembali menjadi
 > peta default di layar mobil, sehingga fungsi yang terkait peta tidak diambil alih oleh
 > pencerminan layar penuh.
@@ -124,7 +124,7 @@ ponsel hingga layar berganti antara potret dan lanskap akan memulihkannya (jika 
 juga bisa memperbaikinya:
 
 - Aktifkan [**Pengaturan → Lanjutan → Ukuran pencerminan tetap**](/docs/id/settings/#nav_fixed_size). Pencerminan kemudian
-  mempertahankan ukurannya alih-alih terdistorsi (sebagian mungkin tersembunyi). Hanya berlaku untuk entri layar penuh <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**.
+  mempertahankan ukurannya alih-alih terdistorsi (sebagian mungkin tersembunyi). Hanya berlaku untuk entri layar penuh <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span>.
 - Aktifkan [**Pengaturan → Lanjutan → Pencerminan digambar aplikasi (eksperimental)**](/docs/id/settings/#self_draw). Aplikasi
   kemudian menggambar sendiri gambar pencerminan alih-alih menyerahkan penskalaan ke sistem,
   sehingga gambar tidak lagi terdistorsi dalam tampilan terpisah. Fitur ini memakai sedikit

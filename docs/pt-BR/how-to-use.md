@@ -13,12 +13,12 @@ last_modified_at: 2026-11-25
 
 > **ℹ️ Nota**
 > **Antes de começar**, confirme que:
-> - O ScreenOnAuto está instalado e suas entradas aparecem no launcher do Android Auto.
+> - O ScreenOnAuto está instalado e suas duas entradas, <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> e <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>, aparecem no launcher do Android Auto.
 > - Você já abriu o app uma vez no celular e concedeu as permissões solicitadas.
 
 ## As duas entradas de espelhamento
 
-O launcher de apps do Android Auto mostra **duas** entradas de espelhamento. Ambas
+O launcher de apps do Android Auto mostra **duas** entradas de espelhamento: <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> e <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>. Ambas
 espelham a mesma tela do celular — a diferença é *como* o espelhamento aparece na tela
 do carro:
 
@@ -44,8 +44,8 @@ espelhamento e você pode alternar a qualquer momento — com o espelhamento já
 execução, abrir a outra entrada o exibe na hora, sem pedir permissão de novo.
 
 > **💡 Dica**
-> Se você já abriu o <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (entrada de tela cheia) e agora quer usar o
-> <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**, abra primeiro o app de mapas (ex.: Google Maps) na tela do
+> Se você já abriu o <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> (entrada de tela cheia) e agora quer usar o
+> <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>, abra primeiro o app de mapas (ex.: Google Maps) na tela do
 > carro e só então inicie o espelhamento Legacy. Isso devolve ao app de mapas o papel
 > de mapa padrão da tela do carro, e as funções de mapa não ficam presas ao
 > espelhamento de tela cheia.
@@ -127,7 +127,7 @@ para a tela alternar entre retrato e paisagem faz a imagem voltar ao normal (se 
 configurações também podem resolver:
 
 - Ative [**Configurações → Avançado → Tamanho fixo do espelhamento**](/docs/pt-BR/settings/#nav_fixed_size). O espelhamento
-  mantém o tamanho em vez de distorcer (parte dele pode ficar oculta). Vale só para a entrada de tela cheia <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**.
+  mantém o tamanho em vez de distorcer (parte dele pode ficar oculta). Vale só para a entrada de tela cheia <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span>.
 - Ative [**Configurações → Avançado → Espelhamento desenhado pelo app (experimental)**](/docs/pt-BR/settings/#self_draw). O
   app passa a desenhar a imagem do espelhamento em vez de deixar o sistema
   redimensioná-la, então ela não distorce mais na vista dividida. Consome um pouco

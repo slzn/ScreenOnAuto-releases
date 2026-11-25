@@ -13,12 +13,12 @@ last_modified_at: 2026-11-25
 
 > **ℹ️ ملاحظة**
 > **قبل أن تبدأ**، تأكد من:
-> - أن ScreenOnAuto مثبَّت وأن إدخالاته تظهر في مشغِّل Android Auto.
+> - أن ScreenOnAuto مثبَّت وأن إدخالَيه (<span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> و <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>) يظهران في مشغِّل Android Auto.
 > - أنك فتحت التطبيق مرة على الهاتف ومنحت الأذونات التي يطلبها.
 
 ## إدخالا النسخ المطابق
 
-يعرض مشغِّل تطبيقات Android Auto إدخالَي نسخ مطابق **اثنين**. كلاهما ينسخ شاشة
+يعرض مشغِّل تطبيقات Android Auto إدخالَي نسخ مطابق **اثنين**: <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> و <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>. كلاهما ينسخ شاشة
 الهاتف نفسها — ويختلفان في *طريقة* عرض النسخ على شاشة السيارة:
 
 ![مشغِّل Android Auto ويظهر فيه إدخالات ScreenOnAuto](/images/how-to-use/aa-launcher.png)
@@ -43,8 +43,8 @@ last_modified_at: 2026-11-25
 دون طلب الإذن مجددًا.
 
 > **💡 نصيحة**
-> إذا فتحت <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (إدخال ملء الشاشة) من قبل وتريد الآن استخدام
-> <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**، فافتح تطبيق الخرائط (مثل «خرائط Google») على شاشة
+> إذا فتحت <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> (إدخال ملء الشاشة) من قبل وتريد الآن استخدام
+> <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>، فافتح تطبيق الخرائط (مثل «خرائط Google») على شاشة
 > السيارة أولًا ثم ابدأ النسخ المطابق Legacy. هذا يعيد تعيين تطبيق الخرائط
 > خريطةً افتراضية لشاشة السيارة، فلا تستولي شاشة النسخ المطابق الكاملة على
 > وظائف الخرائط.
@@ -124,7 +124,7 @@ last_modified_at: 2026-11-25
 الشاشة بين الوضعين العمودي والأفقي يعيد الصورة إلى طبيعتها (إن كان **قفل الاتجاه** مفعّلًا فألغِه أولًا من زره على الشاشة). ويمكن أيضًا لإعدادين إصلاح ذلك:
 
 - فعِّل [**الإعدادات ← إعدادات متقدمة ← حجم صورة ثابت**](/docs/ar/settings/#nav_fixed_size). يحافظ النسخ المطابق حينها على
-  حجمه بدل التشوه (قد يُحجب جزء منه). ينطبق فقط على إدخال <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** ذي ملء الشاشة.
+  حجمه بدل التشوه (قد يُحجب جزء منه). ينطبق فقط على إدخال <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> ذي ملء الشاشة.
 - فعِّل [**الإعدادات ← إعدادات متقدمة ← النسخ المطابق المرسوم داخل التطبيق (تجريبي)**](/docs/ar/settings/#self_draw).
   عندها يرسم التطبيق صورة النسخ المطابق بنفسه بدلًا من ترك التحجيم للنظام، فلا تتشوّه
   الصورة في العرض المقسّم. يستهلك بطارية أكثر قليلًا، ويسري مفعوله عند البدء التالي للنسخ

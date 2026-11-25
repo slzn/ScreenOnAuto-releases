@@ -380,6 +380,9 @@ conversion rules:
 - wiki page interlinks → on-site docs URLs (`/docs/<lang>/<slug>`)
 - README links → landing-page anchors
 - image references → `/images/` paths (copy new images into `images/`)
+- an inline mirror icon and its bold name (`<img … align="middle">` + U+00A0 + `**Name**` in the wiki)
+  → wrapped in `<span class="icon-name">…</span>` (nowrap): browsers break after an image even
+  before a no-break space, so only the span keeps the icon on its name's line
 - do **not** hand-edit the layout — `_config.yml` defaults + `_layouts/doc.html` handle
   SEO head, hreflang, and JSON-LD automatically
 - `last_modified_at:` in the front matter and the matching `<lastmod>` in `sitemap.xml`

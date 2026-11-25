@@ -13,12 +13,12 @@ last_modified_at: 2026-11-25
 
 > **ℹ️ Note**
 > **Before you start**, make sure:
-> - ScreenOnAuto is installed and its entries appear in Android Auto's launcher.
+> - ScreenOnAuto is installed and its two entries, <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> and <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>, appear in Android Auto's launcher.
 > - You've opened the app once on the phone and granted the permissions it asks for.
 
 ## The two mirror entries
 
-Android Auto's app launcher shows **two** mirror entries. Both mirror the same phone
+Android Auto's app launcher shows **two** mirror entries: <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> and <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>. Both mirror the same phone
 screen — they differ in *how* the mirror is shown on the car screen:
 
 ![Android Auto launcher showing the ScreenOnAuto entries](/images/how-to-use/aa-launcher.png)
@@ -43,8 +43,8 @@ and you can switch between them at any time — once mirroring is running, openi
 other entry shows it right away without asking for permission again.
 
 > **💡 Tip**
-> If you've opened <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (the full-screen entry) before and now want to use
-> <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**, open your map app (e.g. Google Maps) on the car screen
+> If you've opened <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> (the full-screen entry) before and now want to use
+> <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>, open your map app (e.g. Google Maps) on the car screen
 > first, then start the Legacy mirror. This sets the map app back as the car screen's
 > default map, so map-related functions aren't taken over by the full-screen mirror.
 
@@ -128,7 +128,7 @@ fix it:
 
 - Turn on [**Settings → Advanced → Fixed mirror size**](/docs/en/settings/#nav_fixed_size). The mirror then keeps its size
   instead of distorting (part of it may be hidden). Applies only to the full-screen
-  <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** entry.
+  <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> entry.
 - Turn on [**Settings → Advanced → Self-drawn mirror (experimental)**](/docs/en/settings/#self_draw). The app then draws
   the mirror image itself instead of letting the system scale it, so the image no longer
   distorts in split view. It uses slightly more battery and takes effect

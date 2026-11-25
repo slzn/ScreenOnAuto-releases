@@ -13,12 +13,12 @@ last_modified_at: 2026-11-25
 
 > **ℹ️ Nota**
 > **Antes de empezar**, asegúrate de que:
-> - ScreenOnAuto está instalado y sus entradas aparecen en el lanzador de Android Auto.
+> - ScreenOnAuto está instalado y sus dos entradas, <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> y <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>, aparecen en el lanzador de Android Auto.
 > - Ya abriste la app una vez en el teléfono y concediste los permisos solicitados.
 
 ## Las dos entradas de duplicación
 
-El lanzador de apps de Android Auto muestra **dos** entradas de duplicación. Ambas
+El lanzador de apps de Android Auto muestra **dos** entradas de duplicación: <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> y <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>. Ambas
 duplican la misma pantalla del teléfono — la diferencia es *cómo* se muestra la
 duplicación en la pantalla del coche:
 
@@ -44,8 +44,8 @@ duplicación y puedes cambiar en cualquier momento — con la duplicación en ma
 la otra entrada la muestra al instante sin volver a pedir permiso.
 
 > **💡 Consejo**
-> Si ya abriste <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (la entrada de pantalla completa) y ahora quieres usar
-> <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**, abre primero tu app de mapas (p. ej. Google Maps) en la
+> Si ya abriste <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> (la entrada de pantalla completa) y ahora quieres usar
+> <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>, abre primero tu app de mapas (p. ej. Google Maps) en la
 > pantalla del coche y luego inicia la duplicación Legacy. Así el coche vuelve a tener
 > la app de mapas como mapa predeterminado y las funciones de mapa no quedan ocupadas
 > por la duplicación a pantalla completa.
@@ -128,7 +128,7 @@ para que la pantalla cambie entre vertical y horizontal lo devuelve a la normali
 ajustes también pueden solucionarlo:
 
 - Activa [**Ajustes → Avanzado → Tamaño fijo de la duplicación**](/docs/es/settings/#nav_fixed_size). La duplicación mantiene
-  su tamaño en lugar de distorsionarse (parte puede quedar oculta). Solo aplica a la entrada de pantalla completa <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**.
+  su tamaño en lugar de distorsionarse (parte puede quedar oculta). Solo aplica a la entrada de pantalla completa <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span>.
 - Activa [**Ajustes → Avanzado → Duplicación dibujada por la app (experimental)**](/docs/es/settings/#self_draw). La app
   dibuja entonces la imagen de la duplicación en lugar de dejar que el sistema la
   escale, así que ya no se distorsiona en la vista dividida.

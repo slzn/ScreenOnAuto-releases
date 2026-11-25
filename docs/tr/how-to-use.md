@@ -13,12 +13,12 @@ last_modified_at: 2026-11-25
 
 > **ℹ️ Not**
 > **Başlamadan önce** şunlardan emin olun:
-> - ScreenOnAuto yüklü ve girişleri Android Auto başlatıcısında görünüyor.
+> - ScreenOnAuto yüklü ve iki girişi (<span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> ve <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>) Android Auto başlatıcısında görünüyor.
 > - Uygulamayı telefonda bir kez açıp istediği izinleri verdiniz.
 
 ## İki yansıtma girişi
 
-Android Auto'nun uygulama başlatıcısında **iki** yansıtma girişi görünür. İkisi de
+Android Auto'nun uygulama başlatıcısında **iki** yansıtma girişi görünür: <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> ve <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>. İkisi de
 aynı telefon ekranını yansıtır — fark, yansıtmanın araç ekranında *nasıl*
 gösterildiğidir:
 
@@ -45,8 +45,8 @@ yansıtma çalışırken diğer girişi açmak, yeniden izin istemeden yansıtma
 gösterir.
 
 > **💡 İpucu**
-> Daha önce <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**'yu (tam ekran girişini) açtıysanız ve şimdi
-> <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**'yi kullanmak istiyorsanız, önce araç ekranında harita
+> Daha önce <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span>'yu (tam ekran girişini) açtıysanız ve şimdi
+> <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>'yi kullanmak istiyorsanız, önce araç ekranında harita
 > uygulamanızı (ör. Google Haritalar) açın, sonra Legacy yansıtmayı başlatın. Böylece
 > harita uygulaması araç ekranının varsayılan haritası olarak geri ayarlanır ve
 > haritayla ilgili işlevler tam ekran yansıtma tarafından devralınmaz.
@@ -126,7 +126,7 @@ ekranın dikey ile yatay arasında geçmesini sağlamak görüntüyü düzeltir 
 bunu düzeltebilir:
 
 - [**Ayarlar → Gelişmiş → Sabit yansıtma boyutu**](/docs/tr/settings/#nav_fixed_size)'nu açın. Yansıtma bozulmak yerine
-  boyutunu korur (bir kısmı gizlenebilir). Yalnızca tam ekran <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** girişi için geçerlidir.
+  boyutunu korur (bir kısmı gizlenebilir). Yalnızca tam ekran <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> girişi için geçerlidir.
 - [**Ayarlar → Gelişmiş → Uygulamanın çizdiği yansıtma (deneysel)**](/docs/tr/settings/#self_draw) seçeneğini açın.
   Uygulama bu durumda ölçeklendirmeyi sisteme bırakmak yerine yansıtma görüntüsünü
   kendisi çizer; böylece görüntü bölünmüş görünümde artık bozulmaz. Biraz daha

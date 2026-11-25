@@ -13,12 +13,12 @@ last_modified_at: 2026-11-25
 
 > **ℹ️ 참고**
 > **시작하기 전에** 다음을 확인하세요:
-> - ScreenOnAuto가 설치되어 있고 Android Auto 런처에 ScreenOnAuto 항목이 보입니다.
+> - ScreenOnAuto가 설치되어 있고 Android Auto 런처에 ScreenOnAuto 항목 두 개(<span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span>, <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>)가 보입니다.
 > - 휴대전화에서 앱을 한 번 열어 요청되는 권한을 부여했습니다.
 
 ## 두 가지 미러링 항목
 
-Android Auto의 앱 런처에는 미러링 항목이 **두 개** 표시됩니다. 둘 다 같은 휴대전화 화면을
+Android Auto의 앱 런처에는 미러링 항목이 **두 개**(<span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span>, <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>) 표시됩니다. 둘 다 같은 휴대전화 화면을
 미러링하며, 차이는 차량 화면에 *어떻게* 표시되는지에 있습니다:
 
 ![ScreenOnAuto 항목이 표시된 Android Auto 런처](/images/how-to-use/aa-launcher.png)
@@ -43,7 +43,7 @@ Android Auto의 앱 런처에는 미러링 항목이 **두 개** 표시됩니다
 열었을 때 권한을 다시 묻지 않고 바로 표시됩니다.
 
 > **💡 팁**
-> 전에 <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**(전체 화면 항목)를 열었다가 이제 <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)** 를
+> 전에 <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span>(전체 화면 항목)를 열었다가 이제 <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span> 를
 > 쓰고 싶다면, 먼저 차량 화면에서 지도 앱(예: Google 지도)을 연 다음 Legacy 미러링을
 > 시작하세요. 그러면 지도 앱이 다시 차량 화면의 기본 지도로 설정되어, 지도 관련 기능이
 > 전체 화면 미러링에 넘어가지 않습니다.
@@ -119,7 +119,7 @@ Android Auto의 앱 런처에는 미러링 항목이 **두 개** 표시됩니다
 분할 화면에서 표시 영역이 커지거나 작아질 때 생깁니다. 휴대전화를 회전해 화면이 세로와 가로 사이에서 한 번 바뀌면 원래대로 돌아옵니다(**화면 방향 고정**이 켜져 있다면 먼저 화면 버튼으로 해제하세요).
 다음 두 설정으로도 해결할 수 있습니다:
 
-- [**설정 → 고급 → 미러링 크기 고정**](/docs/ko/settings/#nav_fixed_size)을 켜세요. 그러면 화면이 찌그러지는 대신 크기를 유지합니다(일부가 가려질 수 있습니다). 전체 화면 <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** 항목에만 적용됩니다.
+- [**설정 → 고급 → 미러링 크기 고정**](/docs/ko/settings/#nav_fixed_size)을 켜세요. 그러면 화면이 찌그러지는 대신 크기를 유지합니다(일부가 가려질 수 있습니다). 전체 화면 <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> 항목에만 적용됩니다.
 - [**설정 → 고급 → 직접 그리기 미러링(실험적)**](/docs/ko/settings/#self_draw)을 켜세요. 그러면 시스템 확대·축소에 맡기지 않고 앱이 직접 미러링 화면을 그리므로 분할 화면에서 더 이상 왜곡되지 않습니다. 배터리를 조금 더 사용하며, 다음에 미러링을
   시작할 때부터 적용됩니다. [**휴대전화 화면을 차량 화면 비율에 맞추기**](/docs/ko/settings/#root_display_override)(특권 기능)는 같은 문제를 다른 방식으로 해결하며, 두 기능을 함께 켤 수 있습니다.
 

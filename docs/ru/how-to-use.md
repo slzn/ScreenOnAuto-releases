@@ -13,12 +13,12 @@ last_modified_at: 2026-11-25
 
 > **ℹ️ Примечание**
 > **Перед началом** убедитесь, что:
-> - ScreenOnAuto установлен, и его пункты появились в панели запуска Android Auto.
+> - ScreenOnAuto установлен, и оба его пункта, <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> и <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>, появились в панели запуска Android Auto.
 > - Вы хотя бы раз открыли приложение на телефоне и выдали запрошенные разрешения.
 
 ## Два пункта дублирования
 
-В панели запуска Android Auto есть **два** пункта дублирования. Оба дублируют один и тот же
+В панели запуска Android Auto есть **два** пункта дублирования: <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> и <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>. Оба дублируют один и тот же
 экран телефона — различается то, *как* дублирование показывается на экране автомобиля:
 
 ![Панель запуска Android Auto с пунктами ScreenOnAuto](/images/how-to-use/aa-launcher.png)
@@ -43,8 +43,8 @@ last_modified_at: 2026-11-25
 другой пункт открывается сразу, без повторного запроса разрешения.
 
 > **💡 Совет**
-> Если раньше вы открывали <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (полноэкранный пункт), а теперь хотите
-> пользоваться <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**, сначала откройте на экране автомобиля приложение
+> Если раньше вы открывали <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> (полноэкранный пункт), а теперь хотите
+> пользоваться <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>, сначала откройте на экране автомобиля приложение
 > карт (например, Google Карты), а затем запустите дублирование Legacy. Так приложение карт
 > снова станет картой по умолчанию на экране автомобиля, и функции, связанные с картой,
 > не будут перехвачены полноэкранным дублированием.
@@ -126,7 +126,7 @@ ADB — см. [Выдача разрешения на дублирование �
 
 - Включите [**Настройки → Дополнительно → Фиксированный размер дублирования**](/docs/ru/settings/#nav_fixed_size). Тогда
   дублирование сохраняет свой размер и не искажается (часть его может быть скрыта).
-  Действует только для полноэкранного пункта <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**.
+  Действует только для полноэкранного пункта <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span>.
 - Включите [**Настройки → Дополнительно → Собственная отрисовка дублирования
   (экспериментально)**](/docs/ru/settings/#self_draw). Тогда приложение само рисует изображение дублирования, а не
   передаёт масштабирование системе, поэтому изображение больше не искажается при разделённом экране. Расход батареи немного выше; применяется при следующем

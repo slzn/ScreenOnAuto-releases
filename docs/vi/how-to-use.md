@@ -12,12 +12,12 @@ last_modified_at: 2026-11-25
 
 > **ℹ️ Lưu ý**
 > **Trước khi bắt đầu**, hãy chắc chắn rằng:
-> - ScreenOnAuto đã được cài và các mục của nó xuất hiện trong trình chạy Android Auto.
+> - ScreenOnAuto đã được cài và hai mục của nó (<span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> và <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>) xuất hiện trong trình chạy Android Auto.
 > - Bạn đã mở ứng dụng một lần trên điện thoại và cấp các quyền mà ứng dụng yêu cầu.
 
 ## Hai mục phản chiếu
 
-Trình chạy ứng dụng của Android Auto hiển thị **hai** mục phản chiếu. Cả hai đều phản chiếu
+Trình chạy ứng dụng của Android Auto hiển thị **hai** mục phản chiếu: <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> và <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>. Cả hai đều phản chiếu
 cùng một màn hình điện thoại — chúng chỉ khác nhau ở *cách* hiển thị hình phản chiếu trên màn hình xe:
 
 ![Trình chạy Android Auto hiển thị các mục ScreenOnAuto](/images/how-to-use/aa-launcher.png)
@@ -42,8 +42,8 @@ một hình phản chiếu, và bạn có thể chuyển qua lại bất cứ l�
 mục còn lại sẽ hiện hình ngay mà không cần xin lại quyền.
 
 > **💡 Mẹo**
-> Nếu trước đây bạn đã mở <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (mục toàn màn hình) và giờ muốn dùng
-> <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**, hãy mở ứng dụng bản đồ (ví dụ Google Maps) trên màn hình xe
+> Nếu trước đây bạn đã mở <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> (mục toàn màn hình) và giờ muốn dùng
+> <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>, hãy mở ứng dụng bản đồ (ví dụ Google Maps) trên màn hình xe
 > trước, rồi mới bắt đầu phản chiếu Legacy. Việc này đặt lại ứng dụng bản đồ làm bản đồ
 > mặc định của màn hình xe, để các chức năng liên quan đến bản đồ không bị phản chiếu toàn màn hình chiếm mất.
 
@@ -121,7 +121,7 @@ Hiện tượng này xảy ra khi vùng hiển thị to ra hoặc nhỏ lại �
 có thể khắc phục:
 
 - Bật [**Cài đặt → Nâng cao → Cố định kích thước phản chiếu**](/docs/vi/settings/#nav_fixed_size). Hình phản chiếu sẽ giữ nguyên kích thước
-  thay vì bị méo (một phần có thể bị che khuất). Chỉ áp dụng cho mục toàn màn hình <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**.
+  thay vì bị méo (một phần có thể bị che khuất). Chỉ áp dụng cho mục toàn màn hình <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span>.
 - Bật [**Cài đặt → Nâng cao → Tự vẽ hình phản chiếu (thử nghiệm)**](/docs/vi/settings/#self_draw). Ứng dụng sẽ tự vẽ
   hình phản chiếu thay vì để hệ thống co giãn, nên hình không còn bị méo khi chia đôi màn hình. Tính năng này tốn pin hơn một chút và có hiệu lực
   vào lần bắt đầu phản chiếu tiếp theo. [**Khớp màn hình điện thoại với xe**](/docs/vi/settings/#root_display_override) (Tính năng đặc quyền) khắc phục cùng vấn đề này theo cách khác, và có thể bật cả hai cùng lúc.

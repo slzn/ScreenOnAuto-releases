@@ -13,12 +13,12 @@ last_modified_at: 2026-11-25
 
 > **ℹ️ Hinweis**
 > **Bevor du beginnst**, stelle sicher:
-> - ScreenOnAuto ist installiert und seine Einträge erscheinen im Android-Auto-Launcher.
+> - ScreenOnAuto ist installiert und seine zwei Einträge, <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> und <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>, erscheinen im Android-Auto-Launcher.
 > - Du hast die App einmal auf dem Telefon geöffnet und die angeforderten Berechtigungen erteilt.
 
 ## Die beiden Spiegelungs-Einträge
 
-Der App-Launcher von Android Auto zeigt **zwei** Spiegelungs-Einträge. Beide spiegeln
+Der App-Launcher von Android Auto zeigt **zwei** Spiegelungs-Einträge: <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> und <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>. Beide spiegeln
 denselben Telefonbildschirm – sie unterscheiden sich darin, *wie* die Spiegelung auf
 dem Fahrzeugbildschirm dargestellt wird:
 
@@ -45,8 +45,8 @@ bereits, zeigt der andere Eintrag sie sofort an, ohne erneut nach der Berechtigu
 fragen.
 
 > **💡 Tipp**
-> Wenn du zuvor <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (den Vollbild-Eintrag) geöffnet hast und jetzt
-> <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)** nutzen möchtest, öffne zuerst deine Karten-App (z. B.
+> Wenn du zuvor <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> (den Vollbild-Eintrag) geöffnet hast und jetzt
+> <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span> nutzen möchtest, öffne zuerst deine Karten-App (z. B.
 > Google Maps) auf dem Fahrzeugbildschirm und starte dann die Legacy-Spiegelung. So
 > wird die Karten-App wieder als Standardkarte des Fahrzeugbildschirms gesetzt und die
 > Kartenfunktionen bleiben nicht bei der Vollbild-Spiegelung hängen.
@@ -129,7 +129,7 @@ Dreh das Telefon, sodass der Bildschirm zwischen Hoch- und Querformat wechselt �
 stimmt das Bild wieder (ist **Ausrichtung sperren** aktiv, hebe die Sperre vorher mit der Schaltfläche auf dem Bildschirm auf). Zwei Einstellungen können außerdem helfen:
 
 - Aktiviere [**Einstellungen → Erweitert → Feste Spiegelungsgröße**](/docs/de/settings/#nav_fixed_size). Die Spiegelung
-  behält dann ihre Größe statt zu verzerren (ein Teil kann verdeckt sein). Gilt nur für den Vollbild-Eintrag <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**.
+  behält dann ihre Größe statt zu verzerren (ein Teil kann verdeckt sein). Gilt nur für den Vollbild-Eintrag <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span>.
 - Aktiviere [**Einstellungen → Erweitert → Selbstgezeichnete Spiegelung
   (experimentell)**](/docs/de/settings/#self_draw). Die App zeichnet das Bild der Spiegelung dann selbst, statt es vom
   System skalieren zu lassen, sodass es in der geteilten Ansicht nicht mehr verzerrt. Das kostet etwas mehr Akku und greift beim nächsten Start der Spiegelung.

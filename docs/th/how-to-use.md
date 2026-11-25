@@ -13,12 +13,12 @@ last_modified_at: 2026-11-25
 
 > **ℹ️ หมายเหตุ**
 > **ก่อนเริ่ม** ตรวจสอบให้แน่ใจว่า:
-> - ติดตั้ง ScreenOnAuto แล้ว และรายการของแอปปรากฏใน Launcher ของ Android Auto
+> - ติดตั้ง ScreenOnAuto แล้ว และรายการทั้งสองของแอป (<span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> และ <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>) ปรากฏใน Launcher ของ Android Auto
 > - เปิดแอปบนโทรศัพท์แล้วอย่างน้อยหนึ่งครั้ง และให้สิทธิ์ที่แอปขอครบแล้ว
 
 ## รายการสะท้อนหน้าจอสองรายการ
 
-Launcher ของ Android Auto แสดงรายการสะท้อนหน้าจอ**สองรายการ** ทั้งสองสะท้อนหน้าจอโทรศัพท์เดียวกัน — ต่างกันที่*วิธี*แสดงภาพสะท้อนบนหน้าจอรถ:
+Launcher ของ Android Auto แสดงรายการสะท้อนหน้าจอ**สองรายการ** (<span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> และ <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>) ทั้งสองสะท้อนหน้าจอโทรศัพท์เดียวกัน — ต่างกันที่*วิธี*แสดงภาพสะท้อนบนหน้าจอรถ:
 
 ![Launcher ของ Android Auto ที่แสดงรายการของ ScreenOnAuto](/images/how-to-use/aa-launcher.png)
 
@@ -40,7 +40,7 @@ Launcher ของ Android Auto แสดงรายการสะท้อน
 ลองทั้งสองแบบแล้วใช้แบบที่เหมาะกับเครื่องเสียงรถของคุณมากกว่า ทั้งสองแสดงภาพสะท้อนเดียวกัน และสลับไปมาได้ทุกเมื่อ — เมื่อการสะท้อนหน้าจอทำงานอยู่ การเปิดอีกรายการจะแสดงภาพทันทีโดยไม่ขอสิทธิ์อีก
 
 > **💡 เคล็ดลับ**
-> หากเคยเปิด <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (รายการแบบเต็มจอ) มาก่อน และตอนนี้ต้องการใช้ <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)** ให้เปิดแอปแผนที่ (เช่น Google Maps) บนหน้าจอรถก่อน แล้วจึงเริ่มการสะท้อนแบบ Legacy วิธีนี้จะตั้งแอปแผนที่กลับเป็นแผนที่เริ่มต้นของหน้าจอรถ เพื่อไม่ให้ฟังก์ชันที่เกี่ยวกับแผนที่ถูกการสะท้อนแบบเต็มจอแย่งไป
+> หากเคยเปิด <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> (รายการแบบเต็มจอ) มาก่อน และตอนนี้ต้องการใช้ <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span> ให้เปิดแอปแผนที่ (เช่น Google Maps) บนหน้าจอรถก่อน แล้วจึงเริ่มการสะท้อนแบบ Legacy วิธีนี้จะตั้งแอปแผนที่กลับเป็นแผนที่เริ่มต้นของหน้าจอรถ เพื่อไม่ให้ฟังก์ชันที่เกี่ยวกับแผนที่ถูกการสะท้อนแบบเต็มจอแย่งไป
 
 ## เริ่มสะท้อนหน้าจอ
 
@@ -102,7 +102,7 @@ Launcher ของ Android Auto แสดงรายการสะท้อน
 
 เกิดขึ้นเมื่อพื้นที่ที่มองเห็นขยายหรือหดในมุมมองแยกหน้าจอ การหมุนโทรศัพท์ให้หน้าจอสลับระหว่างแนวตั้งกับแนวนอนจะทำให้กลับมาปกติ (หากเปิด **ล็อกการวางแนว** อยู่ ให้ปลดด้วยปุ่มบนหน้าจอก่อน) มีการตั้งค่าสองอย่างที่แก้ได้เช่นกัน:
 
-- เปิด [**การตั้งค่า → ขั้นสูง → ล็อกขนาดภาพ**](/docs/th/settings/#nav_fixed_size) ภาพสะท้อนจะคงขนาดไว้แทนที่จะผิดรูป (บางส่วนอาจถูกซ่อน) ใช้ได้เฉพาะกับรายการ <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** แบบเต็มจอ
+- เปิด [**การตั้งค่า → ขั้นสูง → ล็อกขนาดภาพ**](/docs/th/settings/#nav_fixed_size) ภาพสะท้อนจะคงขนาดไว้แทนที่จะผิดรูป (บางส่วนอาจถูกซ่อน) ใช้ได้เฉพาะกับรายการ <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> แบบเต็มจอ
 - เปิด [**การตั้งค่า → ขั้นสูง → วาดภาพเอง (ทดลอง)**](/docs/th/settings/#self_draw) แอปจะวาดภาพสะท้อนเองแทนการให้ระบบย่อขยาย ภาพจึงไม่ผิดรูปเมื่อแยกหน้าจออีก ใช้แบตเตอรี่มากขึ้นเล็กน้อย และมีผลเมื่อเริ่มสะท้อนหน้าจอครั้งถัดไป [**ปรับหน้าจอโทรศัพท์ให้เข้ากับรถ**](/docs/th/settings/#root_display_override) (ฟีเจอร์สิทธิ์พิเศษ) แก้ปัญหาเดียวกันด้วยวิธีอื่น และเปิดพร้อมกันได้
 
 #### Google Maps ของ Android Auto เป็นสีดำขณะสะท้อนหน้าจอ

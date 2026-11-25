@@ -12,12 +12,12 @@ last_modified_at: 2026-11-25
 
 > **ℹ️ メモ**
 > **始める前に**、次の点を確認してください。
-> - ScreenOnAuto がインストールされ、Android Auto のランチャーに項目が表示されている。
+> - ScreenOnAuto がインストールされ、Android Auto のランチャーに 2 つの項目（<span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> と <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>）が表示されている。
 > - スマホでアプリを一度開き、求められた権限を許可している。
 
 ## 2 つのミラーリング項目
 
-Android Auto のアプリランチャーには、ミラーリングの項目が **2 つ**表示されます。どちらも同じスマホの画面をミラーリングしますが、車の画面での*表示のしかた*が異なります。
+Android Auto のアプリランチャーには、ミラーリングの項目が **2 つ**（<span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> と <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span>）表示されます。どちらも同じスマホの画面をミラーリングしますが、車の画面での*表示のしかた*が異なります。
 
 ![ScreenOnAuto の項目が表示された Android Auto のランチャー](/images/how-to-use/aa-launcher.png)
 
@@ -39,7 +39,7 @@ Android Auto のアプリランチャーには、ミラーリングの項目が 
 両方試して、お使いのヘッドユニットで使いやすいほうを選んでください。表示されるミラーリングはどちらも同じで、いつでも切り替えられます。ミラーリング中にもう一方の項目を開くと、権限を再度求められることなくすぐに表示されます。
 
 > **💡 ヒント**
-> 以前に <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**（全画面の項目）を開いたことがあり、今後 <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)** を使いたい場合は、先に車の画面で地図アプリ（Google マップなど）を開いてから Legacy のミラーリングを始めてください。地図アプリが車の画面の標準の地図に戻るので、地図関連の機能が全画面ミラーリングに奪われなくなります。
+> 以前に <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span>（全画面の項目）を開いたことがあり、今後 <span class="icon-name"><img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**</span> を使いたい場合は、先に車の画面で地図アプリ（Google マップなど）を開いてから Legacy のミラーリングを始めてください。地図アプリが車の画面の標準の地図に戻るので、地図関連の機能が全画面ミラーリングに奪われなくなります。
 
 ## ミラーリングを開始する
 
@@ -101,7 +101,7 @@ Android Auto のアプリランチャーには、ミラーリングの項目が 
 
 分割表示で表示エリアが広がったり狭まったりすると起こります。スマホを回転させて画面を縦向きと横向きの間で一度切り替えると元に戻ります（**画面の向きを固定** がオンの場合は、先に画面上のボタンで解除してください）。次の 2 つの設定でも解消できます。
 
-- [**設定 → 詳細設定 → ミラーサイズを固定**](/docs/ja/settings/#nav_fixed_size) をオンにします。ミラーリングはゆがまず、サイズを保ちます（一部が隠れることがあります）。全画面の <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** 項目にのみ適用されます。
+- [**設定 → 詳細設定 → ミラーサイズを固定**](/docs/ja/settings/#nav_fixed_size) をオンにします。ミラーリングはゆがまず、サイズを保ちます（一部が隠れることがあります）。全画面の <span class="icon-name"><img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**</span> 項目にのみ適用されます。
 - [**設定 → 詳細設定 → 独自描画ミラー（実験的）**](/docs/ja/settings/#self_draw) をオンにします。システムに拡大縮小を任せず、アプリ自身がミラーリングの映像を描画するため、分割表示でも映像がゆがまなくなります。バッテリーの消費が少し増え、次にミラーリングを開始したときから有効になります。[**スマホの画面を車の画面比に合わせる**](/docs/ja/settings/#root_display_override)（特権機能）は同じ問題を別の方法で解消するもので、両方を同時にオンにできます。
 
 #### ミラーリング中に Android Auto の Google マップが黒くなる
