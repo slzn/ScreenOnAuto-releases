@@ -245,7 +245,9 @@ footer .updated { border-top: 0; margin-top: 0; padding-top: 0; }
 
 /* ============ doc pages (wiki guides published under /docs/) ============ */
 .docbar { background: var(--bg-alt); border-bottom: 1px solid var(--border); padding: 12px 0; }
-.docbar .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px; }
+/* full width with the same 18px inset as the landing page's floating tools, so the tools sit in
+   the same place on every page (inside the 900px .wrap they drifted toward the middle) */
+.docbar .wrap { max-width: none; padding: 0 18px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px; }
 .docbar .home { display: inline-flex; align-items: center; gap: 9px; font-weight: 700; color: var(--text); text-decoration: none; font-family: "Chakra Petch", system-ui, sans-serif; }
 .docbar .home img { width: 28px; height: 28px; border-radius: 7px; }
 /* stays right-aligned even when the bar wraps on a phone, so the menu opens on-screen */
