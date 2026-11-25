@@ -5,7 +5,7 @@
     <string name="pref_auto_start_summary">Automatisch beginnen met spiegelen zodra ScreenOnAuto op het autoscherm wordt geopend</string>
     <string name="pref_keep_awake_title">Slaapstand voorkomen</string>
     <string name="pref_keep_awake_summary">Voorkomt dat de telefoon in slaapstand gaat tijdens het spiegelen</string>
-    <string name="pref_force_landscape_title">Stand vergrendelen automatisch starten</string>
+    <string name="pref_force_landscape_title">Stand vergrendelen bij verbinden</string>
     <string name="pref_force_landscape_summary">Vergrendelt de stand van de telefoon als Android Auto verbindt; daarna wisselt de knop op het autoscherm</string>
     <string name="pref_force_landscape_reverse_title">Omgekeerd liggend</string>
     <string name="pref_force_landscape_reverse_summary">Telefoon andersom draaien</string>

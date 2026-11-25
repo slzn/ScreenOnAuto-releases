@@ -5,7 +5,7 @@
     <string name="pref_auto_start_summary">Iniciar duplicación automáticamente al abrir ScreenOnAuto en la pantalla del coche</string>
     <string name="pref_keep_awake_title">Evitar suspensión</string>
     <string name="pref_keep_awake_summary">Evitar que el teléfono se suspenda durante la duplicación</string>
-    <string name="pref_force_landscape_title">Bloquear la orientación automáticamente</string>
+    <string name="pref_force_landscape_title">Bloquear la orientación al conectar</string>
     <string name="pref_force_landscape_summary">Bloquea la orientación del teléfono al conectar Android Auto; después, el botón de la pantalla del coche la cambia</string>
     <string name="pref_force_landscape_reverse_title">Modo horizontal invertido</string>
     <string name="pref_force_landscape_reverse_summary">Gira el teléfono al otro lado</string>

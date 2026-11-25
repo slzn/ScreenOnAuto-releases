@@ -5,7 +5,7 @@
     <string name="pref_auto_start_summary">Automatycznie rozpoczynaj dublowanie po otwarciu ScreenOnAuto na ekranie samochodu</string>
     <string name="pref_keep_awake_title">Zapobiegaj usypianiu</string>
     <string name="pref_keep_awake_summary">Zapobiega usypianiu telefonu podczas dublowania</string>
-    <string name="pref_force_landscape_title">Automatycznie blokuj orientację</string>
+    <string name="pref_force_landscape_title">Blokuj orientację po połączeniu</string>
     <string name="pref_force_landscape_summary">Blokuje orientację telefonu po połączeniu z Android Auto; potem przełącza ją przycisk na ekranie samochodu</string>
     <string name="pref_force_landscape_reverse_title">Odwrócona orientacja pozioma</string>
     <string name="pref_force_landscape_reverse_summary">Obróć telefon w drugą stronę</string>

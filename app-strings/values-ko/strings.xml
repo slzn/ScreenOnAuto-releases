@@ -5,7 +5,7 @@
     <string name="pref_auto_start_summary">차량 화면에서 ScreenOnAuto를 열면 자동으로 미러링 시작</string>
     <string name="pref_keep_awake_title">절전 방지</string>
     <string name="pref_keep_awake_summary">미러링 중 휴대전화가 절전되지 않도록 방지</string>
-    <string name="pref_force_landscape_title">화면 방향 고정 자동 시작</string>
+    <string name="pref_force_landscape_title">연결 시 화면 방향 고정</string>
     <string name="pref_force_landscape_summary">Android Auto 연결 시 휴대폰 방향을 고정하고, 이후에는 차량 화면의 버튼으로 전환</string>
     <string name="pref_force_landscape_reverse_title">가로 모드 반전</string>
     <string name="pref_force_landscape_reverse_summary">휴대폰을 반대 방향으로 두기</string>
@@ -86,7 +86,7 @@
     <string name="pref_legacy_buttons_left_title">버튼 왼쪽 정렬</string>
     <string name="pref_legacy_buttons_left_summary">화면 버튼과 바로가기를 왼쪽에 배치</string>
     <string name="pref_legacy_dodge_nav_title">휴대폰 내비게이션 바 피하기</string>
-    <string name="pref_legacy_dodge_nav_summary">미러에 보이는 휴대폰 탐색 메뉴를 피해 버튼 배치</string>
+    <string name="pref_legacy_dodge_nav_summary">미러에 보이는 휴대폰 내비게이션 바를 피해 버튼 배치</string>
     <string name="pref_legacy_side_gap_title">버튼과 측면 가장자리의 간격</string>
     <string name="pref_legacy_bottom_gap_title">버튼과 아래쪽 가장자리의 간격</string>
     <string name="pref_legacy_shortcut_gap_title">바로가기와 측면 가장자리의 간격</string>

@@ -5,7 +5,7 @@
     <string name="pref_auto_start_summary">Avviare automaticamente il mirroring all\'apertura di ScreenOnAuto sullo schermo dell\'auto</string>
     <string name="pref_keep_awake_title">Impedisci sospensione</string>
     <string name="pref_keep_awake_summary">Impedisce al telefono di sospendersi durante il mirroring</string>
-    <string name="pref_force_landscape_title">Blocca automaticamente l\'orientamento</string>
+    <string name="pref_force_landscape_title">Blocca l\'orientamento alla connessione</string>
     <string name="pref_force_landscape_summary">Blocca l\'orientamento del telefono quando Android Auto si collega; poi il pulsante sullo schermo dell\'auto lo cambia</string>
     <string name="pref_force_landscape_reverse_title">Modalità orizzontale invertita</string>
     <string name="pref_force_landscape_reverse_summary">Girare il telefono dall\'altro lato</string>
@@ -70,7 +70,7 @@
     <string name="pref_control_buttons_category_summary">Compaiono nella schermata di Android Auto; se ne possono attivare al massimo 4</string>
     <string name="pref_mapstrip_force_landscape_title">Pulsante Blocca orientamento</string>
     <string name="pref_mapstrip_force_landscape_summary">Pulsante che attiva o disattiva il blocco dell\'orientamento</string>
-    <string name="pref_mapstrip_auto_dim_title">Pulsante Oscura</string>
+    <string name="pref_mapstrip_auto_dim_title">Pulsante Oscuramento automatico</string>
     <string name="pref_mapstrip_auto_dim_summary">Pulsante che attiva o disattiva l\'oscuramento automatico (oscura lo schermo del telefono)</string>
     <string name="action_back">Indietro</string>
     <string name="action_home">Home</string>

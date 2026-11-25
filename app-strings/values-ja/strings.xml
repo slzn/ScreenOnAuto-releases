@@ -5,7 +5,7 @@
     <string name="pref_auto_start_summary">車の画面で ScreenOnAuto を開いたときに自動的にミラーリングを開始</string>
     <string name="pref_keep_awake_title">スリープを防止</string>
     <string name="pref_keep_awake_summary">ミラーリング中にスマホがスリープするのを防止</string>
-    <string name="pref_force_landscape_title">画面の向きの固定を自動で開始</string>
+    <string name="pref_force_landscape_title">接続時に画面の向きを固定</string>
     <string name="pref_force_landscape_summary">Android Auto 接続時にスマホの向きを固定。その後は車の画面のボタンで切り替えられます</string>
     <string name="pref_force_landscape_reverse_title">横向きを反転</string>
     <string name="pref_force_landscape_reverse_summary">スマホを逆向きに置く</string>

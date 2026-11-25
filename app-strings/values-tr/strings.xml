@@ -5,7 +5,7 @@
     <string name="pref_auto_start_summary">Araç ekranında ScreenOnAuto açıldığında yansıtmayı otomatik olarak başlat</string>
     <string name="pref_keep_awake_title">Uykuyu engelle</string>
     <string name="pref_keep_awake_summary">Yansıtma sırasında telefonun uykuya geçmesini engeller</string>
-    <string name="pref_force_landscape_title">Yönü otomatik olarak kilitle</string>
+    <string name="pref_force_landscape_title">Bağlanınca yönü kilitle</string>
     <string name="pref_force_landscape_summary">Android Auto bağlanınca telefonun yönünü kilitler; sonra araç ekranındaki düğme değiştirir</string>
     <string name="pref_force_landscape_reverse_title">Ters yatay mod</string>
     <string name="pref_force_landscape_reverse_summary">Telefonu ters yöne çevir</string>
@@ -112,12 +112,12 @@
     <string name="root_screen_off_failed">Ekran kapatılamadı — bunun yerine arka ışık karartıldı</string>
     <string name="pref_root_requires_connection">Önce Shizuku veya Root ile bağlanın</string>
     <string name="pref_root_display_category">Ekran biçimi</string>
-    <string name="pref_root_display_override_title">Telefon ekranını arabaya uydur</string>
+    <string name="pref_root_display_override_title">Telefon ekranını araca uydur</string>
     <string name="pref_root_display_override_summary">Telefonu aracın oranına getirir, yansıtma siyah şerit olmadan doldurur</string>
     <string name="pref_root_display_override_unsupported">Bu telefonda desteklenmiyor — sistem ekran biçiminin değiştirilmesine izin vermiyor (%1$s)</string>
     <string name="pref_root_display_override_stale_helper">Ayrıcalıklı yardımcı hâlâ uygulamanın eski sürümünden kalma — yukarıdaki “Bağlantıyı kes”e dokunun, sonra yeniden bağlanın</string>
     <string name="pref_root_display_derived_title">Uygulanacak değer</string>
-    <string name="pref_root_display_derived_none">Henüz yok — araba ekranı, yansıtma Android Auto\'da bir sonraki açılışında otomatik olarak ölçülür</string>
+    <string name="pref_root_display_derived_none">Henüz yok — araç ekranı, yansıtma Android Auto\'da bir sonraki açılışında otomatik olarak ölçülür</string>
     <string name="pref_root_display_derived_bad_ratio">Araba genişliği ve yüksekliği makul bir oran vermiyor — sayıları kontrol edin. Uzun kenar, kısa kenarın en fazla 4 katı olabilir.</string>
     <string name="pref_root_display_car_not_measured">Henüz ölçülmedi</string>
     <string name="pref_root_display_derived_value">Araba %1$d×%2$d (oran %3$s) → telefon %4$d×%5$d</string>

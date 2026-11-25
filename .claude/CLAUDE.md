@@ -558,6 +558,19 @@ It fails on a string name the app no longer has — then update `pages()` in
 If the release renamed a setting, also check the `settings.md` prose that names it in bold:
 the script only updates the phone, not the text.
 
+**Pending for the next release** (renamed in `app-strings/` on 2026-11-25, site text left on the
+v1.11.0 names on purpose; delete this list once done). Update every place that names them —
+`settings.md` (headings and prose), How to Use (wiki + docs), READMEs and landing pages; grep for
+the old wording:
+- "Lock orientation on connect" (`pref_force_landscape_title`) in ar de es fr id it ja ko pt-BR ru
+  th tr vi: the old titles said "automatically" (e.g. de `Ausrichtung automatisch sperren` →
+  `Ausrichtung beim Verbinden sperren`, ja `画面の向きの固定を自動で開始` → `接続時に画面の向きを固定`).
+- de Auto Dim: `Automatisch dimmen` → `Auto-Dimmen`. pt-BR: `Diminuir brilho automaticamente` /
+  `diminuição automática` → `Escurecimento automático`. it: `Pulsante Oscura` →
+  `Pulsante Oscuramento automatico`.
+- tr `Telefon ekranını arabaya uydur` → `Telefon ekranını araca uydur`; fr `Restaurer` → `Rétablir`;
+  th `สิ่งที่จะใช้` → `ขนาดที่จะใช้จริง`; ko dodge-nav summary `탐색 메뉴` → `내비게이션 바`.
+
 Commit whatever Step 1 touched:
 
 ```bash

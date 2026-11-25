@@ -5,7 +5,7 @@
     <string name="pref_auto_start_summary">Tự động bắt đầu phản chiếu khi mở ScreenOnAuto trên màn hình xe</string>
     <string name="pref_keep_awake_title">Ngăn màn hình tắt</string>
     <string name="pref_keep_awake_summary">Ngăn điện thoại vào chế độ ngủ trong khi phản chiếu</string>
-    <string name="pref_force_landscape_title">Tự động khóa hướng xoay</string>
+    <string name="pref_force_landscape_title">Khóa hướng xoay khi kết nối</string>
     <string name="pref_force_landscape_summary">Khóa hướng điện thoại khi Android Auto kết nối; sau đó nút trên màn hình xe sẽ chuyển đổi</string>
     <string name="pref_force_landscape_reverse_title">Xoay ngang đảo ngược</string>
     <string name="pref_force_landscape_reverse_summary">Xoay điện thoại theo hướng ngược lại</string>

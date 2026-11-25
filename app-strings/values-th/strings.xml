@@ -5,7 +5,7 @@
     <string name="pref_auto_start_summary">เริ่มสะท้อนหน้าจอโดยอัตโนมัติเมื่อเปิด ScreenOnAuto บนหน้าจอรถ</string>
     <string name="pref_keep_awake_title">ไม่ให้หน้าจอดับ</string>
     <string name="pref_keep_awake_summary">ไม่ให้โทรศัพท์เข้าสู่โหมดสลีประหว่างสะท้อนหน้าจอ</string>
-    <string name="pref_force_landscape_title">ล็อกการวางแนวอัตโนมัติ</string>
+    <string name="pref_force_landscape_title">ล็อกการวางแนวเมื่อเชื่อมต่อ</string>
     <string name="pref_force_landscape_summary">ล็อกการวางแนวโทรศัพท์เมื่อ Android Auto เชื่อมต่อ หลังจากนั้นปุ่มบนจอรถจะสลับให้</string>
     <string name="pref_force_landscape_reverse_title">แนวนอนกลับด้าน</string>
     <string name="pref_force_landscape_reverse_summary">หมุนโทรศัพท์ไปอีกด้าน</string>
@@ -116,7 +116,7 @@
     <string name="pref_root_display_override_summary">เปลี่ยนโทรศัพท์เป็นสัดส่วนของรถ ภาพสะท้อนจึงเต็มจอไม่มีแถบดำ</string>
     <string name="pref_root_display_override_unsupported">ไม่รองรับในโทรศัพท์เครื่องนี้ — ระบบไม่อนุญาตให้เปลี่ยนรูปทรงหน้าจอ (%1$s)</string>
     <string name="pref_root_display_override_stale_helper">ตัวช่วยสิทธิ์พิเศษยังเป็นของแอปเวอร์ชันเก่า — แตะ “ยกเลิกการเชื่อมต่อ” ด้านบน แล้วเชื่อมต่อใหม่</string>
-    <string name="pref_root_display_derived_title">สิ่งที่จะใช้</string>
+    <string name="pref_root_display_derived_title">ขนาดที่จะใช้จริง</string>
     <string name="pref_root_display_derived_none">ยังไม่มี — จะวัดขนาดจอรถโดยอัตโนมัติเมื่อเปิดการสะท้อนหน้าจอใน Android Auto ครั้งถัดไป</string>
     <string name="pref_root_display_derived_bad_ratio">ความกว้างและความสูงของรถไม่เป็นรูปทรงที่สมเหตุสมผล — ตรวจสอบตัวเลข ด้านยาวยาวได้ไม่เกิน 4 เท่าของด้านสั้น</string>
     <string name="pref_root_display_car_not_measured">ยังไม่ได้วัด</string>

@@ -5,7 +5,7 @@
     <string name="pref_auto_start_summary">Iniciar espelhamento automaticamente ao abrir o ScreenOnAuto na tela do carro</string>
     <string name="pref_keep_awake_title">Evitar suspensão</string>
     <string name="pref_keep_awake_summary">Impedir que o telefone suspenda durante o espelhamento</string>
-    <string name="pref_force_landscape_title">Travar orientação automaticamente</string>
+    <string name="pref_force_landscape_title">Travar orientação ao conectar</string>
     <string name="pref_force_landscape_summary">Trava a orientação do telefone quando o Android Auto conecta; depois, o botão na tela do carro alterna</string>
     <string name="pref_force_landscape_reverse_title">Paisagem invertida</string>
     <string name="pref_force_landscape_reverse_summary">Virar o telefone para o outro lado</string>
@@ -104,8 +104,8 @@
     <string name="pref_root_force_waiting">Aguardando a resposta à solicitação de superusuário</string>
     <string name="pref_root_features_category">Recursos</string>
     <string name="pref_root_screen_off_title">Desligar a tela do telefone</string>
-    <string name="pref_root_screen_off_summary">Quando a diminuição automática atua, desliga a luz de fundo do telefone; o espelhamento continua no carro</string>
-    <string name="pref_root_screen_off_requires_auto_dim">“Diminuir brilho automaticamente” é necessário — ative-o primeiro</string>
+    <string name="pref_root_screen_off_summary">Quando o escurecimento automático atua, desliga a luz de fundo do telefone; o espelhamento continua no carro</string>
+    <string name="pref_root_screen_off_requires_auto_dim">“Escurecimento automático” é necessário — ative-o primeiro</string>
     <string name="pref_root_screen_off_unsupported">Sem suporte neste telefone — o sistema não permite desligar a luz de fundo (%1$s)</string>
     <string name="pref_root_screen_off_stale_helper">O auxiliar privilegiado ainda é o de uma versão anterior do app — toque em “Desconectar” acima e conecte novamente</string>
     <string name="pref_root_screen_off_probe_crashed">Verificar este recurso trava o auxiliar privilegiado neste telefone, então o app parou de perguntar — toque em “Desconectar” acima e conecte novamente para tentar de novo</string>
@@ -164,7 +164,7 @@
     <string name="pref_category_permissions">Permissões</string>
     <string name="pref_notification_access_title">Acesso a notificações</string>
     <string name="notification_text">Espelhando tela para o Android Auto</string>
-    <string name="pref_auto_dim_title">Diminuir brilho automaticamente</string>
+    <string name="pref_auto_dim_title">Escurecimento automático</string>
     <string name="pref_auto_dim_summary">Reduzir ao mínimo o brilho da tela do telefone quando inativo durante o espelhamento</string>
     <string name="pref_auto_dim_delay_title">Diminuir após</string>
     <string name="pref_overlay_title">Exibir sobre outros apps</string>
@@ -213,7 +213,7 @@
         <item quantity="other">%d permissões não concedidas — alguns recursos não vão funcionar</item>
     </plurals>
     <string name="pref_notification_access_summary">“ScreenOnAuto Controlador de mídia” no Android Auto mostra e controla o que está tocando no telefone</string>
-    <string name="pref_overlay_summary">Ativa a diminuição automática, travar orientação e o escurecimento noturno</string>
+    <string name="pref_overlay_summary">Ativa o escurecimento automático, o travamento de orientação e o escurecimento noturno</string>
     <string name="pref_write_settings_summary">Ativa travar orientação no modo tablet (Android 16 ou mais recente)</string>
     <string name="pref_accessibility_summary">Toques no Android Auto controlam a tela do telefone</string>
 

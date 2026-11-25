@@ -5,7 +5,7 @@
     <string name="pref_auto_start_summary">Mulai pencerminan secara otomatis saat ScreenOnAuto dibuka di layar mobil</string>
     <string name="pref_keep_awake_title">Cegah layar tidur</string>
     <string name="pref_keep_awake_summary">Mencegah ponsel tidur selama pencerminan</string>
-    <string name="pref_force_landscape_title">Kunci orientasi otomatis</string>
+    <string name="pref_force_landscape_title">Kunci orientasi saat terhubung</string>
     <string name="pref_force_landscape_summary">Mengunci orientasi ponsel saat Android Auto terhubung; setelah itu tombol di layar mobil mengubahnya</string>
     <string name="pref_force_landscape_reverse_title">Lanskap terbalik</string>
     <string name="pref_force_landscape_reverse_summary">Putar ponsel ke arah sebaliknya</string>

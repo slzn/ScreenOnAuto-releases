@@ -5,7 +5,7 @@
     <string name="pref_auto_start_summary">Démarrer automatiquement la duplication à l\'ouverture de ScreenOnAuto sur l\'écran de la voiture</string>
     <string name="pref_keep_awake_title">Empêcher la mise en veille</string>
     <string name="pref_keep_awake_summary">Empêcher le téléphone de se mettre en veille pendant la duplication</string>
-    <string name="pref_force_landscape_title">Verrouiller automatiquement l\'orientation</string>
+    <string name="pref_force_landscape_title">Verrouiller l\'orientation à la connexion</string>
     <string name="pref_force_landscape_summary">Verrouille l\'orientation du téléphone à la connexion d\'Android Auto&#160;; ensuite, le bouton de l\'écran de la voiture la bascule</string>
     <string name="pref_force_landscape_reverse_title">Mode paysage inversé</string>
     <string name="pref_force_landscape_reverse_summary">Tourner le téléphone dans l\'autre sens</string>
@@ -248,7 +248,7 @@
     <string name="restore_notice_title">L\'écran du téléphone mesure %1$d × %2$d</string>
     <string name="restore_notice_title_plain">L\'écran du téléphone n\'a pas sa forme d\'origine</string>
     <string name="restore_notice_sub">Ce n\'est pas sa forme d\'origine, et elle est conservée après un redémarrage</string>
-    <string name="action_restore">Restaurer</string>
+    <string name="action_restore">Rétablir</string>
 
     <!-- Title tags (TagSpan): maturity in amber, which mirror a row applies to in grey. -->
     <string name="tag_experimental">Expérimental</string>

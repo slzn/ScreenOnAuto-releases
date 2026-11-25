@@ -5,7 +5,7 @@
     <string name="pref_auto_start_summary">بدء النسخ المطابق تلقائيًا عند فتح ScreenOnAuto على شاشة السيارة</string>
     <string name="pref_keep_awake_title">منع إطفاء الشاشة</string>
     <string name="pref_keep_awake_summary">منع الهاتف من الدخول في وضع السكون أثناء النسخ المطابق</string>
-    <string name="pref_force_landscape_title">بدء قفل الاتجاه تلقائيًا</string>
+    <string name="pref_force_landscape_title">قفل الاتجاه عند الاتصال</string>
     <string name="pref_force_landscape_summary">يقفل اتجاه الهاتف عند اتصال Android Auto، ثم يبدّله الزر على شاشة السيارة</string>
     <string name="pref_force_landscape_reverse_title">الوضع الأفقي المعكوس</string>
     <string name="pref_force_landscape_reverse_summary">تدوير الهاتف في الاتجاه الآخر</string>

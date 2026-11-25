@@ -5,7 +5,7 @@
     <string name="pref_auto_start_summary">Spiegelung automatisch starten, wenn ScreenOnAuto auf dem Autobildschirm geöffnet wird</string>
     <string name="pref_keep_awake_title">Ruhezustand verhindern</string>
     <string name="pref_keep_awake_summary">Verhindert, dass das Telefon während der Spiegelung in den Ruhezustand wechselt</string>
-    <string name="pref_force_landscape_title">Ausrichtung automatisch sperren</string>
+    <string name="pref_force_landscape_title">Ausrichtung beim Verbinden sperren</string>
     <string name="pref_force_landscape_summary">Sperrt die Ausrichtung des Telefons, wenn Android Auto verbindet; danach schaltet die Schaltfläche im Auto um</string>
     <string name="pref_force_landscape_reverse_title">Umgekehrtes Querformat</string>
     <string name="pref_force_landscape_reverse_summary">Telefon andersherum drehen</string>
@@ -104,8 +104,8 @@
     <string name="pref_root_force_waiting">Warte auf die Antwort auf die Superuser-Abfrage</string>
     <string name="pref_root_features_category">Funktionen</string>
     <string name="pref_root_screen_off_title">Telefonbildschirm ausschalten</string>
-    <string name="pref_root_screen_off_summary">Greift Automatisch dimmen, wird die Hintergrundbeleuchtung des Telefons ausgeschaltet; die Spiegelung läuft im Auto weiter</string>
-    <string name="pref_root_screen_off_requires_auto_dim">„Automatisch dimmen“ ist erforderlich – schalte es zuerst ein</string>
+    <string name="pref_root_screen_off_summary">Greift Auto-Dimmen, wird die Hintergrundbeleuchtung des Telefons ausgeschaltet; die Spiegelung läuft im Auto weiter</string>
+    <string name="pref_root_screen_off_requires_auto_dim">„Auto-Dimmen“ ist erforderlich – schalte es zuerst ein</string>
     <string name="pref_root_screen_off_unsupported">Auf diesem Telefon nicht unterstützt – das System erlaubt das Abschalten der Hintergrundbeleuchtung nicht (%1$s)</string>
     <string name="pref_root_screen_off_stale_helper">Der privilegierte Helfer stammt noch aus einer älteren App-Version – oben auf „Trennen“ tippen und erneut verbinden</string>
     <string name="pref_root_screen_off_probe_crashed">Die Prüfung dieser Funktion lässt den privilegierten Helfer auf diesem Telefon abstürzen, daher fragt die App nicht mehr danach – oben auf „Trennen“ tippen und erneut verbinden, um es noch einmal zu versuchen</string>
@@ -164,7 +164,7 @@
     <string name="pref_category_permissions">Berechtigungen</string>
     <string name="pref_notification_access_title">Benachrichtigungszugriff</string>
     <string name="notification_text">Bildschirm wird auf Android Auto gespiegelt</string>
-    <string name="pref_auto_dim_title">Automatisch dimmen</string>
+    <string name="pref_auto_dim_title">Auto-Dimmen</string>
     <string name="pref_auto_dim_summary">Helligkeit des Telefonbildschirms bei Inaktivität während der Spiegelung auf Minimum reduzieren</string>
     <string name="pref_auto_dim_delay_title">Dimmen nach</string>
     <string name="pref_overlay_title">Über anderen Apps anzeigen</string>
