@@ -147,6 +147,10 @@ Android Auto เวอร์ชันเก่าจะแสดงรายก�
 
 ScreenOnAuto ให้บริการตามสภาพที่เป็นอยู่ โดยไม่มีการรับประกันใดๆ และคุณใช้งานโดยยอมรับความเสี่ยงเอง ดู[ข้อกำหนดการใช้งาน](https://screenonauto.lzn.idv.tw/docs/th/terms-of-use/)
 
+## ช่วยแปล
+
+ข้อความในแอปอยู่ใน [`app-strings/`](../app-strings/) หากคำแปลในภาษาของคุณดูไม่ถูกต้อง ยินดีรับการแก้ไขผ่าน pull request ดู[วิธีแปล](../app-strings/README.md)
+
 ## ขอขอบคุณเป็นพิเศษ
 
 - **Jurek Harla** — ออกแบบไอคอนของ ScreenOnAuto, ScreenOnAuto (Legacy) และตัวควบคุมสื่อใหม่ให้เข้ากับรูปทรงไอคอนกลมของ Android (v1.9.2)

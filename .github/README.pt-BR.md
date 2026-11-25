@@ -152,6 +152,10 @@ Este projeto não é afiliado, endossado ou patrocinado pelo Google. Android Aut
 
 O ScreenOnAuto é fornecido no estado em que se encontra, sem garantia, e você o usa por sua conta e risco. Veja os [Termos de Uso](https://screenonauto.lzn.idv.tw/docs/pt-BR/terms-of-use/).
 
+## Ajude a traduzir
+
+Os textos do app estão em [`app-strings/`](../app-strings/) — se uma tradução soa errada no seu idioma, correções são bem-vindas via pull request. Veja [como traduzir](../app-strings/README.md).
+
 ## Agradecimentos especiais
 
 - **Jurek Harla** — redesenhou os ícones do ScreenOnAuto, do ScreenOnAuto (Legacy) e do Controlador de mídia para que caibam no formato redondo de ícone do Android (v1.9.2).

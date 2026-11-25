@@ -152,6 +152,10 @@ Dự án này không liên kết với, không được Google xác nhận hay t
 
 ScreenOnAuto được cung cấp nguyên trạng, không kèm bảo đảm, và bạn tự chịu rủi ro khi sử dụng. Xem [Điều khoản sử dụng](https://screenonauto.lzn.idv.tw/docs/vi/terms-of-use/).
 
+## Giúp dịch
+
+Văn bản của ứng dụng nằm trong [`app-strings/`](../app-strings/) — nếu bản dịch ngôn ngữ của bạn chưa đúng, rất hoan nghênh bạn sửa qua pull request. Xem [cách dịch](../app-strings/README.md).
+
 ## Lời cảm ơn đặc biệt
 
 - **Jurek Harla** — thiết kế lại biểu tượng ScreenOnAuto, ScreenOnAuto (Legacy) và Trình điều khiển đa phương tiện để vừa với hình dạng biểu tượng tròn của Android (v1.9.2).

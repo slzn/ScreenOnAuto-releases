@@ -1,0 +1,297 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">ScreenOnAuto</string>
+    <string name="projection_service_name" translatable="false">ScreenOnAuto (Legacy)</string>
+    <!-- Backend names are product names; they read the same in every locale. -->
+    <string name="root_backend_shizuku" translatable="false">Shizuku</string>
+    <string name="root_backend_root" translatable="false">Root</string>
+    <string name="media_service_name">ScreenOnAuto Media Controller</string>
+    <string name="stop_mirroring">Stop Mirroring</string>
+    <string name="pref_auto_start_title">Auto Start Mirror</string>
+    <string name="pref_auto_start_summary">Automatically start mirroring when you open ScreenOnAuto on the car screen</string>
+    <string name="pref_keep_awake_title">Prevent Sleep</string>
+    <string name="pref_keep_awake_summary">Prevent the phone from sleeping while mirroring</string>
+    <string name="pref_force_landscape_title">Lock orientation on connect</string>
+    <string name="pref_force_landscape_summary">Locks the phone\'s orientation when Android Auto connects; the button on the car screen switches it after that</string>
+    <string name="pref_force_landscape_reverse_title">Reverse landscape</string>
+    <string name="pref_force_landscape_reverse_summary">Turn the phone the other way round</string>
+    <string name="pref_force_orientation_mode_title">Orientation</string>
+    <string name="orientation_mode_auto">Auto-detect from the car screen</string>
+    <string name="orientation_mode_landscape">Landscape</string>
+    <string name="orientation_mode_portrait">Portrait</string>
+    <string name="action_force_landscape">Lock Orientation</string>
+    <string name="action_cancel_force">Unlock Orientation</string>
+    <string name="pref_launch_shortcuts_title">Launch Shortcuts</string>
+    <string name="pref_launch_shortcuts_summary">Up to 4 app shortcuts on the car. Long-press one to change the text shown on the car</string>
+    <string name="pref_screen_buttons_title">On-screen buttons</string>
+    <string name="pref_screen_buttons_summary">Shortcuts, buttons and placement on the Android Auto screen</string>
+    <string name="launch_shortcut_slot">Shortcut %1$d</string>
+    <string name="launch_shortcut_not_set">Not set — tap to choose an app</string>
+    <string name="launch_shortcut_rename_title">Text shown on the car</string>
+    <string name="launch_shortcut_rename_message">Leave it empty to show only the icon on the \"ScreenOnAuto (Legacy)\" screen. Other screens show the app name.</string>
+    <string name="launch_shortcut_rename_reset">Use app name</string>
+    <string name="pref_advanced_title">Advanced</string>
+    <string name="pref_advanced_summary">Fine-tune the mirror image and other advanced options</string>
+    <string name="pref_single_app_title">Mirror only this app</string>
+    <string name="pref_single_app_summary">The car shows only the app above, and goes blank while you use another app</string>
+    <string name="pref_single_app_needs_auto_launch">Choose an app to launch above first.</string>
+    <string name="single_app_launch_failed">Could not open %1$s, so mirroring was not started.</string>
+    <string name="pref_orientation_category">Screen orientation</string>
+    <string name="pref_advanced_display_category">Display Adjustment</string>
+    <string name="pref_car_start_category">Starting from the car</string>
+    <string name="pref_silent_car_start_title">Start mirroring in the background</string>
+    <string name="pref_silent_car_start_summary">When mirroring starts from the car, ScreenOnAuto stays off the phone screen</string>
+    <string name="pref_full_screen_share_only_title">Share the entire screen only</string>
+    <string name="pref_full_screen_share_only_summary">Starting mirroring no longer asks whether to share one app or the whole screen</string>
+    <string name="pref_vd_width_gap_switch_title">Adjust mirror width</string>
+    <string name="pref_vd_width_gap_switch_summary">Positive pulls the edges in; negative pushes them out to fill black bars</string>
+    <string name="pref_vd_height_gap_switch_title">Adjust mirror height</string>
+    <string name="pref_vd_height_gap_switch_summary">Positive pulls the edges in; negative pushes them out to fill black bars</string>
+    <string name="pref_nav_fixed_size_title">Fixed mirror size</string>
+    <string name="pref_nav_fixed_size_summary">Keeps the mirror\'s size in split view, so it doesn\'t distort</string>
+    <string name="pref_nav_ignore_strip_title">Keep mirror still when buttons appear</string>
+    <string name="pref_nav_ignore_strip_summary">Keeps the mirror still when the car\'s buttons appear</string>
+    <string name="pref_self_draw_title">Self-drawn mirror</string>
+    <string name="pref_self_draw_summary">The app draws the mirror itself, so split view doesn\'t distort it. Takes effect the next time mirroring starts</string>
+    <string name="pref_video_delay_title">Video delay</string>
+    <string name="pref_video_delay_dialog_message">Milliseconds, 0–2000 (0 = off). Use it when the picture runs ahead of the sound. Holding frames back takes extra memory and GPU work — if audio and video drift apart because the phone or head unit is already struggling, this can make it worse. Taps still act on the phone\'s current screen, not the delayed image. Applies immediately</string>
+    <string name="pref_number_range_invalid">Enter a whole number from 0 to %1$d</string>
+    <string name="action_auto_dim">Auto Dim</string>
+    <string name="action_cancel_dim">Cancel Dim</string>
+    <string name="pref_night_dim_category">Night Dim</string>
+    <string name="pref_night_dim_title">Dim the car screen</string>
+    <string name="pref_night_dim_summary">Darkens the mirror on the car screen automatically</string>
+    <string name="pref_night_dim_trigger_title">When to dim</string>
+    <string name="night_dim_trigger_car">When the car switches to night mode</string>
+    <!-- The row's right side: night_dim_trigger_car is the list entry, too long there. -->
+    <string name="night_dim_trigger_car_short">Follows the car</string>
+    <string name="night_dim_trigger_always">Always</string>
+    <string name="pref_night_dim_strength_title">Strength</string>
+    <string name="pref_night_dim_strength_summary">The Night Dim button uses it too</string>
+    <string name="pref_mapstrip_night_dim_title">Night Dim button</string>
+    <string name="pref_mapstrip_night_dim_summary">A button that turns Night Dim (dims the car screen) on or off</string>
+    <string name="action_night_dim">Night Dim</string>
+    <string name="action_cancel_night_dim">Cancel Night Dim</string>
+    <string name="pref_control_buttons_category">Control buttons</string>
+    <string name="pref_control_buttons_category_summary">Shown on the Android Auto screen; up to 4 can be turned on</string>
+    <string name="pref_mapstrip_force_landscape_title">Lock Orientation button</string>
+    <string name="pref_mapstrip_force_landscape_summary">A button that turns Lock Orientation on or off</string>
+    <string name="pref_mapstrip_auto_dim_title">Auto Dim button</string>
+    <string name="pref_mapstrip_auto_dim_summary">A button that turns Auto Dim (dims the phone screen) on or off</string>
+    <string name="action_back">Back</string>
+    <string name="action_home">Home</string>
+    <string name="action_recents">Recent apps</string>
+    <string name="pref_mapstrip_back_title">Back button</string>
+    <string name="pref_mapstrip_back_summary">A button that works as the phone\'s Back button</string>
+    <string name="pref_mapstrip_home_title">Home button</string>
+    <string name="pref_mapstrip_home_summary">A button that works as the phone\'s Home button</string>
+    <string name="pref_mapstrip_recents_title">Recent apps button</string>
+    <string name="pref_mapstrip_recents_summary">A button that works as the phone\'s Recent apps button</string>
+    <string name="mapstrip_max_buttons">Up to 4 buttons can be enabled at the same time</string>
+    <string name="pref_placement_category">Button placement</string>
+    <string name="pref_legacy_buttons_left_title">Left-align buttons</string>
+    <string name="pref_legacy_buttons_left_summary">Puts the buttons and shortcuts on the left</string>
+    <string name="pref_legacy_dodge_nav_title">Avoid the phone\'s navigation bar</string>
+    <string name="pref_legacy_dodge_nav_summary">Keeps the buttons clear of the phone\'s navigation bar in the mirror</string>
+    <string name="pref_legacy_side_gap_title">Buttons: gap from the side edge</string>
+    <string name="pref_legacy_bottom_gap_title">Buttons: gap from the bottom edge</string>
+    <string name="pref_legacy_shortcut_gap_title">Shortcuts: gap from the side edge</string>
+    <string name="pref_legacy_shortcut_top_gap_title">Shortcuts: gap from the top edge</string>
+    <string name="nav_action_permission_required">Requires \"Touch Forwarding\" — enable it in the Permissions section first</string>
+    <string name="pref_root_title">Privileged Features</string>
+    <string name="pref_root_summary">Extra features unlocked by Shizuku or root</string>
+    <string name="pref_root_access_category">Privileged access</string>
+    <string name="pref_root_status_none">Neither Shizuku nor root was found on this phone</string>
+    <string name="pref_root_connect_failed">Could not connect via %1$s</string>
+    <string name="pref_root_force_title">Root not detected?</string>
+    <string name="pref_root_force_summary">If the root manager is hidden or renamed, tap here to ask for root directly</string>
+    <string name="pref_root_force_failed">No root access was granted</string>
+    <string name="pref_root_status_connecting">Connecting via %1$s — waiting for permission</string>
+    <string name="pref_root_force_waiting">Waiting for the superuser prompt to be answered</string>
+    <string name="pref_root_features_category">Features</string>
+    <string name="pref_root_screen_off_title">Turn the phone screen off</string>
+    <string name="pref_root_screen_off_summary">When Auto Dim kicks in, switch the phone\'s backlight off; the mirror keeps running on the car</string>
+    <string name="pref_root_screen_off_requires_auto_dim">Requires \"Auto Dim Screen\" — turn it on first</string>
+    <string name="pref_root_screen_off_unsupported">Not supported on this phone — its system does not allow cutting the backlight (%1$s)</string>
+    <string name="pref_root_screen_off_stale_helper">The privileged helper is still the one from an older version of the app — tap Disconnect above, then connect again</string>
+    <string name="pref_root_screen_off_probe_crashed">Checking this feature crashes the privileged helper on this phone, so the app has stopped asking — tap Disconnect above, then connect again to try once more</string>
+    <string name="root_screen_off_failed">Could not switch the screen off — dimmed the backlight instead</string>
+    <!-- Which resolution step failed for the privileged screen-off feature. Technical
+         identifiers on purpose: they exist to be pasted into a bug report and grep back to the
+         code, so they are the same in every language. -->
+    <string name="root_screen_off_reason_no_surface_control" translatable="false">SurfaceControl unavailable</string>
+    <string name="root_screen_off_reason_no_display_token" translatable="false">no display token</string>
+    <string name="root_screen_off_reason_no_display_control" translatable="false">no DisplayControl</string>
+    <string name="root_screen_off_reason_no_display_library" translatable="false">no android_servers library</string>
+    <string name="root_screen_off_reason_no_method" translatable="false">no setDisplayPowerMode</string>
+    <string name="root_screen_off_reason_unknown" translatable="false">unknown</string>
+    <string name="pref_root_requires_connection">Connect to Shizuku or root first</string>
+    <string name="pref_root_display_category">Screen Shape</string>
+    <string name="pref_root_display_override_title">Match the phone screen to the car</string>
+    <string name="pref_root_display_override_summary">Reshapes the phone to the car\'s ratio, so the mirror fills it with no black bars</string>
+    <string name="pref_root_display_override_unsupported">Not supported on this phone — its system does not allow changing the screen shape (%1$s)</string>
+    <string name="pref_root_display_override_stale_helper">The privileged helper is still the one from an older version of the app — tap Disconnect above, then connect again</string>
+    <string name="pref_root_display_derived_title">What will be applied</string>
+    <string name="pref_root_display_derived_none">Nothing yet — the car display is measured automatically the next time the mirror opens in Android Auto</string>
+    <string name="pref_root_display_derived_bad_ratio">The car width and height do not form a sensible shape — check the numbers. The long side may be at most 4× the short one.</string>
+    <string name="pref_root_display_car_not_measured">Not measured yet</string>
+    <string name="pref_root_display_derived_value">Car %1$d×%2$d (ratio %3$s) → phone %4$d×%5$d</string>
+    <string name="pref_root_display_derived_shrunk">The car is too wide to stretch the phone that far, so the short side was reduced instead</string>
+    <string name="pref_root_display_derived_active">Now in effect: %1$d×%2$d</string>
+    <string name="pref_root_display_derived_clamped">The system changed this to %1$d×%2$d, so the shapes do not match exactly</string>
+    <string name="pref_root_display_value_out_of_range" tools:ignore="PluralsCandidate">Enter a number between %1$d and %2$d</string>
+    <string name="pref_root_display_restore_done">Phone screen restored</string>
+    <string name="pref_root_display_restore_failed">Could not restore it. Connect to Shizuku or root and try again, or from a computer run: adb shell wm size reset</string>
+    <string name="shortcut_restore_display_short">Restore screen</string>
+    <string name="shortcut_restore_display_long">Restore the phone screen</string>
+    <string name="pref_root_display_shortcut_title">Add a restore shortcut to the home screen</string>
+    <string name="pref_root_display_shortcut_summary">One tap puts the phone screen back, without opening the app</string>
+    <string name="pref_root_display_shortcut_unsupported">This home screen app cannot add shortcuts. Long-press the ScreenOnAuto icon instead.</string>
+    <string name="restore_shortcut_working">Restoring the phone screen…</string>
+    <string name="restore_shortcut_mirroring">Not while mirroring — the phone screen goes back on its own when mirroring stops</string>
+    <string name="pref_display_override_takes_over">Not used while \"%1$s\" is on</string>
+    <!-- Which resolution step failed for the privileged screen-shape feature. Technical
+         identifiers on purpose, exactly like the screen-off ones above: they exist to be pasted
+         into a bug report and grep back to the code, so they are the same in every language. -->
+    <string name="root_display_reason_no_window_manager" translatable="false">IWindowManager unavailable</string>
+    <string name="root_display_reason_no_size_method" translatable="false">no setForcedDisplaySize</string>
+    <string name="root_display_reason_no_density_method" translatable="false">no setForcedDisplayDensity</string>
+    <string name="root_display_reason_no_metrics_method" translatable="false">no getBaseDisplaySize</string>
+    <string name="root_display_reason_unknown" translatable="false">unknown</string>
+    <string name="pref_root_touch_injection_title">Real touch injection</string>
+    <string name="pref_root_touch_injection_summary">Car touches reach the phone as real finger movements: long press, drag and multi-finger work</string>
+    <string name="pref_root_virtual_touch_title">Virtual touchscreen</string>
+    <string name="pref_root_virtual_touch_summary">Lets gesture apps that read the touchscreen (such as GMD Gestures) see the touches too</string>
+    <string name="pref_root_follow_car_night_title">Follow the car\'s day/night mode</string>
+    <string name="pref_root_follow_car_night_summary">The phone\'s light/dark theme follows Android Auto\'s day/night while mirroring, then goes back</string>
+    <string name="pref_root_car_night_from_aa_title">Read the mode from Android Auto</string>
+    <string name="pref_root_car_night_from_aa_summary">Turn on if the phone doesn\'t switch with the car</string>
+    <string name="pref_root_mirror_font_scale_title">Font size while mirroring</string>
+    <string name="pref_root_mirror_dont_change">Don\'t change</string>
+    <string name="pref_root_mirror_nav_mode_title">Navigation mode while mirroring</string>
+    <string name="pref_root_mirror_nav_mode_gestural">Gesture navigation</string>
+    <string name="pref_root_mirror_nav_mode_twobutton">2-button navigation</string>
+    <string name="pref_root_mirror_nav_mode_threebutton">3-button navigation</string>
+    <string name="pref_root_mirror_nav_mode_unavailable">Not available on this phone</string>
+    <string name="pref_root_mirror_home_title">Home screen while mirroring</string>
+    <string name="pref_root_virtual_touch_unsupported">Not supported on this phone — its system does not allow creating a virtual touchscreen (%1$s)</string>
+    <string name="root_virtual_touch_reason_no_uhid" translatable="false">/dev/uhid unavailable</string>
+    <string name="root_virtual_touch_reason_no_panel_size" translatable="false">panel size unreadable</string>
+    <string name="root_virtual_touch_reason_create_failed" translatable="false">uhid create refused</string>
+    <string name="root_virtual_touch_reason_not_opened" translatable="false">no input device appeared</string>
+    <string name="root_virtual_touch_reason_unknown" translatable="false">unknown</string>
+    <string name="pref_stop_on_disconnect_title">Stop on Disconnect</string>
+    <string name="pref_stop_on_disconnect_summary">Stop mirroring when Android Auto disconnects</string>
+    <string name="pref_auto_launch_title">Auto Launch App</string>
+    <string name="pref_auto_launch_summary_none">Not set — tap to choose\nWill open automatically when mirroring and Android Auto are both active.</string>
+    <string name="pref_auto_launch_dialog_title">Choose app to launch</string>
+    <string name="pref_auto_launch_none">None</string>
+    <string name="app_picker_search_hint">Search apps</string>
+    <string name="app_picker_no_match">No matching apps</string>
+    <string name="app_home_screen">Default home screen</string>
+    <string name="pref_category_permissions">Permissions</string>
+    <string name="pref_notification_access_title">Notification Access</string>
+    <string name="notification_title" translatable="false">ScreenOnAuto</string>
+    <string name="notification_text">Mirroring screen to Android Auto</string>
+    <string name="pref_auto_dim_title">Auto Dim Screen</string>
+    <string name="pref_auto_dim_summary">Dim the phone screen to minimum brightness when idle during mirroring</string>
+    <string name="pref_auto_dim_delay_title">Dim After</string>
+    <string name="pref_overlay_title">Display Over Other Apps</string>
+    <string name="auto_dim_permission_required">Requires \"Display Over Other Apps\" — grant it in the Permissions section first</string>
+    <string name="pref_write_settings_title">Modify System Settings</string>
+    <string name="rotation_lock_permission_required">Lock Orientation requires \"Modify System Settings\" on this screen — grant it in the Permissions section first</string>
+    <string name="pref_accessibility_title">Touch Forwarding</string>
+    <string name="accessibility_service_description">Allows Android Auto touch events to control the mirrored phone screen</string>
+    <string name="pref_about_title">About</string>
+    <string name="about_author" translatable="false">© 2026 Chih-En Liu</string>
+    <string name="about_link_github">View on GitHub</string>
+    <string name="about_link_donate_paypal">Donate via PayPal</string>
+    <string name="about_link_donate_bubbletea">Buy me a bubble tea</string>
+    <string name="about_version">Version %1$s (%2$d)</string>
+    <string name="about_version_short" translatable="false">%1$s (%2$d)</string>
+    <string name="about_version_copy_action">Copy version info</string>
+    <string name="about_version_copied">Version info copied</string>
+    <string name="about_link_privacy">Privacy Policy</string>
+    <string name="about_link_terms">Terms of Use</string>
+    <string name="about_link_licenses">Third-party licenses</string>
+    <string name="about_github_url" translatable="false">https://github.com/slzn/ScreenOnAuto-releases</string>
+    <string name="about_donate_paypal_url" translatable="false">https://paypal.me/slzn0124</string>
+    <string name="about_donate_bubbletea_url" translatable="false">https://www.paypal.com/ncp/payment/NSZL98LMSGYWE</string>
+    <!-- The car's waiting screen (mirror_waiting.xml), shown until the projection arrives.
+         step_open quotes action_start_mirroring and step_allow quotes mirror_wait_allow_button, both
+         filled in at runtime. allow_button is the system consent dialog's confirm button. -->
+    <string name="mirror_wait_title">Start mirroring on your phone</string>
+    <string name="mirror_wait_step_open">Open ScreenOnAuto and tap \"%1$s\"</string>
+    <string name="mirror_wait_step_allow">Tap \"%1$s\" in the window that pops up</string>
+    <string name="mirror_wait_allow_button">Start</string>
+
+    <!-- Number and value rows (NumberPreference, ValueRow). -->
+    <string name="number_invalid">Enter a whole number</string>
+    <string name="number_reset_default">Default</string>
+    <string name="number_clear">Clear</string>
+    <string name="value_off">Off</string>
+
+    <!-- Main screen: the mirroring status panel (MirrorStatusPreference) and the permission rows. -->
+    <string name="status_aa_connected">Android Auto connected</string>
+    <string name="status_aa_disconnected">Android Auto not connected</string>
+    <string name="status_mirroring">Mirroring</string>
+    <string name="status_idle">Not mirroring</string>
+    <string name="status_sub_live">Your phone is showing on the car screen</string>
+    <string name="status_sub_waiting_car">Waiting for Android Auto</string>
+    <string name="status_sub_ready">Ready to start</string>
+    <string name="status_sub_early">You can start now; it shows once Android Auto connects</string>
+    <string name="action_start_mirroring">Start mirroring</string>
+    <string name="action_stop_mirroring">Stop mirroring</string>
+    <string name="perm_granted">Granted</string>
+    <string name="perm_not_granted">Not granted</string>
+    <plurals name="status_permissions_missing">
+        <item quantity="one">%d permission not granted — some features won\'t work</item>
+        <item quantity="other">%d permissions not granted — some features won\'t work</item>
+    </plurals>
+    <string name="pref_notification_access_summary">\"ScreenOnAuto Media Controller\" in Android Auto shows and controls what\'s playing on the phone</string>
+    <string name="pref_overlay_summary">Enables Auto Dim, Lock Orientation and Night Dim</string>
+    <string name="pref_write_settings_summary">Enables Lock Orientation in tablet mode (Android 16 and above)</string>
+    <string name="pref_accessibility_summary">Android Auto touches control phone screen</string>
+
+    <!-- Privileged screen: the connection box, the car-size dialog, the per-mirror sub-headings,
+         the density dialog and the restore notice. -->
+    <string name="subhead_nav_mirror">\"ScreenOnAuto\" mirror</string>
+    <string name="subhead_legacy_mirror">\"ScreenOnAuto (Legacy)\" mirror</string>
+    <string name="pref_root_display_dpi_title">Phone density</string>
+    <string name="root_conn_connected">Connected via %1$s</string>
+    <string name="root_conn_ready">The features below are available</string>
+    <string name="root_conn_off">Not connected — the features below can\'t be used yet</string>
+    <string name="root_conn_unauthorised">Not authorised — the features below can\'t be used yet</string>
+    <string name="action_connect">Connect</string>
+    <string name="action_grant">Grant access</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="pref_root_display_car_size_title">Car screen size</string>
+    <string name="car_size_message">Sets the shape the phone\'s screen is changed to. Change it only if the detected size is wrong.</string>
+    <string name="value_auto">Auto</string>
+    <string name="car_size_help_detected">Leave blank to use the detected %1$d × %2$d. Range 160–8192</string>
+    <string name="car_size_help_none">Not detected yet: it is measured the next time the mirror opens on the car. Range 160–8192</string>
+    <string name="car_size_uses_width">Width will use the detected %1$d</string>
+    <string name="car_size_uses_height">Height will use the detected %1$d</string>
+    <string name="car_size_needs_both">Nothing detected yet — fill in both</string>
+    <string name="car_size_use_detected">Use detected</string>
+    <string name="size_width">Width</string>
+    <string name="size_height">Height</string>
+    <string name="pref_root_display_dpi_short">Higher makes text bigger; lower shows more at once, and too low switches to tablet layouts</string>
+    <string name="dpi_message">Higher numbers make text and buttons bigger on the car screen; lower numbers fit more on it at once. Once the phone is wider than 600dp, most apps and the system switch to tablet layouts (two panes, side navigation).</string>
+    <string name="dpi_help_phone">Phone about %1$ddp wide: phone layout</string>
+    <string name="dpi_help_tablet">Phone about %1$ddp wide: tablet layout</string>
+    <string name="dpi_help_blank">Leave blank to keep it unchanged (the phone is %1$d dpi now). Range 72–640</string>
+    <string name="restore_notice_title">The phone\'s screen is %1$d × %2$d</string>
+    <string name="restore_notice_title_plain">The phone\'s screen is not its original shape</string>
+    <string name="restore_notice_sub">Not its original shape — it stays this way after a restart</string>
+    <string name="action_restore">Restore</string>
+
+    <!-- Title tags (TagSpan): maturity in amber, which mirror a row applies to in grey. -->
+    <string name="tag_experimental">Experimental</string>
+    <string name="tag_nav_mirror">ScreenOnAuto mirror</string>
+    <string name="tag_legacy_mirror">Legacy mirror</string>
+    <string name="pref_video_delay_summary">Lines the picture up with sound that plays late</string>
+
+    <!-- Launch-shortcut rows: what the car shows for a set shortcut. -->
+    <string name="shortcut_car_label">Shows \"%1$s\" on the car</string>
+    <string name="shortcut_car_icon_only">Icon only on the car</string>
+</resources>

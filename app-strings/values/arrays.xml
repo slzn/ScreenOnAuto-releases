@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="auto_dim_delay_entries">
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>60 seconds</item>
+        <item>120 seconds</item>
+    </string-array>
+    <!-- Labels come from strings.xml, so the locale files need no arrays of their own. -->
+    <string-array name="night_dim_trigger_entries">
+        <item>@string/night_dim_trigger_car</item>
+        <item>@string/night_dim_trigger_always</item>
+    </string-array>
+    <!-- NightDim.TRIGGER_CAR / TRIGGER_ALWAYS -->
+    <string-array name="night_dim_trigger_values" translatable="false">
+        <item>car</item>
+        <item>always</item>
+    </string-array>
+    <!-- Lock Orientation's mode. Labels from strings.xml, like the night-dim trigger list. -->
+    <string-array name="force_orientation_mode_entries">
+        <item>@string/orientation_mode_auto</item>
+        <item>@string/orientation_mode_landscape</item>
+        <item>@string/orientation_mode_portrait</item>
+    </string-array>
+    <!-- OrientationController.MODE_AUTO / MODE_LANDSCAPE / MODE_PORTRAIT -->
+    <string-array name="force_orientation_mode_values" translatable="false">
+        <item>auto</item>
+        <item>landscape</item>
+        <item>portrait</item>
+    </string-array>
+    <string-array name="auto_dim_delay_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+    </string-array>
+</resources>

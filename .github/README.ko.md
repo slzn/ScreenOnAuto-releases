@@ -152,6 +152,10 @@ ScreenOnAuto 항목 **두 개**가 보여야 합니다:
 
 ScreenOnAuto는 "있는 그대로" 제공되며 어떠한 보증도 하지 않습니다. 사용에 따른 위험은 사용자 본인이 부담합니다. [이용약관](https://screenonauto.lzn.idv.tw/docs/ko/terms-of-use/)을 참고하세요.
 
+## 번역 돕기
+
+앱의 텍스트는 [`app-strings/`](../app-strings/)에 있습니다. 사용하는 언어의 번역이 어색하다면 pull request로 수정해 주세요. [번역 방법](../app-strings/README.md)을 참고하세요.
+
 ## 특별 감사
 
 - **Jurek Harla** — Android의 둥근 아이콘 모양에 맞도록 ScreenOnAuto, ScreenOnAuto (Legacy), 미디어 컨트롤러 아이콘을 새로 디자인해 주셨습니다 (v1.9.2).

@@ -152,6 +152,10 @@
 
 يُقدَّم ScreenOnAuto «كما هو» دون أي ضمان، وتستخدمه على مسؤوليتك الخاصة. راجع [شروط الاستخدام](https://screenonauto.lzn.idv.tw/docs/ar/terms-of-use/).
 
+## ساعد في الترجمة
+
+نصوص التطبيق موجودة في [`app-strings/`](../app-strings/) — إذا بدت ترجمة ما غير صحيحة بلغتك، فنرحب بالتصحيحات عبر طلب سحب (pull request). راجع [طريقة الترجمة](../app-strings/README.md).
+
 ## شكر خاص
 
 - **Jurek Harla** — أعاد تصميم أيقونات ScreenOnAuto وScreenOnAuto (Legacy) ووحدة تحكم الوسائط لتتلاءم مع الشكل الدائري لأيقونات Android ‏(v1.9.2).

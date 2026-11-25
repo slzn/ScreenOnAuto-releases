@@ -147,6 +147,10 @@
 
 ScreenOnAuto 依現狀提供，不附任何保證，使用風險由你自行承擔。詳見[使用條款](https://screenonauto.lzn.idv.tw/docs/zh-TW/terms-of-use/)。
 
+## 協助翻譯
+
+App 的介面文字放在 [`app-strings/`](../app-strings/)，如果你的語言翻得不自然或有錯，歡迎直接發 pull request 修正。做法請見[翻譯說明](../app-strings/README.md)。
+
 ## 特別感謝
 
 - **Jurek Harla** — 重新設計了 ScreenOnAuto、ScreenOnAuto (Legacy) 與媒體控制器的圖示，讓它們完整落在 Android 的圓形圖示範圍內（v1.9.2）。

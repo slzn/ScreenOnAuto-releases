@@ -107,6 +107,26 @@ What Jekyll cannot reach still has to be added by hand:
 `tools/sync-content-dates.py` ignores hreflang-only diffs, so registering a language does
 not restamp the other pages' "last updated" dates.
 
+## App strings (`app-strings/`, since 2026-11-25)
+
+The app's string resources are published here so users can correct translations by pull
+request. **This folder is the source of truth**; the private app repo keeps a copy that it
+builds from, and the two are reconciled by a sync tool kept in the app repo (it copies
+whichever side changed, and stops on a conflict). So:
+
+- **After merging a translation PR,** run that sync in the app repo, build, and commit there —
+  the fix only ships once the app copy has it.
+- **String changes made in the app repo** go out through the same sync; commit them here as
+  their own change.
+- `tools/check_strings.py` (CI: `.github/workflows/check-strings.yml`, on PRs touching
+  `app-strings/`) checks keys, format arguments and escaping against `values/`. A locale must
+  carry every translatable key — a missing one fails, since the app ships no English fallback.
+- `app-strings/README.md` is the public translation guide (style rules, terminology,
+  punctuation per language). Keep it in step with the app's own string conventions, minus
+  internal implementation detail. Contributions are licensed under LICENSE.md's
+  *Contributions* section.
+- Every README has a short "Help Translate" section (before Special Thanks) linking there.
+
 ## Repository Structure
 
 ```
@@ -125,13 +145,17 @@ ScreenOnAuto-releases/
 ├── docs/<lang>/<slug>.md   ← on-site copies of the 4 wiki guides × 15 languages, plus privacy-policy.md and terms-of-use.md (site-only)
 ├── _config.yml             ← Jekyll config; defaults apply _layouts/doc.html to docs/
 ├── _layouts/doc.html       ← doc layout: SEO head, hreflang (Liquid, from slug+lang), TechArticle JSON-LD
+├── app-strings/values*/    ← the app's strings.xml + arrays.xml × 19 locales — the SOURCE of the app's
+│                             text (Jekyll-excluded; README.md there is the public translation guide)
+├── .github/CONTRIBUTING.md ← points contributors at app-strings/README.md
 ├── images/                 ← site images (incl. how-to-use screenshots)
 ├── robots.txt / sitemap.xml← this site's own SEO files (sitemap: 105 URLs)
 ├── <32-hex>.txt            ← IndexNow key file; must sit at the site root to cover the whole host
 │                             (the key is public by design; it is also KEY in tools/indexnow.py)
 ├── tools/                  ← excluded from the site in _config.yml; sync-content-dates.py (run by CI), indexnow.py
 │                             (run by CI after Pages deploys a push: submits the pages whose content changed to
-│                             IndexNow — Bing etc., not Google; `--dry-run` to preview), and bold_check.py (lists * / ** that
+│                             IndexNow — Bing etc., not Google; `--dry-run` to preview), check_strings.py (CI on
+│                             app-strings/ PRs, see "App strings"), and bold_check.py (lists * / ** that
 │                             GitHub won't render as emphasis — run it on CJK wiki/README copy: `tools/bold_check.py <files>`)
 ├── .claude/CLAUDE.md       ← This file (tracked; Jekyll skips dot-dirs, so it is
 │                             never published as a page)

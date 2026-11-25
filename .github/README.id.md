@@ -152,6 +152,10 @@ Proyek ini tidak berafiliasi dengan, tidak didukung oleh, dan tidak disponsori o
 
 ScreenOnAuto disediakan apa adanya, tanpa jaminan, dan Anda menggunakannya dengan risiko sendiri. Lihat [Ketentuan Penggunaan](https://screenonauto.lzn.idv.tw/docs/id/terms-of-use/).
 
+## Bantu Menerjemahkan
+
+Teks aplikasi ada di [`app-strings/`](../app-strings/) — jika terjemahan dalam bahasa Anda terasa keliru, koreksi sangat diterima melalui pull request. Lihat [cara menerjemahkan](../app-strings/README.md).
+
 ## Terima kasih khusus
 
 - **Jurek Harla** — mendesain ulang ikon ScreenOnAuto, ScreenOnAuto (Legacy), dan Pengontrol Media agar sesuai dengan bentuk ikon bulat Android (v1.9.2).

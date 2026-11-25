@@ -152,6 +152,10 @@ This project is not affiliated with, endorsed by, or sponsored by Google. Androi
 
 ScreenOnAuto is provided as is, without warranty, and you use it at your own risk. See the [Terms of Use](https://screenonauto.lzn.idv.tw/docs/en/terms-of-use/).
 
+## Help Translate
+
+The app's text is in [`app-strings/`](app-strings/) — if a translation reads wrong in your language, corrections are welcome as pull requests. See [how to translate](app-strings/README.md).
+
 ## Special Thanks
 
 - **Jurek Harla** — redesigned the ScreenOnAuto, ScreenOnAuto (Legacy) and Media Controller icons so they fit Android's round icon shape (v1.9.2).

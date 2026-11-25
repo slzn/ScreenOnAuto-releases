@@ -152,6 +152,10 @@ Este proyecto no está afiliado, respaldado ni patrocinado por Google. Android A
 
 ScreenOnAuto se ofrece tal cual, sin garantía, y lo usas bajo tu propia responsabilidad. Consulta las [Condiciones de uso](https://screenonauto.lzn.idv.tw/docs/es/terms-of-use/).
 
+## Ayuda a traducir
+
+Los textos de la app están en [`app-strings/`](../app-strings/): si una traducción suena mal en tu idioma, las correcciones son bienvenidas como pull request. Consulta [cómo traducir](../app-strings/README.md).
+
 ## Agradecimientos especiales
 
 - **Jurek Harla** — rediseñó los iconos de ScreenOnAuto, ScreenOnAuto (Legacy) y Controlador multimedia para que encajen en la forma redonda de los iconos de Android (v1.9.2).

@@ -9,6 +9,8 @@ defaults:
     values:
       layout: "doc"
 
-# Repo tooling, not site content (tools/ holds the CI date-sync script and bold_check.py).
+# Repo tooling and the app's string resources, not site content (tools/ holds the CI scripts;
+# app-strings/ is the translation source, see app-strings/README.md).
 exclude:
   - tools/
+  - app-strings/

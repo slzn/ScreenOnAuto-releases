@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="auto_dim_delay_entries">
+        <item>15 วินาที</item>
+        <item>30 วินาที</item>
+        <item>60 วินาที</item>
+        <item>120 วินาที</item>
+    </string-array>
+</resources>

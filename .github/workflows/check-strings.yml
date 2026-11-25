@@ -1,0 +1,25 @@
+# Checks translation pull requests against the app's default strings (tools/check_strings.py):
+# keys, format arguments and escaping, so a merged translation cannot break the app's build.
+name: Check app strings
+
+on:
+  pull_request:
+    paths:
+      - "app-strings/**"
+      - "tools/check_strings.py"
+  push:
+    branches: [main]
+    paths:
+      - "app-strings/**"
+      - "tools/check_strings.py"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check app-strings
+        run: python3 tools/check_strings.py app-strings

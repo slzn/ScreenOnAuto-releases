@@ -152,6 +152,10 @@ Bu proje Google ile bağlantılı değildir; Google tarafından onaylanmamış v
 
 ScreenOnAuto olduğu gibi, hiçbir garanti olmaksızın sunulur ve kullanım riski size aittir. [Kullanım Koşulları](https://screenonauto.lzn.idv.tw/docs/tr/terms-of-use/) sayfasına bakın.
 
+## Çeviriye Yardım Edin
+
+Uygulamanın metinleri [`app-strings/`](../app-strings/) klasöründe — dilinizdeki bir çeviri yanlış geliyorsa düzeltmelerinizi pull request olarak gönderebilirsiniz. [Nasıl çeviri yapılır](../app-strings/README.md) bölümüne bakın.
+
 ## Özel Teşekkürler
 
 - **Jurek Harla** — ScreenOnAuto, ScreenOnAuto (Legacy) ve Medya Denetleyicisi simgelerini Android’in yuvarlak simge biçimine sığacak şekilde yeniden tasarladı (v1.9.2).

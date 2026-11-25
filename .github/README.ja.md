@@ -147,6 +147,10 @@ Android のバージョンを問わず使え、Android Auto で追加の設定�
 
 ScreenOnAuto は現状のまま提供され、いかなる保証もありません。ご利用は自己責任でお願いします。詳しくは[利用規約](https://screenonauto.lzn.idv.tw/docs/ja/terms-of-use/)をご覧ください。
 
+## 翻訳に協力する
+
+アプリの文言は [`app-strings/`](../app-strings/) にあります。お使いの言語の訳がおかしい場合は、pull request で修正をお寄せください。[翻訳の手順](../app-strings/README.md)を参照してください。
+
 ## スペシャルサンクス
 
 - **Jurek Harla** — Android の丸いアイコン形状に合うよう、ScreenOnAuto、ScreenOnAuto (Legacy)、メディアコントローラーのアイコンをデザインし直してくれました（v1.9.2）。

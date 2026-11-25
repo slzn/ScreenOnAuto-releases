@@ -152,6 +152,10 @@ Dieses Projekt ist nicht mit Google verbunden und wird von Google weder unterst�
 
 ScreenOnAuto wird ohne Gewähr bereitgestellt, und du nutzt es auf eigenes Risiko. Siehe die [Nutzungsbedingungen](https://screenonauto.lzn.idv.tw/docs/de/terms-of-use/).
 
+## Beim Übersetzen helfen
+
+Die Texte der App liegen in [`app-strings/`](../app-strings/) – klingt eine Übersetzung in deiner Sprache falsch, sind Korrekturen als Pull Request willkommen. Siehe [Anleitung zum Übersetzen](../app-strings/README.md).
+
 ## Besonderer Dank
 
 - **Jurek Harla** — hat die Symbole von ScreenOnAuto, ScreenOnAuto (Legacy) und Mediensteuerung neu gestaltet, damit sie in die runde Symbolform von Android passen (v1.9.2).
