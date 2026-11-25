@@ -266,6 +266,9 @@ footer .updated { border-top: 0; margin-top: 0; padding-top: 0; }
 .doc pre, .doc code { font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 .doc pre code { background: none; padding: 0; }
 .doc img { border-radius: 8px; max-height: 560px; }
+/* inline icons written for GitHub as <img align="middle">: Chrome reads that as -webkit-baseline-middle
+   (the icon's centre on the baseline), which sits them low beside the text; centre them on it instead */
+.doc img[align="middle"] { vertical-align: middle; transform: translateY(-0.16em); border-radius: 0; }  /* middle = x-height, a touch below the line centre */
 .doc table { display: block; overflow-x: auto; }
 /* content screenshots: framed as screens like the landing carousel; top-edge artifact clipped */
 .doc p:has(> img:only-child) {
