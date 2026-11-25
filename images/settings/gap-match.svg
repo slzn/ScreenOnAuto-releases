@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" role="img">
+<defs>
+  <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="8" height="8" fill="#0a0e13" fill-opacity=".72"/><line x1="0" y1="0" x2="0" y2="8" stroke="#d9a441" stroke-width="2.2"/>
+  </pattern>
+  <clipPath id="out"><path d="M0 0H360V200H0Z M50 30V140H310V30Z" clip-rule="evenodd"/></clipPath>
+</defs>
+<rect x="50" y="30" width="260" height="110" fill="#000"/>
+<svg x="50" y="30" width="260" height="110" viewBox="0 0 220 100" preserveAspectRatio="none">
+  <rect width="220" height="100" fill="#dfe7ef"/>
+  <rect width="220" height="14" fill="#2f6fb0"/>
+  <rect x="8" y="4" width="40" height="6" rx="3" fill="#cfe0f2"/>
+  <rect x="8" y="22" width="96" height="70" rx="6" fill="#ffffff"/>
+  <rect x="14" y="28" width="84" height="38" rx="4" fill="#9fc3e6"/>
+  <rect x="14" y="72" width="60" height="6" rx="3" fill="#c5d0db"/>
+  <rect x="14" y="82" width="40" height="5" rx="2.5" fill="#dbe3ea"/>
+  <rect x="114" y="22" width="98" height="20" rx="5" fill="#ffffff"/>
+  <rect x="114" y="47" width="98" height="20" rx="5" fill="#ffffff"/>
+  <rect x="114" y="72" width="98" height="20" rx="5" fill="#ffffff"/>
+  <circle cx="125" cy="32" r="5" fill="#9fc3e6"/><circle cx="125" cy="57" r="5" fill="#9fc3e6"/><circle cx="125" cy="82" r="5" fill="#9fc3e6"/>
+</svg>
+<rect x="50" y="30" width="260" height="110" fill="url(#hatch)" clip-path="url(#out)"/>
+<rect x="50" y="30" width="260" height="110" fill="none" stroke="#4cb578" stroke-width="2.5" stroke-dasharray="7 5"/>
+</svg>

@@ -42,8 +42,8 @@ một hình phản chiếu, và bạn có thể chuyển qua lại bất cứ l�
 mục còn lại sẽ hiện hình ngay mà không cần xin lại quyền.
 
 > **💡 Mẹo**
-> Nếu trước đây bạn đã mở **ScreenOnAuto** (mục toàn màn hình) và giờ muốn dùng
-> **ScreenOnAuto (Legacy)**, hãy mở ứng dụng bản đồ (ví dụ Google Maps) trên màn hình xe
+> Nếu trước đây bạn đã mở <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (mục toàn màn hình) và giờ muốn dùng
+> <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**, hãy mở ứng dụng bản đồ (ví dụ Google Maps) trên màn hình xe
 > trước, rồi mới bắt đầu phản chiếu Legacy. Việc này đặt lại ứng dụng bản đồ làm bản đồ
 > mặc định của màn hình xe, để các chức năng liên quan đến bản đồ không bị phản chiếu toàn màn hình chiếm mất.
 
@@ -51,7 +51,7 @@ mục còn lại sẽ hiện hình ngay mà không cần xin lại quyền.
 
 ### Khi bật Tự động bắt đầu phản chiếu (khuyên dùng)
 
-1. Trong ứng dụng trên điện thoại, bật **Tự động bắt đầu phản chiếu** (chỉ cần thiết lập một lần).
+1. Trong ứng dụng trên điện thoại, bật [**Tự động bắt đầu phản chiếu**](/docs/vi/settings/#auto_start_mirror) (chỉ cần thiết lập một lần).
 2. Kết nối điện thoại với xe và nhấn vào một mục ScreenOnAuto
    (<img src="/images/icon_launcher.png" width="24" align="middle" alt="Biểu tượng ScreenOnAuto"> hoặc
    <img src="/images/icon_legacy.png" width="24" align="middle" alt="Biểu tượng ScreenOnAuto (Legacy)">) trong trình chạy
@@ -85,16 +85,20 @@ Nếu bạn muốn để **Tự động bắt đầu phản chiếu** ở trạn
 ### Bỏ qua hộp thoại xin quyền
 
 Không muốn hộp thoại hiện ra mỗi lần? Bạn có thể cấp trước quyền này một lần qua
-ADB — xem [Cấp quyền phản chiếu qua ADB](/docs/vi/grant-mirror-permission-via-adb/).
+ADB — xem [Cấp quyền phản chiếu qua ADB](/docs/vi/grant-mirror-permission-via-adb/). Bật thêm [**Bắt đầu phản chiếu ở chế độ nền**](/docs/vi/settings/#silent_car_start) thì màn hình cài đặt của ScreenOnAuto cũng không hiện lên trên điện thoại: bạn nhấn vào mục trên xe, điện thoại không hiện gì cả và phản chiếu bắt đầu.
 
 ## Dừng phản chiếu
 
 Có thể dùng bất kỳ cách nào sau:
 
-- **Ngắt kết nối với xe** — phản chiếu tự động dừng (cài đặt mặc định *Dừng khi
-  ngắt kết nối*).
+- **Ngắt kết nối với xe** — phản chiếu tự động dừng (cài đặt mặc định [*Dừng khi
+  ngắt kết nối*](/docs/vi/settings/#stop_on_disconnect)).
 - Nhấn **Dừng phản chiếu** trên thông báo thường trực của điện thoại.
 - Nhấn **Dừng phản chiếu** trong ứng dụng.
+
+## Giải thích các cài đặt
+
+Từng cài đặt làm gì, khi nào nên bật và có giới hạn gì được trình bày trong trang [Giải thích các cài đặt](/docs/vi/settings/), kèm một bản mô phỏng màn hình cài đặt có thể bấm thử.
 
 ## Khắc phục sự cố
 
@@ -106,9 +110,9 @@ Phản chiếu chưa bắt đầu; hãy xem điện thoại có hiện hộp tho
 
 #### Có viền đen quanh hình
 
-Màn hình điện thoại và màn hình xe có tỉ lệ khung hình khác nhau. Hãy dùng nút **Khóa hướng xoay**
-trên màn hình phản chiếu (hoặc **Tự động khóa hướng xoay** trong cài đặt). Để vừa khít vùng màn hình
-xe có thể dùng, hãy bật **Khớp màn hình điện thoại với xe** trong Tính năng đặc quyền (Shizuku hoặc root).
+Màn hình điện thoại và màn hình xe có tỉ lệ khung hình khác nhau. Hãy dùng nút [**Khóa hướng xoay**](/docs/vi/settings/#map_action_force_landscape)
+trên màn hình phản chiếu (hoặc [**Tự động khóa hướng xoay**](/docs/vi/settings/#force_landscape) trong cài đặt). Để vừa khít vùng màn hình
+xe có thể dùng, hãy bật [**Khớp màn hình điện thoại với xe**](/docs/vi/settings/#root_display_override) trong Tính năng đặc quyền (Shizuku hoặc root). Bạn cũng có thể dùng [**Điều chỉnh chiều rộng phản chiếu, Điều chỉnh chiều cao phản chiếu**](/docs/vi/settings/#vd_gap) để phóng to hình đè lên các dải đen, đổi lại bị cắt mất một chút ở mép; trang Giải thích các cài đặt có hình minh họa.
 
 #### Hình bị kéo giãn hoặc méo sau khi bố cục thay đổi
 
@@ -116,12 +120,11 @@ Hiện tượng này xảy ra khi vùng hiển thị to ra hoặc nhỏ lại �
 để màn hình chuyển giữa dọc và ngang sẽ đưa hình trở lại bình thường (nếu đang bật **Khóa hướng xoay**, hãy tắt nó trước bằng nút trên màn hình). Cũng có hai cài đặt
 có thể khắc phục:
 
-- Bật **Cài đặt → Nâng cao → Cố định kích thước phản chiếu**. Hình phản chiếu sẽ giữ nguyên kích thước
-  thay vì bị méo (một phần có thể bị che khuất). Áp dụng cho mục toàn màn hình
-  **ScreenOnAuto**.
-- Bật **Cài đặt → Nâng cao → Tự vẽ hình phản chiếu (thử nghiệm)**. Ứng dụng sẽ tự vẽ
+- Bật [**Cài đặt → Nâng cao → Cố định kích thước phản chiếu**](/docs/vi/settings/#nav_fixed_size). Hình phản chiếu sẽ giữ nguyên kích thước
+  thay vì bị méo (một phần có thể bị che khuất). Chỉ áp dụng cho mục toàn màn hình <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**.
+- Bật [**Cài đặt → Nâng cao → Tự vẽ hình phản chiếu (thử nghiệm)**](/docs/vi/settings/#self_draw). Ứng dụng sẽ tự vẽ
   hình phản chiếu thay vì để hệ thống co giãn, nên hình không còn bị méo khi chia đôi màn hình. Tính năng này tốn pin hơn một chút và có hiệu lực
-  vào lần bắt đầu phản chiếu tiếp theo. **Khớp màn hình điện thoại với xe** (Tính năng đặc quyền) khắc phục cùng vấn đề này theo cách khác, và có thể bật cả hai cùng lúc.
+  vào lần bắt đầu phản chiếu tiếp theo. [**Khớp màn hình điện thoại với xe**](/docs/vi/settings/#root_display_override) (Tính năng đặc quyền) khắc phục cùng vấn đề này theo cách khác, và có thể bật cả hai cùng lúc.
 
 #### Google Maps của Android Auto bị đen khi đang phản chiếu
 
@@ -145,8 +148,8 @@ không bị ảnh hưởng.
 
 #### Làm sáng lại màn hình
 
-Màn hình cảm ứng tắt cùng với màn hình hiển thị, nên chạm vào điện thoại không có tác dụng gì. Hãy nhấn
-nút **Tự động làm tối** trên màn hình xe — bật/tắt Tự động làm tối sẽ đánh thức màn hình (trước tiên hãy bật
-nút này trong **Nút trên màn hình → Nút chức năng**; mặc định nút này tắt). Hoặc
+Khi bật [**Tắt màn hình điện thoại**](/docs/vi/settings/#root_screen_off), màn hình cảm ứng tắt cùng với màn hình hiển thị, nên chạm vào điện thoại không có tác dụng gì. Hãy nhấn
+nút [**Tự động làm tối**](/docs/vi/settings/#map_action_auto_dim) trên màn hình xe — bật/tắt Tự động làm tối sẽ đánh thức màn hình (trước tiên hãy bật
+nút này trong [**Nút trên màn hình → Nút chức năng**](/docs/vi/settings/#category_control_buttons); mặc định nút này tắt). Hoặc
 nhấn nút nguồn của điện thoại **hai lần**, vì lần nhấn đầu tiên mới là lần đưa hệ thống
 vào chế độ ngủ. Dừng phản chiếu hoặc ngắt kết nối Android Auto cũng làm màn hình sáng lại.

@@ -115,7 +115,7 @@ Dovresti vedere queste **due** voci ScreenOnAuto:
 Le versioni meno recenti di Android Auto mostrano anche una terza voce, **ScreenOnAuto Controller multimediale**. Se non la vedi è normale — il controllo multimediale funziona comunque.
 Se manca una delle **due** voci sopra, reinstalla — con KingInstaller per il sideload, oppure lascia completare l'installazione da Play — e riapri Android Auto. Con il metodo AAWireless, controlla che Developer Mode e Origini sconosciute siano ancora attivi.
 
-Pronto? Consulta **[Come si usa](https://github.com/slzn/ScreenOnAuto-releases/wiki/Come-si-usa)** per avviare il mirroring in auto.
+Pronto? Consulta **[Come si usa](https://github.com/slzn/ScreenOnAuto-releases/wiki/Come-si-usa)** per avviare il mirroring in auto. Ogni impostazione è spiegata nella **[Guida alle impostazioni](https://screenonauto.lzn.idv.tw/docs/it/settings/)**.
 
 ## Autorizzazioni
 

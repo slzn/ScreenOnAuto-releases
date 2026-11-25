@@ -115,7 +115,7 @@ Vous devriez voir ces **deux** entrées ScreenOnAuto :
 Les anciennes versions d'Android Auto affichent aussi une troisième entrée, **ScreenOnAuto Contrôleur multimédia**. Si vous ne la voyez pas, c'est normal — le contrôle multimédia fonctionne quand même.
 S'il manque l'une des **deux** entrées ci-dessus, réinstallez — via KingInstaller pour un sideload, ou laissez l'installation Play se terminer — puis rouvrez Android Auto. Avec la méthode AAWireless, vérifiez que Developer Mode et Sources inconnues sont toujours activés.
 
-Prêt ? Consultez **[Comment utiliser](https://github.com/slzn/ScreenOnAuto-releases/wiki/Comment-utiliser)** pour démarrer la duplication dans la voiture.
+Prêt ? Consultez **[Comment utiliser](https://github.com/slzn/ScreenOnAuto-releases/wiki/Comment-utiliser)** pour démarrer la duplication dans la voiture. Chaque réglage est expliqué dans le **[Guide des réglages](https://screenonauto.lzn.idv.tw/docs/fr/settings/)**.
 
 ## Permissions
 

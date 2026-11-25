@@ -115,7 +115,7 @@ Dort sollten diese **zwei** ScreenOnAuto-Einträge erscheinen:
 Ältere Android-Auto-Versionen zeigen zusätzlich einen dritten Eintrag, **ScreenOnAuto Mediensteuerung**. Fehlt er, ist das normal – die Mediensteuerung funktioniert trotzdem.
 Fehlt einer der **beiden** Einträge oben, installiere neu – per KingInstaller beim Sideload, oder lass die Play-Installation fertig werden – und öffne Android Auto erneut. Prüfe beim AAWireless-Weg, ob Developer Mode und Unbekannte Quellen noch aktiviert sind.
 
-Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wiki/Verwendung)** zum Starten der Spiegelung im Auto.
+Startklar? Siehe **[Verwendung](https://github.com/slzn/ScreenOnAuto-releases/wiki/Verwendung)** zum Starten der Spiegelung im Auto. Was jede Einstellung bewirkt, erklärt die Seite **[Einstellungen im Überblick](https://screenonauto.lzn.idv.tw/docs/de/settings/)**.
 
 ## Berechtigungen
 

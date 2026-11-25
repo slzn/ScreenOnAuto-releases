@@ -44,8 +44,8 @@ espelhamento e você pode alternar a qualquer momento — com o espelhamento já
 execução, abrir a outra entrada o exibe na hora, sem pedir permissão de novo.
 
 > **💡 Dica**
-> Se você já abriu o **ScreenOnAuto** (entrada de tela cheia) e agora quer usar o
-> **ScreenOnAuto (Legacy)**, abra primeiro o app de mapas (ex.: Google Maps) na tela do
+> Se você já abriu o <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (entrada de tela cheia) e agora quer usar o
+> <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**, abra primeiro o app de mapas (ex.: Google Maps) na tela do
 > carro e só então inicie o espelhamento Legacy. Isso devolve ao app de mapas o papel
 > de mapa padrão da tela do carro, e as funções de mapa não ficam presas ao
 > espelhamento de tela cheia.
@@ -54,7 +54,7 @@ execução, abrir a outra entrada o exibe na hora, sem pedir permissão de novo.
 
 ### Com o Início automático ATIVADO (recomendado)
 
-1. No app do celular, ative **Início automático** (configuração única).
+1. No app do celular, ative [**Início automático**](/docs/pt-BR/settings/#auto_start_mirror) (configuração única).
 2. Conecte o celular ao carro e toque em uma entrada do ScreenOnAuto
    (<img src="/images/icon_launcher.png" width="24" align="middle" alt="Ícone do ScreenOnAuto"> ou
    <img src="/images/icon_legacy.png" width="24" align="middle" alt="Ícone do ScreenOnAuto (Legacy)">) no launcher do
@@ -89,16 +89,20 @@ Se preferir manter o **Início automático** desativado:
 ### Pular o diálogo de permissão
 
 Cansado do diálogo aparecer toda vez? Você pode conceder a permissão uma única vez via
-ADB — veja [Conceder Permissão de Espelhamento via ADB](/docs/pt-BR/grant-mirror-permission-via-adb/).
+ADB — veja [Conceder Permissão de Espelhamento via ADB](/docs/pt-BR/grant-mirror-permission-via-adb/). Ative também [**Iniciar o espelhamento em segundo plano**](/docs/pt-BR/settings/#silent_car_start) e a tela de configurações do ScreenOnAuto também não aparece no celular: você toca na entrada no carro, nada aparece no celular e o espelhamento começa.
 
 ## Parar o espelhamento
 
 Qualquer uma destas opções funciona:
 
 - **Desconectar do carro** — o espelhamento para automaticamente (configuração padrão
-  *Parar ao desconectar*).
+  [*Parar ao desconectar*](/docs/pt-BR/settings/#stop_on_disconnect)).
 - Tocar em **Parar espelhamento** na notificação persistente do celular.
 - Tocar em **Parar espelhamento** no app.
+
+## Guia de configurações
+
+O que cada configuração faz, quando ativá-la e quais são seus limites está explicado no [Guia de configurações](/docs/pt-BR/settings/), ao lado de uma réplica da tela de configurações que você pode usar.
 
 ## Solução de problemas
 
@@ -111,10 +115,10 @@ inicie com **Iniciar espelhamento** no app.
 
 #### Barras pretas ao redor da imagem
 
-As telas do celular e do carro têm proporções diferentes. Use o botão **Travar orientação**
-na tela de espelhamento (ou **Travar orientação automaticamente** nas configurações). Para
-preencher exatamente a área útil do carro, ative **Ajustar a tela do telefone à do carro**
-nos Recursos privilegiados (Shizuku ou root).
+As telas do celular e do carro têm proporções diferentes. Use o botão [**Travar orientação**](/docs/pt-BR/settings/#map_action_force_landscape)
+na tela de espelhamento (ou [**Travar orientação automaticamente**](/docs/pt-BR/settings/#force_landscape) nas configurações). Para
+preencher exatamente a área útil do carro, ative [**Ajustar a tela do telefone à do carro**](/docs/pt-BR/settings/#root_display_override)
+nos Recursos privilegiados (Shizuku ou root). [**Ajustar largura do espelhamento, Ajustar altura do espelhamento**](/docs/pt-BR/settings/#vd_gap) também podem ampliar a imagem por cima das faixas, cortando um pouco da borda; o Guia de configurações mostra como, com diagramas.
 
 #### A imagem fica esticada ou distorcida depois que o layout muda
 
@@ -122,13 +126,12 @@ Isso acontece quando a área visível cresce ou encolhe na vista dividida. Girar
 para a tela alternar entre retrato e paisagem faz a imagem voltar ao normal (se **Travar orientação** estiver ativo, libere-o antes pelo botão na tela). Duas
 configurações também podem resolver:
 
-- Ative **Configurações → Avançado → Tamanho fixo do espelhamento**. O espelhamento
-  mantém o tamanho em vez de distorcer (parte dele pode ficar oculta). Vale para a
-  entrada de tela cheia **ScreenOnAuto**.
-- Ative **Configurações → Avançado → Espelhamento desenhado pelo app (experimental)**. O
+- Ative [**Configurações → Avançado → Tamanho fixo do espelhamento**](/docs/pt-BR/settings/#nav_fixed_size). O espelhamento
+  mantém o tamanho em vez de distorcer (parte dele pode ficar oculta). Vale só para a entrada de tela cheia <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**.
+- Ative [**Configurações → Avançado → Espelhamento desenhado pelo app (experimental)**](/docs/pt-BR/settings/#self_draw). O
   app passa a desenhar a imagem do espelhamento em vez de deixar o sistema
   redimensioná-la, então ela não distorce mais na vista dividida. Consome um pouco
-  mais de bateria e passa a valer no próximo início do espelhamento. **Ajustar a tela do telefone à do carro** (Recursos privilegiados) resolve o mesmo problema de outro jeito, e os dois podem ficar ativos juntos.
+  mais de bateria e passa a valer no próximo início do espelhamento. [**Ajustar a tela do telefone à do carro**](/docs/pt-BR/settings/#root_display_override) (Recursos privilegiados) resolve o mesmo problema de outro jeito, e os dois podem ficar ativos juntos.
 
 #### O Google Maps do Android Auto fica preto durante o espelhamento
 
@@ -152,9 +155,9 @@ afetados.
 
 #### Como acordar a tela depois do desligamento
 
-A tela sensível ao toque desliga junto com o painel, então tocar no celular não faz
-nada. Toque no botão **Escurecimento automático** na tela do carro — alternar o
-escurecimento automático acorda a tela (ative o botão antes em **Botões na tela → Botões
-de função**; ele vem desligado). Ou pressione o botão liga/desliga do celular **duas
+Com [**Desligar a tela do telefone**](/docs/pt-BR/settings/#root_screen_off) ativado, a tela sensível ao toque desliga junto com o painel, então tocar no celular não faz
+nada. Toque no botão [**Escurecimento automático**](/docs/pt-BR/settings/#map_action_auto_dim) na tela do carro — alternar o
+escurecimento automático acorda a tela (ative o botão antes em [**Botões na tela → Botões
+de função**](/docs/pt-BR/settings/#category_control_buttons); ele vem desligado). Ou pressione o botão liga/desliga do celular **duas
 vezes**, já que o primeiro toque é o que coloca o sistema para dormir. Parar o
 espelhamento ou desconectar o Android Auto também traz a tela de volta.

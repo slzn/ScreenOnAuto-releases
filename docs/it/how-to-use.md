@@ -44,8 +44,8 @@ mirroring e puoi passare dall'una all'altra in qualsiasi momento — quando il m
 attivo, aprire l'altra voce lo mostra subito senza richiedere di nuovo l'autorizzazione.
 
 > **💡 Suggerimento**
-> Se hai già aperto **ScreenOnAuto** (la voce a schermo intero) e ora vuoi usare
-> **ScreenOnAuto (Legacy)**, apri prima la tua app di mappe (per es. Google Maps) sullo
+> Se hai già aperto <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (la voce a schermo intero) e ora vuoi usare
+> <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**, apri prima la tua app di mappe (per es. Google Maps) sullo
 > schermo dell'auto, poi avvia il mirroring Legacy. In questo modo l'app di mappe torna
 > a essere la mappa predefinita dello schermo dell'auto, e le funzioni legate alla mappa
 > non restano occupate dal mirroring a schermo intero.
@@ -54,7 +54,7 @@ attivo, aprire l'altra voce lo mostra subito senza richiedere di nuovo l'autoriz
 
 ### Con l'avvio automatico attivo (consigliato)
 
-1. Nell'app sul telefono, attiva l'**Avvio automatico** (impostazione una tantum).
+1. Nell'app sul telefono, attiva l'[**Avvio automatico**](/docs/it/settings/#auto_start_mirror) (impostazione una tantum).
 2. Collega il telefono all'auto e tocca una voce ScreenOnAuto
    (<img src="/images/icon_launcher.png" width="24" align="middle" alt="Icona ScreenOnAuto"> oppure
    <img src="/images/icon_legacy.png" width="24" align="middle" alt="Icona ScreenOnAuto (Legacy)">) nel launcher di
@@ -89,16 +89,20 @@ Se preferisci tenere l'**avvio automatico** disattivato:
 ### Saltare la finestra di autorizzazione
 
 Stanco della finestra a ogni avvio? Puoi pre-concedere l'autorizzazione una volta via
-ADB — vedi [Concedere il permesso di mirroring via ADB](/docs/it/grant-mirror-permission-via-adb/).
+ADB — vedi [Concedere il permesso di mirroring via ADB](/docs/it/grant-mirror-permission-via-adb/). Attivando anche [**Avvia il mirroring in background**](/docs/it/settings/#silent_car_start), nemmeno la schermata delle impostazioni di ScreenOnAuto compare sul telefono: tocchi la voce in auto, sul telefono non appare nulla e il mirroring parte.
 
 ## Interrompere il mirroring
 
 Uno qualsiasi di questi metodi:
 
 - **Scollega il telefono dall'auto** — il mirroring si interrompe automaticamente
-  (impostazione predefinita *Interrompi alla disconnessione*).
+  (impostazione predefinita [*Interrompi alla disconnessione*](/docs/it/settings/#stop_on_disconnect)).
 - Tocca **Interrompi mirroring** nella notifica persistente del telefono.
 - Tocca **Interrompi mirroring** nell'app.
+
+## Guida alle impostazioni
+
+Cosa fa ogni impostazione, quando attivarla e quali limiti ha è spiegato nella [Guida alle impostazioni](/docs/it/settings/), accanto a una replica funzionante della schermata delle impostazioni.
 
 ## Risoluzione dei problemi
 
@@ -111,11 +115,11 @@ oppure avvialo con **Avvia mirroring** nell'app.
 
 #### Bande nere attorno all'immagine
 
-Telefono e schermo dell'auto hanno proporzioni diverse. Usa il pulsante **Blocca
-orientamento** sulla schermata di mirroring (o **Blocca automaticamente l'orientamento**
-nelle impostazioni). Per riempire esattamente l'area utile dell'auto, attiva **Adattare
-lo schermo del telefono a quello dell'auto** nelle Funzioni privilegiate (Shizuku o
-root).
+Telefono e schermo dell'auto hanno proporzioni diverse. Usa il pulsante [**Blocca
+orientamento**](/docs/it/settings/#map_action_force_landscape) sulla schermata di mirroring (o [**Blocca automaticamente l'orientamento**](/docs/it/settings/#force_landscape)
+nelle impostazioni). Per riempire esattamente l'area utile dell'auto, attiva [**Adattare
+lo schermo del telefono a quello dell'auto**](/docs/it/settings/#root_display_override) nelle Funzioni privilegiate (Shizuku o
+root). Anche [**Regola larghezza del mirroring, Regola altezza del mirroring**](/docs/it/settings/#vd_gap) possono ingrandire l'immagine sopra le bande, sacrificando un po' del bordo; la Guida alle impostazioni lo mostra con degli schemi.
 
 #### Immagine allungata o distorta dopo un cambio di layout
 
@@ -123,13 +127,13 @@ Succede quando l'area visibile cresce o si riduce in vista divisa. Ruotare il te
 modo che lo schermo passi da verticale a orizzontale fa tornare l'immagine a posto (se **Blocca orientamento** è attivo, sbloccalo prima con il suo pulsante sullo schermo). Due
 impostazioni possono anche risolverlo:
 
-- Attiva **Impostazioni → Avanzate → Dimensione fissa del mirroring**. Il mirroring
+- Attiva [**Impostazioni → Avanzate → Dimensione fissa del mirroring**](/docs/it/settings/#nav_fixed_size). Il mirroring
   mantiene così le sue dimensioni invece di distorcersi (una parte può restare
-  nascosta). Si applica alla voce a schermo intero **ScreenOnAuto**.
-- Attiva **Impostazioni → Avanzate → Immagine del mirroring disegnata dall'app
-  (sperimentale)**. L'app disegna allora da sé l'immagine del mirroring invece di
+  nascosta). Si applica solo alla voce a schermo intero <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**.
+- Attiva [**Impostazioni → Avanzate → Immagine del mirroring disegnata dall'app
+  (sperimentale)**](/docs/it/settings/#self_draw). L'app disegna allora da sé l'immagine del mirroring invece di
   lasciarne il ridimensionamento al sistema, così non si distorce più nella vista divisa. Consuma un po' più di batteria e ha effetto al
-  prossimo avvio del mirroring. **Adattare lo schermo del telefono a quello dell'auto** (Funzioni privilegiate) risolve lo stesso problema in un altro modo, e le due funzioni possono essere attive insieme.
+  prossimo avvio del mirroring. [**Adattare lo schermo del telefono a quello dell'auto**](/docs/it/settings/#root_display_override) (Funzioni privilegiate) risolve lo stesso problema in un altro modo, e le due funzioni possono essere attive insieme.
 
 #### Google Maps di Android Auto diventa nero durante il mirroring
 
@@ -153,10 +157,10 @@ interessati.
 
 #### Come riaccendere lo schermo dopo lo spegnimento
 
-Il touchscreen si spegne insieme al pannello, quindi toccare il telefono non produce
-alcun effetto. Tocca il pulsante **Oscuramento automatico** sullo schermo dell'auto:
+Con [**Spegni lo schermo del telefono**](/docs/it/settings/#root_screen_off) attivo, il touchscreen si spegne insieme al pannello, quindi toccare il telefono non produce
+alcun effetto. Tocca il pulsante [**Oscuramento automatico**](/docs/it/settings/#map_action_auto_dim) sullo schermo dell'auto:
 attivare o disattivare l'oscuramento automatico riaccende lo schermo (prima attiva il
-pulsante in **Pulsanti sullo schermo → Pulsanti funzione**; è disattivato per
+pulsante in [**Pulsanti sullo schermo → Pulsanti funzione**](/docs/it/settings/#category_control_buttons); è disattivato per
 impostazione predefinita). Oppure premi **due volte** il tasto di accensione del
 telefono, perché la prima pressione è quella che mette il sistema in sospensione. Anche
 interrompere il mirroring o scollegare Android Auto riaccende lo schermo.

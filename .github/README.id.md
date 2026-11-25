@@ -115,7 +115,7 @@ Anda seharusnya melihat **dua** entri ScreenOnAuto berikut:
 Android Auto versi lama juga menampilkan entri ketiga, **Pengontrol Media ScreenOnAuto**. Jika Anda tidak melihatnya, itu normal — kontrol media tetap berfungsi.
 Jika salah satu dari **dua** entri di atas tidak ada, instal ulang — lewat KingInstaller untuk pemasangan manual, atau biarkan instalasi dari Play selesai — lalu buka lagi Android Auto. Untuk cara AAWireless, pastikan Developer Mode dan Sumber tidak dikenal masih aktif.
 
-Siap? Lihat **[Cara Menggunakan](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cara-Menggunakan)** untuk memulai pencerminan di mobil.
+Siap? Lihat **[Cara Menggunakan](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cara-Menggunakan)** untuk memulai pencerminan di mobil. Setiap pengaturan dijelaskan di **[Panduan Pengaturan](https://screenonauto.lzn.idv.tw/docs/id/settings/)**.
 
 ## Izin
 

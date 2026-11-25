@@ -92,9 +92,11 @@ do not reintroduce per-language `case`/`when` branches or hand-written hreflang 
 What Jekyll cannot reach still has to be added by hand:
 
 - the landing page `i18n/<code>/index.html` (copy one; keep its `permalink` front matter)
-  and the six `docs/<code>/<slug>.md` pages (the four guides plus `privacy-policy.md` and
+  and the seven `docs/<code>/<slug>.md` pages (the four guides plus `privacy-policy.md`,
   `terms-of-use.md` — every landing-page footer and the `/join/` footer link to both, so a
-  missing copy 404s);
+  missing copy 404s — and `settings.md`, after which `python3 tools/settings-ui-strings.py`
+  must be re-run so its phone gets `assets/settings-ui/<code>.json`; the app resource folder
+  mapping for codes that differ lives in that script's `FOLDER`);
 - `.github/README.<code>.md`, plus the switcher line in every other README (GitHub
   renders READMEs directly, without Jekyll);
 - `sitemap.xml`: the new URLs, and a `hreflang` alternate in every existing block;
@@ -142,14 +144,14 @@ ScreenOnAuto-releases/
 ├── _includes/hreflang.html ← the landing pages' hreflang alternates, generated from _data/languages.yml
 ├── assets/styles.css       ← shared landing-page stylesheet
 ├── assets/carousel.js      ← shared carousel script
-├── docs/<lang>/<slug>.md   ← on-site copies of the 4 wiki guides × 15 languages, plus privacy-policy.md and terms-of-use.md (site-only)
+├── docs/<lang>/<slug>.md   ← on-site copies of the 4 wiki guides × 15 languages, plus privacy-policy.md, terms-of-use.md and settings.md (site-only)
 ├── _config.yml             ← Jekyll config; defaults apply _layouts/doc.html to docs/
 ├── _layouts/doc.html       ← doc layout: SEO head, hreflang (Liquid, from slug+lang), TechArticle JSON-LD
 ├── app-strings/values*/    ← the app's strings.xml + arrays.xml × 19 locales — the SOURCE of the app's
 │                             text (Jekyll-excluded; README.md there is the public translation guide)
 ├── .github/CONTRIBUTING.md ← points contributors at app-strings/README.md
 ├── images/                 ← site images (incl. how-to-use screenshots)
-├── robots.txt / sitemap.xml← this site's own SEO files (sitemap: 105 URLs)
+├── robots.txt / sitemap.xml← this site's own SEO files (sitemap: 120 URLs)
 ├── <32-hex>.txt            ← IndexNow key file; must sit at the site root to cover the whole host
 │                             (the key is public by design; it is also KEY in tools/indexnow.py)
 ├── tools/                  ← excluded from the site in _config.yml; sync-content-dates.py (run by CI), indexnow.py
@@ -191,8 +193,10 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
   footer) via Google Fonts `<link>` in every page head; body stays system-ui.
 - **Top-right tools (since 2026-09-30):** `_includes/tools.html`, used by all fifteen landing
   pages (`{% include tools.html lang="<code>" %}`) and inside the docbar of
-  `_layouts/doc.html` (`lang=page.lang`). It holds a GitHub icon link, a `<details>`
-  language menu, and the light/dark toggle. The menu lists all fifteen languages. The current
+  `_layouts/doc.html` (`lang=page.lang`). It holds a GitHub icon link, the **settings-guide
+  button** (since 2026-11-25: book icon + the `guide` label from `_data/languages.yml`, `guide_title`
+  as its tooltip; shown as the current page on the guide itself; icon only at ≤640px; not on
+  `/join/`), a `<details>` language menu, and the light/dark toggle. The menu lists all fifteen languages. The current
   one is ticked and not linked. On doc pages it links to the same doc in each language,
   via the layout's `variants`. It replaced the hero's language row, which also carried a
   GitHub link, and the docbar's language list. The cluster is `position: absolute`
@@ -268,6 +272,53 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
   settings that can stay changed (plus Turn the Phone Screen Off → press power twice) and the
   `wm size/density reset` fix — keep that list in step
   with the app. Each README's Disclaimer has a one-line "as is, at your own risk" link to it.
+- **Settings guide** (added 2026-11-25, all 15 languages): `docs/<lang>/settings.md`, site-only like
+  the privacy policy (no wiki copy). **Entry points** (keep them when the page moves or is renamed):
+  the top tools button (see Design system), a sentence after "Ready? See How to Use" on every
+  landing page and README, a landing-footer link after Wiki, and a short section before
+  Troubleshooting in every How to Use (wiki → site URL, docs → `/docs/<lang>/settings/`). How to Use
+  also links setting names in its text to their guide anchors (`[**Name**](…/settings/#key)`, bold
+  inside the link so it renders next to CJK on GitHub) and puts the launcher icon before a mirror's
+  name where it matters; renaming a heading id in `settings.md` breaks those links in all 15. Front matter `settings_phone: true` makes `_layouts/doc.html`
+  load `assets/settings-phone.css` + `.js` and give `<main>` the two-column `doc-wide` class
+  (sticky phone left ≥1100px; below that the title comes first, then the phone). The page body is
+  `<div class="sp-intro" markdown="1">` (h1 + intro), an `<aside class="sp-aside">` holding
+  `#settings-phone` and its hint, then `<div class="sp-doc" markdown="1">` (everything else).
+  - The phone is a replica of the app's four settings screens. **Its structure lives in
+    `assets/settings-phone.js`** (`pages()`), copied from the app's `res/xml/*_preferences.xml`
+    (row order, defaults, tags, dependencies); **its words come from `app-strings/`** via
+    `tools/settings-ui-strings.py` → `assets/settings-ui/<lang>.json` (only the names the JS
+    uses, for every language that has a `settings.md`; a missing name fails the script).
+    The JSON also carries the version shown in the phone's About row. **It is regenerated
+    at each release** (Publishing a New Release, step 1c), not when a translation PR is
+    merged, so the phone always matches the released app. Edit `pages()` when the app adds,
+    removes or reorders a setting, and then the sections in every `settings.md`.
+  - Each row's `doc` (default: its key) is the id of its section — headings carry explicit
+    `{#preference_key}` ids, identical in every language, so rows and the "Show setting"
+    buttons work unchanged. The JS adds a button after every `h3`/`h4` whose id a row uses; its
+    CSS arrow points at the phone (↖ beside it, ↑ above it — flip ↖ to ↗ for RTL).
+  - **Section numbers** ("chapter-section", e.g. 2-1) are computed by the JS from the order of
+    the h2/h3/h4 in `settings.md` — never write them into the Markdown. The manual shows each
+    as its "Show setting" button (just "↖ 2-1"; the words are its tooltip and aria-label); the phone shows it in a gutter *outside* its frame
+    (`.sp-nums`), once per setting (the first row of a group), so the replica stays exactly as
+    the app draws it. RTL: the gutter moves to the right side.
+  - Caveats the app's summaries leave out (see the app repo's string rules) belong here.
+  - **Mirror names are marked up** — `<span class="sp-mirror nav">「ScreenOnAuto」鏡像</span>` /
+    `<span class="sp-mirror legacy">…</span>` around every mention of either mirror (with the
+    language's own quoting/bold inside); CSS puts the launcher icon *in front* of it. Not
+    matched by script, because "ScreenOnAuto" alone is also the app's name. Translations must
+    keep the spans. Other inline UI in the text: `.sp-ui-go` (the status panel's Start/Stop
+    buttons, wording hand-written), `.sp-who.you` (marks only the steps the reader does; automatic ones stay unmarked),
+    `img.sp-entry` (entry icons standing on their own, e.g. "either entry (icon or icon)").
+  - **Diagrams** live in `images/settings/*.svg`, drawn by `tools/settings-diagrams.py` (edit and re-run
+    it rather than hand-editing an SVG). They carry **no text**, so every language shares
+    them; captions and alt text are in each `settings.md` (`<div class="sp-figs">` of `<figure>`s).
+    They have their own colours (a dark car screen in both site themes, bars pure black on a
+    lighter `#243140` backdrop, cut-off parts hatched amber, the usable area a dashed green frame).
+  - RTL (ar): the replica's paddings are logical, so it mirrors by itself; the `[dir="rtl"]` block
+    at the end of `settings-phone.css` handles what stays physical (number gutter on the right,
+    switch thumb and slider, ↗ arrow, mirrored ← and ›). The diagrams are not mirrored: they show
+    physical geometry (the mirror is anchored at the car area's top-left in every language).
 - GitHub Pages renders **any** root `.md` into `<name>.html` with the primer theme,
   front matter or not — verified 2026-07-27: `/README.zh-TW.html` was live, themed, and
   **self-canonical**, i.e. indexable duplicate content competing with `/zh-TW/`. Moving
@@ -399,7 +450,8 @@ All fifteen READMEs share one structure (en at the root, the other fourteen in `
   Since 2026-10-14 that link, here and on the landing pages, targets the troubleshooting
   group's own heading, "Privileged Features (Shizuku / root)" — `#privileged-features-shizuku--root`
   and its counterpart in each language, generated from the heading text by both GitHub and
-  Jekyll. **Rewording that heading in any language breaks its two links** (README +
+  Jekyll. (The settings-guide section added before Troubleshooting on 2026-11-25 renamed no
+  heading, so these anchors are unchanged.) **Rewording that heading in any language breaks its two links** (README +
   landing page); read the new anchor from a local build before changing them.
 - **Known limitations → Google Maps black screen** (Android 15+): the README bullet and
   the landing `<li>` link to the How to Use troubleshooting heading "Android Auto's Google
@@ -484,6 +536,21 @@ Android 13 and below install section in every README) — so a routine version b
 The GitHub Release in Step 3 (`--latest`) is what makes that link resolve to the new build.
 Only edit the READMEs when the install flow itself changes (e.g. the KingInstaller
 sequence or the Google Play sign-up) — then update **all fifteen READMEs and the fifteen landing pages**.
+
+**1c. Settings guide phone — required every release.** The replica on `docs/<lang>/settings/`
+shows the *released* app, so it is regenerated here and nowhere else (decided 2026-11-25: not
+on every merged translation PR, or the site would run ahead of the app people have). By now
+the app repo's release step 0 has made `app-strings/` match the build, so this picks up the
+release's wording, and records its version for the phone's About row:
+
+```bash
+python3 tools/settings-ui-strings.py --version {versionName} --code {versionCode}
+```
+
+It fails on a string name the app no longer has — then update `pages()` in
+`assets/settings-phone.js` (and the matching sections of every `settings.md`) before going on.
+If the release renamed a setting, also check the `settings.md` prose that names it in bold:
+the script only updates the phone, not the text.
 
 Commit whatever Step 1 touched:
 

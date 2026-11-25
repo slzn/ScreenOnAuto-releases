@@ -110,7 +110,7 @@ Android のバージョンを問わず使え、Android Auto で追加の設定�
 
 古い Android Auto では、3 つ目の項目 **ScreenOnAuto メディアコントローラー** も表示されます。表示されなくても正常で、メディアの操作はどちらでも使えます。上の **2 つ** の項目のどちらかがない場合は、再インストールしてください（サイドロードなら KingInstaller で、Play ならインストールが完了するまで待つ）。その後、Android Auto を開き直してください。AAWireless を使う方法の場合は、Developer Mode と提供元不明のアプリがオンのままか確認してください。
 
-準備ができたら、車でミラーリングを始める方法は **[使い方](https://github.com/slzn/ScreenOnAuto-releases/wiki/使い方)** を参照してください。
+準備ができたら、車でミラーリングを始める方法は **[使い方](https://github.com/slzn/ScreenOnAuto-releases/wiki/使い方)** を参照してください。各設定の説明は **[設定ガイド](https://screenonauto.lzn.idv.tw/docs/ja/settings/)** をご覧ください。
 
 ## 権限
 

@@ -115,7 +115,7 @@ Bạn sẽ thấy **hai** mục ScreenOnAuto sau:
 Android Auto phiên bản cũ còn có mục thứ ba, **Trình điều khiển đa phương tiện ScreenOnAuto**. Không thấy mục này là bình thường — điều khiển đa phương tiện vẫn hoạt động.
 Nếu thiếu một trong **hai** mục ở trên, hãy cài lại — bằng KingInstaller nếu cài APK, hoặc đợi Google Play cài xong — rồi mở lại Android Auto. Nếu dùng cách AAWireless, hãy kiểm tra Developer Mode và Nguồn không xác định vẫn đang bật.
 
-Sẵn sàng rồi? Xem **[Cách sử dụng](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cách-sử-dụng)** để bắt đầu phản chiếu trên xe.
+Sẵn sàng rồi? Xem **[Cách sử dụng](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cách-sử-dụng)** để bắt đầu phản chiếu trên xe. Xem **[Giải thích các cài đặt](https://screenonauto.lzn.idv.tw/docs/vi/settings/)** để biết từng cài đặt làm gì.
 
 ## Quyền
 

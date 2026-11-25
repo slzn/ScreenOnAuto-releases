@@ -110,7 +110,7 @@
 
 較舊的 Android Auto 還會多列一個 **ScreenOnAuto 媒體控制器**；沒看到也正常，媒體控制照樣能用。若上述**兩個**項目有任何一個缺失：sideload 安裝請重新透過 KingInstaller 安裝，Play 安裝請確認已安裝完成，再重新開啟 Android Auto。若使用 AAWireless 方式，請確認 Developer Mode 與不明來源仍維持開啟。
 
-安裝完成後，請見 **[如何使用](https://github.com/slzn/ScreenOnAuto-releases/wiki/如何使用)** 了解如何在車上啟動鏡像。
+安裝完成後，請見 **[如何使用](https://github.com/slzn/ScreenOnAuto-releases/wiki/如何使用)** 了解如何在車上啟動鏡像。各項設定的說明請見 **[設定說明](https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/)**。
 
 ## 權限說明
 

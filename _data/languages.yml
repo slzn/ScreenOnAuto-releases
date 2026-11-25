@@ -10,65 +10,98 @@
 #   label   — the menu's "Language" label, in that language
 #   updated — the "Last updated" stamp on doc pages, in that language
 #   rtl     — true for right-to-left scripts (the doc layout sets dir="rtl")
+#   guide   — the settings-guide button's short label (_includes/tools.html)
+#   guide_title — that guide's full title (docs/<code>/settings.md): the button's tooltip and the
+#             landing-footer link text
 
 - code: en
   name: English
   label: Language
   updated: Last updated
+  guide: Settings
+  guide_title: Settings Guide
 - code: zh-TW
   name: 繁體中文
   label: 語言
   updated: 最後更新
+  guide: 設定說明
+  guide_title: 設定說明
 - code: pt-BR
   name: Português (Brasil)
   label: Idioma
   updated: Última atualização
+  guide: Configurações
+  guide_title: Guia de configurações
 - code: es
   name: Español
   label: Idioma
   updated: Última actualización
+  guide: Ajustes
+  guide_title: Guía de ajustes
 - code: de
   name: Deutsch
   label: Sprache
   updated: Zuletzt aktualisiert
+  guide: Einstellungen
+  guide_title: Einstellungen im Überblick
 - code: fr
   name: Français
   label: Langue
   updated: Dernière mise à jour
+  guide: Réglages
+  guide_title: Guide des réglages
 - code: it
   name: Italiano
   label: Lingua
   updated: Ultimo aggiornamento
+  guide: Impostazioni
+  guide_title: Guida alle impostazioni
 - code: tr
   name: Türkçe
   label: Dil
   updated: Son güncelleme
+  guide: Ayarlar
+  guide_title: Ayarlar Rehberi
 - code: ar
   name: العربية
   label: اللغة
   updated: آخر تحديث
+  guide: الإعدادات
+  guide_title: دليل الإعدادات
   rtl: true
 - code: ko
   name: 한국어
   label: 언어
   updated: 마지막 업데이트
+  guide: 설정 안내
+  guide_title: 설정 안내
 - code: ru
   name: Русский
   label: Язык
   updated: Последнее обновление
+  guide: Настройки
+  guide_title: Руководство по настройкам
 - code: vi
   name: Tiếng Việt
   label: Ngôn ngữ
   updated: Cập nhật lần cuối
+  guide: Cài đặt
+  guide_title: Giải thích các cài đặt
 - code: id
   name: Bahasa Indonesia
   label: Bahasa
   updated: Terakhir diperbarui
+  guide: Pengaturan
+  guide_title: Panduan Pengaturan
 - code: ja
   name: 日本語
   label: 言語
   updated: 最終更新
+  guide: 設定ガイド
+  guide_title: 設定ガイド
 - code: th
   name: ไทย
   label: ภาษา
   updated: อัปเดตล่าสุด
+  guide: การตั้งค่า
+  guide_title: คู่มือการตั้งค่า

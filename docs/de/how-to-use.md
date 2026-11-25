@@ -45,8 +45,8 @@ bereits, zeigt der andere Eintrag sie sofort an, ohne erneut nach der Berechtigu
 fragen.
 
 > **💡 Tipp**
-> Wenn du zuvor **ScreenOnAuto** (den Vollbild-Eintrag) geöffnet hast und jetzt
-> **ScreenOnAuto (Legacy)** nutzen möchtest, öffne zuerst deine Karten-App (z. B.
+> Wenn du zuvor <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (den Vollbild-Eintrag) geöffnet hast und jetzt
+> <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)** nutzen möchtest, öffne zuerst deine Karten-App (z. B.
 > Google Maps) auf dem Fahrzeugbildschirm und starte dann die Legacy-Spiegelung. So
 > wird die Karten-App wieder als Standardkarte des Fahrzeugbildschirms gesetzt und die
 > Kartenfunktionen bleiben nicht bei der Vollbild-Spiegelung hängen.
@@ -55,7 +55,7 @@ fragen.
 
 ### Mit aktiviertem Automatisch starten (empfohlen)
 
-1. Aktiviere in der App auf dem Telefon **Automatisch starten** (einmalige Einrichtung).
+1. Aktiviere in der App auf dem Telefon [**Automatisch starten**](/docs/de/settings/#auto_start_mirror) (einmalige Einrichtung).
 2. Verbinde das Telefon mit dem Auto und tippe im Android-Auto-Launcher auf einen
    ScreenOnAuto-Eintrag
    (<img src="/images/icon_launcher.png" width="24" align="middle" alt="ScreenOnAuto-Symbol"> oder
@@ -90,16 +90,20 @@ Wenn du **Automatisch starten** lieber deaktiviert lässt:
 ### Berechtigungsdialog überspringen
 
 Genug vom Dialog bei jedem Start? Du kannst die Berechtigung einmalig per ADB erteilen
-– siehe [Spiegelungsberechtigung per ADB erteilen](/docs/de/grant-mirror-permission-via-adb/).
+– siehe [Spiegelungsberechtigung per ADB erteilen](/docs/de/grant-mirror-permission-via-adb/). Aktivierst du zusätzlich [**Spiegelung im Hintergrund starten**](/docs/de/settings/#silent_car_start), erscheint auch der Einstellungsbildschirm von ScreenOnAuto nicht auf dem Telefon: Du tippst im Auto auf den Eintrag, auf dem Telefon erscheint nichts, und die Spiegelung startet.
 
 ## Spiegelung beenden
 
 Jede dieser Möglichkeiten funktioniert:
 
 - **Verbindung zum Auto trennen** – die Spiegelung stoppt automatisch (Standard-
-  Einstellung *Bei Trennung stoppen*).
+  Einstellung [*Bei Trennung stoppen*](/docs/de/settings/#stop_on_disconnect)).
 - Auf **Spiegelung beenden** in der dauerhaften Telefon-Benachrichtigung tippen.
 - In der App auf **Spiegelung beenden** tippen.
+
+## Einstellungen im Überblick
+
+Was jede Einstellung bewirkt, wann du sie einschalten solltest und wo ihre Grenzen liegen, erklärt die Seite [Einstellungen im Überblick](/docs/de/settings/) – neben einem bedienbaren Nachbau des Einstellungsbildschirms.
 
 ## Fehlerbehebung
 
@@ -113,10 +117,10 @@ oder starte sie in der App mit **Spiegelung starten**.
 #### Schwarze Balken um das Bild
 
 Telefon- und Fahrzeugbildschirm haben unterschiedliche Seitenverhältnisse. Nutze die Schaltfläche
-**Ausrichtung sperren** auf dem Spiegelbildschirm (oder **Ausrichtung automatisch
-sperren** in den Einstellungen). Um die nutzbare Fläche des Autos exakt auszufüllen,
-aktiviere **Telefonbildschirm an das Auto anpassen** in den Privilegierten Funktionen
-(Shizuku oder Root).
+[**Ausrichtung sperren**](/docs/de/settings/#map_action_force_landscape) auf dem Spiegelbildschirm (oder [**Ausrichtung automatisch
+sperren**](/docs/de/settings/#force_landscape) in den Einstellungen). Um die nutzbare Fläche des Autos exakt auszufüllen,
+aktiviere [**Telefonbildschirm an das Auto anpassen**](/docs/de/settings/#root_display_override) in den Privilegierten Funktionen
+(Shizuku oder Root). Mit [**Spiegelungsbreite anpassen, Spiegelungshöhe anpassen**](/docs/de/settings/#vd_gap) lässt sich das Bild auch über die Balken vergrößern, wobei ein wenig vom Rand verloren geht; die Seite Einstellungen im Überblick zeigt das mit Skizzen.
 
 #### Das Bild wirkt gestreckt oder verzerrt, nachdem sich das Layout geändert hat
 
@@ -124,13 +128,12 @@ Das passiert, wenn der sichtbare Bereich in der geteilten Ansicht wächst oder s
 Dreh das Telefon, sodass der Bildschirm zwischen Hoch- und Querformat wechselt – dann
 stimmt das Bild wieder (ist **Ausrichtung sperren** aktiv, hebe die Sperre vorher mit der Schaltfläche auf dem Bildschirm auf). Zwei Einstellungen können außerdem helfen:
 
-- Aktiviere **Einstellungen → Erweitert → Feste Spiegelungsgröße**. Die Spiegelung
-  behält dann ihre Größe statt zu verzerren (ein Teil kann verdeckt sein). Gilt für den
-  Vollbild-Eintrag **ScreenOnAuto**.
-- Aktiviere **Einstellungen → Erweitert → Selbstgezeichnete Spiegelung
-  (experimentell)**. Die App zeichnet das Bild der Spiegelung dann selbst, statt es vom
+- Aktiviere [**Einstellungen → Erweitert → Feste Spiegelungsgröße**](/docs/de/settings/#nav_fixed_size). Die Spiegelung
+  behält dann ihre Größe statt zu verzerren (ein Teil kann verdeckt sein). Gilt nur für den Vollbild-Eintrag <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**.
+- Aktiviere [**Einstellungen → Erweitert → Selbstgezeichnete Spiegelung
+  (experimentell)**](/docs/de/settings/#self_draw). Die App zeichnet das Bild der Spiegelung dann selbst, statt es vom
   System skalieren zu lassen, sodass es in der geteilten Ansicht nicht mehr verzerrt. Das kostet etwas mehr Akku und greift beim nächsten Start der Spiegelung.
-  **Telefonbildschirm an das Auto anpassen** (Privilegierte Funktionen) löst dasselbe Problem auf andere Weise; beide können gleichzeitig aktiv sein.
+  [**Telefonbildschirm an das Auto anpassen**](/docs/de/settings/#root_display_override) (Privilegierte Funktionen) löst dasselbe Problem auf andere Weise; beide können gleichzeitig aktiv sein.
 
 #### Google Maps in Android Auto wird während der Spiegelung schwarz
 
@@ -154,11 +157,11 @@ Android-Auto-Verbindungen sind nicht betroffen.
 
 #### Den Bildschirm nach dem Ausschalten wieder aufwecken
 
-Der Touchscreen wird zusammen mit dem Display abgeschaltet, Tippen auf das Telefon
-bewirkt also nichts. Tippe auf dem Autobildschirm auf die Schaltfläche **Auto-Dimmen** – das Umschalten von
+Ist [**Telefonbildschirm ausschalten**](/docs/de/settings/#root_screen_off) aktiv, wird der Touchscreen zusammen mit dem Display abgeschaltet, Tippen auf das Telefon
+bewirkt also nichts. Tippe auf dem Autobildschirm auf die Schaltfläche [**Auto-Dimmen**](/docs/de/settings/#map_action_auto_dim) – das Umschalten von
 Auto-Dimmen weckt den Bildschirm auf
-(aktiviere die Schaltfläche zuerst unter **Bildschirm-Schaltflächen →
-Funktionsschaltflächen**; sie ist standardmäßig aus). Oder drücke die Ein-/Aus-Taste des
+(aktiviere die Schaltfläche zuerst unter [**Bildschirm-Schaltflächen →
+Funktionsschaltflächen**](/docs/de/settings/#category_control_buttons); sie ist standardmäßig aus). Oder drücke die Ein-/Aus-Taste des
 Telefons **zweimal**, denn der erste Druck versetzt das System erst in den Ruhezustand.
 Auch das Beenden der Spiegelung oder das Trennen von Android Auto schaltet den
 Bildschirm wieder ein.

@@ -43,8 +43,8 @@ and you can switch between them at any time — once mirroring is running, openi
 other entry shows it right away without asking for permission again.
 
 > **💡 Tip**
-> If you've opened **ScreenOnAuto** (the full-screen entry) before and now want to use
-> **ScreenOnAuto (Legacy)**, open your map app (e.g. Google Maps) on the car screen
+> If you've opened <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (the full-screen entry) before and now want to use
+> <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**, open your map app (e.g. Google Maps) on the car screen
 > first, then start the Legacy mirror. This sets the map app back as the car screen's
 > default map, so map-related functions aren't taken over by the full-screen mirror.
 
@@ -52,7 +52,7 @@ other entry shows it right away without asking for permission again.
 
 ### With Auto Start Mirror ON (recommended)
 
-1. In the app on the phone, turn on **Auto Start Mirror** (one-time setup).
+1. In the app on the phone, turn on [**Auto Start Mirror**](/docs/en/settings/#auto_start_mirror) (one-time setup).
 2. Connect the phone to the car and tap a ScreenOnAuto entry
    (<img src="/images/icon_launcher.png" width="24" align="middle" alt="ScreenOnAuto icon"> or
    <img src="/images/icon_legacy.png" width="24" align="middle" alt="ScreenOnAuto (Legacy) icon">) in the Android Auto
@@ -86,16 +86,22 @@ If you prefer to keep **Auto Start Mirror** off:
 ### Skipping the permission dialog
 
 Tired of the dialog appearing every time? You can pre-grant the permission once via
-ADB — see [Grant Mirror Permission via ADB](/docs/en/grant-mirror-permission-via-adb/).
+ADB — see [Grant Mirror Permission via ADB](/docs/en/grant-mirror-permission-via-adb/). Add
+[**Start mirroring in the background**](/docs/en/settings/#silent_car_start) and the ScreenOnAuto settings screen doesn't come up on
+the phone either: tap the entry on the car, nothing appears on the phone, and mirroring starts.
 
 ## Stop mirroring
 
 Any of these works:
 
-- **Disconnect from the car** — mirroring stops automatically (the default *Stop on
-  disconnect* setting).
+- **Disconnect from the car** — mirroring stops automatically (the default [*Stop on
+  Disconnect*](/docs/en/settings/#stop_on_disconnect) setting).
 - Tap **Stop Mirroring** on the persistent phone notification.
 - Tap **Stop mirroring** in the app.
+
+## Settings Guide
+
+What every setting does, when to turn it on and where its limits are is explained in the [Settings Guide](/docs/en/settings/), next to a working replica of the app's settings screen.
 
 ## Troubleshooting
 
@@ -107,9 +113,11 @@ Mirroring hasn't started yet; check the phone for the permission dialog, or star
 
 #### Black bars around the image
 
-The phone and car screens have different aspect ratios. Use the **Lock Orientation**
-button on the mirror screen (or **Auto-start Lock Orientation** in settings). To fit the
-car's usable area exactly, turn on **Match the phone screen to the car** in Privileged
+The phone and car screens have different aspect ratios. Use the [**Lock Orientation**](/docs/en/settings/#map_action_force_landscape)
+button on the mirror screen (or [**Lock orientation on connect**](/docs/en/settings/#force_landscape) in settings).
+[**Adjust mirror width, Adjust mirror height**](/docs/en/settings/#vd_gap) can also enlarge the image over
+the bars, at the cost of a little of its edge; the Settings Guide shows how with diagrams. To fit the
+car's usable area exactly, turn on [**Match the phone screen to the car**](/docs/en/settings/#root_display_override) in Privileged
 Features (Shizuku or root).
 
 #### Image looks stretched or distorted after the layout changes
@@ -118,13 +126,13 @@ This happens when the visible area grows or shrinks in split view. Rotating the 
 the screen switches between portrait and landscape brings it back (release **Lock Orientation** with its on-screen button first if it's on). Two settings can also
 fix it:
 
-- Turn on **Settings → Advanced → Fixed mirror size**. The mirror then keeps its size
-  instead of distorting (part of it may be hidden). Applies to the full-screen
-  **ScreenOnAuto** entry.
-- Turn on **Settings → Advanced → Self-drawn mirror (experimental)**. The app then draws
+- Turn on [**Settings → Advanced → Fixed mirror size**](/docs/en/settings/#nav_fixed_size). The mirror then keeps its size
+  instead of distorting (part of it may be hidden). Applies only to the full-screen
+  <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** entry.
+- Turn on [**Settings → Advanced → Self-drawn mirror (experimental)**](/docs/en/settings/#self_draw). The app then draws
   the mirror image itself instead of letting the system scale it, so the image no longer
   distorts in split view. It uses slightly more battery and takes effect
-  the next time mirroring starts. **Match the phone screen to the car** (Privileged Features) fixes the same problem a different way, and the two can be on together.
+  the next time mirroring starts. [**Match the phone screen to the car**](/docs/en/settings/#root_display_override) (Privileged Features) fixes the same problem a different way, and the two can be on together.
 
 #### Android Auto's Google Maps turns black while mirroring
 
@@ -148,8 +156,8 @@ unaffected.
 
 #### Waking the screen again
 
-The touchscreen powers down with the panel, so tapping the phone does nothing. Tap the
-**Auto Dim** button on the car screen — toggling Auto Dim wakes the screen (turn the
-button on first in **On-screen buttons → Control buttons**; it is off by default). Or
+With [**Turn the phone screen off**](/docs/en/settings/#root_screen_off) on, the touchscreen powers down with the panel, so tapping the phone does nothing. Tap the
+[**Auto Dim**](/docs/en/settings/#map_action_auto_dim) button on the car screen — toggling Auto Dim wakes the screen (turn the
+button on first in [**On-screen buttons → Control buttons**](/docs/en/settings/#category_control_buttons); it is off by default). Or
 press the phone's power button **twice**, since the first press is what puts the system
 to sleep. Stopping the mirror or disconnecting Android Auto also brings the screen back.

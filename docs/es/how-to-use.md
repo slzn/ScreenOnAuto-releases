@@ -44,8 +44,8 @@ duplicación y puedes cambiar en cualquier momento — con la duplicación en ma
 la otra entrada la muestra al instante sin volver a pedir permiso.
 
 > **💡 Consejo**
-> Si ya abriste **ScreenOnAuto** (la entrada de pantalla completa) y ahora quieres usar
-> **ScreenOnAuto (Legacy)**, abre primero tu app de mapas (p. ej. Google Maps) en la
+> Si ya abriste <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (la entrada de pantalla completa) y ahora quieres usar
+> <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**, abre primero tu app de mapas (p. ej. Google Maps) en la
 > pantalla del coche y luego inicia la duplicación Legacy. Así el coche vuelve a tener
 > la app de mapas como mapa predeterminado y las funciones de mapa no quedan ocupadas
 > por la duplicación a pantalla completa.
@@ -54,7 +54,7 @@ la otra entrada la muestra al instante sin volver a pedir permiso.
 
 ### Con Inicio automático ACTIVADO (recomendado)
 
-1. En la app del teléfono, activa **Inicio automático** (configuración única).
+1. En la app del teléfono, activa [**Inicio automático**](/docs/es/settings/#auto_start_mirror) (configuración única).
 2. Conecta el teléfono al coche y toca una entrada de ScreenOnAuto
    (<img src="/images/icon_launcher.png" width="24" align="middle" alt="Icono de ScreenOnAuto"> o
    <img src="/images/icon_legacy.png" width="24" align="middle" alt="Icono de ScreenOnAuto (Legacy)">) en el lanzador de
@@ -89,16 +89,20 @@ Si prefieres mantener **Inicio automático** desactivado:
 ### Omitir el diálogo de permiso
 
 ¿Cansado de que el diálogo aparezca cada vez? Puedes conceder el permiso una sola vez
-vía ADB — consulta [Conceder Permiso de Duplicación por ADB](/docs/es/grant-mirror-permission-via-adb/).
+vía ADB — consulta [Conceder Permiso de Duplicación por ADB](/docs/es/grant-mirror-permission-via-adb/). Si además activas [**Iniciar la duplicación en segundo plano**](/docs/es/settings/#silent_car_start), la pantalla de ajustes de ScreenOnAuto tampoco aparece en el teléfono: tocas la entrada en el coche, no aparece nada en el teléfono y la duplicación empieza.
 
 ## Detener la duplicación
 
 Cualquiera de estas opciones funciona:
 
 - **Desconectar del coche** — la duplicación se detiene automáticamente (ajuste
-  predeterminado *Detener al desconectar*).
+  predeterminado [*Detener al desconectar*](/docs/es/settings/#stop_on_disconnect)).
 - Pulsar **Detener duplicación** en la notificación persistente del teléfono.
 - Pulsar **Detener duplicación** en la app.
+
+## Guía de ajustes
+
+Qué hace cada ajuste, cuándo activarlo y cuáles son sus límites se explica en la [Guía de ajustes](/docs/es/settings/), junto a una réplica de la pantalla de ajustes que puedes usar.
 
 ## Solución de problemas
 
@@ -112,10 +116,10 @@ iníciala con **Iniciar duplicación** en la app.
 #### Barras negras alrededor de la imagen
 
 Las pantallas del teléfono y del coche tienen proporciones distintas. Usa el botón
-**Bloquear orientación** en la pantalla de duplicación (o **Bloquear la orientación
-automáticamente** en los ajustes). Para ajustarse exactamente al área útil del coche,
-activa **Ajustar la pantalla del teléfono a la del coche** en Funciones con privilegios
-(Shizuku o root).
+[**Bloquear orientación**](/docs/es/settings/#map_action_force_landscape) en la pantalla de duplicación (o [**Bloquear la orientación
+automáticamente**](/docs/es/settings/#force_landscape) en los ajustes). Para ajustarse exactamente al área útil del coche,
+activa [**Ajustar la pantalla del teléfono a la del coche**](/docs/es/settings/#root_display_override) en Funciones con privilegios
+(Shizuku o root). [**Ajustar ancho de la duplicación, Ajustar alto de la duplicación**](/docs/es/settings/#vd_gap) también pueden ampliar la imagen sobre las franjas, a costa de recortar un poco el borde; la Guía de ajustes lo explica con diagramas.
 
 #### La imagen se ve estirada o distorsionada tras cambiar la disposición
 
@@ -123,13 +127,12 @@ Ocurre cuando el área visible crece o se reduce en la vista dividida. Girar el 
 para que la pantalla cambie entre vertical y horizontal lo devuelve a la normalidad (si **Bloquear orientación** está activo, desactívalo antes con su botón en pantalla). Dos
 ajustes también pueden solucionarlo:
 
-- Activa **Ajustes → Avanzado → Tamaño fijo de la duplicación**. La duplicación mantiene
-  su tamaño en lugar de distorsionarse (parte puede quedar oculta). Aplica a la entrada
-  de pantalla completa **ScreenOnAuto**.
-- Activa **Ajustes → Avanzado → Duplicación dibujada por la app (experimental)**. La app
+- Activa [**Ajustes → Avanzado → Tamaño fijo de la duplicación**](/docs/es/settings/#nav_fixed_size). La duplicación mantiene
+  su tamaño en lugar de distorsionarse (parte puede quedar oculta). Solo aplica a la entrada de pantalla completa <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**.
+- Activa [**Ajustes → Avanzado → Duplicación dibujada por la app (experimental)**](/docs/es/settings/#self_draw). La app
   dibuja entonces la imagen de la duplicación en lugar de dejar que el sistema la
   escale, así que ya no se distorsiona en la vista dividida.
-  Consume algo más de batería y se aplica la próxima vez que empiece la duplicación. **Ajustar la pantalla del teléfono a la del coche** (Funciones con privilegios) resuelve el mismo problema de otra forma, y ambas pueden estar activadas a la vez.
+  Consume algo más de batería y se aplica la próxima vez que empiece la duplicación. [**Ajustar la pantalla del teléfono a la del coche**](/docs/es/settings/#root_display_override) (Funciones con privilegios) resuelve el mismo problema de otra forma, y ambas pueden estar activadas a la vez.
 
 #### El Google Maps de Android Auto se pone negro durante la duplicación
 
@@ -153,10 +156,10 @@ se ven afectados.
 
 #### Cómo volver a encender la pantalla tras apagarla
 
-La pantalla táctil se apaga junto con el panel, así que tocar el teléfono no hace nada.
-Pulsa el botón **Atenuación automática** en la pantalla del coche — alternar la
+Con [**Apagar la pantalla del teléfono**](/docs/es/settings/#root_screen_off) activado, la pantalla táctil se apaga junto con el panel, así que tocar el teléfono no hace nada.
+Pulsa el botón [**Atenuación automática**](/docs/es/settings/#map_action_auto_dim) en la pantalla del coche — alternar la
 atenuación automática enciende la pantalla (antes tienes que activar el botón en
-**Botones en pantalla → Botones de función**; viene desactivado). O pulsa el botón de
+[**Botones en pantalla → Botones de función**](/docs/es/settings/#category_control_buttons); viene desactivado). O pulsa el botón de
 encendido del teléfono **dos veces**, ya que la primera pulsación es la que pone el
 sistema en reposo. Detener la duplicación o desconectar Android Auto también vuelve a
 encender la pantalla.

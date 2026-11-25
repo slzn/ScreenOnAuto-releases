@@ -53,6 +53,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/assets/styles.css">
+{%- if page.settings_phone %}
+<link rel="stylesheet" href="/assets/settings-phone.css">
+<script src="/assets/settings-phone.js" defer></script>
+{%- endif %}
 </head>
 <body>
 {%- if page.lang == "en" %}{% assign home = "/" %}{% else %}{% assign home = "/" | append: page.lang | append: "/" %}{% endif %}
@@ -63,7 +67,7 @@
   </div>
 </header>
 
-<main class="wrap doc">
+<main class="wrap doc{% if page.settings_phone %} doc-wide{% endif %}">
 {{ content }}
 
 {%- assign updated = page.last_modified_at | default: page.date %}

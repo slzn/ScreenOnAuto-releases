@@ -40,13 +40,13 @@ Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都�
 兩個都試試，哪個在你的車機上表現好就用哪個。兩者顯示的是同一個鏡像，隨時可以切換——鏡像啟動後，打開另一個入口會直接顯示，不會再次要求權限。
 
 > **💡 小技巧**
-> 如果之前開過 **ScreenOnAuto**（全螢幕入口），現在想改用 **ScreenOnAuto (Legacy)**，建議先在車機上打開地圖 app（例如 Google 地圖）再啟動 Legacy 鏡像。這樣車機會把地圖 app 重新設回預設地圖，地圖相關的操作就不會被全螢幕鏡像佔用。
+> 如果之前開過 <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**（全螢幕入口），現在想改用 <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**，建議先在車機上打開地圖 app（例如 Google 地圖）再啟動 Legacy 鏡像。這樣車機會把地圖 app 重新設回預設地圖，地圖相關的操作就不會被全螢幕鏡像佔用。
 
 ## 開始鏡像
 
 ### 開啟「自動開始鏡像」（建議）
 
-1. 在手機的 app 中開啟**自動開始鏡像**（只需設定一次）。
+1. 在手機的 app 中開啟[**自動開始鏡像**](/docs/zh-TW/settings/#auto_start_mirror)（只需設定一次）。
 2. 把手機連上車機，在 Android Auto 啟動器點任一個 ScreenOnAuto 入口（<img src="/images/icon_launcher.png" width="24" align="middle" alt="ScreenOnAuto 圖示"> 或 <img src="/images/icon_legacy.png" width="24" align="middle" alt="ScreenOnAuto (Legacy) 圖示">）。
 3. 手機會自動跳出螢幕擷取權限對話框——拿起手機點**立即開始**（Start now）：
 
@@ -72,15 +72,19 @@ Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都�
 
 ### 跳過權限對話框
 
-不想每個工作階段都跳對話框？可以用 ADB 預先授權一次——見 [使用 ADB 授予鏡像權限](/docs/zh-TW/grant-mirror-permission-via-adb/)。
+不想每個工作階段都跳對話框？可以用 ADB 預先授權一次——見 [使用 ADB 授予鏡像權限](/docs/zh-TW/grant-mirror-permission-via-adb/)。再開啟[**在背景開始鏡像**](/docs/zh-TW/settings/#silent_car_start)，ScreenOnAuto 的設定頁也不會跳到手機前景：在車機上點入口後，手機上什麼都不會出現，鏡像直接開始。
 
 ## 停止鏡像
 
 以下任一方式都可以：
 
-- **斷開車機連線** — 鏡像自動停止（預設的「斷線時停止」設定）。
+- **斷開車機連線** — 鏡像自動停止（預設開啟的[「斷線時停止」](/docs/zh-TW/settings/#stop_on_disconnect)設定）。
 - 點手機常駐通知上的**停止鏡像**。
 - 在 app 裡點**停止鏡像**。
+
+## 設定說明
+
+每個設定的用途、什麼時候該開、有哪些限制，都寫在[設定說明](/docs/zh-TW/settings/)裡，旁邊還有可以實際操作的設定畫面。
 
 ## 疑難排解
 
@@ -92,14 +96,14 @@ Android Auto 的 app 啟動器中有**兩個**鏡像入口。兩者鏡像的都�
 
 #### 畫面周圍有黑邊
 
-手機和車機螢幕比例不同所致。點鏡像畫面上的**鎖定方向**按鈕（或開啟設定中的**連線時鎖定方向**）。若要完全貼合車機可用的畫面，請開啟特權功能中的**讓手機畫面比例對齊車機**（需要 Shizuku 或 root）。
+手機和車機螢幕比例不同所致。點鏡像畫面上的[**鎖定方向**](/docs/zh-TW/settings/#map_action_force_landscape)按鈕（或開啟設定中的[**連線時鎖定方向**](/docs/zh-TW/settings/#force_landscape)）。也可以用[**調整鏡像寬度、調整鏡像高度**](/docs/zh-TW/settings/#vd_gap)把畫面放大、蓋掉黑邊（邊緣會被切掉一點），設定說明裡有示意圖。若要完全貼合車機可用的畫面，請開啟特權功能中的[**讓手機畫面比例對齊車機**](/docs/zh-TW/settings/#root_display_override)（需要 Shizuku 或 root）。
 
 #### 版面變動後畫面被拉伸/變形
 
 分割檢視中可視區域變大或變小時就會發生。旋轉手機、讓畫面在直式與橫式之間切換一次，就能恢復正常（若開著**鎖定方向**，請先用畫面上的按鈕解除）。另外也有兩個設定可以改善：
 
-- 開啟**設定 → 進階 → 固定鏡像尺寸**，鏡像會維持原尺寸不變形（可能被部分遮住）。適用於全螢幕的 **ScreenOnAuto** 入口。
-- 開啟**設定 → 進階 → 自繪鏡像（實驗性）**。鏡像畫面改由 app 自行繪製，不再交給系統縮放，分割檢視時就不會變形。耗電略增，切換後於下次開始鏡像時生效。**讓手機畫面比例對齊車機**（特權功能）以另一種方式解決同一個問題，兩者可以同時開啟。
+- 開啟[**設定 → 進階 → 固定鏡像尺寸**](/docs/zh-TW/settings/#nav_fixed_size)，鏡像會維持原尺寸不變形（可能被部分遮住）。只適用於全螢幕的 <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** 入口。
+- 開啟[**設定 → 進階 → 自繪鏡像（實驗性）**](/docs/zh-TW/settings/#self_draw)。鏡像畫面改由 app 自行繪製，不再交給系統縮放，分割檢視時就不會變形。耗電略增，切換後於下次開始鏡像時生效。[**讓手機畫面比例對齊車機**](/docs/zh-TW/settings/#root_display_override)（特權功能）以另一種方式解決同一個問題，兩者可以同時開啟。
 
 #### 鏡像時 Android Auto 的 Google 地圖變黑
 
@@ -117,4 +121,4 @@ USB 連線會讓手機進入配件模式，這會重啟 ADB 並一併帶走 Shiz
 
 #### 螢幕關閉後如何再喚醒
 
-觸控面板會隨螢幕一同斷電，因此點手機不會有反應。點車機畫面上的**自動調暗**按鈕即可——切換自動調暗會喚醒螢幕（前提是已在**畫面按鈕 → 功能按鈕**中開啟它，該按鈕預設為關閉）；或連按手機電源鍵**兩次**，因為第一下是讓系統進入休眠。停止鏡像或中斷 Android Auto 也會讓螢幕恢復。
+開啟[**關閉手機螢幕**](/docs/zh-TW/settings/#root_screen_off)後，觸控面板會隨螢幕一同斷電，因此點手機不會有反應。點車機畫面上的[**自動調暗**](/docs/zh-TW/settings/#map_action_auto_dim)按鈕即可——切換自動調暗會喚醒螢幕（前提是已在[**畫面按鈕 → 功能按鈕**](/docs/zh-TW/settings/#category_control_buttons)中開啟它，該按鈕預設為關閉）；或連按手機電源鍵**兩次**，因為第一下是讓系統進入休眠。停止鏡像或中斷 Android Auto 也會讓螢幕恢復。

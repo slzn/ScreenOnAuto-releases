@@ -115,7 +115,7 @@ Você deve ver estas **duas** entradas do ScreenOnAuto:
 Versões mais antigas do Android Auto também mostram uma terceira entrada, **ScreenOnAuto Controlador de mídia**. Se ela não aparecer, é normal — o controle de mídia funciona do mesmo jeito.
 Se faltar qualquer uma das **duas** entradas acima, reinstale — pelo KingInstaller no sideload, ou aguarde a instalação do Play terminar — e abra o Android Auto de novo. No caminho AAWireless, confira se o Developer Mode e Fontes desconhecidas continuam ativados.
 
-Tudo pronto? Veja **[Como Usar](https://github.com/slzn/ScreenOnAuto-releases/wiki/Como-Usar)** para iniciar o espelhamento no carro.
+Tudo pronto? Veja **[Como Usar](https://github.com/slzn/ScreenOnAuto-releases/wiki/Como-Usar)** para iniciar o espelhamento no carro. Cada configuração é explicada no **[Guia de configurações](https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/)**.
 
 ## Permissões
 

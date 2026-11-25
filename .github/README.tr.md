@@ -115,7 +115,7 @@ Telefonunuzda **Ayarlar → Bağlı cihazlar → Android Auto → Başlatıcıy�
 Eski Android Auto sürümleri üçüncü bir öğe de gösterir: **ScreenOnAuto Medya Denetleyicisi**. Görmüyorsanız bu normaldir — medya kontrolü yine çalışır.
 Yukarıdaki **iki** öğeden biri eksikse yeniden yükleyin — sideload için KingInstaller ile, Play için kurulumun bitmesini bekleyin — ve Android Auto'yu yeniden açın. AAWireless yönteminde Developer Mode ve Bilinmeyen kaynaklar ayarlarının hâlâ açık olduğunu kontrol edin.
 
-Hazır mısınız? Arabada yansıtmayı başlatmak için **[Nasıl Kullanılır](https://github.com/slzn/ScreenOnAuto-releases/wiki/Nasıl-Kullanılır)** kılavuzuna bakın.
+Hazır mısınız? Arabada yansıtmayı başlatmak için **[Nasıl Kullanılır](https://github.com/slzn/ScreenOnAuto-releases/wiki/Nasıl-Kullanılır)** kılavuzuna bakın. Her ayarın ne işe yaradığı **[Ayarlar Rehberi](https://screenonauto.lzn.idv.tw/docs/tr/settings/)** sayfasında anlatılıyor.
 
 ## İzinler
 

@@ -115,7 +115,7 @@ ScreenOnAuto 항목 **두 개**가 보여야 합니다:
 이전 버전의 Android Auto에서는 세 번째 항목인 **ScreenOnAuto 미디어 컨트롤러**도 표시됩니다. 보이지 않아도 정상이며, 미디어 제어는 그대로 작동합니다.
 위의 **두** 항목 중 하나라도 없다면, 사이드로드는 KingInstaller로 다시 설치하고 Play 설치는 설치가 끝났는지 확인한 뒤 Android Auto를 다시 여세요. AAWireless 방식이라면 Developer Mode와 알 수 없는 출처가 여전히 켜져 있는지 확인하세요.
 
-준비되셨나요? 차량에서 미러링을 시작하는 방법은 **[사용 방법](https://github.com/slzn/ScreenOnAuto-releases/wiki/사용-방법)** 을 참고하세요.
+준비되셨나요? 차량에서 미러링을 시작하는 방법은 **[사용 방법](https://github.com/slzn/ScreenOnAuto-releases/wiki/사용-방법)** 을 참고하세요. 각 설정에 대한 설명은 **[설정 안내](https://screenonauto.lzn.idv.tw/docs/ko/settings/)** 를 참고하세요.
 
 ## 권한
 

@@ -1,0 +1,207 @@
+/* The settings manual (docs/<lang>/settings/): a two-column page with a sticky replica of the
+   app's settings screens (assets/settings-phone.js) beside the text. Colours are the site's
+   night-drive tokens from styles.css — the app uses the same palette since v1.11.0. */
+
+.doc.doc-wide { max-width: 1200px; }
+.sp-aside { margin: 8px 0 28px; }
+@media (min-width: 1100px) {
+  .doc.doc-wide { display: grid; grid-template-columns: 426px minmax(0, 1fr); column-gap: 36px; align-items: start; }
+  .doc-wide > .sp-aside { grid-column: 1; grid-row: 1 / span 3; position: sticky; top: 16px; margin: 24px 0 0; }
+  .doc-wide > .sp-intro, .doc-wide > .sp-doc, .doc-wide > .updated { grid-column: 2; }
+  .doc-wide > .sp-intro { grid-row: 1; }
+  .doc-wide > .sp-doc { grid-row: 2; }
+  .doc-wide > .updated { grid-row: 3; }
+  .doc-wide > .sp-doc, .doc-wide > .sp-intro { max-width: 760px; }
+}
+.sp-hint { font-size: 0.85rem; color: var(--muted); max-width: 426px; margin: 10px auto 0; padding-inline-start: 46px; box-sizing: border-box; }
+
+/* ---------- phone ---------- */
+#settings-phone {
+  --sp-track: light-dark(#c3ccd5, #33414f); --sp-thumb: light-dark(#ffffff, #90a2b3);
+  --sp-track-on: light-dark(rgba(47,125,79,.45), rgba(76,181,120,.45)); --sp-hover: light-dark(rgba(0,0,0,.035), rgba(255,255,255,.04));
+  --sp-gut: 16px;
+  position: relative; max-width: 426px; margin: 0 auto; padding-inline-start: 46px; box-sizing: border-box;
+}
+/* the number gutter: outside the phone's frame, so the replica itself is untouched */
+.sp-nums { position: absolute; left: 0; width: 46px; overflow: hidden; pointer-events: none; }
+/* nowrap: two-digit numbers (3-10) must never fold, whatever font width the fallback has */
+.sp-num { position: absolute; right: 6px; height: 18px; min-width: 24px; padding: 0 5px; white-space: nowrap; letter-spacing: -0.02em; box-sizing: border-box; pointer-events: auto; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; border: 1px solid var(--border); border-radius: 9px; background: var(--bg);
+  font: 500 11px/1 "IBM Plex Mono", ui-monospace, monospace; color: var(--muted); }
+.sp-num:hover { color: var(--accent); border-color: var(--accent); }
+.sp-num.sp-flash { color: var(--accent); border-color: var(--accent); }
+.sp-phone {
+  position: relative; display: flex; flex-direction: column; width: 100%; max-width: 380px; margin: 0;
+  height: min(760px, calc(100vh - 40px)); min-height: 480px; overflow: hidden;
+  background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 26px;
+  box-shadow: var(--shadow); font-family: Roboto, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 14px; line-height: 1.4;
+}
+@media (max-width: 1099px) { .sp-phone { height: min(640px, 75vh); } }
+.sp-tbar { flex: none; display: flex; align-items: center; gap: 18px; height: 56px; padding: 0 16px; font-size: 19px; font-weight: 500; border-bottom: 1px solid var(--border); }
+.sp-tbar button { font: inherit; font-size: 22px; line-height: 1; background: none; border: 0; color: inherit; padding: 4px; cursor: pointer; }
+.sp-list { flex: 1; overflow-y: auto; overscroll-behavior: contain; padding-bottom: 12px; }
+.sp-list.icons { --sp-gut: 56px; }
+
+.sp-cat { display: flex; align-items: baseline; gap: 12px; padding-block: 16px 4px; padding-inline: var(--sp-gut) 16px; border-top: 1px solid var(--border); margin-top: 8px; }
+.sp-cat:first-child { border-top: 0; margin-top: 0; }
+.sp-cat[data-doc] { cursor: pointer; }
+.sp-ct { flex: 1; min-width: 0; }
+.sp-ct b { display: block; font-size: 14px; font-weight: 500; color: var(--accent); }
+.sp-ct > span { display: block; color: var(--muted); margin-top: 2px; }
+.sp-meta { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.sp-subhead { display: flex; align-items: center; gap: 10px; padding-block: 14px 2px; padding-inline: var(--sp-gut) 16px; font-size: 13px; font-weight: 500; color: var(--muted); }
+.sp-subhead::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+
+.sp-row { display: flex; align-items: center; gap: 14px; min-height: 48px; padding-block: 12px; padding-inline: var(--sp-gut) 16px; cursor: pointer; }
+.sp-row:hover, .sp-cat[data-doc]:hover, .sp-conn:hover { background: var(--sp-hover); }
+.sp-list.icons .sp-row:has(.sp-ic) { padding-inline-start: 16px; }
+.sp-row.tv { align-items: flex-start; }
+.sp-t { flex: 1; min-width: 0; }
+.sp-ti { font-size: 16px; line-height: 1.35; }
+.sp-su { color: var(--muted); margin-top: 2px; }
+.sp-row.off .sp-t, .sp-row.off .sp-val, .sp-row.off .sp-ic { opacity: .4; }
+.sp-ic { flex: none; width: 24px; height: 24px; margin-inline-end: 2px; color: var(--muted); }
+.sp-ic svg { display: block; width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.sp-val { flex: none; max-width: 45%; text-align: end; color: var(--muted); }
+.sp-val.num { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 13px; }
+.sp-row.tv .sp-val { padding-top: 2px; }
+.sp-auto { margin-inline-end: 6px; font-family: Roboto, system-ui, sans-serif; font-size: 12px; }
+.sp-chev { flex: none; color: var(--muted); font-size: 18px; }
+.sp-vdiv { flex: none; width: 1px; align-self: stretch; margin: -4px 0; background: var(--border); }
+.sp-chip { flex: none; font-size: 12px; font-weight: 500; padding: 2px 9px; border-radius: 999px; border: 1px solid currentColor; color: var(--amber); }
+.sp-tag { display: inline-block; vertical-align: 2px; margin-inline-start: 6px; padding: 0 6px; font-size: 11px; font-weight: 400; line-height: 16px;
+  border: 1px solid var(--border); border-radius: 4px; color: var(--muted); white-space: nowrap; }
+.sp-tag.exp { color: var(--amber); border-color: var(--amber); }
+
+.sp-sw { flex: none; position: relative; width: 36px; height: 14px; padding: 0; border: 0; border-radius: 7px; background: var(--sp-track); cursor: pointer; }
+.sp-sw::after { content: ""; position: absolute; top: -3px; left: -2px; width: 20px; height: 20px; border-radius: 50%; background: var(--sp-thumb); box-shadow: 0 1px 3px rgba(0,0,0,.4); transition: left .15s; }
+.sp-sw.on { background: var(--sp-track-on); }
+.sp-sw.on::after { left: 18px; background: var(--accent); }
+.sp-sw:disabled { opacity: .4; cursor: default; }
+span.sp-sw { cursor: inherit; }
+
+.sp-slider { display: flex; align-items: center; gap: 12px; padding-block: 0 14px; padding-inline: var(--sp-gut) 16px; }
+.sp-tr { position: relative; flex: 1; height: 4px; border-radius: 2px; background: var(--sp-track); }
+.sp-tr i { position: absolute; inset: 0 auto 0 0; border-radius: 2px; background: var(--accent); }
+.sp-tr i::after { content: ""; position: absolute; right: -8px; top: -6px; width: 16px; height: 16px; border-radius: 50%; background: var(--accent); }
+.sp-slider span { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 13px; color: var(--muted); }
+
+/* the head-unit status bezel: a "screen" surface, dark in both themes */
+.sp-bezel { display: grid; gap: 12px; margin: 10px 12px 8px; padding: 16px 16px 14px; border-radius: 12px; cursor: pointer;
+  background: var(--panel); border: 1px solid var(--panel-line); color: #e9eff5; box-shadow: inset 0 1px 0 rgba(255,255,255,.07); }
+.sp-link { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--panel-text); }
+.sp-dot { flex: none; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #4a5866; }
+.sp-dot.live { background: #4cb578; box-shadow: 0 0 0 3px rgba(76,181,120,.18); }
+.sp-dims { margin-inline-start: auto; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; }
+.sp-state { display: flex; align-items: center; gap: 12px; }
+.sp-big { flex: 1; min-width: 0; font-size: 21px; font-weight: 700; line-height: 1.2; }
+.sp-big small { display: block; margin-top: 3px; font-size: 13px; font-weight: 400; color: var(--panel-text); }
+.sp-live { display: inline-block; width: 10px; height: 10px; margin-inline-end: 10px; vertical-align: 3px; border-radius: 50%; background: #4cb578; animation: sp-breathe 2.4s ease-in-out infinite; }
+@keyframes sp-breathe { 0%, 100% { box-shadow: 0 0 0 0 rgba(76,181,120,.45); } 50% { box-shadow: 0 0 0 6px rgba(76,181,120,0); opacity: .7; } }
+.sp-go { flex: none; display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; cursor: pointer;
+  font: inherit; font-size: 15px; font-weight: 600; background: #4cb578; color: #081009; border: 1px solid #4cb578; }
+.sp-go.stop { background: #1f2a36; color: #e9eff5; border-color: #3a4a5a; }
+.sp-go svg { width: 12px; height: 12px; fill: currentColor; }
+.sp-perm { display: flex; align-items: center; gap: 8px; padding: 8px 10px; text-align: start; cursor: pointer;
+  font: inherit; font-size: 13px; color: #d9a441; background: var(--panel-raise); border: 1px solid var(--panel-line); border-radius: 8px; }
+.sp-perm svg { flex: none; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.sp-perm span { flex: 1; }
+.sp-perm .sp-chev { flex: none; color: inherit; font-size: inherit; }
+
+/* the privileged connection box */
+.sp-conn { display: flex; align-items: center; gap: 12px; margin: 4px 16px 8px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; cursor: pointer; }
+.sp-conn .sp-ti { display: flex; align-items: center; gap: 8px; }
+.sp-conn .sp-su { font-size: 13px; }
+.sp-act { flex: none; padding: 7px 14px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 14px; font-weight: 600;
+  color: var(--accent); background: none; border: 1px solid var(--accent); }
+.sp-act.quiet { color: var(--text); border-color: var(--muted); font-weight: 500; }
+
+.sp-toast { position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 2; width: max-content; max-width: calc(100% - 48px);
+  padding: 10px 16px; border-radius: 20px; background: #323232; color: #fff; font-size: 13px; text-align: center; opacity: 0; transition: opacity .2s; pointer-events: none; }
+.sp-toast.show { opacity: 1; }
+#settings-phone :focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+/* the status panel's buttons, drawn inline in the manual's text exactly as the phone draws them
+   (same fixed colours in both themes, as in the app) */
+.sp-ui-go { display: inline-flex; align-items: center; gap: 5px; padding: 0 9px; border-radius: 999px; white-space: nowrap; vertical-align: 0.08em;
+  font-size: 0.82em; font-weight: 600; line-height: 1.45; background: #4cb578; color: #081009; border: 1px solid #4cb578; }
+.sp-ui-go.stop { background: #1f2a36; color: #e9eff5; border-color: #3a4a5a; }
+.sp-ui-go svg { width: 9px; height: 9px; fill: currentColor; flex: none; }
+
+/* the two Android Auto launcher entries, inline in the text (same icons as How to Use) */
+.doc img.sp-entry { width: 24px; height: 24px; max-height: none; border-radius: 0; vertical-align: -6px; margin: 0 1px; }
+
+/* numbered steps: quieter than the site's big filled circles (How to Use keeps those), in the
+   same outlined mono style as the section numbers */
+.sp-doc ol > li { padding-inline-start: 32px; margin: 8px 0; }
+.sp-doc ol > li::before { top: 3px; width: 20px; height: 20px; box-sizing: border-box; background: none; border: 1px solid var(--border);
+  color: var(--muted); font: 500 11px/1 "IBM Plex Mono", ui-monospace, monospace; }
+
+.sp-doc ol > li:has(.sp-who.you)::before { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+/* who does a step: only the reader's own steps are marked ("You"), automatic ones are left plain */
+.sp-who { display: inline-block; min-width: 2.6em; margin-inline-end: 6px; padding: 0 6px; text-align: center; vertical-align: 1px;
+  font-size: 0.75rem; line-height: 1.55; border: 1px solid var(--border); border-radius: 4px; color: var(--muted); white-space: nowrap; }
+.sp-who.you { color: var(--accent); border-color: var(--accent); font-weight: 600; }
+
+/* a mirror's name in the text gets its launcher icon in front: <span class="sp-mirror nav|legacy">.
+   Marked up rather than matched, since "ScreenOnAuto" alone is also the app's name. */
+/* The name may wrap (a long one, as in de or ar, would otherwise widen a phone-sized page), but
+   the icon never parts from its first word: it is an inline box holding a word joiner (U+2060,
+   no break allowed after it), with the icon painted in its padding. Logical padding puts it on the
+   right side in RTL by itself. */
+.sp-mirror::before { content: "\2060"; padding-inline-start: 1.2em; margin-inline-end: 0.25em;
+  background: center / 1.2em 1.2em no-repeat; }
+.sp-mirror.nav::before { background-image: url(/images/icon_launcher.png); }
+.sp-mirror.legacy::before { background-image: url(/images/icon_legacy.png); }
+
+/* diagrams (images/settings/*.svg, no text inside so every language shares them): before/after pairs */
+.sp-figs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 18px; margin: 16px 0 20px; }
+.sp-figs.one { grid-template-columns: minmax(0, 1fr); max-width: 50%; }
+.sp-figs figure { margin: 0; }
+.doc .sp-figs img { display: block; width: 100%; max-height: none; border-radius: 10px; background: #243140; border: 1px solid var(--panel-line); }   /* lighter than the bars, which are pure black */
+.sp-figs figcaption { margin-top: 6px; font-size: 0.85rem; color: var(--muted); line-height: 1.45; }
+@media (max-width: 600px) { .sp-figs.one { max-width: none; } }
+
+/* chapters = the app's four settings pages; their number is the first half of every "1-x" */
+.sp-doc { counter-reset: sp-ch; }
+.sp-doc h2 { counter-increment: sp-ch; display: flex; align-items: center; gap: 12px; font-size: 1.75rem;
+  margin-top: 2.2em; padding-top: 0.8em; border-top: 1px solid var(--border); }
+.sp-doc > h2:first-child { margin-top: 0.6em; }   /* right after the intro: the rule is enough of a break */
+.sp-doc h2::before { content: counter(sp-ch); flex: none; display: inline-flex; align-items: center; justify-content: center;
+  width: 1.3em; height: 1.3em; border-radius: 50%; border: 1.5px solid var(--accent); color: var(--accent);
+  font: 600 0.62em/1 "IBM Plex Mono", ui-monospace, monospace; }
+
+/* ---------- linking phone and text ---------- */
+.sp-doc h2[id], .sp-doc h3[id], .sp-doc h4[id] { scroll-margin-top: 16px; }
+.sp-show { white-space: nowrap; margin-inline-start: 10px; padding: 2px 9px; vertical-align: 2px; cursor: pointer;
+  font: 500 0.75rem "IBM Plex Mono", ui-monospace, monospace; color: var(--accent); background: none; border: 1px solid var(--border); border-radius: 999px; }
+.sp-show:hover { border-color: var(--accent); }
+/* the arrow points at the phone: up-left beside it, straight up where it sits above the text */
+.sp-show::before { content: "↖"; margin-inline-end: 4px; font: 600 1.05rem/1 system-ui, sans-serif; vertical-align: -1px; }
+@media (max-width: 1099px) { .sp-show::before { content: "↑"; } }
+.sp-flash { animation: sp-flash 1.6s ease-out; border-radius: 6px; }
+@keyframes sp-flash { 0%, 30% { background: color-mix(in srgb, var(--accent) 22%, transparent); } 100% { background: transparent; } }
+@media (prefers-reduced-motion: reduce) { .sp-live, .sp-flash { animation: none; } .sp-sw::after { transition: none; } }
+/* long identifiers (the Android 16 compat-override name) must wrap on a phone, not widen the page */
+.sp-doc code { overflow-wrap: anywhere; }
+/* on a phone-sized screen every pixel of the replica counts: narrower gutter, tighter numbers */
+@media (max-width: 600px) {
+  #settings-phone, .sp-hint { padding-inline-start: 36px; }
+  .sp-nums { width: 36px; }
+  .sp-num { right: 1px; min-width: 0; padding: 0 3px; font-size: 10px; }
+}
+
+/* ---------- right-to-left (ar) ----------
+   Paddings above are logical, so rows, tags and the gutter's indent mirror by themselves; the
+   grid puts the phone on the right. What is still physical is set here: the number gutter's
+   side, the switch thumb and slider (Android mirrors them under RTL), the arrows' direction. */
+[dir="rtl"] .sp-nums { left: auto; right: 0; }
+[dir="rtl"] .sp-num { right: auto; left: 6px; }
+[dir="rtl"] .sp-sw::after { left: auto; right: -2px; transition: right .15s; }
+[dir="rtl"] .sp-sw.on::after { left: auto; right: 18px; }
+[dir="rtl"] .sp-tr i { inset: 0 0 0 auto; }
+[dir="rtl"] .sp-tr i::after { right: auto; left: -8px; }
+[dir="rtl"] .sp-tbar button, [dir="rtl"] .sp-chev { display: inline-block; transform: scaleX(-1); }
+[dir="rtl"] .sp-show::before { content: "↗"; }
+@media (max-width: 1099px) { [dir="rtl"] .sp-show::before { content: "↑"; } }
+@media (max-width: 600px) { [dir="rtl"] .sp-num { left: 1px; } }

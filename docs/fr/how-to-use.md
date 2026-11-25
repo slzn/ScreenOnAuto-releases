@@ -45,8 +45,8 @@ une fois la duplication lancée, ouvrir l'autre entrée l'affiche immédiatement
 redemander de permission.
 
 > **💡 Astuce**
-> Si vous avez déjà ouvert **ScreenOnAuto** (l'entrée plein écran) et souhaitez
-> maintenant utiliser **ScreenOnAuto (Legacy)**, ouvrez d'abord votre app de carte
+> Si vous avez déjà ouvert <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (l'entrée plein écran) et souhaitez
+> maintenant utiliser <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**, ouvrez d'abord votre app de carte
 > (par ex. Google Maps) sur l'écran de la voiture, puis lancez la duplication Legacy.
 > Cela rétablit l'app de carte comme carte par défaut de l'écran de la voiture, pour
 > que les fonctions liées à la carte ne restent pas prises par la duplication plein écran.
@@ -55,7 +55,7 @@ redemander de permission.
 
 ### Avec le démarrage automatique activé (recommandé)
 
-1. Dans l'app sur le téléphone, activez **Démarrage automatique** (réglage à faire une fois).
+1. Dans l'app sur le téléphone, activez [**Démarrage automatique**](/docs/fr/settings/#auto_start_mirror) (réglage à faire une fois).
 2. Connectez le téléphone à la voiture et touchez une entrée ScreenOnAuto
    (<img src="/images/icon_launcher.png" width="24" align="middle" alt="Icône ScreenOnAuto"> ou
    <img src="/images/icon_legacy.png" width="24" align="middle" alt="Icône ScreenOnAuto (Legacy)">) dans le lanceur
@@ -90,16 +90,20 @@ Si vous préférez laisser le **démarrage automatique** désactivé :
 ### Éviter la boîte de dialogue de permission
 
 Fatigué de voir la boîte de dialogue à chaque fois ? Vous pouvez pré-accorder la
-permission une fois via ADB — voir [Accorder la permission de duplication via ADB](/docs/fr/grant-mirror-permission-via-adb/).
+permission une fois via ADB — voir [Accorder la permission de duplication via ADB](/docs/fr/grant-mirror-permission-via-adb/). Activez en plus [**Lancer la duplication en arrière-plan**](/docs/fr/settings/#silent_car_start) et l'écran des réglages de ScreenOnAuto ne s'affiche pas non plus sur le téléphone : vous touchez l'entrée dans la voiture, rien n'apparaît sur le téléphone et la duplication démarre.
 
 ## Arrêter la duplication
 
 Au choix :
 
 - **Déconnectez le téléphone de la voiture** — la duplication s'arrête automatiquement
-  (réglage par défaut *Arrêter à la déconnexion*).
+  (réglage par défaut [*Arrêter à la déconnexion*](/docs/fr/settings/#stop_on_disconnect)).
 - Touchez **Arrêter la duplication** sur la notification persistante du téléphone.
 - Touchez **Arrêter la duplication** dans l'app.
+
+## Guide des réglages
+
+Le rôle de chaque réglage, quand l'activer et ses limites sont expliqués dans le [Guide des réglages](/docs/fr/settings/), à côté d'une reproduction de l'écran des réglages que vous pouvez manipuler.
 
 ## Dépannage
 
@@ -113,10 +117,10 @@ le téléphone, ou lancez-la avec **Démarrer la duplication** dans l'app.
 #### Bandes noires autour de l'image
 
 Le téléphone et l'écran de la voiture ont des formats différents. Utilisez le bouton
-**Verrouiller l'orientation** sur l'écran de duplication (ou **Verrouiller automatiquement
-l'orientation** dans les réglages). Pour remplir exactement la zone utile de la voiture,
-activez **Adapter l'écran du téléphone à celui de la voiture** dans les Fonctions
-privilégiées (Shizuku ou root).
+[**Verrouiller l'orientation**](/docs/fr/settings/#map_action_force_landscape) sur l'écran de duplication (ou [**Verrouiller automatiquement
+l'orientation**](/docs/fr/settings/#force_landscape) dans les réglages). Pour remplir exactement la zone utile de la voiture,
+activez [**Adapter l'écran du téléphone à celui de la voiture**](/docs/fr/settings/#root_display_override) dans les Fonctions
+privilégiées (Shizuku ou root). [**Ajuster la largeur de la duplication, Ajuster la hauteur de la duplication**](/docs/fr/settings/#vd_gap) peuvent aussi agrandir l'image par-dessus les bandes, au prix d'un peu de bord rogné ; le Guide des réglages l'explique avec des schémas.
 
 #### Image étirée ou déformée après un changement de disposition
 
@@ -124,13 +128,12 @@ Cela se produit quand la zone visible grandit ou rétrécit en vue partagée. Fa
 le téléphone pour que l'écran passe du portrait au paysage rétablit l'image (si **Verrouiller l'orientation** est actif, désactivez-le d'abord avec son bouton à l'écran). Deux réglages
 peuvent aussi corriger cela :
 
-- Activez **Réglages → Avancé → Taille fixe de la duplication**. La duplication garde
-  alors sa taille au lieu de se déformer (une partie peut être masquée). S'applique à
-  l'entrée plein écran **ScreenOnAuto**.
-- Activez **Réglages → Avancé → Duplication dessinée par l'application (expérimental)**.
+- Activez [**Réglages → Avancé → Taille fixe de la duplication**](/docs/fr/settings/#nav_fixed_size). La duplication garde
+  alors sa taille au lieu de se déformer (une partie peut être masquée). S'applique uniquement à l'entrée plein écran <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**.
+- Activez [**Réglages → Avancé → Duplication dessinée par l'application (expérimental)**](/docs/fr/settings/#self_draw).
   L'application dessine alors elle-même l'image de la duplication au lieu de laisser le
   système la redimensionner : elle ne se déforme plus en vue partagée. Cela consomme un peu plus de batterie et prend effet au prochain démarrage
-  de la duplication. **Adapter l'écran du téléphone à celui de la voiture** (Fonctions privilégiées) résout le même problème autrement, et les deux peuvent être activées en même temps.
+  de la duplication. [**Adapter l'écran du téléphone à celui de la voiture**](/docs/fr/settings/#root_display_override) (Fonctions privilégiées) résout le même problème autrement, et les deux peuvent être activées en même temps.
 
 #### Google Maps dans Android Auto devient noir pendant la duplication
 
@@ -154,10 +157,10 @@ fil ne sont pas concernés.
 
 #### Réveiller l'écran après son extinction
 
-La dalle tactile s'éteint avec l'écran, toucher le téléphone ne fait donc rien. Touchez
-le bouton **Atténuation automatique** sur l'écran de la voiture — basculer l'atténuation
-automatique réveille l'écran (activez d'abord le bouton dans **Boutons à l'écran →
-Boutons de fonction** ; il est désactivé par défaut). Ou appuyez **deux fois** sur le
+Quand [**Éteindre l'écran du téléphone**](/docs/fr/settings/#root_screen_off) est activé, la dalle tactile s'éteint avec l'écran, toucher le téléphone ne fait donc rien. Touchez
+le bouton [**Atténuation automatique**](/docs/fr/settings/#map_action_auto_dim) sur l'écran de la voiture — basculer l'atténuation
+automatique réveille l'écran (activez d'abord le bouton dans [**Boutons à l'écran →
+Boutons de fonction**](/docs/fr/settings/#category_control_buttons) ; il est désactivé par défaut). Ou appuyez **deux fois** sur le
 bouton d'alimentation du téléphone, car la première pression est celle qui met le
 système en veille. Arrêter la duplication ou déconnecter Android Auto rallume aussi
 l'écran.

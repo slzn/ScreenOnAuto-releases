@@ -115,7 +115,7 @@ You should see these **two** ScreenOnAuto entries:
 Older Android Auto also lists a third entry, **ScreenOnAuto Media Controller**. If you don't see it, that's normal — media control works either way.
 If either of the **two** entries above is missing, reinstall — through KingInstaller for a sideload, or let the Play install finish — then reopen Android Auto. On the AAWireless route, check that Developer Mode and Unknown sources are still on.
 
-Ready to go? See **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use)** for starting the mirror in the car.
+Ready to go? See **[How to Use](https://github.com/slzn/ScreenOnAuto-releases/wiki/How-to-Use)** for starting the mirror in the car. Every setting is explained in the **[Settings Guide](https://screenonauto.lzn.idv.tw/docs/en/settings/)**.
 
 ## Permissions
 

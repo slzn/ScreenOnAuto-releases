@@ -42,8 +42,8 @@ yang sama, dan Anda bisa berpindah di antaranya kapan saja — saat pencerminan 
 membuka entri yang lain langsung menampilkannya tanpa meminta izin lagi.
 
 > **💡 Tips**
-> Jika sebelumnya Anda pernah membuka **ScreenOnAuto** (entri layar penuh) dan sekarang ingin
-> memakai **ScreenOnAuto (Legacy)**, buka dulu aplikasi peta Anda (mis. Google Maps) di layar
+> Jika sebelumnya Anda pernah membuka <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** (entri layar penuh) dan sekarang ingin
+> memakai <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**, buka dulu aplikasi peta Anda (mis. Google Maps) di layar
 > mobil, baru kemudian mulai pencerminan Legacy. Dengan begitu aplikasi peta kembali menjadi
 > peta default di layar mobil, sehingga fungsi yang terkait peta tidak diambil alih oleh
 > pencerminan layar penuh.
@@ -52,7 +52,7 @@ membuka entri yang lain langsung menampilkannya tanpa meminta izin lagi.
 
 ### Dengan Mulai pencerminan otomatis AKTIF (disarankan)
 
-1. Di aplikasi pada ponsel, aktifkan **Mulai pencerminan otomatis** (pengaturan sekali saja).
+1. Di aplikasi pada ponsel, aktifkan [**Mulai pencerminan otomatis**](/docs/id/settings/#auto_start_mirror) (pengaturan sekali saja).
 2. Hubungkan ponsel ke mobil lalu ketuk entri ScreenOnAuto
    (<img src="/images/icon_launcher.png" width="24" align="middle" alt="Ikon ScreenOnAuto"> atau
    <img src="/images/icon_legacy.png" width="24" align="middle" alt="Ikon ScreenOnAuto (Legacy)">) di peluncur
@@ -87,16 +87,20 @@ Jika Anda lebih suka membiarkan **Mulai pencerminan otomatis** nonaktif:
 ### Melewati dialog izin
 
 Bosan dialog muncul setiap kali? Anda bisa memberikan izin itu sekali saja lewat ADB — lihat
-[Berikan Izin Pencerminan melalui ADB](/docs/id/grant-mirror-permission-via-adb/).
+[Berikan Izin Pencerminan melalui ADB](/docs/id/grant-mirror-permission-via-adb/). Aktifkan juga [**Mulai pencerminan di latar belakang**](/docs/id/settings/#silent_car_start), maka layar pengaturan ScreenOnAuto juga tidak muncul di ponsel: Anda mengetuk entri di mobil, tidak ada yang muncul di ponsel, dan pencerminan langsung dimulai.
 
 ## Menghentikan pencerminan
 
 Salah satu cara berikut bisa dipakai:
 
 - **Putuskan sambungan dari mobil** — pencerminan berhenti otomatis (pengaturan default
-  *Hentikan saat terputus*).
+  [*Hentikan saat terputus*](/docs/id/settings/#stop_on_disconnect)).
 - Ketuk **Hentikan pencerminan** pada notifikasi ponsel yang selalu tampil.
 - Ketuk **Hentikan pencerminan** di aplikasi.
+
+## Panduan Pengaturan
+
+Fungsi setiap pengaturan, kapan sebaiknya diaktifkan, dan batasannya dijelaskan di [Panduan Pengaturan](/docs/id/settings/), lengkap dengan tiruan layar pengaturan yang bisa dicoba.
 
 ## Pemecahan masalah
 
@@ -108,10 +112,10 @@ Pencerminan belum dimulai; periksa apakah ada dialog izin di ponsel, atau mulai 
 
 #### Ada bilah hitam di sekeliling gambar
 
-Layar ponsel dan layar mobil memiliki rasio aspek yang berbeda. Gunakan tombol **Kunci orientasi**
-di layar pencerminan (atau **Kunci orientasi otomatis** di pengaturan). Agar pas persis dengan area
-layar mobil yang bisa dipakai, aktifkan **Samakan layar ponsel dengan mobil** di Fitur istimewa
-(Shizuku atau root).
+Layar ponsel dan layar mobil memiliki rasio aspek yang berbeda. Gunakan tombol [**Kunci orientasi**](/docs/id/settings/#map_action_force_landscape)
+di layar pencerminan (atau [**Kunci orientasi otomatis**](/docs/id/settings/#force_landscape) di pengaturan). Agar pas persis dengan area
+layar mobil yang bisa dipakai, aktifkan [**Samakan layar ponsel dengan mobil**](/docs/id/settings/#root_display_override) di Fitur istimewa
+(Shizuku atau root). [**Sesuaikan lebar pencerminan, Sesuaikan tinggi pencerminan**](/docs/id/settings/#vd_gap) juga bisa memperbesar gambar hingga menutupi pita hitam, dengan sedikit tepi yang terpotong; Panduan Pengaturan menjelaskannya dengan diagram.
 
 #### Gambar terlihat melar atau terdistorsi setelah tata letak berubah
 
@@ -119,13 +123,12 @@ Ini terjadi saat area yang terlihat membesar atau mengecil dalam tampilan terpis
 ponsel hingga layar berganti antara potret dan lanskap akan memulihkannya (jika **Kunci orientasi** aktif, lepaskan dulu lewat tombolnya di layar). Dua pengaturan
 juga bisa memperbaikinya:
 
-- Aktifkan **Pengaturan → Lanjutan → Ukuran pencerminan tetap**. Pencerminan kemudian
-  mempertahankan ukurannya alih-alih terdistorsi (sebagian mungkin tersembunyi). Berlaku untuk
-  entri layar penuh **ScreenOnAuto**.
-- Aktifkan **Pengaturan → Lanjutan → Pencerminan digambar aplikasi (eksperimental)**. Aplikasi
+- Aktifkan [**Pengaturan → Lanjutan → Ukuran pencerminan tetap**](/docs/id/settings/#nav_fixed_size). Pencerminan kemudian
+  mempertahankan ukurannya alih-alih terdistorsi (sebagian mungkin tersembunyi). Hanya berlaku untuk entri layar penuh <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**.
+- Aktifkan [**Pengaturan → Lanjutan → Pencerminan digambar aplikasi (eksperimental)**](/docs/id/settings/#self_draw). Aplikasi
   kemudian menggambar sendiri gambar pencerminan alih-alih menyerahkan penskalaan ke sistem,
   sehingga gambar tidak lagi terdistorsi dalam tampilan terpisah. Fitur ini memakai sedikit
-  lebih banyak baterai dan berlaku saat pencerminan dimulai berikutnya. **Samakan layar ponsel dengan mobil** (Fitur istimewa) memperbaiki masalah yang sama dengan cara lain, dan keduanya bisa aktif bersamaan.
+  lebih banyak baterai dan berlaku saat pencerminan dimulai berikutnya. [**Samakan layar ponsel dengan mobil**](/docs/id/settings/#root_display_override) (Fitur istimewa) memperbaiki masalah yang sama dengan cara lain, dan keduanya bisa aktif bersamaan.
 
 #### Google Maps di Android Auto menjadi hitam selama pencerminan
 
@@ -149,8 +152,8 @@ tidak terpengaruh.
 
 #### Menyalakan layar kembali
 
-Layar sentuh ikut mati bersama panel, jadi mengetuk ponsel tidak berpengaruh apa pun. Ketuk
-tombol **Peredupan otomatis** di layar mobil — mengalihkan Peredupan otomatis akan menyalakan
-layar (aktifkan dulu tombol ini di **Tombol layar → Tombol fungsi**; secara default nonaktif).
+Saat [**Matikan layar ponsel**](/docs/id/settings/#root_screen_off) aktif, layar sentuh ikut mati bersama panel, jadi mengetuk ponsel tidak berpengaruh apa pun. Ketuk
+tombol [**Peredupan otomatis**](/docs/id/settings/#map_action_auto_dim) di layar mobil — mengalihkan Peredupan otomatis akan menyalakan
+layar (aktifkan dulu tombol ini di [**Tombol layar → Tombol fungsi**](/docs/id/settings/#category_control_buttons); secara default nonaktif).
 Atau tekan tombol daya ponsel **dua kali**, karena tekanan pertama justru yang membuat sistem
 tidur. Menghentikan pencerminan atau memutuskan Android Auto juga menyalakan layar kembali.

@@ -45,8 +45,8 @@ yansıtma çalışırken diğer girişi açmak, yeniden izin istemeden yansıtma
 gösterir.
 
 > **💡 İpucu**
-> Daha önce **ScreenOnAuto**'yu (tam ekran girişini) açtıysanız ve şimdi
-> **ScreenOnAuto (Legacy)**'yi kullanmak istiyorsanız, önce araç ekranında harita
+> Daha önce <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto**'yu (tam ekran girişini) açtıysanız ve şimdi
+> <img src="/images/icon_legacy.png" width="20" align="middle" alt=""> **ScreenOnAuto (Legacy)**'yi kullanmak istiyorsanız, önce araç ekranında harita
 > uygulamanızı (ör. Google Haritalar) açın, sonra Legacy yansıtmayı başlatın. Böylece
 > harita uygulaması araç ekranının varsayılan haritası olarak geri ayarlanır ve
 > haritayla ilgili işlevler tam ekran yansıtma tarafından devralınmaz.
@@ -55,7 +55,7 @@ gösterir.
 
 ### Yansıtmayı otomatik başlat AÇIK (önerilir)
 
-1. Telefondaki uygulamada **Yansıtmayı otomatik başlat**'ı açın (tek seferlik ayar).
+1. Telefondaki uygulamada [**Yansıtmayı otomatik başlat**](/docs/tr/settings/#auto_start_mirror)'ı açın (tek seferlik ayar).
 2. Telefonu arabaya bağlayın ve Android Auto başlatıcısında bir ScreenOnAuto
    girişine (<img src="/images/icon_launcher.png" width="24" align="middle" alt="ScreenOnAuto simgesi"> veya
    <img src="/images/icon_legacy.png" width="24" align="middle" alt="ScreenOnAuto (Legacy) simgesi">) dokunun.
@@ -89,16 +89,20 @@ gösterir.
 ### İzin penceresini atlama
 
 Pencerenin her seferinde çıkmasından sıkıldınız mı? İzni ADB ile bir kez önceden
-verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](/docs/tr/grant-mirror-permission-via-adb/).
+verebilirsiniz — bkz. [ADB ile Yansıtma İzni Verme](/docs/tr/grant-mirror-permission-via-adb/). Buna ek olarak [**Yansıtmayı arka planda başlat**](/docs/tr/settings/#silent_car_start) seçeneğini açarsanız ScreenOnAuto'nun ayarlar ekranı da telefonda açılmaz: araçta girişe dokunursunuz, telefonda hiçbir şey görünmez ve yansıtma başlar.
 
 ## Yansıtmayı durdurma
 
 Şunlardan herhangi biri işe yarar:
 
 - **Arabayla bağlantıyı kesin** — yansıtma otomatik olarak durur (varsayılan
-  *Bağlantı kesilince durdur* ayarı).
+  [*Bağlantı kesilince durdur*](/docs/tr/settings/#stop_on_disconnect) ayarı).
 - Telefondaki kalıcı bildirimde **Yansıtmayı durdur**'a dokunun.
 - Uygulamada **Yansıtmayı durdur**'a dokunun.
+
+## Ayarlar Rehberi
+
+Her ayarın ne işe yaradığı, ne zaman açılması gerektiği ve sınırları [Ayarlar Rehberi](/docs/tr/settings/) sayfasında anlatılıyor; yanında kullanılabilir bir ayarlar ekranı kopyası da var.
 
 ## Sorun Giderme
 
@@ -110,10 +114,10 @@ Yansıtma henüz başlamamıştır; telefonda izin penceresini kontrol edin veya
 
 #### Görüntünün etrafında siyah bantlar var
 
-Telefon ve araç ekranlarının en-boy oranları farklıdır. Yansıtma ekranındaki **Yönü
-kilitle** düğmesini (veya ayarlardaki **Yönü otomatik olarak kilitle** seçeneğini)
+Telefon ve araç ekranlarının en-boy oranları farklıdır. Yansıtma ekranındaki [**Yönü
+kilitle**](/docs/tr/settings/#map_action_force_landscape) düğmesini (veya ayarlardaki [**Yönü otomatik olarak kilitle**](/docs/tr/settings/#force_landscape) seçeneğini)
 kullanın. Aracın kullanılabilir alanını tam olarak doldurmak için Ayrıcalıklı
-özellikler'deki **Telefon ekranını arabaya uydur** seçeneğini açın (Shizuku veya root).
+özellikler'deki [**Telefon ekranını arabaya uydur**](/docs/tr/settings/#root_display_override) seçeneğini açın (Shizuku veya root). [**Yansıtma genişliğini ayarla, Yansıtma yüksekliğini ayarla**](/docs/tr/settings/#vd_gap) ile görüntüyü şeritlerin üzerine büyütebilirsiniz, ancak kenardan biraz kesilir; Ayarlar Rehberi sayfası bunu şemalarla gösterir.
 
 #### Düzen değiştikten sonra görüntü gerilmiş veya bozulmuş görünüyor
 
@@ -121,13 +125,12 @@ Bu, bölünmüş görünümde görünür alan büyüyüp küçüldüğünde olur
 ekranın dikey ile yatay arasında geçmesini sağlamak görüntüyü düzeltir (**Yönü kilitle** açıksa önce ekrandaki düğmesiyle kilidi kaldırın). İki ayar da
 bunu düzeltebilir:
 
-- **Ayarlar → Gelişmiş → Sabit yansıtma boyutu**'nu açın. Yansıtma bozulmak yerine
-  boyutunu korur (bir kısmı gizlenebilir). Tam ekran **ScreenOnAuto** girişi için
-  geçerlidir.
-- **Ayarlar → Gelişmiş → Uygulamanın çizdiği yansıtma (deneysel)** seçeneğini açın.
+- [**Ayarlar → Gelişmiş → Sabit yansıtma boyutu**](/docs/tr/settings/#nav_fixed_size)'nu açın. Yansıtma bozulmak yerine
+  boyutunu korur (bir kısmı gizlenebilir). Yalnızca tam ekran <img src="/images/icon_launcher.png" width="20" align="middle" alt=""> **ScreenOnAuto** girişi için geçerlidir.
+- [**Ayarlar → Gelişmiş → Uygulamanın çizdiği yansıtma (deneysel)**](/docs/tr/settings/#self_draw) seçeneğini açın.
   Uygulama bu durumda ölçeklendirmeyi sisteme bırakmak yerine yansıtma görüntüsünü
   kendisi çizer; böylece görüntü bölünmüş görünümde artık bozulmaz. Biraz daha
-  fazla pil tüketir ve yansıtma bir sonraki başlatılışında etkinleşir. **Telefon ekranını arabaya uydur** (Ayrıcalıklı özellikler) aynı sorunu farklı bir yolla çözer ve ikisi birlikte açık olabilir.
+  fazla pil tüketir ve yansıtma bir sonraki başlatılışında etkinleşir. [**Telefon ekranını arabaya uydur**](/docs/tr/settings/#root_display_override) (Ayrıcalıklı özellikler) aynı sorunu farklı bir yolla çözer ve ikisi birlikte açık olabilir.
 
 #### Yansıtma sırasında Android Auto'daki Google Haritalar siyah ekrana dönüyor
 
@@ -151,9 +154,9 @@ kullanın. Root kullanıcıları ve kablosuz Android Auto bağlantıları bundan
 
 #### Ekran kapandıktan sonra tekrar uyandırma
 
-Dokunmatik ekran panelle birlikte kapandığı için telefona dokunmak işe yaramaz. Araç
-ekranındaki **Otomatik Karartma** düğmesine dokunun — Otomatik Karartma'yı açıp kapatmak
-ekranı uyandırır (düğmeyi önce **Ekran düğmeleri → İşlev düğmeleri** bölümünden açın;
+[**Telefon ekranını kapat**](/docs/tr/settings/#root_screen_off) açıkken dokunmatik ekran panelle birlikte kapandığı için telefona dokunmak işe yaramaz. Araç
+ekranındaki [**Otomatik Karartma**](/docs/tr/settings/#map_action_auto_dim) düğmesine dokunun — Otomatik Karartma'yı açıp kapatmak
+ekranı uyandırır (düğmeyi önce [**Ekran düğmeleri → İşlev düğmeleri**](/docs/tr/settings/#category_control_buttons) bölümünden açın;
 varsayılan olarak kapalıdır). Ya da telefonun güç düğmesine **iki kez** basın, çünkü ilk
 basış sistemi uyku moduna alan basıştır. Yansıtmayı durdurmak veya Android Auto
 bağlantısını kesmek de ekranı geri getirir.

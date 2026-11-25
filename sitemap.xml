@@ -2311,4 +2311,334 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/terms-of-use/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/terms-of-use/"/>
   </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/en/settings/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/settings/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/settings/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/settings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://screenonauto.lzn.idv.tw/docs/tr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://screenonauto.lzn.idv.tw/docs/ar/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://screenonauto.lzn.idv.tw/docs/ko/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://screenonauto.lzn.idv.tw/docs/ru/settings/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://screenonauto.lzn.idv.tw/docs/vi/settings/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://screenonauto.lzn.idv.tw/docs/id/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://screenonauto.lzn.idv.tw/docs/ja/settings/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/settings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/settings/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/settings/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/settings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://screenonauto.lzn.idv.tw/docs/tr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://screenonauto.lzn.idv.tw/docs/ar/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://screenonauto.lzn.idv.tw/docs/ko/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://screenonauto.lzn.idv.tw/docs/ru/settings/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://screenonauto.lzn.idv.tw/docs/vi/settings/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://screenonauto.lzn.idv.tw/docs/id/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://screenonauto.lzn.idv.tw/docs/ja/settings/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/settings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/settings/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/settings/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/settings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://screenonauto.lzn.idv.tw/docs/tr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://screenonauto.lzn.idv.tw/docs/ar/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://screenonauto.lzn.idv.tw/docs/ko/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://screenonauto.lzn.idv.tw/docs/ru/settings/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://screenonauto.lzn.idv.tw/docs/vi/settings/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://screenonauto.lzn.idv.tw/docs/id/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://screenonauto.lzn.idv.tw/docs/ja/settings/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/settings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/es/settings/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/settings/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/settings/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/settings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://screenonauto.lzn.idv.tw/docs/tr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://screenonauto.lzn.idv.tw/docs/ar/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://screenonauto.lzn.idv.tw/docs/ko/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://screenonauto.lzn.idv.tw/docs/ru/settings/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://screenonauto.lzn.idv.tw/docs/vi/settings/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://screenonauto.lzn.idv.tw/docs/id/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://screenonauto.lzn.idv.tw/docs/ja/settings/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/settings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/de/settings/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/settings/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/settings/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/settings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://screenonauto.lzn.idv.tw/docs/tr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://screenonauto.lzn.idv.tw/docs/ar/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://screenonauto.lzn.idv.tw/docs/ko/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://screenonauto.lzn.idv.tw/docs/ru/settings/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://screenonauto.lzn.idv.tw/docs/vi/settings/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://screenonauto.lzn.idv.tw/docs/id/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://screenonauto.lzn.idv.tw/docs/ja/settings/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/settings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/fr/settings/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/settings/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/settings/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/settings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://screenonauto.lzn.idv.tw/docs/tr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://screenonauto.lzn.idv.tw/docs/ar/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://screenonauto.lzn.idv.tw/docs/ko/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://screenonauto.lzn.idv.tw/docs/ru/settings/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://screenonauto.lzn.idv.tw/docs/vi/settings/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://screenonauto.lzn.idv.tw/docs/id/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://screenonauto.lzn.idv.tw/docs/ja/settings/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/settings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/it/settings/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/settings/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/settings/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/settings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://screenonauto.lzn.idv.tw/docs/tr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://screenonauto.lzn.idv.tw/docs/ar/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://screenonauto.lzn.idv.tw/docs/ko/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://screenonauto.lzn.idv.tw/docs/ru/settings/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://screenonauto.lzn.idv.tw/docs/vi/settings/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://screenonauto.lzn.idv.tw/docs/id/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://screenonauto.lzn.idv.tw/docs/ja/settings/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/settings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/tr/settings/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/settings/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/settings/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/settings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://screenonauto.lzn.idv.tw/docs/tr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://screenonauto.lzn.idv.tw/docs/ar/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://screenonauto.lzn.idv.tw/docs/ko/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://screenonauto.lzn.idv.tw/docs/ru/settings/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://screenonauto.lzn.idv.tw/docs/vi/settings/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://screenonauto.lzn.idv.tw/docs/id/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://screenonauto.lzn.idv.tw/docs/ja/settings/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/settings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/ar/settings/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/settings/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/settings/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/settings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://screenonauto.lzn.idv.tw/docs/tr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://screenonauto.lzn.idv.tw/docs/ar/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://screenonauto.lzn.idv.tw/docs/ko/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://screenonauto.lzn.idv.tw/docs/ru/settings/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://screenonauto.lzn.idv.tw/docs/vi/settings/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://screenonauto.lzn.idv.tw/docs/id/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://screenonauto.lzn.idv.tw/docs/ja/settings/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/settings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/ko/settings/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/settings/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/settings/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/settings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://screenonauto.lzn.idv.tw/docs/tr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://screenonauto.lzn.idv.tw/docs/ar/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://screenonauto.lzn.idv.tw/docs/ko/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://screenonauto.lzn.idv.tw/docs/ru/settings/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://screenonauto.lzn.idv.tw/docs/vi/settings/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://screenonauto.lzn.idv.tw/docs/id/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://screenonauto.lzn.idv.tw/docs/ja/settings/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/settings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/ru/settings/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/settings/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/settings/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/settings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://screenonauto.lzn.idv.tw/docs/tr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://screenonauto.lzn.idv.tw/docs/ar/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://screenonauto.lzn.idv.tw/docs/ko/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://screenonauto.lzn.idv.tw/docs/ru/settings/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://screenonauto.lzn.idv.tw/docs/vi/settings/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://screenonauto.lzn.idv.tw/docs/id/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://screenonauto.lzn.idv.tw/docs/ja/settings/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/settings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/vi/settings/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/settings/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/settings/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/settings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://screenonauto.lzn.idv.tw/docs/tr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://screenonauto.lzn.idv.tw/docs/ar/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://screenonauto.lzn.idv.tw/docs/ko/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://screenonauto.lzn.idv.tw/docs/ru/settings/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://screenonauto.lzn.idv.tw/docs/vi/settings/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://screenonauto.lzn.idv.tw/docs/id/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://screenonauto.lzn.idv.tw/docs/ja/settings/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/settings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/id/settings/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/settings/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/settings/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/settings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://screenonauto.lzn.idv.tw/docs/tr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://screenonauto.lzn.idv.tw/docs/ar/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://screenonauto.lzn.idv.tw/docs/ko/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://screenonauto.lzn.idv.tw/docs/ru/settings/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://screenonauto.lzn.idv.tw/docs/vi/settings/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://screenonauto.lzn.idv.tw/docs/id/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://screenonauto.lzn.idv.tw/docs/ja/settings/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/settings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/ja/settings/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/settings/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/settings/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/settings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://screenonauto.lzn.idv.tw/docs/tr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://screenonauto.lzn.idv.tw/docs/ar/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://screenonauto.lzn.idv.tw/docs/ko/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://screenonauto.lzn.idv.tw/docs/ru/settings/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://screenonauto.lzn.idv.tw/docs/vi/settings/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://screenonauto.lzn.idv.tw/docs/id/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://screenonauto.lzn.idv.tw/docs/ja/settings/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/settings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+  </url>
+  <url>
+    <loc>https://screenonauto.lzn.idv.tw/docs/th/settings/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://screenonauto.lzn.idv.tw/docs/es/settings/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://screenonauto.lzn.idv.tw/docs/de/settings/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://screenonauto.lzn.idv.tw/docs/fr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://screenonauto.lzn.idv.tw/docs/it/settings/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://screenonauto.lzn.idv.tw/docs/tr/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://screenonauto.lzn.idv.tw/docs/ar/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://screenonauto.lzn.idv.tw/docs/ko/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://screenonauto.lzn.idv.tw/docs/ru/settings/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://screenonauto.lzn.idv.tw/docs/vi/settings/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://screenonauto.lzn.idv.tw/docs/id/settings/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://screenonauto.lzn.idv.tw/docs/ja/settings/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://screenonauto.lzn.idv.tw/docs/th/settings/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://screenonauto.lzn.idv.tw/docs/en/settings/"/>
+  </url>
 </urlset>
