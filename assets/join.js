@@ -554,7 +554,8 @@
   // The shared top-right language menu (_includes/tools.html, join mode) links every language
   // to /join/?lang=…, because the build can't know which one this visit picks. Tick the
   // current one the way the landing pages do: an unlinked entry with aria-current, its name
-  // on the menu button.
+  // on the menu button. The settings-guide button is built in English; point it at this
+  // language's guide, with that entry's label and tooltip.
   function markLangMenu() {
     var link = document.querySelector('.lang-menu a[lang="' + lang + '"]');
     if (!link) return;
@@ -567,6 +568,12 @@
     summary.querySelector(".cur").textContent = cur.textContent;
     summary.title = link.getAttribute("data-label");
     summary.setAttribute("aria-label", link.getAttribute("data-label") + ": " + cur.textContent);
+    var guide = document.querySelector(".tools a.guide");
+    if (guide) {
+      guide.href = "/docs/" + lang + "/settings/";
+      guide.title = link.getAttribute("data-guide-title");
+      guide.querySelector(".guide-label").textContent = link.getAttribute("data-guide");
+    }
   }
 
   function applyStaticText() {
