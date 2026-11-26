@@ -37,7 +37,7 @@
 
 ## 特権機能
 
-任意 — [Shizuku](https://shizuku.rikka.app/) または root が必要です。どちらもなくても、ほかの機能はまったく同じように動作します。
+任意 — [Shizuku](https://shizuku.rikka.app/)（[Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) 推奨） または root が必要です。どちらもなくても、ほかの機能はまったく同じように動作します。
 
 | 機能 | 内容 |
 |---|---|
@@ -55,14 +55,14 @@
 
 ミラーリングが終わると、スマホ本来のテーマ、文字サイズ、ナビゲーション モード、ホームアプリに戻ります。
 
-接続したら Shizuku が止まった、画面が点灯しない、という場合は [トラブルシューティング](https://github.com/slzn/ScreenOnAuto-releases/wiki/使い方#特権機能shizuku--root) を参照してください。
+Shizuku はスマホを車に接続したときも外したときも停止しますが、[Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) なら自動で起動し直せます。設定ガイドの[特権機能 → 接続](https://screenonauto.lzn.idv.tw/docs/ja/settings/#root_status)をご覧ください。画面が点灯しない場合は [トラブルシューティング](https://github.com/slzn/ScreenOnAuto-releases/wiki/使い方#特権機能shizuku--root) を参照してください。
 
 ## 動作環境
 
 - Android 7.0（API 24）以上
 - スマホに Android Auto がインストールされていること
 - Android Auto に対応した車
-- *（任意）* [Shizuku](https://shizuku.rikka.app/) または root — [特権機能](#特権機能) を使う場合
+- *（任意）* [Shizuku](https://shizuku.rikka.app/)（[Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) 推奨） または root — [特権機能](#特権機能) を使う場合
 
 ## インストール
 

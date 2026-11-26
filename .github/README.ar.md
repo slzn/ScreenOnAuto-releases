@@ -37,7 +37,7 @@
 
 ## الميزات ذات الامتيازات
 
-اختيارية — تتطلب [Shizuku](https://shizuku.rikka.app/) أو صلاحيات الجذر. بدونهما يعمل كل شيء آخر كما هو تمامًا.
+اختيارية — تتطلب [Shizuku](https://shizuku.rikka.app/) (ننصح بـ [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) أو صلاحيات الجذر. بدونهما يعمل كل شيء آخر كما هو تمامًا.
 
 | الميزة | ما تفعله |
 |---|---|
@@ -55,14 +55,14 @@
 
 تعود إعدادات الهاتف الأصلية للمظهر وحجم الخط ووضع التنقل والمشغّل عند انتهاء النسخ المطابق.
 
-توقف Shizuku عند توصيل الهاتف بالسيارة، أو لا تستيقظ الشاشة؟ راجع [استكشاف الأخطاء](https://github.com/slzn/ScreenOnAuto-releases/wiki/طريقة-الاستخدام#الميزات-ذات-الامتيازات-shizuku--الروت).
+يتوقف Shizuku في كل مرة توصل فيها الهاتف بالسيارة أو تفصله، ويمكن لـ [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) إعادة تشغيله تلقائيًا: راجع [الميزات ذات الامتيازات ← الاتصال](https://screenonauto.lzn.idv.tw/docs/ar/settings/#root_status) في دليل الإعدادات. لا تستيقظ الشاشة؟ راجع [استكشاف الأخطاء](https://github.com/slzn/ScreenOnAuto-releases/wiki/طريقة-الاستخدام#الميزات-ذات-الامتيازات-shizuku--الروت).
 
 ## المتطلبات
 
 - Android 7.0 (API 24) أو أحدث
 - تطبيق Android Auto مثبَّت على الهاتف
 - سيارة تدعم Android Auto
-- *(اختياري)* [Shizuku](https://shizuku.rikka.app/) أو صلاحيات الجذر (root) — من أجل [الميزات ذات الامتيازات](#الميزات-ذات-الامتيازات)
+- *(اختياري)* [Shizuku](https://shizuku.rikka.app/) (ننصح بـ [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) أو صلاحيات الجذر (root) — من أجل [الميزات ذات الامتيازات](#الميزات-ذات-الامتيازات)
 
 ## التثبيت
 

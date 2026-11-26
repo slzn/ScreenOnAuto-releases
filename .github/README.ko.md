@@ -37,7 +37,7 @@
 
 ## 특권 기능
 
-선택 사항 — [Shizuku](https://shizuku.rikka.app/) 또는 루트가 필요합니다. 둘 다 없어도 나머지 기능은 그대로 작동합니다.
+선택 사항 — [Shizuku](https://shizuku.rikka.app/) ([Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) 권장) 또는 루트가 필요합니다. 둘 다 없어도 나머지 기능은 그대로 작동합니다.
 
 | 기능 | 하는 일 |
 |---|---|
@@ -55,14 +55,14 @@ Shizuku 또는 루트로 쓸 수 있는 기능이 더 있습니다:
 
 미러링이 끝나면 휴대전화의 원래 테마, 글꼴 크기, 탐색 모드, 런처로 돌아갑니다.
 
-차량에 연결하자 Shizuku가 멈췄거나 화면이 다시 켜지지 않나요? [문제 해결](https://github.com/slzn/ScreenOnAuto-releases/wiki/사용-방법#특권-기능-shizuku--루트)을 참고하세요.
+Shizuku는 휴대전화를 차량에 연결하거나 분리할 때마다 멈추지만, [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)는 자동으로 다시 시작할 수 있습니다. 설정 가이드의 [특권 기능 → 연결](https://screenonauto.lzn.idv.tw/docs/ko/settings/#root_status)을 참고하세요. 화면이 다시 켜지지 않나요? [문제 해결](https://github.com/slzn/ScreenOnAuto-releases/wiki/사용-방법#특권-기능-shizuku--루트)을 참고하세요.
 
 ## 요구 사항
 
 - Android 7.0 (API 24) 이상
 - 휴대전화에 Android Auto 설치
 - Android Auto를 지원하는 차량
-- *(선택 사항)* [Shizuku](https://shizuku.rikka.app/) 또는 루트 — [특권 기능](#특권-기능)을 사용하려면 필요합니다
+- *(선택 사항)* [Shizuku](https://shizuku.rikka.app/) ([Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) 권장) 또는 루트 — [특권 기능](#특권-기능)을 사용하려면 필요합니다
 
 ## 설치
 

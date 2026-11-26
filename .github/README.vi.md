@@ -37,7 +37,7 @@
 
 ## Tính năng đặc quyền
 
-Tùy chọn — cần [Shizuku](https://shizuku.rikka.app/) hoặc Root. Nếu không có, mọi tính năng khác vẫn hoạt động y như cũ.
+Tùy chọn — cần [Shizuku](https://shizuku.rikka.app/) (khuyên dùng [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) hoặc Root. Nếu không có, mọi tính năng khác vẫn hoạt động y như cũ.
 
 | Tính năng | Công dụng |
 |---|---|
@@ -55,14 +55,14 @@ Cũng với Shizuku hoặc root:
 
 Giao diện, cỡ chữ, chế độ điều hướng và trình chạy gốc của điện thoại sẽ trở lại khi dừng phản chiếu.
 
-Shizuku dừng lại khi bạn cắm cáp vào xe, hoặc màn hình không sáng lại? Xem [Khắc phục sự cố](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cách-sử-dụng#tính-năng-đặc-quyền-shizuku--root).
+Shizuku dừng mỗi khi bạn cắm điện thoại vào xe hoặc rút ra — [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) có thể tự khởi động lại nó: xem [Tính năng đặc quyền → Kết nối](https://screenonauto.lzn.idv.tw/docs/vi/settings/#root_status) trong hướng dẫn cài đặt. Màn hình không sáng lại? Xem [Khắc phục sự cố](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cách-sử-dụng#tính-năng-đặc-quyền-shizuku--root).
 
 ## Yêu cầu
 
 - Android 7.0 (API 24) trở lên
 - Đã cài Android Auto trên điện thoại
 - Xe hỗ trợ Android Auto
-- *(Tùy chọn)* [Shizuku](https://shizuku.rikka.app/) hoặc Root — cho các [Tính năng đặc quyền](#tính-năng-đặc-quyền)
+- *(Tùy chọn)* [Shizuku](https://shizuku.rikka.app/) (khuyên dùng [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) hoặc Root — cho các [Tính năng đặc quyền](#tính-năng-đặc-quyền)
 
 ## Cài đặt
 

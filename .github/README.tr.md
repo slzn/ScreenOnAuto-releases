@@ -37,7 +37,7 @@
 
 ## Ayrıcalıklı özellikler
 
-İsteğe bağlı — [Shizuku](https://shizuku.rikka.app/) veya root gerektirir. Bunlar olmadan diğer her şey aynen çalışır.
+İsteğe bağlı — [Shizuku](https://shizuku.rikka.app/) (önerilen: [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) veya root gerektirir. Bunlar olmadan diğer her şey aynen çalışır.
 
 | Özellik | Ne yapar |
 |---|---|
@@ -55,14 +55,14 @@ Shizuku veya root ile ayrıca:
 
 Yansıtma bittiğinde telefonun kendi teması, yazı tipi boyutu, gezinme modu ve başlatıcısı geri gelir.
 
-Araca takınca Shizuku durdu mu, ya da ekran uyanmıyor mu? [Sorun Giderme](https://github.com/slzn/ScreenOnAuto-releases/wiki/Nasıl-Kullanılır#ayrıcalıklı-özellikler-shizuku--root) bölümüne bakın.
+Shizuku, telefonu araca her takışınızda ve çıkarışınızda durur; [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) onu kendiliğinden yeniden başlatabilir: ayarlar kılavuzundaki [Ayrıcalıklı özellikler → Bağlantı](https://screenonauto.lzn.idv.tw/docs/tr/settings/#root_status) bölümüne bakın. Ekran uyanmıyor mu? [Sorun Giderme](https://github.com/slzn/ScreenOnAuto-releases/wiki/Nasıl-Kullanılır#ayrıcalıklı-özellikler-shizuku--root) bölümüne bakın.
 
 ## Gereksinimler
 
 - Android 7.0 (API 24) veya üzeri
 - Telefonda Android Auto kurulu
 - Android Auto destekleyen bir araç
-- *(İsteğe bağlı)* [Shizuku](https://shizuku.rikka.app/) veya root — [Ayrıcalıklı özellikler](#ayrıcalıklı-özellikler) için
+- *(İsteğe bağlı)* [Shizuku](https://shizuku.rikka.app/) (önerilen: [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) veya root — [Ayrıcalıklı özellikler](#ayrıcalıklı-özellikler) için
 
 ## Kurulum
 

@@ -37,7 +37,7 @@
 
 ## Fonctions privilégiées
 
-Facultatif — nécessite [Shizuku](https://shizuku.rikka.app/) ou root. Sans eux, tout le reste fonctionne exactement pareil.
+Facultatif — nécessite [Shizuku](https://shizuku.rikka.app/) (recommandé : [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) ou root. Sans eux, tout le reste fonctionne exactement pareil.
 
 | Fonction | Ce qu'elle fait |
 |---|---|
@@ -55,14 +55,14 @@ Facultatif — nécessite [Shizuku](https://shizuku.rikka.app/) ou root. Sans eu
 
 Le thème, la taille de police, le mode de navigation et le lanceur du téléphone sont rétablis à la fin de la duplication.
 
-Shizuku s'est arrêté au branchement dans la voiture, ou l'écran ne se réveille plus ? Consultez [Dépannage](https://github.com/slzn/ScreenOnAuto-releases/wiki/Comment-utiliser#fonctions-privilégiées-shizuku--root).
+Shizuku s'arrête à chaque branchement et débranchement du téléphone dans la voiture ; [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) peut le relancer tout seul : voir [Fonctions privilégiées → Connexion](https://screenonauto.lzn.idv.tw/docs/fr/settings/#root_status) dans le guide des réglages. L'écran ne se réveille plus ? Consultez [Dépannage](https://github.com/slzn/ScreenOnAuto-releases/wiki/Comment-utiliser#fonctions-privilégiées-shizuku--root).
 
 ## Prérequis
 
 - Android 7.0 (API 24) ou plus récent
 - Android Auto installé sur le téléphone
 - Un véhicule compatible Android Auto
-- *(Facultatif)* [Shizuku](https://shizuku.rikka.app/) ou root — pour les [Fonctions privilégiées](#fonctions-privilégiées)
+- *(Facultatif)* [Shizuku](https://shizuku.rikka.app/) (recommandé : [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) ou root — pour les [Fonctions privilégiées](#fonctions-privilégiées)
 
 ## Installation
 

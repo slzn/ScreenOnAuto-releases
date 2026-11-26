@@ -37,7 +37,7 @@
 
 ## Recursos privilegiados
 
-Opcional — requer [Shizuku](https://shizuku.rikka.app/) ou root. Sem eles, todo o resto funciona exatamente igual.
+Opcional — requer [Shizuku](https://shizuku.rikka.app/) (recomendado: [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) ou root. Sem eles, todo o resto funciona exatamente igual.
 
 | Recurso | O que faz |
 |---|---|
@@ -55,14 +55,14 @@ Também com Shizuku ou root:
 
 O tema, o tamanho de fonte, o modo de navegação e o launcher do próprio celular voltam quando o espelhamento termina.
 
-O Shizuku parou ao conectar no carro, ou a tela não acorda? Veja [Solução de problemas](https://github.com/slzn/ScreenOnAuto-releases/wiki/Como-Usar#recursos-privilegiados-shizuku--root).
+O Shizuku para sempre que você conecta ou desconecta o celular do carro; o [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) consegue iniciá-lo de novo sozinho: veja [Recursos privilegiados → Conexão](https://screenonauto.lzn.idv.tw/docs/pt-BR/settings/#root_status) no guia de configurações. A tela não acorda? Veja [Solução de problemas](https://github.com/slzn/ScreenOnAuto-releases/wiki/Como-Usar#recursos-privilegiados-shizuku--root).
 
 ## Requisitos
 
 - Android 7.0 (API 24) ou superior
 - Android Auto instalado no celular
 - Um veículo compatível com Android Auto
-- *(Opcional)* [Shizuku](https://shizuku.rikka.app/) ou root — para os [Recursos privilegiados](#recursos-privilegiados)
+- *(Opcional)* [Shizuku](https://shizuku.rikka.app/) (recomendado: [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) ou root — para os [Recursos privilegiados](#recursos-privilegiados)
 
 ## Instalação
 

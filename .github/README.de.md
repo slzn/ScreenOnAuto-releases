@@ -37,7 +37,7 @@
 
 ## Privilegierte Funktionen
 
-Optional – erfordert [Shizuku](https://shizuku.rikka.app/) oder Root. Ohne beides funktioniert alles andere genau wie bisher.
+Optional – erfordert [Shizuku](https://shizuku.rikka.app/) (empfohlen: [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) oder Root. Ohne beides funktioniert alles andere genau wie bisher.
 
 | Funktion | Was sie tut |
 |---|---|
@@ -55,14 +55,14 @@ Außerdem mit Shizuku oder Root:
 
 Design, Schriftgröße, Navigationsmodus und Launcher des Telefons werden nach dem Ende der Spiegelung wiederhergestellt.
 
-Shizuku wurde beim Anstecken ans Auto beendet, oder der Bildschirm wacht nicht auf? Siehe [Fehlerbehebung](https://github.com/slzn/ScreenOnAuto-releases/wiki/Verwendung#privilegierte-funktionen-shizuku--root).
+Shizuku wird bei jedem Ein- und Ausstecken am Auto beendet – [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) kann es von selbst neu starten: siehe [Privilegierte Funktionen → Verbindung](https://screenonauto.lzn.idv.tw/docs/de/settings/#root_status) in der Einstellungsanleitung. Der Bildschirm wacht nicht auf? Siehe [Fehlerbehebung](https://github.com/slzn/ScreenOnAuto-releases/wiki/Verwendung#privilegierte-funktionen-shizuku--root).
 
 ## Voraussetzungen
 
 - Android 7.0 (API 24) oder höher
 - Android Auto auf dem Telefon installiert
 - Ein Fahrzeug mit Android-Auto-Unterstützung
-- *(Optional)* [Shizuku](https://shizuku.rikka.app/) oder Root – für die [Privilegierten Funktionen](#privilegierte-funktionen)
+- *(Optional)* [Shizuku](https://shizuku.rikka.app/) (empfohlen: [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) oder Root – für die [Privilegierten Funktionen](#privilegierte-funktionen)
 
 ## Installation
 

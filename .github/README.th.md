@@ -37,7 +37,7 @@
 
 ## ฟีเจอร์สิทธิ์พิเศษ
 
-ไม่บังคับ — ต้องใช้ [Shizuku](https://shizuku.rikka.app/) หรือ root หากไม่มีทั้งสองอย่าง ฟีเจอร์อื่นทั้งหมดก็ยังทำงานเหมือนเดิมทุกประการ
+ไม่บังคับ — ต้องใช้ [Shizuku](https://shizuku.rikka.app/) (แนะนำ [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) หรือ root หากไม่มีทั้งสองอย่าง ฟีเจอร์อื่นทั้งหมดก็ยังทำงานเหมือนเดิมทุกประการ
 
 | ฟีเจอร์ | ทำอะไร |
 |---|---|
@@ -55,14 +55,14 @@
 
 ธีม ขนาดตัวอักษร โหมดการนำทาง และตัวเรียกใช้งานเดิมของโทรศัพท์จะกลับมาเมื่อหยุดสะท้อนหน้าจอ
 
-Shizuku หยุดทำงานเมื่อเสียบสายเข้ารถ หรือหน้าจอไม่ยอมติด? ดู[การแก้ปัญหา](https://github.com/slzn/ScreenOnAuto-releases/wiki/วิธีใช้#ฟีเจอร์สิทธิ์พิเศษ-shizuku--root)
+Shizuku หยุดทำงานทุกครั้งที่เสียบหรือถอดโทรศัพท์จากรถ แต่ [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) เริ่มใหม่เองได้ ดู[ฟีเจอร์สิทธิ์พิเศษ → การเชื่อมต่อ](https://screenonauto.lzn.idv.tw/docs/th/settings/#root_status)ในคู่มือการตั้งค่า หน้าจอไม่ยอมติด? ดู[การแก้ปัญหา](https://github.com/slzn/ScreenOnAuto-releases/wiki/วิธีใช้#ฟีเจอร์สิทธิ์พิเศษ-shizuku--root)
 
 ## ความต้องการของระบบ
 
 - Android 7.0 (API 24) ขึ้นไป
 - ติดตั้ง Android Auto ในโทรศัพท์แล้ว
 - รถยนต์ที่รองรับ Android Auto
-- *(ไม่บังคับ)* [Shizuku](https://shizuku.rikka.app/) หรือ root — สำหรับ[ฟีเจอร์สิทธิ์พิเศษ](#ฟีเจอร์สิทธิ์พิเศษ)
+- *(ไม่บังคับ)* [Shizuku](https://shizuku.rikka.app/) (แนะนำ [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) หรือ root — สำหรับ[ฟีเจอร์สิทธิ์พิเศษ](#ฟีเจอร์สิทธิ์พิเศษ)
 
 ## การติดตั้ง
 

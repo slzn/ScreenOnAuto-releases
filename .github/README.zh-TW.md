@@ -37,7 +37,7 @@
 
 ## 特權功能
 
-選用功能，需要 [Shizuku](https://shizuku.rikka.app/) 或 root；沒有的話，其他功能完全不受影響。
+選用功能，需要 [Shizuku](https://shizuku.rikka.app/)（建議使用 [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)）或 root；沒有的話，其他功能完全不受影響。
 
 | 功能 | 說明 |
 |---|---|
@@ -55,14 +55,14 @@
 
 鏡像結束後，手機原本的主題、字型大小、導覽模式與啟動器會自動還原。
 
-插上車機後 Shizuku 停止了、螢幕關閉後不知道怎麼喚醒？請見[疑難排解](https://github.com/slzn/ScreenOnAuto-releases/wiki/如何使用#特權功能shizuku--root)。
+Shizuku 在手機接上或拔離車機時都會停止，[Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) 可以自動重新啟動它：見設定說明的[特權功能 → 連線](https://screenonauto.lzn.idv.tw/docs/zh-TW/settings/#root_status)。螢幕關閉後不知道怎麼喚醒？請見[疑難排解](https://github.com/slzn/ScreenOnAuto-releases/wiki/如何使用#特權功能shizuku--root)。
 
 ## 系統需求
 
 - Android 7.0（API 24）以上
 - 手機已安裝 Android Auto
 - 支援 Android Auto 的車機
-- （選用）[Shizuku](https://shizuku.rikka.app/) 或 root——用於[特權功能](#特權功能)
+- （選用）[Shizuku](https://shizuku.rikka.app/)（建議使用 [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)）或 root——用於[特權功能](#特權功能)
 
 ## 安裝步驟
 

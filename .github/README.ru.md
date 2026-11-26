@@ -37,7 +37,7 @@
 
 ## Привилегированные функции
 
-Необязательно — нужен [Shizuku](https://shizuku.rikka.app/) или Root. Без них всё остальное работает точно так же.
+Необязательно — нужен [Shizuku](https://shizuku.rikka.app/) (рекомендуем [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) или Root. Без них всё остальное работает точно так же.
 
 | Функция | Что делает |
 |---|---|
@@ -55,14 +55,14 @@
 
 Когда дублирование заканчивается, собственные тема, размер шрифта, режим навигации и лаунчер телефона возвращаются.
 
-Shizuku останавливается при подключении к автомобилю или экран не просыпается? См. [Устранение неполадок](https://github.com/slzn/ScreenOnAuto-releases/wiki/Как-пользоваться#привилегированные-функции-shizuku--root).
+Shizuku останавливается при каждом подключении телефона к автомобилю и отключении от него — [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) умеет запускать его снова сам: см. [Привилегированные функции → Подключение](https://screenonauto.lzn.idv.tw/docs/ru/settings/#root_status) в руководстве по настройкам. Экран не просыпается? См. [Устранение неполадок](https://github.com/slzn/ScreenOnAuto-releases/wiki/Как-пользоваться#привилегированные-функции-shizuku--root).
 
 ## Требования
 
 - Android 7.0 (API 24) или новее
 - Android Auto, установленный на телефоне
 - Автомобиль с поддержкой Android Auto
-- *(Необязательно)* [Shizuku](https://shizuku.rikka.app/) или Root — для [привилегированных функций](#привилегированные-функции)
+- *(Необязательно)* [Shizuku](https://shizuku.rikka.app/) (рекомендуем [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) или Root — для [привилегированных функций](#привилегированные-функции)
 
 ## Установка
 

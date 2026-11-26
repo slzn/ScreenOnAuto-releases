@@ -37,7 +37,7 @@
 
 ## Fitur istimewa
 
-Opsional — memerlukan [Shizuku](https://shizuku.rikka.app/) atau Root. Tanpa keduanya, semua fitur lain tetap berjalan sama persis.
+Opsional — memerlukan [Shizuku](https://shizuku.rikka.app/) (disarankan: [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) atau Root. Tanpa keduanya, semua fitur lain tetap berjalan sama persis.
 
 | Fitur | Fungsinya |
 |---|---|
@@ -55,14 +55,14 @@ Juga dengan Shizuku atau root:
 
 Tema, ukuran font, mode navigasi, dan peluncur asli ponsel kembali saat pencerminan berhenti.
 
-Shizuku berhenti saat ponsel dicolokkan, atau layar tidak mau menyala lagi? Lihat [Pemecahan masalah](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cara-Menggunakan#fitur-istimewa-shizuku--root).
+Shizuku berhenti setiap kali ponsel dicolokkan ke mobil atau dicabut — [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) dapat menjalankannya ulang dengan sendirinya: lihat [Fitur istimewa → Koneksi](https://screenonauto.lzn.idv.tw/docs/id/settings/#root_status) di panduan pengaturan. Layar tidak mau menyala lagi? Lihat [Pemecahan masalah](https://github.com/slzn/ScreenOnAuto-releases/wiki/Cara-Menggunakan#fitur-istimewa-shizuku--root).
 
 ## Persyaratan
 
 - Android 7.0 (API 24) atau lebih baru
 - Android Auto terinstal di ponsel
 - Kendaraan yang mendukung Android Auto
-- *(Opsional)* [Shizuku](https://shizuku.rikka.app/) atau Root — untuk [Fitur istimewa](#fitur-istimewa)
+- *(Opsional)* [Shizuku](https://shizuku.rikka.app/) (disarankan: [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)) atau Root — untuk [Fitur istimewa](#fitur-istimewa)
 
 ## Instalasi
 
