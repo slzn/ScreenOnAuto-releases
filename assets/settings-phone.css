@@ -39,7 +39,11 @@
 @media (max-width: 1099px) { .sp-phone { height: min(640px, 75vh); } }
 .sp-tbar { flex: none; display: flex; align-items: center; gap: 18px; height: 56px; padding: 0 16px; font-size: 19px; font-weight: 500; border-bottom: 1px solid var(--border); }
 .sp-tbar button { font: inherit; font-size: 22px; line-height: 1; background: none; border: 0; color: inherit; padding: 4px; cursor: pointer; }
-.sp-list { flex: 1; overflow-y: auto; overscroll-behavior: contain; padding-bottom: 12px; }
+.sp-list { flex: 1; overflow-y: auto; padding-bottom: 12px; }
+/* Beside the text (wide layout) the phone's list keeps its scroll to itself, so reaching its end does not
+   jump the article. Stacked on a phone screen it must not: the mock fills most of the viewport, the finger
+   usually lands on it, and a contained list left the page stuck once the list hit bottom. */
+@media (min-width: 1100px) { .sp-list { overscroll-behavior: contain; } }
 .sp-list.icons { --sp-gut: 56px; }
 
 .sp-cat { display: flex; align-items: baseline; gap: 12px; padding-block: 16px 4px; padding-inline: var(--sp-gut) 16px; border-top: 1px solid var(--border); margin-top: 8px; }
