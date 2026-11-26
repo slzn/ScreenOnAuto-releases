@@ -286,7 +286,9 @@ Android 14부터 캡처 대화상자는 먼저 앱 하나를 공유할지 전체
 
 맨 위의 상자는 Shizuku 또는 Root가 연결되어 있는지 보여 주며, 그 버튼으로 **액세스 허용**, **연결**, **연결 해제**를 합니다. 연결이 끊기면(예: Shizuku 재시작) 저절로 다시 연결됩니다.
 
-ADB로 시작한 Shizuku 서버는 휴대전화를 USB로 차량에 연결하면 종료됩니다. [문제 해결](/docs/ko/how-to-use/#특권-기능-shizuku--루트)을 참고하세요.
+ADB로 시작한 Shizuku 서버는 휴대전화를 USB로 차량에 연결할 때와 분리할 때 모두 종료됩니다. 휴대전화가 액세서리 모드로 전환될 때마다 ADB가 다시 시작되면서 Shizuku도 함께 멈추기 때문입니다. 무선 디버깅도 같은 ADB를 사용하므로 도움이 되지 않습니다. root와 무선 Android Auto 연결은 영향을 받지 않습니다.
+
+Shizuku를 다시 시작하면 ScreenOnAuto가 알아서 다시 연결됩니다. 이 과정마저 생략하려면 [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)(Shizuku 개발을 이어 가는 포크로, Shizuku 자체는 2025년 5월 이후 업데이트되지 않았습니다)를 사용하고 워치독(watchdog)과 TCP 모드를 켜세요. ADB가 다시 시작되면 워치독이 TCP 모드를 통해 몇 초 안에 서버를 다시 시작하고, ScreenOnAuto는 자동으로 다시 연결됩니다. TCP 모드는 재부팅할 때마다 컴퓨터나 무선 디버깅으로 한 번 켜야 합니다. 켜져 있는 동안에는 같은 네트워크의 기기가 연결을 시도할 수 있습니다(휴대전화에 허용 여부를 묻는 창이 표시됩니다).
 
 ### Root가 감지되지 않나요? {#root_force}
 

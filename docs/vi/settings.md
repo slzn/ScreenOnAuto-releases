@@ -286,7 +286,9 @@ Các tính năng trong trang này cần [Shizuku](https://shizuku.rikka.app/) ho
 
 Ô ở trên cùng cho biết Shizuku hoặc root đã kết nối hay chưa; nút của ô này dùng để **Cấp quyền truy cập**, **Kết nối** hoặc **Ngắt kết nối**. Kết nối bị rớt (chẳng hạn khi Shizuku khởi động lại) sẽ tự kết nối lại.
 
-Máy chủ Shizuku khởi động qua ADB sẽ bị tắt khi điện thoại được cắm vào xe bằng USB — xem [Khắc phục sự cố](/docs/vi/how-to-use/#tính-năng-đặc-quyền-shizuku--root).
+Máy chủ Shizuku khởi động qua ADB sẽ bị tắt cả khi điện thoại được cắm vào xe bằng USB lẫn khi rút ra: điện thoại chuyển vào và ra khỏi chế độ phụ kiện, khiến ADB khởi động lại và kéo theo cả Shizuku. Gỡ lỗi không dây cũng đi qua cùng ADB đó, nên không giúp được gì. Root và kết nối Android Auto không dây không bị ảnh hưởng.
+
+Chỉ cần khởi động lại Shizuku, ScreenOnAuto sẽ tự kết nối lại. Để bỏ qua cả bước này, hãy dùng [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) (bản fork tiếp tục phát triển Shizuku; bản thân Shizuku không được cập nhật từ tháng 5/2025) và bật watchdog cùng chế độ TCP của nó: sau khi ADB khởi động lại, watchdog khởi động lại máy chủ qua chế độ TCP trong vài giây, rồi ScreenOnAuto tự kết nối lại. Chế độ TCP cần được bật một lần sau mỗi lần khởi động lại điện thoại, từ máy tính hoặc qua gỡ lỗi không dây; trong lúc bật, các thiết bị cùng mạng có thể thử kết nối (điện thoại sẽ hỏi bạn có cho phép không).
 
 ### Không phát hiện được Root? {#root_force}
 

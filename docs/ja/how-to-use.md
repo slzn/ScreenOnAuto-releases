@@ -116,7 +116,7 @@ Android 15 以降では、アプリが画面をキャプチャしている間（
 
 #### ADB で起動した Shizuku サーバーが、車に接続すると停止する
 
-USB 接続でスマホがアクセサリモードに切り替わると ADB が再起動し、Shizuku も一緒に停止します。ワイヤレス デバッグも同じ ADB を使うため、回避策にはなりません。Shizuku を起動し直せば ScreenOnAuto は自動で再接続します。より確実なのは [Shizuku-Next フォーク](https://github.com/rushiranpise/Shizuku-Next) を使う方法で、ウォッチドッグサービスが自動で再起動してくれます。root 環境や、ワイヤレスの Android Auto 接続では影響ありません。
+USB の接続時も取り外し時も ADB が再起動し、Shizuku も停止します。Shizuku を起動し直せば ScreenOnAuto は自動で再接続します。原因と、Shizuku-Next で自動的に再起動させる方法は、設定ガイドの[**特権機能 → 接続**](/docs/ja/settings/#root_status)をご覧ください。
 
 #### 画面をもう一度点灯させるには
 

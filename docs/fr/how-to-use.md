@@ -147,12 +147,7 @@ Android Auto lui-même et ne peut pas être masquée par l'app.
 
 #### Un serveur Shizuku démarré via ADB s'arrête lorsque vous branchez le téléphone à la voiture
 
-La connexion USB fait passer le téléphone en mode accessoire, ce qui redémarre ADB et
-emporte Shizuku avec lui — le débogage sans fil passe par le même ADB et n'y change
-rien. Relancez Shizuku et ScreenOnAuto se reconnecte tout seul ; mieux encore, utilisez
-le [fork Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next), dont le service
-watchdog le relance pour vous. Les utilisateurs root et les connexions Android Auto sans
-fil ne sont pas concernés.
+Brancher ou débrancher l'USB redémarre ADB, ce qui arrête Shizuku. Relancez Shizuku et ScreenOnAuto se reconnecte tout seul ; la cause, et comment Shizuku-Next le relance pour vous : voir [**Fonctions privilégiées → Connexion**](/docs/fr/settings/#root_status) dans le guide des réglages.
 
 #### Réveiller l'écran après son extinction
 

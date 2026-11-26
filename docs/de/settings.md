@@ -286,7 +286,9 @@ Die Funktionen auf dieser Seite brauchen [Shizuku](https://shizuku.rikka.app/) o
 
 Das Feld oben zeigt, ob Shizuku oder Root verbunden ist; seine Schaltfläche lautet **Zugriff erteilen**, **Verbinden** oder **Trennen**. Bricht eine Verbindung ab (etwa weil Shizuku neu startet), verbindet sie sich von selbst wieder.
 
-Ein per ADB gestarteter Shizuku-Server wird beendet, wenn das Telefon per USB mit dem Auto verbunden wird – siehe [Fehlerbehebung](/docs/de/how-to-use/#privilegierte-funktionen-shizuku--root).
+Ein per ADB gestarteter Shizuku-Server wird beendet, sowohl wenn das Telefon per USB mit dem Auto verbunden als auch wenn es wieder getrennt wird: Das Telefon wechselt dabei in den Zubehörmodus bzw. wieder heraus, wodurch ADB neu startet und Shizuku mitnimmt. Wireless Debugging läuft über dasselbe ADB und hilft daher nicht. Root und drahtlose Android-Auto-Verbindungen sind nicht betroffen.
+
+Shizuku einfach neu zu starten genügt – ScreenOnAuto verbindet sich von selbst wieder. Um auch das zu sparen, verwende [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) (ein Fork, der Shizuku weiterentwickelt; Shizuku selbst wurde seit Mai 2025 nicht mehr aktualisiert) und schalte dort Watchdog und TCP-Modus ein: Nach einem ADB-Neustart startet der Watchdog den Server über den TCP-Modus innerhalb von Sekunden neu, und ScreenOnAuto verbindet sich von selbst wieder. Den TCP-Modus musst du nach jedem Neustart des Telefons einmal einschalten, per Computer oder Wireless Debugging; solange er an ist, können Geräte im selben Netzwerk eine Verbindung versuchen (das Telefon fragt dich dann um Erlaubnis).
 
 ### Root nicht erkannt? {#root_force}
 

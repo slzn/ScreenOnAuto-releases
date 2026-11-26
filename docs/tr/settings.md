@@ -286,7 +286,9 @@ Bu sayfadaki özellikler [Shizuku](https://shizuku.rikka.app/) veya root gerekti
 
 Üstteki kutu Shizuku'nun veya root'un bağlı olup olmadığını gösterir; düğmesinde duruma göre **Erişim izni ver**, **Bağlan** veya **Bağlantıyı kes** yazar. Kopan bir bağlantı (örneğin Shizuku yeniden başladığında) kendiliğinden yeniden bağlanır.
 
-ADB ile başlatılan bir Shizuku sunucusu, telefon araca USB ile takıldığında kapanır — bkz. [Sorun giderme](/docs/tr/how-to-use/#ayrıcalıklı-özellikler-shizuku--root).
+ADB ile başlatılan bir Shizuku sunucusu, telefon araca USB ile takıldığında da çıkarıldığında da kapanır: telefon aksesuar moduna girip çıkar; bu da ADB'yi yeniden başlatır ve Shizuku'yu da beraberinde götürür. Kablosuz hata ayıklama da aynı ADB üzerinden çalıştığı için işe yaramaz. Root ve kablosuz Android Auto bağlantıları bundan etkilenmez.
+
+Shizuku'yu yeniden başlatmanız yeterli, ScreenOnAuto kendiliğinden yeniden bağlanır. Bu adımdan da kurtulmak için [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) kullanın (Shizuku'nun geliştirilmesini sürdüren bir çatal; Shizuku'nun kendisi Mayıs 2025'ten beri güncellenmiyor) ve watchdog'unu ve TCP modunu açın: ADB yeniden başladıktan sonra watchdog sunucuyu TCP modu üzerinden birkaç saniye içinde yeniden başlatır ve ScreenOnAuto kendiliğinden yeniden bağlanır. TCP modunun her yeniden başlatmadan sonra bir kez, bilgisayardan veya kablosuz hata ayıklamayla açılması gerekir; açık olduğu sürece aynı ağdaki cihazlar bağlanmayı deneyebilir (telefon sizden izin ister).
 
 ### Root algılanmadı mı? {#root_force}
 

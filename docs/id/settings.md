@@ -286,7 +286,9 @@ Fitur di halaman ini memerlukan [Shizuku](https://shizuku.rikka.app/) atau root,
 
 Kotak di bagian atas menunjukkan apakah Shizuku atau root terhubung; tombolnya akan **Berikan akses**, **Hubungkan**, atau **Putuskan**. Koneksi yang terputus (misalnya saat Shizuku dimulai ulang) tersambung kembali dengan sendirinya.
 
-Server Shizuku yang dijalankan lewat ADB akan dimatikan saat ponsel dicolokkan ke mobil dengan USB — lihat [Pemecahan masalah](/docs/id/how-to-use/#fitur-istimewa-shizuku--root).
+Server Shizuku yang dijalankan lewat ADB akan dimatikan saat ponsel dicolokkan ke mobil dengan USB maupun saat dicabut: ponsel masuk dan keluar dari mode aksesori, yang memulai ulang ADB dan ikut menghentikan Shizuku. Debugging nirkabel juga melalui ADB yang sama, jadi tidak membantu. Root dan sambungan Android Auto nirkabel tidak terpengaruh.
+
+Cukup jalankan Shizuku lagi, dan ScreenOnAuto akan tersambung kembali dengan sendirinya. Agar langkah itu pun tidak perlu, pakai [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) (fork yang melanjutkan pengembangan Shizuku; Shizuku sendiri tidak diperbarui lagi sejak Mei 2025) dan aktifkan watchdog serta mode TCP-nya: setelah ADB dimulai ulang, watchdog menjalankan ulang server melalui mode TCP dalam beberapa detik, lalu ScreenOnAuto tersambung kembali dengan sendirinya. Mode TCP harus diaktifkan sekali setiap kali ponsel dinyalakan ulang, dari komputer atau lewat debugging nirkabel; selama aktif, perangkat di jaringan yang sama dapat mencoba terhubung (ponsel akan meminta izin Anda).
 
 ### Root tidak terdeteksi? {#root_force}
 

@@ -147,12 +147,7 @@ selbst gezeichnet und kann von der App nicht ausgeblendet werden.
 
 #### Ein per ADB gestarteter Shizuku-Server wird beendet, sobald du das Telefon ans Auto anschließt
 
-Die USB-Verbindung versetzt das Telefon in den Zubehörmodus, wodurch ADB neu startet und
-Shizuku mitnimmt – Wireless Debugging läuft über dasselbe ADB und hilft daher nicht.
-Starte Shizuku einfach neu, ScreenOnAuto verbindet sich von selbst wieder; besser noch:
-Verwende den [Shizuku-Next-Fork](https://github.com/rushiranpise/Shizuku-Next), dessen
-Watchdog-Dienst ihn für dich neu startet. Root-Nutzer und drahtlose
-Android-Auto-Verbindungen sind nicht betroffen.
+Das Ein- und Ausstecken per USB startet ADB neu, wodurch Shizuku beendet wird. Starte Shizuku neu, dann verbindet sich ScreenOnAuto von selbst wieder; warum das passiert und wie Shizuku-Next den Neustart für dich übernimmt, steht in der Einstellungsanleitung unter [**Privilegierte Funktionen → Verbindung**](/docs/de/settings/#root_status).
 
 #### Den Bildschirm nach dem Ausschalten wieder aufwecken
 

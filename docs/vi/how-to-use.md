@@ -139,12 +139,7 @@ và ứng dụng không thể ẩn đi.
 
 #### Máy chủ Shizuku khởi động qua ADB bị tắt khi bạn cắm cáp vào xe
 
-Kết nối USB chuyển điện thoại sang chế độ phụ kiện, khiến ADB khởi động lại và kéo
-theo cả Shizuku — gỡ lỗi không dây cũng đi qua cùng ADB đó, nên không giúp được gì.
-Hãy khởi động lại Shizuku và ScreenOnAuto sẽ tự kết nối lại; tốt hơn nữa, hãy dùng
-[bản fork Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next), có dịch vụ giám sát
-tự khởi động lại Shizuku cho bạn. Người dùng Root và kết nối Android Auto không dây
-không bị ảnh hưởng.
+Cắm hoặc rút USB đều khởi động lại ADB, khiến Shizuku dừng. Hãy khởi động lại Shizuku và ScreenOnAuto sẽ tự kết nối lại; nguyên nhân và cách để Shizuku-Next tự khởi động lại cho bạn: xem [**Tính năng đặc quyền → Kết nối**](/docs/vi/settings/#root_status) trong hướng dẫn cài đặt.
 
 #### Làm sáng lại màn hình
 

@@ -117,7 +117,7 @@ Android Auto 的 app 啟動器中有**兩個**鏡像入口：<span class="icon-n
 
 #### 以 ADB 啟動的 Shizuku 會在插上車機時被關閉
 
-USB 連線會讓手機進入配件模式，這會重啟 ADB 並一併帶走 Shizuku——無線偵錯走的是同一個 ADB，所以一樣沒用。重新啟動 Shizuku 即可，ScreenOnAuto 會自行重新連線；更省事的做法是改用 [Shizuku-Next 分支版](https://github.com/rushiranpise/Shizuku-Next)，它的 watchdog 服務會自動幫你重啟。root 使用者與無線 Android Auto 連線不受影響。
+USB 接上或拔離都會重啟 ADB，Shizuku 也跟著停止。重新啟動 Shizuku，ScreenOnAuto 就會自行重新連上；原因以及如何用 Shizuku-Next 自動重啟，見設定說明的[**特權功能 → 連線**](/docs/zh-TW/settings/#root_status)。
 
 #### 螢幕關閉後如何再喚醒
 

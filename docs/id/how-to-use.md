@@ -143,12 +143,7 @@ bisa disembunyikan oleh aplikasi.
 
 #### Server Shizuku yang dijalankan lewat ADB mati saat ponsel dicolokkan ke mobil
 
-Sambungan USB membuat ponsel masuk ke mode aksesori, yang memulai ulang ADB dan ikut
-menghentikan Shizuku — debugging nirkabel juga melalui ADB yang sama, jadi tidak membantu.
-Jalankan Shizuku lagi dan ScreenOnAuto akan tersambung kembali dengan sendirinya; lebih baik
-lagi, pakai [fork Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next), yang layanan
-watchdog-nya memulai ulang Shizuku untuk Anda. Pengguna Root dan sambungan Android Auto nirkabel
-tidak terpengaruh.
+Mencolokkan atau mencabut USB memulai ulang ADB, sehingga Shizuku berhenti. Jalankan Shizuku lagi dan ScreenOnAuto tersambung kembali dengan sendirinya; penyebabnya dan cara Shizuku-Next memulainya ulang untuk Anda ada di [**Fitur istimewa → Koneksi**](/docs/id/settings/#root_status) pada panduan pengaturan.
 
 #### Menyalakan layar kembali
 

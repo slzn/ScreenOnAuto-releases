@@ -145,12 +145,7 @@ Araç ekranındaki **Android Auto gezinme çubuğu** Android Auto'nun kendisi ta
 
 #### ADB ile başlatılan bir Shizuku sunucusu, telefonu arabaya taktığınızda kapanır
 
-USB bağlantısı telefonu aksesuar moduna alır; bu da ADB'yi yeniden başlatır ve
-Shizuku'yu da beraberinde götürür — kablosuz hata ayıklama da aynı ADB üzerinden
-çalıştığı için işe yaramaz. Shizuku'yu yeniden başlatmanız yeterli, ScreenOnAuto
-kendiliğinden yeniden bağlanır; daha da iyisi, watchdog hizmeti onu sizin yerinize
-yeniden başlatan [Shizuku-Next sürümünü](https://github.com/rushiranpise/Shizuku-Next)
-kullanın. Root kullanıcıları ve kablosuz Android Auto bağlantıları bundan etkilenmez.
+USB'yi takmak da çıkarmak da ADB'yi yeniden başlatır ve Shizuku durur. Shizuku'yu yeniden başlatın, ScreenOnAuto kendiliğinden yeniden bağlanır; nedeni ve Shizuku-Next'in bunu sizin yerinize nasıl yaptığı için ayarlar kılavuzundaki [**Ayrıcalıklı özellikler → Bağlantı**](/docs/tr/settings/#root_status) bölümüne bakın.
 
 #### Ekran kapandıktan sonra tekrar uyandırma
 

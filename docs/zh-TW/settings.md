@@ -286,7 +286,9 @@ Android 14 起，擷取權限對話框會先問要「分享單一應用程式」
 
 頂端的方框顯示目前有沒有連上 Shizuku 或 Root，旁邊的按鈕用來**授予存取權**、**連線**或**中斷連線**。連線斷掉後（例如 Shizuku 重新啟動），會自動重新連上。
 
-用 ADB 啟動的 Shizuku 在手機用 USB 接上車機時會被關掉，見[疑難排解](/docs/zh-TW/how-to-use/#特權功能shizuku--root)。
+用 ADB 啟動的 Shizuku，在手機用 USB 接上或拔離車機時都會被關掉：USB 連線會讓手機切換配件模式，這會重啟 ADB，Shizuku 也跟著停止。無線偵錯走的是同一個 ADB，所以一樣沒用。root 與無線 Android Auto 連線不受影響。
+
+重新啟動 Shizuku 即可，ScreenOnAuto 會自行重新連上。想連這一步都省掉，建議改用 [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next)（接續 Shizuku 開發的分支；Shizuku 本身自 2025 年 5 月起就沒有更新），並開啟它的 watchdog 與 TCP 模式：ADB 重啟後，watchdog 會透過 TCP 模式在幾秒內重新啟動服務，ScreenOnAuto 隨後自動重新連上。TCP 模式每次開機後要用電腦或無線偵錯開啟一次；開啟期間同一個網路上的裝置可以嘗試連線（手機會跳出授權提示）。
 
 ### 偵測不到 Root？ {#root_force}
 

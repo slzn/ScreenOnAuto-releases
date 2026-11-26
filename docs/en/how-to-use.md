@@ -147,12 +147,7 @@ and cannot be hidden by the app.
 
 #### A Shizuku server started via ADB shuts down when you plug into the car
 
-The USB connection puts the phone into accessory mode, which restarts ADB and takes
-Shizuku with it — wireless debugging goes through the same ADB, so it does not help.
-Start Shizuku again and ScreenOnAuto reconnects on its own; better still, use the
-[Shizuku-Next fork](https://github.com/rushiranpise/Shizuku-Next), whose watchdog
-service restarts it for you. Root users and wireless Android Auto connections are
-unaffected.
+Plugging in or unplugging USB restarts ADB, which stops Shizuku. Start Shizuku again and ScreenOnAuto reconnects on its own; why it happens, and how Shizuku-Next restarts it for you: see [**Privileged Features → Connection**](/docs/en/settings/#root_status) in the settings guide.
 
 #### Waking the screen again
 

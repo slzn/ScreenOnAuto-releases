@@ -135,10 +135,7 @@ Android 15 이상에서는 앱이 화면을 캡처하는 동안(모든 미러링
 
 #### ADB로 시작한 Shizuku 서버는 차량에 연결하면 종료됩니다
 
-USB 연결은 휴대전화를 액세서리 모드로 전환하는데, 이때 ADB가 다시 시작되면서 Shizuku도 함께 종료됩니다 — 무선 디버깅도 같은 ADB를 사용하므로
-도움이 되지 않습니다. Shizuku를 다시 시작하면 ScreenOnAuto가 알아서 다시 연결됩니다. 더 편한 방법은 watchdog 서비스가 대신 다시
-시작해 주는 [Shizuku-Next 포크](https://github.com/rushiranpise/Shizuku-Next)를 사용하는 것입니다. root
-사용자와 무선 Android Auto 연결은 영향을 받지 않습니다.
+USB를 연결하거나 분리하면 ADB가 다시 시작되면서 Shizuku도 종료됩니다. Shizuku를 다시 시작하면 ScreenOnAuto가 알아서 다시 연결됩니다. 원인과 Shizuku-Next로 자동 재시작하는 방법은 설정 가이드의 [**특권 기능 → 연결**](/docs/ko/settings/#root_status)을 참고하세요.
 
 #### 화면을 다시 켜려면
 

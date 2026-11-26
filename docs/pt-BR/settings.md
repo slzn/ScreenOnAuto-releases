@@ -286,7 +286,9 @@ Os recursos desta página precisam do [Shizuku](https://shizuku.rikka.app/) ou d
 
 O quadro no topo diz se o Shizuku ou o root está conectado; o botão dele serve para **Conceder acesso**, **Conectar** ou **Desconectar**. Uma conexão que cai (o Shizuku reiniciando, por exemplo) se reconecta sozinha.
 
-Um servidor Shizuku iniciado via ADB é encerrado quando o celular é ligado ao carro por USB — veja [Solução de problemas](/docs/pt-BR/how-to-use/#recursos-privilegiados-shizuku--root).
+Um servidor Shizuku iniciado via ADB é encerrado tanto quando o celular é ligado ao carro por USB quanto quando é desligado dele: o celular entra e sai do modo acessório, o que reinicia o ADB e derruba o Shizuku junto. A depuração sem fio passa pelo mesmo ADB, então não ajuda. Root e conexões sem fio do Android Auto não são afetados.
+
+Basta iniciar o Shizuku de novo: o ScreenOnAuto reconecta sozinho. Para pular até essa etapa, use o [Shizuku-Next](https://github.com/rushiranpise/Shizuku-Next) (um fork que dá continuidade ao Shizuku, que não recebe atualizações desde maio de 2025) e ative o watchdog e o modo TCP dele: depois que o ADB reinicia, o watchdog inicia o servidor de novo pelo modo TCP em poucos segundos, e o ScreenOnAuto reconecta sozinho. O modo TCP precisa ser ativado uma vez a cada reinicialização do celular, por um computador ou pela depuração sem fio; enquanto estiver ativo, dispositivos na mesma rede podem tentar se conectar (o celular pede sua permissão).
 
 ### Root não detectado? {#root_force}
 
