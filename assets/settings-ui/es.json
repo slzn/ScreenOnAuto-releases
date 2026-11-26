@@ -47,7 +47,7 @@
   "pref_force_landscape_reverse_summary": "Gira el teléfono al otro lado",
   "pref_force_landscape_reverse_title": "Modo horizontal invertido",
   "pref_force_landscape_summary": "Bloquea la orientación del teléfono al conectar Android Auto; después, el botón de la pantalla del coche la cambia",
-  "pref_force_landscape_title": "Bloquear la orientación automáticamente",
+  "pref_force_landscape_title": "Bloquear la orientación al conectar",
   "pref_force_orientation_mode_title": "Orientación",
   "pref_full_screen_share_only_summary": "Al iniciar la duplicación ya no se pregunta si compartir una app o toda la pantalla",
   "pref_full_screen_share_only_title": "Compartir solo la pantalla completa",
@@ -158,7 +158,7 @@
   "value_off": "Desactivado"
  },
  "version": {
-  "code": 53,
-  "name": "1.11.0"
+  "code": 54,
+  "name": "1.11.1"
  }
 }

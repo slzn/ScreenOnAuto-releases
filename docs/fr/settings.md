@@ -104,7 +104,7 @@ Permet à « ScreenOnAuto Contrôleur multimédia » <img class="sp-entry" src
 
 #### Afficher par-dessus les autres apps {#overlay_access}
 
-Nécessaire pour [Atténuation automatique](#auto_dim), Verrouiller l'orientation ([Verrouiller automatiquement l'orientation](#force_landscape) et son [bouton dans la voiture](#map_action_force_landscape)) et [Atténuation de nuit](#night_dim).
+Nécessaire pour [Atténuation automatique](#auto_dim), Verrouiller l'orientation ([Verrouiller l'orientation à la connexion](#force_landscape) et son [bouton dans la voiture](#map_action_force_landscape)) et [Atténuation de nuit](#night_dim).
 
 #### Modifier les paramètres système {#write_settings_access}
 
@@ -146,7 +146,7 @@ Des boutons ronds au-dessus de la duplication, 4 au maximum à la fois dans l'un
 
 #### Bouton Verrouiller l'orientation {#map_action_force_landscape}
 
-Active ou désactive Verrouiller l'orientation pour le moment, sans modifier le réglage [Verrouiller automatiquement l'orientation](#force_landscape) ; la connexion suivante suit de nouveau le réglage. Activé par défaut.
+Active ou désactive Verrouiller l'orientation pour le moment, sans modifier le réglage [Verrouiller l'orientation à la connexion](#force_landscape) ; la connexion suivante suit de nouveau le réglage. Activé par défaut.
 
 #### Bouton Atténuation automatique {#map_action_auto_dim}
 
@@ -180,7 +180,7 @@ Quatre distances en dp (0–400, 16 par défaut) : les boutons de fonction par 
 
 ### Orientation de l'écran {#category_orientation}
 
-#### Verrouiller automatiquement l'orientation {#force_landscape}
+#### Verrouiller l'orientation à la connexion {#force_landscape}
 
 Verrouille le téléphone dans une orientation quand Android Auto se connecte, pour que la duplication ne bascule pas quand le téléphone tourne et qu'un téléphone en paysage remplisse un écran de voiture large. L'option agit une seule fois, au moment de la connexion ; ensuite, le [Bouton Verrouiller l'orientation](#map_action_force_landscape) dans la voiture libère ou réapplique le verrouillage. Nécessite l'autorisation [Afficher par-dessus les autres apps](#overlay_access).
 
@@ -348,7 +348,7 @@ Pendant la duplication, donne à l'écran du téléphone le rapport largeur/haut
 Cela fonctionne que la voiture affiche des bandes à gauche et à droite (première paire) ou en haut et en bas (deuxième paire), et aussi sur un grand autoradio en portrait (troisième paire — le téléphone est vertical ; avec [Orientation](#force_orientation_mode) réglé sur la détection selon l'écran de la voiture, il se verrouille de lui-même en portrait). L'écran physique du téléphone garde sa forme : une fois l'option activée, **le téléphone lui-même** affiche des bandes dans l'autre sens (en haut et en bas quand la voiture en avait à gauche et à droite, et inversement) — c'est normal ; la duplication dans la voiture la remplit exactement.
 
 - C'est une modification au niveau du système qui **persiste après un redémarrage** tant qu'elle n'est pas annulée. Normalement, arrêter la duplication ou se déconnecter l'annule automatiquement.
-- Tant que la forme de l'écran du téléphone est modifiée, un avis ambre avec un bouton **Restaurer** apparaît en haut de cette section.
+- Tant que la forme de l'écran du téléphone est modifiée, un avis ambre avec un bouton **Rétablir** apparaît en haut de cette section.
 - Si l'écran du téléphone reste bloqué dans une mauvaise forme et que vous ne pouvez pas ouvrir l'app, exécutez `adb shell wm size reset` et `adb shell wm density reset` depuis un ordinateur.
 
 #### Ajouter un raccourci de rétablissement à l'écran d'accueil {#root_display_shortcut}

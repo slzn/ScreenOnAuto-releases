@@ -104,7 +104,7 @@ Android Auto 연결이 끊기면 미러링을 중지합니다(기본값 켜짐).
 
 #### 다른 앱 위에 표시 {#overlay_access}
 
-[자동 화면 어둡게](#auto_dim), 화면 방향 고정([화면 방향 고정 자동 시작](#force_landscape)과 [차량 버튼](#map_action_force_landscape)), [야간 어둡게](#night_dim)에 필요합니다.
+[자동 화면 어둡게](#auto_dim), 화면 방향 고정([연결 시 화면 방향 고정](#force_landscape)과 [차량 버튼](#map_action_force_landscape)), [야간 어둡게](#night_dim)에 필요합니다.
 
 #### 시스템 설정 수정 {#write_settings_access}
 
@@ -146,7 +146,7 @@ Shizuku 또는 Root가 있으면 대신 [실제 터치 입력 주입](#root_touc
 
 #### 화면 방향 고정 버튼 {#map_action_force_landscape}
 
-[화면 방향 고정 자동 시작](#force_landscape) 설정은 바꾸지 않고 지금 당장 화면 방향 고정을 켜거나 끕니다. 다음에 연결할 때는 다시 설정을 따릅니다. 기본값은 켜짐입니다.
+[연결 시 화면 방향 고정](#force_landscape) 설정은 바꾸지 않고 지금 당장 화면 방향 고정을 켜거나 끕니다. 다음에 연결할 때는 다시 설정을 따릅니다. 기본값은 켜짐입니다.
 
 #### 자동 어둡게 버튼 {#map_action_auto_dim}
 
@@ -180,7 +180,7 @@ dp 단위의 네 가지 간격(0–400, 기본값 16)입니다: 기능 버튼과
 
 ### 화면 방향 {#category_orientation}
 
-#### 화면 방향 고정 자동 시작 {#force_landscape}
+#### 연결 시 화면 방향 고정 {#force_landscape}
 
 Android Auto가 연결될 때 휴대전화를 한 방향으로 고정합니다. 휴대전화가 돌아가도 미러링 화면이 뒤집히지 않고, 가로로 둔 휴대전화가 넓은 차량 화면을 꽉 채웁니다. 연결되는 순간 한 번만 작동하며, 그 뒤에는 차량의 [화면 방향 고정 버튼](#map_action_force_landscape)으로 해제하거나 다시 적용합니다. [다른 앱 위에 표시](#overlay_access) 권한이 필요합니다.
 

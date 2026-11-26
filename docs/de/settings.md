@@ -50,13 +50,13 @@ Ist die Option aus, ist Schritt 3 deine Sache: Ein Tippen auf einen Eintrag im A
 
 ### Ruhezustand verhindern {#keep_awake}
 
-Verhindert, dass der Telefonbildschirm während der Spiegelung in den Ruhezustand geht. Die Spiegelung *ist* der Telefonbildschirm – geht er aus, bleibt auch das Bild im Auto stehen. Die Option hält den Bildschirm nur an, sie erhöht nicht die Helligkeit; daher passt sie gut zu [Automatisch dimmen](#auto_dim): Der Bildschirm bleibt an und wird bei Inaktivität gedimmt.
+Verhindert, dass der Telefonbildschirm während der Spiegelung in den Ruhezustand geht. Die Spiegelung *ist* der Telefonbildschirm – geht er aus, bleibt auch das Bild im Auto stehen. Die Option hält den Bildschirm nur an, sie erhöht nicht die Helligkeit; daher passt sie gut zu [Auto-Dimmen](#auto_dim): Der Bildschirm bleibt an und wird bei Inaktivität gedimmt.
 
 ### Bei Trennung stoppen {#stop_on_disconnect}
 
 Beendet die Spiegelung, wenn Android Auto getrennt wird (standardmäßig an). Ist die Option aus, läuft die Spiegelung nach dem Aussteigen im Hintergrund weiter, bis du sie beendest.
 
-### Automatisch dimmen {#auto_dim}
+### Auto-Dimmen {#auto_dim}
 
 Senkt während der Spiegelung die Helligkeit des Telefons auf das Minimum, wenn es eine Weile niemand berührt hat – das spart Akku und blendet nicht. Gedimmt wird nur die Hintergrundbeleuchtung des Telefons; das Bild im Auto bleibt so hell wie zuvor. Berührst du das Telefon, kehrt die Helligkeit zurück.
 
@@ -67,7 +67,7 @@ Senkt während der Spiegelung die Helligkeit des Telefons auf das Minimum, wenn 
 
 ### Dimmen nach {#auto_dim_delay}
 
-Wie lange das Telefon unbenutzt sein muss, bevor es gedimmt wird: 15, 30 (Standard), 60 oder 120 Sekunden. Setzt voraus, dass [Automatisch dimmen](#auto_dim) an ist.
+Wie lange das Telefon unbenutzt sein muss, bevor es gedimmt wird: 15, 30 (Standard), 60 oder 120 Sekunden. Setzt voraus, dass [Auto-Dimmen](#auto_dim) an ist.
 
 ### App automatisch starten {#auto_launch_package}
 
@@ -104,7 +104,7 @@ Lässt „ScreenOnAuto Mediensteuerung“ <img class="sp-entry" src="/images/ico
 
 #### Über anderen Apps anzeigen {#overlay_access}
 
-Wird benötigt von [Automatisch dimmen](#auto_dim), der Ausrichtungssperre ([Ausrichtung automatisch sperren](#force_landscape) und ihrer [Schaltfläche im Auto](#map_action_force_landscape)) und [Nachtdimmen](#night_dim).
+Wird benötigt von [Auto-Dimmen](#auto_dim), der Ausrichtungssperre ([Ausrichtung beim Verbinden sperren](#force_landscape) und ihrer [Schaltfläche im Auto](#map_action_force_landscape)) und [Nachtdimmen](#night_dim).
 
 #### Systemeinstellungen ändern {#write_settings_access}
 
@@ -146,11 +146,11 @@ Runde Schaltflächen über der Spiegelung, in beiden Spiegelungen bis zu 4 gleic
 
 #### Schaltfläche für Ausrichtungssperre {#map_action_force_landscape}
 
-Schaltet die Ausrichtungssperre vorübergehend ein oder aus, ohne die Einstellung [Ausrichtung automatisch sperren](#force_landscape) zu ändern; bei der nächsten Verbindung gilt wieder die Einstellung. Standardmäßig an.
+Schaltet die Ausrichtungssperre vorübergehend ein oder aus, ohne die Einstellung [Ausrichtung beim Verbinden sperren](#force_landscape) zu ändern; bei der nächsten Verbindung gilt wieder die Einstellung. Standardmäßig an.
 
 #### Auto-Dimmen-Schaltfläche {#map_action_auto_dim}
 
-Schaltet [Automatisch dimmen](#auto_dim) ein oder aus – derselbe Schalter wie in den Einstellungen. Wurde der Telefonbildschirm [ausgeschaltet](#root_screen_off), ist sie der schnellste Weg, ihn zurückzuholen.
+Schaltet [Auto-Dimmen](#auto_dim) ein oder aus – derselbe Schalter wie in den Einstellungen. Wurde der Telefonbildschirm [ausgeschaltet](#root_screen_off), ist sie der schnellste Weg, ihn zurückzuholen.
 
 #### Nachtdimmen-Schaltfläche {#map_action_night_dim}
 
@@ -180,7 +180,7 @@ Vier Abstände in dp (0–400, Standard 16): die Funktionsschaltflächen zum Sei
 
 ### Bildschirmausrichtung {#category_orientation}
 
-#### Ausrichtung automatisch sperren {#force_landscape}
+#### Ausrichtung beim Verbinden sperren {#force_landscape}
 
 Sperrt das Telefon beim Verbinden mit Android Auto in einer Ausrichtung, damit die Spiegelung nicht kippt, wenn sich das Telefon dreht, und ein quer liegendes Telefon einen breiten Autobildschirm ausfüllt. Die Option greift einmal, im Moment der Verbindung; danach hebt die [Schaltfläche für Ausrichtungssperre](#map_action_force_landscape) im Auto die Sperre auf oder setzt sie wieder. Benötigt die Berechtigung [Über anderen Apps anzeigen](#overlay_access).
 
@@ -296,7 +296,7 @@ Ist die Root-Verwaltung versteckt oder umbenannt, kann die App Root nicht erkenn
 
 #### Telefonbildschirm ausschalten {#root_screen_off}
 
-Greift [Automatisch dimmen](#auto_dim), wird die Hintergrundbeleuchtung des Telefons ausgeschaltet statt gedimmt. Setzt voraus, dass Automatisch dimmen an ist.
+Greift [Auto-Dimmen](#auto_dim), wird die Hintergrundbeleuchtung des Telefons ausgeschaltet statt gedimmt. Setzt voraus, dass Auto-Dimmen an ist.
 
 Nur der Bildschirm geht aus – **das Telefon geht nicht in den Ruhezustand**: Apps und System laufen weiter, die Spiegelung bleibt im Auto, und die Bedienung des Telefons vom Auto aus funktioniert weiterhin. Der Touchscreen schaltet sich allerdings mit dem Bildschirm ab; **eine Berührung des Telefonbildschirms bewirkt also nichts** und schaltet ihn auch nicht wieder ein.
 

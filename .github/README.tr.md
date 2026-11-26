@@ -43,7 +43,7 @@
 |---|---|
 | **Telefon ekranını kapat** | Otomatik Karartma devreye girdiğinde telefonun panelini kapatır, araç ise yansıtmayı göstermeye devam eder — pil tasarrufu sağlar ve gece telefonun kabini aydınlatmasını önler |
 | **Gerçek dokunma enjeksiyonu** | Sentezlenmiş hareketler yerine gerçek parmak hareketlerinizi aktarır; böylece **uzun basma, sürükleme ve çoklu dokunma** Legacy yansıtmasında çalışır |
-| **Telefon ekranını arabaya uydur** | Yansıtma sırasında telefon ekranını araba ünitesinin en boy oranına dönüştürür, böylece siyah kenarlıklar ve bölünmüş ekrandaki bozulma kaynağında ortadan kalkar — araba ekranı otomatik olarak ölçülür |
+| **Telefon ekranını araca uydur** | Yansıtma sırasında telefon ekranını araba ünitesinin en boy oranına dönüştürür, böylece siyah kenarlıklar ve bölünmüş ekrandaki bozulma kaynağında ortadan kalkar — araba ekranı otomatik olarak ölçülür |
 
 Shizuku veya root ile ayrıca:
 
@@ -51,7 +51,7 @@ Shizuku veya root ile ayrıca:
 - **Aracın gündüz/gece modunu izle** *(Android 10+)* — Yansıtma sırasında telefon, Android Auto ile birlikte açık ve koyu tema arasında geçiş yapar
 - **Yansıtma sırasında yazı tipi boyutu** — Yansıtma sırasında telefona farklı bir yazı tipi boyutu verin
 - **Yansıtma sırasında gezinme modu** *(Android 10+)* — Yansıtma sırasında telefonu hareketle gezinmeye, 2 düğmeli veya 3 düğmeli gezinmeye geçirin
-- **Yansıtma sırasında ana ekran** — Yansıtma sırasında telefonu başka bir başlatıcıya geçirin; örneğin **Telefon ekranını arabaya uydur** ekran şeklini değiştirdiğinde simge düzenini koruyan bir başlatıcıya geçebilirsiniz
+- **Yansıtma sırasında ana ekran** — Yansıtma sırasında telefonu başka bir başlatıcıya geçirin; örneğin **Telefon ekranını araca uydur** ekran şeklini değiştirdiğinde simge düzenini koruyan bir başlatıcıya geçebilirsiniz
 
 Yansıtma bittiğinde telefonun kendi teması, yazı tipi boyutu, gezinme modu ve başlatıcısı geri gelir.
 

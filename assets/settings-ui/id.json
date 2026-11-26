@@ -45,7 +45,7 @@
   "pref_force_landscape_reverse_summary": "Putar ponsel ke arah sebaliknya",
   "pref_force_landscape_reverse_title": "Lanskap terbalik",
   "pref_force_landscape_summary": "Mengunci orientasi ponsel saat Android Auto terhubung; setelah itu tombol di layar mobil mengubahnya",
-  "pref_force_landscape_title": "Kunci orientasi otomatis",
+  "pref_force_landscape_title": "Kunci orientasi saat terhubung",
   "pref_force_orientation_mode_title": "Orientasi",
   "pref_full_screen_share_only_summary": "Saat memulai pencerminan, tidak lagi ditanya apakah membagikan satu aplikasi atau seluruh layar",
   "pref_full_screen_share_only_title": "Bagikan seluruh layar saja",
@@ -156,7 +156,7 @@
   "value_off": "Mati"
  },
  "version": {
-  "code": 53,
-  "name": "1.11.0"
+  "code": 54,
+  "name": "1.11.1"
  }
 }

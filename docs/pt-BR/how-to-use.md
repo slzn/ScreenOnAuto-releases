@@ -116,7 +116,7 @@ inicie com **Iniciar espelhamento** no app.
 #### Barras pretas ao redor da imagem
 
 As telas do celular e do carro têm proporções diferentes. Use o botão [**Travar orientação**](/docs/pt-BR/settings/#map_action_force_landscape)
-na tela de espelhamento (ou [**Travar orientação automaticamente**](/docs/pt-BR/settings/#force_landscape) nas configurações). Para
+na tela de espelhamento (ou [**Travar orientação ao conectar**](/docs/pt-BR/settings/#force_landscape) nas configurações). Para
 preencher exatamente a área útil do carro, ative [**Ajustar a tela do telefone à do carro**](/docs/pt-BR/settings/#root_display_override)
 nos Recursos privilegiados (Shizuku ou root). [**Ajustar largura do espelhamento, Ajustar altura do espelhamento**](/docs/pt-BR/settings/#vd_gap) também podem ampliar a imagem por cima das faixas, cortando um pouco da borda; o Guia de configurações mostra como, com diagramas.
 

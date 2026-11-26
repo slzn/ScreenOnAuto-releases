@@ -45,7 +45,7 @@
   "pref_force_landscape_reverse_summary": "スマホを逆向きに置く",
   "pref_force_landscape_reverse_title": "横向きを反転",
   "pref_force_landscape_summary": "Android Auto 接続時にスマホの向きを固定。その後は車の画面のボタンで切り替えられます",
-  "pref_force_landscape_title": "画面の向きの固定を自動で開始",
+  "pref_force_landscape_title": "接続時に画面の向きを固定",
   "pref_force_orientation_mode_title": "向き",
   "pref_full_screen_share_only_summary": "ミラーリング開始時に、アプリ単位か画面全体かを尋ねなくなります",
   "pref_full_screen_share_only_title": "画面全体のみを共有",
@@ -156,7 +156,7 @@
   "value_off": "オフ"
  },
  "version": {
-  "code": 53,
-  "name": "1.11.0"
+  "code": 54,
+  "name": "1.11.1"
  }
 }

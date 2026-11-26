@@ -116,8 +116,7 @@ iníciala con **Iniciar duplicación** en la app.
 #### Barras negras alrededor de la imagen
 
 Las pantallas del teléfono y del coche tienen proporciones distintas. Usa el botón
-[**Bloquear orientación**](/docs/es/settings/#map_action_force_landscape) en la pantalla de duplicación (o [**Bloquear la orientación
-automáticamente**](/docs/es/settings/#force_landscape) en los ajustes). Para ajustarse exactamente al área útil del coche,
+[**Bloquear orientación**](/docs/es/settings/#map_action_force_landscape) en la pantalla de duplicación (o [**Bloquear la orientación al conectar**](/docs/es/settings/#force_landscape) en los ajustes). Para ajustarse exactamente al área útil del coche,
 activa [**Ajustar la pantalla del teléfono a la del coche**](/docs/es/settings/#root_display_override) en Funciones con privilegios
 (Shizuku o root). [**Ajustar ancho de la duplicación, Ajustar alto de la duplicación**](/docs/es/settings/#vd_gap) también pueden ampliar la imagen sobre las franjas, a costa de recortar un poco el borde; la Guía de ajustes lo explica con diagramas.
 

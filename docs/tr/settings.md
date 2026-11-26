@@ -104,7 +104,7 @@ Her satır ilgili sistem ayarları sayfasını açar; sağdaki etiket iznin veri
 
 #### Diğer uygulamaların üzerinde göster {#overlay_access}
 
-[Ekranı otomatik karart](#auto_dim), yön kilidi ([Yönü otomatik olarak kilitle](#force_landscape) ve onun [araçtaki düğmesi](#map_action_force_landscape)) ve [Gece karartması](#night_dim) için gereklidir.
+[Ekranı otomatik karart](#auto_dim), yön kilidi ([Bağlanınca yönü kilitle](#force_landscape) ve onun [araçtaki düğmesi](#map_action_force_landscape)) ve [Gece karartması](#night_dim) için gereklidir.
 
 #### Sistem ayarlarını değiştirme {#write_settings_access}
 
@@ -146,7 +146,7 @@ Yansıtmanın üzerinde yuvarlak düğmeler; iki yansıtmada da aynı anda en fa
 
 #### Yön kilidi düğmesi {#map_action_force_landscape}
 
-[Yönü otomatik olarak kilitle](#force_landscape) ayarını değiştirmeden yön kilidini o an için açar veya kapatır; sonraki bağlantı yine ayara uyar. Varsayılan olarak açık.
+[Bağlanınca yönü kilitle](#force_landscape) ayarını değiştirmeden yön kilidini o an için açar veya kapatır; sonraki bağlantı yine ayara uyar. Varsayılan olarak açık.
 
 #### Otomatik karartma düğmesi {#map_action_auto_dim}
 
@@ -180,7 +180,7 @@ dp cinsinden dört mesafe (0–400, varsayılan 16): işlev düğmelerinin yan k
 
 ### Ekran yönü {#category_orientation}
 
-#### Yönü otomatik olarak kilitle {#force_landscape}
+#### Bağlanınca yönü kilitle {#force_landscape}
 
 Android Auto bağlandığında telefonu tek bir yönde kilitler; böylece telefon döndüğünde yansıtma dönmez ve yatay tutulan bir telefon geniş bir araç ekranını doldurur. Bağlantı anında bir kez devreye girer; sonrasında araçtaki [Yön kilidi düğmesi](#map_action_force_landscape) kilidi açar veya yeniden uygular. [Diğer uygulamaların üzerinde göster](#overlay_access) iznini gerektirir.
 
@@ -238,10 +238,10 @@ Değer girmek için metne dokunun (sıfır olmayan bir değeri kaydetmek anahtar
 
 > **💡 Hiç siyah şerit olmaması için**
 >
-> Shizuku veya root ile [Telefon ekranını arabaya uydur](#root_display_override) seçeneğini açın. Telefonun ekranını alanın kendi oranlarına getirir, böylece yansıtma alanı tam olarak doldurur — şerit yok, kesilen bir şey yok. Bu açıkken bu iki ayar devre dışı kalır.
+> Shizuku veya root ile [Telefon ekranını araca uydur](#root_display_override) seçeneğini açın. Telefonun ekranını alanın kendi oranlarına getirir, böylece yansıtma alanı tam olarak doldurur — şerit yok, kesilen bir şey yok. Bu açıkken bu iki ayar devre dışı kalır.
 
 <div class="sp-figs one">
-<figure><img src="/images/settings/gap-match.svg" alt="Telefon ekranı araca uydurulduğunda görüntü kullanılabilir alanı tam olarak dolduruyor"><figcaption>Telefon ekranını arabaya uydur: tam oturur</figcaption></figure>
+<figure><img src="/images/settings/gap-match.svg" alt="Telefon ekranı araca uydurulduğunda görüntü kullanılabilir alanı tam olarak dolduruyor"><figcaption>Telefon ekranını araca uydur: tam oturur</figcaption></figure>
 </div>
 
 ### Gece karartması {#category_night_dim}
@@ -332,7 +332,7 @@ Yansıtma sırasında başka bir başlatıcıyı telefonun varsayılan ana ekran
 
 ### Ekran biçimi {#category_root_display}
 
-#### Telefon ekranını arabaya uydur {#root_display_override}
+#### Telefon ekranını araca uydur {#root_display_override}
 
 Yansıtma sırasında telefonun ekranını aracın en-boy oranına getirir; böylece yansıtma aracı siyah şerit olmadan doldurur ve bölünmüş görünümde bozulmaz. Yeniden bağlanmaya gerek kalmadan anında uygulanır.
 

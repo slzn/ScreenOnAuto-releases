@@ -34,7 +34,7 @@
   "pref_advanced_title": "Erweitert",
   "pref_auto_dim_delay_title": "Dimmen nach",
   "pref_auto_dim_summary": "Helligkeit des Telefonbildschirms bei Inaktivität während der Spiegelung auf Minimum reduzieren",
-  "pref_auto_dim_title": "Automatisch dimmen",
+  "pref_auto_dim_title": "Auto-Dimmen",
   "pref_auto_launch_summary_none": "Nicht festgelegt – tippe zum Auswählen\nWird automatisch geöffnet, wenn Spiegelung und Android Auto aktiv sind.",
   "pref_auto_launch_title": "App automatisch starten",
   "pref_auto_start_summary": "Spiegelung automatisch starten, wenn ScreenOnAuto auf dem Autobildschirm geöffnet wird",
@@ -46,7 +46,7 @@
   "pref_force_landscape_reverse_summary": "Telefon andersherum drehen",
   "pref_force_landscape_reverse_title": "Umgekehrtes Querformat",
   "pref_force_landscape_summary": "Sperrt die Ausrichtung des Telefons, wenn Android Auto verbindet; danach schaltet die Schaltfläche im Auto um",
-  "pref_force_landscape_title": "Ausrichtung automatisch sperren",
+  "pref_force_landscape_title": "Ausrichtung beim Verbinden sperren",
   "pref_force_orientation_mode_title": "Ausrichtung",
   "pref_full_screen_share_only_summary": "Beim Start der Spiegelung wird nicht mehr gefragt, ob eine App oder der ganze Bildschirm geteilt wird",
   "pref_full_screen_share_only_title": "Nur den gesamten Bildschirm teilen",
@@ -113,7 +113,7 @@
   "pref_root_mirror_home_title": "Startbildschirm während der Spiegelung",
   "pref_root_mirror_nav_mode_title": "Navigationsmodus während der Spiegelung",
   "pref_root_requires_connection": "Verbinde dich zuerst mit Shizuku oder Root",
-  "pref_root_screen_off_summary": "Greift Automatisch dimmen, wird die Hintergrundbeleuchtung des Telefons ausgeschaltet; die Spiegelung läuft im Auto weiter",
+  "pref_root_screen_off_summary": "Greift Auto-Dimmen, wird die Hintergrundbeleuchtung des Telefons ausgeschaltet; die Spiegelung läuft im Auto weiter",
   "pref_root_screen_off_title": "Telefonbildschirm ausschalten",
   "pref_root_summary": "Zusätzliche Funktionen, die Shizuku oder Root freischalten",
   "pref_root_title": "Privilegierte Funktionen",
@@ -157,7 +157,7 @@
   "value_off": "Aus"
  },
  "version": {
-  "code": 53,
-  "name": "1.11.0"
+  "code": 54,
+  "name": "1.11.1"
  }
 }

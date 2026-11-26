@@ -104,7 +104,7 @@ Permite que «ScreenOnAuto Controlador multimedia» <img class="sp-entry" src="/
 
 #### Mostrar sobre otras apps {#overlay_access}
 
-Lo necesitan [Atenuar pantalla automáticamente](#auto_dim), Bloquear orientación ([Bloquear la orientación automáticamente](#force_landscape) y su [botón en el coche](#map_action_force_landscape)) y la [Atenuación nocturna](#night_dim).
+Lo necesitan [Atenuar pantalla automáticamente](#auto_dim), Bloquear orientación ([Bloquear la orientación al conectar](#force_landscape) y su [botón en el coche](#map_action_force_landscape)) y la [Atenuación nocturna](#night_dim).
 
 #### Modificar ajustes del sistema {#write_settings_access}
 
@@ -146,7 +146,7 @@ Botones redondos sobre la duplicación, hasta 4 a la vez en cualquiera de las do
 
 #### Botón Bloquear orientación {#map_action_force_landscape}
 
-Activa o desactiva Bloquear orientación de momento, sin cambiar el ajuste [Bloquear la orientación automáticamente](#force_landscape); la siguiente conexión vuelve a seguir el ajuste. Activado de forma predeterminada.
+Activa o desactiva Bloquear orientación de momento, sin cambiar el ajuste [Bloquear la orientación al conectar](#force_landscape); la siguiente conexión vuelve a seguir el ajuste. Activado de forma predeterminada.
 
 #### Botón Atenuación automática {#map_action_auto_dim}
 
@@ -180,7 +180,7 @@ Cuatro distancias en dp (0–400, predeterminado 16): los botones de función re
 
 ### Orientación de la pantalla {#category_orientation}
 
-#### Bloquear la orientación automáticamente {#force_landscape}
+#### Bloquear la orientación al conectar {#force_landscape}
 
 Bloquea el teléfono en una orientación cuando se conecta Android Auto, para que la duplicación no gire cuando gira el teléfono y para que un teléfono en horizontal llene una pantalla ancha del coche. Actúa una sola vez, en el momento de conectar; después, el [Botón Bloquear orientación](#map_action_force_landscape) del coche lo libera o lo vuelve a aplicar. Necesita el permiso [Mostrar sobre otras apps](#overlay_access).
 

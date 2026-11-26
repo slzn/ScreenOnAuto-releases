@@ -117,8 +117,7 @@ le téléphone, ou lancez-la avec **Démarrer la duplication** dans l'app.
 #### Bandes noires autour de l'image
 
 Le téléphone et l'écran de la voiture ont des formats différents. Utilisez le bouton
-[**Verrouiller l'orientation**](/docs/fr/settings/#map_action_force_landscape) sur l'écran de duplication (ou [**Verrouiller automatiquement
-l'orientation**](/docs/fr/settings/#force_landscape) dans les réglages). Pour remplir exactement la zone utile de la voiture,
+[**Verrouiller l'orientation**](/docs/fr/settings/#map_action_force_landscape) sur l'écran de duplication (ou [**Verrouiller l'orientation à la connexion**](/docs/fr/settings/#force_landscape) dans les réglages). Pour remplir exactement la zone utile de la voiture,
 activez [**Adapter l'écran du téléphone à celui de la voiture**](/docs/fr/settings/#root_display_override) dans les Fonctions
 privilégiées (Shizuku ou root). [**Ajuster la largeur de la duplication, Ajuster la hauteur de la duplication**](/docs/fr/settings/#vd_gap) peuvent aussi agrandir l'image par-dessus les bandes, au prix d'un peu de bord rogné ; le Guide des réglages l'explique avec des schémas.
 

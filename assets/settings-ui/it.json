@@ -47,7 +47,7 @@
   "pref_force_landscape_reverse_summary": "Girare il telefono dall'altro lato",
   "pref_force_landscape_reverse_title": "Modalità orizzontale invertita",
   "pref_force_landscape_summary": "Blocca l'orientamento del telefono quando Android Auto si collega; poi il pulsante sullo schermo dell'auto lo cambia",
-  "pref_force_landscape_title": "Blocca automaticamente l'orientamento",
+  "pref_force_landscape_title": "Blocca l'orientamento alla connessione",
   "pref_force_orientation_mode_title": "Orientamento",
   "pref_full_screen_share_only_summary": "All'avvio del mirroring non viene più chiesto se condividere un'app o tutto lo schermo",
   "pref_full_screen_share_only_title": "Condividi solo l'intero schermo",
@@ -64,7 +64,7 @@
   "pref_legacy_shortcut_top_gap_title": "Scorciatoie: distanza dal bordo superiore",
   "pref_legacy_side_gap_title": "Pulsanti: distanza dal bordo laterale",
   "pref_mapstrip_auto_dim_summary": "Pulsante che attiva o disattiva l'oscuramento automatico (oscura lo schermo del telefono)",
-  "pref_mapstrip_auto_dim_title": "Pulsante Oscura",
+  "pref_mapstrip_auto_dim_title": "Pulsante Oscuramento automatico",
   "pref_mapstrip_back_summary": "Pulsante che funziona come il pulsante Indietro del telefono",
   "pref_mapstrip_back_title": "Pulsante Indietro",
   "pref_mapstrip_force_landscape_summary": "Pulsante che attiva o disattiva il blocco dell'orientamento",
@@ -158,7 +158,7 @@
   "value_off": "Disattivato"
  },
  "version": {
-  "code": 53,
-  "name": "1.11.0"
+  "code": 54,
+  "name": "1.11.1"
  }
 }

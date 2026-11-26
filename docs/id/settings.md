@@ -104,7 +104,7 @@ Memungkinkan “Pengontrol Media ScreenOnAuto” <img class="sp-entry" src="/ima
 
 #### Tampilkan di atas aplikasi lain {#overlay_access}
 
-Diperlukan oleh [Redupkan layar otomatis](#auto_dim), Kunci orientasi ([Kunci orientasi otomatis](#force_landscape) dan [tombolnya di mobil](#map_action_force_landscape)), serta [Peredupan malam](#night_dim).
+Diperlukan oleh [Redupkan layar otomatis](#auto_dim), Kunci orientasi ([Kunci orientasi saat terhubung](#force_landscape) dan [tombolnya di mobil](#map_action_force_landscape)), serta [Peredupan malam](#night_dim).
 
 #### Ubah setelan sistem {#write_settings_access}
 
@@ -146,7 +146,7 @@ Tombol bundar di atas pencerminan, hingga 4 sekaligus di kedua pencerminan.
 
 #### Tombol Kunci orientasi {#map_action_force_landscape}
 
-Menyalakan atau mematikan Kunci orientasi untuk sementara tanpa mengubah pengaturan [Kunci orientasi otomatis](#force_landscape); koneksi berikutnya kembali mengikuti pengaturan itu. Aktif secara default.
+Menyalakan atau mematikan Kunci orientasi untuk sementara tanpa mengubah pengaturan [Kunci orientasi saat terhubung](#force_landscape); koneksi berikutnya kembali mengikuti pengaturan itu. Aktif secara default.
 
 #### Tombol Peredupan otomatis {#map_action_auto_dim}
 
@@ -180,7 +180,7 @@ Empat jarak dalam dp (0–400, default 16): tombol fungsi dari tepi samping dan 
 
 ### Orientasi layar {#category_orientation}
 
-#### Kunci orientasi otomatis {#force_landscape}
+#### Kunci orientasi saat terhubung {#force_landscape}
 
 Mengunci ponsel pada satu orientasi saat Android Auto terhubung, sehingga pencerminan tidak terbalik saat ponsel diputar, dan ponsel lanskap mengisi layar mobil yang lebar. Pengaturan ini bekerja sekali, pada saat terhubung; setelah itu [Tombol Kunci orientasi](#map_action_force_landscape) di mobil yang melepas atau menerapkannya lagi. Memerlukan izin [Tampilkan di atas aplikasi lain](#overlay_access).
 

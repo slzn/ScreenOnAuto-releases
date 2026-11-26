@@ -50,13 +50,13 @@ Com a opção desativada, a etapa 3 fica por sua conta: tocar numa entrada no ca
 
 ### Evitar suspensão {#keep_awake}
 
-Impede que a tela do celular entre em repouso durante o espelhamento. O espelhamento *é* a tela do celular, então, quando a tela apaga, a imagem no carro também para. A opção só mantém a tela ligada — não aumenta o brilho —, por isso combina com [Diminuir brilho automaticamente](#auto_dim): a tela continua ligada e escurece quando ninguém a usa.
+Impede que a tela do celular entre em repouso durante o espelhamento. O espelhamento *é* a tela do celular, então, quando a tela apaga, a imagem no carro também para. A opção só mantém a tela ligada — não aumenta o brilho —, por isso combina com [Escurecimento automático](#auto_dim): a tela continua ligada e escurece quando ninguém a usa.
 
 ### Parar ao desconectar {#stop_on_disconnect}
 
 Para o espelhamento quando o Android Auto desconecta (ativado por padrão). Desativado, o espelhamento continua rodando em segundo plano depois que você sai do carro, até você pará-lo.
 
-### Diminuir brilho automaticamente {#auto_dim}
+### Escurecimento automático {#auto_dim}
 
 Durante o espelhamento, reduz o brilho do celular ao mínimo quando ninguém toca nele por um tempo — economiza bateria e evita reflexo. Só a luz de fundo do celular escurece; a imagem no carro continua tão clara quanto antes. Toque no celular e o brilho volta.
 
@@ -67,7 +67,7 @@ Durante o espelhamento, reduz o brilho do celular ao mínimo quando ninguém toc
 
 ### Diminuir após {#auto_dim_delay}
 
-Quanto tempo o celular precisa ficar sem uso antes de escurecer: 15, 30 (padrão), 60 ou 120 segundos. Precisa de [Diminuir brilho automaticamente](#auto_dim) ativado.
+Quanto tempo o celular precisa ficar sem uso antes de escurecer: 15, 30 (padrão), 60 ou 120 segundos. Precisa de [Escurecimento automático](#auto_dim) ativado.
 
 ### Lançar app automaticamente {#auto_launch_package}
 
@@ -104,7 +104,7 @@ Permite que o “ScreenOnAuto Controlador de mídia” <img class="sp-entry" src
 
 #### Exibir sobre outros apps {#overlay_access}
 
-Necessária para [Diminuir brilho automaticamente](#auto_dim), Travar orientação ([Travar orientação automaticamente](#force_landscape) e o [botão no carro](#map_action_force_landscape)) e [Escurecimento noturno](#night_dim).
+Necessária para [Escurecimento automático](#auto_dim), Travar orientação ([Travar orientação ao conectar](#force_landscape) e o [botão no carro](#map_action_force_landscape)) e [Escurecimento noturno](#night_dim).
 
 #### Modificar configurações do sistema {#write_settings_access}
 
@@ -146,11 +146,11 @@ Botões redondos sobre o espelhamento, até 4 ao mesmo tempo em qualquer um dos 
 
 #### Botão Travar orientação {#map_action_force_landscape}
 
-Liga ou desliga Travar orientação por enquanto, sem mudar a configuração [Travar orientação automaticamente](#force_landscape); a próxima conexão volta a seguir a configuração. Ativado por padrão.
+Liga ou desliga Travar orientação por enquanto, sem mudar a configuração [Travar orientação ao conectar](#force_landscape); a próxima conexão volta a seguir a configuração. Ativado por padrão.
 
 #### Botão Escurecimento automático {#map_action_auto_dim}
 
-Liga ou desliga [Diminuir brilho automaticamente](#auto_dim) — a mesma chave das configurações. Quando a tela do celular foi [desligada](#root_screen_off), é o jeito mais rápido de trazê-la de volta.
+Liga ou desliga [Escurecimento automático](#auto_dim) — a mesma chave das configurações. Quando a tela do celular foi [desligada](#root_screen_off), é o jeito mais rápido de trazê-la de volta.
 
 #### Botão Escurecimento noturno {#map_action_night_dim}
 
@@ -180,7 +180,7 @@ Quatro distâncias em dp (0–400, padrão 16): os botões de função em relaç
 
 ### Orientação da tela {#category_orientation}
 
-#### Travar orientação automaticamente {#force_landscape}
+#### Travar orientação ao conectar {#force_landscape}
 
 Trava o celular numa orientação quando o Android Auto conecta, para que o espelhamento não vire quando o celular gira e para que um celular na horizontal preencha uma tela larga no carro. Age uma vez, no momento da conexão; depois disso, o [Botão Travar orientação](#map_action_force_landscape) no carro libera ou reaplica a trava. Precisa da permissão [Exibir sobre outros apps](#overlay_access).
 
@@ -296,7 +296,7 @@ Se o gerenciador de root estiver oculto ou renomeado, o app não enxerga o root,
 
 #### Desligar a tela do telefone {#root_screen_off}
 
-Quando [Diminuir brilho automaticamente](#auto_dim) entra em ação, desliga a luz de fundo do celular em vez de escurecê-la. Precisa de Diminuir brilho automaticamente ativado.
+Quando [Escurecimento automático](#auto_dim) entra em ação, desliga a luz de fundo do celular em vez de escurecê-la. Precisa de Escurecimento automático ativado.
 
 Só a tela apaga — **o celular não entra em repouso**: os apps e o sistema continuam rodando, o espelhamento continua no carro e usar o celular pelo carro continua funcionando. Mas o touch desliga junto com a tela, então **tocar na tela do celular não faz nada** e não a liga de volta.
 

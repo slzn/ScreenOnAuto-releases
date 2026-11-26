@@ -111,7 +111,7 @@ Phản chiếu chưa bắt đầu; hãy xem điện thoại có hiện hộp tho
 #### Có viền đen quanh hình
 
 Màn hình điện thoại và màn hình xe có tỉ lệ khung hình khác nhau. Hãy dùng nút [**Khóa hướng xoay**](/docs/vi/settings/#map_action_force_landscape)
-trên màn hình phản chiếu (hoặc [**Tự động khóa hướng xoay**](/docs/vi/settings/#force_landscape) trong cài đặt). Để vừa khít vùng màn hình
+trên màn hình phản chiếu (hoặc [**Khóa hướng xoay khi kết nối**](/docs/vi/settings/#force_landscape) trong cài đặt). Để vừa khít vùng màn hình
 xe có thể dùng, hãy bật [**Khớp màn hình điện thoại với xe**](/docs/vi/settings/#root_display_override) trong Tính năng đặc quyền (Shizuku hoặc root). Bạn cũng có thể dùng [**Điều chỉnh chiều rộng phản chiếu, Điều chỉnh chiều cao phản chiếu**](/docs/vi/settings/#vd_gap) để phóng to hình đè lên các dải đen, đổi lại bị cắt mất một chút ở mép; trang Giải thích các cài đặt có hình minh họa.
 
 #### Hình bị kéo giãn hoặc méo sau khi bố cục thay đổi

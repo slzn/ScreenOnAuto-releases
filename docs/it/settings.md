@@ -104,7 +104,7 @@ Permette a «ScreenOnAuto Controller multimediale» <img class="sp-entry" src="/
 
 #### Mostra sopra le altre app {#overlay_access}
 
-Serve a [Oscuramento automatico](#auto_dim), Blocca orientamento ([Blocca automaticamente l'orientamento](#force_landscape) e il suo [pulsante in auto](#map_action_force_landscape)) e [Oscuramento notturno](#night_dim).
+Serve a [Oscuramento automatico](#auto_dim), Blocca orientamento ([Blocca l'orientamento alla connessione](#force_landscape) e il suo [pulsante in auto](#map_action_force_landscape)) e [Oscuramento notturno](#night_dim).
 
 #### Modifica impostazioni di sistema {#write_settings_access}
 
@@ -146,9 +146,9 @@ Pulsanti rotondi sopra il mirroring, fino a 4 alla volta in entrambi i mirroring
 
 #### Pulsante Blocca orientamento {#map_action_force_landscape}
 
-Attiva o disattiva Blocca orientamento per il momento, senza cambiare l'impostazione [Blocca automaticamente l'orientamento](#force_landscape); alla connessione successiva vale di nuovo l'impostazione. Attivo per impostazione predefinita.
+Attiva o disattiva Blocca orientamento per il momento, senza cambiare l'impostazione [Blocca l'orientamento alla connessione](#force_landscape); alla connessione successiva vale di nuovo l'impostazione. Attivo per impostazione predefinita.
 
-#### Pulsante Oscura {#map_action_auto_dim}
+#### Pulsante Oscuramento automatico {#map_action_auto_dim}
 
 Attiva o disattiva [Oscuramento automatico](#auto_dim) — lo stesso interruttore delle impostazioni. Quando lo schermo del telefono è stato [spento](#root_screen_off), è il modo più rapido per riaccenderlo.
 
@@ -180,7 +180,7 @@ Quattro distanze in dp (0–400, predefinito 16): i pulsanti funzione dal bordo 
 
 ### Orientamento dello schermo {#category_orientation}
 
-#### Blocca automaticamente l'orientamento {#force_landscape}
+#### Blocca l'orientamento alla connessione {#force_landscape}
 
 Blocca il telefono in un orientamento quando Android Auto si collega, così il mirroring non si capovolge quando il telefono ruota e un telefono in orizzontale riempie uno schermo dell'auto largo. Agisce una sola volta, al momento della connessione; dopo, il [Pulsante Blocca orientamento](#map_action_force_landscape) in auto rilascia o riapplica il blocco. Richiede l'autorizzazione [Mostra sopra le altre app](#overlay_access).
 
@@ -300,7 +300,7 @@ Quando interviene [Oscuramento automatico](#auto_dim), spegne la retroilluminazi
 
 Si spegne solo lo schermo — **il telefono non va in standby**: app e sistema continuano a funzionare, il mirroring resta in auto e puoi ancora usare il telefono dall'auto. Però il touchscreen si spegne insieme allo schermo, quindi **toccare lo schermo del telefono non fa nulla** e non lo riaccende.
 
-Per riaccendere lo schermo: tocca il [Pulsante Oscura](#map_action_auto_dim) in auto, interrompi il mirroring o disconnetti Android Auto, oppure premi il tasto di accensione **due volte** (la prima pressione è quella che manda il sistema in standby).
+Per riaccendere lo schermo: tocca il [Pulsante Oscuramento automatico](#map_action_auto_dim) in auto, interrompi il mirroring o disconnetti Android Auto, oppure premi il tasto di accensione **due volte** (la prima pressione è quella che manda il sistema in standby).
 
 #### Iniezione tocco reale {#root_touch_injection}
 

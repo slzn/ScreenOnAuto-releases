@@ -48,7 +48,7 @@
   "pref_force_landscape_reverse_summary": "Повернуть телефон в другую сторону",
   "pref_force_landscape_reverse_title": "Перевёрнутая альбомная ориентация",
   "pref_force_landscape_summary": "Блокирует ориентацию телефона при подключении Android Auto; потом её переключает кнопка на экране автомобиля",
-  "pref_force_landscape_title": "Автоблокировка ориентации",
+  "pref_force_landscape_title": "Блокировать ориентацию при подключении",
   "pref_force_orientation_mode_title": "Ориентация",
   "pref_full_screen_share_only_summary": "При запуске дублирования больше не спрашивается, показывать одно приложение или весь экран",
   "pref_full_screen_share_only_title": "Транслировать только весь экран",
@@ -159,7 +159,7 @@
   "value_off": "Выкл."
  },
  "version": {
-  "code": 53,
-  "name": "1.11.0"
+  "code": 54,
+  "name": "1.11.1"
  }
 }

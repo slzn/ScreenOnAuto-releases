@@ -46,7 +46,7 @@
   "pref_force_landscape_reverse_summary": "Telefonu ters yöne çevir",
   "pref_force_landscape_reverse_title": "Ters yatay mod",
   "pref_force_landscape_summary": "Android Auto bağlanınca telefonun yönünü kilitler; sonra araç ekranındaki düğme değiştirir",
-  "pref_force_landscape_title": "Yönü otomatik olarak kilitle",
+  "pref_force_landscape_title": "Bağlanınca yönü kilitle",
   "pref_force_orientation_mode_title": "Yön",
   "pref_full_screen_share_only_summary": "Yansıtmayı başlatırken tek uygulama mı tüm ekran mı paylaşılacağı artık sorulmaz",
   "pref_full_screen_share_only_title": "Yalnızca tüm ekranı paylaş",
@@ -95,12 +95,12 @@
   "pref_root_car_night_from_aa_title": "Modu Android Auto'dan oku",
   "pref_root_display_car_size_title": "Araç ekranı boyutu",
   "pref_root_display_category": "Ekran biçimi",
-  "pref_root_display_derived_none": "Henüz yok — araba ekranı, yansıtma Android Auto'da bir sonraki açılışında otomatik olarak ölçülür",
+  "pref_root_display_derived_none": "Henüz yok — araç ekranı, yansıtma Android Auto'da bir sonraki açılışında otomatik olarak ölçülür",
   "pref_root_display_derived_title": "Uygulanacak değer",
   "pref_root_display_dpi_short": "Yüksek değer yazıyı büyütür; düşük değer bir seferde daha çok gösterir, çok düşükse tablet düzenine geçer",
   "pref_root_display_dpi_title": "Telefon ekran yoğunluğu",
   "pref_root_display_override_summary": "Telefonu aracın oranına getirir, yansıtma siyah şerit olmadan doldurur",
-  "pref_root_display_override_title": "Telefon ekranını arabaya uydur",
+  "pref_root_display_override_title": "Telefon ekranını araca uydur",
   "pref_root_display_shortcut_summary": "Tek dokunuşla, uygulamayı açmadan telefon ekranını geri yükler",
   "pref_root_display_shortcut_title": "Ana ekrana geri yükleme kısayolu ekle",
   "pref_root_features_category": "Özellikler",
@@ -157,7 +157,7 @@
   "value_off": "Kapalı"
  },
  "version": {
-  "code": 53,
-  "name": "1.11.0"
+  "code": 54,
+  "name": "1.11.1"
  }
 }

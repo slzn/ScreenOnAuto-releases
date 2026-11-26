@@ -116,7 +116,7 @@ oppure avvialo con **Avvia mirroring** nell'app.
 #### Bande nere attorno all'immagine
 
 Telefono e schermo dell'auto hanno proporzioni diverse. Usa il pulsante [**Blocca
-orientamento**](/docs/it/settings/#map_action_force_landscape) sulla schermata di mirroring (o [**Blocca automaticamente l'orientamento**](/docs/it/settings/#force_landscape)
+orientamento**](/docs/it/settings/#map_action_force_landscape) sulla schermata di mirroring (o [**Blocca l'orientamento alla connessione**](/docs/it/settings/#force_landscape)
 nelle impostazioni). Per riempire esattamente l'area utile dell'auto, attiva [**Adattare
 lo schermo del telefono a quello dell'auto**](/docs/it/settings/#root_display_override) nelle Funzioni privilegiate (Shizuku o
 root). Anche [**Regola larghezza del mirroring, Regola altezza del mirroring**](/docs/it/settings/#vd_gap) possono ingrandire l'immagine sopra le bande, sacrificando un po' del bordo; la Guida alle impostazioni lo mostra con degli schemi.

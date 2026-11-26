@@ -50,7 +50,7 @@
   "pref_force_landscape_reverse_summary": "تدوير الهاتف في الاتجاه الآخر",
   "pref_force_landscape_reverse_title": "الوضع الأفقي المعكوس",
   "pref_force_landscape_summary": "يقفل اتجاه الهاتف عند اتصال Android Auto، ثم يبدّله الزر على شاشة السيارة",
-  "pref_force_landscape_title": "بدء قفل الاتجاه تلقائيًا",
+  "pref_force_landscape_title": "قفل الاتجاه عند الاتصال",
   "pref_force_orientation_mode_title": "الاتجاه",
   "pref_full_screen_share_only_summary": "لم يعد بدء النسخ المطابق يسأل عن مشاركة تطبيق واحد أو الشاشة كاملة",
   "pref_full_screen_share_only_title": "مشاركة الشاشة بأكملها فقط",
@@ -161,7 +161,7 @@
   "value_off": "إيقاف"
  },
  "version": {
-  "code": 53,
-  "name": "1.11.0"
+  "code": 54,
+  "name": "1.11.1"
  }
 }

@@ -104,7 +104,7 @@ Android Auto が切断されたときにミラーリングを停止します（�
 
 #### 他のアプリの上に表示 {#overlay_access}
 
-[自動減光](#auto_dim)、画面の向きの固定（[画面の向きの固定を自動で開始](#force_landscape)と[車の画面のボタン](#map_action_force_landscape)）、[夜間減光](#night_dim)に必要です。
+[自動減光](#auto_dim)、画面の向きの固定（[接続時に画面の向きを固定](#force_landscape)と[車の画面のボタン](#map_action_force_landscape)）、[夜間減光](#night_dim)に必要です。
 
 #### システム設定の変更 {#write_settings_access}
 
@@ -146,7 +146,7 @@ Shizuku または Root があれば、代わりに[実タッチ入力の注入](
 
 #### 向き固定ボタン {#map_action_force_landscape}
 
-[画面の向きの固定を自動で開始](#force_landscape)の設定を変えずに、その場で画面の向きの固定をオン／オフします。次に接続したときは、再び設定どおりになります。初期状態でオンです。
+[接続時に画面の向きを固定](#force_landscape)の設定を変えずに、その場で画面の向きの固定をオン／オフします。次に接続したときは、再び設定どおりになります。初期状態でオンです。
 
 #### 自動減光ボタン {#map_action_auto_dim}
 
@@ -180,7 +180,7 @@ Shizuku または Root があれば、代わりに[実タッチ入力の注入](
 
 ### 画面の向き {#category_orientation}
 
-#### 画面の向きの固定を自動で開始 {#force_landscape}
+#### 接続時に画面の向きを固定 {#force_landscape}
 
 Android Auto に接続したときにスマホの向きを固定します。スマホが回転してもミラーが反転せず、横向きのスマホなら横長の車の画面いっぱいに表示されます。動作するのは接続した瞬間の 1 回だけで、その後は車の[向き固定ボタン](#map_action_force_landscape)で解除したり固定し直したりします。[他のアプリの上に表示](#overlay_access)の権限が必要です。
 

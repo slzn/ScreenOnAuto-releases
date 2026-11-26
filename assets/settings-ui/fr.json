@@ -47,7 +47,7 @@
   "pref_force_landscape_reverse_summary": "Tourner le téléphone dans l'autre sens",
   "pref_force_landscape_reverse_title": "Mode paysage inversé",
   "pref_force_landscape_summary": "Verrouille l'orientation du téléphone à la connexion d'Android Auto ; ensuite, le bouton de l'écran de la voiture la bascule",
-  "pref_force_landscape_title": "Verrouiller automatiquement l'orientation",
+  "pref_force_landscape_title": "Verrouiller l'orientation à la connexion",
   "pref_force_orientation_mode_title": "Orientation",
   "pref_full_screen_share_only_summary": "Le démarrage de la duplication ne demande plus s'il faut partager une appli ou tout l'écran",
   "pref_full_screen_share_only_title": "Partager uniquement l'écran entier",
@@ -158,7 +158,7 @@
   "value_off": "Désactivé"
  },
  "version": {
-  "code": 53,
-  "name": "1.11.0"
+  "code": 54,
+  "name": "1.11.1"
  }
 }

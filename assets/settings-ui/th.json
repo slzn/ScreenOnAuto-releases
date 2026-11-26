@@ -45,7 +45,7 @@
   "pref_force_landscape_reverse_summary": "หมุนโทรศัพท์ไปอีกด้าน",
   "pref_force_landscape_reverse_title": "แนวนอนกลับด้าน",
   "pref_force_landscape_summary": "ล็อกการวางแนวโทรศัพท์เมื่อ Android Auto เชื่อมต่อ หลังจากนั้นปุ่มบนจอรถจะสลับให้",
-  "pref_force_landscape_title": "ล็อกการวางแนวอัตโนมัติ",
+  "pref_force_landscape_title": "ล็อกการวางแนวเมื่อเชื่อมต่อ",
   "pref_force_orientation_mode_title": "การวางแนว",
   "pref_full_screen_share_only_summary": "เมื่อเริ่มสะท้อนหน้าจอ จะไม่ถามอีกว่าจะแชร์แอปเดียวหรือทั้งหน้าจอ",
   "pref_full_screen_share_only_title": "แชร์ทั้งหน้าจอเท่านั้น",
@@ -95,7 +95,7 @@
   "pref_root_display_car_size_title": "ขนาดหน้าจอรถ",
   "pref_root_display_category": "รูปทรงหน้าจอ",
   "pref_root_display_derived_none": "ยังไม่มี — จะวัดขนาดจอรถโดยอัตโนมัติเมื่อเปิดการสะท้อนหน้าจอใน Android Auto ครั้งถัดไป",
-  "pref_root_display_derived_title": "สิ่งที่จะใช้",
+  "pref_root_display_derived_title": "ขนาดที่จะใช้จริง",
   "pref_root_display_dpi_short": "ค่ามากตัวอักษรใหญ่ขึ้น ค่าน้อยแสดงได้มากขึ้น และถ้าน้อยเกินไปจะเปลี่ยนเป็นเลย์เอาต์แท็บเล็ต",
   "pref_root_display_dpi_title": "ความหนาแน่นของโทรศัพท์",
   "pref_root_display_override_summary": "เปลี่ยนโทรศัพท์เป็นสัดส่วนของรถ ภาพสะท้อนจึงเต็มจอไม่มีแถบดำ",
@@ -156,7 +156,7 @@
   "value_off": "ปิด"
  },
  "version": {
-  "code": 53,
-  "name": "1.11.0"
+  "code": 54,
+  "name": "1.11.1"
  }
 }

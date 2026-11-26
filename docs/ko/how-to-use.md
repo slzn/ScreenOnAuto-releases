@@ -111,7 +111,7 @@ Android Auto의 앱 런처에는 미러링 항목이 **두 개**(<span class="ic
 
 #### 화면 주변에 검은 여백이 있음
 
-휴대전화와 차량 화면의 화면비가 다르기 때문입니다. 미러링 화면의 [**화면 방향 고정**](/docs/ko/settings/#map_action_force_landscape) 버튼(또는 설정의 [**화면 방향 고정 자동 시작**](/docs/ko/settings/#force_landscape))을 사용하세요.
+휴대전화와 차량 화면의 화면비가 다르기 때문입니다. 미러링 화면의 [**화면 방향 고정**](/docs/ko/settings/#map_action_force_landscape) 버튼(또는 설정의 [**연결 시 화면 방향 고정**](/docs/ko/settings/#force_landscape))을 사용하세요.
 차량에서 쓸 수 있는 화면 영역에 정확히 맞추려면 특권 기능의 [**휴대전화 화면을 차량 화면 비율에 맞추기**](/docs/ko/settings/#root_display_override)를 켜세요(Shizuku 또는 루트 필요). [**미러링 너비 조정, 미러링 높이 조정**](/docs/ko/settings/#vd_gap)으로 화면을 키워 검은 띠를 덮을 수도 있습니다(가장자리가 조금 잘립니다). 설정 안내에 그림으로 설명되어 있습니다.
 
 #### 레이아웃이 바뀐 뒤 화면이 늘어나거나 찌그러져 보임

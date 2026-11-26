@@ -115,9 +115,9 @@ Yansıtma henüz başlamamıştır; telefonda izin penceresini kontrol edin veya
 #### Görüntünün etrafında siyah bantlar var
 
 Telefon ve araç ekranlarının en-boy oranları farklıdır. Yansıtma ekranındaki [**Yönü
-kilitle**](/docs/tr/settings/#map_action_force_landscape) düğmesini (veya ayarlardaki [**Yönü otomatik olarak kilitle**](/docs/tr/settings/#force_landscape) seçeneğini)
+kilitle**](/docs/tr/settings/#map_action_force_landscape) düğmesini (veya ayarlardaki [**Bağlanınca yönü kilitle**](/docs/tr/settings/#force_landscape) seçeneğini)
 kullanın. Aracın kullanılabilir alanını tam olarak doldurmak için Ayrıcalıklı
-özellikler'deki [**Telefon ekranını arabaya uydur**](/docs/tr/settings/#root_display_override) seçeneğini açın (Shizuku veya root). [**Yansıtma genişliğini ayarla, Yansıtma yüksekliğini ayarla**](/docs/tr/settings/#vd_gap) ile görüntüyü şeritlerin üzerine büyütebilirsiniz, ancak kenardan biraz kesilir; Ayarlar Rehberi sayfası bunu şemalarla gösterir.
+özellikler'deki [**Telefon ekranını araca uydur**](/docs/tr/settings/#root_display_override) seçeneğini açın (Shizuku veya root). [**Yansıtma genişliğini ayarla, Yansıtma yüksekliğini ayarla**](/docs/tr/settings/#vd_gap) ile görüntüyü şeritlerin üzerine büyütebilirsiniz, ancak kenardan biraz kesilir; Ayarlar Rehberi sayfası bunu şemalarla gösterir.
 
 #### Düzen değiştikten sonra görüntü gerilmiş veya bozulmuş görünüyor
 
@@ -130,7 +130,7 @@ bunu düzeltebilir:
 - [**Ayarlar → Gelişmiş → Uygulamanın çizdiği yansıtma (deneysel)**](/docs/tr/settings/#self_draw) seçeneğini açın.
   Uygulama bu durumda ölçeklendirmeyi sisteme bırakmak yerine yansıtma görüntüsünü
   kendisi çizer; böylece görüntü bölünmüş görünümde artık bozulmaz. Biraz daha
-  fazla pil tüketir ve yansıtma bir sonraki başlatılışında etkinleşir. [**Telefon ekranını arabaya uydur**](/docs/tr/settings/#root_display_override) (Ayrıcalıklı özellikler) aynı sorunu farklı bir yolla çözer ve ikisi birlikte açık olabilir.
+  fazla pil tüketir ve yansıtma bir sonraki başlatılışında etkinleşir. [**Telefon ekranını araca uydur**](/docs/tr/settings/#root_display_override) (Ayrıcalıklı özellikler) aynı sorunu farklı bir yolla çözer ve ikisi birlikte açık olabilir.
 
 #### Yansıtma sırasında Android Auto'daki Google Haritalar siyah ekrana dönüyor
 

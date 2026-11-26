@@ -95,7 +95,7 @@ Android Auto のアプリランチャーには、ミラーリングの項目が 
 
 #### 映像のまわりに黒い帯が出る
 
-スマホと車の画面の縦横比が異なるためです。ミラーリング画面の [**画面の向きを固定**](/docs/ja/settings/#map_action_force_landscape) ボタン（または設定の [**画面の向きの固定を自動で開始**](/docs/ja/settings/#force_landscape)）を使ってください。車で使える画面領域にぴったり合わせるには、特権機能の [**スマホの画面を車の画面比に合わせる**](/docs/ja/settings/#root_display_override) をオンにします（Shizuku または root が必要）。[**ミラー幅を調整、ミラー高さを調整**](/docs/ja/settings/#vd_gap) で映像を拡大して黒帯を埋めることもできます（端が少し切れます）。設定ガイド に図で説明しています。
+スマホと車の画面の縦横比が異なるためです。ミラーリング画面の [**画面の向きを固定**](/docs/ja/settings/#map_action_force_landscape) ボタン（または設定の [**接続時に画面の向きを固定**](/docs/ja/settings/#force_landscape)）を使ってください。車で使える画面領域にぴったり合わせるには、特権機能の [**スマホの画面を車の画面比に合わせる**](/docs/ja/settings/#root_display_override) をオンにします（Shizuku または root が必要）。[**ミラー幅を調整、ミラー高さを調整**](/docs/ja/settings/#vd_gap) で映像を拡大して黒帯を埋めることもできます（端が少し切れます）。設定ガイド に図で説明しています。
 
 #### レイアウトが変わると映像が引き伸ばされる・ゆがむ
 

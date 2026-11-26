@@ -113,7 +113,7 @@ Pencerminan belum dimulai; periksa apakah ada dialog izin di ponsel, atau mulai 
 #### Ada bilah hitam di sekeliling gambar
 
 Layar ponsel dan layar mobil memiliki rasio aspek yang berbeda. Gunakan tombol [**Kunci orientasi**](/docs/id/settings/#map_action_force_landscape)
-di layar pencerminan (atau [**Kunci orientasi otomatis**](/docs/id/settings/#force_landscape) di pengaturan). Agar pas persis dengan area
+di layar pencerminan (atau [**Kunci orientasi saat terhubung**](/docs/id/settings/#force_landscape) di pengaturan). Agar pas persis dengan area
 layar mobil yang bisa dipakai, aktifkan [**Samakan layar ponsel dengan mobil**](/docs/id/settings/#root_display_override) di Fitur istimewa
 (Shizuku atau root). [**Sesuaikan lebar pencerminan, Sesuaikan tinggi pencerminan**](/docs/id/settings/#vd_gap) juga bisa memperbesar gambar hingga menutupi pita hitam, dengan sedikit tepi yang terpotong; Panduan Pengaturan menjelaskannya dengan diagram.
 

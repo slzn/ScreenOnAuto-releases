@@ -117,8 +117,7 @@ oder starte sie in der App mit **Spiegelung starten**.
 #### Schwarze Balken um das Bild
 
 Telefon- und Fahrzeugbildschirm haben unterschiedliche Seitenverhältnisse. Nutze die Schaltfläche
-[**Ausrichtung sperren**](/docs/de/settings/#map_action_force_landscape) auf dem Spiegelbildschirm (oder [**Ausrichtung automatisch
-sperren**](/docs/de/settings/#force_landscape) in den Einstellungen). Um die nutzbare Fläche des Autos exakt auszufüllen,
+[**Ausrichtung sperren**](/docs/de/settings/#map_action_force_landscape) auf dem Spiegelbildschirm (oder [**Ausrichtung beim Verbinden sperren**](/docs/de/settings/#force_landscape) in den Einstellungen). Um die nutzbare Fläche des Autos exakt auszufüllen,
 aktiviere [**Telefonbildschirm an das Auto anpassen**](/docs/de/settings/#root_display_override) in den Privilegierten Funktionen
 (Shizuku oder Root). Mit [**Spiegelungsbreite anpassen, Spiegelungshöhe anpassen**](/docs/de/settings/#vd_gap) lässt sich das Bild auch über die Balken vergrößern, wobei ein wenig vom Rand verloren geht; die Seite Einstellungen im Überblick zeigt das mit Skizzen.
 

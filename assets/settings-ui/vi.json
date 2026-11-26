@@ -45,7 +45,7 @@
   "pref_force_landscape_reverse_summary": "Xoay điện thoại theo hướng ngược lại",
   "pref_force_landscape_reverse_title": "Xoay ngang đảo ngược",
   "pref_force_landscape_summary": "Khóa hướng điện thoại khi Android Auto kết nối; sau đó nút trên màn hình xe sẽ chuyển đổi",
-  "pref_force_landscape_title": "Tự động khóa hướng xoay",
+  "pref_force_landscape_title": "Khóa hướng xoay khi kết nối",
   "pref_force_orientation_mode_title": "Hướng",
   "pref_full_screen_share_only_summary": "Khi bắt đầu phản chiếu, không còn hỏi chia sẻ một ứng dụng hay toàn bộ màn hình",
   "pref_full_screen_share_only_title": "Chỉ chia sẻ toàn bộ màn hình",
@@ -156,7 +156,7 @@
   "value_off": "Tắt"
  },
  "version": {
-  "code": 53,
-  "name": "1.11.0"
+  "code": 54,
+  "name": "1.11.1"
  }
 }

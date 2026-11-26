@@ -104,7 +104,7 @@ Cho phép “Trình điều khiển đa phương tiện ScreenOnAuto” <img cla
 
 #### Hiển thị trên các ứng dụng khác {#overlay_access}
 
-Cần cho [Tự động làm tối màn hình](#auto_dim), Khóa hướng xoay ([Tự động khóa hướng xoay](#force_landscape) và [nút trên xe](#map_action_force_landscape) của nó) và [Làm tối ban đêm](#night_dim).
+Cần cho [Tự động làm tối màn hình](#auto_dim), Khóa hướng xoay ([Khóa hướng xoay khi kết nối](#force_landscape) và [nút trên xe](#map_action_force_landscape) của nó) và [Làm tối ban đêm](#night_dim).
 
 #### Sửa đổi các tùy chọn cài đặt hệ thống {#write_settings_access}
 
@@ -146,7 +146,7 @@ Các nút tròn nằm trên hình phản chiếu, tối đa 4 nút cùng lúc �
 
 #### Nút Khóa hướng xoay {#map_action_force_landscape}
 
-Bật hoặc tắt Khóa hướng xoay trong lúc này mà không thay đổi cài đặt [Tự động khóa hướng xoay](#force_landscape); lần kết nối sau lại làm theo cài đặt. Bật theo mặc định.
+Bật hoặc tắt Khóa hướng xoay trong lúc này mà không thay đổi cài đặt [Khóa hướng xoay khi kết nối](#force_landscape); lần kết nối sau lại làm theo cài đặt. Bật theo mặc định.
 
 #### Nút Tự động làm tối {#map_action_auto_dim}
 
@@ -180,7 +180,7 @@ Bốn khoảng cách tính bằng dp (0–400, mặc định 16): khoảng cách
 
 ### Hướng màn hình {#category_orientation}
 
-#### Tự động khóa hướng xoay {#force_landscape}
+#### Khóa hướng xoay khi kết nối {#force_landscape}
 
 Khóa điện thoại ở một hướng khi Android Auto kết nối, để hình phản chiếu không bị lật khi điện thoại xoay, và điện thoại nằm ngang sẽ lấp đầy màn hình xe rộng. Nó chỉ tác động một lần, đúng lúc kết nối; sau đó [Nút Khóa hướng xoay](#map_action_force_landscape) trên xe sẽ nhả hoặc áp dụng lại. Cần quyền [Hiển thị trên các ứng dụng khác](#overlay_access).
 

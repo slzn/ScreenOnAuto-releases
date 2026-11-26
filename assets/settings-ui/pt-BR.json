@@ -35,7 +35,7 @@
   "pref_advanced_title": "Avançado",
   "pref_auto_dim_delay_title": "Diminuir após",
   "pref_auto_dim_summary": "Reduzir ao mínimo o brilho da tela do telefone quando inativo durante o espelhamento",
-  "pref_auto_dim_title": "Diminuir brilho automaticamente",
+  "pref_auto_dim_title": "Escurecimento automático",
   "pref_auto_launch_summary_none": "Não configurado — toque para escolher\nAbrirá automaticamente quando o espelhamento e o Android Auto estiverem ativos.",
   "pref_auto_launch_title": "Lançar app automaticamente",
   "pref_auto_start_summary": "Iniciar espelhamento automaticamente ao abrir o ScreenOnAuto na tela do carro",
@@ -47,7 +47,7 @@
   "pref_force_landscape_reverse_summary": "Virar o telefone para o outro lado",
   "pref_force_landscape_reverse_title": "Paisagem invertida",
   "pref_force_landscape_summary": "Trava a orientação do telefone quando o Android Auto conecta; depois, o botão na tela do carro alterna",
-  "pref_force_landscape_title": "Travar orientação automaticamente",
+  "pref_force_landscape_title": "Travar orientação ao conectar",
   "pref_force_orientation_mode_title": "Orientação",
   "pref_full_screen_share_only_summary": "Ao iniciar o espelhamento, não pergunta mais se é para compartilhar um app ou a tela inteira",
   "pref_full_screen_share_only_title": "Compartilhar só a tela inteira",
@@ -88,7 +88,7 @@
   "pref_notification_access_summary": "“ScreenOnAuto Controlador de mídia” no Android Auto mostra e controla o que está tocando no telefone",
   "pref_notification_access_title": "Acesso a notificações",
   "pref_orientation_category": "Orientação da tela",
-  "pref_overlay_summary": "Ativa a diminuição automática, travar orientação e o escurecimento noturno",
+  "pref_overlay_summary": "Ativa o escurecimento automático, o travamento de orientação e o escurecimento noturno",
   "pref_overlay_title": "Exibir sobre outros apps",
   "pref_placement_category": "Posição dos botões",
   "pref_root_access_category": "Acesso privilegiado",
@@ -114,7 +114,7 @@
   "pref_root_mirror_home_title": "Tela inicial durante o espelhamento",
   "pref_root_mirror_nav_mode_title": "Modo de navegação durante o espelhamento",
   "pref_root_requires_connection": "Conecte-se primeiro ao Shizuku ou Root",
-  "pref_root_screen_off_summary": "Quando a diminuição automática atua, desliga a luz de fundo do telefone; o espelhamento continua no carro",
+  "pref_root_screen_off_summary": "Quando o escurecimento automático atua, desliga a luz de fundo do telefone; o espelhamento continua no carro",
   "pref_root_screen_off_title": "Desligar a tela do telefone",
   "pref_root_summary": "Recursos extras liberados pelo Shizuku ou Root",
   "pref_root_title": "Recursos privilegiados",
@@ -158,7 +158,7 @@
   "value_off": "Desativado"
  },
  "version": {
-  "code": 53,
-  "name": "1.11.0"
+  "code": 54,
+  "name": "1.11.1"
  }
 }
