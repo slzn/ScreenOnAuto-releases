@@ -5,7 +5,7 @@ lang: id
 slug: how-to-use
 permalink: /docs/id/how-to-use/
 date: 2026-10-15
-last_modified_at: 2026-11-25
+last_modified_at: 2026-11-26
 ---
 
 # Cara Menggunakan

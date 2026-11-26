@@ -6,7 +6,7 @@ slug: settings
 permalink: /docs/it/settings/
 settings_phone: true
 date: 2026-11-25
-last_modified_at: 2026-11-25
+last_modified_at: 2026-11-26
 ---
 
 <div class="sp-intro" markdown="1">

@@ -5,7 +5,7 @@ lang: vi
 slug: how-to-use
 permalink: /docs/vi/how-to-use/
 date: 2026-10-15
-last_modified_at: 2026-11-25
+last_modified_at: 2026-11-26
 ---
 
 # Cách sử dụng

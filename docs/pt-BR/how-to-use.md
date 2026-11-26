@@ -5,7 +5,7 @@ lang: pt-BR
 slug: how-to-use
 permalink: /docs/pt-BR/how-to-use/
 date: 2026-07-16
-last_modified_at: 2026-11-25
+last_modified_at: 2026-11-26
 ---
 
 # Como Usar

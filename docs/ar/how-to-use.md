@@ -5,7 +5,7 @@ lang: ar
 slug: how-to-use
 permalink: /docs/ar/how-to-use/
 date: 2026-07-20
-last_modified_at: 2026-11-25
+last_modified_at: 2026-11-26
 ---
 
 # طريقة الاستخدام

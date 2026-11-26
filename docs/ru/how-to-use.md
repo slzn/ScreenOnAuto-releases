@@ -5,7 +5,7 @@ lang: ru
 slug: how-to-use
 permalink: /docs/ru/how-to-use/
 date: 2026-10-06
-last_modified_at: 2026-11-25
+last_modified_at: 2026-11-26
 ---
 
 # Как пользоваться
