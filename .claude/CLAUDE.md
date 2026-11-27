@@ -250,7 +250,12 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
   CNAME `screenonauto` → `slzn.github.io`). Old `/ScreenOnAuto-releases/` paths and
   github.io URLs 301 here. All internal links use **root-relative paths**.
 - **Landing pages:** `index.html` (en) + one per language dir; SEO head + hreflang +
-  JSON-LD (author: Chih-En Liu). **README content edits must be mirrored into the
+  JSON-LD (author: Chih-En Liu). Since 2026-11-27 every `SoftwareApplication` (the 15 landing
+  pages, and the doc layout's `about`) carries `"sameAs": [the GitHub repo]`, so search engines
+  treat the site and the repo as one entity — the repo outranked the site for "screenonauto".
+  Only the root `index.html` also has a `WebSite` block (name ScreenOnAuto, alternateName
+  "Screen On Auto"): Google reads site names from the domain's home page alone, so the other
+  fourteen deliberately don't repeat it. **README content edits must be mirrored into the
   landing pages** (all 15 languages).
 - **Screenshot carousel** (added 2026-07-17): the hero screenshot is a carousel —
   `.carousel` markup in each landing page + shared `assets/carousel.js` (CSS-scroll-snap
