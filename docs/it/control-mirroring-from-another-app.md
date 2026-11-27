@@ -5,7 +5,7 @@ lang: it
 slug: control-mirroring-from-another-app
 permalink: /docs/it/control-mirroring-from-another-app/
 date: 2026-09-23
-last_modified_at: 2026-09-23
+last_modified_at: 2026-11-27
 ---
 
 # Controllare il mirroring da altre app

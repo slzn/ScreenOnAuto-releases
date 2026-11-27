@@ -5,7 +5,7 @@ lang: ar
 slug: control-mirroring-from-another-app
 permalink: /docs/ar/control-mirroring-from-another-app/
 date: 2026-09-23
-last_modified_at: 2026-09-23
+last_modified_at: 2026-11-27
 ---
 
 # التحكم في النسخ المطابق من تطبيق آخر

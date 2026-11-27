@@ -5,7 +5,7 @@ lang: th
 slug: control-mirroring-from-another-app
 permalink: /docs/th/control-mirroring-from-another-app/
 date: 2026-11-18
-last_modified_at: 2026-11-18
+last_modified_at: 2026-11-27
 ---
 
 # ควบคุมการสะท้อนหน้าจอจากแอปอื่น

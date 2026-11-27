@@ -5,7 +5,7 @@ lang: zh-TW
 slug: control-mirroring-from-another-app
 permalink: /docs/zh-TW/control-mirroring-from-another-app/
 date: 2026-09-23
-last_modified_at: 2026-10-14
+last_modified_at: 2026-11-27
 ---
 
 # 從其他應用程式控制鏡像

@@ -5,7 +5,7 @@ lang: ru
 slug: control-mirroring-from-another-app
 permalink: /docs/ru/control-mirroring-from-another-app/
 date: 2026-10-06
-last_modified_at: 2026-10-06
+last_modified_at: 2026-11-27
 ---
 
 # Управление дублированием из другого приложения

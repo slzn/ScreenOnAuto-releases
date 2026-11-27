@@ -5,7 +5,7 @@ lang: ko
 slug: control-mirroring-from-another-app
 permalink: /docs/ko/control-mirroring-from-another-app/
 date: 2026-09-23
-last_modified_at: 2026-09-23
+last_modified_at: 2026-11-27
 ---
 
 # 다른 앱에서 미러링 제어

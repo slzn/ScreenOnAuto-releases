@@ -5,7 +5,7 @@ lang: id
 slug: control-mirroring-from-another-app
 permalink: /docs/id/control-mirroring-from-another-app/
 date: 2026-10-15
-last_modified_at: 2026-10-15
+last_modified_at: 2026-11-27
 ---
 
 # Kontrol Pencerminan dari Aplikasi Lain
