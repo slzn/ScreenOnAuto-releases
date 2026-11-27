@@ -13,6 +13,7 @@
 #   guide   — the settings-guide button's short label (_includes/tools.html)
 #   guide_title — that guide's full title (docs/<code>/settings.md): the button's tooltip and the
 #             landing-footer link text
+#   copy / copied — the code-block copy button's label before and after a click (_layouts/doc.html)
 
 - code: en
   name: English
@@ -20,54 +21,72 @@
   updated: Last updated
   guide: Settings
   guide_title: Settings Guide
+  copy: Copy
+  copied: Copied
 - code: zh-TW
   name: 繁體中文
   label: 語言
   updated: 最後更新
   guide: 設定說明
   guide_title: 設定說明
+  copy: 複製
+  copied: 已複製
 - code: pt-BR
   name: Português (Brasil)
   label: Idioma
   updated: Última atualização
   guide: Configurações
   guide_title: Guia de configurações
+  copy: Copiar
+  copied: Copiado
 - code: es
   name: Español
   label: Idioma
   updated: Última actualización
   guide: Ajustes
   guide_title: Guía de ajustes
+  copy: Copiar
+  copied: Copiado
 - code: de
   name: Deutsch
   label: Sprache
   updated: Zuletzt aktualisiert
   guide: Einstellungen
   guide_title: Einstellungen im Überblick
+  copy: Kopieren
+  copied: Kopiert
 - code: fr
   name: Français
   label: Langue
   updated: Dernière mise à jour
   guide: Réglages
   guide_title: Guide des réglages
+  copy: Copier
+  copied: Copié
 - code: it
   name: Italiano
   label: Lingua
   updated: Ultimo aggiornamento
   guide: Impostazioni
   guide_title: Guida alle impostazioni
+  copy: Copia
+  copied: Copiato
 - code: tr
   name: Türkçe
   label: Dil
   updated: Son güncelleme
   guide: Ayarlar
   guide_title: Ayarlar Rehberi
+  copy: Kopyala
+  copied: Kopyalandı
 - code: ar
   name: العربية
   label: اللغة
   updated: آخر تحديث
   guide: الإعدادات
   guide_title: دليل الإعدادات
+  copy: نسخ
+  copied: تم النسخ
   rtl: true
 - code: ko
   name: 한국어
@@ -75,33 +94,45 @@
   updated: 마지막 업데이트
   guide: 설정 안내
   guide_title: 설정 안내
+  copy: 복사
+  copied: 복사됨
 - code: ru
   name: Русский
   label: Язык
   updated: Последнее обновление
   guide: Настройки
   guide_title: Руководство по настройкам
+  copy: Копировать
+  copied: Скопировано
 - code: vi
   name: Tiếng Việt
   label: Ngôn ngữ
   updated: Cập nhật lần cuối
   guide: Cài đặt
   guide_title: Giải thích các cài đặt
+  copy: Sao chép
+  copied: Đã sao chép
 - code: id
   name: Bahasa Indonesia
   label: Bahasa
   updated: Terakhir diperbarui
   guide: Pengaturan
   guide_title: Panduan Pengaturan
+  copy: Salin
+  copied: Disalin
 - code: ja
   name: 日本語
   label: 言語
   updated: 最終更新
   guide: 設定ガイド
   guide_title: 設定ガイド
+  copy: コピー
+  copied: コピーしました
 - code: th
   name: ไทย
   label: ภาษา
   updated: อัปเดตล่าสุด
   guide: การตั้งค่า
   guide_title: คู่มือการตั้งค่า
+  copy: คัดลอก
+  copied: คัดลอกแล้ว

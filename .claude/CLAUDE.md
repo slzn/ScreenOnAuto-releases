@@ -236,6 +236,9 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
   it at ≤640px). Each screenshot in it sits in its own `<p>`, so it picks up the same frame
   and crop — keep it that way rather than styling the cells' images separately.
   Troubleshooting is one `####` per problem under two `###` groups, so each is linkable.
+  Every code block gets a copy button from `_layouts/doc.html` (labels `copy` / `copied` in
+  `_data/languages.yml`); blocks wrap instead of scrolling so a long command never hides under
+  the button, which sits top-right (its width reserved as `--copy-w`) and above the code at ≤640px.
 - Any future structural edit to one landing page must still be replicated to all fifteen.
 
 ## Website (GitHub Pages)

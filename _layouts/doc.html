@@ -85,6 +85,38 @@ document.querySelector(".theme-toggle").addEventListener("click", function () {
   document.documentElement.dataset.theme = next;
   try { localStorage.setItem("theme", next); } catch (err) {}
 });
+/* Copy button on every code block (commands people paste into a terminal or an automation app) */
+(function () {
+  var label = {{ me.copy | jsonify }}, done = {{ me.copied | jsonify }};
+  if (!navigator.clipboard) return;
+  document.querySelectorAll(".doc pre").forEach(function (pre) {
+    var box = document.createElement("div");
+    box.className = "codeblock";
+    pre.parentNode.insertBefore(box, pre);
+    box.appendChild(pre);
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "copy-btn";
+    btn.setAttribute("aria-live", "polite");
+    btn.textContent = label;
+    btn.addEventListener("click", function () {
+      var text = (pre.querySelector("code") || pre).innerText.replace(/\n+$/, "");
+      navigator.clipboard.writeText(text).then(function () {
+        btn.textContent = done;
+        btn.classList.add("ok");
+        setTimeout(function () { btn.textContent = label; btn.classList.remove("ok"); }, 1600);
+      });
+    });
+    box.appendChild(btn);
+    /* size the button for the longer of its two labels, and keep the code clear of it */
+    btn.textContent = done;
+    var w = btn.offsetWidth;
+    btn.textContent = label;
+    w = Math.max(w, btn.offsetWidth);
+    btn.style.minWidth = w + "px";
+    box.style.setProperty("--copy-w", w + "px");
+  });
+})();
 </script>
 </body>
 </html>
