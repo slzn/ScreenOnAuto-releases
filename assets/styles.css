@@ -239,10 +239,11 @@ th { background: var(--bg-alt); }
 td img.mini { width: 44px; height: 44px; max-width: none; border-radius: 10px; }  /* don't shrink in a squeezed column */
 footer {
   border-top: 1px solid var(--border); margin-top: 48px; padding: 28px 0 40px;
-  color: var(--muted); font-size: 0.85rem;
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  color: var(--muted); font-size: 0.88rem;
 }
 footer p { margin: 8px 0; }
+footer p:first-child { color: var(--text); }  /* the keep-your-eyes-on-the-road line */
+.doc ~ footer .wrap { max-width: 780px; }      /* line up with the doc column, not the landing width */
 footer a { color: var(--muted); }
 footer a:hover { color: var(--accent); }
 .muted { color: var(--muted); }

@@ -3,6 +3,7 @@
    night-drive tokens from styles.css — the app uses the same palette since v1.11.0. */
 
 .doc.doc-wide { max-width: 1200px; }
+.doc.doc-wide ~ footer .wrap { max-width: 1200px; }  /* footer spans the two-column guide */
 .sp-aside { margin: 8px 0 28px; }
 @media (min-width: 1100px) {
   .doc.doc-wide { display: grid; grid-template-columns: 426px minmax(0, 1fr); column-gap: 36px; align-items: start; }

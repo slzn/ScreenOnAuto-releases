@@ -199,7 +199,10 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
 - **Tokens:** single-source `light-dark()` values in `assets/styles.css` `:root` (dark-first
   asphalt/signal-green/amber). "Screen" surfaces (`--panel*`) stay dark in both themes.
 - **Type:** Chakra Petch (display/H1/H2/buttons) + IBM Plex Mono (eyebrows, captions,
-  footer) via Google Fonts `<link>` in every page head; body stays system-ui. On non-CJK pages
+  "last updated" stamps) via Google Fonts `<link>` in every page head; body stays system-ui.
+  The footer is body type (since 2026-11-27 — whole sentences in mono were hard to read), its
+  first line, the keep-your-eyes-on-the-road warning, in `--text` rather than `--muted`; on doc
+  pages its width follows the doc column (780px, or 1200px on the settings guide). On non-CJK pages
   the curly quotes (U+2018–201F, which kramdown makes from every `'`) come from a local Latin
   face (`@font-face "Latin Quotes"`, unicode-range only): where system-ui resolves to a CJK
   font — Noto Sans CJK on a CJK-locale Linux — they rendered full-width ("Auto’ s").
