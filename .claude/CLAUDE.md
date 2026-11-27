@@ -199,7 +199,10 @@ Site-wide "night-drive" visual identity, shared with the hub (lzn.idv.tw):
 - **Tokens:** single-source `light-dark()` values in `assets/styles.css` `:root` (dark-first
   asphalt/signal-green/amber). "Screen" surfaces (`--panel*`) stay dark in both themes.
 - **Type:** Chakra Petch (display/H1/H2/buttons) + IBM Plex Mono (eyebrows, captions,
-  footer) via Google Fonts `<link>` in every page head; body stays system-ui.
+  footer) via Google Fonts `<link>` in every page head; body stays system-ui. On non-CJK pages
+  the curly quotes (U+2018–201F, which kramdown makes from every `'`) come from a local Latin
+  face (`@font-face "Latin Quotes"`, unicode-range only): where system-ui resolves to a CJK
+  font — Noto Sans CJK on a CJK-locale Linux — they rendered full-width ("Auto’ s").
 - **Top-right tools (since 2026-09-30):** `_includes/tools.html`, used by all fifteen landing
   pages (`{% include tools.html lang="<code>" %}`) and inside the docbar of
   `_layouts/doc.html` (`lang=page.lang`). It holds a GitHub icon link, the **settings-guide

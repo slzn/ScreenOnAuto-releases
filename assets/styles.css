@@ -27,6 +27,18 @@ body {
   margin: 0; background: var(--bg); color: var(--text);
   font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+/* Curly quotes and apostrophes (’ ‘ “ ”) from a Latin face. Where system-ui resolves to a CJK
+   font (e.g. Noto Sans CJK on Linux) they come out full-width — "Auto’ s". Only those code
+   points are swapped, and only on non-CJK pages: zh-TW/ja/ko keep their own punctuation. */
+@font-face {
+  font-family: "Latin Quotes";
+  src: local("Segoe UI"), local("Roboto"), local("Helvetica Neue"), local("Noto Sans Regular"),
+       local("NotoSans-Regular"), local("DejaVu Sans"), local("Liberation Sans"), local("Arial");
+  unicode-range: U+2018-201F;
+}
+:root:not(:lang(zh-TW)):not(:lang(ja)):not(:lang(ko)) body {
+  font-family: "Latin Quotes", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
 a { color: var(--accent); }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 img { max-width: 100%; height: auto; }
