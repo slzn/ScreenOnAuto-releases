@@ -148,6 +148,9 @@ ScreenOnAuto-releases/
 ├── _data/languages.yml     ← the language list: code, own name, menu label, "last updated" label, rtl
 ├── _includes/tools.html    ← shared top-right cluster: GitHub icon · language menu · theme toggle
 ├── _includes/hreflang.html ← the landing pages' hreflang alternates, generated from _data/languages.yml
+├── _includes/footer/<lang>.html ← the shared footer (safety line, Google disclaimer, donate, links row) —
+│                             the single source for both the landing page and every doc page of that
+│                             language; the landing's `<p class="updated">` stays in the page (sync-content-dates.py)
 ├── assets/styles.css       ← shared landing-page stylesheet
 ├── assets/carousel.js      ← shared carousel script
 ├── docs/<lang>/<slug>.md   ← on-site copies of the 4 wiki guides × 15 languages, plus privacy-policy.md, terms-of-use.md and settings.md (site-only)
