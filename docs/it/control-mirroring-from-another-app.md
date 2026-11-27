@@ -11,7 +11,7 @@ last_modified_at: 2026-09-23
 # Controllare il mirroring da altre app
 
 
-Dalla **v1.8.4** ScreenOnAuto accetta tre intent che avviano, fermano o commutano il
+ScreenOnAuto accetta tre intent che avviano, fermano o commutano il
 mirroring. Tutto ciò che sa inviare un intent — un'app di automazione, una scorciatoia sulla
 schermata iniziale, uno script via ADB, un'app scritta da te — può pilotare il mirroring con
 questi, così da farlo partire insieme al resto della tua configurazione di guida invece che a

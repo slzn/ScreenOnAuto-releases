@@ -10,7 +10,7 @@ last_modified_at: 2026-10-15
 
 # Kontrol Pencerminan dari Aplikasi Lain
 
-Sejak **v1.8.4**, ScreenOnAuto menerima tiga intent yang memulai, menghentikan, atau
+ScreenOnAuto menerima tiga intent yang memulai, menghentikan, atau
 mengalihkan pencerminan. Apa pun yang bisa mengirim intent — aplikasi otomatisasi, pintasan di
 layar utama, skrip lewat ADB, aplikasi buatan Anda sendiri — bisa mengendalikan pencerminan
 dengannya, sehingga pencerminan bisa menyala bersama rutinitas berkendara Anda yang lain alih-alih

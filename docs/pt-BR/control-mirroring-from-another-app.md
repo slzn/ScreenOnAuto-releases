@@ -11,7 +11,7 @@ last_modified_at: 2026-09-23
 # Controlar o Espelhamento a partir de Outro App
 
 
-Desde a **v1.8.4**, o ScreenOnAuto aceita três intents que iniciam, param ou alternam o
+O ScreenOnAuto aceita três intents que iniciam, param ou alternam o
 espelhamento. Qualquer coisa capaz de enviar um intent — um app de automação, um atalho
 na tela inicial, um script via ADB, um app seu — pode controlar o espelhamento com eles,
 de modo que ele entre junto com o resto da sua rotina ao dirigir, em vez de na mão.

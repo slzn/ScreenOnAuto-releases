@@ -11,7 +11,7 @@ last_modified_at: 2026-09-23
 # Spiegelung aus einer anderen App steuern
 
 
-Seit **v1.8.4** nimmt ScreenOnAuto drei Intents entgegen, die die Spiegelung starten,
+ScreenOnAuto nimmt drei Intents entgegen, die die Spiegelung starten,
 stoppen oder umschalten. Alles, was einen Intent senden kann – eine Automatisierungs-App,
 eine Verknüpfung auf dem Startbildschirm, ein Skript über ADB, eine eigene App – kann die
 Spiegelung damit steuern, sodass sie zusammen mit dem Rest deiner Fahrroutine anläuft statt

@@ -11,7 +11,7 @@ last_modified_at: 2026-11-10
 # Contrôler la duplication depuis une autre application
 
 
-Depuis la **v1.8.4**, ScreenOnAuto accepte trois intents qui démarrent, arrêtent ou basculent
+ScreenOnAuto accepte trois intents qui démarrent, arrêtent ou basculent
 la duplication. Tout ce qui peut envoyer un intent — une application d'automatisation, un
 raccourci sur l'écran d'accueil, un script via ADB, votre propre application — peut piloter la
 duplication avec eux, afin qu'elle se lance avec le reste de votre configuration de conduite

@@ -11,7 +11,7 @@ last_modified_at: 2026-09-23
 # Yansıtmayı Başka Bir Uygulamadan Kontrol Etme
 
 
-**v1.8.4** sürümünden itibaren ScreenOnAuto, yansıtmayı başlatan, durduran veya açıp kapatan
+ScreenOnAuto, yansıtmayı başlatan, durduran veya açıp kapatan
 üç intent kabul ediyor. Intent gönderebilen her şey — bir otomasyon uygulaması, ana ekran
 kısayolu, ADB üzerinden bir betik, kendi yazdığınız bir uygulama — yansıtmayı bunlarla
 sürebilir; böylece yansıtma elle değil, sürüş düzeninizin geri kalanıyla birlikte devreye

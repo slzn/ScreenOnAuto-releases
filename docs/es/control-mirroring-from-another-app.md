@@ -11,7 +11,7 @@ last_modified_at: 2026-09-23
 # Controlar la Duplicación desde Otra App
 
 
-Desde la **v1.8.4**, ScreenOnAuto acepta tres intents que inician, detienen o alternan la
+ScreenOnAuto acepta tres intents que inician, detienen o alternan la
 duplicación. Cualquier cosa capaz de enviar un intent — una app de automatización, un acceso
 directo en la pantalla de inicio, un script por ADB, una app propia — puede controlar la
 duplicación con ellos, de modo que se active junto con el resto de tu configuración al

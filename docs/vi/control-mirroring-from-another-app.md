@@ -10,7 +10,7 @@ last_modified_at: 2026-10-15
 
 # Điều khiển phản chiếu từ ứng dụng khác
 
-Từ **v1.8.4**, ScreenOnAuto nhận ba intent để bắt đầu, dừng hoặc bật/tắt
+ScreenOnAuto nhận ba intent để bắt đầu, dừng hoặc bật/tắt
 phản chiếu. Bất cứ thứ gì gửi được intent — ứng dụng tự động hóa, lối tắt trên màn hình chính,
 một đoạn script qua ADB, hay ứng dụng do chính bạn viết — đều có thể điều khiển phản chiếu bằng chúng, để
 phản chiếu bật lên cùng với các thiết lập lái xe khác thay vì phải bật bằng tay.

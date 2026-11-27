@@ -11,7 +11,7 @@ last_modified_at: 2026-09-23
 # Control Mirroring from Another App
 
 
-Since **v1.8.4**, ScreenOnAuto accepts three intents that start, stop or toggle the
+ScreenOnAuto accepts three intents that start, stop or toggle the
 mirror. Anything that can send an intent — an automation app, a home-screen shortcut, a
 script over ADB, an app of your own — can drive the mirror with them, so it can come on
 with the rest of your driving setup instead of by hand.
